@@ -5,14 +5,23 @@ wp-cli.local.yml
 wp-content/uploads
 wp-content/blogs.dir/
 wp-content/upgrade/
+wp-content/upgrade-temp-backup/
 wp-content/backup-db/
 wp-content/updraft/
 wp-content/backupwordpress-*/
 wp-content/managewp/backups/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
+wp-content/debug.log
 sitemap.xml
 sitemap.xml.gz
+.vscode
+
+# Ignore screenshots
+screenshots/*
+
+# Add screenshots folder (empty)
+!screenshots/.gitkeep
 
 # @TODO writable paths
 wp-content/cache/
@@ -55,3 +64,6 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# node_modules #
+wp-content/themes/**/node_modules/

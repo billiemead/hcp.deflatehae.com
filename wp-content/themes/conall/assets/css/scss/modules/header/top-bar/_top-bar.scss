@@ -1,0 +1,63 @@
+$top-bar-height: 32px;
+
+.edgtf-top-bar {
+    position: relative;
+    height: $top-bar-height;
+    width: 100%;
+    color: #fff;
+    background-color: $default-heading-color;
+    z-index: 111;
+
+    .edgtf-grid {
+        height: 100%;
+
+        .edgtf-vertical-align-containers {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .edgtf-logo-wrapper a {
+        max-height: $top-bar-height;
+    }
+}
+
+.edgtf-light-header .edgtf-top-bar {
+    color: $header-light-color !important; //Beacause of inline color styles
+
+    .widget {
+        color: $header-light-color !important; //Beacause of inline color styles
+
+        p,
+        a,
+        span,
+        i,
+        .widgettitle {
+            color: $header-light-color !important; //Beacause of inline color styles
+        }
+
+        a:hover {
+            color: $header-light-hover-color;
+        }
+    }
+}
+
+.edgtf-dark-header .edgtf-top-bar {
+    color: $header-dark-color !important; //Beacause of inline color styles
+
+    .widget {
+        color: $header-dark-color !important; //Beacause of inline color styles
+
+        p,
+        a,
+        span,
+        i,
+        .widgettitle {
+            color: $header-dark-color !important; //Beacause of inline color styles
+        }
+
+        a:hover {
+            color: $header-dark-hover-color;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+$black: #000000;
+$white: #ffffff;
+
+@mixin drop-down-menu-shadow {
+    box-shadow: 3px 3px 10px -6px $black_opacity;
+    -webkit-box-shadow: 3px 3px 10px -6px $black_opacity;
+    -moz-box-shadow: 3px 3px 10px -6px$black_opacity;
+};

@@ -1,0 +1,187 @@
+/* ==========================================================================
+# Social Share style - begin
+========================================================================== */
+
+.edgtf-social-share-holder {
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* List type - begin
+========================================================================== */
+.edgtf-social-share-holder.edgtf-list {
+
+    li {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0 25px 5px 0;
+
+        &:last-child {
+            margin: 0 0 5px;
+        }
+
+        a {
+            font-size: 14px;
+            color: $default-heading-color;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+}
+
+/* List type - end
+========================================================================== */
+
+/* Dropdown type - begin
+========================================================================== */
+
+$socialShareWidth: 62px;
+$socialShareHeight: 27px;
+
+.edgtf-social-share-holder.edgtf-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .edgtf-social-share-dropdown-opener {
+        display: block;
+
+        .edgtf-social-share-title {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+    }
+
+    .edgtf-social-share-dropdown {
+        position: relative;
+        visibility: hidden;
+        z-index: 950;
+
+        ul {
+            position: relative;
+            display: block;
+            z-index: 990;
+            margin: 0;
+            padding: 0 !important;
+            top: 3px;
+        }
+
+        ul li {
+            width: $socialShareWidth;
+            height: $socialShareHeight;
+            line-height: $socialShareHeight;
+            visibility: hidden;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            border: 1px solid $default-border-color;
+            background-color: #fff;
+            font-size: 13px;
+            line-height: 28px;
+            color: $default-text-color;
+            @include edgtfBoxSizing(content-box);
+            @include edgtfTransition(
+                            opacity $default-transition-speed $default-transition-property 0s,
+                            visibility $default-transition-speed $default-transition-property 0s,
+                            background-color $default-transition-speed $default-transition-property 0s);
+
+            &.edgtf-facebook-share:hover {
+                background-color: #3b5998;
+                color: #fff;
+            }
+
+            &.edgtf-twitter-share:hover {
+                background-color: #00aced;
+                color: #fff;
+            }
+
+            &.edgtf-google_plus-share:hover {
+                background-color: #dd4b39;
+                color: #fff;
+            }
+
+            &.edgtf-linkedin-share:hover {
+                background-color: #007bb5;
+                color: #fff;
+            }
+
+            &.edgtf-tumblr-share:hover {
+                background-color: #32506d;
+                color: #fff;
+            }
+
+            &.edgtf-pinterest-share:hover {
+                background-color: #cb2027;
+                color: #fff;
+            }
+
+            &.edgtf-vk-share:hover {
+                background-color: #45668e;
+                color: #fff;
+            }
+
+            &:not(:first-child) {
+                border-top: none;
+            }
+
+            a {
+                display: block;
+                color: inherit !important;
+
+                span {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}) {
+                    bottom: #{-$i*(($socialShareHeight)+1)};
+                }
+            }
+        }
+    }
+}
+
+.edgtf-social-share-holder.edgtf-dropdown:hover {
+
+    .edgtf-social-share-dropdown ul li {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .edgtf-social-share-dropdown ul li {
+
+        /* opacity and visibility need to be different, but not background-color */
+        @for $i from 2 through 7 {
+            &:nth-child(#{$i}) {
+                @include edgtfTransition(
+                                opacity $default-transition-speed $default-transition-property #{($i)/10+s},
+                                visibility $default-transition-speed $default-transition-property #{($i)/10+s},
+                                background-color $default-transition-speed $default-transition-property 0s);
+            }
+        }
+    }
+}
+
+/* Dropdown type - end
+========================================================================== */
+
+/* ==========================================================================
+# Social Share style - end
+========================================================================== */

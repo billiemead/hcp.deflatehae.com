@@ -1,0 +1,36 @@
+/**
+ * * Lottier for Wpbakery
+ * * Lottie animations in just a few clicks without writing a single line of code
+ * * Exclusively on https://1.envato.market/lottier-wpbakery
+ * *
+ * * @encoding        UTF-8
+ * * @version         1.1.5
+ * * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * * @license         Envato License https://1.envato.market/KYbje
+ * * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
+ * * @support         help@merkulov.design
+ * **/
+.mdp-lottier-header,
+.mdp-lottier-subheader {
+  display: block;
+}
+
+.mdp-lottier-svg,
+.mdp-lottier-animation {
+  display: flex;
+}
+
+.mdp-link-max {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mdp-lottier-animation {
+  position: inherit;
+  z-index: 9999;
+  width: 100%;
+}

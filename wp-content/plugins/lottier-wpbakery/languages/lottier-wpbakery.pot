@@ -1,0 +1,1202 @@
+# Copyright (C) 2023 Lottier for WPBakery
+# This file is distributed under the same license as the Lottier for WPBakery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lottier for WPBakery\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-19 14:16+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/AdminScripts.php:89
+msgid "Wrong format! It looks like you are using the Envato Elements license code instead of CodeCanyon purchase ID."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/AdminScripts.php:90
+msgid "Wrong format! It looks like you are using the Invoice Number instead of CodeCanyon purchase ID."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/AdminScripts.php:91
+msgid "Wrong format! It looks like you are using the Order ID instead of CodeCanyon purchase ID."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/AdminScripts.php:92
+msgid "Wrong format! The purchase code must be 36 characters long"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:109
+msgid "Author has banned the use of this plugin for sites representing terrorist states, associations and formations. Details:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:127, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:191
+msgid "Plugin was deactivated! Author has banned the use"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:129
+msgid "for sites representing terrorist states, associations and formations"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:130, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:194
+msgid "Details"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:131, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:195
+msgid "Support"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:173
+msgid "Author has banned the use of this plugin in states recognized as sponsors of terrorism. Details:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:193
+msgid "in states recognized as sponsors of terrorism"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/CheckCompatibility.php:372
+msgid "The minimum PHP version required for Lottier for WPBakery plugin is %s."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:100
+msgid "Licensed"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:101
+msgid "No license"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:102
+msgid "No licence data"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:103
+msgid "Wait"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:123
+msgid "Plugins Manager"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:164
+msgid "Explore more plugins"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:165, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:266, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:385
+msgid "opens in a new window"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:292
+msgid "Plugin licence status"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:305
+msgid "Update to"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:306
+msgid "Latest"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:339
+msgid "Activate"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Dashboard.php:349, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:140, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:140, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:329, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:353, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:373
+msgid "Settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Messages.php:76
+msgid "ERROR"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Messages.php:82
+msgid "Troubleshooting"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:250
+msgid "General"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:251
+msgid "General Settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:277, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:278
+msgid "Custom CSS"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:284
+msgid "Add custom CSS here."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:311
+msgid "Assignments"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:312
+msgid "Assignments Settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:361
+msgid "Activation"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:362
+msgid "Plugin Activation"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:388
+msgid "Status"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:389
+msgid "System Status"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:454, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:455
+msgid "Updates"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:481
+msgid "Migration"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:482
+msgid "Migration Settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:489
+msgid "Delete plugin only"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:490
+msgid "Delete plugin and settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Plugin.php:491
+msgid "Delete plugin, settings and data"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:189
+msgid "Documentation"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:142, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:142
+msgid "Plugins"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginHelper.php:163
+msgid "Rate this plugin:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginUpdater.php:439
+msgid "Your plugin license is "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginUpdater.php:441
+msgid "not activated"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginUpdater.php:443
+msgid "Please activate the license to receive automatic updates in one click, or visit the plugin page on the Envato market to "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginUpdater.php:446
+msgid "download "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/PluginUpdater.php:448
+msgid "the latest version."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterPlugins.php:90, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterPlugins.php:123
+msgid "Active Plugins"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:45
+msgid "Server Environment"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:62
+msgid "Operating System"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:63
+msgid "Software"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:64, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:65, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:67, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:68, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:69, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:70, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:72, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:73, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:74, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:75
+msgid "Installed"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:66
+msgid "Write Permissions"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:119, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:211, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:233, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:255, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:278, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:302, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:326, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:350, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:374, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:459
+msgid "YES"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:119, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:211, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:233, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:255, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:278, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:302, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:326, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:350, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:374, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:413, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:431, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:459
+msgid "NO"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:121
+msgid "You must enable allow_url_fopen option in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#. translators: %1$s: PHP version, %2$s: Required PHP version.
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:184
+msgid "We recommend to use PHP %1$s or higher. Your version is %2$s"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:235
+msgid "You must enable CURL (Client URL Library) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:257
+msgid "You need install and activate Elementor builder. Go to Elementor site (elementor.com) for details."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:280
+msgid "You need install and activate WPBakery builder. Go to WPBakery site (wpbakery.com) for details."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:304
+msgid " You must enable DOM extension (Document Object Model) in PHP. It's used for HTML processing. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:328
+msgid "You must enable XML extension in PHP. It's used for XML processing. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:352
+msgid "You must enable BCMath extension (Arbitrary Precision Mathematics) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:376
+msgid "You must enable mbstring extension (Multibyte String) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:415, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:433
+msgid "Failed to check time synchronization on your server. Your server's clock must be in sync with network time protocol - NTP."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:461
+msgid " Your server's clock is not in sync with network time protocol - NTP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:536
+msgid "WordPress root directory"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:544
+msgid "WordPress root uploads directory"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:550
+msgid ".htaccess file"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:567
+msgid "All right"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterServer.php:562
+msgid "There are some writing permissions issues with the following directories/files:"
+msgstr ""
+
+#. translators: %s: Codex URL
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterTheme.php:211
+msgctxt "System Info"
+msgid "If you want to modify the source code of your theme, we recommend using a <a href=\"%s\">child theme</a>."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:49
+msgid "WordPress Environment"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:64
+msgid "Version"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:65
+msgid "Site URL"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:66
+msgid "Home URL"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:67
+msgid "WP Multisite"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:68
+msgid "Max Upload Size"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:69
+msgid "Memory limit"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:70
+msgid "Permalink Structure"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:71
+msgid "Language"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:72
+msgid "Timezone"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:73
+msgid "Admin Email"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:74
+msgid "Debug Mode"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:142
+msgid "We recommend setting memory to at least 64M. For more information, ask your hosting provider."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:186, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:413, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:428, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:439, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:450, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:461, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:472, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:956
+msgid "Yes"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:186
+msgid "No"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:250
+msgid "Plain"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:360
+msgid "Active"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/ReporterWordPress.php:360
+msgid "Inactive"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:124
+msgid "Plugin settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:185
+msgid "Helpful links"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:195
+msgid "Get help"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:199
+msgid "Rate this plugin"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:205
+msgid "More plugins"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:330, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:354
+msgid "for Wpbakery"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:531
+msgid "Settings saved!"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:555
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:561
+msgid "Invalid purchase code."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:590
+msgid "v."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Settings.php:596
+msgid "Save changes"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Tab.php:193, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/Tab.php:194, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:171
+msgid "Tab"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:102
+msgid "CodeCanyon License"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:112
+msgid "Not Activated"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:107
+msgid "Activated"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:299
+msgid "Subscribe to newsletter"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:300
+msgid "Sign up for the newsletter to be the first to know about news and discounts."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:302
+msgid "Hurray! We received your Subscription request. Check your inbox for an email from us."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:303
+msgid "Oh! Sorry, but we cannot send messages to this email."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:304
+msgid "Oops! Something went wrong. Please try later."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:311
+msgid "Your Name"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:322
+msgid "Your E-Mail"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:333
+msgid "Subscribe"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:365
+msgid "Purchase code"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:366
+msgid "Enter your CodeCanyon purchase code. Allowed only one Purchase Code per website."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:388
+msgid "Activation FAQ'S"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:392
+msgid "Where is my Purchase Code?"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:395
+msgid "The purchase code is a unique combination of characters that confirms that you bought the plugin. You can find your purchase code in "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:396
+msgid "your account"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:396
+msgid "on the CodeCanyon. Learn more about "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:397
+msgid "How to find your purchase code"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:403
+msgid "Can I use one Purchase Code on multiple sites?"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:407
+msgid "No, this is prohibited by license terms. You can use the purchase code on only one website at a time. Learn more about "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:408
+msgid "Envato License"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:408
+msgid "terms. "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:414
+msgid "What are the benefits of plugin activation?"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:418
+msgid "Activation of the plugin allows you to use all the functionality of the plugin on your site. In addition, in some cases, activating the plugin allows you to access additional features and capabilities of the plugin. Also, using an authored version of the plugin, you can be sure that you will not violate the license."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:424
+msgid "What should I do if my Purchase Code does not work?"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:428
+msgid "There are several reasons why the purchase code may not work on your site. Learn more why your "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabActivation.php:429
+msgid "Purchase Code is Not Working"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:239
+msgid "In"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:285
+msgid "Matching Method"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:286
+msgid "Should all or any assignments be matched?"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:288
+msgid "ALL"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:289
+msgid "ANY"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:291
+msgid "The plugin is enabled on the page if ALL the selected rules matched, or if ANY of the selected rules matched"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:296
+msgid "WordPress Content"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:299, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:323, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:333, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:364, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:390, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:420, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:447, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:471, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:495, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:550, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:647, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:674
+msgid "Ignore"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:300, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:324, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:334, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:365, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:391, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:421, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:448, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:472, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:496, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:551, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:648, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:675
+msgid "Include"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:301, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:325, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:335, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:366, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:392, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:422, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:449, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:473, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:497, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:552, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:649, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:676
+msgid "Exclude"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:306
+msgid "Select on what page types or categories the assignment should be active."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:320
+msgid "Home Page"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:331
+msgid "Menu Items"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:339
+msgid "Select the menu items to assign to."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:361
+msgid "Date & Time"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:376
+msgid "The date and time assignments use the date/time of your servers, not that of the visitors system."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:378
+msgid "Current date/time:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:387
+msgid "Languages"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:396
+msgid "Select the languages to assign to."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:417
+msgid "User Roles"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:426
+msgid "Select the user roles to assign to."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:444
+msgid "URL"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:454
+msgid "Enter (part of) the URLs to match."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:455
+msgid "Use a new line for each different match."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:468
+msgid "Devices"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:477
+msgid "Select the devices to assign to. Keep in mind that device detection is not always 100% accurate. Users can setup their device to mimic other devices."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:481
+msgid "Desktop"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:482
+msgid "Tablet"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:483
+msgid "Mobile"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:492
+msgid "Operating Systems"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:501
+msgid "Select the operating systems to assign to. Keep in mind that operating system detection is not always 100% accurate. Users can setup their browser to mimic other operating systems."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:547, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:559
+msgid "Browsers"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:556
+msgid "Select the browsers to assign to. Keep in mind that browser detection is not always 100% accurate. Users can setup their browser to mimic other browsers."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:616
+msgid "Mobile Browsers:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:644
+msgid "IP Addresses"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:654
+msgid "IP Addresses / Ranges"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:660
+msgid "List of IP addresses or IP ranges. Example: "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:671
+msgid "Custom PHP"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:681
+msgid "Enter a piece of PHP code to evaluate. The code must return the value true or false."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:683
+msgid "For instance:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabAssignments.php:700
+msgid "By selecting the specific assignments you can limit where plugin should or shouldn't be published. To have it published on all pages, simply do not specify any assignments."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:92
+msgid "Import settings:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:93
+msgid "Export settings:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:95
+msgid "Removal settings:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:122
+msgid "Choose which data to delete upon using the \"Delete\" action in the \"Plugins\" admin page."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:128
+msgid "Delete plugin"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:145
+msgid "Import settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:146
+msgid "Drag & Drop file here"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:172
+msgid "Export all settings from"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:172
+msgid "tab"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:186
+msgid "Export settings"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:341
+msgid "No settings for import"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:347
+msgid "Wrong settings format"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:353
+msgid "You are importing settings for"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:353
+msgid ", but this is"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:359
+msgid "You are importing settings for version"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:365
+msgid "Settings imported"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabMigration.php:371
+msgid "Unknown error"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabStatus.php:238
+msgid "Some data will be sent to our server to verify purchase and to ensure that a plugin is compatible with your install. We will never collect any confidential data. All data is stored anonymously."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:80
+msgid "Invalidate caches"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:83, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:119
+msgid "SSL verification"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:98
+msgid "Clear cache"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:99
+msgid "Press to clear all nonsensitive caches and check for updates."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:120
+msgid "Enable to activate the SSL check when receiving updates"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/TabUpdates.php:269
+msgid "Wrong Parameter Value."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:616
+msgid "Icon Library"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:617
+msgid "Upload SVG"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:663
+msgid "Preview image"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:686
+msgid "Remove"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:688
+msgid "Media library"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:945, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1014
+msgid "Drop file here or click to upload."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:942, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1006
+msgid "File exist"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:943, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1007
+msgid "Drop file here or click to upload"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:955
+msgid "Drag and drop or click on the form to add file"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:950
+msgid "Drag and drop or click on the form to replace file. |"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:951, wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1028
+msgid "Reset"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:992
+msgid "File"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1036
+msgid "Drag and drop or click on the form to add file."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1039
+msgid "Allowed file types:"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1027
+msgid "Drag and drop or click on the form to replace file."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1075
+msgid "Linked"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1098
+msgid "Units"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/Unity/UI.php:1255
+msgid "Unit"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/templates/01-lottier.template.php:16
+msgid "Lottier – Order complete"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/templates/02-lottier.template.php:16
+msgid "Lottier – Hero Block"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/templates/03-lottier.template.php:16
+msgid "Lottier – Features"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/templates/04-lottier.template.php:16
+msgid "Lottier – Split Features"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/templates/05-lottier.template.php:16
+msgid "Lottier – Social"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:351
+msgid "Type lottie player"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:352, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:365, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:375, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:393, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:411, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:426, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:437, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:448, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:459, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:470
+msgid "Properties"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:354
+msgid "Web player"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:355
+msgid "dotLottie"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:364
+msgid "Animation speed"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:374
+msgid "Playback"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:377, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:529
+msgid "Auto play"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:378
+msgid "SVG hover"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:379
+msgid "Section hover"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:380
+msgid "On click"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:381
+msgid "Player visible"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:382
+msgid "Scrolling forward"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:383
+msgid "Scrolling backward"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:392
+msgid "Play mode"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:395
+msgid "Normal"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:396
+msgid "Bounce"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:410
+msgid "Finish animation before pause"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:425
+msgid "Loop"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:436
+msgid "Controls"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:447, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:527, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:528, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:542, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:566, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:583
+msgid "Header"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:458, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:604, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:621, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:639, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:640
+msgid "Description"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:469
+msgid "Enable link"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:487
+msgid "Link to file json"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:488, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:504
+msgid "Animation"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:490, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:506
+msgid "Choose animation on "
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:492
+msgid " and import it as JSON."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:503
+msgid "Link to file lottie"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:508
+msgid " and import it as lottie."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:541, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:620
+msgid "HTML Tag"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:544
+msgid "H1"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:545
+msgid "H2"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:546
+msgid "H3"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:547
+msgid "H4"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:548
+msgid "H5"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:549
+msgid "H6"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:550, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:623
+msgid "div"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:551, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:624
+msgid "span"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:552, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:625
+msgid "p"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:565
+msgid "Subheader Position"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:568
+msgid "Top"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:569
+msgid "Bottom"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:582, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:584
+msgid "Subheader"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:603
+msgid "Description Position"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:606
+msgid "After header"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:607
+msgid "Footer"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:641
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:660
+msgid "Link Position"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:661, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:677
+msgid "Link"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:663
+msgid "SVG"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:664
+msgid "Box"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:697, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:777, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:856, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:936
+msgid "Style"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:698, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:709, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:728, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:752
+msgid "Style Header"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:713, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:793, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:872
+msgid "Select font family."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:714, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:794, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:873
+msgid "Select font styling."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:736, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:816, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:895
+msgid "Enter font size."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:737, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:817, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:896
+msgid "Enter line height."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:738, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:818, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:897
+msgid "Select heading color."
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:751, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:831, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:910, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:978
+msgid "Alignment"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:754, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:834, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:913, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:981
+msgid "left"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:755, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:835, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:914, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:982
+msgid "center"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:756, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:836, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:915, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:983
+msgid "right"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:757, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:837, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:916
+msgid "justify"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:778, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:789, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:808, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:832
+msgid "Style SubHeader"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:857, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:868, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:887, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:911
+msgid "Style Description"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:937, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:945, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:955, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:965, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:979, wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:994
+msgid "Style Animation"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:944
+msgid "Width"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:946
+msgid "100%"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:954
+msgid "Custom height"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:964
+msgid "Height"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:966
+msgid "100px"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:992
+msgid "Custom CSS class for lottier-box element"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:993
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:1003
+msgid "Lottier"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:1004
+msgid "Lottie animations in just a few clicks without writing a single line of code"
+msgstr ""
+
+#: wp-content/plugins/lottier-wpbakery/src/Merkulove/LottierWpbakery/WPBakery/addons/Lottier/lottier.wpbakery.php:1007
+msgid "Content"
+msgstr ""

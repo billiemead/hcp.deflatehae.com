@@ -1,0 +1,107 @@
+.edgtf-mobile-header {
+
+    .edgtf-mobile-nav {
+        display: none;
+        background-color: #fff;
+        border-bottom: 1px solid $default-border-color;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            //dropdowns
+            ul {
+                display: none;
+                margin-left: 15px;
+
+                li {
+
+                    &.current-menu-ancestor > a,
+                    &.current-menu-item > a {
+                        color: $first-main-color;  
+                    }
+                }
+            }
+        }
+
+        li {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        a, h6 { //h6 is here because of no link option in navigation
+            position: relative;
+            display: block;
+            padding: 9px 0;
+            margin: 0;
+            font-size: 13px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $default-text-color;
+            border-bottom: 1px solid $default-border-color;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+
+        .edgtf-grid > ul {
+
+            > li {
+
+                > a {
+                    font-size: 13px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    color: $default-heading-color;
+                }
+
+                &.edgtf-active-item > a {
+                    color: $first-main-color;
+                }
+
+                &.edgtf-active-item > .mobile_arrow > .edgtf-sub-arrow {
+                    @include edgtfTransform(rotate(90deg));
+                }
+            }
+        }
+
+        .mobile_arrow {
+            $mobile-arrow-height: 45px;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: $mobile-arrow-height;
+            padding-right: 10px;
+            line-height: $mobile-arrow-height;
+            font-size: 15px;
+            text-align: right;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .edgtf-sub-arrow {
+                @include edgtfTransition(transform 0.2s ease-in-out);
+            }
+
+            //@TODO remove this line of code when new headers are enabled
+            .fa-angle-down {
+                display: none; //temporarily
+            }
+        }
+
+        li.edgtf-opened > .mobile_arrow > .edgtf-sub-arrow {
+            @include edgtfTransform(rotate(90deg));
+        }
+
+        & > ul > li:last-child > a,
+        & > .edgtf-grid > ul > li:last-child > a {
+            border-bottom: none;
+        }
+    }
+}

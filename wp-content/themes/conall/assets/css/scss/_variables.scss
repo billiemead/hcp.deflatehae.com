@@ -1,0 +1,51 @@
+$grid-width: 1100px;
+$grid-width-laptop-landscape: 950px;
+$grid-width-ipad-landscape: 768px;
+$grid-width-ipad-portrait: 600px;
+$grid-width-phone-landscape: 420px;
+$grid-width-phone-portrait: 300px;
+$grid-width-smaller-phone-portrait: 95%;
+
+$grid-width-boxed: 1150px;
+$grid-width-laptop-landscape-boxed: 1000px;
+$grid-width-ipad-landscape-boxed: 818px;
+$grid-width-ipad-portrait-boxed: 650px;
+$grid-width-phone-landscape-boxed: 470px;
+$grid-width-phone-portrait-boxed: 350px;
+$grid-width-smaller-phone-portrait-boxed: 96%;
+
+$grid-width-1300: 1300px;
+$grid-width-1200: 1200px;
+$grid-width-1000: 1000px;
+$grid-width-800: 800px;
+
+$first-main-color: #10c9c3;
+$default-heading-color: #333;
+$default-background-color: #fff;
+$default-border-color: #d4d4d4;
+$default-text-color: #8d8d8d;
+$header-light-color: #fff;
+$header-light-hover-color: #10c9c3;
+$header-dark-color: #202020;
+$header-dark-hover-color: #10c9c3;
+
+$default-transition-speed: 0.2s;
+$default-transition-property: ease-in-out;
+
+//responsive breakpoints
+$laptop-landscape-large-plus-pixel: 1441px;
+$laptop-landscape-large: 1440px;
+$laptop-landscape-medium-plus-pixel: 1281px;
+$laptop-landscape-medium: 1280px;
+$laptop-landscape-plus-pixel: 1201px;
+$laptop-landscape: 1200px;
+$ipad-landscape-plus-pixel: 1025px;
+$ipad-landscape: 1024px;
+$ipad-portrait-plus-pixel: 769px;
+$ipad-portrait: 768px;
+$phone-landscape-plus-pixel: 601px;
+$phone-landscape: 600px;
+$phone-portrait-plus-pixel: 481px;
+$phone-portrait: 480px;
+$smaller-phone-portrait-plus-pixel: 321px;
+$smaller-phone-portrait: 320px;

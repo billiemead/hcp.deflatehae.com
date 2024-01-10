@@ -1,0 +1,87 @@
+/* ==========================================================================
+# Call to action responsive style - begin
+========================================================================== */
+
+.edgtf-call-to-action {
+
+    .edgtf-call-to-action-row-75-25 .edgtf-call-to-action-column1 {
+
+        @media only screen and (min-width: $phone-landscape) and (max-width: $laptop-landscape) {
+            width: 65%;
+        }
+
+    }
+
+    .edgtf-call-to-action-row-75-25 .edgtf-call-to-action-column2 {
+
+        @media only screen and (min-width: $phone-landscape) and (max-width: $laptop-landscape) {
+            width: 35%;
+        }
+
+    }
+
+    .edgtf-call-to-action-cell {
+
+        @include ipad-portrait {
+            display: block;
+            text-align: center !important;
+            width: 100% !important;
+            &.edgtf-call-to-action-column2 {
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    .edgtf-text-wrapper .edgtf-call-to-action-icon-holder {
+
+        @include ipad-portrait {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .edgtf-text-wrapper .edgtf-call-to-action-icon {
+
+        @include ipad-portrait {
+            display: inline-block;
+        }
+
+    }
+
+    .edgtf-text-wrapper .edgtf-call-to-action-text {
+
+        @include ipad-portrait {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &.with-icon {
+
+        @include ipad-portrait {
+            padding: 0;
+        }
+
+    }
+
+    &.with-buttons {
+        .edgtf-call-to-action-buttons a {
+            @include ipad-portrait {
+                margin: 8px;
+            }
+        }
+        .edgtf-text-wrapper .edgtf-call-to-action-text {
+            @include ipad-portrait {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Call to action responsive style - end
+========================================================================== */

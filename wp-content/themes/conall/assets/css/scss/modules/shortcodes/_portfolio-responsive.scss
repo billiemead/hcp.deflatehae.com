@@ -1,0 +1,369 @@
+$portfolio_space1: 20%/11 - 0.0001%; // space between articles in pixel (px / grid * 100) - error rounding numbers
+$portfolio_space2: 30%/11 - 0.0001%;
+$portfolio_space3: 58%/11 - 0.0001%;
+
+$portfolio_columns: ('three', 'four', 'five', 'six'); // number of columns
+$portfolio_space: ($portfolio_space1, $portfolio_space2, $portfolio_space3); // all spaces in %, depends on space size
+$portfolio_space_size: ('small', 'normal', 'large'); // space size in string
+
+
+@media only screen and (max-width: $laptop-landscape-large) {
+
+    .edgtf-header-vertical {
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+
+            article {
+                width: 33.33%;
+            }
+            &.edgtf-with-space article {
+                width: 33%;
+                margin: 0 0 2% 0;
+            }
+
+            &.edgtf-with-space .edgtf-gap {
+                width: 33%;
+            }
+        }
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+
+            &.edgtf-ptf-showcase{
+                article {
+                    width: 33.33%;
+                }
+                &.edgtf-with-space article {
+                    width: 31%;
+                    margin: 0 0 3.5%;
+                }
+
+                &.edgtf-with-space .edgtf-gap {
+                    width: 31%;
+                }
+            }
+        }
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-pinterest,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-masonry-with-space {
+
+            &.edgtf-ptf-pinterest-four-columns.edgtf-with-space,
+            &.edgtf-ptf-pinterest-five-columns.edgtf-with-space,
+            &.edgtf-ptf-pinterest-six-columns.edgtf-with-space {
+                article,
+                .edgtf-portfolio-list-pinterest-grid-sizer {
+                    width: 32%;
+                }
+                .edgtf-portfolio-list-pinterest-grid-gutter {
+                    width: 4%;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .edgtf-header-vertical {
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-masonry {
+            .edgtf-portfolio-list-masonry-grid-sizer,
+            article.edgtf-default-masonry-item,
+            article.edgtf-large-height-masonry-item {
+                width: 50%;
+            }
+
+            .edgtf-large-width-masonry-item,
+            .edgtf-large-width-height-masonry-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $laptop-landscape) {
+
+    .edgtf-header-vertical {
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+
+            article {
+                width: 50%;
+            }
+            &.edgtf-with-space article {
+                width: 49%;
+                margin: 0 0 2% 0;
+            }
+
+            &.edgtf-with-space .edgtf-gap {
+                width: 49%;
+            }
+        }
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+
+            &.edgtf-ptf-showcase{
+                article {
+                    width: 50%;
+                }
+                &.edgtf-with-space article {
+                    width: 48%;
+                    margin: 0 0 2%;
+                }
+
+                &.edgtf-with-space .edgtf-gap {
+                    width: 48%;
+                }
+            }
+        }
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-pinterest {
+
+            &.edgtf-ptf-pinterest-four-columns.edgtf-with-space,
+            &.edgtf-ptf-pinterest-five-columns.edgtf-with-space,
+            &.edgtf-ptf-pinterest-six-columns.edgtf-with-space {
+                article,
+                .edgtf-portfolio-list-pinterest-grid-sizer {
+                    width: 48%;
+                }
+                .edgtf-portfolio-list-pinterest-grid-gutter {
+                    width: 4%;
+                }
+            }
+        }
+
+        .edgtf-portfolio-list-holder-outer.edgtf-ptf-masonry-with-space {
+
+            /* Masonry with space grid system - start */
+
+            @for $i from 1 to length($portfolio_columns) { // for each column
+                &.edgtf-ptf-pinterest-#{nth($portfolio_columns,$i+1)}-columns {
+                    @for $j from 0 to length($portfolio_space_size) { // for each space size
+                        &.edgtf-#{nth($portfolio_space_size,$j+1)}-space {
+
+                            .edgtf-portfolio-list-pinterest-grid-sizer,
+                            article {
+                                width: calc((100% -  1 * #{nth($portfolio_space,$j+1)})/2); // 1 * - to parse in float
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: $ipad-landscape) {
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-three-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+        article {
+            width: 49.99%;
+        }
+        &.edgtf-with-space article {
+            width: 49%;
+            margin: 0 0 2% 0;
+        }
+
+        &.edgtf-with-space .edgtf-gap {
+            width: 49%;
+        }
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-three-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+
+        &.edgtf-ptf-showcase{
+            article {
+                width: 50%;
+
+                .edgtf-item-text-holder .edgtf-item-title{
+                    margin-bottom: 8%;
+                }
+
+            }
+            &.edgtf-with-space article {
+                width: 48%;
+                margin: 0 0 2%;
+            }
+
+            &.edgtf-with-space .edgtf-gap {
+                width: 48%;
+            }
+        }
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-masonry {
+        .edgtf-portfolio-list-masonry-grid-sizer,
+        article.edgtf-default-masonry-item,
+        article.edgtf-large-height-masonry-item {
+            width: 50%;
+        }
+
+        .edgtf-large-width-masonry-item,
+        .edgtf-large-width-height-masonry-item {
+            width: 100%;
+        }
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-pinterest{
+
+        &.edgtf-ptf-pinterest-four-columns.edgtf-with-space,
+        &.edgtf-ptf-pinterest-five-columns.edgtf-with-space,
+        &.edgtf-ptf-pinterest-six-columns.edgtf-with-space {
+            article,
+            .edgtf-portfolio-list-pinterest-grid-sizer {
+                width: 48%;
+            }
+            .edgtf-portfolio-list-pinterest-grid-gutter {
+                width: 4%;
+            }
+        }
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-masonry-with-space {
+
+        /* Masonry with space grid system - start */
+
+        @for $i from 1 to length($portfolio_columns) { // for each column
+            &.edgtf-ptf-pinterest-#{nth($portfolio_columns,$i+1)}-columns {
+                @for $j from 0 to length($portfolio_space_size) { // for each space size
+                    &.edgtf-#{nth($portfolio_space_size,$j+1)}-space {
+
+                        .edgtf-portfolio-list-pinterest-grid-sizer,
+                        article {
+                            width: calc((100% -  1 * #{nth($portfolio_space,$j+1)})/2); // 1 * - to parse in float
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /* Masonry with space grid system - end */
+
+    .edgtf-portfolio-filter-holder {
+        .edgtf-portfolio-filter-holder-inner ul {
+            margin-right: 0;
+            width: 100%;
+            li {
+                float: none;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    .edgtf-layout-changer {
+        display: none !important; /* overwrite css and disable edgtf layout changer */
+    }
+}
+
+@media only screen and (max-width: $ipad-portrait) and (min-width: $phone-landscape) {
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-gallery.edgtf-shader {
+        article {
+            
+            .edgtf-item-text-overlay {
+
+                .edgtf-item-text-overlay-inner {
+
+                    .edgtf-item-text-holder {
+                        width: calc(100% - 20px);
+                        padding-left: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $ipad-portrait) {
+    .edgtf-portfolio-list-holder-outer.edgtf-with-space:not(.edgtf-ptf-masonry):not(.edgtf-ptf-pinterest):not(.edgtf-ptf-masonry-with-space):not(.edgtf-portfolio-slider-holder) .edgtf-portfolio-list-holder,
+    .edgtf-portfolio-filter-holder {
+        @include edgtfBoxSizing(border-box);
+        padding: 0 4%;
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-gallery.edgtf-bordered {
+        article {
+            .edgtf-item-text-overlay {
+                @include edgtfBoxSizing(border-box);
+                padding: 10px;
+            }
+        }
+    }
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-gallery.edgtf-shader {
+        .edgtf-item-text-overlay .edgtf-item-text-overlay-inner .edgtf-item-text-holder {
+            padding: 0 0 10px 20px;
+            width: calc(100% - 20px);
+        }
+    }
+
+    .edgtf-portfolio-filter-holder {
+        .edgtf-portfolio-filter-holder-inner ul {
+
+            li {
+                border: 0 !important;
+                
+                span {
+                    padding-left: 0;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $phone-landscape) {
+    .edgtf-portfolio-list-holder-outer article,
+    .edgtf-portfolio-list-holder-outer .edgtf-portfolio-list-masonry-grid-sizer {
+        width: 100% !important; // !important is set to override all other stronger selectors
+    }
+
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-three-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-four-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-five-columns,
+    .edgtf-portfolio-list-holder-outer.edgtf-ptf-six-columns {
+        &.edgtf-with-space {
+            article {
+                margin-bottom: 6%;
+            }
+        }
+    }
+
+    .edgtf-portfolio-filter-holder {
+        .edgtf-portfolio-filter-holder-inner ul {
+            li {
+                width: 45%;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $smaller-phone-portrait) {
+    .edgtf-portfolio-filter-holder {
+        .edgtf-portfolio-filter-holder-inner ul {
+            li {
+                width: 100%;
+            }
+        }
+
+    }
+}

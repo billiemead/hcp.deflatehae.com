@@ -1,0 +1,129 @@
+/* ==========================================================================
+# Gallery Blocks Masonry Shortcodes Responsive Style - begin
+========================================================================== */
+
+@include ipad-landscape {
+
+	.edgtf-gbm-holder {
+
+		&.edgtf-small-space {
+
+			.edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 31.53333333333333%;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 2.7%;
+	        }
+	    }
+
+	    &.edgtf-normal-space,
+	    &.edgtf-large-space {
+
+	        .edgtf-gbm-grid-sizer {
+	            width: 30.66666666666667%;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 4%;
+	        }
+
+	        .edgtf-gbm-item {
+	        	width: 30.66666666666667%;
+	        	margin: 0 0 30px;
+	        }
+	    }
+    }
+
+    .edgtf-content-left-from-sidebar .edgtf-gbm-holder,
+    .edgtf-content-right-from-sidebar .edgtf-gbm-holder {
+
+        .edgtf-gbm-item,
+        .edgtf-gbm-grid-sizer {
+            width: 47%;
+        }
+
+        .edgtf-gbm-grid-gutter {
+            width: 6%;
+        }
+
+        &.edgtf-small-space {
+
+        	.edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 32.13333333333333%;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 1.8%;
+	        }
+	    }
+
+	    &.edgtf-large-space {
+
+	    	.edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 29.86666666666667%;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 5.2%;
+	        }
+	    }
+    }
+}
+
+@include ipad-portrait {
+
+    .edgtf-gbm-holder {
+
+		&.edgtf-small-space {
+
+			.edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 48.3% !important;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 3.2% !important;
+	        }
+	    }
+
+	    &.edgtf-normal-space,
+	    &.edgtf-large-space {
+
+	    	.edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 47.25% !important;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 4.7% !important;
+	        }
+	    }
+    }
+}
+
+@include phone-landscape {
+
+    .edgtf-gbm-holder {
+
+    	&.edgtf-small-space,
+    	&.edgtf-normal-space,
+	    &.edgtf-large-space {
+
+	        .edgtf-gbm-item,
+	        .edgtf-gbm-grid-sizer {
+	            width: 100% !important;
+	        }
+
+	        .edgtf-gbm-grid-gutter {
+	            width: 0% !important;
+	        }
+	    }
+    }
+}
+/* ==========================================================================
+# Gallery Blocks Masonry Shortcodes Responsive Style - end
+========================================================================== */

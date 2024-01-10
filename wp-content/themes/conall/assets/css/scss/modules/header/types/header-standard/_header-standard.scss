@@ -1,0 +1,22 @@
+.edgtf-header-standard {
+
+    .edgtf-menu-area {
+
+        .edgtf-vertical-align-containers {
+
+            .edgtf-position-center-inner {
+                height: 100%;
+            }
+
+            .edgtf-position-right {
+                display: table;
+            }
+
+            .edgtf-position-right-inner {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}

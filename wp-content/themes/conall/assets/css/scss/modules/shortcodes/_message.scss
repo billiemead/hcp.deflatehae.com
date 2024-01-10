@@ -1,0 +1,75 @@
+/* ==========================================================================
+# Message style - begin
+========================================================================== */
+/* Unique style for both types  - begin
+========================================================================== */
+.edgtf-message {
+    position: relative;
+    padding: 14px 30px 14px 40px;
+    margin: 0;
+    background-color: #f9f9f9;
+
+    .edgtf-message-inner {
+        position: relative;
+        padding: 0 20px 0 0;
+
+        .edgtf-message-text {
+            display: table;
+            height: 100%;
+
+            .edgtf-message-text-inner {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                font-size: 15px;
+                font-weight: 500;
+                color: $default-heading-color;
+
+                > * {
+                    margin: 0;
+                }
+            }
+        }
+
+        a.edgtf-close {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            color: $default-heading-color;
+            font-size: 18px;
+            line-height: 1;
+            @include edgtfTransform(translateY(-50%));
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+}
+
+/* Unique style for both types - end
+========================================================================== */
+
+/* Type with icon - begin
+========================================================================== */
+.edgtf-message.edgtf-with-icon {
+
+    .edgtf-message-icon-holder {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        color: $default-heading-color;
+        font-size: 22px;
+        @include edgtfTransform(translateY(-50%));
+    }
+
+    .edgtf-message-inner {
+        padding: 0 20px 0 35px;
+    }
+}
+
+/* Type with icon - end
+========================================================================== 
+/* ==========================================================================
+# Message style - end
+========================================================================== */

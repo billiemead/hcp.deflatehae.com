@@ -1,0 +1,78 @@
+/* ==========================================================================
+# Team Carousels responsive style - begin
+========================================================================== */
+
+@include laptop-landscape-large {
+
+    .edgtf-full-width {
+
+        .edgtf-team-carousel-holder {
+
+            .edgtf-tc-nav {
+
+                > * {
+
+                    &.edgtf-tc-nav-prev {
+                        left: 0;
+                    }
+
+                    &.edgtf-tc-nav-next {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .edgtf-team-carousel-holder .edgtf-tc-nav {
+
+        > * {
+
+            .edgtf-nav-label {
+                font-size: 11px;
+            }
+
+            &.edgtf-tc-nav-prev {
+                left: 20px;
+
+                .edgtf-nav-label {
+                    margin: 0 0 0 5px;
+                }
+            }
+
+            &.edgtf-tc-nav-next {
+                right: 20px;
+
+                .edgtf-nav-label {
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape {
+
+    .edgtf-team-carousel-holder {
+
+        .edgtf-tc-nav {
+            text-align: center;
+            margin: 30px 0 40px;
+
+            > * {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                top: 0;
+                left: auto !important;
+                right: auto !important;
+                margin: 0 15px;
+                @include edgtfTransform(translateY(0));
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Team Carousels responsive style - end
+========================================================================== */

@@ -1,0 +1,114 @@
+/* ==========================================================================
+# Tabs style - begin
+========================================================================== */
+.edgtf-tabs {
+
+    .edgtf-tabs-nav {
+        display: block;
+        position: relative;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        vertical-align: middle;
+        @include edgtfBoxSizing(border-box);
+
+        li {
+            margin: 0;
+
+            a {
+                position: relative;
+                display: block;
+                color: $default-heading-color;
+                padding: 0;
+                font-size: 13px;
+                font-weight: 700;
+                @include edgtfBoxSizing(border-box);
+                @include edgtfTransition(color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out);
+
+                i,
+                span {
+                    @include edgtfTransition(initial);
+                }
+
+                .edgtf-icon-frame {
+                    display: inline-block;
+                    min-width: 20px;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+
+                .edgtf-tab-text-title {
+                    @include edgtfTransition(initial);
+                    vertical-align: middle;
+                }
+            }
+
+            &.ui-state-active a,
+            &.ui-state-hover a {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    .edgtf-tab-container {
+        position: relative;
+        @include edgtfBoxSizing(border-box);
+    }
+}
+
+/* Horizontal tabs styles
+   ========================================================================== */
+.edgtf-tabs.edgtf-horizontal-tab {
+
+    .edgtf-tabs-nav li {
+        float: left;
+
+        &:not(:last-child) {
+            margin: 0 42px 0 0;
+        }
+    }
+
+    &.edgtf-nav-border {
+
+        .edgtf-tabs-nav {
+            padding: 0 0 13px;
+            margin: 0 0 3px;
+            border-bottom: 1px solid $default-border-color;
+        }
+    }
+
+    .edgtf-tab-container {
+        padding: 10px 0;
+    }
+}
+
+/* Vertical tabs styles
+   ========================================================================== */
+.edgtf-tabs.edgtf-vertical-tab {
+
+    .edgtf-tabs-nav {
+        float: left;
+        width: 25%;
+
+        li {
+            position: relative;
+            display: block;
+            width: 100%;
+
+            &:not(:last-child) {
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+
+    .edgtf-tab-container {
+        float: left;
+        width: 75%;
+        padding: 10px 30px;
+    }
+}
+
+/* ==========================================================================
+# Tabs style - end
+========================================================================== */

@@ -1,0 +1,107 @@
+@media only screen and (max-width: $ipad-landscape) {
+
+    .edgtf-blog-list-holder.edgtf-standard {
+
+        &.edgtf-four-columns {
+
+            .edgtf-blog-list > li {
+                width: 50%;
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $ipad-portrait) {
+
+    .edgtf-blog-list-holder.edgtf-masonry {
+
+        .edgtf-blog-list > li,
+        .edgtf-blog-masonry-grid-sizer {
+            width: 48.046875%;
+        }
+
+        .edgtf-blog-masonry-grid-gutter {
+            width: 3.90625%;
+        }
+
+        &.edgtf-small-space {
+
+            .edgtf-blog-list > li,
+            .edgtf-blog-masonry-grid-sizer {
+                width: 48.69791666666667%;
+            }
+
+            .edgtf-blog-masonry-grid-gutter {
+                width: 2.604166666666667%;
+            }
+        }
+
+        &.edgtf-large-space {
+
+            .edgtf-blog-list > li,
+            .edgtf-blog-masonry-grid-sizer {
+                width: 48.046875%;
+            }
+
+            .edgtf-blog-masonry-grid-gutter {
+                width: 3.90625%;
+            }
+        }
+    }
+
+    .edgtf-blog-list-holder.edgtf-standard {
+
+        &.edgtf-large-space {
+
+            .edgtf-blh-inner {
+                margin: 0 -15px;
+            }
+
+            .edgtf-blog-list > li {
+                padding: 0 15px;
+            }
+        }
+
+        &.edgtf-three-columns {
+
+            .edgtf-blog-list > li {
+                width: 50%;
+
+                &:nth-child(3n+1) {
+                    clear: none;
+                }
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $phone-landscape) {
+
+    .edgtf-blog-list-holder.edgtf-masonry {
+
+        .edgtf-blog-list > li,
+        .edgtf-blog-masonry-grid-sizer {
+            width: 100% !important;
+        }
+
+        .edgtf-blog-masonry-grid-gutter {
+            width: 0% !important;
+        }
+    }
+
+    .edgtf-blog-list-holder.edgtf-standard {
+
+        .edgtf-blog-list > li {
+            width: 100% !important;
+            float: none;
+        }
+    }
+}

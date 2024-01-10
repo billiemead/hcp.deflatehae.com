@@ -1,0 +1,17 @@
+.edgtf-nwt {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-nwt-number-holder {
+        display: block;
+        margin: 0 0 32px;
+
+        .edgtf-nwt-number {
+            font-size: 60px;
+            font-weight: 300;
+        }
+    }
+
+    .edgtf-nwt-title-holder > * {
+        margin: 0 0 15px;
+    }
+}

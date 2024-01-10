@@ -1,0 +1,32 @@
+/* ==========================================================================
+# Icon List Item style - begin
+========================================================================== */
+.edgtf-icon-list-item {
+    display: table;
+    table-layout: fixed;
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 7px;
+
+    .edgtf-icon-list-icon-holder {
+        display: table-cell;
+        vertical-align: middle;
+        width: 30px;
+    }
+    .edgtf-icon-list-icon-holder-inner i,
+    .edgtf-icon-list-icon-holder-inner .font_elegant {
+        display: block;
+        color: $first-main-color;
+        font-size: 15px;
+        text-align: center;
+    }
+    .edgtf-icon-list-text {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+    }
+}
+/* ==========================================================================
+# Icon List Item style - end
+========================================================================== */

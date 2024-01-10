@@ -1,0 +1,104 @@
+/* ==========================================================================
+# Gallery Blocks Masonry Shortcodes Style - begin
+========================================================================== */
+
+.edgtf-gbm-holder {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-gbm-inner {
+        @include edgtfRelativeHolderLayout();
+        transition: none !important;
+        overflow: visible !important;
+        opacity: 0;
+        clear: both;
+    }
+
+    .edgtf-gbm-grid-sizer {
+        width: 31.6%;
+    }
+
+    .edgtf-gbm-grid-gutter {
+        width: 2.6%;
+    }
+
+    .edgtf-gbm-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 31.6%;
+        padding: 0;
+        margin: 0 0 30px;
+        z-index: 100;
+        @include edgtfBoxSizing(border-box);
+
+        .edgtf-gbm-item-inner {
+            @include edgtfRelativeHolderLayout();
+            @include edgtfBoxSizing(border-box);
+        }
+
+        &.edgtf-text-block {
+
+            .edgtf-gbm-item-inner {
+                padding: 8% 12%;
+                background-color: #f7f7f7;
+            }
+        }
+
+        .edgtf-gbm-image {
+            @include edgtfRelativeHolderLayout();
+
+            a, img {
+                display: block;
+            }
+        }
+
+        .edgtf-gbm-title {
+            margin: 0 0 30px;
+        }
+
+        .edgtf-gb-text,
+        .edgtf-gb-text-image {
+            display: block;
+        }
+
+        .edgtf-btn {
+            margin: 33px 0 0;
+            line-height: 1em;
+        }
+    }
+
+    &.edgtf-small-space {
+
+        .edgtf-gbm-grid-sizer {
+            width: 32.13333333333333%;
+        }
+
+        .edgtf-gbm-grid-gutter {
+            width: 1.8%;
+        }
+
+        .edgtf-gbm-item {
+            width: 32.13333333333333%;
+            margin: 0 0 20px;
+        }
+    }
+
+    &.edgtf-large-space {
+
+        .edgtf-gbm-grid-sizer {
+            width: 29.86666666666667%;
+        }
+
+        .edgtf-gbm-grid-gutter {
+            width: 5.2%;
+        }
+
+        .edgtf-gbm-item {
+            width: 29.86666666666667%;
+            margin: 0 0 58px;
+        }
+    }
+}
+/* ==========================================================================
+# Gallery Blocks Masonry Shortcodes Style - end
+========================================================================== */

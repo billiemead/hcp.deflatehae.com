@@ -1,0 +1,229 @@
+/* ==========================================================================
+# Pricing table style - begin
+========================================================================== */
+
+.edgtf-pricing-tables {
+    @include edgtfRelativeHolderLayout();
+    clear: both;
+
+    .edgtf-pricing-tables-inner {
+        position: relative;
+    }
+
+    &.edgtf-small-space {
+
+        .edgtf-pricing-tables-inner {
+            margin: 0 -10px;
+        }
+
+        .edgtf-price-table {
+            padding: 0 10px;
+        }
+    }
+
+    &.edgtf-normal-space {
+
+        .edgtf-pricing-tables-inner {
+            margin: 0 -15px;
+        }
+
+        .edgtf-price-table {
+            padding: 0 15px;
+        }
+    }
+
+    &.edgtf-big-space {
+
+        .edgtf-pricing-tables-inner {
+            margin: 0 -29px;
+        }
+
+        .edgtf-price-table {
+            padding: 0 29px;
+        }
+    }
+
+    &.edgtf-two-columns .edgtf-price-table {
+        width: 50%;
+    }
+
+    &.edgtf-three-columns .edgtf-price-table {
+        width: 33.33%;
+    }
+
+    &.edgtf-four-columns .edgtf-price-table {
+        width: 25%;
+    }
+}
+
+.edgtf-price-table {
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+    @include edgtfBoxSizing(border-box);
+
+    .edgtf-price-table-inner {
+        @include edgtfRelativeHolderLayout();
+        background-color: #f7f7f7;
+
+        ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 17px 35px;
+                text-align: center;
+
+                &.edgtf-table-title {
+                    position: relative;
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 1.444444444444444em;
+                    font-weight: 800;
+                    letter-spacing: 1px;
+                    background-color: $default-heading-color;
+                    padding: 25px 35px;
+                    @include edgtfBoxSizing(border-box);
+
+                    .edgtf-title-content {
+                        display: block;
+                    }
+                }
+
+                &.edgtf-table-prices {
+                    position: relative;
+                    padding: 27px 0 25px;
+                    margin: 0 35px;
+                    border-bottom: 1px solid $default-border-color;
+                    
+                    .edgtf-price-in-table {
+                        position: relative;
+                        z-index: 90;
+                        text-align: center;
+                    }
+
+                    .edgtf-value {
+                        position: relative;
+                        vertical-align:super;
+                        bottom: -3px;
+                        font-size: 20px;
+                        line-height: 1em;
+                        font-weight: 300;
+                        color: $default-text-color;
+                    }
+
+                    .edgtf-price {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 60px;
+                        line-height: 1em;
+                        font-weight: 300;
+                        color: $default-heading-color;
+                        padding: 0 3px;
+                    }
+
+                    .edgtf-mark {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        bottom: 9px;
+                        font-size: 14px;
+                        line-height: 1em;
+                        color: $default-text-color;
+                    }
+                }
+
+                &.edgtf-table-content {
+                    padding: 0;
+
+                    ul {
+                        padding: 23px 0;
+
+                        li {
+
+                            &:last-child{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                &.edgtf-price-button {
+                    padding: 2px 35px 50px;
+                }
+            }
+        }
+    }
+
+    &.edgtf-title-in-price {
+
+        .edgtf-price-table-inner {
+            background-color: #fff;
+
+            ul {
+
+                li {
+
+                    &.edgtf-table-prices {
+                        padding: 45px 0 30px;
+
+                        .edgtf-price-in-table {
+                            display: table;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .edgtf-price-value,
+                        .edgtf-title-mark {
+                            display: table-cell;
+                            vertical-align: top;
+                        }
+
+                        .edgtf-price-value {
+                            text-align: right;
+                            padding: 0 12px 0 0;
+                        }
+
+                        .edgtf-title-mark {
+                            text-align: left;
+                            padding: 2px 0 0 12px;
+                        }
+
+                        .edgtf-value {
+                            bottom: -4px;
+                        }
+
+                        .edgtf-price {
+                            font-size: 45px;
+                            line-height: 36px;
+                            font-weight: 800;
+                        }
+
+                        .edgtf-title-content {
+                            display: block;
+                            margin: 0 0 3px;
+                            font-size: 15px;
+                            line-height: 1.444444444444444em;
+                            font-weight: 800;
+                            letter-spacing: 1px;
+                            color: $default-heading-color;
+                        }
+
+                        .edgtf-mark {
+                            display: block;
+                            bottom: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+# Pricing table style - end
+========================================================================== */

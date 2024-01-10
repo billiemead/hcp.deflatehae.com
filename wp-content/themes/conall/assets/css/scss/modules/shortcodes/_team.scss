@@ -1,0 +1,196 @@
+/* ==========================================================================
+# Team style - begin
+========================================================================== */
+
+.edgtf-team-holder {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-team-image {
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+        overflow: hidden;
+
+        img {
+            display: block;
+        }
+    }
+
+    .edgtf-team-social-holder {
+
+        a {
+            color: $first-main-color;
+            font-size: 14px;
+            line-height: 1;
+            margin: 0 9px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .edgtf-team-info {
+        text-align: center;
+    }
+
+    .edgtf-team-name {
+        margin: 0;
+    }
+
+    .edgtf-team-position {
+        margin: 5px 0 0;
+        line-height: 1.2em;
+    }
+
+    &.main-info-on-hover {
+
+        .edgtf-team-image {
+
+            &:hover {
+
+                .edgtf-team-info {
+                    opacity: 1;
+                }
+
+                .edgtf-team-info-holder {
+                    opacity: 1;
+                    @include edgtfTransition(.2s ease-in-out .15s);
+                }
+
+                .edgtf-team-name {
+                    top: 0;
+                    opacity: 1;
+                    @include edgtfTransition(top .3s ease .1s, opacity .2s ease);
+                }
+                .edgtf-team-position {
+                    top: 0;
+                    opacity: 1;
+                    @include edgtfTransition(top .25s ease .25s, opacity .3s ease .3s);
+                }
+                .edgtf-team-social-inner {
+                    top: 0;
+                    opacity: 1;
+                    @include edgtfTransition(top .25s ease .25s, opacity .3s ease .3s);
+                }
+
+            }
+        }
+
+        .edgtf-team-info {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px 15px 50px;
+            background-color: rgba(41, 41, 41, 0.8);
+            opacity: 0;
+            @include edgtfBoxSizing(border-box);
+            @include edgtfTransition(opacity .2s ease-in-out);
+        }
+
+        .edgtf-team-info-holder {
+            position: relative;
+            display: table;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0;
+            @include edgtfTransition(opacity .2s ease-out);
+        }
+
+        .edgtf-team-info-inner {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .edgtf-team-name {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            @include edgtfTransition(top .2s ease-in-out, opacity .2s ease);
+        }
+
+        .edgtf-team-position {
+            position: relative;
+            top: 30px;
+            opacity: 0;
+            @include edgtfTransition(top .2s ease-in-out, opacity .2s ease);
+        }
+
+        .edgtf-team-social-inner {
+            cursor: default;
+            margin-top: 10px;
+            position: relative;
+            top: 80px;
+            opacity: 0;
+            @include edgtfTransition(top .2s ease-in-out, opacity .2s ease);
+        }
+
+        .edgtf-team-name,
+        .edgtf-team-position {
+            color: #fff;
+        }
+    }
+
+    &.main-info-below-image {
+
+        .edgtf-team-info {
+            @include edgtfRelativeHolderLayout();
+            margin: 35px 0 0;
+
+            .edgtf-team-position {
+                margin: 10px 0 0;
+            }
+        }
+
+        .edgtf-team-social-holder {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 45px;
+            text-align: center;
+            background-color: rgba($default-heading-color, 0.8);
+            @include edgtfTransition(opacity .3s ease);
+
+            .edgtf-team-social-inner-holder {
+                @include edgtfTableLayout();
+            }
+
+            .edgtf-team-social-inner {
+                @include edgtfTableCellLayout();
+                top: 30px;
+                opacity: 0;
+                @include edgtfTransition(top .2s ease-in-out, opacity .2s ease);
+            }
+        }
+
+        &:hover {
+            .edgtf-team-social-holder {
+                opacity: 1;
+                .edgtf-team-social-inner {
+                    top: 0;
+                    opacity: 1;
+                    @include edgtfTransition(top .25s ease .25s, opacity .3s ease .3s);
+                }
+            }
+        }
+    }
+}
+
+.touch .edgtf-team-holder .edgtf-team-image {
+    cursor: pointer;
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */

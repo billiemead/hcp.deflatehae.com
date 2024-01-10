@@ -1,0 +1,121 @@
+/* ==========================================================================
+# Carousels style - begin
+========================================================================== */
+
+.edgtf-carousel-holder {
+    visibility: hidden;
+    opacity: 0; //add opacity via JS
+
+    &.edgtf-appeared {
+        @include edgtfTransition(opacity .4s ease);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .edgtf-carousel-item-holder {
+        position: relative;
+
+        /* Image zoom - begin
+        ========================================================================== */
+
+        .edgtf-carousel-first-image-holder.edgtf-image-zoom img {
+            @include edgtfTransition(transform 0.15s ease-out);
+            -webkit-backface-visibility: hidden;
+        }
+
+        .edgtf-carousel-first-image-holder.edgtf-image-zoom:hover img {
+            @include edgtfTransform(scale(1.1));
+        }
+
+        /* Image zoom - end
+        ========================================================================== */
+
+        /* Image change on hover - begin
+        ========================================================================== */
+
+        .edgtf-carousel-first-image-holder.edgtf-image-change {
+            position: relative;
+            display: block;
+            opacity: 1;
+            z-index: 5;
+            @include edgtfTransition(opacity 0.15s ease-out);
+        }
+
+        .edgtf-carousel-second-image-holder {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            @include edgtfTransition(opacity 0.15s ease-out);
+        }
+
+        &:hover .edgtf-carousel-second-image-holder.edgtf-image-change {
+            opacity: 1;
+        }
+
+        &:hover .edgtf-carousel-first-image-holder.edgtf-image-change {
+            opacity: 0;
+        }
+
+        /* Image change on hover - end
+        ========================================================================== */
+
+    }
+
+    /* Carousel navigation - begin
+    ========================================================================== */
+
+    .edgtf-carousel.owl-carousel {
+
+        .owl-controls {
+            text-align: center;
+
+            .owl-dots {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 15px 0;
+
+                .owl-dot {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    float: left;
+                    cursor: pointer;
+
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 12px;
+                        height: 12px;
+                        margin: 7px;
+                        border-radius: 4em;
+                        background-color: $default-heading-color;
+                        -webkit-transition: -webkit-transform .2s ease;
+                        -moz-transition: -moz-transform .2s ease;
+                        -ms-transition: -ms-transform .2s ease;
+                        transition: transform .2s ease;
+                        @include edgtfTransform(scale(.5));
+                    }
+
+                    &.active span {
+                        @include edgtfTransform(scale(1));
+                    }
+                }
+            }
+        }
+
+        .owl-item img {
+            margin: auto;
+        }
+    }
+
+    /* Carousel navigation - end
+    ========================================================================== */
+}
+
+/* ==========================================================================
+# Carousels style - end
+========================================================================== */

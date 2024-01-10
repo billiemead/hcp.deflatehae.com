@@ -1,0 +1,179 @@
+/* ==========================================================================
+# Pie Chart Basic - begin
+========================================================================== */
+
+.edgtf-pie-chart-holder {
+    position: relative;
+    display: block;
+
+    .edgtf-percentage {
+        position: relative;
+        display: block;
+        height: 192px;
+        width: 192px;
+        line-height: 192px;
+        text-align: center;
+        margin: 0 auto;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        @include edgtfTransition(opacity $default-transition-speed ease-out);
+    }
+
+    .edgtf-percentage canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .edgtf-to-counter {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        .edgtf-to-counter-inner {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 1em;
+            color: $default-heading-color;
+
+            &:after {
+                position: relative;
+                top: -17px;
+                right: -7px;
+                content: "%";
+                font-size: 20px;
+                line-height: 1em;
+                font-weight: 300;
+            }
+        }
+
+        .edgtf-to-counter-icon {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            height: 72px;
+            line-height: 72px;
+            width: 72px;
+            font-size: 40px;
+            color: #fff;
+            background-color: $default-heading-color;
+            border-radius: 4em;
+
+            > * {
+                display: block;
+                line-height: inherit;
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+        }
+    }
+
+    .edgtf-pie-chart-text {
+        text-align: center;
+        margin: 48px 0 0;
+
+        .edgtf-pie-title {
+            margin: 0 0 14px;
+        }
+    }
+
+    &.edgtf-pv-style-circle {
+
+        .edgtf-to-counter {
+
+            .edgtf-to-counter-inner {
+                height: 72px;
+                line-height: 72px;
+                width: 72px;
+                font-size: 20px;
+                font-weight: 300;
+                color: #fff;
+                background-color: $default-heading-color;
+                border-radius: 4em;
+
+                &:after {
+                    top: auto;
+                    right: auto;
+                }
+            }
+        }
+    }
+
+    &.edgtf-pc-skin-light{
+        .edgtf-pie-title,
+        .edgtf-to-counter .edgtf-to-counter-inner,
+        .edgtf-to-counter .edgtf-to-counter-icon {
+            color:#fff;
+        }
+    }
+
+    &.edgtf-pv-style-circle.edgtf-pc-skin-light {
+
+        .edgtf-to-counter {
+
+            .edgtf-to-counter-inner {
+                color: $default-heading-color;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .edgtf-pie-chart-holder {
+
+        .edgtf-percentage {
+            width: 140px !important;
+            height: 140px !important;
+            line-height: 140px !important;
+
+            canvas {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+
+        .edgtf-to-counter {
+
+            .edgtf-to-counter-inner {
+                font-size: 35px;
+
+                &:after {
+                    top: -9px;
+                    font-size: 18px;
+                }
+            }
+
+            .edgtf-to-counter-icon {
+                height: 60px;
+                line-height: 60px;
+                width: 60px;
+                font-size: 30px;
+            }
+        }
+
+        &.edgtf-pv-style-circle {
+
+            .edgtf-to-counter {
+
+                .edgtf-to-counter-inner {
+                    height: 60px;
+                    line-height: 60px;
+                    width: 60px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Pie Chart Basic - end
+========================================================================== */

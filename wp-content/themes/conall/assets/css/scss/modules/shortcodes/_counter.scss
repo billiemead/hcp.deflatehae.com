@@ -1,0 +1,51 @@
+/* ==========================================================================
+# Counter style - begin
+========================================================================== */
+
+.edgtf-counter-holder {
+    display: block;
+    opacity: 0;
+    @include edgtfTransition(opacity 0.3s ease-in);
+    padding: 20px 0;
+
+    .edgtf-counter {
+        font-size: 34px;
+        line-height: 1em;
+        font-weight: 700;
+        color: $first-main-color;
+        overflow: hidden;
+        display: inline-block !important;
+        height: 1em;
+    }
+
+    .edgtf-counter-title {
+        margin: 2px 0 10px;
+    }
+
+    .edgtf-counter-text {
+        margin: 5px 0 0 0;
+        color: #74797b;
+    }
+
+}
+
+.edgtf-counter-holder-show {
+    opacity: 1;
+}
+
+.edgtf-counter-holder.left {
+    text-align: left;
+}
+
+.edgtf-counter-holder.right {
+    text-align: right;
+}
+
+.edgtf-counter-holder.center {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==========================================================================
+# Counter style - end
+========================================================================== */

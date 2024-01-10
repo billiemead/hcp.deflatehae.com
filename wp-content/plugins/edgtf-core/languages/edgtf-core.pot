@@ -1,0 +1,887 @@
+# Copyright (C) 2021 Edge Themes
+# This file is distributed under the same license as the Edge CPT plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Edge CPT 1.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/edgtf-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-20T16:31:07+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: edgtf-core\n"
+
+#. Plugin Name of the plugin
+msgid "Edge CPT"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds all post types needed by our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Edge Themes"
+msgstr ""
+
+#: helpers.php:193
+#: post-types/slider/shortcodes/slider.php:836
+#: post-types/slider/shortcodes/slider.php:868
+#: post-types/testimonials/shortcodes/testimonials.php:267
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: import/class.wordpress-importer.php:143
+#: import/class.wordpress-importer.php:194
+#: import/class.wordpress-importer.php:198
+#: import/class.wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: import/class.wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: import/class.wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: import/class.wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: import/class.wordpress-importer.php:199
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: import/class.wordpress-importer.php:215
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: import/class.wordpress-importer.php:240
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: import/class.wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: import/class.wordpress-importer.php:267
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: import/class.wordpress-importer.php:269
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: import/class.wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: import/class.wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: import/class.wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: import/class.wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: import/class.wordpress-importer.php:374
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: import/class.wordpress-importer.php:426
+msgid "Failed to import category %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:470
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:520
+#: import/class.wordpress-importer.php:744
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:610
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:647
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: import/class.wordpress-importer.php:709
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: import/class.wordpress-importer.php:875
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: import/class.wordpress-importer.php:882
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:945
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: import/class.wordpress-importer.php:958
+msgid "Invalid file type"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1002
+msgid "Remote server did not respond"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1008
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1015
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1020
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1026
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1127
+msgid "Import WordPress"
+msgstr ""
+
+#: import/class.wordpress-importer.php:1134
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr ""
+
+#: import/class.wordpress-importer.php:1149
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: import/class.wordpress-importer.php:1150
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: import/edgt-import.php:29
+msgid "An Error Occurred During Import"
+msgstr ""
+
+#: import/edgt-import.php:32
+msgid "Content imported successfully"
+msgstr ""
+
+#: import/edgt-import.php:44
+msgid "Widgets imported successfully"
+msgstr ""
+
+#: import/edgt-import.php:63
+msgid "Custom sidebars imported successfully"
+msgstr ""
+
+#: import/edgt-import.php:69
+msgid "Options imported successfully"
+msgstr ""
+
+#: import/edgt-import.php:121
+msgid "Edge Options - Import"
+msgstr ""
+
+#: import/edgt-import.php:122
+msgid "Import"
+msgstr ""
+
+#: import/parsers.php:42
+#: import/parsers.php:78
+#: import/parsers.php:86
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: import/parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: import/parsers.php:90
+#: import/parsers.php:95
+#: import/parsers.php:285
+#: import/parsers.php:474
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:56
+#: post-types/carousels/carousel-register.php:57
+msgid "Edge Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:58
+msgid "Carousel Items"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:59
+#: post-types/carousels/carousel-register.php:62
+msgid "Add New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:60
+msgid "Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:61
+msgid "New Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:63
+msgid "Edit Carousel Item"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:85
+msgid "Search Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:86
+msgid "All Carousels"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:87
+msgid "Parent Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:88
+msgid "Parent Carousel:"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:89
+msgid "Edit Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:90
+msgid "Update Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:91
+msgid "Add New Carousel"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:92
+msgid "New Carousel Name"
+msgstr ""
+
+#: post-types/carousels/carousel-register.php:93
+msgid "Carousels"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:81
+msgid "Portfolio"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:82
+msgid "Portfolio Item"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:83
+msgid "New Portfolio Item"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:84
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:85
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:103
+#: post-types/portfolio/portfolio-register.php:113
+msgid "Portfolio Categories"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:104
+msgid "Portfolio Category"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:105
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:106
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:107
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:108
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:109
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:110
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:111
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:112
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:130
+#: post-types/portfolio/portfolio-register.php:140
+msgid "Portfolio Tags"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:131
+msgid "Portfolio Tag"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:132
+msgid "Search Portfolio Tags"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:133
+msgid "All Portfolio Tags"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:134
+msgid "Parent Portfolio Tag"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:135
+msgid "Parent Portfolio Tags:"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:136
+msgid "Edit Portfolio Tag"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:137
+msgid "Update Portfolio Tag"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:138
+msgid "Add New Portfolio Tag"
+msgstr ""
+
+#: post-types/portfolio/portfolio-register.php:139
+msgid "New Portfolio Tag Name"
+msgstr ""
+
+#: post-types/portfolio/shortcodes/templates/portfolio-filter.php:8
+#: post-types/portfolio/shortcodes/templates/portfolio-filter.php:10
+msgid "Show All"
+msgstr ""
+
+#: post-types/slider/shortcodes/slider.php:809
+msgid "Sorry, no slides matched your criteria."
+msgstr ""
+
+#: post-types/slider/slider-register.php:53
+#: post-types/slider/slider-register.php:54
+msgid "Edge Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:55
+msgid "Slides"
+msgstr ""
+
+#: post-types/slider/slider-register.php:56
+#: post-types/slider/slider-register.php:59
+msgid "Add New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:57
+msgid "Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:58
+msgid "New Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:60
+msgid "Edit Slide"
+msgstr ""
+
+#: post-types/slider/slider-register.php:80
+#: post-types/slider/slider-register.php:90
+msgid "Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:81
+msgid "Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:82
+msgid "Search Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:83
+msgid "All Sliders"
+msgstr ""
+
+#: post-types/slider/slider-register.php:84
+msgid "Parent Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:85
+msgid "Parent Slider:"
+msgstr ""
+
+#: post-types/slider/slider-register.php:86
+msgid "Edit Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:87
+msgid "Update Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:88
+msgid "Add New Slider"
+msgstr ""
+
+#: post-types/slider/slider-register.php:89
+msgid "New Slider Name"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:10
+msgid "Slider shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:14
+msgid "Use this shortcode to insert it on page"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:19
+msgid "Anchor"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:27
+msgid "Effect on header (dark/light style)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:38
+msgid "Show prev/next thumbs (except for side menu or passepartout)"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:50
+msgid "Show navigation thumbs"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:62
+msgid "Insert Passepartout in % "
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:71
+msgid "Show slide number"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:83
+msgid "Parallax effect"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:94
+msgid "Auto start"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:105
+msgid "Slides Animation"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:120
+msgid "Time between slide transitions in milliseconds"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:128
+msgid "Slider height in px"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:136
+msgid "Responsive height"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:147
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:158
+msgid "Show Navigation Bullets"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:194
+msgid "Name"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:195
+msgid "Shortcode"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:196
+msgid "Slug"
+msgstr ""
+
+#: post-types/slider/tax-custom-fields.php:197
+msgid "Posts"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:54
+msgid "Testimonials"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:55
+msgid "Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:56
+msgid "New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:57
+msgid "Add New Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:58
+msgid "Edit Testimonial"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:80
+msgid "Search Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:81
+msgid "All Testimonials Categories"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:82
+msgid "Parent Testimonial Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:83
+msgid "Parent Testimonial Category:"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:84
+msgid "Edit Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:85
+msgid "Update Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:86
+msgid "Add New Testimonials Category"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:87
+msgid "New Testimonials Category Name"
+msgstr ""
+
+#: post-types/testimonials/testimonials-register.php:88
+msgid "Testimonials Categories"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:25
+msgid "Edge Accordion Tab"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:36
+msgid "Title"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:39
+msgid "Section"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:40
+msgid "Enter accordion section title."
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:44
+msgid "Section ID"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:46
+msgid "Enter optional row ID. Make sure it is unique, and it is valid as w3c specification: %s (Must not have spaces)"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:46
+msgid "link"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:66
+msgid "Number"
+msgstr ""
+
+#: shortcodes/accordions/accordion-tab.php:70
+msgid "Notes: This option is only available for type \"With Number\""
+msgstr ""
+
+#: shortcodes/accordions/accordion.php:26
+msgid "Edge Accordion"
+msgstr ""
+
+#: shortcodes/accordions/accordion.php:37
+msgid "Extra class name"
+msgstr ""
+
+#: shortcodes/accordions/accordion.php:39
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
+msgstr ""
+
+#: shortcodes/animation-holder/animation-holder.php:26
+msgid "Edge Animation Holder"
+msgstr ""
+
+#: shortcodes/blog-list/blog-list.php:27
+msgid "Edge Blog List"
+msgstr ""
+
+#: shortcodes/blog-list/templates/blog-list-holder.php:19
+#: shortcodes/blog-slider/templates/blog-slider-holder.php:12
+#: shortcodes/product-list/templates/product-list-template.php:44
+msgid "No posts were found."
+msgstr ""
+
+#: shortcodes/blog-slider/blog-slider.php:27
+msgid "Edge Blog Slider"
+msgstr ""
+
+#: shortcodes/button/button.php:39
+msgid "Edge Button"
+msgstr ""
+
+#: shortcodes/button/button.php:170
+msgid "Insert margin in format: 0px 0px 1px 0px"
+msgstr ""
+
+#: shortcodes/button/button.php:178
+msgid "Insert padding in format: 10px 20px 10px 20px"
+msgstr ""
+
+#: shortcodes/calltoaction/call-to-action-slider.php:19
+msgid "Edge Call To Action Slider"
+msgstr ""
+
+#: shortcodes/calltoaction/call-to-action.php:123
+msgid "Edge Call To Action"
+msgstr ""
+
+#: shortcodes/countdown/countdown.php:38
+msgid "Edge Countdown"
+msgstr ""
+
+#: shortcodes/counter/counter.php:37
+msgid "Edge Counter"
+msgstr ""
+
+#: shortcodes/customfont/custom-font.php:37
+msgid "Edge Custom Font"
+msgstr ""
+
+#: shortcodes/elements-holder/elements-holder-item.php:21
+msgid "Edge Elements Holder Item"
+msgstr ""
+
+#: shortcodes/elements-holder/elements-holder.php:18
+msgid "Edge Elements Holder"
+msgstr ""
+
+#: shortcodes/gallery-blocks-masonry/gallery-block-item.php:24
+msgid "Edge Gallery Blocks Masonry Item"
+msgstr ""
+
+#: shortcodes/gallery-blocks-masonry/gallery-block.php:26
+msgid "Edge Gallery Blocks Masonry"
+msgstr ""
+
+#: shortcodes/gallery-blocks-two/gallery-block.php:26
+msgid "Edge Gallery Blocks 2"
+msgstr ""
+
+#: shortcodes/gallery-blocks/gallery-block-left-item.php:24
+msgid "Edge Gallery Blocks Left Item"
+msgstr ""
+
+#: shortcodes/gallery-blocks/gallery-block-right-item.php:24
+msgid "Edge Gallery Blocks Right Item"
+msgstr ""
+
+#: shortcodes/gallery-blocks/gallery-block.php:26
+msgid "Edge Gallery Blocks"
+msgstr ""
+
+#: shortcodes/google-map/google-map.php:21
+msgid "Edge Google Map"
+msgstr ""
+
+#: shortcodes/icon-list-item/icon-list-item.php:34
+msgid "Edge Icon List Item"
+msgstr ""
+
+#: shortcodes/icon-with-text/icon-with-text.php:37
+msgid "Edge Icon With Text"
+msgstr ""
+
+#: shortcodes/icon/icon.php:36
+msgid "Edge Icon"
+msgstr ""
+
+#: shortcodes/icon/icon.php:81
+msgid "Please insert border radius(Rounded corners) in px. For example: 4 "
+msgstr ""
+
+#: shortcodes/image-with-text/image-with-text.php:35
+msgid "Edge Image With Text"
+msgstr ""
+
+#: shortcodes/imagegallery/image-gallery.php:35
+msgid "Edge Image Gallery"
+msgstr ""
+
+#: shortcodes/message/message.php:28
+msgid "Edge Message"
+msgstr ""
+
+#: shortcodes/number-with-text/number-with-text.php:37
+msgid "Edge Number With Text"
+msgstr ""
+
+#: shortcodes/ordered-list/ordered-list.php:18
+msgid "Edge List - Ordered"
+msgstr ""
+
+#: shortcodes/parallax-sections/parallax-section.php:21
+msgid "Edge Parallax Section"
+msgstr ""
+
+#: shortcodes/parallax-sections/parallax-sections.php:18
+msgid "Edge Parallax Section Holder"
+msgstr ""
+
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:8
+msgid "parallax hero image"
+msgstr ""
+
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:13
+msgid "parallax heading image"
+msgstr ""
+
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:29
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:34
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:39
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:44
+#: shortcodes/parallax-sections/templates/parallax-section-advanced.php:49
+msgid "parallax additional image"
+msgstr ""
+
+#: shortcodes/parallax-sections/templates/parallax-section-basic.php:15
+#: shortcodes/parallax-sections/templates/parallax-section-template.php:14
+msgid "parallax main image"
+msgstr ""
+
+#: shortcodes/parallax-sections/templates/parallax-section-basic.php:23
+#: shortcodes/parallax-sections/templates/parallax-section-template.php:20
+msgid "parallax side image"
+msgstr ""
+
+#: shortcodes/piecharts/piechartbasic/pie-chart-basic.php:37
+msgid "Edge Pie Chart"
+msgstr ""
+
+#: shortcodes/pricing-table/pricing-table.php:18
+msgid "Edge Pricing Table"
+msgstr ""
+
+#: shortcodes/pricing-table/pricing-tables.php:19
+msgid "Edge Pricing Tables"
+msgstr ""
+
+#: shortcodes/product-list/product-list.php:27
+msgid "Edge Product List"
+msgstr ""
+
+#: shortcodes/product-list/templates/product-list-template.php:19
+msgid "SALE"
+msgstr ""
+
+#: shortcodes/progress-bar/progress-bar.php:20
+msgid "Edge Progress Bar"
+msgstr ""
+
+#: shortcodes/section-title/section-title.php:28
+msgid "Edge Section Title"
+msgstr ""
+
+#: shortcodes/separator/separator.php:23
+msgid "Edge Separator"
+msgstr ""
+
+#: shortcodes/socialshare/social-share.php:42
+msgid "Edge Social Share"
+msgstr ""
+
+#: shortcodes/socialshare/templates/dropdown.php:4
+msgid "Share"
+msgstr ""
+
+#: shortcodes/tabs/tab.php:28
+msgid "Edge Tab"
+msgstr ""
+
+#: shortcodes/tabs/tabs.php:28
+msgid "Edge Tabs"
+msgstr ""
+
+#: shortcodes/team-carousels/team-carousel.php:71
+msgid "Edge Team Carousel"
+msgstr ""
+
+#: shortcodes/team-carousels/team-carousels.php:36
+msgid "Edge Team Carousels"
+msgstr ""
+
+#: shortcodes/team/team.php:71
+msgid "Edge Team"
+msgstr ""
+
+#: shortcodes/unordered-list/unordered-list.php:30
+msgid "Edge List - Unordered"
+msgstr ""
+
+#: shortcodes/video/video.php:37
+msgid "Edge Video"
+msgstr ""
+
+#: widgets/widget-class.php:75
+msgid "There are no options for this widget."
+msgstr ""

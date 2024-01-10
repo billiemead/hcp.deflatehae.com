@@ -1,0 +1,56 @@
+/* ==========================================================================
+#Sticky Nav header styles - start
+========================================================================== */
+.edgtf-sticky-header {
+
+    .edgtf-sticky-has-shadow & {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    }
+
+    body[class*='edgtf-sticky'] & .edgtf-search-opener .edgtf-search-opener-wrapper {
+        top: 0;
+        @include edgtfTransform(none);
+    }
+
+    .edgtf-vertical-align-containers {
+
+        .edgtf-position-center {
+
+            .edgtf-position-center-inner {
+                height: 100%;
+            }
+        }
+    }
+
+    .edgtf-main-menu {
+
+        > ul {
+
+            > li {
+
+                > a {
+                    color: #fff;
+
+                    > span.item_outer {
+                        padding: 0 22px;
+                    }
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+
+                &.edgtf-active-item > a {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+
+    .edgtf-drop-down .wide .second .inner {
+        padding: 0;
+    }
+}
+/* ==========================================================================
+#Sticky Nav header styles - end
+========================================================================== */

@@ -1,0 +1,21 @@
+/* ==========================================================================
+# Portfolio Single Small Slider - begin
+========================================================================== */
+.small-slider {
+	margin: 0 0 30px;
+
+	.edgtf-follow-portfolio-info {
+        position: relative;
+    }
+}
+
+@include ipad-landscape {
+
+    .small-slider .edgtf-portfolio-info-holder {
+        margin: 40px 0 0;
+    }
+}
+
+/* ==========================================================================
+# Portfolio Single Small Slider - end
+========================================================================== */

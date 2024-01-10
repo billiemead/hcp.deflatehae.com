@@ -1,0 +1,270 @@
+/* ==========================================================================
+# Parallax Sections responsive style - begin
+========================================================================== */
+
+//Advanced Type
+
+@media only screen and (max-width: 1680px) {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-additional-image-holder {
+				&.edgtf-add-1 {
+					top:-15%;
+					max-width: 32%;
+				}
+				&.edgtf-add-2 {
+					left: -20%;
+					max-width: 45%;
+				}
+				&.edgtf-add-3 {
+					top: -20%;
+					right: -25%;
+					max-width: 45%;
+				}
+				&.edgtf-add-4 {
+					left:-45%;
+				}
+				&.edgtf-add-5 {
+					top: 20%;
+					right: -35%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-additional-image-holder {
+				&.edgtf-add-4 {
+					left:-60%;
+				}
+				&.edgtf-add-5 {
+					right: -50%;
+				}
+			}
+		}
+	}
+}
+
+@include laptop-landscape-large {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-parallax-inner {
+				.edgtf-parallax-hero-image-holder {
+					position: absolute;
+					top:40%;
+					left:10%;
+					max-width: 40%;
+				}
+				.edgtf-parallax-info-section {
+					position: absolute;
+					top:41%;
+					max-width: 30%;
+					left:50%;
+					padding-left: 3%;
+					padding-right: 7%;
+				}
+				.edgtf-additional-image-holder {
+					&.edgtf-add-4 {
+						display: none;
+					}
+					&.edgtf-add-5 {
+						right: -45%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include laptop-landscape-medium {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-parallax-inner {
+				.edgtf-parallax-hero-image-holder {
+					top:40%;
+				}
+				.edgtf-parallax-info-section {
+					.edgtf-parallax-excerpt {
+						font-size: 15px;
+					}
+					.edgtf-btn {
+						padding-top:12px;
+						padding-bottom: 12px;
+					}
+				}
+				.edgtf-additional-image-holder {
+					&.edgtf-add-5 {
+						right: -50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:$laptop-landscape-medium - 1 )  {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-additional-image-holder {
+				&.edgtf-add-5 {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape  {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			.edgtf-parallax-inner {
+				.edgtf-parallax-hero-image-holder {
+					@include edgtfTransform(translateY(-50%) !important);
+					max-width: 40%;
+					top:40%;
+					left:10%;
+					right:auto;
+				}
+				.edgtf-parallax-info-section {
+					@include edgtfTransform(translateY(-50%) !important);
+					max-width: 40%;
+					top:40%;
+					right:5%;
+					left:auto;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait  { 
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			height: auto !important; //override inline options
+			padding: 60px;
+			.edgtf-parallax-inner {
+			padding-top: 0 !important; //override inline options
+				.edgtf-additional-image-holder {
+					display: none;
+				}
+				.edgtf-parallax-hero-image-holder,
+				.edgtf-parallax-info-section {
+					position: relative;
+					display: block;
+					@include edgtfBoxSizing(border-box);
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+					margin:auto;
+					padding:2% 5%;
+					max-width: 90%;
+					width: 90%;
+					@include edgtfTransform(translateY(0) !important);
+					text-align: center;
+					.edgtf-parallax-heading-image {
+						margin-bottom: 10px;
+					}
+					.edgtf-parallax-excerpt {
+						margin-top:30px;
+						margin-bottom:30px;
+					}
+		 		}
+		 		.edgtf-parallax-hero-image-holder {
+		 			padding-top: 10%;
+		 			padding-bottom: 10%;
+		 		}
+	 		}
+		}
+	}
+}
+
+@include phone-landscape  { 
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-advanced {
+			padding: 10px 20px;
+			.edgtf-parallax-inner {
+				width: 95%;
+				.edgtf-parallax-info-section {
+					.edgtf-btn {
+						margin: 10px 0;
+						&:last-child {
+							margin-left:0;
+						}
+					}
+					.edgtf-parallax-excerpt {
+						margin-top:10px;
+						margin-bottom:10px;
+					}
+		 		}
+	 		}
+		}
+	}
+}
+
+// Basic Type
+
+@include laptop-landscape-medium {
+	.edgtf-parallax-section-basic {
+		.edgtf-main-image-holder {
+			top:35%;
+		}
+		.edgtf-side-image-holder {
+			top:75%;
+		}
+	}
+}
+
+@include ipad-landscape  {
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-basic {
+			height: auto !important; //override inline
+			margin: 50px auto !important; //override inline
+			display: table;
+			.edgtf-main-image-holder,
+			.edgtf-parallax-text-holder {
+				@include edgtfBoxSizing(border-box);
+				position: relative;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				display: table-cell;
+				vertical-align: middle;
+				@include edgtfTransform(translateY(0));
+			}
+			.edgtf-parallax-text-holder {
+				text-align: left;
+				padding-left:0%;
+				padding-right:3%;
+				width: 50%;
+			}
+			.edgtf-side-image-holder {
+				display: none;
+			}
+		}
+	}
+}
+
+@include phone-portrait  { 
+	.edgtf-parallax-sections {
+		.edgtf-parallax-section-basic {
+			margin: 20px auto !important; //override inline
+			display: block;
+			.edgtf-main-image-holder,
+			.edgtf-parallax-text-holder {
+				display:inline-block;
+				max-width: 85%;
+				margin:20px auto;
+				width: auto;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+# Parallax Sections responsive style - end
+========================================================================== */

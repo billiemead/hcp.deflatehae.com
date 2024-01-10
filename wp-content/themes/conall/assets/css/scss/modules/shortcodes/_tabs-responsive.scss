@@ -1,0 +1,33 @@
+@media only screen and (max-width: $phone-landscape) {
+    .edgtf-tabs .edgtf-tabs-nav,
+    .edgtf-tabs .edgtf-tab-container,
+    .edgtf-tabs.edgtf-vertical-tab .edgtf-tabs-nav,
+    .edgtf-tabs.edgtf-vertical-tab .edgtf-tab-container {
+        width: 100%;
+    }
+
+    .edgtf-tabs .edgtf-tabs-nav li,
+    .edgtf-tabs.edgtf-horizontal-tab .edgtf-tabs-nav li {
+        float: none;
+        display: block;
+
+        &:not(:last-child) {
+            margin: 0 0 25px 0;
+        }
+
+    }
+
+    .edgtf-tabs.edgtf-vertical-tab {
+
+        .edgtf-tabs-nav {
+            float: none;
+            padding: 0;
+        }
+
+        .edgtf-tab-container {
+            float: none;
+            border-left: 0;
+            padding: 9px 0;
+        }
+    }
+}

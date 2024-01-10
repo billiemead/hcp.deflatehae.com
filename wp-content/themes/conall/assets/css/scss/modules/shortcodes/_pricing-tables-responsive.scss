@@ -1,0 +1,92 @@
+@media only screen and (max-width: $ipad-landscape) {
+    .edgtf-pricing-tables.edgtf-four-columns .edgtf-price-table {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .edgtf-pricing-tables.edgtf-big-space {
+
+        .edgtf-pricing-tables-inner {
+            margin: 0 -15px;
+        }
+
+        .edgtf-price-table {
+            padding: 0 15px;
+        }
+    }
+
+    .edgtf-price-table {
+
+        .edgtf-price-table-inner {
+
+            ul {
+
+                li {
+                    padding: 17px 25px;
+
+                    &.edgtf-table-title {
+                        padding: 25px 25px;
+                    }
+
+                    &.edgtf-table-prices {
+                        margin: 0 25px;
+
+                        .edgtf-price {
+                            font-size: 50px;
+                        }
+                    }
+
+                    &.edgtf-price-button {
+                        padding: 2px 25px 50px;
+                    }
+                }
+            }
+        }
+
+        &.edgtf-title-in-price {
+
+            .edgtf-price-table-inner {
+
+                ul {
+
+                    li {
+
+                        &.edgtf-table-prices {
+
+                            .edgtf-price-value {
+                                padding: 0 8px 0 0;
+                            }
+
+                            .edgtf-title-mark {
+                                padding: 2px 0 0 8px;
+                            }
+
+                            .edgtf-price {
+                                font-size: 35px;
+                                line-height: 36px;
+                            }
+
+                            .edgtf-title-content {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $phone-landscape) and (max-width: $ipad-portrait) {
+    .edgtf-pricing-tables.edgtf-three-columns .edgtf-price-table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: $phone-landscape) {
+    .edgtf-pricing-tables .edgtf-price-table {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+}

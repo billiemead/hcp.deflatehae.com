@@ -1,0 +1,300 @@
+@import "blocks/logo";
+@import "blocks/main_menu";
+@import "top-bar/top-bar";
+@import "types/header-standard/header-standard";
+@import "types/header-simple/header-simple";
+@import "types/header-classic/header-classic";
+@import "types/header-divided/header-divided";
+@import "types/header-full-screen/header-full-screen";
+@import "blocks/sticky_nav";
+@import "types/mobile-header/mobile-header";
+
+$logo-area-height: 88px;
+$menu-area-height: 88px;
+$sticky-header-height: 60px;
+
+.edgtf-page-header {
+    @include edgtfRelativeHolderLayout();
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-bottom: 1px solid $default-border-color;
+    z-index: 110;
+    @include edgtfBoxSizing(border-box);
+
+    /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+    a img {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+    /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+    .edgtf-logo-area {
+        height: $logo-area-height;
+        overflow: hidden;
+        position: relative;
+
+        .edgtf-logo-wrapper a {
+            max-height: $logo-area-height;
+        }
+    }
+    /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+    .edgtf-menu-area {
+        position: relative;
+        height: $menu-area-height;
+        padding: 0 40px;
+        @include edgtfBoxSizing(border-box);
+
+        .edgtf-boxed & {
+            padding: 0;
+        }
+
+        .edgtf-vertical-align-containers {
+            padding: 0;
+        }
+
+        .edgtf-logo-wrapper a {
+            max-height: $menu-area-height;
+        }
+
+        .widget {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Sticky header styles - start
+    ========================================================================== */
+    .edgtf-sticky-header {
+        height: $sticky-header-height;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        @include edgtfTransform(translateY(-100%));
+        -webkit-transition: -webkit-transform 0.6s ease;
+        -moz-transition: -moz-transform 0.6s ease;
+        transition: transform .6s ease;
+        -webkit-backface-visibility: hidden;
+
+        .edgtf-grid {
+            height: 100% !important; //override settings for other instances of this div
+        }
+
+        &.header-appear {
+            transform: translateY(0%);
+        }
+
+        .edgtf-sticky-holder {
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            background-color: #292929;
+            border-bottom: 1px solid transparent;
+            @include edgtfBoxSizing(border-box);
+
+            .edgtf-vertical-align-containers {
+                padding: 0 40px;
+            }
+        }
+
+        .admin-bar &.header-appear {
+            top: 32px;
+        }
+
+        .edgtf-sticky-holder .edgtf-logo-wrapper a {
+            max-height: $sticky-header-height;
+        }
+
+        .edgtf-position-center-inner {
+            height: 100%;
+        }
+
+        .edgtf-sticky-right {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    /* ==========================================================================
+    #Sticky header styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Fixed header styles - start
+    ========================================================================== */
+    .edgtf-fixed-wrapper.fixed {
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: #fff;
+        border-bottom: 1px solid $default-border-color;
+        -webkit-backface-visibility: hidden;
+
+        .admin-bar & {
+            margin-top: 32px;
+        }
+    }
+
+    /* ==========================================================================
+    #Fixed header - end
+    ========================================================================== */
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+
+.edgtf-light-header {
+
+    .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) {
+
+        .edgtf-logo-wrapper {
+
+            .edgtf-light-logo {
+                opacity: 1;
+            }
+
+            .edgtf-normal-logo,
+            .edgtf-dark-logo {
+                opacity: 0;
+            }
+        }
+
+        .edgtf-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+
+        &.edgtf-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+
+.edgtf-dark-header {
+
+    .edgtf-page-header {
+
+        > div:not(.fixed):not(.edgtf-sticky-header) {
+
+            .edgtf-logo-wrapper {
+
+                .edgtf-dark-logo {
+                    opacity: 1;
+                }
+
+                .edgtf-normal-logo,
+                .edgtf-light-logo {
+                    opacity: 0;
+                }
+            }
+
+            .edgtf-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+
+            &.edgtf-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */

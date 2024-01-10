@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Accordion shortcode start styles
+   ========================================================================== */
+.edgtf-accordion-holder {
+    position: relative;
+
+    .edgtf-accordion-content {
+        margin: 0;
+        padding: 6px 0 30px;
+        line-height: 1.666666666666667em;
+        border-bottom: 1px solid $default-border-color;
+    }
+
+    .edgtf-title-holder {
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px solid $default-border-color;
+        padding: 15px 0;
+        margin: 0;
+        text-align: left;
+        @include edgtfBoxSizing(border-box);
+        @include edgtfTransform(translateZ(0px));
+        @include edgtfTransition(color 0.15s ease-out);
+
+        &.ui-state-active {
+            border-bottom: 0;
+        }
+
+        &:first-child {
+            margin: 0;
+        }
+
+        .edgtf-tab-title,
+        .edgtf-tab-title-inner {
+            color: inherit;
+            line-height: inherit;
+        }
+
+        .edgtf-accordion-mark {
+            position: absolute;
+            top: 50%;
+            height: 20px;
+            width: 20px;
+            right: 25px;
+            display: none;
+            font-size: 20px;
+            line-height: 20px;
+            border: 0;
+            text-align: center;
+            @include edgtfBoxSizing(border-box);
+            @include edgtfTransform(translateY(-50%));
+
+            @include ipad-landscape {
+                right: 20px;
+            }
+        }
+
+        .edgtf-accordion-mark-icon {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: inherit;
+            text-align: center;
+        }
+
+        .edgtf-accordion-mark-icon span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: inherit;
+            @include edgtfTransition(opacity 0.15s ease-out);
+
+            &:before {
+                display: inline-block;
+                line-height: inherit;
+            }
+        }
+
+        .edgtf-accordion-number {
+            display: none;
+        }
+
+        .edgtf-accordion-mark-icon .edgtf_icon_minus {
+            opacity: 0;
+        }
+
+        .edgtf-accordion-mark-icon .edgtf_icon_plus {
+            opacity: 1;
+        }
+    }
+
+    &.edgtf-ac-icon-left {
+        .edgtf-title-holder {
+            padding-left: 34px;
+
+            .edgtf-accordion-mark {
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+
+    .edgtf-title-holder.ui-state-active {
+
+        .edgtf-accordion-mark-icon .edgtf_icon_minus {
+            opacity: 1;
+        }
+        .edgtf-accordion-mark-icon .edgtf_icon_plus {
+            opacity: 0;
+        }
+    }
+
+    &.edgtf-ac-default {
+        .edgtf-title-holder .edgtf-accordion-mark {
+            display: block;
+        }
+
+        &:not(.edgtf-ac-icon-left){
+            .edgtf-title-holder{
+                padding-right: 45px;
+            }
+        }
+    }
+
+    &.edgtf-ac-with-numbers {
+        .edgtf-title-holder .edgtf-accordion-number {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 300;
+            color: $default-text-color;
+            margin-right: 8px;
+        }
+    }
+}

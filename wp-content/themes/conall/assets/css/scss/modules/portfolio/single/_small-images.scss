@@ -1,0 +1,30 @@
+/* ==========================================================================
+# Portfolio Single Small Images - begin
+========================================================================== */
+
+.small-images {
+    margin: 0 0 30px;
+    
+    .edgtf-portfolio-media .edgtf-portfolio-single-media {
+        margin-bottom: 38px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .edgtf-follow-portfolio-info {
+        position: relative;
+    }
+}
+
+@include ipad-landscape {
+
+    .small-images .edgtf-portfolio-info-holder {
+        margin: 36px 0 0 !important;
+    }
+}
+
+/* ==========================================================================
+# Portfolio Single Small Images - end
+========================================================================== */

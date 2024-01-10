@@ -1,0 +1,116 @@
+/* ==========================================================================
+# Gallery Block Shortcodes Responsive Style - begin
+========================================================================== */
+@media only screen and (max-width: 1100px) {
+
+	.edgtf-gb-holder {
+		opacity: 1;
+	}
+}
+
+@include ipad-landscape {
+
+	.edgtf-gb-holder {
+
+		.edgtf-gb-item {
+			width: 100%;
+			float: none;
+
+			&:first-child {
+				margin: 0 0 30px;
+			}
+
+			.edgtf-gb-item-inner {
+				min-height: auto !important;
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.edgtf-gb-holder {
+
+		&.edgtf-large-space {
+
+	        .edgtf-gb-inner {
+	            margin: 0 -20px;
+	        }
+
+	        .edgtf-gb-item {
+	            padding: 0 20px;
+
+	            .edgtf-gb-image {
+	                margin: 0 -20px;
+
+	                .edgtf-gb-image-inner {
+	                    padding: 0 20px;
+	                    margin: 40px 0 0;
+	                }
+	            }
+	        }
+	    }
+	}
+}
+
+@include phone-portrait {
+
+	.edgtf-gb-holder {
+
+		.edgtf-gb-item {
+
+			.edgtf-gb-image {
+
+				.edgtf-gb-image-inner {
+					width: 100%;
+					float: none;
+				}
+			}
+
+			&.edgtf-gb-fi-disabled {
+
+	            .edgtf-gb-image {
+
+	                .edgtf-gb-image-inner:nth-child(2) {
+	                    margin: 30px 0 0;
+	                }
+	            }
+	        }
+		}
+
+		&.edgtf-small-space {
+
+	        .edgtf-gb-item {
+
+	            &.edgtf-gb-fi-disabled {
+
+		            .edgtf-gb-image {
+
+		                .edgtf-gb-image-inner:nth-child(2) {
+		                    margin: 20px 0 0;
+		                }
+		            }
+		        }
+	        }
+	    }
+
+	    &.edgtf-large-space {
+
+	        .edgtf-gb-item {
+
+	            &.edgtf-gb-fi-disabled {
+
+		            .edgtf-gb-image {
+
+		                .edgtf-gb-image-inner:nth-child(2) {
+		                    margin: 40px 0 0;
+		                }
+		            }
+		        }
+	        }
+	    }
+	}
+}
+/* ==========================================================================
+# Gallery Block Shortcodes Responsive Style - end
+========================================================================== */

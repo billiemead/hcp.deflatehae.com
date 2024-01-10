@@ -1,0 +1,69 @@
+/* ==========================================================================
+# Image With Text - begin
+========================================================================== */
+
+.edgtf-imwt-holder {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-imwt-image {
+        @include edgtfRelativeHolderLayout();
+        overflow: hidden;
+
+        a, img {
+            display: block;
+        }
+
+        a {
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                opacity: 0;
+                @include edgtfTransition(opacity 0.2s ease);
+            }
+
+            &:hover {
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .edgtf-imwt-text {
+        @include edgtfRelativeHolderLayout();
+        margin: 44px 0 0;
+
+        .edgtf-imwt-before-title {
+            position: relative;
+            display: table-cell;
+            vertical-align: top;
+            font-size: 30px;
+            font-weight: 300;
+            padding: 0 14px 0 0;
+        }
+
+        .edgtf-imwt-title {
+            display: table-cell;
+            vertical-align: top;
+            padding: 3px 0 0;
+        }
+
+        .edgtf-imwt-text {
+            margin: 11px 0 0;
+        }
+
+        .edgtf-btn {
+            margin: 24px 0 0;
+        }
+    }
+}
+/* ==========================================================================
+# Image With Text - end
+========================================================================== */

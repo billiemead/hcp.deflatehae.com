@@ -1,0 +1,1084 @@
+/* #Reset default styles - start
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: medium none;
+    vertical-align: middle;
+}
+
+table th {
+    border: 0;
+    padding: 5px 7px;
+    text-align: center;
+}
+
+table td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+a img {
+    border: none;
+}
+
+img, .wp-caption {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* #Reset default styles - end
+   ========================================================================== */
+
+/* #General styles that are used in our theme - start
+ * Here are defined global styles on body element, on container elements that hold every page,
+ * headings and links, inputs, core wp styles and default pagination styles
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+html {
+    height: 100%;
+    margin: 0 !important;
+    @include edgtfTransition(all 0.33s ease-out);
+    overflow-y: scroll !important; /* to prevent page jumping on ajax and when there is not enough content */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+    color: $default-text-color;
+    font-weight: 400;
+    background-color: $default-background-color;
+    overflow-x: hidden !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.65em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 23px;
+    line-height: 1.285714285714286em;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 1.444444444444444em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+h6 {
+    font-size: 11px;
+    line-height: 1.571428571428571em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+    margin: 25px 0;
+}
+
+h4, h5, h6 {
+    margin: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $default-heading-color;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    @include edgtfTypographyLayout();
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: $first-main-color;
+}
+
+a,
+p a {
+    color: $first-main-color;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.15s ease-out;
+    -moz-transition: color 0.15s ease-out;
+    -o-transition: color 0.15s ease-out;
+    -ms-transition: color 0.15s ease-out;
+    transition: color 0.15s ease-out;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input[type='submit'],
+.woocommerce input[type='button'],
+.woocommerce-page input[type='button'] {
+    -webkit-appearance: none;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin: 15px 0;
+}
+
+ul ul,
+ol ol,
+ol ul,
+ul ol {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+pre {
+    background-color: $default-background-color;
+    padding: 15px;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 15px 0;
+}
+
+dt {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+sub, sup {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    top: 0.5ex;
+}
+
+sup {
+    bottom: 0.5ex;
+}
+
+.wp-caption-text {
+    margin: 0;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+}
+
+table thead tr, table tbody tr {
+    border: 1px solid #e6e6e6;
+}
+
+table tbody th {
+    border-right: 1px solid #e6e6e6;
+}
+
+blockquote {
+    @include edgtfRelativeHolderLayout();
+    color: #ccc;
+    font-size: 14px;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 1px 0 0 47px;
+    @include edgtfBoxSizing(border-box);
+
+    blockquote:before {
+        position: absolute;
+        top: 4px;
+        left: -13px;
+        content: "\7b";
+        font-family: 'ElegantIcons';
+        font-size: 54px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    > * {
+        @include edgtfTypographyLayout();
+        margin: 0;
+    }
+}
+
+blockquote cite {
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Webkit */
+::selection {
+    background: $first-main-color;
+    color: $default-background-color;
+}
+
+/* Gecko/Mozilla */
+::-moz-selection {
+    background: $first-main-color;
+    color: $default-background-color;
+}
+
+.wp-caption,
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor {
+    opacity: 1;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 10px auto;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.meta {
+    display: none;
+}
+
+.edgtf-wrapper {
+    background-color: $default-background-color;
+    position: relative;
+    z-index: 1000;
+    @include edgtfTransition(left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1));
+    left: 0px;
+
+    .edgtf-wrapper-inner {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.edgtf-meta {
+    display: none;
+}
+
+.edgtf-content {
+    position: relative;
+    margin-top: 0;
+    z-index: 100;
+    background-color: $default-background-color; /*this is needed because of the uncovering footer*/
+}
+
+/*visual composer override styles*/
+.wpb_row, .wpb_content_element,
+ul.wpb_thumbnails-fluid > li,
+.last_toggle_el_margin, .wpb_button {
+    margin-bottom: 0 !important; // important is in order to prevent visual composer styles in all cases
+}
+
+.edgtf-boxed {
+    overflow: hidden !important; /* this is because content jumping while using accordion and display:inline-block on 'body.edgtf-boxed .edgtf-wrapper'   */
+
+    .edgtf-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+
+        .edgtf-wrapper-inner {
+            width: $grid-width-boxed;
+            overflow: visible;
+            margin: auto;
+        }
+    }
+
+    .edgtf-content {
+        overflow: hidden;
+    }
+
+    .edgtf-footer-inner {
+        width: $grid-width-boxed;
+        margin: auto;
+    }
+
+    .edgtf-page-header .edgtf-sticky-header,
+    .edgtf-page-header .edgtf-fixed-wrapper.fixed {
+        width: $grid-width-boxed;
+        left: auto;
+    }
+}
+
+.edgtf-smooth-transition-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: #fff;
+
+    &.edgtf-hide-spinner {
+
+        .edgtf-st-loader {
+            display: none;
+        }
+    }
+}
+
+.edgtf-container {
+    background-color: #fff; //beacuse of the Edge Slider, since content have to go over it
+    position: relative;
+    padding: 0;
+    width: 100%;
+    z-index: 100;
+
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+.edgtf-container-inner { //not in parent selector since this class is used for positioning other elements in grid
+    width: $grid-width;
+    margin: 0px auto;
+}
+
+.edgtf-full-width {
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 1400px) {
+    .edgtf-grid-1300 {
+
+        .edgtf-grid,
+        .edgtf-container-inner,
+        .edgtf-grid-section .edgtf-section-inner,
+        .edgtf-footer-top-border-holder.edgtf-in-grid,
+        .edgtf-footer-bottom-border-holder.edgtf-in-grid {
+            width: $grid-width-1300;
+        }
+
+    }
+
+    .edgtf-grid-1300.edgtf-boxed {
+
+        .edgtf-footer-inner,
+        .edgtf-wrapper-inner {
+            width: $grid-width-1300 + 50px;
+        }
+
+        .edgtf-page-header .edgtf-sticky-header,
+        .edgtf-page-header .edgtf-fixed-wrapper.fixed {
+            width: $grid-width-1300 + 50px;
+            left: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .edgtf-grid-1200 {
+
+        .edgtf-grid,
+        .edgtf-container-inner,
+        .edgtf-grid-section .edgtf-section-inner,
+        .edgtf-footer-top-border-holder.edgtf-in-grid,
+        .edgtf-footer-bottom-border-holder.edgtf-in-grid {
+            width: $grid-width-1200;
+        }
+    }
+
+    .edgtf-grid-1200.edgtf-boxed {
+
+        .edgtf-footer-inner,
+        .edgtf-wrapper-inner {
+            width: $grid-width-1200 + 50px;
+        }
+
+        .edgtf-page-header .edgtf-sticky-header,
+        .edgtf-page-header .edgtf-fixed-wrapper.fixed {
+            width: $grid-width-1200 + 50px;
+            left: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .edgtf-grid-1000 {
+
+        .edgtf-grid,
+        .edgtf-container-inner,
+        .edgtf-grid-section .edgtf-section-inner,
+        .edgtf-footer-top-border-holder.edgtf-in-grid,
+        .edgtf-footer-bottom-border-holder.edgtf-in-grid {
+            width: $grid-width-1000;
+        }
+    }
+
+    .edgtf-grid-1000.edgtf-boxed {
+
+        .edgtf-footer-inner,
+        .edgtf-wrapper-inner {
+            width: $grid-width-1000 + 50px;
+        }
+
+        .edgtf-page-header .edgtf-sticky-header,
+        .edgtf-page-header .edgtf-fixed-wrapper.fixed {
+            width: $grid-width-1000 + 50px;
+            left: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .edgtf-grid-800 {
+
+        .edgtf-grid,
+        .edgtf-container-inner,
+        .edgtf-grid-section .edgtf-section-inner,
+        .edgtf-footer-top-border-holder.edgtf-in-grid,
+        .edgtf-footer-bottom-border-holder.edgtf-in-grid {
+            width: $grid-width-800;
+        }
+    }
+
+    .edgtf-grid-800.edgtf-boxed {
+
+        .edgtf-footer-inner,
+        .edgtf-wrapper-inner {
+            width: $grid-width-800 + 50px;
+        }
+
+        .edgtf-page-header .edgtf-sticky-header,
+        .edgtf-page-header .edgtf-fixed-wrapper.fixed {
+            width: $grid-width-800 + 50px;
+            left: auto;
+        }
+    }
+}
+
+/* #General styles that are used in our theme - end
+   ========================================================================== */
+
+/* #Grid system styles - start
+ * Here are defined styles for grid system that is used outside Visual Composer
+   ========================================================================== */
+
+.edgtf-two-columns-form-without-space {
+
+    .edgtf-column-left {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .edgtf-column-right {
+        display: table-cell;
+        width: 1%;
+        text-align: left;
+        vertical-align: top;
+    }
+}
+
+.edgtf-two-columns-66-33 {
+    width: 100%;
+
+    .edgtf-column1 {
+        width: 66.66%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 29px 0 0;
+        }
+    }
+
+    .edgtf-column2 {
+        width: 33.33%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 0 0 29px;
+
+        }
+    }
+}
+
+.edgtf-two-columns-33-66 {
+    width: 100%;
+
+    .edgtf-column1 {
+        width: 33.33%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 29px 0 0;
+        }
+    }
+
+    .edgtf-column2 {
+        width: 66.66%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 0 0 29px;
+        }
+    }
+}
+
+.edgtf-two-columns-75-25 {
+    width: 100%;
+
+    .edgtf-column1 {
+        width: 75%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 29px 0 0;
+        }
+    }
+
+    .edgtf-column2 {
+        width: 25%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 0 0 29px;
+        }
+    }
+}
+
+.edgtf-two-columns-25-75 {
+    width: 100%;
+
+    .edgtf-column1 {
+        width: 25%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 29px 0 0;
+        }
+    }
+
+    .edgtf-column2 {
+        width: 75%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 0 0 29px;
+        }
+    }
+}
+
+.edgtf-two-columns-50-50 {
+    width: 100%;
+
+    > .edgtf-two-columns-50-50-inner {
+        margin: 0 -15px;
+    }
+
+    .edgtf-column {
+        width: 50%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+.edgtf-two-columns-50-50-small {
+    width: 100%;
+
+    > .edgtf-two-columns-50-50-inner {
+        margin: 0 -10px;
+    }
+
+    .edgtf-column {
+        width: 50%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 10px;
+        }
+    }
+}
+
+.edgtf-three-columns {
+    width: 100%;
+
+    > .edgtf-three-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .edgtf-column {
+        width: 33.33%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+.edgtf-comment-form .edgtf-three-columns {
+
+    > .edgtf-three-columns-inner {
+        margin: 0 -6px;
+    }
+
+    .edgtf-column {
+
+        .edgtf-column-inner {
+            padding: 0 6px;
+        }
+    }
+}
+
+.edgtf-four-columns {
+    width: 100%;
+
+    > .edgtf-four-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .edgtf-column {
+        width: 25%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+.edgtf-five-columns {
+    width: 100%;
+
+    > .edgtf-five-columns-inner {
+        margin: 0 -15px;
+    }
+
+    .edgtf-column {
+        width: 20%;
+        float: left;
+
+        .edgtf-column-inner {
+            padding: 0 15px;
+        }
+    }
+}
+
+/* #Grid system styles - end
+   ========================================================================== */
+
+@include keyframes(preload-background) {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.edgtf-preload-background {
+    background-repeat: repeat !important;
+    background-color: transparent !important;
+    background-attachment: scroll !important;
+    background-size: inherit !important;
+    @include animation(preload-background, 40s, infinite, linear, 0s);
+}
+
+.edgtf-grid {
+    width: $grid-width;
+    margin: 0 auto;
+}
+
+.edgtf-vertical-align-containers {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &.edgtf-25-50-25 {
+
+        .edgtf-position-left,
+        .edgtf-position-right {
+            width: 25%;
+        }
+
+        .edgtf-position-center {
+            width: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .edgtf-position-left-inner,
+        .edgtf-position-center-inner,
+        .edgtf-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    &.edgtf-33-33-33 {
+
+        .edgtf-position-left,
+        .edgtf-position-center,
+        .edgtf-position-right {
+            width: 33.33%;
+        }
+
+        .edgtf-position-center {
+            width: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .edgtf-position-left-inner,
+        .edgtf-position-center-inner,
+        .edgtf-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    &.edgtf-50-50 {
+
+        .edgtf-position-left,
+        .edgtf-position-right {
+            width: 50%;
+        }
+
+        .edgtf-position-left-inner,
+        .edgtf-position-center-inner,
+        .edgtf-position-right-inner {
+            width: 98%;
+        }
+
+    }
+
+    .edgtf-position-left {
+        position: relative;
+        float: left;
+        z-index: 2;
+        height: 100%;
+    }
+    .edgtf-position-center {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .edgtf-position-right {
+        position: relative;
+        float: right;
+        z-index: 2;
+        height: 100%;
+        text-align: right;
+    }
+
+    .edgtf-position-left-inner,
+    .edgtf-position-center-inner,
+    .edgtf-position-right-inner {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .edgtf-position-right.edgtf-has-widget .edgtf-position-right-inner {
+        height: 100%;
+    }
+
+    .edgtf-position-left:before,
+    .edgtf-position-center:before,
+    .edgtf-position-right:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        margin-right: 0; /* adjusts for spacing */
+    }
+
+}
+
+/* ==========================================================================
+   #Row styles - start
+   ========================================================================== */
+
+.edgtf-section {
+    position: relative;
+}
+
+.edgtf-grid-section .edgtf-section-inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+}
+
+.edgtf-section-inner-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.edgtf-content-aligment-left {
+    text-align: left;
+}
+
+.edgtf-content-aligment-center {
+    text-align: center;
+}
+
+.edgtf-content-aligment-right {
+    text-align: right;
+}
+
+/* #Parallax section styles - start
+   ========================================================================== */
+
+.edgtf-parallax-section-holder {
+    position: static;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center 0px;
+    background-attachment: fixed;
+    overflow: hidden;
+
+    &.vc_row {
+        margin: 0;
+    }
+
+    &.edgtf-vertical-middle-align {
+        display: table;
+        width: 100%;
+    }
+
+    .edgtf-parallax-content-outer {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        padding: 100% 0;
+    }
+
+    .touch &.edgtf-parallax-section-holder-touch-disabled {
+        height: auto !important;
+        min-height: 300px;
+        background-position: center top !important;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+}
+
+section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    padding: 100% 0;
+}
+
+/* #Video section styles - start
+   ========================================================================== */
+
+.edgtf-section {
+
+    .edgtf-full-section-inner {
+        position: relative;
+        z-index: 20;
+    }
+
+    .edgtf-mobile-video-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .edgtf-video-overlay {
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 11;
+
+        &.edgtf-video-overlay-active {
+            background-image: url("img/pixel-video.png");
+            background-position: 0px 0px;
+            background-repeat: repeat;
+            opacity: 1;
+        }
+    }
+
+    &.edgtf-force-full-screen-video .edgtf-video-wrap {
+        width: 100% !important;
+        height: 100% !important;
+        
+        video.edgtf-video {
+            object-fit: inherit;
+        }
+    }
+
+    .edgtf-video-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        z-index: 10;
+
+        .mejs-offscreen {
+            display: none;
+        }
+
+        .mejs-container .mejs-controls {
+            display: none !important;
+        }
+
+        .mejs-poster {
+            background-size: cover !important;
+            -moz-background-size: cover !important;
+            -webkit-background-size: cover !important;
+            -o-background-size: cover !important;
+        }
+
+        .mejs-container {
+            background-color: transparent !important;
+            background-image: none !important;
+            height: auto !important;
+            width: 100% !important;
+        }
+
+        .mejs-mediaelement {
+            background: none !important;
+            border: 0px !important;
+        }
+
+        .mejs-container .mejs-poster img {
+            max-width: none !important;
+            width: 100% !important;
+        }
+    }
+}
+
+/* ==========================================================================
+   #Row styles - end
+   ========================================================================== */
+

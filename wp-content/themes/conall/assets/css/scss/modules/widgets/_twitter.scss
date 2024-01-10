@@ -1,0 +1,57 @@
+/* ==========================================================================
+   #Twitter feed
+   ========================================================================== */
+
+.edgtf-twitter-widget {
+    @include edgtfRelativeHolderLayout();
+
+    li {
+        @include edgtfRelativeHolderLayout();
+
+        &:not(:last-child) {
+            margin: 0 0 25px !important;
+        }
+
+        .edgtf-twitter-icon {
+            position: absolute;
+            top: 2px;
+            left: 0;
+
+            i {
+                font-size: 18px;
+                color: $first-main-color;
+            }
+        }
+
+        .edgtf-tweet-text {
+            position: relative;
+            padding: 0 0 0 39px;
+            line-height: 27px;
+            color: $default-text-color;
+
+
+            span {
+                color: #fff;
+            }
+
+            a {
+                position: relative;
+                line-height: inherit;
+                color: #fff;
+
+                &:hover,
+                .edgtf-footer-top-holder &:hover{
+                    color: $first-main-color;
+                }
+
+                &.edgtf-tweet-time {
+                    display: block;
+
+                    span {
+                        margin: 0 2px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

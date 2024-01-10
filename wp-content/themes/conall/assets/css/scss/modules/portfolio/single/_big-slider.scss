@@ -1,0 +1,21 @@
+/* ==========================================================================
+# Portfolio Single Big Slider - begin
+========================================================================== */
+
+.big-slider {
+
+    .edgtf-big-image-holder {
+        margin-bottom: 51px;
+    }
+
+    .edgtf-portfolio-info-holder {
+    	margin-top: 58px;
+
+    	@include ipad-landscape {
+            margin-top: 0;
+        }
+    }
+}
+/* ==========================================================================
+# Portfolio Single Big Slider - end
+========================================================================== */

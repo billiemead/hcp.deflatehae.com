@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Video shortcode start styles
+   ========================================================================== */
+
+.edgtf-video-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    opacity: 0;
+    @include edgtfTransition(opacity $default-transition-property $default-transition-speed);
+
+    .edgtf-video-image-holder > img {
+        vertical-align: middle;
+    }
+
+    .edgtf-video-content-holder {
+        @include edgtfAbsoluteHolderLayout();
+
+        .edgtf-video-content-inner {
+            @include edgtfRelativeHolderLayout();
+            top: 50%;
+            @include edgtfTransform(translateY(-50%));
+
+            .edgtf-video-play {
+                width: 62px;
+                height: 62px;
+                display: block;
+                line-height: 65px;
+                font-size: 55px;
+                margin: 20px auto;
+
+                .edgtf-video-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    position: relative;
+                    color: #fff;
+                    background-color: rgba($first-main-color, .4);
+                    @include edgtfTransition(background-color .15s ease, color .15s ease);
+                    @include edgtfBorderRadius(50%);
+
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include edgtfTransform(translate(-50%, -50%));
+                    }
+                }
+            }
+
+            .edgtf-video-title {
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+
+    }
+
+    &:hover .edgtf-video-content-holder .edgtf-video-content-inner .edgtf-video-play .edgtf-video-wrapper {
+        color: #fff;
+        background-color: $first-main-color;
+    }
+
+    .edgtf-video-link {
+        @include edgtfAbsoluteHolderLayout();
+    }
+
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

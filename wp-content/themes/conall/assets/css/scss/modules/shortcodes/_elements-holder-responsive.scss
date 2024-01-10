@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Elements Holder Responsive start style
+   ========================================================================== */
+.edgtf-elements-holder {
+
+    &.edgtf-responsive-mode-1440.edgtf-two-columns,
+    &.edgtf-responsive-mode-1440.edgtf-three-columns,
+    &.edgtf-responsive-mode-1440.edgtf-four-columns,
+    &.edgtf-responsive-mode-1440.edgtf-five-columns,
+    &.edgtf-responsive-mode-1440.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 1440px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+    }
+
+    &.edgtf-responsive-mode-1280.edgtf-two-columns,
+    &.edgtf-responsive-mode-1280.edgtf-three-columns,
+    &.edgtf-responsive-mode-1280.edgtf-four-columns,
+    &.edgtf-responsive-mode-1280.edgtf-five-columns,
+    &.edgtf-responsive-mode-1280.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 1280px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+    }
+
+    &.edgtf-responsive-mode-1024.edgtf-two-columns,
+    &.edgtf-responsive-mode-1024.edgtf-three-columns,
+    &.edgtf-responsive-mode-1024.edgtf-four-columns,
+    &.edgtf-responsive-mode-1024.edgtf-five-columns,
+    &.edgtf-responsive-mode-1024.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+    }
+
+    &.edgtf-responsive-mode-768.edgtf-two-columns,
+    &.edgtf-responsive-mode-768.edgtf-three-columns,
+    &.edgtf-responsive-mode-768.edgtf-four-columns,
+    &.edgtf-responsive-mode-768.edgtf-five-columns,
+    &.edgtf-responsive-mode-768.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+    }
+
+    &.edgtf-responsive-mode-600.edgtf-two-columns,
+    &.edgtf-responsive-mode-600.edgtf-three-columns,
+    &.edgtf-responsive-mode-600.edgtf-four-columns,
+    &.edgtf-responsive-mode-600.edgtf-five-columns,
+    &.edgtf-responsive-mode-600.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+    }
+
+    &.edgtf-responsive-mode-480.edgtf-two-columns,
+    &.edgtf-responsive-mode-480.edgtf-three-columns,
+    &.edgtf-responsive-mode-480.edgtf-four-columns,
+    &.edgtf-responsive-mode-480.edgtf-five-columns,
+    &.edgtf-responsive-mode-480.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            @media only screen and (max-width: 480px) {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+            }
+        }
+
+    }
+
+    .edgtf-elements-holder-item-content {
+        @media only screen and (max-width: 480px) {
+            padding: 0 10px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-1440.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1440.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1440.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-600.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-600.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-600.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: left;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-right .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: right;
+    }
+    .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-center .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   End of Elements Holder Responsive style
+   ========================================================================== */

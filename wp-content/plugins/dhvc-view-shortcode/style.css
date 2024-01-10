@@ -1,0 +1,32 @@
+#dhvc-view-view-shortcode{
+	z-index: 100000;
+}
+.controls_row .dhvc-view-shortcode{
+	float: right;
+    margin-left: 1px;
+}
+.wpb_content_element > div.controls a.dhvc-view-shortcode{
+	width:16px;
+}
+.wpb_vc_column > .controls_column .dhvc-view-shortcode{
+	float: none;
+	width:16px;
+}
+.wpb_content_element > .vc_controls .dhvc-view-shortcode,
+.wpb_vc_column > .vc_controls .dhvc-view-shortcode{
+	float: none;
+	margin: 0;
+}
+.dhvc-view-shortcode .vc_icon {
+    background: url("vc-shortcode.png") no-repeat scroll 1px 2px transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+
+}
+.dhvc-view-shortcode .icon-white {
+    background: url("vc-shortcode.png") no-repeat scroll 1px -17px transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}

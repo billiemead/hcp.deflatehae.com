@@ -1,0 +1,64 @@
+/* ==========================================================================
+# Unordered List Style - begin
+========================================================================== */
+
+.edgtf-unordered-list ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        position: relative;
+        margin: 0 0 7px;
+        line-height: 22px;
+    }
+}
+
+.edgtf-unordered-list.edgtf-check-mark ul {
+    list-style-type: none;
+
+    > li {
+        padding-left: 29px;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            vertical-align: middle;
+            font-family: 'FontAwesome';
+            font-size: 17px;
+            line-height: inherit;
+            color: $first-main-color;
+            content: "\f058";
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}
+
+.edgtf-unordered-list.edgtf-animate-list ul li {
+    opacity: 0;
+    top: -40px;
+    @include edgtfTransition(opacity 0.4s $default-transition-property,
+            top 0.4s $default-transition-property)
+}
+
+.edgtf-unordered-list.edgtf-animate-list.edgtf-appeared ul li {
+    opacity: 1;
+    top: 0px;
+}
+
+.edgtf-unordered-list.edgtf-without-style ul {
+    list-style-type: none;
+}
+
+.touch .no_animation_on_touch .edgtf-unordered-list.edgtf-animate-list ul li {
+    opacity: 1;
+    top: 0;
+}
+
+/* ==========================================================================
+# Unordered List Style - end
+========================================================================== */

@@ -1,0 +1,53 @@
+/**
+ * * Lottier for Wpbakery
+ * * Lottie animations in just a few clicks without writing a single line of code
+ * * Exclusively on https://1.envato.market/lottier-wpbakery
+ * *
+ * * @encoding        UTF-8
+ * * @version         1.1.5
+ * * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * * @license         Envato License https://1.envato.market/KYbje
+ * * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
+ * * @support         help@merkulov.design
+ * **/
+#setting-error-settings_updated {
+  display: none !important;
+}
+
+.mdp_wpb_lottier .wpb_element_wrapper > .wpb_element_title {
+  display: flex;
+  align-items: center;
+}
+
+.mdp-control {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #e6e9ec;
+  margin-top: 10px;
+}
+.mdp-control + .mdp-control {
+  padding-top: 15px;
+}
+.mdp-control > * {
+  max-width: 400px;
+}
+.mdp-control.mdp-control-small > * {
+  max-width: 120px;
+}
+.mdp-control.mdp-header h4 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+}
+.mdp-control.mdp-header .edit_form_line {
+  display: none;
+}
+.mdp-control.mdp-top-line {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #e6e9ec;
+}
+
+input[readonly].mdp_date_time_field {
+  background: #fff;
+}

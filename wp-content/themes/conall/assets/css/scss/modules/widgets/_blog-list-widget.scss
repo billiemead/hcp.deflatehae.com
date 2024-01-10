@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #Blog List Widget
+   ========================================================================== */
+
+footer .edgtf-blog-list-widget {
+	.edgtf-simple-image a {
+	    display: block;
+	    position: relative;
+	    overflow: hidden;
+	    &:after {
+	        content:'';
+	        position: absolute;
+	        top:0;
+	        left:0;
+	        height: 100%;
+	        width: 100%;
+	        background-color: rgba(255,255,255,.15);
+	        opacity: 0;
+	        @include edgtfTransition(opacity .2s ease);
+	    }
+	    &:hover:after {
+	        opacity: 1;
+	        @include edgtfTransition(opacity .4s ease);
+	    }
+	}
+    .edgtf-simple-title{
+        font-weight: 400;
+        letter-spacing: initial;
+    }
+}

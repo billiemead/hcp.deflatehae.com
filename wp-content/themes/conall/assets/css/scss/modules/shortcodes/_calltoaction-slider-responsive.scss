@@ -1,0 +1,52 @@
+/* ==========================================================================
+# Call To Action Slider responsive style - begin
+========================================================================== */
+
+@include laptop-landscape-large {
+
+    .edgtf-full-width {
+
+        .edgtf-call-to-action-slider {
+
+            .edgtf-cta-nav {
+
+                > * {
+
+                    &.edgtf-cta-nav-prev {
+                        left: 8px;
+                    }
+
+                    &.edgtf-cta-nav-next {
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape {
+
+    .edgtf-call-to-action-slider {
+
+        .edgtf-cta-nav {
+            text-align: center;
+            margin: 30px 0 40px;
+
+            > * {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                top: 0;
+                left: auto !important;
+                right: auto !important;
+                margin: 0 15px;
+                @include edgtfTransform(translateY(0));
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Call To Action Slider responsive style - end
+========================================================================== */

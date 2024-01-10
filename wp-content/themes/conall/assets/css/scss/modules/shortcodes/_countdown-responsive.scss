@@ -1,0 +1,32 @@
+/* ==========================================================================
+# Countdown responsive style - begin
+========================================================================== */
+
+.countdown-row {
+
+    @include ipad-portrait() {
+        &.countdown-show4 .countdown-section {
+            width: 33%;
+        }
+        &.countdown-show5 .countdown-section {
+            width: 33%;
+        }
+        &.countdown-show6 .countdown-section {
+            width: 33%;
+        }
+        &.countdown-show7 .countdown-section {
+            width: 33%;
+        }
+    }
+
+    .countdown-section {
+
+        .countdown-amount {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+}
+/* ==========================================================================
+# Countdown responsive style - end
+========================================================================== */

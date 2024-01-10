@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Social Icon widget start styles
+   ========================================================================== */
+
+.edgtf-social-icon-widget-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+
+    .edgtf-social-icon-widget {
+        color: inherit;
+        line-height: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+    }
+
+    .edgtf-top-bar &,
+    footer & {
+        color: #fff;
+    }
+}
+
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-social-icon-widget-holder {
+    color: $header-dark-color !important;
+
+    &:hover {
+        color: $header-dark-hover-color !important;
+    }
+}
+
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-social-icon-widget-holder {
+    color: $header-light-color !important;
+
+    &:hover {
+        color: $header-light-hover-color !important;
+    }
+}
+/* ==========================================================================
+   Social Icon widget end styles
+   ========================================================================== */

@@ -1,0 +1,16 @@
+.wpb-content-layouts .wpb-layout-element-button .css_animation {
+	background-image: url(../vc-icon.png);
+	width: 16px;
+	height: 16px;
+	background-size: contain;
+}
+.wpb-content-layouts .wpb-layout-element-button .css_animation.vc-element-icon {
+	width: 32px;
+	height: 32px;
+}
+.wpb_css_animation.wpb_content_element > .wpb_element_wrapper {
+	background-image: url(../vc-icon.png);
+}
+.wpb_css_animation[data-element_type=css_animation] {
+	background-image: url(../vc-icon.png);
+}

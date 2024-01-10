@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Elements Holder start style
+   ========================================================================== */
+
+.edgtf-elements-holder {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+
+    &.edgtf-two-columns {
+
+        .edgtf-elements-holder-item {
+            width: 50%;
+        }
+    }
+
+    &.edgtf-two-columns {
+
+        .edgtf-elements-holder-item {
+            width: 50%;
+        }
+    }
+
+    &.edgtf-three-columns {
+
+        .edgtf-elements-holder-item {
+            width: 33%;
+        }
+    }
+
+    &.edgtf-four-columns {
+
+        .edgtf-elements-holder-item {
+            width: 25%;
+        }
+    }
+
+    &.edgtf-five-columns {
+
+        .edgtf-elements-holder-item {
+            width: 20%;
+        }
+    }
+
+    &.edgtf-six-columns {
+
+        .edgtf-elements-holder-item {
+            width: 16%;
+        }
+    }
+
+    .edgtf-elements-holder-item {
+
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        background-size: cover;
+
+        &.edgtf-vertical-alignment-top {
+            vertical-align: top;
+        }
+
+        &.edgtf-vertical-alignment-bottom {
+            vertical-align: bottom;
+        }
+
+        &.edgtf-horizontal-alignment-center {
+            text-align: center;
+        }
+
+        &.edgtf-horizontal-alignment-right {
+            text-align: right;
+        }
+
+        .edgtf-elements-holder-item-inner {
+            width: 100%;
+        }
+    }
+
+    &.edgtf-elements-items-float {
+
+        &.edgtf-three-columns {
+
+            .edgtf-elements-holder-item {
+                width: 33.33333333333333%;
+            }
+        }
+
+        &.edgtf-six-columns {
+
+            .edgtf-elements-holder-item {
+                width: 16.66666666666667%;
+            }
+        }
+
+        .edgtf-elements-holder-item {
+            float: left;
+        }
+    }
+
+    .edgtf-elements-holder-item-content {
+        padding: 0 20px;
+    }
+
+}
+
+/* ==========================================================================
+   End of Elements Holder style
+   ========================================================================== */
