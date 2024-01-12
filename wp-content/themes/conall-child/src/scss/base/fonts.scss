@@ -1,42 +1,55 @@
 @import "colors";
 @import 'https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800;900&display=swap';
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
 /* ******* PHARVARIS HCP 2024 FONTS START ******* */
 
-$sofia-sans: 'Sofia Sans', serif;
+$poppins: 'Poppins', serif;
 
-@mixin light($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin thin($poppins) {
+  font-family: $poppins !important;
+  font-style: normal !important;
+  font-weight: 100 !important;
+}
+@mixin extralight($poppins) {
+  font-family: $poppins !important;
+  font-style: normal !important;
+  font-weight: 200 !important;
+}
+@mixin light($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 300 !important;
 }
-@mixin regular($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin regular($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 400 !important;
 }
-@mixin medium($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin medium($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 500 !important;
 }
-@mixin semi-bold($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin semi-bold($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 600 !important;
 }
-@mixin bold($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin bold($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 700 !important;
 }
-@mixin extra-bold($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin extra-bold($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 800 !important;
 }
-@mixin black($sofia-sans) {
-  font-family: $sofia-sans !important;
+@mixin black($poppins) {
+  font-family: $poppins !important;
   font-style: normal !important;
   font-weight: 900 !important;
 }

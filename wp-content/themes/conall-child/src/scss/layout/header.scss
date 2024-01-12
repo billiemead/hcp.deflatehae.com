@@ -3,7 +3,20 @@
 
 /* ******* PHARVARIS HCP 2024 HEADER START ******* */
 
-
+div.edgtf-logo-wrapper {
+    a {
+        img.edgtf-normal-logo {
+            height: 25px;
+        }
+    }
+}
+nav.edgtf-main-menu > ul > li > a {
+    span.item_text {
+        text-transform: uppercase;
+        color: $black;
+        letter-spacing: -0.5px;
+    }
+}
 
 @media all and (max-width: 1024px) {
 }

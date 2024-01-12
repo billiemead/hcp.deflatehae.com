@@ -10,6 +10,9 @@
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\assets\custom-styles\general-custom-styles.php conall_edge_content_styles function */
 .edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner { padding-top: 40px;}
 
+/* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\footer\custom-styles\custom-styles.php conall_edge_footer_top_general_styles function */
+footer .edgtf-footer-top-holder { background-color: #f2f2f2;}
+
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\footer\custom-styles\custom-styles.php conall_edge_footer_bottom_general_styles function */
 footer .edgtf-footer-bottom-holder { height: 260px;background-color: #333333;}
 
@@ -17,10 +20,10 @@ footer .edgtf-footer-bottom-holder { height: 260px;background-color: #333333;}
 .edgtf-header-simple .edgtf-page-header { background-color: rgba(255, 255, 255, 1);}
 
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\header\custom-styles\header.php conall_edge_header_simple_menu_area_styles function */
-.edgtf-header-simple .edgtf-page-header .edgtf-logo-wrapper a { max-height: 82px;}
+.edgtf-header-simple .edgtf-page-header .edgtf-logo-wrapper a { max-height: 88px;}
 
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\header\custom-styles\header.php conall_edge_header_simple_menu_area_styles function */
-.edgtf-header-simple .edgtf-page-header .edgtf-menu-area { height: 82px;}
+.edgtf-header-simple .edgtf-page-header .edgtf-menu-area { height: 88px;}
 
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\header\custom-styles\header.php conall_edge_sticky_header_styles function */
 .edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder { background-color: rgba(255, 255, 255, 1);}
