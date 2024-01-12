@@ -15,49 +15,49 @@ The layouts are built by first creating a new WordPress page and then using eith
 Freelance developers will be primarily working on sections and pages, so for the most part, all `.scss` files you will be working with will be located in the pages folder.
 
 **pages folder:**
-`deflate-hae.scss` Home page
-(all other pages as needed for project by name)
+- `deflate-hae.scss` Home page
+- (all other pages as needed for project by name)
 
 The other `.scss` files are already set up during project on-boarding and rarely will need to be changed, unless you'd like to add a `mixin` for semantic re-use. But they are covered here for reference.
 
 **base folder:**
-`base.scss` (usually just used for header & footer logos and possibly other base styles)
-`colors.scss` (project colors, text drop shadow mixins)
-`fonts.scss` (project font mixins for family, size & weight)
+- `base.scss` (usually just used for header & footer logos and possibly other base styles)
+- `colors.scss` (project colors, text drop shadow mixins)
+- `fonts.scss` (project font mixins for family, size & weight)
 optional/project dependent:
-`hovers.scss`
+- `hovers.scss`
 
 **layout folder:**
-`header.scss`
-`footer.scss`
-`layout.scss` (css reset, etc)
-`mobilefooterbar.scss` (icon footer bar for mobile only)
-`navigation.scss` (desktop & mobile navigation, menus, sub-menus)
+- `header.scss`
+- `footer.scss`
+- `layout.scss` (css reset, etc)
+- `mobilefooterbar.scss` (icon footer bar for mobile only)
+- `navigation.scss` (desktop & mobile navigation, menus, sub-menus)
 
 **modules folder:**
-`animations.scss` (CSS for animations)
-`buttons.scss`
-`forms.scss` (CSS for forms)
+- `animations.scss` (CSS for animations)
+- `buttons.scss`
+- `forms.scss` (CSS for forms)
 optional/project dependent:
-`carousel.scss`
+- `carousel.scss`
 
 All .scss starting files contain color and font @imports, comments indicating the start and end of the styling (just in case the minified CSS file ever needs to be manually reviewed) and empty media queries for the breakpoints we use:
 
-1920px      Desktop
-1200px      Laptop (most clients review using this screen size!)
-1024px      Tablet Landscape
-768px       Tablet Portrait
-576px       2nd Generation Mobile
-480px       1st Generation Mobile
-320px       Legacy Mobile
+- 1920px      Desktop
+- 1200px      Laptop (most clients review using this screen size!)
+- 1024px      Tablet Landscape
+- 768px       Tablet Portrait
+- 576px       2nd Generation Mobile
+- 480px       1st Generation Mobile
+- 320px       Legacy Mobile
 
 Not every breakpoint needs to be used for every layout/section, but they are there if needed.  And while it may seem out of date, it very important to check and if necessary, provide styling for 320px devices.
 
 XD files are provided by the Art Department and will contain layouts and artwork assets formatted for:
 
-1920px
-1024px
-576px
+- 1920px
+- 1024px
+- 576px
 
 It is up to us developers to 'fill in the blanks' for in-between sizes if necessary, or if layouts break, text/copy crashes, etc. But it is VERY rarely, if ever, that all seven breakpoints listed above will be used for any given page/section/module/element.
 
@@ -98,7 +98,7 @@ If you do not have a Creative Cloud subscription, you will need one for freelanc
 
 2. Go to `Pages -> Add New` and create a new **WordPress** page using your name as the page name/slug
 
-3. Make sure that the **WP Bakery Backend Editor** is selected and then choose the **Theme Layout Option** in the editor:  
+3. Make sure that the **WP Bakery Backend Editor** is selected and then choose the **Theme Layout Option** in the editor:
 
     ![](https://thewhyse.github.io/tutorial-images/dev-test-b-1.png)
 
