@@ -98,7 +98,7 @@ If you do not have a Creative Cloud subscription, you will need one for freelanc
 
 2. Go to `Pages -> Add New` and create a new **WordPress** page using your name as the page name/slug
 
-3. Make sure that the **WP Bakery Backend Editor** is selected and then choose the **Theme Layout Option** in the editor:
+3. Make sure that the **WP Bakery Backend Editor** is selected and then choose the **Theme Layout Option** in the editor:  
 
     ![](https://thewhyse.github.io/tutorial-images/dev-test-b-1.png)
 
