@@ -72,20 +72,20 @@ It is up to us developers to 'fill in the blanks' for in-between sizes if necess
 - Merge your code into master
 
 **Requirements:**
-[Adobe Photoshop, Illustrator & XD](https://www.adobe.com/products/catalog.html#category=creativity-design)
+- [Adobe Photoshop, Illustrator & XD](https://www.adobe.com/products/catalog.html#category=creativity-design)
 If you do not have a Creative Cloud subscription, you will need one for freelance assignments with The Agency Network, but for the purposes of this tutorial you may sign up for a free 7 day trial
-[Git](https://git-scm.com/downloads)
-[GitHub](https://github.com/)
-[Patheon](https://pantheon.io/)
-[Slack](https://the-agencynetwork-mjh.slack.com)
+- [Git](https://git-scm.com/downloads)
+- [GitHub](https://github.com/)
+- [Patheon](https://pantheon.io/)
+- [Slack](https://the-agencynetwork-mjh.slack.com)
 
 ## Appendix
 
-[1. Layout ](#1-build-layout)
-[2. Content](#2-add-content)
-[3. Styling](#3-add-styling)
-[4. Build Code](#4-build-code)
-[5. Git Commit/Push ](#5-git-commit)
+- [1. Layout ](#1-build-layout)
+- [2. Content](#2-add-content)
+- [3. Styling](#3-add-styling)
+- [4. Build Code](#4-build-code)
+- [5. Git Commit/Push ](#5-git-commit)
 
 
 - - - -
@@ -154,9 +154,9 @@ Which means you are ready to begin. Obviously, you need to keep this terminal wi
 - log into the WordPress instance on the [DEV server on Pantheon](http://dev-pharvaris-deflate-hcp.pantheonsite.io/wp-admin/)
 - create a new WordPress page on the instance on the DEV server, mirroring the same name you used locally
 - Now, for both LOCAL and DEV instances, change the Page Builder mode from Backend Editor to Classic Mode
-    ![](https://thewhyse.github.io/tutorial-images/dev-test-b-3.png)
+    - ![](https://thewhyse.github.io/tutorial-images/dev-test-b-3.png)
 - At the far right of the editor box, make SURE that you click the text tab! If it is on Visual, and you try to cut and paste the code from LOCAL to DEV, it will not work!
- ![](https://thewhyse.github.io/tutorial-images/dev-test-b-4.png)
+    - ![](https://thewhyse.github.io/tutorial-images/dev-test-b-4.png)
 - Select, copy and paste all of the page builder code from your LOCAL page to the DEV page and save.
 
 - - - -
