@@ -1,5 +1,16 @@
 <?php
 
+setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
+
+// add title attributes to menu
+function pv_add_title_attribute($atts, $item){
+
+	$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : $item->title;
+	return $atts;
+}
+add_filter('nav_menu_link_attributes', 'pv_add_title_attribute', 10, 2);
+
 /*** Child Theme Function  ***/
 
 if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
@@ -38,6 +49,9 @@ add_filter('body_class', 'custom_class');
 function custom_class($classes)
 {
     if (is_front_page()) {
+        $classes[] = 'home-page';
+    }
+    if (is_page('deflate-hae')) {
         $classes[] = 'home-page';
     }
     if (is_page('hae-overview')) {

@@ -70,7 +70,7 @@
     &.edgtf-responsive-mode-600.edgtf-six-columns {
 
         .edgtf-elements-holder-item {
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 576px) {
                 width: 100%;
                 display: inline-block;
                 height: auto;
@@ -150,7 +150,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .edgtf-elements-holder.edgtf-responsive-mode-600.edgtf-one-column-alignment-left .edgtf-elements-holder-item .edgtf-elements-holder-item-content {
         text-align: left;
     }

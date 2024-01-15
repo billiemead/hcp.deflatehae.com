@@ -3,9 +3,150 @@
 
 /* ******* PHARVARIS HCP 2024 LAYOUT START ******* */
 
+/* ************ CSS RESET START ************ */
+/* Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+}
+/* Typographic tweaks! Add accessible line-height & improve text rendering */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    -webkit-font-smoothing: antialiased;
+    top: 0px;
+    position: relative;
+    color: $black;
+}
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+sup {
+    bottom: 1ex;
+}
 
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+/* ************ CSS RESET END ************ */
 
+body.pharvaris {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $poppins, sans-serif;
+        margin: 0;
+    }
+    div.pv-container {
+        max-width: 1436px;
+        width: 85%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: unset;
+    }
+    h1, h1.pv-h1 {
+        @include bold($poppins);
+        font-size: 30px;
+        line-height: 40px;
+        &.blue {
+            color: $blue;
+        }
+        &.center {
+            text-align: center;
+        }
+    }
+    h2, h2.pv-h2 {
+
+    }
+    h3, h3.pv-h3 {
+
+    }
+    h4, h4.pv-h4 {
+
+    }
+    h5, h5.pv-h5 {
+
+    }
+    h6, h6.pv-h6 {
+
+    }
+    p, p.pv-p {
+
+    }
+    li, li.pv-p {
+
+    }
+    p.pv-p.center {
+        text-align: center !important
+    }
+    br.line-break {
+        display: block;
+    }
+    span.no-wrap {
+        white-space: nowrap;
+    }
+    div.edgtf-content {
+
+    }
+}
+
+@media all and (max-width: 1500px) {
+}
+@media all and (max-width: 1300px) {
+}
 @media all and (max-width: 1024px) {
+    body.pharvaris {
+        h1, h2, h3, h4, h5, h6 {
+        }
+        div.pv-container {
+            max-width: 768px;
+            width: 85%;
+        }
+        h1, h1.pv-h1 {
+            &.blue {
+            }
+            &.center {
+            }
+        }
+        h2, h2.pv-h2 {
+
+        }
+        h3, h3.pv-h3 {
+
+        }
+        h4, h4.pv-h4 {
+
+        }
+        h5, h5.pv-h5 {
+
+        }
+        h6, h6.pv-h6 {
+
+        }
+        p, p.pv-p {
+
+        }
+        li, li.pv-p {
+
+        }
+        div.edgtf-content {
+            margin-top: 40px !important;
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }

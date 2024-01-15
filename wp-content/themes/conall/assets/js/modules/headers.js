@@ -28,8 +28,8 @@
     $(window).on('load', edgtfOnWindowLoad);
     $(window).resize(edgtfOnWindowResize);
     $(window).scroll(edgtfOnWindowScroll);
-    
-    /* 
+
+    /*
         All functions to be called on $(document).ready() should be in this function
     */
     function edgtfOnDocumentReady() {
@@ -44,7 +44,7 @@
         edgtfSearch();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).on('load', ) should be in this function
     */
     function edgtfOnWindowLoad() {
@@ -53,7 +53,7 @@
         edgtfSetMenuWidthForCenteredLogoHeader();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).resize() should be in this function
     */
     function edgtfOnWindowResize() {
@@ -62,11 +62,11 @@
         edgtfSetMenuWidthForCenteredLogoHeader();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).scroll() should be in this function
     */
     function edgtfOnWindowScroll() {
-        
+
     }
 
     /*
@@ -77,12 +77,12 @@
         var header = $('.edgtf-page-header');
         var stickyHeader = $('.edgtf-sticky-header');
         var fixedHeaderWrapper = $('.edgtf-fixed-wrapper');
-        
+
         var revSliderHeight =  0;
             if ($('.edgtf-slider').length) {
                 revSliderHeight = $('.edgtf-slider').outerHeight();
             }
-            
+
 
         var headerMenuAreaOffset = $('.edgtf-page-header').find('.edgtf-fixed-wrapper').length ? $('.edgtf-page-header').find('.edgtf-fixed-wrapper').offset().top : 0;
 
@@ -121,7 +121,7 @@
             // sticky header that will be shown when user scrolls both up and down
             case edgtf.body.hasClass('edgtf-sticky-header-on-scroll-down-up'):
                 edgtf.modules.header.behaviour = 'edgtf-sticky-header-on-scroll-down-up';
-                
+
                 if(edgtfPerPageVars.vars.edgtfStickyScrollAmount !== 0){
                     edgtf.modules.header.stickyAppearAmount = edgtfPerPageVars.vars.edgtfStickyScrollAmount;
                 } else {
@@ -294,16 +294,16 @@
 
         var sideMenu = $('.edgtf-side-menu');
 
-        if(sideMenu.length){    
-            sideMenu.niceScroll({ 
+        if(sideMenu.length){
+            sideMenu.niceScroll({
                 scrollspeed: 60,
                 mousescrollstep: 40,
-                cursorwidth: 0, 
+                cursorwidth: 0,
                 cursorborder: 0,
                 cursorborderradius: 0,
                 cursorcolor: "transparent",
-                autohidemode: false, 
-                horizrailenabled: false 
+                autohidemode: false,
+                horizrailenabled: false
             });
         }
     }
@@ -809,7 +809,7 @@
                 });
 
                 $(document).keyup(function(e){
-                    if (e.keyCode == 27 ) { //KeyCode for ESC button is 27 
+                    if (e.keyCode == 27 ) { //KeyCode for ESC button is 27
                         searchForm.blur();
                         searchForm.stop(true).fadeOut(100, 'easeOutSine',
                             function(){
@@ -942,7 +942,7 @@
         var holder = $('.edgtf-content');
         var headerHeight = $('.edgtf-page-header').outerHeight();
 
-        if(edgtf.windowWidth < 1025) {
+        if(edgtf.windowWidth < 769) {
             headerHeight = $('.edgtf-mobile-header').outerHeight();
         }
 

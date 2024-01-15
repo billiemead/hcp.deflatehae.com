@@ -1,0 +1,96 @@
+$switch-border-radius: 20px;
+
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span {
+	display: block;
+	float: left;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.switch-type .cb-enable, .switch-type .cb-disable, .switch-type .cb-enable span, .switch-type .cb-disable span {
+	display: block;
+	float: left;
+}
+
+.field.switch {
+	display: inline-block;
+	border: 1px solid #ddd;
+	margin: 0;
+	background-color: #fff;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.cb-enable span,
+.cb-disable span,
+.switch-type .cb-enable span,
+.switch-type .cb-disable span {
+	line-height: 29px;
+	display: block;
+	background-repeat: no-repeat;
+	font-weight: bold;
+}
+
+.cb-enable span,
+.switch-type .cb-enable span {
+	background-color: #fff;
+	padding: 0 10px;
+	color: #8D9CA6;
+}
+
+.cb-disable span,
+.switch-type .cb-disable span {
+	color:#8D9CA6;
+	padding: 0 13px;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.cb-disable span:hover {
+	background-color: #dce0e6;
+	color: #fff;
+}
+
+.cb-enable span:hover {
+	background-color: rgba($edgtf-first-color, 0.2);
+	color: #fff;
+}
+
+.cb-disable.selected {
+	background: #7d7d7d;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.cb-disable.selected span {
+	color: #fff;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.cb-enable.selected {
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.cb-enable.selected span {
+	background-color: $edgtf-first-color;
+	color: #fff;
+
+	@include edgtf-border-radius($switch-border-radius);
+}
+
+.switch label {
+	cursor: pointer;
+}
+
+.switch input {
+	display: none;
+}
+
+.field.switch input[type=checkbox]:checked:before {
+	content: '';
+}
+
+.edgtf-page .switch .checkbox {
+	display: none;
+}

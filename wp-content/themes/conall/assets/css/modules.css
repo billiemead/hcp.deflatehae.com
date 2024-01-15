@@ -4066,7 +4066,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .edgtf-404-page .edgtf-page-not-found h1 span {
     font-size: 0.5em;
   }
@@ -8747,7 +8747,7 @@ nav.edgtf-fullscreen-menu > ul > li.edgtf-active-item > a .edgtf-fullscreen-menu
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .edgtf-portfolio-single-nav .edgtf-grid {
     width: 92%;
   }
@@ -11842,7 +11842,7 @@ button.edgtf-btn {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 769px) {
   .edgtf-image-gallery .edgtf-image-gallery-grid.edgtf-gallery-columns-4 .edgtf-gallery-image {
     width: 23.5%;
     margin-right: 2%;
@@ -12157,7 +12157,7 @@ button.edgtf-btn {
 }
 
 /* Type with icon - end
-========================================================================== 
+==========================================================================
 /* ==========================================================================
 # Message style - end
 ========================================================================== */
@@ -14884,8 +14884,8 @@ button.edgtf-btn {
   position: absolute;
   margin: 0;
   color: #fff;
-  /* 
-                        Default Text styles 
+  /*
+                        Default Text styles
                     */
 }
 
@@ -17822,7 +17822,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
 /* ==========================================================================
    12. Plugins styles
    ========================================================================== */
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
@@ -17863,7 +17863,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   }
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -17874,7 +17874,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -17982,7 +17982,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -17998,7 +17998,7 @@ footer .edgtf-blog-list-widget .edgtf-simple-title {
   transform-style: preserve-3d;
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {

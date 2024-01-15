@@ -2,7 +2,34 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 BUTTONS START ******* */
-
+body.pharvaris {
+    button,
+    .pv-btn,
+    .btn {
+        @include pv-btn();
+    }
+    a#edgtf-back-to-top {
+        width: 40px;
+        right: 2%;
+        bottom: 77px;
+        & > span {
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+            background-color: $yellow;
+            border: 1px solid $yellow;
+            border-radius: 33px;
+        }
+        span.edgtf-icon-stack {
+            width: 40px;
+        }
+    }
+}
 
 
 @media all and (max-width: 1024px) {

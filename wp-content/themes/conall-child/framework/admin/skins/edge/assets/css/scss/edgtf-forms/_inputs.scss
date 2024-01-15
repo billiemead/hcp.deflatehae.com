@@ -1,0 +1,168 @@
+input.edgtf-form-element,
+select.edgtf-form-element,
+textarea.edgtf-form-element {
+	@include edgtf-box-shadow(none);
+	@include edgtf-transition(border-color 0.3s ease-in-out);
+
+	border-color: #ddd;
+	font-size: 12px;
+	outline: none;
+}
+
+.input-group-addon {
+    font-size: 12px;
+    background-color: #f7f7f7;
+}
+
+input[type='text'].edgtf-form-element,
+input[type='email'].edgtf-form-element,
+input[type='password'].edgtf-form-element,
+input[type='number'].edgtf-form-element,
+select.edgtf-form-element,
+textarea.edgtf-form-element {
+	@include edgtf-border-radius(4px);
+}
+
+input[type='text'].edgtf-form-element.edgtf-form-element-xxsmall,
+input[type='email'].edgtf-form-element.edgtf-form-element-xxsmall,
+input[type='password'].edgtf-form-element.edgtf-form-element-xxsmall,
+input[type='number'].edgtf-form-element.edgtf-form-element-xxsmall,
+select.edgtf-form-element.edgtf-form-element-xxsmall,
+textarea.edgtf-form-element.edgtf-form-element-xxsmall {
+	width: 60px;
+}
+
+input[type='text'].edgtf-form-element.edgtf-form-element-xsmall,
+input[type='email'].edgtf-form-element.edgtf-form-element-xsmall,
+input[type='password'].edgtf-form-element.edgtf-form-element-xsmall,
+input[type='number'].edgtf-form-element.edgtf-form-element-xsmall,
+select.edgtf-form-element.edgtf-form-element-xsmall,
+textarea.edgtf-form-element.edgtf-form-element-xsmall {
+	width: 100px;
+}
+
+input[type='text'].edgtf-form-element.edgtf-form-element-small,
+input[type='email'].edgtf-form-element.edgtf-form-element-small,
+input[type='password'].edgtf-form-element.edgtf-form-element-small,
+input[type='number'].edgtf-form-element.edgtf-form-element-small,
+select.edgtf-form-element.edgtf-form-element-small,
+textarea.edgtf-form-element.edgtf-form-element-small {
+	width: 155px;
+}
+
+input[type='text'].edgtf-form-element.edgtf-form-element-medium,
+input[type='email'].edgtf-form-element.edgtf-form-element-medium,
+input[type='password'].edgtf-form-element.edgtf-form-element-medium,
+input[type='number'].edgtf-form-element.edgtf-form-element-medium,
+select.edgtf-form-element.edgtf-form-element-medium,
+textarea.edgtf-form-element.edgtf-form-element-medium {
+	width: 255px;
+}
+
+input[type='text'].edgtf-form-element.edgtf-form-element-large,
+input[type='email'].edgtf-form-element.edgtf-form-element-large,
+input[type='password'].edgtf-form-element.edgtf-form-element-large,
+input[type='number'].edgtf-form-element.edgtf-form-element-large,
+select.edgtf-form-element.edgtf-form-element-large,
+textarea.edgtf-form-element.edgtf-form-element-large {
+	width: 500px;
+}
+
+textarea.edgtf-form-element {
+	resize: none;
+}
+#general textarea.edgtf-form-element {
+	resize: vertical;
+}
+
+input[type='text'].edgtf-form-element,
+input[type='email'].edgtf-form-element,
+input[type='password'].edgtf-form-element,
+input[type='number'].edgtf-form-element,
+select.edgtf-form-element {
+	height: 34px;
+	line-height: 1.42857143;
+}
+
+input[type='text'].edgtf-form-element,
+input[type='email'].edgtf-form-element,
+input[type='password'].edgtf-form-element,
+input[type='number'].edgtf-form-element,
+select.edgtf-form-element,
+textarea.edgtf-form-element {
+	padding: 6px 12px;
+}
+input.edgtf-form-element:hover,
+select.edgtf-form-element:hover,
+textarea.edgtf-form-element:hover {
+	background-color:#f7f9fa;
+}
+
+input.edgtf-form-element:focus,
+select.edgtf-form-element:focus,
+textarea.edgtf-form-element:focus {
+	border-color: #999;
+	background-color:#f7f9fa;
+
+	@include edgtf-box-shadow(none);
+}
+
+input[type="radio"].edgtf-form-element,
+input[type="checkbox"].edgtf-form-element {
+	margin-top: 1px;
+	outline: none;
+}
+
+@media only screen and (max-width: $second-break-point) {
+
+	input[type="radio"].edgtf-form-element,
+	input[type="checkbox"].edgtf-form-element {
+		width: 16px;
+		height: 16px;
+	}
+}
+@media only screen and (max-width: $second-break-point) {
+	input[type="radio"].edgtf-form-element:checked:before,
+	input[type="checkbox"].edgtf-form-element:checked:before {
+		font: 400 21px/1 dashicons;
+	}
+}
+@media only screen and (max-width: $second-break-point) {
+	input[type="checkbox"].edgtf-form-element:checked:before {
+		margin: -3px 0 0 -4px;
+	}
+}
+@media only screen and (max-width: $second-break-point) {
+	input[type="radio"].edgtf-form-element:checked:before {
+		margin: 3px;
+	}
+}
+
+.input-group {
+	margin-bottom: 15px;
+}
+
+.input-group .input-group-addon {
+	@include edgtf-border-radius(0);
+}
+
+label {
+	margin:0;
+}
+
+.radio-inline input[type="radio"] + img {
+    border: 2px solid transparent;
+    -webkit-transition: border-color 0.15s ease-in-out;
+    -moz-transition: border-color 0.15s ease-in-out;
+    -ms-transition: border-color 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.radio-inline input[type="radio"]:checked + img {
+    border-color: #bba011;
+}
+
+.edgtf-radio-group-holder.with-images .radio-inline {
+    padding-left: 0;
+}

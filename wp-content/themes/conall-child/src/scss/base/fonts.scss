@@ -6,7 +6,7 @@
 
 /* ******* PHARVARIS HCP 2024 FONTS START ******* */
 
-$poppins: 'Poppins', serif;
+$poppins: 'Poppins', sans-serif;
 
 @mixin thin($poppins) {
   font-family: $poppins !important;

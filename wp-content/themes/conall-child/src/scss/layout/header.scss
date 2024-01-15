@@ -3,26 +3,254 @@
 
 /* ******* PHARVARIS HCP 2024 HEADER START ******* */
 
-div.edgtf-logo-wrapper {
-    a {
-        img.edgtf-normal-logo {
-            height: 25px;
+body.pharvaris {
+    div.edgtf-wrapper {
+        div.edgtf-wrapper-inner {
+            position: relative;
+            header.edgtf-page-header.hcp-header {
+                background-color: $dk-grey;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div.edgtf-fixed-wrapper {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    &.fixed {
+                        border: none;
+                        background-color: $dk-grey;
+                    }
+                    div.edgtf-menu-area {
+                        display: flex;
+                        padding: 0;
+                        height: 86px;
+                        width: 100%;
+                        background-color: $dk-grey !important;
+                        justify-content: center;
+                        align-items: center;
+                        div.edgtf-container.pv-container {
+                            padding-top: 18px;
+                            div.edgtf-container-inner {
+                                width: 100% !important;
+                                div.edgtf-vertical-align-containers {
+                                    display: flex;
+                                    align-items: center;
+                                    div.edgtf-position-left {
+                                        float: unset;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                        width: 25%;
+                                        div.edgtf-position-left-inner {
+                                            div.edgtf-logo-wrapper.hcp-logo {
+                                                a {
+                                                    img.edgtf-normal-logo {
+                                                        height: 47px;
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.edgtf-position-right {
+                                        float: unset;
+                                        display: flex;
+                                        width: 75%;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        div.edgtf-position-right-inner {
+                                            display: flex;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div.edgtf-menu-area::after {
+                        background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
+                        bottom: -24px;
+                        content: "";
+                        height: 24px;
+                        position: absolute;
+                        width: 100vw;
+                        background-repeat: no-repeat;
+                        background-size: 100vw;
+                        background-position-x: center;
+                        background-position-y: top;
+                    }
+                }
+            }
         }
     }
 }
-nav.edgtf-main-menu > ul > li > a {
-    span.item_text {
-        text-transform: uppercase;
-        color: $black;
-        letter-spacing: -0.5px;
+@media all and (max-width: 1500px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                header.edgtf-page-header.hcp-header {
+                    div.edgtf-fixed-wrapper {
+                        &.fixed {
+                        }
+                        div.edgtf-menu-area {
+                            div.edgtf-container.pv-container {
+                                div.edgtf-container-inner {
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-position-left {
+                                            div.edgtf-position-left-inner {
+                                                div.edgtf-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-logo {
+                                                            height: 42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.edgtf-position-right {
+                                            div.edgtf-position-right-inner {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
 @media all and (max-width: 1024px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                header.edgtf-page-header.hcp-header {
+                    div.edgtf-fixed-wrapper {
+                        &.fixed {
+                        }
+                        div.edgtf-menu-area {
+                            div.edgtf-container.pv-container {
+                                div.edgtf-container-inner {
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-position-left {
+                                            div.edgtf-position-left-inner {
+                                                div.edgtf-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-logo {
+                                                            height: 35px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.edgtf-position-right {
+                                            float: unset;
+                                            display: flex;
+                                            width: 75%;
+                                            justify-content: flex-end;
+                                            align-items: center;
+                                            div.edgtf-position-right-inner {
+                                                display: flex;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div.edgtf-menu-area::after {
+                            background: url("/wp-content/themes/conall-child/images/header-background-1024x13.svg") center bottom no-repeat;
+                            bottom: -13px;
+                            content: "";
+                            height: 13px;
+                            position: absolute;
+                            width: 100vw;
+                            background-repeat: no-repeat;
+                            background-size: 100vw;
+                            background-position-x: center;
+                            background-position-y: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                header.edgtf-page-header.hcp-header {
+                    display: none;
+                    div.edgtf-fixed-wrapper {
+                        &.fixed {
+                        }
+                        div.edgtf-menu-area {
+                            div.edgtf-container.pv-container {
+                                div.edgtf-container-inner {
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-position-left {
+                                            div.edgtf-position-left-inner {
+                                                div.edgtf-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-logo {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.edgtf-position-right {
+                                            div.edgtf-position-right-inner {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div.edgtf-menu-area::after {
+                        }
+                    }
+                }
+                header.edgtf-mobile-header.hcp-mobile-header {
+                    div.edgtf-mobile-header-inner {
+                        div.edgtf-mobile-header-holder {
+                            div.edgtf-grid {
+                                div.edgtf-vertical-align-containers {
+                                    div.edgtf-mobile-menu-opener {
+                                        float: right;
+                                        a {
+                                            color: $blue;
+                                            span.edgtf-mobile-opener-icon-holder {
+                                                i.edgtf-icon-font-awesome.fa.fa-bars {
+
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                    div.edgtf-position-center {
+                                        div.edgtf-position-center-inner {
+                                            div.edgtf-mobile-logo-wrapper.hcp-logo {
+                                                a {
+                                                    img.edgtf-normal-mobile-logo {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
 }

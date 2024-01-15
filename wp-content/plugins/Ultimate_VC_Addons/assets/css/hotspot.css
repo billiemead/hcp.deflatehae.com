@@ -104,8 +104,8 @@
         opacity: .7
     }
     100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
         opacity: 0
     }
 }

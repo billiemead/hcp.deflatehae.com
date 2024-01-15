@@ -1,0 +1,115 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 HOTSPOTS START ******* */
+
+div.pv-woman-hotspot {
+    display: flex;
+    justify-content: center;
+    img.ult_hotspot_image {
+        width: 364px;
+        margin-right: 18px;
+        margin-top: -15px;
+    }
+}
+div.pv-hotspot-wrapper {
+
+}
+.ult-tooltipster-base .ult-tooltipster-content {
+    padding: 0;
+}
+.ult-tooltipster-base {
+    margin-top: 54px;
+    margin-left: 27px;
+}
+.ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
+    top: 0;
+    left: 0;
+}
+div.ult-tooltipster-content {
+    div#pv-hotspot-1 {
+        width: 618px;
+        height: 205px;
+        background-image: url("/wp-content/themes/conall-child/images/tooltip1.svg");
+        ul.pv-hotspot-list {
+            max-width: 260px;
+            li {
+                height: 38px;
+            }
+        }
+    }
+    div#pv-hotspot-2 {
+        width: 551px;
+        height: 283px;
+        ul.pv-hotspot-list {
+            max-width: 320px;
+            li {
+                padding: 18px 0;
+            }
+        }
+    }
+    div#pv-hotspot-3 {
+        width: 468px;
+        height: 153px;
+        ul.pv-hotspot-list {
+            max-width: 262px;
+        }
+    }
+    div#pv-hotspot-4 {
+        width: 512px;
+        height: 186px;
+    }
+    div#pv-hotspot-5 {
+        width: 550px;
+        height: 233px;
+    }
+    div#pv-hotspot-6 {
+        width: 512px;
+        height: 423px;
+    }
+    div.pv-hotspot-box {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h6.pv-hotspot-h6 {
+            @include bold($poppins);
+            color: $red;
+            font-size: 26px;
+            line-height: 26px;
+            text-transform: uppercase;
+        }
+        ul.pv-hotspot-list {
+            list-style-position: outside;
+            li.pv-hotspot-list-item {
+                @include regular($poppins);
+                color: $black;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: left;
+                padding-left: 0;
+                margin-left: 22px;
+            }
+            li::marker {
+                color: $red;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 980px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 HOTSPOTS END ******* */

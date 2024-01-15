@@ -910,8 +910,8 @@ if ( ! class_exists( 'Ultimate_VC_Addons_HotSpot' ) ) {
 				$css_path = '../assets/css/';
 				$ext      = '';
 			} else {
-				$js_path  = '../assets/min-js/';
-				$css_path = '../assets/min-css/';
+				$js_path  = '../assets/js/';
+				$css_path = '../assets/css/';
 				$ext      = '.min';
 			}
 			// css.
