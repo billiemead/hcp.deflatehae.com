@@ -20,7 +20,7 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 	 * Configuration for Visual Composer
 	 * Hooks on vc_after_init action
 	 */
-	// function conall_edge_configure_visual_composer() {
+	function conall_edge_configure_visual_composer() {
 
 		/**
 		 * Removing shortcodes
@@ -97,7 +97,7 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 			vc_remove_param('vc_row', 'disable_element');
 
 		} */
-	// }
+	}
 
 	add_action('vc_after_init', 'conall_edge_configure_visual_composer');
 }
