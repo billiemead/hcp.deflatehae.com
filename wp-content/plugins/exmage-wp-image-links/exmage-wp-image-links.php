@@ -587,9 +587,9 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 				'ae04.alicdn.com',
 				'ae05.alicdn.com',
 			), true );
-			preg_match( '/[^?]+\.(jpg|JPG|jpeg|JPEG|jpe|JPE|gif|GIF|png|PNG)/', $new_url, $matches );
+			preg_match( '/[^?]+\.(jpg|JPG|jpeg|JPEG|jpe|JPE|gif|GIF|png|PNG|svg|SVG)/', $new_url, $matches );
 			if ( ! is_array( $matches ) || ! count( $matches ) ) {
-				preg_match( '/[^?]+\.(jpg|JPG|jpeg|JPEG|jpe|JPE|gif|GIF|png|PNG)/', $url, $matches );
+				preg_match( '/[^?]+\.(jpg|JPG|jpeg|JPEG|jpe|JPE|gif|GIF|png|PNG|svg|SVG)/', $url, $matches );
 				if ( is_array( $matches ) && count( $matches ) ) {
 					$new_url  .= "?{$matches[0]}";
 					$image_id .= "?{$matches[0]}";
@@ -1012,6 +1012,7 @@ if ( ! class_exists( 'EXMAGE_WP_IMAGE_LINKS' ) ) {
 				'image/jpeg',
 				'image/jpg',
 				'image/gif',
+                'image/svg+xml',
 				'image/webp',
 			) );
 		}

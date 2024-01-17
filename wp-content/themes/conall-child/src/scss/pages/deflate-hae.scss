@@ -3,10 +3,309 @@
 
 /* ******* PHARVARIS HCP 2024 DEFLATE HAE PAGE START ******* */
 
+body.pharvaris {
+    div.edgtf-wrapper {
+        div.edgtf-wrapper-inner {
+            div.edgtf-content {
+                div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#home-cta-row {
+                            div#stay-informed-cta {
+                                z-index: 102;
+                                a {
+                                    width: 185px;
+                                }
+                            }
+                        }
+                        div#home-hero-row {
+                            /* z-index: 101; */
+                            left: 50%;
+                            margin-left: -50vw;
+                            margin-right: -50vw;
+                            max-width: 100vw;
+                            position: relative;
+                            right: 50%;
+                            width: 100vw;
+                            transform: translateY(-65px);
+                            div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 100%;
+                                div#home-hero-image-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#hero-background-image {
+                                                div.wpb_wrapper {
+                                                    width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        width: 100%;
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-row.inner {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        width: 80%;
+                                        max-width: 1436px;
+                                        margin: 0 auto;
+                                        justify-content: center;
+                                        align-items: flex-end;
+                                        padding-bottom: 6%;
+                                        div.pv-col1.left {
+                                            width: 40%;
+                                            div.hero-content-container {
+                                                div.hero-wrapper {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    max-width: 570px;
+                                                    p.pv-p {
+                                                        font-size: 0.93vw;
+                                                        line-height: 1.3vw;
+                                                    }
+                                                    h1.pv-h1.hero.center {
+                                                        @include bold($poppins);
+                                                        font-size: 1.55vw;
+                                                        line-height: 1.9vw;
+                                                        color: $dk-grey;
+                                                            &.top {
+                                                                padding-top:6%;
+                                                                padding-bottom:2%;
+                                                            }
+                                                            &.bottom {
+                                                                padding-top:2%;
+                                                                padding-bottom:8%;
+                                                            }
+                                                    }
+                                                    img.hero-logo {
+                                                        width: 500px;
+                                                    }
+                                                    h2.pv-h2.hero {
+                                                        @include bold($poppins);
+                                                        font-size: 1.05vw;
+                                                        line-height: 1.55vw;
+                                                        color: $red;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.pv-col2.right {
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div#home-tradeoff-row {
+                            div.pv-col1 {
+                                div.wpb_wrapper {
+                                    div#home-intro-heading {
+                                        div.wpb_wrapper {
+                                            h1.pv-h1.blue {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
 
-    #test-row {
-        background-color: $yellow;
+                                a.pv-btn {
+
+                                }
+                                div#hae-facts-section.pv-row.inner {
+                                    background-image: url("/wp-content/themes/conall-child/images/white-hae-box.svg");
+                                    width: 1194px;
+                                    height: 718px;
+                                    @include hae-box-shadow;
+                                    display: flex;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.pv-col1.inner {
+                                            position: absolute;
+                                            top: 0;
+                                            div.haefacts-banner-wrapper {
+                                                    div.haefacts-banner-img-container {
+                                                        background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        width: 330px;
+                                                        height: 91px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        margin: 0 auto;
+                                                        transform: translateY(-50%);
+                                                        h2.pv-h2.center.white {
+
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        div.pv-col1.inner2 {
+                                            div.vc_column-inner {
+                                                padding: 0;
+                                                div.wpb_wrapper {
+                                                    height: 100%;
+                                                    div.wpb_text_column.wpb_content_element {
+                                                        height: 100%;
+                                                        div.wpb_wrapper {
+                                                            height: 100%;
+                                                            div#hae-facts-icon-row {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                height: 100%;
+                                                                justify-content: space-between;
+                                                                div.iconrow {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    p {
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        width: 135px;
+                                                                        height: 90px;
+                                                                    }
+                                                                    div.hae-copy-wrapper {
+                                                                        display: flex;
+                                                                        flex-grow: 1;
+                                                                        p.pv-p {
+                                                                            display: block;
+                                                                            width: 100%;
+                                                                            height: auto;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div#icon-row1 {
+                                                                    img.hae-icon.one {
+
+                                                                    }
+                                                                    p.pv-p {
+
+                                                                    }
+                                                                }
+                                                                div#icon-row2 {
+                                                                    img.hae-icon.two {
+
+                                                                    }
+                                                                    p.pv-p {
+
+                                                                    }
+                                                                }
+                                                                div#icon-row3 {
+                                                                    img.hae-icon.three {
+
+                                                                    }
+                                                                    p.pv-p {
+
+                                                                    }
+                                                                }
+                                                                div#icon-row4 {
+                                                                    img.hae-icon.four {
+
+                                                                    }
+                                                                    p.pv-p {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.inner3 {
+                                            a.pv-btn {
+
+                                            }
+                                        }
+                                        div.pv-col1:nth-child(2) {
+                                            background-color: red;
+                                            width: 950px;
+                                            height: 355px;
+                                            margin-bottom: 65px;
+                                            margin-top: 120px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div#home-overview-row {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            div.pv-col2 {
+                                div.overview-container {
+                                    display: flex;
+                                    align-items: center;
+                                    div.overview-col.left {
+                                        img.overview-rnd-image {
+
+                                        }
+                                    }
+                                    div.overview-col.right {
+                                        h5.pv-h5 {
+                                            text-transform: uppercase;
+                                            text-align: center;
+                                        }
+                                        p.pv-p {
+                                            text-align: center;
+                                            width: 324px;
+                                            margin: 0 auto;
+                                        }
+                                        a.pv-btn {
+
+                                        }
+                                    }
+                                }
+                            }
+                            div.pv-col2.right {
+
+                            }
+                        }
+                        div#home-form-row {
+                            height: 660px;
+                            background-color: $yellow;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        div#home-refs-section {
+                            height: 218px;
+                            background-color: $dk-grey;
+                            div.refs-title {
+                                h4.h4-refs.left {
+
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
 
 @media all and (max-width: 1024px) {

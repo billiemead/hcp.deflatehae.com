@@ -3,7 +3,11 @@
 
 /* ******* PHARVARIS HCP 2024 HOVERS START ******* */
 
-
+body.pharvaris a#edgtf-back-to-top > span:hover {
+    background-color: $blue;
+    border: 1px solid $blue;
+    transition: all 0.65s ease-in-out;
+}
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
     background-color: $white !important;
     border-color: $yellow !important;
