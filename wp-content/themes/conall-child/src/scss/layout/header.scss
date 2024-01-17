@@ -2,17 +2,20 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 HEADER START ******* */
-
+.edgtf-preload-background {
+    background-image: none !important;
+}
 body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             position: relative;
             header.edgtf-page-header.hcp-header {
-                background-color: $dk-grey;
+                background-color: $dk-grey !important;
                 border: none;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                top: 0px;
                 div.edgtf-fixed-wrapper {
                     display: flex;
                     width: 100%;
@@ -135,6 +138,7 @@ body.pharvaris {
                                 div.edgtf-container-inner {
                                     div.edgtf-vertical-align-containers {
                                         div.edgtf-position-left {
+                                            width: 20%;
                                             div.edgtf-position-left-inner {
                                                 div.edgtf-logo-wrapper.hcp-logo {
                                                     a {
@@ -148,7 +152,7 @@ body.pharvaris {
                                         div.edgtf-position-right {
                                             float: unset;
                                             display: flex;
-                                            width: 75%;
+                                            width: 80%;
                                             justify-content: flex-end;
                                             align-items: center;
                                             div.edgtf-position-right-inner {
@@ -186,37 +190,11 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 header.edgtf-page-header.hcp-header {
                     display: none;
-                    div.edgtf-fixed-wrapper {
-                        &.fixed {
-                        }
-                        div.edgtf-menu-area {
-                            div.edgtf-container.pv-container {
-                                div.edgtf-container-inner {
-                                    div.edgtf-vertical-align-containers {
-                                        div.edgtf-position-left {
-                                            div.edgtf-position-left-inner {
-                                                div.edgtf-logo-wrapper.hcp-logo {
-                                                    a {
-                                                        img.edgtf-normal-logo {
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-position-right {
-                                            div.edgtf-position-right-inner {
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        div.edgtf-menu-area::after {
-                        }
-                    }
                 }
                 header.edgtf-mobile-header.hcp-mobile-header {
                     div.edgtf-mobile-header-inner {
+                        background-color: $dk-grey;
+                        border: none;
                         div.edgtf-mobile-header-holder {
                             div.edgtf-grid {
                                 div.edgtf-vertical-align-containers {

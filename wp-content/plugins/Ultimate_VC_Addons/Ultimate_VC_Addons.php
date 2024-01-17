@@ -671,8 +671,8 @@ if ( ! class_exists( 'Ultimate_VC_Addons' ) ) {
 			}
 
 			$css_path = array(
-				'css_path' => 'assets/min-css/',
-				'css_ext'  => '.min',
+				'css_path' => 'assets/css/',
+				'css_ext'  => '',
 			);
 
 			if ( 'enable' === self::$uavc_dev_mode ) {
@@ -745,8 +745,8 @@ if ( ! class_exists( 'Ultimate_VC_Addons' ) ) {
 			}
 
 			$js_path = array(
-				'js_path' => 'assets/min-js/',
-				'js_ext'  => '.min',
+				'js_path' => 'assets/js/',
+				'js_ext'  => '',
 			);
 
 			if ( 'enable' === self::$uavc_dev_mode ) {
@@ -805,9 +805,9 @@ if ( ! class_exists( 'Ultimate_VC_Addons' ) ) {
 				$css_path = UAVC_URL . 'assets/css/';
 				$ext      = '';
 			} else {
-				$js_path  = UAVC_URL . 'assets/min-js/';
-				$css_path = UAVC_URL . 'assets/min-css/';
-				$ext      = '.min';
+				$js_path  = UAVC_URL . 'assets/js/';
+				$css_path = UAVC_URL . 'assets/css/';
+				$ext      = '';
 			}
 
 			$ultimate_smooth_scroll_compatible = get_option( 'ultimate_smooth_scroll_compatible' );
