@@ -111,7 +111,7 @@ body.pharvaris {
         &.white {
             color: $white;
             font-size: 30px;
-            line-height: 50px;
+            line-height: 30px;
         }
     }
     h3, h3.pv-h3 {
@@ -137,7 +137,10 @@ body.pharvaris {
         color:  $white;
     }
     h5, h5.pv-h5 {
-
+        @include bold($poppins);
+        font-size: 26px;
+        line-height: 26px;
+        color: $black;
     }
     h6, h6.pv-h6 {
 

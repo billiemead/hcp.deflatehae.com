@@ -35,7 +35,7 @@ body.pharvaris {
                                         padding: 0;
                                         div.wpb_wrapper {
                                             div#hero-background-image {
-                                                div.wpb_wrapper {
+                                                figure.wpb_wrapper {
                                                     width: 100%;
                                                     div.vc_single_image-wrapper {
                                                         width: 100%;
@@ -110,50 +110,67 @@ body.pharvaris {
                             }
                         }
                         div#home-tradeoff-row {
+                            height: 994px;
                             div.pv-col1 {
-                                div.wpb_wrapper {
-                                    div#home-intro-heading {
-                                        div.wpb_wrapper {
-                                            h1.pv-h1.blue {
-                                                text-align: center;
+                                div.vc_column-inner {
+                                    div.wpb_wrapper {
+                                        div#home-intro-heading {
+                                            max-width: 920px;
+                                            padding-bottom: 50px;
+                                            div.wpb_wrapper {
+                                                h1.pv-h1.blue {
+                                                    text-align: center;
+                                                }
                                             }
                                         }
                                     }
                                 }
-
+                                div.vc_column-inner:first-child > div.wpb_wrapper {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
                                 a.pv-btn {
 
                                 }
                                 div#hae-facts-section.pv-row.inner {
-                                    background-image: url("/wp-content/themes/conall-child/images/white-hae-box.svg");
-                                    width: 1194px;
-                                    height: 718px;
-                                    @include hae-box-shadow;
+                                    max-width: 1194px;
+                                    max-height: 718px;
                                     display: flex;
+                                    margin: 0 auto;
+                                    transform: translateY(150px);
+                                    padding: 0 8.8%;
                                     div.edgtf-full-section-inner {
                                         display: flex;
                                         flex-direction: column;
-                                        justify-content: center;
+                                        justify-content: space-evenly;
                                         align-items: center;
+                                        width: 100%;
                                         div.pv-col1.inner {
-                                            position: absolute;
-                                            top: 0;
+                                           /*  position: absolute; */
+                                            transform: translateY(-20px);
                                             div.haefacts-banner-wrapper {
+                                                width: 100%;
+                                                div.wpb_wrapper {
+                                                    width: 100%;
                                                     div.haefacts-banner-img-container {
                                                         background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
                                                         background-repeat: no-repeat;
-                                                        background-size: contain;
-                                                        width: 330px;
-                                                        height: 91px;
+                                                        background-size: cover;
+                                                        max-width: 330px;
+                                                        max-height: 91px;
                                                         display: flex;
                                                         justify-content: center;
                                                         align-items: center;
                                                         margin: 0 auto;
-                                                        transform: translateY(-50%);
+                                                        padding: 4% 0;
+                                                        flex-direction: column;
                                                         h2.pv-h2.center.white {
 
                                                         }
                                                     }
+                                                }
                                             }
                                         }
                                         div.pv-col1.inner2 {
@@ -174,12 +191,16 @@ body.pharvaris {
                                                                     display: flex;
                                                                     justify-content: center;
                                                                     align-items: center;
-                                                                    p {
+                                                                    div.hae-image-wrapper {
                                                                         display: flex;
                                                                         justify-content: center;
                                                                         align-items: center;
-                                                                        width: 135px;
+                                                                        width: 95px;
                                                                         height: 90px;
+                                                                        margin-right: 35px;
+                                                                        img {
+
+                                                                        }
                                                                     }
                                                                     div.hae-copy-wrapper {
                                                                         display: flex;
@@ -235,47 +256,93 @@ body.pharvaris {
                                             }
                                         }
                                         div.pv-col1:nth-child(2) {
-                                            background-color: red;
-                                            width: 950px;
-                                            height: 355px;
-                                            margin-bottom: 65px;
-                                            margin-top: 120px;
+                                            background-color: transparent;
+                                            max-width: 950px;
+                                            max-height: 355px;
+                                            /* margin-bottom: 65px;
+                                            margin-top: 120px; */
                                         }
                                     }
+                                }
+                                div#hae-facts-section.pv-row.inner:before {
+                                    content:"";
+                                    background-image: url("/wp-content/themes/conall-child/images/white-hae-box.svg");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    display: flex;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
                                 }
                             }
                         }
                         div#home-overview-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
                             background-repeat: no-repeat;
-                            background-size: auto;
-                            div.pv-col2 {
-                                div.overview-container {
+                            background-size: cover;
+                            padding-top: 8%;
+                            padding-bottom: 8%;
+                            div.clearfix.edgtf-full-section-inner {
+                                display: flex;
+                                height: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                div.pv-col2 {
                                     display: flex;
+                                    padding-top: 2%;
+                                    padding-bottom: 2%;
+                                    justify-content: center;
                                     align-items: center;
-                                    div.overview-col.left {
-                                        img.overview-rnd-image {
+                                    div.overview-container {
+                                        display: flex;
+                                        align-items: center;
+                                        width: 100%;
+                                        justify-content: center;
+                                        div.overview-col.left {
+                                            width: 290px;
+                                            img.overview-rnd-image {
 
+                                            }
+                                        }
+                                        div.overview-col.right {
+                                            height: 190px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            h5.pv-h5 {
+                                                text-transform: uppercase;
+                                                text-align: center;
+                                            }
+                                            p.pv-p {
+                                                text-align: center;
+                                                width: 324px;
+                                                margin: 0 auto;
+                                            }
+                                            a.pv-btn {
+
+                                            }
                                         }
                                     }
-                                    div.overview-col.right {
-                                        h5.pv-h5 {
-                                            text-transform: uppercase;
-                                            text-align: center;
-                                        }
-                                        p.pv-p {
-                                            text-align: center;
-                                            width: 324px;
-                                            margin: 0 auto;
-                                        }
-                                        a.pv-btn {
+                                    &.left {
 
-                                        }
                                     }
                                 }
-                            }
-                            div.pv-col2.right {
+                                div.pv-col2.left::after {
+                                    content: "";
+                                    border: 1px solid $dk-grey;
+                                    height: 100%;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 1px;
+                                }
+                                div.pv-col2.right {
 
+                                }
                             }
                         }
                         div#home-form-row {
@@ -287,8 +354,11 @@ body.pharvaris {
                             align-items: center;
                         }
                         div#home-refs-section {
-                            height: 218px;
+                            height: 200px;
                             background-color: $dk-grey;
+                            display: flex;
+                            align-items: center;
+                            padding-top: 5%;
                             div.refs-title {
                                 h4.h4-refs.left {
 
