@@ -3,37 +3,6 @@
 
 /* ******* PHARVARIS HCP 2024 BASE START ******* */
 
-@mixin pv-btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 53px;
-    width: auto;
-    border: 1px solid $yellow;
-    transition: all 0.5s ease-in-out;
-    background-color: $yellow;
-    color: $black;
-    border-radius: 33px;
-    font-family: $poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: -0.5px;
-    padding: 0;
-    margin: 0 auto;
-    &:active,
-    &:focus {
-        outline: none;
-    }
-    &.w-264 {
-        width: 264px;
-    }
-    &.w-292 {
-        width: 292px;
-    }
-}
-
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 980px) {

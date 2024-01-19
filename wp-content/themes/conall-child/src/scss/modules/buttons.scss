@@ -2,6 +2,38 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 BUTTONS START ******* */
+@mixin pv-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    width: auto;
+    border: 1px solid $yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &.w-264 {
+        max-width: 264px;
+    }
+    &.w-292 {
+        width: 292px;
+    }
+}
+
 body.pharvaris {
     button,
     .pv-btn,
@@ -17,22 +49,26 @@ body.pharvaris {
             display: block;
             width: 40px;
             height: 40px;
-            line-height: 40px;
+            line-height: 35px;
             font-size: 15px;
             text-align: center;
-            color: #fff;
+            color: $white;
             background-color: $yellow;
-            border: 1px solid $yellow;
-            border-radius: 33px;
+            border: 3px solid $white;
+            border-radius: 40px;
             transition: all 0.75s ease-in-out;
         }
         span.edgtf-icon-stack {
             width: 40px;
         }
     }
+    div#stay-informed-cta {
+        z-index: 102;
+        a {
+            width: 185px;
+        }
+    }
 }
-
-
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 980px) {

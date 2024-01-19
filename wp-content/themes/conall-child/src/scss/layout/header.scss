@@ -184,6 +184,37 @@ body.pharvaris {
 }
 @media all and (max-width: 980px) {
 }
+@media all and (max-width: 890px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                header.edgtf-page-header.hcp-header {
+                    div.edgtf-fixed-wrapper {
+                        div.edgtf-menu-area {
+                            div.edgtf-container.pv-container {
+                                div.edgtf-container-inner {
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-position-left {
+                                            div.edgtf-position-left-inner {
+                                                div.edgtf-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-logo {
+                                                            height: 30px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media all and (max-width: 768px) {
     body.pharvaris {
         div.edgtf-wrapper {
