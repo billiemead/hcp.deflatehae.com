@@ -14,6 +14,11 @@ body.home {
                         background-size: contain;
                         background-position: 50% 25%;
                         background-attachment: fixed;
+                        -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 8s; /* Firefox < 16 */
+                                -ms-animation: fadein 8s; /* Internet Explorer */
+                                -o-animation: fadein 8s; /* Opera < 12.1 */
+                                    animation: fadein 8s;
                         div#home-cta-row {
 
                         }
@@ -135,7 +140,7 @@ body.home {
                                 }
                             }
                         }
-                        
+
                         div#hae-banner-section {
                             div.edgtf-full-section-inner {
                                 max-width: 1194px;
@@ -463,6 +468,7 @@ body.home {
                             align-items: center;
                             padding-top: 17%;
                             padding-bottom: 17%;
+                            bottom: -1px;
                         }
                         div#home-refs-section {
                             /* height: 200px; */
