@@ -4,31 +4,22 @@
 
 <div class="edgtf-top-bar">
     <?php if($top_bar_in_grid) : ?>
-    <div class="edgtf-grid">
+    <div class="edgtf-grid pv-container">
     <?php endif; ?>
 		<?php do_action( 'conall_edge_after_header_top_html_open' ); ?>
-        <div class="edgtf-vertical-align-containers edgtf-<?php echo esc_attr($column_widths); ?>">
-            <div class="edgtf-position-left">
-                <div class="edgtf-position-left-inner">
-                    <?php if(is_active_sidebar('edgtf-top-bar-left')) : ?>
-                        <?php dynamic_sidebar('edgtf-top-bar-left'); ?>
-                    <?php endif; ?>
-                </div>
-            </div>
-            <?php if($show_widget_center){ ?>
-                <div class="edgtf-position-center">
-                    <div class="edgtf-position-center-inner">
-                        <?php if(is_active_sidebar('edgtf-top-bar-center')) : ?>
-                            <?php dynamic_sidebar('edgtf-top-bar-center'); ?>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            <?php } ?>
+        <div class="edgtf-vertical-align-containers edgtf-<?php echo esc_attr($column_widths); ?> pv-header-top-fullwidth">
             <div class="edgtf-position-right">
                 <div class="edgtf-position-right-inner">
-                    <?php if(is_active_sidebar('edgtf-top-bar-right')) : ?>
-                        <?php dynamic_sidebar('edgtf-top-bar-right'); ?>
-                    <?php endif; ?>
+                    <ul class="menu-site-selector-list fix">
+                        <li class="menu-selector-list-item">
+                            <a class="menu-selector-link yellow" href="#">For healthcare professionals</a>
+                        </li>
+                        <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
+                        <li class="menu-selector-list-item">
+                            <a class="menu-selector-link white" href="#">For people with HAE and caregivers</a>
+                        </li>
+                        <img class="menu-selector-caret" src="/wp-content/themes/conall-child/images/selector-caret.svg" />
+                    </ul>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ body.pharvaris {
     }
     a#edgtf-back-to-top {
         width: 40px;
-        right: 2%;
+        right: 5.5%;
         bottom: 77px;
         & > span {
             position: relative;
@@ -31,46 +31,48 @@ body.pharvaris {
             width: 40px;
         }
     }
-    div#stay-informed-cta {
-        z-index: 102;
-        position: relative;
-        div.cta-container {
-            width:100%;
-            height:30vw;
-            margin:0 auto;
-            border:none;
-            position: absolute;
-            a.cta-hero-button {
-                transform-origin:top right;
-                right:0;
-                top:60%;
-                transform: rotate(90deg) translateX(50%);
+    div.pv-cta-row {
+        z-index: 200;
+        div#stay-informed-cta {
+            position: relative;
+            div.cta-container {
+                width:100%;
+                height:30vw;
+                margin:0 auto;
+                border:none;
                 position: absolute;
-                width: 185px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                height: 53px;
-                padding: 0;
-                border-radius: 0 0 10px 10px;
-                background: $blue;
-                color: $white !important;
-                @include bold($poppins);
-                font-size: 18px;
-                line-height: 18px;
-                border: 1px solid $blue;
-                transition: all 0.25s;
-                &:hover {
-                    background: $white;
-                    color: $blue !important;
+                a.cta-hero-button {
+                    transform-origin:top right;
+                    right:0;
+                    top:60%;
+                    transform: rotate(90deg) translateX(50%);
+                    position: absolute;
+                    width: 185px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    height: 53px;
+                    padding: 0;
+                    border-radius: 0 0 10px 10px;
+                    background: $blue;
+                    color: $white !important;
+                    @include bold($poppins);
+                    font-size: 18px;
+                    line-height: 18px;
                     border: 1px solid $blue;
-                    transition: all 0.5s;
+                    transition: all 0.25s;
+                    &:hover {
+                        background: $white;
+                        color: $blue !important;
+                        border: 1px solid $blue;
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
@@ -81,7 +83,7 @@ body.pharvaris {
     body.pharvaris {
         a#edgtf-back-to-top {
             width: 40px;
-            right: 2%;
+            right: 4%;
             bottom: 77px;
             & > span {
                 width: 40px;
@@ -104,7 +106,7 @@ body.pharvaris {
     body.pharvaris {
         a#edgtf-back-to-top {
             width: 40px;
-            right: 2%;
+            right: 3.5%;
             bottom: 77px;
             & > span {
                 width: 40px;

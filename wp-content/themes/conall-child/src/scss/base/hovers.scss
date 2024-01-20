@@ -8,12 +8,20 @@ body.pharvaris a#edgtf-back-to-top > span:hover {
     border: 1px solid $blue;
     transition: all 0.65s ease-in-out;
 }
+
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
     background-color: $white !important;
     border-color: $yellow !important;
     color: $black !important;
     transition: all 0.5s ease-in-out;
 }
+a.pv-btn:hover {
+    background-color: $white !important;
+    border-color: $yellow !important;
+    color: $black !important;
+    transition: all 0.5s ease-in-out;
+}
+
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 980px) {

@@ -30,13 +30,12 @@ body.pharvaris {
                                                     @include regular($poppins);
                                                     font-size: 18px;
                                                     line-height: 26px;
-                                                    padding: 20px 0;
+                                                    padding: 20px 38px;
                                                     a {
                                                         color: $white;
                                                         transition: font-weight 100ms ease-in;
                                                         text-decoration:none;
                                                         text-align:center;
-                                                        font-weight: 500;
                                                     }
                                                     a:hover {
                                                         font-weight: bold;
@@ -137,46 +136,31 @@ body.pharvaris {
     }
 }
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1300px) {
     body.pharvaris {
         footer {
             div.edgtf-footer-inner {
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
+                div.edgtf-footer-top-holder {
+                    div.edgtf-footer-top.edgtf-footer-top-alignment-left {
                         div.edgtf-container.pv-container {
                             div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
-                                        div.edgtf-column.left {
-                                            div.edgtf-column-inner.left {
-                                                div.pv-footer-logo {
-                                                    img.pv-footer-logo-svg {
-                                                        width: 160px;
+                                div.clearfix {
+                                    div.edgt_column.edgtf-column1 {
+                                        div.edgtf-column-inner {
+                                            div.widget_nav_menu {
+                                                ul.menu {
+                                                    width: 725px;
+                                                    li.menu-item {
+                                                        padding: 20px 30px;
+                                                    }
+                                                    li:first-child {
+                                                        padding-left: 0px;
+                                                    }
+                                                    li:last-child {
+                                                        padding-right: 0;
                                                     }
                                                 }
                                             }
-                                        }
-                                        div.edgtf-column.right {
-                                            div.edgtf-column-inner.right {
-                                                div.pv-copyright {
-                                                    font-size: 15px;
-                                                    line-height: 23px;
-                                                }
-                                                div.widget_nav_menu {
-                                                    ul.menu {
-                                                        li.menu-item {
-                                                            font-size: 15px;
-                                                            line-height: 23px;
-                                                            a {
-                                                            }
-                                                        }
-                                                        li:first-child {
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column:not(:first-child) {
                                         }
                                     }
                                 }
@@ -184,14 +168,6 @@ body.pharvaris {
                         }
                     }
                 }
-            }
-        }
-    }
-}
-@media all and (max-width: 1300px) {
-    body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
                 div.edgtf-footer-bottom-holder {
                     div.edgtf-footer-bottom-holder-inner {
                         div.edgtf-container.pv-container {
@@ -199,37 +175,6 @@ body.pharvaris {
                                 div.edgtf-two-columns-50-50 {
                                     div.edgtf-two-columns-50-50-inner {
                                         height: 60px;
-                                        div.edgtf-column.left {
-                                            div.edgtf-column-inner.left {
-                                                div.pv-footer-logo {
-                                                    img.pv-footer-logo-svg {
-
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column.right {
-                                            div.edgtf-column-inner.right {
-                                                div.pv-copyright {
-                                                    font-size: 13px;
-                                                    line-height: 21px;
-                                                }
-                                                div.widget_nav_menu {
-                                                    ul.menu {
-                                                        li.menu-item {
-                                                            font-size: 13px;
-                                                            line-height: 21px;
-                                                            a {
-                                                            }
-                                                        }
-                                                        li:first-child {
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column:not(:first-child) {
-                                        }
                                     }
                                 }
                             }
@@ -240,173 +185,48 @@ body.pharvaris {
         }
     }
 }
-@media all and (max-width: 1200px) {
-    body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
 
-                                        div.edgtf-column.left {
-                                            width: 18%;
-                                            div.edgtf-column-inner.left {
-                                                div.pv-footer-logo {
-                                                    img.pv-footer-logo-svg {
-                                                        width: 160px;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column.right {
-                                            width: 82%;
-                                            div.edgtf-column-inner.right {
-                                                div.pv-copyright {
-                                                }
-                                                div.widget_nav_menu {
-                                                    ul.menu {
-                                                        li.menu-item {
-                                                            padding: 0 15px;
-                                                            a {
-                                                            }
-                                                        }
-                                                        li:first-child {
-                                                            padding-left: 30px;
-                                                        }
-                                                        li:last-child {
-                                                            padding-right: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column:not(:first-child) {
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media all and (max-width: 1100px) {
-    body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
-                                        div.edgtf-column.left {
-                                            div.edgtf-column-inner.left {
-                                                div.pv-footer-logo {
-                                                    img.pv-footer-logo-svg {
-                                                        width: 160px;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column.right {
-                                            div.edgtf-column-inner.right {
-                                                div.pv-copyright {
-                                                    font-size: 11px;
-                                                    line-height: 19px;
-                                                }
-                                                div.widget_nav_menu {
-                                                    ul.menu {
-                                                        li.menu-item {
-                                                            font-size: 11px;
-                                                            line-height: 19px;
-                                                            padding: 0 12px;
-                                                            a {
-                                                            }
-                                                        }
-                                                        li:first-child {
-                                                            padding-left: 24px;
-                                                        }
-                                                        li:last-child {
-                                                            padding-right: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column:not(:first-child) {
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 @media all and (max-width: 1024px) {
     body.pharvaris {
         footer {
             div.edgtf-footer-inner {
+                div.edgtf-footer-top-holder {
+                    div.edgtf-footer-top.edgtf-footer-top-alignment-left {
+                        div.edgtf-container.pv-container {
+                            div.edgtf-container-inner {
+                                div.clearfix {
+                                    div.edgt_column.edgtf-column1 {
+                                        width: 100%;
+                                        div.edgtf-column-inner {
+                                            width: 100%;
+                                            div.widget_nav_menu {
+                                                width: 100%;
+                                                ul.menu {
+                                                    width: 100%;
+                                                    li.menu-item {
+                                                        padding: 20px 0;
+                                                    }
+                                                    li:first-child {
+                                                        padding-left: 0px;
+                                                    }
+                                                    li:last-child {
+                                                        padding-right: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 div.edgtf-footer-bottom-holder {
-                    height: 200px;
                     div.edgtf-footer-bottom-holder-inner {
                         div.edgtf-container.pv-container {
                             div.edgtf-container-inner {
                                 div.edgtf-two-columns-50-50 {
                                     div.edgtf-two-columns-50-50-inner {
-                                        height: 80px;
-                                        div.edgtf-column.left {
-                                            justify-content: center;
-                                            div.edgtf-column-inner.left {
-                                                div.pv-footer-logo {
-                                                    img.pv-footer-logo-svg {
-                                                        width: 120px;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column.right {
-                                            justify-content: center;
-                                            div.edgtf-column-inner.right {
-                                                flex-direction: column;
-                                                div.widget_custom_html {
-                                                    order: 2;
-                                                    div.pv-copyright {
-                                                        font-size: 11px;
-                                                        line-height: 19px;
-                                                    }
-                                                }
-                                                div.widget_nav_menu {
-                                                    ul.menu {
-                                                        li.menu-item {
-                                                            font-size: 11px;
-                                                            line-height: 19px;
-                                                            padding: 0 12px;
-                                                            a {
-                                                            }
-                                                        }
-                                                        li:first-child {
-                                                            padding-left: 0;
-                                                        }
-                                                        li:last-child {
-                                                            padding-right: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-column:not(:first-child) {
-
-                                        }
                                     }
                                 }
                             }

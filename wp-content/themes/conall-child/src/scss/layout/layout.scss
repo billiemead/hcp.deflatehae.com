@@ -53,7 +53,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 /* ************ CSS RESET END ************ */
-
 body.pharvaris {
     div.pv-row {
         div.edgtf-full-section-inner {
@@ -94,6 +93,9 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 30px;
         line-height: 40px;
+        &.grey {
+            color: $dk-grey;
+        }
         &.blue {
             color: $blue;
         }
@@ -118,6 +120,10 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 30px;
         line-height: 50px;
+        &.form {
+            color: $dk-grey;
+            text-transform: uppercase;
+        }
         &.red {
             color: $red;
         }
@@ -151,6 +157,9 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         margin: 0;
+        &.form-p {
+            font-size: 22px;
+        }
         &.center {
             text-align: center;
         }
@@ -192,7 +201,31 @@ body.pharvaris {
     div.edgtf-content {
 
     }
+    sup.pv-sup {
+
+    }
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #e9b73f #777676;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #777676;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e9b73f;
+    border-radius: 12px;
+    border: none;
+  }
 
 @media all and (max-width: 1500px) {
 }

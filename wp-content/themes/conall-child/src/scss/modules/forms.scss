@@ -3,7 +3,33 @@
 
 /* ******* PHARVARIS HCP 2024 FORMS START ******* */
 
+body {
+    div.templatera_shortcode {
+        div#hae-hcp-form-section {
+            /* height: 660px; */
+            background-color: $yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 17%;
+            padding-bottom: 17%;
+            bottom: -1px;
+            div.clearfix.edgtf-full-section-inner {
+                div.pv-col1 {
+                    div.form-heading {
+                        h3.pv-h3.form.center {
 
+                        }
+                    }
+                    p.pv-p.form-p.center {
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media all and (max-width: 1024px) {
 }

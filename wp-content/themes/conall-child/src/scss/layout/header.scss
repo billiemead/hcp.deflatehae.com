@@ -9,6 +9,68 @@ body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             position: relative;
+            div.edgtf-top-bar {
+                background-color: $dk-grey !important;
+                height: 60px;
+                div.edgtf-grid {
+                    div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                        div.edgtf-position-right {
+                            float: unset;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            div.edgtf-position-right-inner {
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-end;
+                                ul.menu-site-selector-list {
+                                    display: flex;
+                                    list-style: none;
+                                    width: 508px;
+                                    height: 20.5px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 0;
+                                    li.menu-selector-list-item {
+                                        a.menu-selector-link {
+                                            font-family: $poppins;
+                                            font-size: 14px;
+                                            line-height: 26px;
+                                            font-weight: 400;
+                                            transition: all 0.5s ease-in-out;
+                                            &.yellow {
+                                                color: $yellow;
+                                                -webkit-text-stroke: 1px $yellow;
+                                            }
+                                            &.white {
+                                                color: $white;
+                                            }
+                                        }
+                                        a.menu-selector-link.yellow:hover {
+                                            font-weight: normal;
+                                            color: $white;
+                                            transition: all 0.5s ease-in-out;
+                                            -webkit-text-stroke: 0px;
+                                        }
+                                        a.menu-selector-link.white:hover {
+                                            -webkit-text-stroke: 1px $white;
+                                            color: $yellow;
+                                            transition: all 0.5s ease-in-out;
+                                        }
+                                    }
+                                    img.menu-selector-line {
+
+                                    }
+                                    img.menu-selector-caret {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             header.edgtf-page-header.hcp-header {
                 background-color: $dk-grey !important;
                 border: none;
@@ -27,18 +89,19 @@ body.pharvaris {
                     div.edgtf-menu-area {
                         display: flex;
                         padding: 0;
-                        height: 86px;
+                        height: 96px;
                         width: 100%;
                         background-color: $dk-grey !important;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-start;
                         div.edgtf-container.pv-container {
-                            padding-top: 18px;
+                            padding-top: 0;
                             div.edgtf-container-inner {
                                 width: 100% !important;
                                 div.edgtf-vertical-align-containers {
                                     display: flex;
-                                    align-items: center;
+                                    align-items: flex-end;
+                                    justify-content: flex-end;
                                     div.edgtf-position-left {
                                         float: unset;
                                         display: flex;
@@ -49,7 +112,7 @@ body.pharvaris {
                                             div.edgtf-logo-wrapper.hcp-logo {
                                                 a {
                                                     img.edgtf-normal-logo {
-                                                        height: 47px;
+                                                        height: 57px;
                                                         opacity: 1;
                                                     }
                                                 }
