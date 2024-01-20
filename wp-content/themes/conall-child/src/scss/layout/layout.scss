@@ -192,42 +192,6 @@ body.pharvaris {
     div.edgtf-content {
 
     }
-    div.pv-cta-row {
-        position: relative;
-        top: 0;
-        div.cta-text-block {
-            position: absolute;
-            top: 0;
-            right: 5vw;
-            a.cta-hero-button {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                height: 53px;
-                padding: 0;
-                border-radius: 0 0 10px 10px;
-                background: $blue;
-                color: $white !important;
-                @include bold($poppins);
-                font-size: 18px;
-                line-height: 36px;
-                border: 1px solid $blue;
-                transition: all 0.5s;
-                &:hover {
-                    background: $white;
-                    color: $blue !important;
-                    border: 1px solid $blue;
-                    transition: all 0.5s;
-                }
-            }
-        }
-    }
 }
 
 @media all and (max-width: 1500px) {

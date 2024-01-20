@@ -2,37 +2,6 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 BUTTONS START ******* */
-@mixin pv-btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 53px;
-    width: auto;
-    border: 1px solid $yellow;
-    transition: all 0.5s ease-in-out;
-    background-color: $yellow;
-    color: $black;
-    border-radius: 33px;
-    font-family: $poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: -0.5px;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    &:active,
-    &:focus {
-        outline: none;
-    }
-    &.w-264 {
-        max-width: 264px;
-    }
-    &.w-292 {
-        width: 292px;
-    }
-}
 
 body.pharvaris {
     button,
@@ -64,8 +33,100 @@ body.pharvaris {
     }
     div#stay-informed-cta {
         z-index: 102;
-        a {
-            width: 185px;
+        position: relative;
+        div.cta-container {
+            width:100%;
+            height:30vw;
+            margin:0 auto;
+            border:none;
+            position: absolute;
+            a.cta-hero-button {
+                transform-origin:top right;
+                right:0;
+                top:60%;
+                transform: rotate(90deg) translateX(50%);
+                position: absolute;
+                width: 185px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 53px;
+                padding: 0;
+                border-radius: 0 0 10px 10px;
+                background: $blue;
+                color: $white !important;
+                @include bold($poppins);
+                font-size: 18px;
+                line-height: 18px;
+                border: 1px solid $blue;
+                transition: all 0.25s;
+                &:hover {
+                    background: $white;
+                    color: $blue !important;
+                    border: 1px solid $blue;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1500px) {
+    body.pharvaris {
+        a#edgtf-back-to-top {
+            width: 40px;
+            right: 2%;
+            bottom: 77px;
+            & > span {
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+            }
+            span.edgtf-icon-stack {
+                width: 40px;
+            }
+        }
+        div#stay-informed-cta {
+            div.cta-container {
+                height: 27vw;
+            }
+        }
+    }
+}
+@media all and (max-width: 1300px) {
+    body.pharvaris {
+        a#edgtf-back-to-top {
+            width: 40px;
+            right: 2%;
+            bottom: 77px;
+            & > span {
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+            }
+            span.edgtf-icon-stack {
+                width: 40px;
+            }
+        }
+        div#stay-informed-cta {
+            div.cta-container {
+                height: 27vw;
+                a.cta-hero-button {
+                    top:60%;
+                    width: 175px;
+                    height: 45px;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
         }
     }
 }
