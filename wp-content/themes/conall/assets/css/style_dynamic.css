@@ -13,6 +13,9 @@
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\footer\custom-styles\custom-styles.php conall_edge_footer_top_general_styles function */
 footer .edgtf-footer-top-holder { background-color: #f2f2f2;}
 
+/* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\footer\custom-styles\custom-styles.php conall_edge_footer_top_general_styles function */
+footer .edgtf-footer-top:not(.edgtf-footer-top-full) .edgtf-container-inner, footer .edgtf-footer-top.edgtf-footer-top-full { padding-top: 0px;padding-bottom: 0px;}
+
 /* generated in G:\laragon-6.0.0\www\pharvaris-deflate-hcp\wp-content\themes\conall\framework\modules\footer\custom-styles\custom-styles.php conall_edge_footer_bottom_general_styles function */
 footer .edgtf-footer-bottom-holder { background-color: #333333;}
 

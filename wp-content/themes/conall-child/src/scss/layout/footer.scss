@@ -6,6 +6,67 @@
 body.pharvaris {
     footer {
         div.edgtf-footer-inner {
+            div.edgtf-footer-top-holder {
+                background-color: $dk-grey;
+                height: 70px;
+                top: 80px;
+                div.edgtf-footer-top.edgtf-footer-top-alignment-left {
+                    div.edgtf-container.pv-container {
+                        div.edgtf-container-inner {
+                            padding: 0;
+                            width: 100% !important;
+                            div.clearfix {
+                                div.edgt_column.edgtf-column1 {
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    div.edgtf-column-inner {
+                                        div.widget_nav_menu {
+                                            ul.menu {
+                                                display: flex;
+                                                width: 825px;
+                                                justify-content: space-between;
+                                                li.menu-item {
+                                                    @include regular($poppins);
+                                                    font-size: 18px;
+                                                    line-height: 26px;
+                                                    padding: 20px 0;
+                                                    a {
+                                                        color: $white;
+                                                        transition: font-weight 100ms ease-in;
+                                                        text-decoration:none;
+                                                        text-align:center;
+                                                        font-weight: 500;
+                                                    }
+                                                    a:hover {
+                                                        font-weight: bold;
+                                                        transition: font-weight 100ms;
+                                                    }
+                                                    a::after {
+                                                        display:block;
+                                                        content:attr(title);
+                                                        font-weight:bold;
+                                                        height:1px;
+                                                        color:transparent;
+                                                        overflow:hidden;
+                                                        visibility:hidden;
+                                                    }
+                                                }
+                                                li:first-child {
+                                                    padding-left: 0px;
+                                                }
+                                                li:last-child {
+                                                    padding-right: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             div.edgtf-footer-bottom-holder {
                 height: 220px;
                 padding: 0;
@@ -60,41 +121,6 @@ body.pharvaris {
                                                 font-size: 18px;
                                                 line-height: 26px;
                                                 color: $white;
-                                            }
-                                            div.widget_nav_menu {
-                                                ul.menu {
-                                                    li.menu-item {
-                                                        @include regular($poppins);
-                                                        font-size: 18px;
-                                                        line-height: 26px;
-                                                        a {
-                                                            color: $white;
-                                                            transition: font-weight 100ms ease-in;
-                                                            text-decoration:none;
-	                                                        text-align:center;
-                                                            font-weight: 500;
-                                                        }
-                                                        a:hover {
-                                                            font-weight: bold;
-                                                            transition: font-weight 100ms;
-                                                        }
-                                                        a::after {
-                                                            display:block;
-                                                            content:attr(title);
-                                                            font-weight:bold;
-                                                            height:1px;
-                                                            color:transparent;
-                                                            overflow:hidden;
-                                                            visibility:hidden;
-                                                        }
-                                                    }
-                                                    li:first-child {
-                                                        padding-left: 36px;
-                                                    }
-                                                    li:last-child {
-                                                        padding-right: 0;
-                                                    }
-                                                }
                                             }
                                         }
                                     }
