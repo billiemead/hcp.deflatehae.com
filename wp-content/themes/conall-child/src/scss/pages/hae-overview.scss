@@ -7,7 +7,104 @@ body.haeoverview-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
+                 div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#overview-cta-row {
+                        }
+                        div#overview-hero-row {
+                            display: block;
+                            z-index: 101;
+                            left: 50%;
+                            margin-left: -50vw;
+                            margin-right: -50vw;
+                            max-width: 100vw;
+                            position: relative;
+                            right: 50%;
+                            width: 100vw;
+                            div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 100%;
+                                div#overview-hero-image-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#hero-background-image {
+                                                figure.wpb_wrapper {
+                                                    width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        width: 100%;
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-row.inner {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        width: 80%;
+                                        max-width: 1436px;
+                                        margin: 0 auto;
+                                        justify-content: center;
+                                        align-items: flex-end;
+                                        padding-bottom: 6%;
+                                        div.pv-col1.center {
+                                            div#hero-logo {
+                                                img {
 
+                                                }
+                                            }
+                                            div.hero-subheading {
+                                                h5.pv-h5 {
+                                                    sup.pv-sup {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div#overview-hotspot-row {
+
+                        }
+                        div#hae-attacks-row {
+
+                        }
+                        div#overview-bradykinin-row {
+
+                        }
+                        div#overview-banner-section {
+
+                        }
+                        div#overview-facts-section {
+
+                        }
+                        div#overview-refs-section {
+                            div.refs-title {
+                                h4.h4-refs.left {
+
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

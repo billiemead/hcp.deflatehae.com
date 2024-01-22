@@ -28,5 +28,5 @@
         <?php conall_edge_get_mobile_nav(); ?>
     </div>
 </header> <!-- close .edgtf-mobile-header -->
-
+</div>
 <?php do_action('conall_edge_after_mobile_header'); ?>

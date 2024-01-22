@@ -1,3 +1,5 @@
+@import "base/variables";
+@import "base/mixins";
 @import "base/base";
 @import "base/colors";
 @import "base/fonts";
@@ -21,3 +23,4 @@
 @import "pages/privacy-policy";
 @import "pages/terms-of-use";
 @import "pages/treatment-burdens";
+@import "base/global-responsive";

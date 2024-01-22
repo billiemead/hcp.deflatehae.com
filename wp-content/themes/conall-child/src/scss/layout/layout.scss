@@ -54,11 +54,40 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* ************ CSS RESET END ************ */
 body.pharvaris {
+    .edgtf-grid {
+        width: $grid-width;
+        margin: 0 auto;
+    }
+    span.italic {
+        font-style: italic;
+    }
+    span.strong {
+        font-weight: bold;
+    }
+    span.underline {
+        text-decoration: underline;
+    }
     div.pv-row {
         div.edgtf-full-section-inner {
             max-width: 1436px;
             width: 80%;
             margin: 0 auto;
+        }
+        &.references {
+            background-color: $dk-grey;
+            display: flex;
+            align-items: center;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            bottom: -1px;
+            div.vc_column-inner {
+                padding: 0;
+                div.refs-paragraph {
+                    p.pv-refs {
+                        max-width: 1417px;
+                    }
+                }
+            }
         }
     }
     div.pv-col1 {
@@ -115,6 +144,13 @@ body.pharvaris {
             font-size: 30px;
             line-height: 30px;
         }
+        &.yellow {
+            color: $yellow;
+        }
+        &.hero-subheading {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
     h3, h3.pv-h3 {
         @include bold($poppins);
@@ -123,6 +159,7 @@ body.pharvaris {
         &.form {
             color: $dk-grey;
             text-transform: uppercase;
+            margin-bottom: 15px;
         }
         &.red {
             color: $red;
@@ -141,12 +178,17 @@ body.pharvaris {
         text-transform: uppercase;
         text-align: left;
         color:  $white;
+        margin-bottom: 20px;
     }
     h5, h5.pv-h5 {
         @include bold($poppins);
         font-size: 26px;
         line-height: 26px;
         color: $black;
+        text-transform: uppercase;
+        &.center {
+            text-align: center;
+        }
     }
     h6, h6.pv-h6 {
 
@@ -159,6 +201,17 @@ body.pharvaris {
         margin: 0;
         &.form-p {
             font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        &.form-placeholder {
+            color: $red;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700 !important;
+            text-transform: uppercase;
+            margin-bottom: 34px;
         }
         &.center {
             text-align: center;
@@ -236,7 +289,7 @@ body.pharvaris {
         h1, h2, h3, h4, h5, h6 {
         }
         div.pv-container {
-            max-width: 768px;
+            max-width: 826px;
             width: 80%;
         }
         h1, h1.pv-h1 {

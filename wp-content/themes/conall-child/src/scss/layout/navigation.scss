@@ -14,13 +14,13 @@ body.pharvaris {
                 li.menu-item.menu-item-type-post_type.menu-item-object-page {
                     float: unset;
                     display: flex;
-                    padding: 0 40px;
+                    padding: 0 4.5%;
                     a {
                         display: flex;
                         justify-content: center;
                         @include medium($poppins);
                         font-size: 18px;
-                        line-height: 26px;
+                        line-height: 18px;
                         text-transform: uppercase;
                         color: $white;
                         letter-spacing: 0;
@@ -57,7 +57,7 @@ body.pharvaris {
                     li.menu-item.menu-item-type-post_type.menu-item-object-page {
                         a {
                             font-size: 15px;
-                            line-height: 23px;
+                            line-height: 15px;
                         }
                     }
                 }
@@ -71,10 +71,10 @@ body.pharvaris {
             nav.edgtf-main-menu {
                 ul {
                     li.menu-item.menu-item-type-post_type.menu-item-object-page {
-                        padding: 0 20px;
+                        padding: 0 3%;
                         a {
                             font-size: 13px;
-                            line-height: 21px;
+                            line-height: 13px;
                         }
                     }
                 }
@@ -93,10 +93,10 @@ body.pharvaris {
             nav.edgtf-main-menu {
                 ul {
                     li.menu-item.menu-item-type-post_type.menu-item-object-page {
-                        padding: 0 15px;
+                        padding: 0 2%;
                         a {
-                            font-size: 13px;
-                            line-height: 21px;
+                            font-size: 14px;
+                            line-height: 14px;
                         }
                     }
                 }

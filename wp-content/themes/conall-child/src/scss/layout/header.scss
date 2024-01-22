@@ -9,173 +9,98 @@ body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             position: relative;
-            div.edgtf-top-bar {
-                background-color: $dk-grey !important;
-                height: 60px;
-                div.edgtf-grid {
-                    div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
-                        div.edgtf-position-right {
-                            float: unset;
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: flex-end;
-                            div.edgtf-position-right-inner {
-                                height: 100%;
-                                display: flex;
-                                justify-content: center;
-                                align-items: flex-end;
-                                ul.menu-site-selector-list {
-                                    display: flex;
-                                    list-style: none;
-                                    width: 508px;
-                                    height: 20.5px;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    margin: 0;
-                                    li.menu-selector-list-item {
-                                        a.menu-selector-link {
-                                            font-family: $poppins;
-                                            font-size: 14px;
-                                            line-height: 26px;
-                                            font-weight: 400;
-                                            transition: all 0.5s ease-in-out;
-                                            &.yellow {
-                                                color: $yellow;
-                                                -webkit-text-stroke: 1px $yellow;
-                                            }
-                                            &.white {
-                                                color: $white;
-                                            }
-                                        }
-                                        a.menu-selector-link.yellow:hover {
-                                            font-weight: normal;
-                                            color: $white;
-                                            transition: all 0.5s ease-in-out;
-                                            -webkit-text-stroke: 0px;
-                                        }
-                                        a.menu-selector-link.white:hover {
-                                            -webkit-text-stroke: 1px $white;
-                                            color: $yellow;
-                                            transition: all 0.5s ease-in-out;
-                                        }
-                                    }
-                                    img.menu-selector-line {
-
-                                    }
-                                    img.menu-selector-caret {
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            header.edgtf-page-header.hcp-header {
-                background-color: $dk-grey !important;
-                border: none;
+            div#header-container {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 0px;
-                div.edgtf-fixed-wrapper {
-                    display: flex;
+                width: 100%;
+                height: 180px;
+                top: 0;
+                position: fixed;
+                z-index: 101;
+                background-color: transparent !important;
+                div.pv-top-bar {
+                    background-color: $dk-grey !important;
+                    height: 60px;
+                    z-index: 102;
+                    position: fixed;
                     width: 100%;
-                    flex-direction: column;
-                    &.fixed {
-                        border: none;
-                        background-color: $dk-grey;
-                    }
-                    div.edgtf-menu-area {
-                        display: flex;
-                        padding: 0;
-                        height: 96px;
-                        width: 100%;
-                        background-color: $dk-grey !important;
-                        justify-content: center;
-                        align-items: flex-start;
-                        div.edgtf-container.pv-container {
-                            padding-top: 0;
-                            div.edgtf-container-inner {
-                                width: 100% !important;
-                                div.edgtf-vertical-align-containers {
+                    display: flex;
+                    top: 0;
+                    div.pv-container {
+                        height: 100%;
+                        div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                            padding: 0;
+                            div.edgtf-position-right {
+                                float: unset;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: flex-end;
+                                div.edgtf-position-right-inner {
+                                    height: 100%;
                                     display: flex;
+                                    justify-content: center;
                                     align-items: flex-end;
-                                    justify-content: flex-end;
-                                    div.edgtf-position-left {
-                                        float: unset;
+                                    ul.menu-site-selector-list {
                                         display: flex;
-                                        justify-content: flex-start;
+                                        list-style: none;
+                                        width: 508px;
+                                        height: 20.5px;
+                                        justify-content: space-between;
                                         align-items: center;
-                                        width: 25%;
-                                        div.edgtf-position-left-inner {
-                                            div.edgtf-logo-wrapper.hcp-logo {
-                                                a {
-                                                    img.edgtf-normal-logo {
-                                                        height: 57px;
-                                                        opacity: 1;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    div.edgtf-position-right {
-                                        float: unset;
-                                        display: flex;
-                                        width: 75%;
-                                        justify-content: flex-end;
-                                        align-items: center;
-                                        div.edgtf-position-right-inner {
+                                        margin: 0;
+                                        div.menu-selector-box-wrapper {
                                             display: flex;
                                             width: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    div.edgtf-menu-area::after {
-                        background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
-                        bottom: -24px;
-                        content: "";
-                        height: 24px;
-                        position: absolute;
-                        width: 100vw;
-                        background-repeat: no-repeat;
-                        background-size: 100vw;
-                        background-position-x: center;
-                        background-position-y: top;
-                    }
-                }
-            }
-        }
-    }
-}
-@media all and (max-width: 1500px) {
-    body.pharvaris {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
-                header.edgtf-page-header.hcp-header {
-                    div.edgtf-fixed-wrapper {
-                        &.fixed {
-                        }
-                        div.edgtf-menu-area {
-                            div.edgtf-container.pv-container {
-                                div.edgtf-container-inner {
-                                    div.edgtf-vertical-align-containers {
-                                        div.edgtf-position-left {
-                                            div.edgtf-position-left-inner {
-                                                div.edgtf-logo-wrapper.hcp-logo {
-                                                    a {
-                                                        img.edgtf-normal-logo {
-                                                            height: 42px;
+                                            height: 100%;
+                                            align-items: center;
+                                            justify-content: center;
+                                            div.menu-selector-box {
+                                                display: flex;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                                li.menu-selector-list-item {
+
+                                                    a.menu-selector-link {
+                                                        font-family: $poppins;
+                                                        font-size: 14px;
+                                                        line-height: 26px;
+                                                        font-weight: 400;
+                                                        transition: all 0.5s ease-in-out;
+                                                        &.yellow {
+                                                            color: $yellow;
+                                                            -webkit-text-stroke: 1px $yellow;
+                                                        }
+                                                        &.white {
+                                                            color: $white;
                                                         }
                                                     }
+                                                    a.menu-selector-link.yellow:hover {
+                                                        font-weight: normal;
+                                                        color: $white;
+                                                        transition: all 0.5s ease-in-out;
+                                                        -webkit-text-stroke: 0px;
+                                                    }
+                                                    a.menu-selector-link.white:hover {
+                                                        -webkit-text-stroke: 1px $white;
+                                                        color: $yellow;
+                                                        transition: all 0.5s ease-in-out;
+                                                    }
+                                                }
+                                                img.menu-selector-line {
+
+                                                }
+                                                img.menu-selector-caret {
+                                                    height: 8px;
+                                                    width: 8px;
+                                                    top: 1px;
+                                                    position: relative;
                                                 }
                                             }
-                                        }
-                                        div.edgtf-position-right {
-                                            div.edgtf-position-right-inner {
+                                            div.menu-selector-box.left {
+                                                width: 45%;
+                                                border-right: none;
+                                            }
+                                            div.menu-selector-box.right {
+                                                width: 55%;
                                             }
                                         }
                                     }
@@ -184,29 +109,52 @@ body.pharvaris {
                         }
                     }
                 }
-            }
-        }
-    }
-}
-@media all and (max-width: 1024px) {
-    body.pharvaris {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
                 header.edgtf-page-header.hcp-header {
-                    div.edgtf-fixed-wrapper {
+                    background-color: $dk-grey !important;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    position: fixed;
+                    z-index: 101;
+                    div.pv-fixed-wrapper {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
                         &.fixed {
+                            border: none;
+                            background-color: $dk-grey;
                         }
                         div.edgtf-menu-area {
+                            display: flex;
+                            padding: 0;
+                            height: 156px;
+                            width: 100%;
+                            background-color: $dk-grey !important;
+                            justify-content: center;
+                            align-items: center;
                             div.edgtf-container.pv-container {
+                                padding-top: 0;
+                                top: 10px;
                                 div.edgtf-container-inner {
+                                    width: 100% !important;
                                     div.edgtf-vertical-align-containers {
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: flex-end;
                                         div.edgtf-position-left {
+                                            float: unset;
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            align-items: center;
                                             width: 20%;
                                             div.edgtf-position-left-inner {
                                                 div.edgtf-logo-wrapper.hcp-logo {
                                                     a {
                                                         img.edgtf-normal-logo {
-                                                            height: 35px;
+                                                            height: 57px;
+                                                            opacity: 1;
                                                         }
                                                     }
                                                 }
@@ -228,16 +176,196 @@ body.pharvaris {
                             }
                         }
                         div.edgtf-menu-area::after {
-                            background: url("/wp-content/themes/conall-child/images/header-background-1024x13.svg") center bottom no-repeat;
-                            bottom: -13px;
+                            background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
+                            bottom: -24px;
                             content: "";
-                            height: 13px;
+                            height: 24px;
                             position: absolute;
                             width: 100vw;
                             background-repeat: no-repeat;
                             background-size: 100vw;
                             background-position-x: center;
                             background-position-y: top;
+                        }
+                    }
+                }
+                header.edgtf-mobile-header.hcp-mobile-header {
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1500px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div#header-container {
+                    header.edgtf-page-header.hcp-header {
+                        div.edgtf-fixed-wrapper {
+                            &.fixed {
+                            }
+                            div.edgtf-menu-area {
+                                div.edgtf-container.pv-container {
+                                    div.edgtf-container-inner {
+                                        div.edgtf-vertical-align-containers {
+                                            div.edgtf-position-left {
+                                                div.edgtf-position-left-inner {
+                                                    div.edgtf-logo-wrapper.hcp-logo {
+                                                        a {
+                                                            img.edgtf-normal-logo {
+                                                                height: 42px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.edgtf-position-right {
+                                                div.edgtf-position-right-inner {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div#header-container {
+                    height: 126px;
+                    div.pv-top-bar {
+                        height: 40px;
+                        div.pv-container {
+                            height: 100%;
+                            div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                                padding: 0;
+                                div.edgtf-position-right {
+                                    float: unset;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: flex-end;
+                                    div.edgtf-position-right-inner {
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: flex-end;
+                                        ul.menu-site-selector-list {
+                                            display: flex;
+                                            list-style: none;
+                                            width: 445px;
+                                            height: 20.5px;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            margin: 0;
+                                            div.menu-selector-box-wrapper {
+                                                div.menu-selector-box {
+                                                    li.menu-selector-list-item {
+                                                        a.menu-selector-link {
+                                                            font-size: 12px;
+                                                            line-height: 26px;
+                                                            font-weight: 400;
+                                                            transition: all 0.5s ease-in-out;
+                                                            &.yellow {
+                                                                color: $yellow;
+                                                                -webkit-text-stroke: 1px $yellow;
+                                                            }
+                                                            &.white {
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        a.menu-selector-link.yellow:hover {
+                                                            font-weight: normal;
+                                                            color: $white;
+                                                            transition: all 0.5s ease-in-out;
+                                                            -webkit-text-stroke: 0px;
+                                                        }
+                                                        a.menu-selector-link.white:hover {
+                                                            -webkit-text-stroke: 1px $white;
+                                                            color: $yellow;
+                                                            transition: all 0.5s ease-in-out;
+                                                        }
+                                                    }
+                                                    img.menu-selector-line {
+
+                                                    }
+                                                    img.menu-selector-caret {
+
+                                                    }
+                                                }
+                                            div.menu-selector-box.left {
+
+                                            }
+                                            div.menu-selector-box.right {
+
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    header.edgtf-page-header.hcp-header {
+                        top: 40px;
+                        div.pv-fixed-wrapper {
+                            &.fixed {
+                            }
+                            div.edgtf-menu-area {
+                                height: 86px;
+                                align-items: flex-start;
+                                div.edgtf-container.pv-container {
+                                    top: 12px;
+                                    div.edgtf-container-inner {
+                                        div.edgtf-vertical-align-containers {
+                                            div.edgtf-position-left {
+                                                width: 25%;
+                                                div.edgtf-position-left-inner {
+                                                    div.edgtf-logo-wrapper.hcp-logo {
+                                                        a {
+                                                            img.edgtf-normal-logo {
+                                                                height: 40px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.edgtf-position-right {
+                                                float: unset;
+                                                display: flex;
+                                                width: 75%;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                                div.edgtf-position-right-inner {
+                                                    display: flex;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.edgtf-menu-area::after {
+                                background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
+                                bottom: -7.5px;
+                                content: "";
+                                height: 7.5px;
+                                position: absolute;
+                                width: 100vw;
+                                background-repeat: no-repeat;
+                                background-size: 100vw;
+                                background-position-x: center;
+                                background-position-y: top;
+                            }
                         }
                     }
                 }
@@ -251,18 +379,20 @@ body.pharvaris {
     body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
-                header.edgtf-page-header.hcp-header {
-                    div.edgtf-fixed-wrapper {
-                        div.edgtf-menu-area {
-                            div.edgtf-container.pv-container {
-                                div.edgtf-container-inner {
-                                    div.edgtf-vertical-align-containers {
-                                        div.edgtf-position-left {
-                                            div.edgtf-position-left-inner {
-                                                div.edgtf-logo-wrapper.hcp-logo {
-                                                    a {
-                                                        img.edgtf-normal-logo {
-                                                            height: 30px;
+                div#header-container {
+                    header.edgtf-page-header.hcp-header {
+                        div.edgtf-fixed-wrapper {
+                            div.edgtf-menu-area {
+                                div.edgtf-container.pv-container {
+                                    div.edgtf-container-inner {
+                                        div.edgtf-vertical-align-containers {
+                                            div.edgtf-position-left {
+                                                div.edgtf-position-left-inner {
+                                                    div.edgtf-logo-wrapper.hcp-logo {
+                                                        a {
+                                                            img.edgtf-normal-logo {
+                                                                height: 30px;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -282,40 +412,141 @@ body.pharvaris {
     body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
-                header.edgtf-page-header.hcp-header {
-                    display: none;
-                }
-                header.edgtf-mobile-header.hcp-mobile-header {
-                    div.edgtf-mobile-header-inner {
-                        background-color: $dk-grey;
-                        border: none;
-                        div.edgtf-mobile-header-holder {
-                            div.edgtf-grid {
-                                div.edgtf-vertical-align-containers {
-                                    div.edgtf-mobile-menu-opener {
-                                        float: right;
-                                        a {
-                                            color: $blue;
-                                            span.edgtf-mobile-opener-icon-holder {
-                                                i.edgtf-icon-font-awesome.fa.fa-bars {
-
+                div#header-container {
+                    div.pv-top-bar {
+                        height: 40px;
+                        div.pv-container {
+                            height: 100%;
+                            width: 100%;
+                            div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                                padding: 0;
+                                div.edgtf-position-right {
+                                    float: unset;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    div.edgtf-position-right-inner {
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        ul.menu-site-selector-list {
+                                            display: flex;
+                                            list-style: none;
+                                            width: 100%;
+                                            height: 100%;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin: 0;
+                                            div.menu-selector-box-wrapper {
+                                                div.menu-selector-box {
+                                                    border: 1px solid #767676;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    li.menu-selector-list-item {
+                                                        a.menu-selector-link {
+                                                            font-size: 12px;
+                                                            line-height: 26px;
+                                                            font-weight: 400;
+                                                            transition: all 0.5s ease-in-out;
+                                                            &.yellow {
+                                                                color: $yellow;
+                                                                -webkit-text-stroke: 1px $yellow;
+                                                            }
+                                                            &.white {
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        a.menu-selector-link.yellow:hover {
+                                                            font-weight: normal;
+                                                            color: $white;
+                                                            transition: all 0.5s ease-in-out;
+                                                            -webkit-text-stroke: 0px;
+                                                        }
+                                                        a.menu-selector-link.white:hover {
+                                                            -webkit-text-stroke: 1px $white;
+                                                            color: $yellow;
+                                                            transition: all 0.5s ease-in-out;
+                                                        }
+                                                    }
+                                                    img.menu-selector-line {
+                                                        display: none;
+                                                    }
+                                                    img.menu-selector-caret {
+                                                        margin-left: 8px;
+                                                    }
                                                 }
+                                            div.menu-selector-box.left {
+
+                                            }
+                                            div.menu-selector-box.right {
+
+                                            }
                                             }
                                         }
-
                                     }
-                                    div.edgtf-position-center {
-                                        div.edgtf-position-center-inner {
-                                            div.edgtf-mobile-logo-wrapper.hcp-logo {
-                                                a {
-                                                    img.edgtf-normal-mobile-logo {
+                                }
+                            }
+                        }
+                    }
+                    header.edgtf-page-header.hcp-header {
+                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    header.edgtf-mobile-header.hcp-mobile-header {
+                        display: block;
+                        visibility: visible;
+                        opacity: 1;
+                        width: 100%;
+                        position: fixed;
+                        top: 40px;
+                        div.edgtf-mobile-header-inner {
+                            background-color: $dk-grey;
+                            border: none;
+                            div.edgtf-mobile-header-holder {
+                                div.edgtf-grid {
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-mobile-menu-opener {
+                                            float: right;
+                                            a {
+                                                color: $blue;
+                                                span.edgtf-mobile-opener-icon-holder {
+                                                    i.edgtf-icon-font-awesome.fa.fa-bars {
 
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                        div.edgtf-position-center {
+                                            div.edgtf-position-center-inner {
+                                                div.edgtf-mobile-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-mobile-logo {
+
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
+                            }
+                            div.edgtf-mobile-header-holder::after {
+                                background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
+                                bottom: -16px;
+                                content: "";
+                                height: 16px;
+                                position: absolute;
+                                width: 100vw;
+                                background-repeat: no-repeat;
+                                background-size: 100vw;
+                                background-position-x: center;
+                                background-position-y: top;
                             }
                         }
                     }

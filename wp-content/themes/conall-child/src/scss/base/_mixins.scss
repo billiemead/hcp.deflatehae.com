@@ -1,0 +1,128 @@
+//media query mixins - start
+
+@mixin laptop-landscape-large {
+    @media only screen and (max-width: $laptop-landscape-large) {
+        @content;
+    }
+}
+
+@mixin laptop-landscape-large-min {
+    @media only screen and (min-width: $laptop-landscape-large) {
+        @content;
+    }
+}
+
+@mixin laptop-landscape-medium {
+    @media only screen and (max-width: $laptop-landscape-medium) {
+        @content;
+    }
+}
+
+@mixin laptop-landscape-medium-min {
+    @media only screen and (min-width: $laptop-landscape-medium) {
+        @content;
+    }
+}
+
+@mixin laptop-landscape {
+    @media only screen and (max-width: $laptop-landscape) {
+        @content;
+    }
+}
+
+@mixin laptop-landscape-min {
+    @media only screen and (min-width: $laptop-landscape) {
+        @content;
+    }
+}
+
+@mixin ipad-landscape {
+    @media only screen and (max-width: $ipad-landscape) {
+        @content;
+    }
+}
+
+@mixin ipad-landscape-min {
+    @media only screen and (min-width: $ipad-landscape) {
+        @content;
+    }
+}
+
+@mixin ipad-portrait {
+    @media only screen and (max-width: $ipad-portrait) {
+        @content;
+    }
+}
+
+@mixin ipad-portrait-min {
+    @media only screen and (min-width: $ipad-portrait) {
+        @content;
+    }
+}
+
+@mixin phone-landscape {
+    @media only screen and (max-width: $phone-landscape) {
+        @content;
+    }
+}
+
+@mixin phone-landscape-min {
+    @media only screen and (min-width: $phone-landscape) {
+        @content;
+    }
+}
+
+@mixin phone-portrait {
+    @media only screen and (max-width: $phone-portrait) {
+        @content;
+    }
+}
+
+@mixin phone-portrait-min {
+    @media only screen and (min-width: $phone-portrait) {
+        @content;
+    }
+}
+
+@mixin smaller-phone-portrait {
+    @media only screen and (max-width: $smaller-phone-portrait) {
+        @content;
+    }
+}
+
+@mixin smaller-phone-portrait-min {
+    @media only screen and (min-width: $smaller-phone-portrait) {
+        @content;
+    }
+}
+
+//media query mixins - end
+
+//animation mixin - start
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content
+    }
+;
+    @keyframes #{$name} {
+        @content
+    }
+;
+}
+
+@mixin animation($name, $duration, $repeat, $timing, $delay) {
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $repeat;
+    -webkit-animation-timing-function: $timing;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $repeat;
+    animation-timing-function: $timing;
+    animation-delay: $delay;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}

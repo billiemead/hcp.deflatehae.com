@@ -37,7 +37,7 @@ body.pharvaris {
             position: relative;
             div.cta-container {
                 width:100%;
-                height:30vw;
+                height:40vw;
                 margin:0 auto;
                 border:none;
                 position: absolute;
@@ -95,11 +95,13 @@ body.pharvaris {
                 width: 40px;
             }
         }
-        div#stay-informed-cta {
-            div.cta-container {
-                height: 27vw;
+        div.pv-cta-row {
+            div#stay-informed-cta {
+                div.cta-container {
+                }
             }
         }
+
     }
 }
 @media all and (max-width: 1300px) {
@@ -118,21 +120,35 @@ body.pharvaris {
                 width: 40px;
             }
         }
-        div#stay-informed-cta {
-            div.cta-container {
-                height: 27vw;
-                a.cta-hero-button {
-                    top:60%;
-                    width: 175px;
-                    height: 45px;
-                    font-size: 16px;
-                    line-height: 16px;
+        div.pv-cta-row {
+            div#stay-informed-cta {
+                div.cta-container {
+                    a.cta-hero-button {
+                    }
                 }
             }
         }
+
     }
 }
 @media all and (max-width: 1024px) {
+    body.pharvaris {
+        a#edgtf-back-to-top {
+            & > span {
+            }
+            span.edgtf-icon-stack {
+            }
+        }
+        div.pv-cta-row {
+            div#stay-informed-cta {
+                div.cta-container {
+                    a.cta-hero-button {
+                    }
+                }
+            }
+        }
+
+    }
 }
 @media all and (max-width: 980px) {
 }

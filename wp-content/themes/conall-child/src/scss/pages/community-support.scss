@@ -7,7 +7,177 @@ body.communitysupport-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
+                div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#community-cta-row {
 
+                        }
+                        div#community-hero-row {
+
+                        }
+                        div#community-triple-partners-row {
+
+                        }
+                        div#community-glossary-row {
+
+                        }
+                        div#community-dlb-image-card {
+                            div.clearfix.edgtf-full-section-inner {
+                                display: flex;
+                                height: 100%;
+                                align-items: flex-start;
+                                justify-content: center;
+                                max-width: 1337px;
+                                div.pv-col2 {
+                                    display: flex;
+                                    padding-top: 2%;
+                                    padding-bottom: 2%;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    float: unset;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div.community-inner-row {
+                                                div.edgtf-full-section-inner {
+                                                    display: flex;
+                                                    width: 100%;
+                                                    justify-content: flex-start;
+                                                    div.pv-col2.inner.left-col {
+                                                        width: 43%;
+                                                        div.vc_column-inner {
+                                                            height: 100%;
+                                                            div.wpb_wrapper {
+                                                                height: 100%;
+                                                                div.community-round-image {
+                                                                    figure.wpb_wrapper {
+                                                                        div.vc_single_image-wrapper {
+                                                                            img {
+
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div.pv-col2.inner.right-col {
+                                                        width: 50%;
+                                                        div.vc_column-inner {
+                                                            height: 100%;
+                                                            div.wpb_wrapper {
+                                                                height: 100%;
+                                                                div.community-container {
+                                                                    height: 100%;
+                                                                    div.wpb_wrapper {
+                                                                        height: 100%;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        div.community-container-wrapper {
+                                                                            max-height: 190px;
+                                                                            max-width: 350px;
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: space-between;
+                                                                            align-items: center;
+                                                                            flex-grow: 1;
+                                                                            p.pv-p {
+                                                                                padding-top: 6.5%;
+                                                                                padding-bottom: 6.5%;
+                                                                                text-align: center;
+                                                                            }
+                                                                            div.community-btn-wrapper {
+                                                                                width: 100%;
+                                                                                a.pv-btn.w-264 {
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.wpb_text_column {
+                                                div.wpb_wrapper {
+                                                    div.community-container {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        width: 100%;
+                                                        justify-content: flex-start;
+                                                        div.community-col.left {
+                                                            width: 40%;
+                                                            img.community-rnd-image {
+
+                                                            }
+                                                        }
+                                                        div.community-col.right {
+                                                            height: 190px;
+                                                             width: 55%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: space-between;
+                                                            h5.pv-h5 {
+                                                                text-transform: uppercase;
+                                                                text-align: center;
+                                                            }
+                                                            p.pv-p {
+                                                                text-align: center;
+                                                                width: auto;
+                                                                margin: 0 auto;
+                                                            }
+                                                            a.pv-btn {
+
+                                                            }
+                                                        }
+                                                    }
+                                                    &.left {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col2.left::after {
+                                    content: "";
+                                    border: 1px solid $dk-grey;
+                                    height: 100%;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 1px;
+                                }
+                                div.pv-col2.right {
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#community-innerrow-right  {
+                                                div.edgtf-full-section-inner {
+                                                    justify-content: flex-end;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div#community-refs-section {
+                            div.refs-title {
+                                h4.h4-refs.left {
+
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

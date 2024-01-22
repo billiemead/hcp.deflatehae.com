@@ -13,6 +13,7 @@ body.home {
 
                         }
                         div#home-hero-row {
+                            display: block;
                             z-index: 101;
                             left: 50%;
                             margin-left: -50vw;
@@ -21,7 +22,8 @@ body.home {
                             position: relative;
                             right: 50%;
                             width: 100vw;
-                            transform: translateY(-65px);
+                            /* margin-top: 35px; */
+                            padding-top: calc(120px - 4%);
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
@@ -50,6 +52,7 @@ body.home {
                                     left: 0;
                                     width: 100%;
                                     height: 100%;
+                                    margin: 0;
                                     div.edgtf-full-section-inner {
                                         display: flex;
                                         width: 80%;
@@ -86,7 +89,7 @@ body.home {
                                                             }
                                                     }
                                                     img.hero-logo {
-                                                        width: 500px;
+                                                        max-width: 100%;
                                                     }
                                                     h2.pv-h2.hero {
                                                         @include bold($poppins);
@@ -108,6 +111,7 @@ body.home {
                                 }
                             }
                         }
+                        div#home-hero-row-tablet,
                         div#home-hero-row-mobile {
                             display: none;
                             visibility: hidden;
@@ -115,9 +119,9 @@ body.home {
                         }
                         div.section-background {
                             position: relative;
-                            margin-top: -100px;
-                            margin-bottom: -143px;
-                            padding-bottom: 880px;
+                            margin-top: -30px;
+                            margin-bottom: -30px;
+                            padding-bottom: 760px;
                             background-image: url("/wp-content/themes/conall-child/images/home-tradeoff-background-1920x1549.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -158,10 +162,10 @@ body.home {
                             }
                             div#hae-banner-section {
                                 z-index: 103;
+                                transform: translateY(70px);
                                 div.edgtf-full-section-inner {
                                     max-width: 1194px;
                                     div.pv-col1.hae-banner-col {
-                                        transform: translateY(70px);
                                         div#haefacts-banner-wrapper {
                                             width: 100%;
                                             div.wpb_wrapper {
@@ -334,9 +338,10 @@ body.home {
                             background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
                             background-repeat: no-repeat;
                             background-size: cover;
-                            padding-top: 10%;
+                            padding-top: 9%;
                             padding-bottom: 6%;
                             z-index: 101;
+                            max-height: 688px;
                             div.clearfix.edgtf-full-section-inner {
                                 display: flex;
                                 height: 100%;
@@ -345,12 +350,13 @@ body.home {
                                 max-width: 1337px;
                                 div.pv-col2 {
                                     display: flex;
-                                    padding-top: 2%;
-                                    padding-bottom: 2%;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
                                     justify-content: center;
                                     align-items: flex-start;
                                     float: unset;
                                     div.vc_column-inner {
+                                        padding: 0;
                                         div.wpb_wrapper {
                                             div.overview-inner-row {
                                                 div.edgtf-full-section-inner {
@@ -361,6 +367,7 @@ body.home {
                                                         width: 43%;
                                                         div.vc_column-inner {
                                                             height: 100%;
+                                                            padding: 0;
                                                             div.wpb_wrapper {
                                                                 height: 100%;
                                                                 div.overview-round-image {
@@ -384,12 +391,12 @@ body.home {
                                                                 div.overview-container {
                                                                     height: 100%;
                                                                     div.wpb_wrapper {
-                                                                        height: 100%;
+                                                                        height: 290px;
                                                                         display: flex;
                                                                         justify-content: center;
-                                                                        align-items: center;
+                                                                        align-items: flex-end;
                                                                         div.overview-container-wrapper {
-                                                                            max-height: 190px;
+                                                                            max-height: 200px;
                                                                             max-width: 350px;
                                                                             display: flex;
                                                                             flex-direction: column;
@@ -399,7 +406,6 @@ body.home {
                                                                             p.pv-p {
                                                                                 padding-top: 6.5%;
                                                                                 padding-bottom: 6.5%;
-                                                                                text-align: center;
                                                                             }
                                                                             div.overview-btn-wrapper {
                                                                                 width: 100%;
@@ -481,19 +487,8 @@ body.home {
                         }
                         div#home-refs-section {
                             /* height: 200px; */
-                            background-color: $dk-grey;
-                            display: flex;
-                            align-items: center;
-                            padding-top: 5%;
-                            padding-bottom: 3%;
-                            bottom: -1px;
                             div.refs-title {
                                 h4.h4-refs.left {
-
-                                }
-                            }
-                            div.refs-paragraph {
-                                p.pv-refs {
 
                                 }
                             }
@@ -504,7 +499,11 @@ body.home {
         }
     }
 }
-
+@media all and (max-width: 2560px) and (min-width: 1921px) {
+    body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-hero-row div.edgtf-full-section-inner div.pv-row.inner div.edgtf-full-section-inner {
+        max-width: 100%;
+    }
+}
 @media all and (max-width: 1024px) {
     body.home {
         div.edgtf-wrapper {
@@ -512,7 +511,7 @@ body.home {
                 div.edgtf-content {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
-                            div#home-hero-row-mobile {
+                            div#home-hero-row-tablet {
                                 z-index: 101;
                                 left: 50%;
                                 margin-left: -50vw;
@@ -521,7 +520,11 @@ body.home {
                                 position: relative;
                                 right: 50%;
                                 width: 100vw;
-                                transform: translateY(-65px);
+                                display: block;
+                                opacity: 1;
+                                visibility: visible;
+                                background-color: $ultra-grey;
+                                margin-top: 130px;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
@@ -545,7 +548,7 @@ body.home {
                                     }
                                     div.pv-row.inner {
                                         display: flex;
-                                        position: absolute;
+                                        position: relative;
                                         top: 0;
                                         left: 0;
                                         width: 100%;
@@ -556,55 +559,69 @@ body.home {
                                             max-width: 1436px;
                                             margin: 0 auto;
                                             justify-content: center;
-                                            align-items: flex-end;
-                                            padding-bottom: 6%;
+                                            align-items: center;
+                                            padding-bottom: 3%;
+                                            padding-top: 0%;
                                             div.pv-col1.left {
-                                                width: 40%;
+                                                width: 100%;
                                                 div.hero-content-container {
-                                                    div.hero-wrapper {
+                                                    div.wpb_wrapper {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        div.hero-wrapper {
                                                         display: flex;
                                                         flex-direction: column;
                                                         justify-content: space-between;
                                                         align-items: center;
                                                         max-width: 570px;
                                                         p.pv-p {
-                                                            font-size: 0.93vw;
-                                                            line-height: 1.3vw;
+
                                                         }
                                                         h1.pv-h1.hero.center {
                                                             @include bold($poppins);
-                                                            font-size: 1.55vw;
-                                                            line-height: 1.9vw;
+                                                            font-size: 30px;
+                                                            line-height: 46px;
                                                             color: $dk-grey;
                                                                 &.top {
-                                                                    padding-top:6%;
-                                                                    padding-bottom:2%;
+                                                                    padding-top:4%;
+                                                                    padding-bottom:1%;
                                                                 }
                                                                 &.bottom {
-                                                                    padding-top:2%;
-                                                                    padding-bottom:8%;
+                                                                    padding-top:1%;
+                                                                    padding-bottom:4%;
                                                                 }
                                                         }
                                                         img.hero-logo {
-                                                            width: 500px;
+                                                            max-width: 500px;
                                                         }
                                                         h2.pv-h2.hero {
                                                             @include bold($poppins);
-                                                            font-size: 1.05vw;
-                                                            line-height: 1.55vw;
+                                                            font-size: 20px;
+                                                            line-height: 30px;
                                                             color: $red;
                                                         }
                                                     }
+                                                    }
                                                 }
-                                            }
-                                            div.pv-col2.right {
-                                                width: 60%;
                                             }
                                         }
                                     }
                                 }
                             }
-                            div#home-hero-row {
+                            div#home-hero-row-tablet:after {
+                                background: url("/wp-content/themes/conall-child/images/delfatehae-bottom-edge-1024x10.svg") center bottom no-repeat;
+                                bottom: -9px;
+                                content: "";
+                                height: 10px;
+                                position: absolute;
+                                width: 100vw;
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                background-position-x: center;
+                                background-position-y: top;
+                            }
+                            div#home-hero-row,
+                            div#home-hero-row-mobile {
                                 display: none;
                                 visibility: hidden;
                                 opacity: 0;
@@ -827,22 +844,24 @@ body.home {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
-                                padding-top: 10%;
-                                padding-bottom: 6%;
+                                padding-top: 15%;
+                                padding-bottom: 2%;
                                 z-index: 101;
+                                max-height: 100%;
                                 div.clearfix.edgtf-full-section-inner {
                                     display: flex;
                                     height: 100%;
                                     align-items: flex-start;
                                     justify-content: center;
-                                    max-width: 1337px;
+                                    max-width: 685px;
+                                    flex-direction: column;
                                     div.pv-col2 {
                                         display: flex;
-                                        padding-top: 2%;
-                                        padding-bottom: 2%;
+                                        padding: 0;
                                         justify-content: center;
                                         align-items: flex-start;
                                         float: unset;
+                                        width: 100%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div.overview-inner-row {
@@ -851,7 +870,7 @@ body.home {
                                                         width: 100%;
                                                         justify-content: flex-start;
                                                         div.pv-col2.inner.left-col {
-                                                            width: 43%;
+                                                            width: 50%;
                                                             div.vc_column-inner {
                                                                 height: 100%;
                                                                 div.wpb_wrapper {
@@ -951,13 +970,14 @@ body.home {
                                     }
                                     div.pv-col2.left::after {
                                         content: "";
-                                        border: 1px solid $dk-grey;
-                                        height: 100%;
+                                        border: none;
+                                        border-bottom: 1px solid $dk-grey;
+                                        height: auto;
                                         padding: 0;
                                         position: absolute;
-                                        top: 0;
+                                        bottom: 0;
                                         right: 0;
-                                        width: 1px;
+                                        width: 100%;
                                     }
                                     div.pv-col2.right {
                                         div.vc_column-inner {
