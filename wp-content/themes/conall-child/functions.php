@@ -320,3 +320,48 @@ function marker_io()
     <?php
 }
 add_action('wp_head', 'marker_io');
+
+function homepage_section() {
+    if (is_front_page()) {
+
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#home-tradeoff-row, #hae-banner-section, #hae-facts-section");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'homepage_section' );
+
+function overview_section() {
+    if (is_page('hae-overview')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#overview-banner-section, #overview-facts-section");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'overview_section' );

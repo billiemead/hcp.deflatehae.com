@@ -162,6 +162,7 @@ if ( ! class_exists( 'Ultimate_VC_Addons_HotSpot' ) ) {
 						'enable_bubble_arrow'          => 'on',
 						'tooltip_custom_bg_color'      => '#fff',
 						'tooltip_custom_color'         => '#4c4c4c',
+                        'tooltip_custom_id'            => '',
 						'tooltip_font'                 => '',
 						'tooltip_font_style'           => '',
 						'tooltip_font_size'            => '',
@@ -212,6 +213,11 @@ if ( ! class_exists( 'Ultimate_VC_Addons_HotSpot' ) ) {
 				$tooltip_content_style .= get_ultimate_font_style( $ult_hots_settings['tooltip_font_style'] );
 			}
 
+            // Custom ID
+			if ( '' != $ult_hots_settings['tooltip_custom_id'] ) {
+				$hotspot_tooltip_id  .= $ult_hots_settings['tooltip_custom_id']; }
+
+
 			if ( is_numeric( $ult_hots_settings['tooltip_font_size'] ) ) {
 				$ult_hots_settings['tooltip_font_size'] = 'desktop:' . $ult_hots_settings['tooltip_font_size'] . 'px;';
 			}
@@ -220,7 +226,7 @@ if ( ! class_exists( 'Ultimate_VC_Addons_HotSpot' ) ) {
 				$ult_hots_settings['tooltip_font_line_height'] = 'desktop:' . $ult_hots_settings['tooltip_font_line_height'] . 'px;';
 			}
 
-			$hotspot_tooltip_id = 'hotspot-tooltip-' . wp_rand( 1000, 9999 );
+			$hotspot_tooltip_id = 'hotspot-tooltip-' . esc_attr( $ult_hots_settings['tooltip_custom_id'] ) ;
 
 			$hotspot_tooltip_args = array(
 				'target'      => '#' . $hotspot_tooltip_id . ' .ult-tooltipster-content', // set targeted element e.g. unique class/id etc.
@@ -694,6 +700,12 @@ if ( ! class_exists( 'Ultimate_VC_Addons_HotSpot' ) ) {
 									'element' => 'link_style',
 									'value'   => 'tooltip',
 								),
+							),
+                            array(
+								'type'        => 'textfield',
+								'heading'     => __( 'ID Name', 'ultimate_vc' ),
+								'param_name'  => 'tooltip_custom_id',
+								'description' => __( 'Write your own CSS and mention the ID name here.', 'ultimate_vc' ),
 							),
 							array(
 								'type'       => 'dropdown',

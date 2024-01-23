@@ -10,13 +10,18 @@ div.pv-woman-hotspot {
     }
 }
 .aio-icon-img {
-    font-size: 45px !important;
+    font-size: 80px !important;
 }
 div.pv-hotspot-wrapper {
 
 }
-.ult-tooltipster-base {
-
+div.ult-tooltipster-base {
+    width: 80% !important;
+    max-width: 1411px;
+    margin: 0 auto;
+    right: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
 }
 .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
     height: 100%;
@@ -25,84 +30,140 @@ div.pv-hotspot-wrapper {
     left: 0;
     background-color: #e9b73f;
 }
+div#hotspot-tooltip-hs-one {
+    height: 205px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-1 {
+            margin-top: 4%;
+            padding-left: 1%;
+            div.pv-hotspot-box-wrapper {
+                ul.pv-hotspot-list {
+                max-width: 260px;
+                margin-top: 22px;
+                margin-bottom: 0;
+                height: 100%;
+                    li {
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+div#hotspot-tooltip-hs-two {
+    height: 283px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-2 {
+            div.pv-hotspot-box-wrapper {
+                ul.pv-hotspot-list {
+                    max-width: 340px;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-three {
+    width: 551px;
+    height: 283px;
+    top: 0px;
+    left: 0px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-3 {
+            margin-top: 0;
+            padding-left: 1%;
+            div.pv-hotspot-box-wrapper {
+                ul.pv-hotspot-list {
+                    max-width: 280px;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-four {
+    width: 551px;
+    height: 186px;
+    top: 0px;
+    left: 0px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-4 {
+            div.pv-hotspot-box-wrapper {
+                div.pv-hotspot-box-wrapper {
+                    margin-left: 164px;
+                    ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-five {
+    width: 551px;
+    height: 233px;
+    top: 0px;
+    left: 0px;
+    div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-5 {
+            div.pv-hotspot-box-wrapper {
+                margin-left: 205px;
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-six {
+    width: 551px;
+    height: 423px;
+    top: 0px;
+    left: 0px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-6 {
+            div.pv-hotspot-box-wrapper {
+                margin-left: 163px;
+                top: 140px;
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                            li {
+
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
 div.ult-tooltipster-content {
     padding-top: 0 !important;
     p {
         margin: 0;
-    }
-    div#pv-hotspot-1 {
-        width: 618px;
-        height: 205px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip1.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
-        ul.pv-hotspot-list {
-            max-width: 260px;
-            margin-top: 22px;
-            li {
-                height: 38px;
-            }
-        }
-    }
-    div#pv-hotspot-2 {
-        width: 551px;
-        height: 283px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip2.svg");
-        position: relative;
-        ul.pv-hotspot-list {
-            max-width: 320px;
-            li {
-                padding: 18px 0;
-            }
-        }
-    }
-    div#pv-hotspot-3 {
-        width: 468px;
-        height: 153px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip3.svg");
-        position: relative;
-        ul.pv-hotspot-list {
-            max-width: 262px;
-        }
-    }
-    div#pv-hotspot-4 {
-        width: 512px;
-        height: 186px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip4.svg");
-        position: relative;
-        div.pv-hotspot-box-wrapper {
-            margin-left: 164px;
-            ul.pv-hotspot-list {
-            max-width: 100%;
-            }
-        }
-    }
-    div#pv-hotspot-5 {
-        width: 550px;
-        height: 233px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip5.svg");
-        position: relative;
-        div.pv-hotspot-box-wrapper {
-            margin-left: 205px;
-            ul.pv-hotspot-list {
-            max-width: 100%;
-            }
-        }
-    }
-    div#pv-hotspot-6 {
-        width: 512px;
-        height: 423px;
-        background-image: url("/wp-content/themes/conall-child/images/tooltip6.svg");
-        position: relative;
-        div.pv-hotspot-box-wrapper {
-            margin-left: 163px;
-            position: relative;
-            top: 140px;
-            ul.pv-hotspot-list {
-            max-width: 100%;
-            }
-        }
     }
     div.pv-hotspot-box {
         background-color: transparent;
@@ -110,23 +171,21 @@ div.ult-tooltipster-content {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        position: relative;
+        transform: translateX(100px);
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
-            h6.pv-hotspot-h6 {
-                @include bold($poppins);
-                color: $red;
-                font-size: 26px;
-                line-height: 26px;
-                text-transform: uppercase;
-                text-align: left;
-            }
+            position: relative;
             ul.pv-hotspot-list {
                 list-style-position: outside;
                 li.pv-hotspot-list-item {
                     @include regular($poppins);
                     color: $black;
                     font-size: 18px;
-                    line-height: 26px;
+                    line-height: 34px;
                     text-align: left;
                     padding-left: 0;
                     margin-left: 22px;

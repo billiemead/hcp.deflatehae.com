@@ -1,0 +1,92 @@
+  **************************
+****   C H A N G E L O G  ****
+  **************************
+
+Version 1.7.0 - November 21, 2021
+- New: Option to set the columns as sticky
+- New: Elegant Image Overlay Button element to display button over image with overlay
+- New: Lottie Content Box element to add interactive Lottie files as icons in content box
+- Fix: An issue with setting the carousel item border to 0
+- Fix: PHP warning messages in admin for editor user role
+
+Version 1.6.0 - August 14, 2021
+- New: Text Path element to attach your text to 8+ predefined shapes with full design flexibility
+- New: Star Rating element to help increase your organic Google search ratings
+- New: Tilt Flip shape divider style in Shape Divider element
+- New: Google My Business and TripAdvisor icons added to social icons element
+- Improved: Ribbon element styling
+- Improved: Added WP and PHP minimum version support to plugin header
+
+Version 1.5.0 - August 1, 2021
+- New: Team Member element to display your team members
+- New: Option to publish row on set date, till date or set as draft
+- Improved: WordPress 5.8 compatibility
+- Fix: Gradient backgrounds not working with few themes
+- Fix: Instagram gallery element does not using display number of posts option correctly
+
+Version 1.4.1 - May 3, 2021
+- New: Option to connect to Instagram to use official API
+- New: Option to set custom image for Instagram profile picture
+- Fix: Instagram Image Gallery element not displaying images
+- Fix: Instagram Teaser Box element not displaying images
+- Fix: Instagram Profile Card element not displaying images
+- Fix: Admin page tab links for Header and Footer builder
+- Fix: Menu edit screen not working for Gewinner theme
+- Fix: Combined CSS causing conflict with Image Filters element
+
+Version 1.4.0 - April 12, 2021
+- New: Image Stack element to display multiple images stacked in unique way
+- New: Syntax Highlighter element - display code in your site with beautiful highlighter
+- New: Video Lightbox element to allow you display any video in lightbox
+- New: Countdown Timer element to show countdown on your website
+- New: Introducing Patcher Tool - you'll get instant fixes delivered for small issues
+- New: Implemented one click product registration for auto-updates and premium features
+- Fix: JS errors causing after disabling jQuery Migrate
+- Fix: PHP warnings on WPBakery Grid Builder admin pages
+- Fix: Salient theme compatibility with Elegant Modal element
+
+Version 1.3.0 - March 27, 2021
+- New: Text Block element with typography options
+- New: Self hosted video backgrounds for Rows
+- Improved: Woodmart theme mobile menu compatibility
+- Improved: Compatibility with WordPress 5.7
+- Fix: Instagram images not displaying on some websites
+
+Version 1.2.0 - February 15, 2021
+- New: Dynamic Content feature to allow you pull content from dynamic fields
+- New: Feature to allow you add custom page title bars under each custom header
+- New: Number Counter element to add animated numbers with count up/down possibility
+- New: Option to set different header for mobile devices
+- Fix: WPBakery being disabled on other post type than page and post
+- Fix: Editor not working due to Elegant Templates compatibility with older versions of PHP
+- Fix: Hide Header, Footer, and Page Title Bar posts from non-logged-in users
+
+Version 1.1.1 - February 1, 2021
+- Improved: Updated ACF framework to latest version
+- Improved: FAQ element compatibility with themes that disable core accordion element
+- Improved: Compatibility with WordPress 5.6
+- Improved: Compatibility with PHP 8
+- Fix: WPBakery being disabled for posts in role manager
+
+Version 1.1.0 - November 29, 2020
+- New: Footer Links element to easily add vertical and horizontal menu links
+- New: Social Icons element to add your social media links easily
+- New: Fully customizable Search Form element
+- New: Pre-built template library for Header, Footers, and pages
+- New: 5 Custom pre-built footer templates to get you started
+- New: 6 pre-built header templates from popular websites
+- New: 15+ pre-designed template blocks to get you started. More coming soon.
+- New: Self Hosted video option in Advanced Video element
+- New: Option to customize the video placeholder background color in Advanced Video element
+- New: Option to control space between menu items in Elegant Menu element
+- New: Option in Form element to set the submit button inline with the form field
+- New: Width and Height options added to content box element to control image icon size
+- New: Template library feature to provide you with pre-built templates
+- Improved: Compatibility with Loco Translate plugin for better translations
+- Improved: Form submit button radius now inherits the form field border radius
+- Improved: Compatibility with Flatsome theme
+- Fix: WPBakery not enabled by default on Header/Footer builder editors
+- Fix: Icon was missing for dimension param in settings
+
+Version 1.0 - September 24, 2020
+- Initial Release

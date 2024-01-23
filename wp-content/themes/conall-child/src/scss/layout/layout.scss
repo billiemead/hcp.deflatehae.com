@@ -59,7 +59,7 @@ body.pharvaris {
         margin: 0 auto;
     }
     span.italic {
-        font-style: italic;
+        font-style: italic !important;
     }
     span.strong {
         font-weight: bold;
@@ -217,7 +217,7 @@ body.pharvaris {
             text-align: center;
         }
         &.italic {
-            font-style: italic;
+            font-style: italic !important;
         }
     }
     p.pv-refs {

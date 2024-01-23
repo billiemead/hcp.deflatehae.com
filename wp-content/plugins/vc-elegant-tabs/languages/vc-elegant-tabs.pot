@@ -1,0 +1,765 @@
+# Copyright (C) 2021 InfiWebs
+# This file is distributed under the same license as the Elegant Tabs for WPBakery Page Builder package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elegant Tabs for WPBakery Page Builder 3.6.7\n"
+"Report-Msgid-Bugs-To: https://infiwebs.freshdesk.com\n"
+"POT-Creation-Date: 2021-12-18 18:15:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: elegant-vc-tabs.php:603 inc/class-elegant-elements-admin.php:72
+msgid "Elegant Tabs"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "InfiWebs"
+msgstr ""
+
+#: elegant-vc-tabs.php:606
+msgid "Create nice looking tabs ."
+msgstr ""
+
+#: elegant-vc-tabs.php:620
+msgid "Tab Style"
+msgstr ""
+
+#: elegant-vc-tabs.php:623
+msgid "Choose the tabs layout you would like to use."
+msgstr ""
+
+#: elegant-vc-tabs.php:628
+msgid "Auto Switch Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:631
+msgid "Check if you want to auto switch tabs with interval."
+msgstr ""
+
+#: elegant-vc-tabs.php:635
+msgid "Enter Interval for auto switch tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:638
+msgid "Enter the interval in seconds you want the tabs to auto switch. eg. 5"
+msgstr ""
+
+#: elegant-vc-tabs.php:647
+msgid "Tab Click Action"
+msgstr ""
+
+#: elegant-vc-tabs.php:653
+msgid ""
+"Display content - Show tab content on tab click.<br/>Open link - Set custom "
+"link in each tab to open the link on tab click. This will also set the tabs "
+"to switch on hover."
+msgstr ""
+
+#: elegant-vc-tabs.php:658
+msgid "Show/Hide Tabs on Click"
+msgstr ""
+
+#: elegant-vc-tabs.php:661
+msgid ""
+"If you click on active tab, it will be closed on click and opened on "
+"clicking again."
+msgstr ""
+
+#: elegant-vc-tabs.php:670
+msgid "Show/Hide Accordion on Click"
+msgstr ""
+
+#: elegant-vc-tabs.php:673
+msgid ""
+"If you click on active accordion, it will be closed on click and opened on "
+"clicking again."
+msgstr ""
+
+#: elegant-vc-tabs.php:682
+msgid "Equal Width Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:685
+msgid ""
+"Check if you want to make all tabs in this set to be equal width based on "
+"the larger tab width."
+msgstr ""
+
+#: elegant-vc-tabs.php:690
+msgid "Switch Tabs on Hover"
+msgstr ""
+
+#: elegant-vc-tabs.php:693
+msgid ""
+"Check if you want to set the tabs to be switched when user hover his mouse "
+"on the tab."
+msgstr ""
+
+#: elegant-vc-tabs.php:701
+msgid "Default Active Tab Number"
+msgstr ""
+
+#: elegant-vc-tabs.php:704
+msgid ""
+"Enter the number of the tab to be active on load. Enter 0 to hide all tab "
+"content on load."
+msgstr ""
+
+#: elegant-vc-tabs.php:709
+msgid "Tab Type"
+msgstr ""
+
+#: elegant-vc-tabs.php:712
+msgid "Hotizontal Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:713
+msgid "Vertical Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:715
+msgid "How would you like to display these tabs?"
+msgstr ""
+
+#: elegant-vc-tabs.php:733
+msgid "Justified Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:737
+msgid ""
+"This will set all tabs with same justified width. Only works with "
+"horizontal tabs."
+msgstr ""
+
+#: elegant-vc-tabs.php:742
+msgid "Tab Alignment"
+msgstr ""
+
+#: elegant-vc-tabs.php:745
+msgid "Left Aligned Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:746
+msgid "Right Aligned Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:747
+msgid "Centered Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:749
+msgid "Align your tabs. Works only for horizontal tab type."
+msgstr ""
+
+#: elegant-vc-tabs.php:754
+msgid "Tab Content Animation"
+msgstr ""
+
+#: elegant-vc-tabs.php:757
+msgid "No Animation"
+msgstr ""
+
+#: elegant-vc-tabs.php:758
+msgid "Swing"
+msgstr ""
+
+#: elegant-vc-tabs.php:759
+msgid "Pulse"
+msgstr ""
+
+#: elegant-vc-tabs.php:760
+msgid "Flash"
+msgstr ""
+
+#: elegant-vc-tabs.php:761
+msgid "Fade In"
+msgstr ""
+
+#: elegant-vc-tabs.php:762
+msgid "Fade In Up"
+msgstr ""
+
+#: elegant-vc-tabs.php:763
+msgid "Fade In Down"
+msgstr ""
+
+#: elegant-vc-tabs.php:764
+msgid "Fade In Left"
+msgstr ""
+
+#: elegant-vc-tabs.php:765
+msgid "Fade In Right"
+msgstr ""
+
+#: elegant-vc-tabs.php:766
+msgid "Fade In Up Long"
+msgstr ""
+
+#: elegant-vc-tabs.php:767
+msgid "Fade In Down Long"
+msgstr ""
+
+#: elegant-vc-tabs.php:768
+msgid "Fade In Left Long"
+msgstr ""
+
+#: elegant-vc-tabs.php:769
+msgid "Fade In Right Long"
+msgstr ""
+
+#: elegant-vc-tabs.php:770
+msgid "Slide In Down"
+msgstr ""
+
+#: elegant-vc-tabs.php:771
+msgid "Slide In Up"
+msgstr ""
+
+#: elegant-vc-tabs.php:772
+msgid "Slide In Left"
+msgstr ""
+
+#: elegant-vc-tabs.php:773
+msgid "Bounce In"
+msgstr ""
+
+#: elegant-vc-tabs.php:774
+msgid "Bounce In Up"
+msgstr ""
+
+#: elegant-vc-tabs.php:775
+msgid "Bounce In Down"
+msgstr ""
+
+#: elegant-vc-tabs.php:776
+msgid "Bounce In Left"
+msgstr ""
+
+#: elegant-vc-tabs.php:777
+msgid "Bounce In Right"
+msgstr ""
+
+#: elegant-vc-tabs.php:778
+msgid "Rotate In"
+msgstr ""
+
+#: elegant-vc-tabs.php:779
+msgid "Light Speed In"
+msgstr ""
+
+#: elegant-vc-tabs.php:780
+msgid "Roll In"
+msgstr ""
+
+#: elegant-vc-tabs.php:782
+msgid "Animate your tab content when it appears!"
+msgstr ""
+
+#: elegant-vc-tabs.php:787
+msgid "Tabs on mobile devices"
+msgstr ""
+
+#: elegant-vc-tabs.php:790
+msgid "Dropdown Select Box"
+msgstr ""
+
+#: elegant-vc-tabs.php:791
+msgid "Tabs to Accordion"
+msgstr ""
+
+#: elegant-vc-tabs.php:792
+msgid "Inherit Desktop Tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:795
+msgid ""
+"Select how tabs should behave on mobile devices. Inherit option will "
+"display the tabs on mobile same as on desktop."
+msgstr ""
+
+#: elegant-vc-tabs.php:799
+msgid "Convert tab navigation to carousel if doesn't fit in container"
+msgstr ""
+
+#: elegant-vc-tabs.php:803
+msgid ""
+"Check to set tabs navigation converted to carousel if it doesn't fit in the "
+"container. Does not work with vertical tabs."
+msgstr ""
+
+#: elegant-vc-tabs.php:807
+msgid "Add accordion + and - icons indicator"
+msgstr ""
+
+#: elegant-vc-tabs.php:811
+msgid ""
+"Check to set the + and - icons indicator for the accordions. This is just "
+"for UI purpose to let user know there is something to click and expand."
+msgstr ""
+
+#: elegant-vc-tabs.php:821
+msgid "Close All Accordions on Load"
+msgstr ""
+
+#: elegant-vc-tabs.php:825
+msgid "Check to set all accordions closed by default on page load on mobile."
+msgstr ""
+
+#: elegant-vc-tabs.php:835
+msgid "Make tabs sticky on scroll"
+msgstr ""
+
+#: elegant-vc-tabs.php:837 elegant-vc-tabs.php:845
+msgid "Yes"
+msgstr ""
+
+#: elegant-vc-tabs.php:839
+msgid ""
+"Check to set tabs navigation to be sticky like sticky header on scroll. You "
+"need to set the header height in below option to support theme sticky "
+"header. Does not work with vertical tabs and on mobile devices due to "
+"technical limitations."
+msgstr ""
+
+#: elegant-vc-tabs.php:843
+msgid "Random Active Tab"
+msgstr ""
+
+#: elegant-vc-tabs.php:847
+msgid ""
+"Check to set any random tab as active on page load. This option overrides "
+"the custom active tab option."
+msgstr ""
+
+#: elegant-vc-tabs.php:851
+msgid "Header height for sticky tabs"
+msgstr ""
+
+#: elegant-vc-tabs.php:854
+msgid ""
+"Provide the header height of your theme. Inspect the logo header and hover "
+"over on the inspected element to get the height. eg. 100px."
+msgstr ""
+
+#: elegant-vc-tabs.php:862
+msgid "Heading Text"
+msgstr ""
+
+#: elegant-vc-tabs.php:863
+msgid "Enter heading text if you want to add a heading for the tabs."
+msgstr ""
+
+#: elegant-vc-tabs.php:865 elegant-vc-tabs.php:872 elegant-vc-tabs.php:879
+#: elegant-vc-tabs.php:887
+msgid "Tab Heading"
+msgstr ""
+
+#: elegant-vc-tabs.php:869
+msgid "Sub Heading"
+msgstr ""
+
+#: elegant-vc-tabs.php:870
+msgid "Enter sub-heading text if you want to add a description for the tab heading."
+msgstr ""
+
+#: elegant-vc-tabs.php:876
+msgid "Tab Heading Link"
+msgstr ""
+
+#: elegant-vc-tabs.php:877
+msgid "Select link if you want to link the tab heading."
+msgstr ""
+
+#: elegant-vc-tabs.php:883
+msgid "Tab Heading Text Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:886
+msgid "The font color of the tab heading text and sub-heading text."
+msgstr ""
+
+#: elegant-vc-tabs.php:891 elegant-vc-tabs.php:1120
+msgid "Tab Text Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:894 elegant-vc-tabs.php:1123
+msgid "The font color of the inactive Tab in this set."
+msgstr ""
+
+#: elegant-vc-tabs.php:899
+msgid "Tab Background/Border Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:902 elegant-vc-tabs.php:1131
+msgid "The background color of the inactive Tab in this set.."
+msgstr ""
+
+#: elegant-vc-tabs.php:907
+msgid "Active Tab Text Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:910 elegant-vc-tabs.php:926
+msgid "The font color of the active Tab in this set."
+msgstr ""
+
+#: elegant-vc-tabs.php:915
+msgid "Active Tab Background Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:918 elegant-vc-tabs.php:934
+msgid "The background color of the active Tab in this set."
+msgstr ""
+
+#: elegant-vc-tabs.php:923
+msgid "Tab Hover Text Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:931
+msgid "Tab Hover Background Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:939
+msgid "Tab Content Background Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:942
+msgid "The background color of the Tab Content Area."
+msgstr ""
+
+#: elegant-vc-tabs.php:947
+msgid "Tab Content Text Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:950
+msgid "The text color of the Tab Content Area."
+msgstr ""
+
+#: elegant-vc-tabs.php:955
+msgid "Tab Title Font Size"
+msgstr ""
+
+#: elegant-vc-tabs.php:958
+msgid "Provide the font size for the tab title. eg. 16px."
+msgstr ""
+
+#: elegant-vc-tabs.php:963
+msgid "Arrow Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:966
+msgid "The font color of the arrow icon when tabs switched to carousel."
+msgstr ""
+
+#: elegant-vc-tabs.php:971
+msgid "Arrow Background Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:974
+msgid "The background color of the arrow icon when tabs switched to carousel."
+msgstr ""
+
+#: elegant-vc-tabs.php:979
+msgid "CSS class name"
+msgstr ""
+
+#: elegant-vc-tabs.php:981
+msgid ""
+"Give this element an extra CSS class name if you wish to refer to it in a "
+"CSS file. (optional)"
+msgstr ""
+
+#: elegant-vc-tabs.php:990
+msgid "Tab 1"
+msgstr ""
+
+#: elegant-vc-tabs.php:991
+msgid "Tab 2"
+msgstr ""
+
+#: elegant-vc-tabs.php:1002
+msgid "Single Tab"
+msgstr ""
+
+#: elegant-vc-tabs.php:1014
+msgid "Title"
+msgstr ""
+
+#: elegant-vc-tabs.php:1019
+msgid "Sub Title"
+msgstr ""
+
+#: elegant-vc-tabs.php:1024
+msgid "Tab Link"
+msgstr ""
+
+#: elegant-vc-tabs.php:1025
+msgid ""
+"Select link only if you have set the tab action to open custom link in "
+"parent tabs settings."
+msgstr ""
+
+#: elegant-vc-tabs.php:1031
+msgid "Double tap to open link"
+msgstr ""
+
+#: elegant-vc-tabs.php:1034
+msgid ""
+"This will enable the tab with custom link to show content on first tap on "
+"touch screen devices."
+msgstr ""
+
+#: elegant-vc-tabs.php:1037
+msgid "Icon Type"
+msgstr ""
+
+#: elegant-vc-tabs.php:1038
+msgid "Would you like to use font icons or custom image icon?"
+msgstr ""
+
+#: elegant-vc-tabs.php:1040
+msgid "Font Icon"
+msgstr ""
+
+#: elegant-vc-tabs.php:1041
+msgid "Image Icon"
+msgstr ""
+
+#: elegant-vc-tabs.php:1047
+msgid "Icon"
+msgstr ""
+
+#: elegant-vc-tabs.php:1048
+msgid "Select the icon you would like to use for this tab."
+msgstr ""
+
+#: elegant-vc-tabs.php:1062
+msgid "Custom Image Icon"
+msgstr ""
+
+#: elegant-vc-tabs.php:1063
+msgid "Upload the custom image icon you would like to use for this tab."
+msgstr ""
+
+#: elegant-vc-tabs.php:1073
+msgid "Custom Image Icon on Hover"
+msgstr ""
+
+#: elegant-vc-tabs.php:1074
+msgid ""
+"Upload the custom image icon you would like to use for this tab to display "
+"on hover state."
+msgstr ""
+
+#: elegant-vc-tabs.php:1084
+msgid "Image Icon Width"
+msgstr ""
+
+#: elegant-vc-tabs.php:1085
+msgid "Set the custom image icon width. Default is - 32px."
+msgstr ""
+
+#: elegant-vc-tabs.php:1095
+msgid "Image Icon Height"
+msgstr ""
+
+#: elegant-vc-tabs.php:1096
+msgid "Set the custom image icon height. Default is - 32px."
+msgstr ""
+
+#: elegant-vc-tabs.php:1108
+msgid "Tab ID"
+msgstr ""
+
+#: elegant-vc-tabs.php:1128
+msgid "Tab Background Color"
+msgstr ""
+
+#: elegant-vc-tabs.php:1135
+msgid "Hide Tab From"
+msgstr ""
+
+#: elegant-vc-tabs.php:1136
+msgid "Would you like hide this tab from certain users?"
+msgstr ""
+
+#: elegant-vc-tabs.php:1138
+msgid "No One"
+msgstr ""
+
+#: elegant-vc-tabs.php:1139
+msgid "Logged In Users"
+msgstr ""
+
+#: elegant-vc-tabs.php:1140
+msgid "Logged Out Users"
+msgstr ""
+
+#: elegant-vc-tabs.php:1144
+msgid "Conditional Tab"
+msgstr ""
+
+#: elegant-vc-tabs.php:1302
+msgid "Tab"
+msgstr ""
+
+#: inc/admin-screens/support.php:7
+msgid ""
+"Elegant Tabs for WPBakery Page Builder  comes with 6 months of free support "
+"and updates with every license you purchase. You can extend the support and "
+"receive automatic updates by renewing your license or buying additional "
+"licenses. All support for the plugin is handled through our support center. "
+"To access it, you must first setup an account on our support center."
+msgstr ""
+
+#: inc/admin-screens/support.php:10
+msgid "Create a Support Account"
+msgstr ""
+
+#: inc/admin-screens/welcome.php:6
+msgid ""
+"The Elegant Tabs plugin is an add-on for the popular page builder plugin -  "
+"WPBakery Page Builder. It will add a new tab element to the  WPBakery Page "
+"Builder's library and extend the functionality. It provides more than 12 "
+"different tab styles to use on your website with unlimited variations and "
+"customization capabilities."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Elegant Tabs for WPBakery Page Builder"
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:73
+#: inc/class-elegant-elements-admin.php:176
+msgid "Support"
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:76
+#: inc/class-elegant-elements-admin.php:175
+msgid "Welcome"
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:140
+msgid ""
+"Thank you for choosing Elegant Tabs for WPBakery Page Builder. We are "
+"honored and are fully dedicated to making your experience perfect."
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:155
+msgid "Welcome to Elegant Tabs!"
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:157
+msgid ""
+"Thanks for registering your purchase. You will now receive the automatic "
+"updates."
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:160
+msgid ""
+"Please provide all the three details for registering your copy of Elegant "
+"Tabs for WPBakery Page Builder."
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:163
+msgid "Something went wrong. Please verify your details and try again."
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:166
+msgid ""
+"Elegant Tabs for WPBakery Page Builder is now installed and ready to use! "
+"Get ready to build something beautiful. Please register your purchase on "
+"welcome tab to receive automatic updates and support. We hope you enjoy it!"
+msgstr ""
+
+#: inc/class-elegant-elements-admin.php:170
+msgid "Version %s"
+msgstr ""
+
+#: inc/class-elegant-envato-api.php:62 inc/class-elegant-envato-api.php:73
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/class-elegant-envato-api.php:107
+msgid "An API token is required."
+msgstr ""
+
+#: inc/class-elegant-envato-api.php:121 inc/class-elegant-envato-api.php:125
+msgid "An unknown API error occurred."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:234
+msgid "Token"
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:394
+msgid "Congratulations! Your product is registered now."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:396
+msgid "Please enter your Envato token to complete registration."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:424
+msgid "Submit"
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:430
+msgid ""
+"Registration could not be completed because the value entered above is a "
+"purchase code. A token key is needed to register. Please read the "
+"directions below to find out how to create a token key to complete "
+"registration."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:433
+#. translators: The product name for the license.
+msgid "Invalid token, or corresponding Envato account does not have %s purchased."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:447
+msgid ""
+"Token does not have the necessary permissions. Please create a new token "
+"and make sure the following permissions are enabled for it: <strong>View "
+"Your Envato Account Username</strong>, <strong>Download Your Purchased "
+"Items</strong>, <strong>List Purchases You've Made</strong>, <strong>Verify "
+"Purchases You've Made</strong>."
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:457
+msgid "Instructions For Generating A Token"
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:461
+msgid ""
+"Enter a name for your token, then check the boxes for <strong>View Your "
+"Envato Account Username, Download Your Purchased Items, List Purchases "
+"You've Made</strong> and <strong>Verify Purchases You've Made</strong> from "
+"the permissions needed section. Check the box to agree to the terms and "
+"conditions, then click the <strong>Create Token button</strong>"
+msgstr ""
+
+#: inc/class-elegant-product-registration.php:462
+msgid ""
+"A new page will load with a token number in a box. Copy the token number "
+"then come back to this registration page and paste it into the field below "
+"and click the <strong>Submit</strong> button."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.infiwebs.com/elegant-tabs-vc"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Create stunning and inspirational Tabs for your website using WPBakery Page "
+"Builder."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.infiwebs.com"
+msgstr ""

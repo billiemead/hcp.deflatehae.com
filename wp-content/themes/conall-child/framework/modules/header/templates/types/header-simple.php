@@ -5,9 +5,7 @@
 
 <div id="header-container" class="pv-header-container">
 <div class="pv-top-bar">
-    <?php if($top_bar_in_grid) : ?>
-    <div class="edgtf-grid pv-container">
-    <?php endif; ?>
+    <!-- <div class="edgtf-grid pv-container"> -->
 		<?php do_action( 'conall_edge_after_header_top_html_open' ); ?>
         <div class="pv-container">
             <div class="edgtf-vertical-align-containers pv-header-top-fullwidth">
@@ -33,9 +31,7 @@
                 </div>
             </div>
         </div>
-    <?php if($top_bar_in_grid) : ?>
-    </div>
-    <?php endif; ?>
+    <!-- </div> -->
 </div>
 
 <?php do_action('conall_edge_after_header_top'); ?>
