@@ -10,28 +10,473 @@ body.livinghae-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#living-cta-row {
-
+                            display: none;
                         }
                         div#living-hero-row {
+                            display: block;
+                            z-index: 101;
+                            left: 50%;
+                            margin-left: -50vw;
+                            margin-right: -50vw;
+                            max-width: 100vw;
+                            position: relative;
+                            right: 50%;
+                            width: 100%;
+                            top: 30px;
+                            div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 100%;
+                                div#living-hero-image-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#hero-background-image {
+                                                text-align: center;
+                                                figure.wpb_wrapper {
+                                                    width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        width: 100%;
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-row.inner {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 80%;
+                                        max-width: 1230px;
+                                        margin: 0 auto;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-bottom: 0;
+                                        padding-top: 6%;
+                                        div.pv-col1.center {
+                                            float: unset;
+                                            &.top {
+                                                max-width: 910px;
+                                            }
+                                            div.hero-subheading {
+                                                padding-bottom: 35px ;
+                                                h2.pv-h2 {
+                                                    font-size: 1.55vw;
+                                                    line-height: 2.1vw;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
 
-                        }
-                        div#living-hae-impacts-row {
+                                            div#hero-logo {
+                                                text-align: center;
+                                                margin-bottom: 5.5% !important;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
 
-                        }
-                        div#jennifers-banner-section {
-
-                        }
-                        div#jennifers-hae-story-section {
-                            div.pv-col1.jennifers-story-col {
-                                
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
-                        div#living-refs-section {
 
+                        div#living-hae-impacts-row {
+                            animation: fadeIn 5s;
+                            height: 1200px;
+                            transform: translateY(-30px);
+                            background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            width: 102%;
+                            margin-bottom: -35px !important;
+                            div.clearfix.edgtf-full-section-inner {
+                                max-width: 1194px;
+                                height: 100%;
+                                div.pv-col1.one {
+                                    padding-top: 120px;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#burdens-top-heading {
+                                                h1.pv-h1.center {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.two {
+                                    padding-top: 35px;
+                                    padding-bottom: 235px;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#burden-option-container {
+                                                max-width: 1150px;
+                                                margin: 0 auto;
+                                                div.burden-option-wrapper {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    flex-wrap: nowrap;
+                                                    height: 75px;
+                                                    align-items: flex-start;
+                                                        div.option {
+                                                            h1.pv-h1 {
+                                                                padding-top: 12px;
+                                                                sup.pv-sup {
+                                                                    font-size: 50%;
+                                                                    bottom: 1.3ex;
+                                                                }
+                                                            }
+                                                        }
+                                                        div.option-left {
+
+                                                        }
+                                                        div.option-center {
+                                                            text-align: center;
+                                                            select#redselect {
+                                                                margin-bottom: 15px;
+                                                                height: 60px;
+                                                                option.pv-option {
+
+                                                                }
+                                                            }
+                                                            label.pv-label {
+                                                                margin-top: 15px;
+                                                            }
+                                                        }
+                                                        div.option-right {
+
+                                                        }
+                                                        div.option.option-center {
+                                                            position:relative;
+                                                            display:inline-block;
+                                                        }
+                                                        div.option.option-center::before {
+                                                            content: "";
+                                                            display: block;
+                                                            width: 50px;
+                                                            height: 24px;
+                                                            top: 21px;
+                                                            border: none;
+                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                            background-position: calc(100% - 0.75rem) center !important;
+                                                            transform: rotate(0deg);
+                                                            margin-top: -2.5px;
+                                                            position: absolute;
+                                                            right: 5px;
+                                                            z-index: 2;
+                                                        }
+                                                        div.option.option-center.focused::before{
+                                                            transform: rotate(180deg);
+                                                            right: 8px;
+                                                            top: 20px;
+                                                        }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                div.pv-col1.three.whitebox {
+                                    background-image: url("/wp-content/themes/conall-child/images/small-white-box-346x697.svg");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center center;
+                                    width: auto;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    max-height: 350px;
+                                    max-width: 700px;
+                                    padding-top: 65px;
+                                    padding-bottom: 100px;
+                                    padding-left: 240px;
+                                    padding-right: 80px;
+                                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                    float: right;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#swap-box {
+                                                    width: 377;
+                                                    height: 188px;
+                                                    div {
+                                                        h5.pv-h5.center.red {
+                                                            padding-bottom: 1.5%;
+                                                        }
+                                                        ul.pv-list {
+                                                            li.pv-list-item {
+                                                                line-height: 26px;
+                                                                font-weight: bold !important;
+                                                                padding-bottom: 2%;
+                                                                sup.pv-sup {
+                                                                    font-size: 60%;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#listswap-container-1 {
+                                                        display: block;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-2 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-3 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-4 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                }
+                                div.pv-col1.four {
+                                    position: absolute;
+                                    bottom: 0;
+                                    padding-bottom: 120px;
+                                    margin-left: 20px;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#living-balloon-hand {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
+                        div.section-background {
+                                position: relative;
+                                height: 1140px;
+                                background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
+                                background-repeat: no-repeat;
+                                background-size: 85%;
+                                background-position: center center;
+                                visibility: visible;
+                                div#hae-section-wrapper {
+                                    transform: translateY(-165px);
+                                    div#jennifers-banner-section {
+                                    z-index: 103;
+                                    div.edgtf-full-section-inner {
+                                            max-width: 1194px;
+                                            div.pv-col1.jennifers-story-col {
+                                                div#jennifers-banner-wrapper {
+                                                    width: 100%;
+                                                    div.wpb_wrapper {
+                                                        width: 517px;
+                                                        margin: 0 auto;
+                                                        text-align: center;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        div.jennifers-banner-img-container {
+                                                            background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-517x108.svg");
+                                                            background-repeat: no-repeat;
+                                                            background-size: contain;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            margin: 0 auto;
+                                                            padding: 7.5% 0;
+                                                            h2.pv-h2.center.white {
+                                                                text-transform: uppercase;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div#jennifers-story-section {
+                                        display: flex;
+                                        margin: 0 auto;
+                                        padding: 0;
+                                        filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
+                                        z-index: 102;
+                                        position: absolute;
+                                        width: 100%;
+                                        transform: translateY(-75px);
+                                        div.edgtf-full-section-inner {
+                                            width: 80%;
+                                            max-width: 1194px;
+                                            div.pv-col1.ripple-image {
+                                                div.vc_column-inner {
+                                                    padding: 0;
+                                                    div.wpb_wrapper {
+                                                        div.hae-white-box-image {
+                                                            figure.wpb_wrapper {
+                                                                width: 100%;
+                                                                display: flex;
+                                                                margin: 0;
+                                                                div.vc_single_image-wrapper {
+                                                                    width: 100%;
+                                                                    img.vc_single_image-img {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.top {
+                                                width: 100%;
+                                                position: relative;
+                                                top: 0;
+                                                div#hae-white-box-top {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.bottom {
+                                                width: 100%;
+                                                position: relative;
+                                                bottom: 0;
+                                                div#hae-white-box-bottom {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.jennifers-story-col {
+                                                background-color: $white;
+                                                padding: 150px 0px 100px 0px;
+                                                div.wpb_wrapper {
+                                                    height: 100%;
+                                                    div#jennifers--inner-row-1 {
+                                                        padding-bottom: 60px;
+                                                        div.pv-col2 {
+                                                            p.pv-p.stats {
+                                                                padding: 8px 0 8px 0;
+                                                            }
+                                                            &.left {
+                                                                div.jstory-stats {
+
+                                                                    &.left {
+
+                                                                    }
+                                                                    &.right {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                            &.right {
+                                                                padding-right: 2%;
+                                                            }
+                                                        }
+
+                                                    }
+                                                    div#jennifers--inner-row-2 {
+                                                        div.pv-col1.fullwidth {
+                                                            div.vc_column-inner {
+                                                                padding: 0;
+                                                                div.wpb_wrapper {
+                                                                    div#jstory-icon-separator {
+                                                                        div.quote-container {
+                                                                            span.quote-lines {
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                height: 50px;
+                                                                                img.quote-icon {
+
+                                                                                }
+                                                                            }                                                                          span.quote-lines::before,
+                                                                            span.quote-lines::after {
+                                                                                content: "";
+                                                                                position: absolute;
+                                                                                height: 24px;
+                                                                                border-bottom: 2px solid $red;
+                                                                                top: 0;
+                                                                                width: 40%;
+                                                                                display: flex;
+                                                                            }
+                                                                            span.quote-lines::before {
+                                                                                right: 0;
+                                                                                margin-right: 0px;
+                                                                            }
+                                                                            span.quote-lines::after {
+                                                                                left: 0;
+                                                                                margin-left: 0px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    div#jstory-paragraphs {
+                                                                        max-width: 865px;
+                                                                        padding-top: 60px;
+                                                                        margin: 0 auto;
+                                                                        p.pv-p {
+                                                                            text-align: center;
+                                                                            &.top {
+                                                                                margin-bottom: 3%;
+                                                                            }
+                                                                            &.mid {
+                                                                                margin-bottom: 3%;
+                                                                            }
+                                                                            &.btm {
+                                                                                margin-bottom: 7%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    div#jstory-lower-heading {
+                                                                        h3.pv-h3.center.red {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    a.pv-btn.w-292 {
+                                                        margin-top: 60px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-refs-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
                     }
                 }
-            }
+           }
         }
     }
 }

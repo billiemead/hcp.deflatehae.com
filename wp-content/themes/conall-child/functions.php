@@ -19,7 +19,6 @@ if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
 
 		wp_enqueue_style( 'conall-edge-child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
 	}
-
 	add_action( 'wp_enqueue_scripts', 'conall_edge_child_theme_enqueue_scripts' );
 }
 
@@ -29,7 +28,10 @@ function pharvaris_hcp_assets()
     wp_register_style('pharvaris-hcp-stylesheet', get_theme_file_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all');
     wp_enqueue_style('pharvaris-hcp-stylesheet');
     wp_enqueue_script('custom_js', get_theme_file_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
+    wp_enqueue_script('pharvaris_hcp_jquery', get_theme_file_uri() . '/pharvaris-hcp-jquery.js', array('jquery'), '1.0.0', true);
+    if (is_page('living-with-hae')) {
+        wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
+    }
 }
 add_action('wp_enqueue_scripts', 'pharvaris_hcp_assets', 99);
 
@@ -365,3 +367,90 @@ function overview_section() {
     }
 }
 add_action( 'wp_footer', 'overview_section' );
+
+function living_hae_section() {
+    if (is_page('living-with-hae')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#jennifers-banner-section, #jennifers-story-section");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background-wrapper');
+            wrapper.setAttribute('id','hae-section-wrapper');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+
+        </script>
+
+        <script>
+            const divs2 = document.querySelectorAll("#hae-section-wrapper");
+            const wrapper2 = document.createElement("div");
+            wrapper2.classList.add('section-background');
+            divs2[0].before(wrapper2);
+            divs2.forEach(div => wrapper2.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'living_hae_section' );
+
+function treatment_section() {
+    if (is_page('treatment-burdens')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#treatment-banner-section, #treatment-facts-section");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background-wrapper');
+            wrapper.setAttribute('id','treatment-section-wrapper');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+
+        </script>
+
+        <script>
+            const divs2 = document.querySelectorAll("#treatment-section-wrapper");
+            const wrapper2 = document.createElement("div");
+            wrapper2.classList.add('section-background');
+            divs2[0].before(wrapper2);
+            divs2.forEach(div => wrapper2.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'treatment_section' );
+
+function glossary_section() {
+    if (is_page('community-support')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#community-glossary-row");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.setAttribute('id','community-glossary-bkgnd');
+            wrapper.classList.add('section-background');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'glossary_section' );

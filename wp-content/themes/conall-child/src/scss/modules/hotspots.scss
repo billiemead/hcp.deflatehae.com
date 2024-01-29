@@ -179,21 +179,6 @@ div.ult-tooltipster-content {
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
             position: relative;
-            ul.pv-hotspot-list {
-                list-style-position: outside;
-                li.pv-hotspot-list-item {
-                    @include regular($poppins);
-                    color: $black;
-                    font-size: 18px;
-                    line-height: 34px;
-                    text-align: left;
-                    padding-left: 0;
-                    margin-left: 22px;
-                }
-                li::marker {
-                    color: $red;
-                }
-            }
         }
     }
 }

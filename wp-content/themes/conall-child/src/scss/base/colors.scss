@@ -8,6 +8,7 @@ $mid-grey: #777676;
 $dk-grey: #414143;
 $darker-grey: #2F2F2F;
 $tran-grey: #00000029;
+$backgnd-grey: #f7f7f7;
 $yellow: #E9B73F;
 $black: #000000;
 $white: #ffffff;
@@ -22,36 +23,4 @@ $white: #ffffff;
     box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
     -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
-}
-
-@mixin pv-btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 53px;
-    width: auto;
-    border: 1px solid $yellow;
-    transition: all 0.5s ease-in-out;
-    background-color: $yellow;
-    color: $black;
-    border-radius: 33px;
-    font-family: $poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: -0.5px;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    &:active,
-    &:focus {
-        outline: none;
-    }
-    &.w-264 {
-        max-width: 264px;
-    }
-    &.w-292 {
-        width: 292px;
-    }
 }

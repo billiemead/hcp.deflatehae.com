@@ -10,22 +10,526 @@ body.treatmentburdens-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#treatment-cta-row {
-
+                            display: none;
                         }
                         div#treatment-hero-row {
-                            div#treatment-hero-image-col {
+                            display: block;
+                            z-index: 101;
+                            left: 50%;
+                            margin-left: -50vw;
+                            margin-right: -50vw;
+                            max-width: 100vw;
+                            position: relative;
+                            right: 50%;
+                            width: 100%;
+                            top: 30px;
+                            div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 100%;
+                                div#treatment-hero-image-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#hero-background-image {
+                                                text-align: center;
+                                                figure.wpb_wrapper {
+                                                    width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        width: 100%;
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-row.inner {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 80%;
+                                        max-width: 1230px;
+                                        margin: 0 auto;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-bottom: 0;
+                                        padding-top: 6%;
+                                        div.pv-col1.center {
+                                            float: unset;
+                                            &.top {
+                                                max-width: 910px;
+                                            }
+                                            div.hero-subheading {
+                                                padding-bottom: 25px ;
+                                                h2.pv-h2 {
+                                                    font-size: 1.55vw;
+                                                    line-height: 2.1vw;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
 
+                                            div#hero-logo {
+                                                text-align: center;
+                                                margin-bottom: 5.5% !important;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
+                        }
+                        div#treatment-triple-icon-row {
+                            /* height: 1575px; */
+                            padding: 4% 0 0 0;
+                            background-color: $white;
+                            div.edgtf-full-section-inner {
+                                div.pv-col1 {
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div.pv-row.inner {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                background-image: url("/wp-content/themes/conall-child/images/triple-icon-row-bkgnd-1377x433.png");
+                                                background-size: 100%;
+                                                max-height: 433px;
+                                                max-width: 1377px;
+                                                width: auto;
+                                                aspect-ratio: 1377 / 433;
+                                                background-repeat: no-repeat;
+                                                div.edgtf-full-section-inner {
+                                                    max-width: 1194px;
+                                                    width: 86.63%;
+                                                    max-height: 350px;
+                                                    height: 80.5%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    div.pv-col2 {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        div.vc_column-inner {
+                                                            div.wpb_wrapper {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                height: 100%;
+                                                                width: 100%;
+                                                                justify-content: center;
+                                                            }
+                                                        }
+                                                        div.title-wrapper {
+                                                            padding-top: 30px;
+                                                            h5.pv-h5.center.white {
+                                                                sup.pv-sup {
+                                                                    font-size: 60%;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div.pv-col2.left {
+                                                        width: 29%;
+                                                        div#icon-injection {
+                                                            text-align: center;
+                                                                img {
 
+                                                            }
+                                                        }
+                                                        div#icon-infusion {
+                                                            text-align: center;
+                                                                img {
+
+                                                            }
+                                                        }
+                                                        div#icon-oral {
+                                                            text-align: center;
+                                                                img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                    div.pv-col2.right {
+                                                        width: 71%;
+                                                        padding-left: 7%;
+                                                        padding-right: 10%;
+                                                        div.list-wrapper {
+                                                            ul.pv-list {
+                                                                li.pv-list-item {
+                                                                    font-weight: 700 !important;
+                                                                    line-height: 26px !important;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div#triple-icon-inner-row-1 {
+
+                                            }
+                                            div#triple-icon-inner-row-2 {
+
+                                            }
+                                            div#triple-icon-inner-row-3 {
+
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.footnote-col {
+                                    height: 120px;
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: center;
+                                    align-items: center;
+                                    p.pv-p.footnote.center {
+
+                                    }
+                                }
+                            }
                         }
                         div#treatment-balloon-animation-row {
+                            background-image: url("/wp-content/themes/conall-child/images/balloon-ani-section-top-1920x1400.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: top;
+                            /* transform: translateY(-40px); */
+                            padding-top: 60px;
+                            div.edgtf-full-section-inner {
+                                div.pv-col1.top {
+                                    margin-top: 60px;
+                                    margin-bottom: 90px;
+                                    div.best-selves-subheading {
+                                        h3.pv-h3.center.form {
+                                            sup.pv-sup {
+                                                font-size: 60%;
+                                            }
+                                        }
+                                    }
+                                    div.best-selves-heading-logo {
+                                        text-align: center;
+                                        figure.wpb_wrapper {
+                                            div.vc_single_image-wrapper {
+                                                img.vc_single_image-img {
 
-                        }
-                        div#treatment-banner-section {
-                            
-                        }
-                        div#treatment-facts-section {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.mid {
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#balloon-animation-row-inner {
+                                                div.edgtf-full-section-inner {
+                                                    div.pv-col2 {
 
+                                                    }
+                                                    div.pv-col2.left {
+                                                        img {
+
+                                                        }
+                                                    }
+                                                    div.pv-col2.right {
+                                                        margin-top: 100px;
+                                                        div.vc_column-inner {
+                                                            div.wpb_wrapper {
+                                                                div#balloon-animation-heading {
+                                                                    p.pv-p.center.bold.italic {
+
+                                                                    }
+                                                                }
+                                                                div#button-animation-triggers {
+                                                                    div.wpb_wrapper {
+                                                                        div#balloon-animation-button-wrapper {
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            align-items: center;
+                                                                            width: 100%;
+                                                                            margin-top: 40px;
+                                                                            margin-bottom: 50px;
+                                                                            div.button-wrapper {
+                                                                                width: 33.33%;
+                                                                                a.pv-btn.w-128 {
+
+                                                                                }
+                                                                                br {
+                                                                                    display: none;
+                                                                                }
+                                                                            }
+                                                                            a#balloon-trigger-1 {
+
+                                                                            }
+                                                                            a#balloon-trigger-2 {
+
+                                                                            }
+                                                                            a#balloon-trigger-3 {
+
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div#balloon-animation-topbox {
+                                                                    background-color: $red;
+                                                                    height: 200px;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    padding: 0 7%;
+                                                                    div#balloon-topbox-wrapper {
+                                                                        h4.pv-h4.center {
+                                                                            sup.pv-sup {
+                                                                                font-size: 60%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div#balloon-animation-btmbox {
+                                                                    background-color: $yellow;
+                                                                    height: 200px;
+                                                                    width: 500px;
+                                                                    margin: 0 auto;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    padding: 0 7%;
+                                                                    div#balloon-btmbox-wrapper {
+                                                                        h6.pv-h6.center {
+                                                                            sup.pv-sup {
+                                                                                font-size: 60%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.btm {
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 100%;
+                                    display: flex;
+                                    height: 60px;
+                                    div#balloon-animation-footnote2 {
+                                        p.pv-p.center.footnote-2 {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div.section-background {
+                            position: relative;
+                            /* height: 936px; */
+                            background-color: $yellow;
+                            visibility: visible;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            div#treatment-section-wrapper {
+                                div#treatment-banner-section {
+                                    z-index: 103;
+                                    transform: translateY(50px);
+                                    padding-top: 6%;
+                                    div.edgtf-full-section-inner {
+                                        max-width: 1194px;
+                                        div.pv-col1.treatment-banner-col {
+                                            div#treatment-banner-wrapper {
+                                                width: 100%;
+                                                div.wpb_wrapper {
+                                                    width: 330px;
+                                                    margin: 0 auto;
+                                                    text-align: center;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    div.treatment-banner-img-container {
+                                                        background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        margin: 0 auto;
+                                                        padding: 9.3% 0;
+                                                        h2.pv-h2.center.white {
+                                                            text-transform: uppercase;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#treatment-facts-section {
+                                    display: flex;
+                                    margin: 0 auto;
+                                    padding: 0;
+                                    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
+                                    z-index: 102;
+                                    /* position: absolute; */
+                                    width: 100%;
+                                    /* transform: translateY(-75px); */
+                                    div.edgtf-full-section-inner {
+                                        width: 80%;
+                                        max-width: 1194px;
+                                        div.pv-col1.ripple-image {
+                                            div.vc_column-inner {
+                                                padding: 0;
+                                                div.wpb_wrapper {
+                                                    div.hae-white-box-image {
+                                                        figure.wpb_wrapper {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            margin: 0;
+                                                            div.vc_single_image-wrapper {
+                                                                width: 100%;
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.ripple-image.top {
+                                            width: 100%;
+                                            position: relative;
+                                            top: 0;
+                                            div#hae-white-box-top {
+                                                img.vc_single_image-img {
+
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.ripple-image.bottom {
+                                            width: 100%;
+                                            position: relative;
+                                            bottom: 0;
+                                            div#hae-white-box-bottom {
+                                                img.vc_single_image-img {
+
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.treatment-icon-col {
+                                            background-color: $white;
+                                            padding: 60px 0px 60px 0px;
+                                            div.wpb_wrapper {
+                                                height: 100%;
+                                                div.wpb_text_column.wpb_content_element {
+                                                    height: 100%;
+                                                    padding-top: 0;
+                                                    padding-bottom: 0;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        div#treatment-facts-icon-row {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            height: 100%;
+                                                            justify-content: center;
+                                                            max-width: 870px;
+                                                            width: 80%;
+                                                            align-items: center;
+                                                            div.iconrow {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                width: 100%;
+                                                                div.hae-image-wrapper {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    width: 15%;
+                                                                    height: 120px;
+                                                                    margin-right: 40px;
+                                                                    img {
+
+                                                                    }
+                                                                }
+                                                                div.hae-copy-wrapper {
+                                                                    display: flex;
+                                                                    width: 85%;
+                                                                    p.pv-p {
+                                                                        display: block;
+                                                                        width: 100%;
+                                                                        height: auto;
+                                                                    }
+                                                                }
+                                                            }
+                                                            div#icon-row1 {
+                                                                img.hae-icon.one {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row2 {
+                                                                img.hae-icon.two {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row3 {
+                                                                img.hae-icon.three {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row4 {
+                                                                img.hae-icon.four {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                a.pv-btn.w-292 {
+                                                    margin-top: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         div#treatment-refs-section {
 

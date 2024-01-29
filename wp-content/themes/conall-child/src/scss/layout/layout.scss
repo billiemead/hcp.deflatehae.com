@@ -79,7 +79,6 @@ body.pharvaris {
             align-items: center;
             padding-top: 5%;
             padding-bottom: 3%;
-            bottom: -1px;
             div.vc_column-inner {
                 padding: 0;
                 div.refs-paragraph {
@@ -122,6 +121,7 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 30px;
         line-height: 40px;
+        color: $black;
         &.grey {
             color: $dk-grey;
         }
@@ -151,6 +151,12 @@ body.pharvaris {
             font-size: 30px;
             line-height: 40px;
         }
+        &.blue {
+            font-size: 45px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: $blue;
+        }
     }
     h3, h3.pv-h3 {
         @include bold($poppins);
@@ -158,8 +164,8 @@ body.pharvaris {
         line-height: 50px;
         &.form {
             color: $dk-grey;
-            text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         &.red {
             color: $red;
@@ -167,9 +173,26 @@ body.pharvaris {
         &.center {
             text-align: center;
         }
+        &.blue {
+            color: $blue;
+            text-transform: uppercase;
+            font-size: 26px;
+            line-height: 34px;
+            &.black {
+                color: $black;
+                text-transform: lowercase;
+            }
+        }
     }
     h4, h4.pv-h4 {
-
+        @include bold($poppins);
+        font-size: 24px;
+        line-height: 34px;
+        text-align: left;
+        color:  $white;
+        &.center {
+            text-align: center;
+        }
     }
     h4.h4-refs.left {
         @include bold($poppins);
@@ -189,9 +212,22 @@ body.pharvaris {
         &.center {
             text-align: center;
         }
+        &.red {
+            color: $red;
+        }
+        &.white {
+            color: $white;
+            text-transform: none
+        }
     }
     h6, h6.pv-h6 {
-
+        @include bold($poppins);
+        font-size: 20px;
+        line-height: 30px;
+        color: $dk-grey;
+        &.center {
+            text-align: center;
+        }
     }
     p, p.pv-p {
         @include regular($poppins);
@@ -199,6 +235,13 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         margin: 0;
+        &.footnote-2 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &.footnote {
+            font-size: 16px;
+        }
         &.form-p {
             font-size: 22px;
             line-height: 30px;
@@ -216,6 +259,9 @@ body.pharvaris {
         &.center {
             text-align: center;
         }
+        &.bold {
+            font-weight: 700 !important;
+        }
         &.italic {
             font-style: italic !important;
         }
@@ -226,9 +272,29 @@ body.pharvaris {
         font-size: 16px;
         line-height: 26px;
     }
-    ul, ul.pv-ul
-    li, li.pv-p {
+    ul.pv-list {
+        list-style-position: outside;
+        &.hotspot {
 
+        }
+        li.pv-list-item {
+            @include regular($poppins);
+            color: $black;
+            font-size: 18px;
+            line-height: 34px;
+            text-align: left;
+            padding-left: 0;
+            margin-left: 22px;
+                sup.pv-sup {
+
+                }
+            &.hotspot {
+
+            }
+        }
+        li::marker {
+            color: $red;
+        }
     }
     p.pv-p.center {
         text-align: center !important
@@ -251,11 +317,45 @@ body.pharvaris {
     span.strong {
         font-weight: bold;
     }
+    span.nowrap {
+        white-space: nowrap;
+    }
     div.edgtf-content {
 
     }
     sup.pv-sup {
 
+    }
+    label.pv-label {
+        @include regular($poppins);
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    select.pv-red-select {
+        @include bold($poppins);
+        width: 362px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        color: $red;
+        background: none;
+        border: none;
+        border-bottom: 3px solid $red !important;
+        -moz-appearance:none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        padding-right: 2rem !important;
+        resize: none;
+        outline: none;
+        cursor: pointer;
+        option.pv-option  {
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+            @include bold($poppins);
+            color: $red;
+        }
     }
 }
 /* ===== Scrollbar CSS ===== */
