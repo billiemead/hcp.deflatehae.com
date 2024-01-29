@@ -36,6 +36,9 @@
     &.w-152 {
         max-width: 152px;
     }
+    &.w-176 {
+        max-width: 176px;
+    }
     &.w-264 {
         max-width: 264px;
     }
@@ -52,6 +55,33 @@ body.pharvaris {
     }
     a#wt-cli-accept-btn {
         @include pv-btn();
+        background-color: $white;
+        border-color: $white;
+        color: $black !important;
+    }
+    a#wt-cli-accept-btn:hover {
+        background-color: $yellow !important;
+        border-color: $yellow !important;
+        transition: all 0.5s ease-in-out;
+    }
+    a#wt-cli-accept-btn {
+        width: 120px !important;
+        margin: unset;
+    }
+    a#wt-cli-settings-btn {
+        @include bold($poppins);
+        text-decoration: underline !important;
+        border: none !important;
+        width: 192px !important;
+        color: $white !important;
+        font-size: 18px;
+        line-height: 26px !important;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    a#wt-cli-settings-btn:hover {
+        color: $yellow !important;
+        transition: all 0.5s ease-in-out;
     }
     a#edgtf-back-to-top {
         width: 40px;
@@ -110,12 +140,12 @@ body.pharvaris {
                     font-size: 18px;
                     line-height: 18px;
                     border: 1px solid $blue;
-                    transition: all 0.25s;
+                    transition: all 0.5s ease-in-out;
                     &:hover {
                         background: $white;
                         color: $blue !important;
                         border: 1px solid $blue;
-                        transition: all 0.5s;
+                        transition: all 0.5s ease-in-out;
                     }
                 }
             }

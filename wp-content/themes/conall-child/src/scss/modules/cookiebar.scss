@@ -1,0 +1,58 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 COOKIE BAR START ******* */
+
+div#cookie-law-info-bar {
+    background-color: $dk-grey !important;
+    border: none;
+    height: 80px;
+    padding: 0.75% 0 !important;
+    div.cli-wrapper {
+        span#wt-cli-cookie-banner {
+            div.cli-bar-container {
+                max-width: 1436px;
+                width: 80%;
+                padding: 0;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: unset;
+                div.cli-bar-message {
+                    width: 75% !important;
+                    display: flex;
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 20px !important;
+                }
+                div.cli-bar-btn_container {
+                    width: 25% !important;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a#wt-cli-settings-btn {
+
+                    }
+                    a#wt-cli-accept-btn {
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 980px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 COOKIE BAR END ******* */

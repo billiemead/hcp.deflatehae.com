@@ -1,0 +1,165 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 404 ERROR START ******* */
+
+body.error404 {
+    div.edgtf-content {
+        div.edgtf-content-inner {
+            background-color: $darker-grey;
+            div.edgtf-container.edgtf-404-page {
+                height: calc(100vh - 456px);
+                background-color: transparent;
+                display: flex;
+                div.edgtf-container-inner.clearfix {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    div.edgtf-page-not-found {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h1 {
+                            font-size: 40px;
+                            line-height: 60px !important;
+                            text-transform: uppercase;
+                            color: $white;
+                            letter-spacing: 0;
+                            font-weight: 700;
+                            margin-top: 1.5% !important;
+                            margin-bottom: 0 !important;
+                            span {
+                            }
+                        }
+                        h4 {
+                            max-width: 100%;
+                            font-size: 40px;
+                            line-height: 60px !important;
+                            color: $white;
+                            letter-spacing: 0;
+                            text-transform: uppercase;
+                            font-weight: 400 !important;
+                            margin: 0 !important;
+                            span {
+
+                            }
+                        }
+                        a.edgtf-btn {
+                            width: 184px;
+                            font-size: 20px;
+                            line-height: 32px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body.error404 {
+        div.edgtf-content {
+            div.edgtf-content-inner {
+                background-size: contain;
+                div.edgtf-container.edgtf-404-page {
+                    div.edgtf-container-inner.clearfix {
+                        div.edgtf-page-not-found {
+                            margin-top: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    body.error404 {
+        div.edgtf-content {
+            div.edgtf-content-inner {
+                background-size: cover;
+                background-position: 0px 0px;
+                div.edgtf-container.edgtf-404-page {
+                    height: calc(100vh - 416px);
+                    div.edgtf-container-inner.clearfix {
+                        div.edgtf-page-not-found {
+                            h1 {
+                                font-size: 30px;
+                                text-align: center;
+                                max-width: 60%;
+                            }
+                            h4 {
+                                font-size: 24px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    body.error404 {
+        div.edgtf-content {
+            div.edgtf-content-inner {
+                background-size: cover;
+                background-position: -50px 0px;
+                div.edgtf-container.edgtf-404-page {
+                    height: calc(100vh - 416px);
+                    div.edgtf-container-inner.clearfix {
+                        div.edgtf-page-not-found {
+                            margin-top: 20%;
+                            h1 {
+                                font-size: 30px;
+                                text-align: center;
+                                max-width: 70%;
+                            }
+                            h4 {
+                                font-size: 24px;
+                                line-height: 28px;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                                margin-top: 6% !important;
+                                margin-bottom: 6% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    body.error404 {
+        div.edgtf-content {
+            div.edgtf-content-inner {
+                background-size: cover;
+                background-position: -125px 0px;
+                div.edgtf-container.edgtf-404-page {
+                    height: calc(100vh - 416px);
+                    div.edgtf-container-inner.clearfix {
+                        width: 350px;
+                        div.edgtf-page-not-found {
+                            h1 {
+                                max-width: 100%;
+                            }
+                            h4 {
+                                font-size: 24px;
+                                line-height: 28px;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                                margin-top: 6% !important;
+                                margin-bottom: 6% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 404 ERROR END ******* */

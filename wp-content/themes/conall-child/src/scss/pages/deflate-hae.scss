@@ -91,16 +91,16 @@ body.home {
                                                     img.hero-logo {
                                                         max-width: 100%;
                                                     }
-                                                    h2.pv-h2.hero {
-                                                        @include bold($poppins);
-                                                        font-size: 1.05vw;
-                                                        line-height: 1.55vw;
-                                                        color: $red;
-                                                        sup.pv-sup {
-                                                            font-size: 65%;
-                                                            bottom: 0.8ex;
-                                                        }
-                                                    }
+                                                }
+                                            }
+                                            h2.pv-h2.hero {
+                                                @include bold($poppins);
+                                                font-size: 1.05vw;
+                                                line-height: 1.55vw;
+                                                color: $red;
+                                                sup.pv-sup {
+                                                    font-size: 65%;
+                                                    bottom: 0.8ex;
                                                 }
                                             }
                                         }
@@ -132,12 +132,14 @@ body.home {
                                     -o-animation: fadein 3s;
                                         animation: fadein 3s;
                             div#home-tradeoff-row {
+                                padding-top: 5%;
+                                padding-bottom: 1%;
                                 div.pv-col1 {
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
                                             div#home-intro-heading {
                                                 max-width: 920px;
-                                                padding-bottom: 50px;
+                                                padding-bottom: 6%;
                                                 div.wpb_wrapper {
                                                     h1.pv-h1.grey {
                                                         sup.pv-sup {

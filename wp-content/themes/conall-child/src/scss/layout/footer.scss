@@ -33,13 +33,13 @@ body.pharvaris {
                                                     padding: 20px 38px;
                                                     a {
                                                         color: $white;
-                                                        transition: font-weight 100ms ease-in;
+                                                        transition: font-weight 0.25s ease-in-out;
                                                         text-decoration:none;
                                                         text-align:center;
                                                     }
                                                     a:hover {
                                                         font-weight: bold;
-                                                        transition: font-weight 100ms;
+                                                        transition: font-weight 0.25s ease-in-out;
                                                     }
                                                     a::after {
                                                         display:block;
@@ -49,6 +49,7 @@ body.pharvaris {
                                                         color:transparent;
                                                         overflow:hidden;
                                                         visibility:hidden;
+                                                        transition: all 0.25s ease-in-out
                                                     }
                                                 }
                                                 li:first-child {
