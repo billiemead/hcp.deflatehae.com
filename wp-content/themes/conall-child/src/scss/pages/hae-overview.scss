@@ -254,6 +254,7 @@ body.haeoverview-page {
                             background-size: 100%;
                             background-position: center bottom;
                             visibility: visible;
+                            bottom: -2px;
                             div#overview-banner-section {
                                 z-index: 103;
                                 transform: translateY(-10px);
@@ -278,7 +279,7 @@ body.haeoverview-page {
                                                     padding: 0;
                                                     flex-direction: column;
                                                     h2.pv-h2.center.white {
-                                                        
+
                                                     }
                                                 }
                                             }

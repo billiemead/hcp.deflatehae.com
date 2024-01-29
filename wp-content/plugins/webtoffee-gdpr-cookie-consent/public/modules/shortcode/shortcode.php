@@ -109,7 +109,7 @@ class Cookie_Law_Info_Shortcode {
 		$cookie_list = Cookie_Law_Info_Cookies::get_instance()->get_cookies();
 		foreach ( $cookie_list as $key => $cookie ) {
             $category_description   = ( isset( $cookie['description'] ) ? $cookie['description'] : '' );
-            $html.='<div class="cli_cookie_category_single"><h5 class="cli_cookie_category_single_hd">'.$cookie['title'].'</h5><div class="cli_cookie_category_single_description"><p>'.do_shortcode( $category_description, 'cookielawinfo-category' ).'</p></div></div>'; 
+            $html.='<div class="cli_cookie_category_single"><h5 class="cli_cookie_category_single_hd">'.$cookie['title'].'</h5><div class="cli_cookie_category_single_description"><p>'.do_shortcode( $category_description, 'cookielawinfo-category' ).'</p></div></div>';
         }
 		$html .= '</div>';
 		return $html;
@@ -146,7 +146,7 @@ class Cookie_Law_Info_Shortcode {
 		add_action( 'wp_footer', array( $this, 'manage_user_consent_jsblock' ), 15 );
 		add_action( 'wp_footer', array( $this, 'user_consent_state_js_cache_support' ), 15 );
 		$html = '<div class="wt-cli-element cli_user_consent_state"></div>';
-		
+
 		return $html;
 	}
 
@@ -594,7 +594,7 @@ class Cookie_Law_Info_Shortcode {
 
 		// adding custom style
 		$styles    = $this->generateStyle( $settings, 'button_1_style' );
-		$link_tag  = '<a id="wt-cli-accept-btn" tabindex="0" ' . $url . ' style="' . esc_attr( $styles ) . '" data-cli_action="accept" ';
+		$link_tag  = '<a class="pv-btn" id="wt-cli-accept-btn" tabindex="0" ' . $url . ' data-cli_action="accept" ';
 		$link_tag .= ( $settings['button_1_new_win'] ) ? ' target="_blank" ' : '';
 		$link_tag .= $class . ' >' . esc_html( stripslashes( $settings['button_1_text'] ) ) . '</a>';
 		return $link_tag;
@@ -783,7 +783,7 @@ class Cookie_Law_Info_Shortcode {
 		$manage_consent_text = ( isset( $this->cookie_options['showagain_text'] ) ? $this->cookie_options['showagain_text'] : '' );
 
 		$manage_consent_link = '<a href="javascript:void(0)" class="wt-cli-manage-consent-link">' . esc_html( $manage_consent_text ) . '</a>';
-		
+
 		return $manage_consent_link;
 	}
 

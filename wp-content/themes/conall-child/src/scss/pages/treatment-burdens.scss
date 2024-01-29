@@ -337,7 +337,7 @@ body.treatmentburdens-page {
                                     height: 60px;
                                     div#balloon-animation-footnote2 {
                                         p.pv-p.center.footnote-2 {
-
+                                            padding-left: 16%;
                                         }
                                     }
                                 }
@@ -530,6 +530,10 @@ body.treatmentburdens-page {
                                     }
                                 }
                             }
+                        }
+                        div#hae-hcp-form-section {
+                            top: -2px;
+                            margin-bottom: -2px !important;
                         }
                         div#treatment-refs-section {
 
