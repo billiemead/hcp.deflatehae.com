@@ -3,6 +3,12 @@
 setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
 if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
 
+// add custom Meta Tag to header
+function salesforce_header_metadata() {
+	echo '<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">';
+}
+add_action( 'wp_head', 'salesforce_header_metadata' );
+
 // add title attributes to menu
 function pv_add_title_attribute($atts, $item){
 
@@ -11,8 +17,7 @@ function pv_add_title_attribute($atts, $item){
 }
 add_filter('nav_menu_link_attributes', 'pv_add_title_attribute', 10, 2);
 
-/*** Child Theme Function  ***/
-
+/*** Child Theme Functions  ***/
 if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
 	function conall_edge_child_theme_enqueue_scripts() {
 		$parent_style = 'conall-edge-default-style';
@@ -35,8 +40,35 @@ function pharvaris_hcp_assets()
 }
 add_action('wp_enqueue_scripts', 'pharvaris_hcp_assets', 99);
 
-// * * * * * * * * * * * * *  - - - S V G  S U P P O R T - - - * * * * * * * * * * * * * //
+function pharvaris_add_favicon()
+{ ?>
+    <!-- Custom Favicons -->
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-310x310.png" />
+<?php }
+add_action('wp_head', 'pharvaris_add_favicon');
 
+// * * * * * * * * * * * * *  - - - S V G  S U P P O R T - - - * * * * * * * * * * * * * //
 function add_file_types_to_uploads($file_types){
 $new_filetypes = array();
 $new_filetypes['svg'] = 'image/svg+xml';
@@ -291,19 +323,6 @@ function pharvaris_duplicate_page_link($actions, $page)
     return $actions;
 }
 add_filter('page_row_actions', 'pharvaris_duplicate_page_link', 10, 2);
-
-// * * * * * * * * * * * * *  - - - H U B S P O T - - - * * * * * * * * * * * * * //
-
-// Add HubSpot script to page head
-function hubspot_javascript()
-{
-    ?>
-        <!-- Start of HubSpot Embed Code -->
-            <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script> -->
-        <!-- End of HubSpot Embed Code -->
-    <?php
-}
-add_action('wp_head', 'hubspot_javascript');
 
 // * * * * * * * * * * * * *  - - - M A R K E R . I O - - - * * * * * * * * * * * * * //
 

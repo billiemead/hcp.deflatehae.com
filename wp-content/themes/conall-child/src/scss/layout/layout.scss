@@ -563,6 +563,13 @@ body.pharvaris {
         }
     }
 }
+/* ************ PLACEHOLDERS ************ */
+
+::placeholder,
+input::placeholder {
+  color: $black;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {

@@ -19,29 +19,135 @@ body {
                 div.pv-col1 {
                     div.form-heading {
                         h3.pv-h3.form.center {
+                            text-transform: uppercase;
 
                         }
                     }
                     p.pv-p.form-p.center {
 
                     }
-                    div.form-placeholder-desktop {
-                        text-align: center;
-                        img.vc_single_image-img {
+                    div#salesforce-form-container {
+                        padding-top: 3%;
+                        form.salesforce-form {
+                            div.form-col {
+                                display: flex;
+                                width: 100%;
+                                max-width: 100%;
+                                &.col-2 {
+                                    /* width: 50%; */
+                                }
+                                &.col-1 {
+                                    width: 100%;
+                                }
+                                & > div.sf-form-field:nth-child(-n+1) {
+                                    padding: 0 10px 0 0;
+                                }
+                                div.sf-form-field {
+                                    padding: 0 0 0 10px;
+                                    max-width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin: 0;
+                                    margin-top: 16px;
+                                    margin-bottom: 16px;
+                                    line-height: 1;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    span.form-title {
 
+                                    }
+                                    span.form-required {
+                                        color: $red;
+                                        font-weight: 900 !important;
+                                    }
+                                    div.form-input {
+                                        width: 100%;
+                                        margin-top: 0;
+                                        text-align: center;
+                                        margin: 0 auto;
+                                        margin-right: 0!important;
+                                        select.input-field,
+                                        input.input-field {
+                                            display: flex;
+                                            flex-basis: 100%;
+                                            width: 100%;
+                                            max-width: 100%;
+                                            box-shadow: none;
+                                            padding: 0!important;
+                                            border-radius: 10px;
+                                            margin: 0;
+                                            box-sizing: border-box;
+                                            line-height: 1;
+                                            text-indent: 25px;
+                                            font-family: "Nunito", Arial, sans-serif;
+                                            font-size: 20px;
+                                            color: $black;
+                                            background-color: $white;
+                                            border: none;
+                                            outline: none;
+                                            height: 88px;
+                                        }
+                                        select.input-field.select {
+                                            option.select-option {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#form-col1 {
+                            }
+                            div#form-col2 {
+                            }
+                            div#form-col3 {
+                                padding-top: 2%;
+                                padding-bottom: 2%;
+                                div.legal-consent-container {
+                                    div.sf-form-field {
+                                        label.sf-form-label {
+                                        display: flex;
+                                        align-items: center;
+                                            div.form-input {
+                                                width: 38px;
+                                                margin-right: 20px !important;
+                                                input.input-field.checkbox {
+                                                    border: none;
+                                                    height: 38px;
+                                                }
+                                            }
+                                        }
+                                        p.pv-p.form-title {
+                                            font-size: 16px;
+                                            a.form-link {
+                                                color: $black;
+                                                font-weight: bold;
+                                                text-decoration: none;
+                                            }
+                                            span.form-required {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#form-col4 {
+                                justify-content: center;
+                                align-items: center;
+                                div.form-input {
+                                    input.pv-btn.sf-button {
+                                        background-color: $white;
+                                        border-color: $white;
+                                        color: $black;
+                                        width: 188px;
+                                    }
+                                    input.pv-btn.sf-button:hover {
+                                        background-color: $black;
+                                        border-color: $black;
+                                        color: $white;
+                                    }
+                                }
+                            }
                         }
-                    }
-                    div.form-placeholder-tablet {
-                        display: none;
-                        opacity: 0;
-                        visibility: hidden;
-                        text-align: center;
-                    }
-                    div.form-placeholder-mobile {
-                        display: none;
-                        opacity: 0;
-                        visibility: hidden;
-                        text-align: center;
                     }
                 }
             }
@@ -55,7 +161,7 @@ body {
             div#hae-hcp-form-section {
                 max-height: 790px;
                 padding-top: 6%;
-                padding-bottom: 10%;
+                padding-bottom: 12%;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -66,17 +172,65 @@ body {
                         p.pv-p.form-p.center {
 
                         }
-                        div.form-placeholder-desktop {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        div.form-placeholder-tablet {
-                            display: block;
-                            opacity: 1;
-                            visibility: visible;
-                            img.vc_single_image-img {
+                        div#salesforce-form-container {
+                            form.salesforce-form {
+                                div.form-col {
+                                    &.col-2 {
+                                    }
+                                    &.col-1 {
+                                    }
+                                    & > div.sf-form-field:nth-child(-n+1) {
+                                    }
+                                    div.sf-form-field {
+                                        span.form-title {
 
+                                        }
+                                        span.form-required {
+                                        }
+                                        div.form-input {
+                                            select.input-field,
+                                            input.input-field {
+                                            }
+                                            select.input-field.select {
+                                                option.select-option {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col1 {
+                                }
+                                div#form-col2 {
+                                }
+                                div#form-col3 {
+                                    div.legal-consent-container {
+                                        div.sf-form-field {
+                                            label.sf-form-label {
+                                                div.form-input {
+                                                    width: 10%;
+                                                    input.input-field.checkbox {
+                                                    }
+                                                }
+                                            }
+                                            p.pv-p.form-title {
+                                                a.form-link {
+                                                }
+                                                span.form-required {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col4 {
+                                    div.form-input {
+                                        input.pv-btn.sf-button {
+                                        }
+                                        input.pv-btn.sf-button:hover {
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -91,7 +245,7 @@ body {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 1200px;
+                max-height: 100%;
                 padding-top: 8%;
                 padding-bottom: 12%;
                 div.clearfix.edgtf-full-section-inner {
@@ -104,22 +258,70 @@ body {
                         p.pv-p.form-p.center {
                             line-height: 26px;
                         }
-                        div.form-placeholder-tablet {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        div.form-placeholder-mobile {
-                            display: block;
-                            opacity: 1;
-                            visibility: visible;
-                            width: 100%;
-                            figure.wpb_wrapper.vc_figure {
-                                width: 100%;
-                                div.vc_single_image-wrapper.vc_box_border_grey {
-                                    width: 100%;
-                                    img.vc_single_image-img {
-                                        width: 100%;
+                        div#salesforce-form-container {
+                            form.salesforce-form {
+                                div.form-col {
+                                    flex-direction: column;
+                                    &.col-2 {
+                                    }
+                                    &.col-1 {
+                                    }
+                                    & > div.sf-form-field:nth-child(-n+1) {
+                                        padding: 0;
+                                    }
+                                    div.sf-form-field {
+                                        padding: 0;
+                                        margin-top: 22px;
+                                        margin-bottom: 22px;
+                                        span.form-title {
+
+                                        }
+                                        span.form-required {
+                                        }
+                                        div.form-input {
+                                            select.input-field,
+                                            input.input-field {
+                                            }
+                                            select.input-field.select {
+                                                option.select-option {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col1 {
+                                }
+                                div#form-col2 {
+                                }
+                                div#form-col3 {
+                                    div.legal-consent-container {
+                                        div.sf-form-field {
+                                            label.sf-form-label {
+                                                align-items: flex-start;
+                                                div.form-input {
+                                                    width: 20%;
+                                                    margin-right: 10px !important;
+                                                    input.input-field.checkbox {
+                                                    }
+                                                }
+                                            }
+                                            p.pv-p.form-title {
+                                                a.form-link {
+                                                }
+                                                span.form-required {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col4 {
+                                    div.form-input {
+                                        input.pv-btn.sf-button {
+                                        }
+                                        input.pv-btn.sf-button:hover {
+                                        }
                                     }
                                 }
                             }
@@ -134,9 +336,8 @@ body {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 1072px;
-                padding-top: 3%;
-                padding-bottom: 5%;
+                padding-top: 12%;
+                padding-bottom: 15%;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -145,24 +346,67 @@ body {
                             }
                         }
                         p.pv-p.form-p.center {
-                            line-height: 26px;
+
                         }
-                        div.form-placeholder-tablet {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        div.form-placeholder-mobile {
-                            display: block;
-                            opacity: 1;
-                            visibility: visible;
-                            width: 100%;
-                            figure.wpb_wrapper.vc_figure {
-                                width: 100%;
-                                div.vc_single_image-wrapper.vc_box_border_grey {
-                                    width: 100%;
-                                    img.vc_single_image-img {
-                                        width: 100%;
+                        div#salesforce-form-container {
+                            form.salesforce-form {
+                                div.form-col {
+                                    &.col-2 {
+                                    }
+                                    &.col-1 {
+                                    }
+                                    & > div.sf-form-field:nth-child(-n+1) {
+                                    }
+                                    div.sf-form-field {
+                                        margin-top: 7%;
+                                        margin-bottom: 7%;
+                                        span.form-title {
+
+                                        }
+                                        span.form-required {
+                                        }
+                                        div.form-input {
+                                            select.input-field,
+                                            input.input-field {
+                                            }
+                                            select.input-field.select {
+                                                option.select-option {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col1 {
+                                }
+                                div#form-col2 {
+                                }
+                                div#form-col3 {
+                                    div.legal-consent-container {
+                                        div.sf-form-field {
+                                            label.sf-form-label {
+
+                                                div.form-input {
+                                                    input.input-field.checkbox {
+                                                    }
+                                                }
+                                            }
+                                            p.pv-p.form-title {
+                                                a.form-link {
+                                                }
+                                                span.form-required {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col4 {
+                                    div.form-input {
+                                        input.pv-btn.sf-button {
+                                        }
+                                        input.pv-btn.sf-button:hover {
+                                        }
                                     }
                                 }
                             }
