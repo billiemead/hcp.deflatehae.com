@@ -10,7 +10,6 @@ body.livinghae-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#living-cta-row {
-                            display: none;
                         }
                         div#living-hero-row {
                             div.edgtf-full-section-inner {
@@ -269,32 +268,13 @@ body.livinghae-page {
                                 div#hae-section-wrapper {
                                     transform: translateY(-165px);
                                     div#jennifers-banner-section {
-                                    z-index: 103;
-                                    div.edgtf-full-section-inner {
-                                            max-width: 1194px;
-                                            div.pv-col1.jennifers-story-col {
-                                                div#jennifers-banner-wrapper {
-                                                    width: 100%;
+                                        z-index: 103;
+                                        div.edgtf-full-section-inner {
+                                            div.pv-col1.banner-col {
+                                                div.banner-wrapper {
                                                     div.wpb_wrapper {
-                                                        width: 517px;
-                                                        margin: 0 auto;
-                                                        text-align: center;
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        div.jennifers-banner-img-container {
-                                                            background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-517x108.svg");
-                                                            background-repeat: no-repeat;
-                                                            background-size: contain;
-                                                            width: 100%;
-                                                            height: 100%;
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            align-items: center;
-                                                            margin: 0 auto;
-                                                            padding: 7.5% 0;
+                                                        div.banner-img-container.jennifer {
                                                             h2.pv-h2.center.white {
-                                                                text-transform: uppercase;
                                                             }
                                                         }
                                                     }
@@ -303,28 +283,14 @@ body.livinghae-page {
                                         }
                                     }
                                     div#jennifers-story-section {
-                                        display: flex;
-                                        margin: 0 auto;
-                                        padding: 0;
-                                        filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
-                                        z-index: 102;
-                                        position: absolute;
-                                        width: 100%;
                                         transform: translateY(-75px);
                                         div.edgtf-full-section-inner {
-                                            width: 80%;
-                                            max-width: 1194px;
                                             div.pv-col1.ripple-image {
                                                 div.vc_column-inner {
-                                                    padding: 0;
                                                     div.wpb_wrapper {
                                                         div.hae-white-box-image {
                                                             figure.wpb_wrapper {
-                                                                width: 100%;
-                                                                display: flex;
-                                                                margin: 0;
                                                                 div.vc_single_image-wrapper {
-                                                                    width: 100%;
                                                                     img.vc_single_image-img {
 
                                                                     }
@@ -335,9 +301,6 @@ body.livinghae-page {
                                                 }
                                             }
                                             div.pv-col1.ripple-image.top {
-                                                width: 100%;
-                                                position: relative;
-                                                top: 0;
                                                 div#hae-white-box-top {
                                                     img.vc_single_image-img {
 
@@ -345,20 +308,15 @@ body.livinghae-page {
                                                 }
                                             }
                                             div.pv-col1.ripple-image.bottom {
-                                                width: 100%;
-                                                position: relative;
-                                                bottom: 0;
                                                 div#hae-white-box-bottom {
                                                     img.vc_single_image-img {
 
                                                     }
                                                 }
                                             }
-                                            div.pv-col1.jennifers-story-col {
-                                                background-color: $white;
+                                            div.pv-col1.facts-icon-col {
                                                 padding: 150px 0px 100px 0px;
                                                 div.wpb_wrapper {
-                                                    height: 100%;
                                                     div#jennifers--inner-row-1 {
                                                         padding-bottom: 60px;
                                                         div.pv-col2 {
@@ -380,7 +338,6 @@ body.livinghae-page {
                                                                 padding-right: 2%;
                                                             }
                                                         }
-
                                                     }
                                                     div#jennifers--inner-row-2 {
                                                         div.pv-col1.fullwidth {
@@ -421,16 +378,19 @@ body.livinghae-page {
                                                                         max-width: 865px;
                                                                         padding-top: 60px;
                                                                         margin: 0 auto;
-                                                                        p.pv-p {
-                                                                            text-align: center;
-                                                                            &.top {
-                                                                                margin-bottom: 3%;
-                                                                            }
-                                                                            &.mid {
-                                                                                margin-bottom: 3%;
-                                                                            }
-                                                                            &.btm {
-                                                                                margin-bottom: 7%;
+                                                                        div.wpb_wrapper {
+                                                                            flex-direction: column;
+                                                                            p.pv-p {
+                                                                                text-align: center;
+                                                                                &.top {
+                                                                                    margin-bottom: 3%;
+                                                                                }
+                                                                                &.mid {
+                                                                                    margin-bottom: 3%;
+                                                                                }
+                                                                                &.btm {
+                                                                                    margin-bottom: 7%;
+                                                                                }
                                                                             }
                                                                         }
                                                                     }

@@ -369,6 +369,199 @@ body.pharvaris {
             color: $red;
         }
     }
+    div.pv-row.banner-section {
+        div.edgtf-full-section-inner {
+            max-width: 1194px;
+            div.pv-col1.banner-col {
+                div.banner-wrapper {
+                    width: 100%;
+                    div.wpb_wrapper {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                        div.banner-img-container {
+                            background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: min(330px, 80%);
+                            max-height: 90px;
+                            height: 80%;
+                                h2.pv-h2.center.white {
+                                    padding-top: 9.5%;
+                                    padding-bottom: 9.5%;
+                                    text-transform: uppercase;
+                                }
+                            &.jennifer {
+                                background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-517x108.svg");
+                                width: min(517px, 80%);
+                                max-height: 108px;
+                                height: 80%;
+                                h2.pv-h2.center.white {
+                                    text-transform: uppercase;
+                                    padding-top: 7.8%;
+                                    padding-bottom: 7.8%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.pv-row.facts-section {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
+        z-index: 102;
+        position: absolute;
+        width: 100%;
+        div.edgtf-full-section-inner {
+            width: 80%;
+            max-width: 1194px;
+            div.pv-col1.ripple-image {
+                div.vc_column-inner {
+                    padding: 0;
+                    div.wpb_wrapper {
+                        div.hae-white-box-image {
+                            figure.wpb_wrapper {
+                                width: 100%;
+                                display: flex;
+                                margin: 0;
+                                div.vc_single_image-wrapper {
+                                    width: 100%;
+                                    img.vc_single_image-img {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.pv-col1.ripple-image.top {
+                width: 100%;
+                position: relative;
+                top: 0;
+                div#hae-white-box-top {
+                    img.vc_single_image-img {
+
+                    }
+                }
+            }
+            div.pv-col1.ripple-image.bottom {
+                width: 100%;
+                position: relative;
+                bottom: 0;
+                div#hae-white-box-bottom {
+                    img.vc_single_image-img {
+
+                    }
+                }
+            }
+            div.pv-col1.facts-icon-col {
+                background-color: $white;
+                div.wpb_wrapper {
+                    height: 100%;
+                    div.wpb_text_column.wpb_content_element {
+                        height: 100%;
+                        div.wpb_wrapper {
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            div#hae-facts-icon-row {
+                                display: flex;
+                                flex-direction: column;
+                                height: 100%;
+                                justify-content: center;
+                                max-width: 870px;
+                                width: 80%;
+                                align-items: center;
+                                div.iconrow {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    div.hae-image-wrapper {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 15%;
+                                        height: 120px;
+                                        margin-right: 40px;
+                                        img {
+
+                                        }
+                                    }
+                                    div.hae-copy-wrapper {
+                                        display: flex;
+                                        width: 85%;
+                                        p.pv-p {
+                                            display: block;
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                                div#icon-row1 {
+                                    img.hae-icon.one {
+
+                                    }
+                                    p.pv-p {
+
+                                    }
+                                }
+                                div#icon-row2 {
+                                    img.hae-icon.two {
+
+                                    }
+                                    p.pv-p {
+
+                                    }
+                                }
+                                div#icon-row3 {
+                                    img.hae-icon.three {
+
+                                    }
+                                    p.pv-p {
+
+                                    }
+                                }
+                                div#icon-row4 {
+                                    img.hae-icon.four {
+
+                                    }
+                                    p.pv-p {
+
+                                    }
+                                }
+                                div#icon-row5 {
+                                    img.hae-icon.five {
+
+                                    }
+                                    p.pv-p {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a.pv-btn {
+                    }
+                }
+            }
+        }
+    }
 }
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -431,9 +624,6 @@ body.pharvaris {
         li, li.pv-p {
 
         }
-        /* div.edgtf-content {
-            margin-top: 40px !important;
-        } */
     }
 }
 @media all and (max-width: 980px) {

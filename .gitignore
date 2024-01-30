@@ -67,3 +67,6 @@ Thumbs.db
 
 # node_modules #
 wp-content/themes/**/node_modules/
+
+# DEV Plugins #
+wp-content/plugins/addon_creator/

@@ -10,7 +10,6 @@ body.treatmentburdens-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#treatment-cta-row {
-                            display: none;
                         }
                         div#treatment-hero-row {
                             div.edgtf-full-section-inner {
@@ -348,30 +347,12 @@ body.treatmentburdens-page {
                                     transform: translateY(50px);
                                     padding-top: 6%;
                                     div.edgtf-full-section-inner {
-                                        max-width: 1194px;
-                                        div.pv-col1.treatment-banner-col {
-                                            div#treatment-banner-wrapper {
-                                                width: 100%;
+                                        div.pv-col1.banner-col {
+                                            div.banner-wrapper {
                                                 div.wpb_wrapper {
-                                                    width: 330px;
-                                                    margin: 0 auto;
-                                                    text-align: center;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    div.treatment-banner-img-container {
-                                                        background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
-                                                        background-repeat: no-repeat;
-                                                        background-size: contain;
-                                                        width: 100%;
-                                                        height: 100%;
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        margin: 0 auto;
-                                                        padding: 9.3% 0;
+                                                    div.banner-img-container {
                                                         h2.pv-h2.center.white {
-                                                            text-transform: uppercase;
+
                                                         }
                                                     }
                                                 }
@@ -380,28 +361,13 @@ body.treatmentburdens-page {
                                     }
                                 }
                                 div#treatment-facts-section {
-                                    display: flex;
-                                    margin: 0 auto;
-                                    padding: 0;
-                                    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
-                                    z-index: 102;
-                                    /* position: absolute; */
-                                    width: 100%;
-                                    /* transform: translateY(-75px); */
                                     div.edgtf-full-section-inner {
-                                        width: 80%;
-                                        max-width: 1194px;
                                         div.pv-col1.ripple-image {
                                             div.vc_column-inner {
-                                                padding: 0;
                                                 div.wpb_wrapper {
                                                     div.hae-white-box-image {
                                                         figure.wpb_wrapper {
-                                                            width: 100%;
-                                                            display: flex;
-                                                            margin: 0;
                                                             div.vc_single_image-wrapper {
-                                                                width: 100%;
                                                                 img.vc_single_image-img {
 
                                                                 }
@@ -412,9 +378,6 @@ body.treatmentburdens-page {
                                             }
                                         }
                                         div.pv-col1.ripple-image.top {
-                                            width: 100%;
-                                            position: relative;
-                                            top: 0;
                                             div#hae-white-box-top {
                                                 img.vc_single_image-img {
 
@@ -422,59 +385,28 @@ body.treatmentburdens-page {
                                             }
                                         }
                                         div.pv-col1.ripple-image.bottom {
-                                            width: 100%;
-                                            position: relative;
-                                            bottom: 0;
                                             div#hae-white-box-bottom {
                                                 img.vc_single_image-img {
 
                                                 }
                                             }
                                         }
-                                        div.pv-col1.treatment-icon-col {
-                                            background-color: $white;
+                                        div.pv-col1.facts-icon-col {
                                             padding: 60px 0px 60px 0px;
                                             div.wpb_wrapper {
-                                                height: 100%;
                                                 div.wpb_text_column.wpb_content_element {
-                                                    height: 100%;
                                                     padding-top: 0;
                                                     padding-bottom: 0;
                                                     div.wpb_wrapper {
-                                                        height: 100%;
-                                                        display: flex;
-                                                        justify-content: center;
                                                         div#treatment-facts-icon-row {
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            height: 100%;
-                                                            justify-content: center;
-                                                            max-width: 870px;
-                                                            width: 80%;
-                                                            align-items: center;
                                                             div.iconrow {
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                                width: 100%;
                                                                 div.hae-image-wrapper {
-                                                                    display: flex;
-                                                                    justify-content: center;
-                                                                    align-items: center;
-                                                                    width: 15%;
-                                                                    height: 120px;
-                                                                    margin-right: 40px;
                                                                     img {
 
                                                                     }
                                                                 }
                                                                 div.hae-copy-wrapper {
-                                                                    display: flex;
-                                                                    width: 85%;
                                                                     p.pv-p {
-                                                                        display: block;
-                                                                        width: 100%;
-                                                                        height: auto;
                                                                     }
                                                                 }
                                                             }

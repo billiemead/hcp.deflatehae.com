@@ -150,6 +150,19 @@ body.pharvaris {
                 }
             }
         }
+        &.alt {
+            div#stay-informed-cta {
+            position: relative;
+                div.cta-container {
+                    height:40vw;
+                    a.cta-hero-button {
+                        top:45%;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
