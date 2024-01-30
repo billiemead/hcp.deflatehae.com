@@ -1,1 +1,0 @@
-!function(){"use strict";jQuery(function(){jQuery(".elegant-expanding-section-heading-area").click(function(a){var b=jQuery(this);a.preventDefault(),b.find(".elegant-expanding-section-icon").toggleClass("section-open"),b.parent(".elegant-expanding-sections").find(".elegant-expanding-section-content-area").toggleClass("active-section").slideToggle("slow")})})}(jQuery);
