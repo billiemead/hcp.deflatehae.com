@@ -164,9 +164,16 @@ body.treatmentburdens-page {
                                                         div.list-wrapper {
                                                             ul.pv-list {
                                                                 li.pv-list-item {
+                                                                    padding: 5px 0;
                                                                     font-weight: 700 !important;
                                                                     line-height: 26px !important;
                                                                 }
+                                                            }
+                                                            ul.pv-list li:first-child {
+                                                                 padding-top: 0;
+                                                            }
+                                                            ul.pv-list li:last-child {
+                                                                padding-bottom: 0;
                                                             }
                                                         }
                                                     }
@@ -458,8 +465,17 @@ body.treatmentburdens-page {
                             top: -2px;
                             margin-bottom: -2px !important;
                         }
-                        div#treatment-refs-section {
+                        div#references-section {
+                            div.refs-title {
+                                h4.h4-refs.left {
 
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
+
+                                }
+                            }
                         }
                     }
                 }

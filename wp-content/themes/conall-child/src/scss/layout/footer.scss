@@ -24,32 +24,22 @@ body.pharvaris {
                                         div.widget_nav_menu {
                                             ul.menu {
                                                 display: flex;
-                                                width: 825px;
+                                                width: 325px;
                                                 justify-content: space-between;
                                                 li.menu-item {
-                                                    @include regular($poppins);
+                                                    @include bold($poppins);
                                                     font-size: 18px;
                                                     line-height: 26px;
-                                                    padding: 20px 38px;
+                                                    padding: 20px 0;
                                                     a {
                                                         color: $white;
-                                                        transition: font-weight 0.25s ease-in-out;
+                                                        transition: all 0.25s ease-in-out;
                                                         text-decoration:none;
                                                         text-align:center;
                                                     }
                                                     a:hover {
-                                                        font-weight: bold;
-                                                        transition: font-weight 0.25s ease-in-out;
-                                                    }
-                                                    a::after {
-                                                        display:block;
-                                                        content:attr(title);
-                                                        font-weight:bold;
-                                                        height:1px;
-                                                        color:transparent;
-                                                        overflow:hidden;
-                                                        visibility:hidden;
-                                                        transition: all 0.25s ease-in-out
+                                                        color: $yellow;
+                                                        transition: all 0.25s ease-in-out;
                                                     }
                                                 }
                                                 li:first-child {
@@ -118,7 +108,7 @@ body.pharvaris {
                                             align-items: flex-end;
                                             div.pv-copyright {
                                                 @include medium($poppins);
-                                                font-size: 18px;
+                                                font-size: 16px;
                                                 line-height: 26px;
                                                 color: $white;
                                             }

@@ -162,6 +162,7 @@ body.pharvaris {
         &.hero-subheading {
             font-size: 30px;
             line-height: 40px;
+            text-transform: uppercase;
         }
         &.blue {
             font-size: 45px;
@@ -276,6 +277,10 @@ body.pharvaris {
         }
         &.italic {
             font-style: italic !important;
+        }
+        &.ex-small {
+            font-size: 12px;
+            line-height: 16px;
         }
     }
     p.pv-refs {

@@ -15,7 +15,7 @@
                             <div class="menu-selector-box-wrapper">
                                 <div class="menu-selector-box left">
                                     <li class="menu-selector-list-item">
-                                        <a class="menu-selector-link yellow" href="#">For healthcare professionals</a>
+                                        <span class="menu-selector-link yellow" href="#">For healthcare professionals</span>
                                     </li>
                                     <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
                                 </div>

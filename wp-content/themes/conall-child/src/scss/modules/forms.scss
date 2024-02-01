@@ -110,9 +110,41 @@ body {
                                             div.form-input {
                                                 width: 38px;
                                                 margin-right: 20px !important;
+                                                input[type="checkbox"],
                                                 input.input-field.checkbox {
-                                                    border: none;
+                                                    /* Add if not using autoprefixer */
+                                                    -webkit-appearance: none;
+                                                    appearance: none;
+                                                    /* For iOS < 15 to remove gradient background */
+                                                    background-color: #fff;
+                                                    /* Not removed via appearance */
+                                                    margin: 0;
+                                                    font: inherit;
+                                                    color: $white;
+                                                    width: 38px;
                                                     height: 38px;
+                                                    border: 2px solid $white;
+                                                    border-radius: 10px;
+                                                    /* transform: translateY(-0.075em); */
+                                                    display: grid;
+                                                    place-content: center;
+                                                }
+                                                input[type="checkbox"]::before {
+                                                    content: "";
+                                                    width: 38px;
+                                                    height: 38px;
+                                                    transform: scale(0);
+                                                    transition: 120ms transform ease-in-out;
+                                                    box-shadow: inset 38px 38px $black;
+                                                    transform-origin: center center;
+                                                    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                                                }
+                                                input[type="checkbox"]:checked::before {
+                                                    transform: scale(1);
+                                                }
+                                                input[type="checkbox"]:focus {
+                                                    outline: max(2px, 0.15em) solid currentColor;
+                                                    outline-offset: max(2px, 0.15em);
                                                 }
                                             }
                                         }

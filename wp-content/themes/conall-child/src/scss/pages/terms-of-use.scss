@@ -7,9 +7,84 @@ body.terms-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
-                div#community-triple-partners-row {
-                    h1 {
-                        
+                div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#terms-cta-row {
+                            display: none;
+                        }
+                        div#terms-hero-row {
+                            div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 100%;
+                                div#terms-hero-image-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#hero-background-image {
+                                                figure.wpb_wrapper {
+                                                    width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        width: 100%;
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-row.inner {
+                                    display: flex;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0;
+                                    div.edgtf-full-section-inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 80%;
+                                        max-width: 1230px;
+                                        margin: 0 auto;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-bottom: 0;
+                                        padding-top: 6%;
+                                        div.pv-col1.center {
+                                            float: unset;
+                                            &.top {
+                                                max-width: 910px;
+                                            }
+                                            div.hero-subheading {
+                                                padding-top: 35px ;
+                                                h2.pv-h2 {
+                                                    font-size: 1.55vw;
+                                                    line-height: 2.1vw;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+
+                                            div#hero-logo {
+                                                text-align: center;
+                                                margin-bottom: 5.5% !important;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

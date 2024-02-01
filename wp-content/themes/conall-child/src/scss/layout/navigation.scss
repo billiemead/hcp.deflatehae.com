@@ -24,6 +24,7 @@ body.pharvaris {
                         text-transform: uppercase;
                         color: $white;
                         letter-spacing: 0;
+                        transition: all 0.5s ease-in-out;
                         span.item_outer {
                             top: 0;
                             display: flex;
@@ -38,12 +39,21 @@ body.pharvaris {
                             }
                         }
                     }
+                    a:hover {
+                        color: $yellow;
+                        transition: all 0.5s ease-in-out;
+                    }
                 }
                 li.menu-item.menu-item-type-post_type.menu-item-object-page:first-child {
                     padding-left: 0;
                 }
                 li.menu-item.menu-item-type-post_type.menu-item-object-page:last-child {
                     padding-right: 0;
+                }
+                li.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item {
+                    a {
+                        font-weight: 700 !important;
+                    }
                 }
             }
         }

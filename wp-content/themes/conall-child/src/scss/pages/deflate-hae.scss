@@ -256,7 +256,7 @@ body.home {
                                                         }
                                                         div#icon-row4 {
                                                             img.hae-icon.four {
-
+                                                                max-width: 68px;
                                                             }
                                                             p.pv-p {
 
@@ -323,6 +323,16 @@ body.home {
                                                                             img {
 
                                                                             }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div.under-image-caption {
+                                                                    transform: translateY(-75px);
+                                                                    p.pv-p.ex-small {
+                                                                        max-width: 90px;
+                                                                        margin-left: 5%;
+                                                                        br.line-break {
+
                                                                         }
                                                                     }
                                                                 }
@@ -432,10 +442,14 @@ body.home {
                                 }
                             }
                         }
-                        div#home-refs-section {
-                            /* height: 200px; */
+                        div#references-section {
                             div.refs-title {
                                 h4.h4-refs.left {
+
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
 
                                 }
                             }
