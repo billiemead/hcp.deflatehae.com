@@ -8,6 +8,7 @@ if ( ! class_exists( 'VcTemplateManager' ) ) {
 	/**
 	 * Class VcTemplateManager
 	 */
+    #[AllowDynamicProperties]
 	class VcTemplateManager {
 		/**
 		 * @var string

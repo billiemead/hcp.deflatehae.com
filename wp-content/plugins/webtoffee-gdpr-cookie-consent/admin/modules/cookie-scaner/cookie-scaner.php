@@ -12,9 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 include( plugin_dir_path( __FILE__ ).'classes/class-cookie-scanner-ajax.php');
 
+#[AllowDynamicProperties]
 class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 {
-	
+
 	public $scan_table='cli_cookie_scan';
 	public $url_table='cli_cookie_scan_url';
 	public $cookies_table='cli_cookie_scan_cookies';
@@ -23,9 +24,9 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	public $scan_page_mxdata; //maximum url per request for scanning //!important do not give value more than 5
 	public $fetch_page_mxdata=100; //take pages
 	public $last_query;
-	
+
 	public function __construct()
-	{		
+	{
 		/* creating necessary tables for cookie scaner  */
         register_activation_hook(CLI_PLUGIN_FILENAME,array($this,'activator'));
 		add_action('wt_cli_initialize_plugin', array( $this, 'activator' ) );
@@ -38,7 +39,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		);
         add_action('admin_init',array( $this,'export_result'));
 		add_action( 'admin_menu', array($this,'add_admin_pages'));
-		
+
 		$url_per_request=get_option('cli_cs_url_per_request');
         if(!$url_per_request)
         {
@@ -56,7 +57,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			));
 		});
 	}
-	
+
 	/*
     * returning labels of status
     */
@@ -70,8 +71,8 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
     */
 	public function export_result()
 	{
-		if(isset($_GET['cli_scan_export']) && (int) $_GET['cli_scan_export']>0 && check_admin_referer('cli_cookie_scaner', 'cli_cookie_scaner') && current_user_can('manage_options')) 
-		{	
+		if(isset($_GET['cli_scan_export']) && (int) $_GET['cli_scan_export']>0 && check_admin_referer('cli_cookie_scaner', 'cli_cookie_scaner') && current_user_can('manage_options'))
+		{
 			//cookie export class
             include( plugin_dir_path( __FILE__ ).'classes/class-cookie-export.php');
             $cookie_serve_export=new Cookie_Law_Info_Cookie_Export();
@@ -86,12 +87,12 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
     public function activator()
     {
         global $wpdb;
-        require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );       
-        if(is_multisite()) 
+        require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+        if(is_multisite())
         {
             // Get all blogs in the network and activate plugin on each one
             $blog_ids = $wpdb->get_col( "SELECT blog_id FROM $wpdb->blogs" );
-            foreach($blog_ids as $blog_id) 
+            foreach($blog_ids as $blog_id)
             {
                 switch_to_blog( $blog_id );
                 $this->install_tables();
@@ -102,7 +103,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
                 restore_current_blog();
             }
         }
-        else 
+        else
         {
             $this->install_tables();
             if(!get_option('cli_cs_url_per_request'))
@@ -118,12 +119,12 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
     public function install_tables()
     {
 		global $wpdb;
-		
+
 		$charset_collate = $wpdb->get_charset_collate();
-		
+
         //creating main table ========================
         $table_name=$wpdb->prefix.$this->scan_table;
-		if ( false === $this->table_exists( $table_name ) ) {      
+		if ( false === $this->table_exists( $table_name ) ) {
             $create_table_sql= "CREATE TABLE `$table_name`(
 			    `id_cli_cookie_scan` INT NOT NULL AUTO_INCREMENT,
 			    `status` INT NOT NULL DEFAULT '0',
@@ -153,7 +154,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			) $charset_collate;";
             dbDelta($create_table_sql);
 		}
-		
+
         //creating url table ========================
 
         //creating cookies table ========================
@@ -176,7 +177,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 
 		 //creating categories table ========================
 		 $table_name=$wpdb->prefix.$this->category_table;
-		 if ( false === $this->table_exists( $table_name ) ) {         
+		 if ( false === $this->table_exists( $table_name ) ) {
 			 $create_table_sql= "CREATE TABLE `$table_name`(
 				 `id_cli_cookie_category` INT NOT NULL AUTO_INCREMENT,
 				 `cli_cookie_category_name` VARCHAR(100) NOT NULL,
@@ -198,7 +199,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	* @param  string
 	*/
 	private function insert_scanner_tables( $sql, $prop = '', $status = 0 ) {
-		
+
 		global $wpdb;
 		dbDelta( $sql.' '.$prop );
 		if( $wpdb->last_error ) {
@@ -227,21 +228,21 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		$table_name=$wpdb->prefix.$this->cookies_table;
 		$cat_table=$wpdb->prefix.$this->category_table;
         $search_query = "SHOW COLUMNS FROM `$table_name` LIKE 'description'";
-        if(!$wpdb->get_results($search_query,ARRAY_N)) 
+        if(!$wpdb->get_results($search_query,ARRAY_N))
         {
         	$wpdb->query("ALTER TABLE `$table_name` ADD `description` TEXT NULL DEFAULT '' AFTER `category`");
 		}
 		// category_id` column
 		$search_query = "SHOW COLUMNS FROM `$table_name` LIKE 'category_id'";
-        if(!$wpdb->get_results($search_query,ARRAY_N)) 
+        if(!$wpdb->get_results($search_query,ARRAY_N))
         {
 			$wpdb->query("ALTER TABLE `$table_name` ADD `category_id` INT NOT NULL  AFTER `category`");
 			$wpdb->query("ALTER TABLE `$table_name` ADD CONSTRAINT FOREIGN KEY (`category_id`) REFERENCES `$cat_table` (`id_cli_cookie_category`)");
-			
+
 		}
-		
+
 	}
-	
+
     /*
     * checking necessary tables are installed
     */
@@ -272,7 +273,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	 *
 	 * @since 2.1.5
 	 **/
-	public function add_admin_pages() 
+	public function add_admin_pages()
 	{
         add_submenu_page(
 			'edit.php?post_type='.CLI_POST_TYPE,
@@ -281,7 +282,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			'manage_options',
 			'cookie-law-info-cookie-scaner',
 			array($this, 'cookie_scaner_page')
-		);		
+		);
 	}
 
 	/*
@@ -289,7 +290,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	* Scaner page (Admin page)
 	*/
 	public function cookie_scaner_page()
-	{	
+	{
 		$plugin_help_url = get_admin_url(null, 'edit.php?post_type=' . CLI_POST_TYPE . '&page=cookie-law-info#cookie-law-info-advanced');
 		$cookie_list=self::get_cookie_list();
 		wp_enqueue_script('cookielawinfo_cookie_scaner',plugin_dir_url( __FILE__ ).'assets/js/cookie-scaner.js',array(),CLI_VERSION);
@@ -302,7 +303,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	        'nonces' => array(
 	            'cli_cookie_scaner' => wp_create_nonce('cli_cookie_scaner'),
 			),
-			
+
 	        'ajax_url' => admin_url('admin-ajax.php'),
 	        'scan_page_url'=>$scan_page_url,
 	        'result_page_url'=>$result_page_url,
@@ -374,18 +375,18 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		    '127.0.0.1',
 		    '::1'
 		);
-		if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) 
+		if(!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
 		{
 		    $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
 		} else {
 		    $ip_address = $_SERVER['REMOTE_ADDR'];
 		}
 		$ip_address = apply_filters('wt_cli_change_ip_address',$ip_address );
-	    if(!$this->check_tables() 
-	    	|| version_compare(CLI_VERSION,'2.1.4')<=0 
+	    if(!$this->check_tables()
+	    	|| version_compare(CLI_VERSION,'2.1.4')<=0
 	    	|| in_array($ip_address,$localhost_arr))
 		{
-			
+
 			$error_message=__("Unable to load cookie scanner.","webtoffee-gdpr-cookie-consent");
 			if(version_compare(CLI_VERSION,'2.1.4')<=0)
 			{
@@ -474,7 +475,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		$sql="UPDATE `$url_table` SET `scanned`=1 WHERE id_cli_cookie_scan_url IN(".implode(",",$url_id_arr).")";
 		$wpdb->query($sql);
 	}
-	
+
 	/*
 	*
 	* Get last scan details
@@ -615,7 +616,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	public function flushScanRecords()
 	{
 		global $wpdb;
-		$table_name=$wpdb->prefix.$this->scan_table; 
+		$table_name=$wpdb->prefix.$this->scan_table;
 		$wpdb->query("TRUNCATE TABLE $table_name");
 		$table_name=$wpdb->prefix.$this->url_table;
 		$wpdb->query("TRUNCATE TABLE $table_name");
@@ -628,7 +629,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		if( $this->get_license_status() === false ) {
 			$hide_scan_btn = true;
 			echo '<div class="wt-cli-callout wt-cli-callout-alert"><p>'.__( 'Please activate your license in order to proceed with the scan.', 'webtoffee-gdpr-cookie-consent' ).' <a href="'.$license_url.'">'.__('Activate','webtoffee-gdpr-cookie-consent').'</a></p></div>';
-		
+
 		} else {
 
 			if( $this->get_cookieyes_status() === false ) {
@@ -647,12 +648,12 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 				} else {
 					echo $this->get_last_scan_info();
 				}
-				
+
 			}
 		}
 	}
 	public function get_license_activated_message(){
-		
+
 	}
 	public function get_cookieyes_scan_notice( $existing = false ){
 
@@ -668,7 +669,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			$notice .= '<p>'.sprintf( wp_kses( __( 'Connect with <a href="%s" target="_blank">CookieYes</a>, our scanning solution to get fast and accurate cookie scanning. By continuing, you agree to CookieYes\'s <a href="%s" target="_blank">Privacy Policy</a> & <a href="%s" target="_blank">Terms of service</a>.', 'webtoffee-gdpr-cookie-consent' ), array(  'a' => array( 'href' => array(), 'target' => array() ) ) ), esc_url( $ckyes_link ), esc_url( $ckyes_privacy_policy ), esc_url( $ckyes_terms_conditions ) ).'</p></div>';
 			$notice .= '<a id="wt-cli-ckyes-connect-scan" class="button-primary pull-right">'.__('Connect & scan','webtoffee-gdpr-cookie-consent').'</a>';
 		}
-		
+
 		return $notice;
 	}
 	/**
@@ -769,7 +770,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		if ( ! empty( ( $last_scan_timestamp ) ) ) {
 			$last_scan_date = date( 'F j, Y g:i a T', $last_scan_timestamp );
 		}
-		
+
 		$html	=	'<div class="wt-cli-scan-status-container" style="">
 						<div class="wt-cli-row">
 							<div class="wt-cli-col-5">
@@ -790,7 +791,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 								<div class="wt-scan-status-info-item">
 									<div class="wt-cli-row">
 										<div class="wt-cli-col-5">
-											<b>'.__('Scan started at','webtoffee-gdpr-cookie-consent').':</b> 
+											<b>'.__('Scan started at','webtoffee-gdpr-cookie-consent').':</b>
 										</div>
 										<div class="wt-cli-col-7">'.$last_scan_date.'</div>
 									</div>
@@ -798,7 +799,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 								<div class="wt-scan-status-info-item">
 									<div class="wt-cli-row">
 										<div class="wt-cli-col-5">
-											<b>'.__('Total URLs','webtoffee-gdpr-cookie-consent').':</b> 
+											<b>'.__('Total URLs','webtoffee-gdpr-cookie-consent').':</b>
 										</div>
 										<div class="wt-cli-col-7">'.$total_urls.'</div>
 									</div>
@@ -806,16 +807,16 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 								<div class="wt-scan-status-info-item">
 									<div class="wt-cli-row">
 										<div class="wt-cli-col-5">
-											<b>'.__('Total estimated time (Approx)','webtoffee-gdpr-cookie-consent').':</b> 
+											<b>'.__('Total estimated time (Approx)','webtoffee-gdpr-cookie-consent').':</b>
 										</div>
 										<div class="wt-cli-col-7">'.$scan_estimate.'</div>
-									</div>	
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="wt-cli-notice wt-cli-info">'.__('Your website is currently being scanned for cookies. This might take from a few minutes to a few hours, depending on your website speed and the number of pages to be scanned.','webtoffee-gdpr-cookie-consent').
-					
+
 					'</br><b>'.__('Once the scanning is complete, we will notify you by email.','webtoffee-gdpr-cookie-consent').'</b></div>
 					';
 		return $html;
@@ -830,14 +831,14 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 	public function check_scan_status(  ){
 		$last_scan 		= 	$this->get_last_scan();
 		$status			=	( isset( $last_scan['status'] ) ? $last_scan['status'] : 0 );
-		if( $this->get_cookieyes_status() === 0 || $this->get_cookieyes_status() === false ) { 
+		if( $this->get_cookieyes_status() === 0 || $this->get_cookieyes_status() === false ) {
 			$status = 0;
 		}
 		return intval( $status );
 	}
-	
+
 	public function fetch_scan_result( $request ){
-		
+
 		if( isset( $request) && is_object( $request )) {
 			$request_body = $request->get_body();
 			if( !empty( $request_body )) {
@@ -909,7 +910,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 		}
 		return false;
 	}
-	
+
 	public function get_last_scan_id(){
 		$last_scan 		= 	$this->get_last_scan();
 		$scan_id		=	( isset( $last_scan['id_cli_cookie_scan'] ) ? $last_scan['id_cli_cookie_scan'] : false );
@@ -1102,7 +1103,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			$id
 		);
 		$raw_data                   = $wpdb->get_row( $sql, ARRAY_A ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery,WordPress.DB.PreparedSQL.NotPrepared
-		
+
 		if ( $raw_data ) {
 
 			$data['id_cli_cookie_scan'] = isset( $raw_data['id_cli_cookie_scan'] ) ? absint( $raw_data['id_cli_cookie_scan'] ) : 0;
@@ -1112,7 +1113,7 @@ class Cookie_Law_Info_Cookie_Scaner extends Cookie_Law_Info_Cookieyes
 			$data['total_cookies']      = isset( $raw_data['total_cookies'] ) ? absint( $raw_data['total_cookies'] ) : 0;
 			$data['current_action']     = isset( $raw_data['current_action'] ) ? sanitize_text_field( $raw_data['current_action'] ) : '';
 			$data['current_offset']     = isset( $raw_data['current_offset'] ) ? (int) $raw_data['current_offset'] : -1;
-			
+
 			return $data;
 		}
 		return false;
