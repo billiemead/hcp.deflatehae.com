@@ -570,9 +570,37 @@ body.pharvaris {
 }
 /* ************ PLACEHOLDERS ************ */
 
-::placeholder,
-input::placeholder {
+input[type="text"]::placeholder,
+input[type="select"]::placeholder,
+input::placeholder,
+::placeholder {
   color: $black;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="select"]::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+::-webkit-input-placeholder {
+   color: $black;
+}
+input[type="text"]::-moz-placeholder,
+input[type="select"]::-moz-placeholder,
+input::-moz-placeholder,
+::-moz-placeholder {
+      color: $black;
+    opacity: 1;
+}
+input[type="text"]:-moz-placeholder,
+input[type="select"]:-moz-placeholder,
+input:-moz-placeholder,
+:-moz-placeholder {
+      color: $black;
+    opacity: 1;
+}
+input[type="text"]::-ms-input-placeholder,
+input[type="select"]::-ms-input-placeholder,
+input::-ms-input-placeholder,
+::-ms-input-placeholder { /* IE10+ */
+      color: $black;
 }
 
 /* ===== Scrollbar CSS ===== */
