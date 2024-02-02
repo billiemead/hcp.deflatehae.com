@@ -89,6 +89,13 @@ body.pharvaris {
             }
         }
     }
+    div.pv-row.policies {
+        div.edgtf-full-section-inner {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1194px;
+        }
+    }
     div.pv-row.hero {
         display: block;
         z-index: 101;
@@ -129,11 +136,21 @@ body.pharvaris {
         margin: 0;
         letter-spacing: 0;
     }
+    span.pv-span.policies {
+        @include bold($poppins);
+        font-size: 21px;
+        line-height: 26px;
+        color: $black;
+    }
     h1, h1.pv-h1 {
         @include bold($poppins);
         font-size: 30px;
         line-height: 40px;
         color: $black;
+        &.policies {
+            font-size: 21px;
+            line-height: 26px;
+        }
         &.grey {
             color: $dk-grey;
         }
@@ -281,6 +298,13 @@ body.pharvaris {
         &.ex-small {
             font-size: 12px;
             line-height: 16px;
+        }
+        &.policies {
+            padding-bottom: 20px;
+            &.italic {
+                font-weight: bold !important;
+                font-style: italic;
+            }
         }
     }
     p.pv-refs {

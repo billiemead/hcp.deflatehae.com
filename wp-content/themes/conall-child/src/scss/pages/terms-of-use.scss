@@ -9,9 +9,6 @@ body.terms-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
-                        div#terms-cta-row {
-                            display: none;
-                        }
                         div#terms-hero-row {
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
@@ -83,6 +80,16 @@ body.terms-page {
                                         }
                                     }
                                 }
+                            }
+                        }
+                        div#terms-content {
+                            margin-top: 100px;
+                            margin-bottom: 65px !important;
+                            h1.pv-h1.policies {
+                                padding-bottom: 20px;
+                            }
+                            p.pv-p.policies {
+
                             }
                         }
                     }

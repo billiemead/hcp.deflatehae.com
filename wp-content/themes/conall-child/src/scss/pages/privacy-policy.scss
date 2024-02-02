@@ -9,9 +9,6 @@ body.privacypolicy-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
-                        div#privacy-cta-row {
-                            display: none;
-                        }
                         div#privacy-hero-row {
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
@@ -82,6 +79,39 @@ body.privacypolicy-page {
                                             }
                                         }
                                     }
+                                }
+                            }
+                        }
+                        div#privacy-content {
+                            margin-top: 100px;
+                            margin-bottom: 65px !important;
+                            h1.pv-h1.policies {
+                                padding-bottom: 20px;
+                            }
+                            p.pv-p.policies {
+
+                            }
+                            p.pv-p.policies.italic {
+
+                            }
+                            ul.pv-list {
+                                list-style-position: outside;
+                                margin: 0;
+                                li.pv-list-item {
+                                    @include regular($poppins);
+                                    color: $black;
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                    text-align: left;
+                                    padding-left: 0;
+                                    margin-left: 22px;
+                                    padding-bottom: 20px;
+                                    sup.pv-sup {
+
+                                    }
+                                }
+                                li::marker {
+                                    color: $red;
                                 }
                             }
                         }
