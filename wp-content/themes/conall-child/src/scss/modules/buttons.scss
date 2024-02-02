@@ -10,7 +10,7 @@
     align-items: center;
     height: 53px;
     width: auto;
-    border: 1px solid $yellow;
+    border: 2px solid $yellow;
     transition: all 0.5s ease-in-out;
     background-color: $yellow;
     color: $black;
@@ -111,14 +111,14 @@ body.pharvaris {
             position: relative;
             div.cta-container {
                 width:100%;
-                height:40vw;
+                height:30vw;
                 margin:0 auto;
                 border:none;
                 position: absolute;
                 a.cta-hero-button {
                     transform-origin:top right;
                     right:0;
-                    top:60%;
+                    top:80%;
                     transform: rotate(90deg) translateX(50%);
                     position: absolute;
                     width: 185px;
@@ -139,7 +139,7 @@ body.pharvaris {
                     @include bold($poppins);
                     font-size: 18px;
                     line-height: 18px;
-                    border: 1px solid $blue;
+                    border: 3px solid $blue;
                     /* transition: all 0.5s ease-in-out; */
                     -webkit-transition: 0.45s cubic-bezier(0.54, 0.13, 0, 1.43);
                     -moz-transition: 0.45s cubic-bezier(0.54, 0.13, 0, 1.43);
@@ -147,8 +147,9 @@ body.pharvaris {
                     &:hover {
                         background: $white;
                         color: $blue !important;
-                        border: 1px solid $blue;
+                        border: 3px solid $blue;
                         transition: all 0.5s ease-in-out;
+                        border-top: 0;
                     }
                 }
             }
@@ -157,9 +158,9 @@ body.pharvaris {
             div#stay-informed-cta {
             position: relative;
                 div.cta-container {
-                    height:40vw;
+                    height:30vw;
                     a.cta-hero-button {
-                        top:45%;
+                        top:55%;
                         &:hover {
                         }
                     }

@@ -12,6 +12,11 @@
 * {
   margin: 0;
 }
+::selection
+{
+background: #E9b840;
+color: #424243 ;
+}
 /* Typographic tweaks! Add accessible line-height & improve text rendering */
 body {
     @include regular($poppins);
