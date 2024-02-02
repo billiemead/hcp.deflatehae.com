@@ -297,7 +297,7 @@ body.pharvaris {
             line-height: 34px;
             &.black {
                 color: $black;
-                text-transform: lowercase;
+                text-transform: inherit;
             }
         }
     }
