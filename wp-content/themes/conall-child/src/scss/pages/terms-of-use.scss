@@ -10,6 +10,7 @@ body.terms-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#terms-hero-row {
+                            top: -150px;
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
@@ -83,8 +84,8 @@ body.terms-page {
                             }
                         }
                         div#terms-content {
-                            margin-top: 100px;
-                            margin-bottom: 65px !important;
+                            margin-bottom: 0 !important;
+                            top: -85px;
                             h1.pv-h1.policies {
                                 padding-bottom: 20px;
                             }

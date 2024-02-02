@@ -342,6 +342,21 @@ function marker_io()
 }
 add_action('wp_head', 'marker_io');
 
+function hide_header() {
+    if (is_page('privacy-policy') || is_page('terms-of-use') ) {
+        ?>
+        <style>
+            div#header-container {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+        </style>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'hide_header' );
+
 function homepage_section() {
     if (is_front_page()) {
 
