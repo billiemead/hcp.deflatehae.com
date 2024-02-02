@@ -12,6 +12,7 @@ body.livinghae-page {
                         div#living-cta-row {
                         }
                         div#living-hero-row {
+                            top: -50px;
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
@@ -88,13 +89,13 @@ body.livinghae-page {
                         div#living-hae-impacts-row {
                             animation: fadeIn 5s;
                             height: 1200px;
-                            transform: translateY(-30px);
+                            transform: translateY(-85px);
                             background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center center;
                             width: 102%;
-                            margin-bottom: -35px !important;
+                            margin-bottom: -103px !important;
                             div.clearfix.edgtf-full-section-inner {
                                 max-width: 1194px;
                                 height: 100%;
@@ -325,7 +326,7 @@ body.livinghae-page {
                                             }
                                         }
                                         div.pv-col1.facts-icon-col {
-                                            padding: 150px 0px 100px 0px;
+                                            padding: 10% 0 8% 0;
                                             div.wpb_wrapper {
                                                 div#jennifers--inner-row-1 {
                                                     padding-bottom: 60px;

@@ -16,12 +16,9 @@ div.pv-hotspot-wrapper {
 
 }
 div.ult-tooltipster-base {
-    width: 80% !important;
-    max-width: 1411px;
+    width: 100% !important;
+    max-width: 1440px !important;
     margin: 0 auto;
-    right: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, 0);
 }
 .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
     height: 100%;
@@ -31,17 +28,18 @@ div.ult-tooltipster-base {
     background-color: #e9b73f;
 }
 div#hotspot-tooltip-hs-one {
-    height: 205px;
+    /* width: 551px !important; */
+    height: 186px;
+    left: calc(100vw - 80.5%) !important;
+    margin-top: 3%;
+    margin-left: -24px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
-            margin-top: 4%;
-            padding-left: 1%;
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                max-width: 260px;
-                margin-top: 22px;
-                margin-bottom: 0;
-                height: 100%;
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
                     li {
 
                     }
@@ -52,16 +50,19 @@ div#hotspot-tooltip-hs-one {
     }
 }
 div#hotspot-tooltip-hs-two {
-    height: 283px;
+    /* width: 551px !important; */
+    height: 186px;
+    left: calc(100vw - 80.5%) !important;
+    margin-top: -3%;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-2 {
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                    max-width: 340px;
+                    max-width: 100%;
                     margin-bottom: 0;
                     height: 100%;
                     li {
-                        padding: 3px 0;
+
                     }
                 }
             }
@@ -69,17 +70,15 @@ div#hotspot-tooltip-hs-two {
     }
 }
 div#hotspot-tooltip-hs-three {
-    width: 551px;
-    height: 283px;
-    top: 0px;
-    left: 0px;
+    /* width: 551px !important; */
+    height: 186px;
+    left: calc(100vw - 80.5%) !important;
+    margin-top: -3%;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-3 {
-            margin-top: 0;
-            padding-left: 1%;
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                    max-width: 280px;
+                    max-width: 100%;
                     margin-bottom: 0;
                     height: 100%;
                     li {
@@ -91,15 +90,15 @@ div#hotspot-tooltip-hs-three {
     }
 }
 div#hotspot-tooltip-hs-four {
-    width: 551px;
+    width: 551px !important;
     height: 186px;
-    top: 0px;
-    left: 0px;
+    left: calc(100vw - 41.5%) !important;
+    margin-top: 3%;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-4 {
+            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
                 div.pv-hotspot-box-wrapper {
-                    margin-left: 164px;
                     ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
@@ -114,14 +113,15 @@ div#hotspot-tooltip-hs-four {
     }
 }
 div#hotspot-tooltip-hs-five {
-    width: 551px;
-    height: 233px;
-    top: 0px;
-    left: 0px;
+    /* width: 551px !important; */
+    height: 186px;
+    left: calc(100vw - 36.5%) !important;
+    left: calc(100vw - 41.5%) !important;
+    margin-top: 3%;
     div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-5 {
+            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
-                margin-left: 205px;
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
                     max-width: 100%;
@@ -137,15 +137,15 @@ div#hotspot-tooltip-hs-five {
     }
 }
 div#hotspot-tooltip-hs-six {
-    width: 551px;
-    height: 423px;
-    top: 0px;
-    left: 0px;
+    /* width: 551px !important; */
+    height: 300px;
+    left: calc(100vw - 36.5%) !important;
+    left: calc(100vw - 41.5%) !important;
+    margin-top: 14%;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-6 {
+            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
-                margin-left: 163px;
-                top: 140px;
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
                         max-width: 100%;
@@ -161,7 +161,7 @@ div#hotspot-tooltip-hs-six {
     }
 }
 div.ult-tooltipster-content {
-    padding-top: 0 !important;
+    padding: 0 !important;
     p {
         margin: 0;
     }
@@ -175,7 +175,7 @@ div.ult-tooltipster-content {
         background-repeat: no-repeat;
         width: auto;
         position: relative;
-        transform: translateX(100px);
+        margin-top: 10px;
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
             position: relative;

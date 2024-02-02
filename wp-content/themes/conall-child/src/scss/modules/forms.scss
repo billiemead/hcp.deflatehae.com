@@ -6,15 +6,14 @@
 body {
     div.templatera_shortcode {
         div#hae-hcp-form-section {
-            max-height: 728px;
+            max-height: 100%;
             background-color: $yellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding-top: 4%;
-            padding-bottom: 4%;
-            bottom: -1px;
+            padding-bottom: 4.5%;
             div.clearfix.edgtf-full-section-inner {
                 div.pv-col1 {
                     div.form-heading {
@@ -27,7 +26,7 @@ body {
 
                     }
                     div#salesforce-form-container {
-                        padding-top: 3%;
+                        padding-top: 1%;
                         form.salesforce-form {
                             div.form-col {
                                 display: flex;
@@ -87,6 +86,16 @@ body {
                                             outline: none;
                                             height: 88px;
                                         }
+                                        select.input-field {
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            cursor: pointer;
+                                            background-image: url(/wp-content/themes/conall-child/images/down_arrow.png);
+                                            background-repeat: no-repeat;
+                                            background-position: top 39px right 31px;
+                                            background-size: 26px 13px;
+                                        }
                                         select.input-field.select {
                                             option.select-option {
 
@@ -99,9 +108,20 @@ body {
                             }
                             div#form-col2 {
                             }
+                            div#form-col2b {
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                div.sf-form-field {
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 50%;
+                                }
+                            }
                             div#form-col3 {
                                 padding-top: 2%;
                                 padding-bottom: 2%;
+                                flex-direction: column;
                                 div.legal-consent-container {
                                     div.sf-form-field {
                                         label.sf-form-label {
@@ -150,6 +170,7 @@ body {
                                         }
                                         p.pv-p.form-title {
                                             font-size: 16px;
+                                            width: 100%;
                                             a.form-link {
                                                 color: $black;
                                                 font-weight: bold;

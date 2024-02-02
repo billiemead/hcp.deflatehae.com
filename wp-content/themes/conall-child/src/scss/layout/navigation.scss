@@ -137,19 +137,37 @@ body.pharvaris {
     body.pharvaris {
         div.edgtf-mobile-header-inner {
             nav.edgtf-mobile-nav {
-                background-color: $dk-grey;
+                background-image: url("/wp-content/themes/conall-child/images/mobile-nav-bkgnd-768x1644.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
                 border: none;
-                padding-bottom: 35px;
+                height: calc(100vh - 106px);
+                background-position: bottom;
+                /* display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; */
                 div.edgtf-grid {
-                    ul {
+                    ul#menu-mobile-bottom-menu {
+                        display: flex;
+                        flex-direction: column;
+                        height: 97%;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 38%;
+                        padding-bottom: 45%;
                         li.menu-item.menu-item-type-post_type.menu-item-object-page {
+                            width: 100%;
                             a {
                                 color: $white;
+                                font-weight: 500 !important;
                                 text-transform: uppercase;
-                                font-size: 15px;
-                                line-height: 21px;
-                                border-bottom: 1px solid $white;
-                                padding: 25px 0;
+                                font-size: 40px;
+                                line-height: 40px;
+                                border-bottom: none;
+                                padding: 0;
+                                text-align: center;
                                 span {
 
                                 }

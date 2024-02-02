@@ -12,6 +12,7 @@ body.treatmentburdens-page {
                         div#treatment-cta-row {
                         }
                         div#treatment-hero-row {
+                            top: -50px;
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
@@ -186,7 +187,9 @@ body.treatmentburdens-page {
 
                                             }
                                             div#triple-icon-inner-row-3 {
-
+                                                div.pv-col2.right {
+                                                    padding-right: 11%;
+                                                }
                                             }
                                         }
                                     }
@@ -237,6 +240,7 @@ body.treatmentburdens-page {
                                         div.wpb_wrapper {
                                             div#balloon-animation-row-inner {
                                                 div.edgtf-full-section-inner {
+                                                    width: 100%;
                                                     div.pv-col2 {
 
                                                     }
@@ -261,6 +265,8 @@ body.treatmentburdens-page {
                                                                             justify-content: center;
                                                                             align-items: center;
                                                                             width: 100%;
+                                                                            margin: 0 auto;
+                                                                            max-width: 489px;
                                                                             margin-top: 40px;
                                                                             margin-bottom: 50px;
                                                                             div.button-wrapper {
@@ -275,6 +281,11 @@ body.treatmentburdens-page {
                                                                             a#balloon-trigger-1 {
 
                                                                             }
+                                                                            a#balloon-trigger-1:hover,
+                                                                            a#balloon-trigger-2:hover,
+                                                                            a#balloon-trigger-3:hover {
+                                                                                border-color: $red !important;
+                                                                            }
                                                                             a#balloon-trigger-2 {
 
                                                                             }
@@ -285,13 +296,19 @@ body.treatmentburdens-page {
                                                                     }
                                                                 }
                                                                 div#balloon-animation-topbox {
-                                                                    background-color: $red;
+                                                                   /*  background-color: $red; */
+                                                                    background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                    background-repeat: no-repeat;
+                                                                    background-size: 100%;
                                                                     height: 200px;
                                                                     display: flex;
                                                                     flex-direction: column;
                                                                     justify-content: center;
                                                                     align-items: center;
                                                                     padding: 0 7%;
+                                                                    margin: 0 auto;
+                                                                    max-width: 589px;
+                                                                    filter: drop-shadow(0 0 36px rgba(0,0,0,0.5));
                                                                     div#balloon-topbox-wrapper {
                                                                         h4.pv-h4.center {
                                                                             sup.pv-sup {
@@ -300,8 +317,13 @@ body.treatmentburdens-page {
                                                                         }
                                                                     }
                                                                 }
+
                                                                 div#balloon-animation-btmbox {
-                                                                    background-color: $yellow;
+                                                                    /* background-color: $yellow; */
+                                                                    background-image: url("/wp-content/themes/conall-child/images/balloon-animation-btmbox-496x299.png");
+                                                                    background-repeat: no-repeat;
+                                                                    background-position: center bottom;
+                                                                    background-size: 100%;
                                                                     height: 200px;
                                                                     width: 500px;
                                                                     margin: 0 auto;
@@ -309,7 +331,7 @@ body.treatmentburdens-page {
                                                                     flex-direction: column;
                                                                     justify-content: center;
                                                                     align-items: center;
-                                                                    padding: 0 7%;
+                                                                    padding: 0 5%;
                                                                     div#balloon-btmbox-wrapper {
                                                                         h6.pv-h6.center {
                                                                             sup.pv-sup {

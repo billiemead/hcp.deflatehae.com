@@ -84,7 +84,7 @@ body.haeoverview-page {
                             }
                         }
                         div#overview-hotspot-row {
-                            height: 1770px;
+                            height: 100%;
                             background-image: url("/wp-content/themes/conall-child/images/hotspot-background-1920x1772.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -110,7 +110,9 @@ body.haeoverview-page {
                                             div.pv-paragraph {
                                                 div.wpb_wrapper {
                                                     p.pv-p.center.italic {
-
+                                                        a {
+                                                            color: $black;
+                                                        }
                                                     }
                                                 }
                                             }
@@ -122,6 +124,12 @@ body.haeoverview-page {
                                     &.bottom {
                                         div.pv-woman-hotspot {
                                             transform: translateX(100px);
+                                        }
+                                        div.not-patient {
+                                            position: absolute;
+                                            bottom: 80px;
+                                            text-align: right;
+                                            width: 100%;
                                         }
                                     }
                                 }
@@ -183,8 +191,8 @@ body.haeoverview-page {
                                 width: 80%;
                                 margin: 0 auto;
                                 div.pv-col1.top {
-                                    padding-top: 25px;
-                                    padding-bottom: 25px;
+                                    padding-bottom: 5%;
+                                    padding-top: 1%;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
                                             div.hae-subheading {
@@ -301,6 +309,8 @@ body.haeoverview-page {
                                                 padding-bottom: 4%;
                                                 div.wpb_wrapper {
                                                     div#hae-facts-icon-row {
+                                                        max-width: 980px;
+                                                        width: 85%;
                                                         div.iconrow {
                                                             div.hae-image-wrapper {
                                                                 height: 150px;
@@ -309,7 +319,17 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div.hae-copy-wrapper {
+                                                                flex-direction: column;
                                                                 p.pv-p {
+                                                                }
+                                                                ul {
+                                                                    margin: 6px 0 0 0;
+                                                                    li {
+                                                                        padding-bottom: 0;
+                                                                        sup.pv-sup {
+                                                                            font-size: 60%;
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
                                                         }

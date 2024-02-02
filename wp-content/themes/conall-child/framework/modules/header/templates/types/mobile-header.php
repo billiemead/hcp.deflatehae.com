@@ -17,7 +17,8 @@
                         <div class="edgtf-mobile-menu-opener">
                             <a href="javascript:void(0)">
                                 <span class="edgtf-mobile-opener-icon-holder">
-                                    <?php echo conall_edge_get_module_part($menu_opener_icon); ?>
+                                    <!-- <?php // echo conall_edge_get_module_part($menu_opener_icon); ?> -->
+                                    <img src="/wp-content/themes/conall-child/images/mob-nav-hamburger-42x24.svg" class="pv-hamburger" />
                                 </span>
                             </a>
                         </div>

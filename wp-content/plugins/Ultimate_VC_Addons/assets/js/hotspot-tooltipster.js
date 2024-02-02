@@ -304,8 +304,8 @@
 				'<style>\n/** Ultimate: Tooltipster Responsive **/ ';
 			UltimateMedia += desktop;
 			UltimateMedia +=
-				'\n@media (min-width: 1824px) { ' + large_screen + '\n}';
-			UltimateMedia += '\n@media (max-width: 1199px) { ' + tablet + '\n}';
+				'\n@media (min-width: 1920px) { ' + large_screen + '\n}';
+			UltimateMedia += '\n@media (max-width: 1024px) { ' + tablet + '\n}';
 			UltimateMedia +=
 				'\n@media (max-width: 991px)  { ' + tablet_portrait + '\n}';
 			UltimateMedia +=

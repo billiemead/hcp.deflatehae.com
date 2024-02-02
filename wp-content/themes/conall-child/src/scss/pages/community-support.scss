@@ -13,6 +13,7 @@ body.communitysupport-page {
                         div#community-cta-row {
                         }
                         div#community-hero-row {
+                            top: -50px;
                             div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
@@ -86,6 +87,7 @@ body.communitysupport-page {
                             }
                         }
                         div#community-triple-partners-row {
+                            margin-top: -50px;
                             div.edgtf-full-section-inner {
                                 div.pv-col1 {
                                     float: unset;
@@ -100,7 +102,7 @@ body.communitysupport-page {
                                 }
                                 div.pv-col1.bottom {
                                     div.triple-inner-row {
-                                        max-width: 1194px;
+                                        max-width: 1250px;
                                         height: 285px;
                                         margin: 0 auto;
                                         margin-bottom: 100px !important;
@@ -109,7 +111,7 @@ body.communitysupport-page {
                                             height: 100%;
                                             align-items: flex-start;
                                             justify-content: center;
-                                            max-width: 1194px;
+                                            /* max-width: 1194px; */
                                             width: 100%;
                                             div.pv-col2 {
                                                 display: flex;
@@ -120,7 +122,7 @@ body.communitysupport-page {
                                                 height: 100%;
                                             }
                                             div.pv-col2.left {
-                                                width: 17.5%;
+                                                width: 18%;
                                                 align-items: center;
                                                 div.vc_column-inner {
                                                     padding: 0 15px 0 0;
@@ -145,8 +147,8 @@ body.communitysupport-page {
                                                 width: 1px;
                                             }
                                             div.pv-col2.right {
-                                                width: 82.5%;
-                                                padding-left: 35px;
+                                                width: 82%;
+                                                padding-left: 40px;
                                                 justify-content: flex-start;
                                                 h3.pv-h3 {
                                                     max-width: 700px;
