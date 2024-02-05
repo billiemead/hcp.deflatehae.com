@@ -67,6 +67,7 @@ body.pharvaris {
     a#wt-cli-accept-btn {
         width: 120px !important;
         margin: unset;
+        height: 40px;
     }
     a#wt-cli-settings-btn {
         @include bold($poppins);
@@ -79,9 +80,40 @@ body.pharvaris {
         text-align: center;
         transition: all 0.5s ease-in-out;
     }
+
     a#wt-cli-settings-btn:hover {
         color: $yellow !important;
         transition: all 0.5s ease-in-out;
+    }
+    a#wt-cli-privacy-save-btn {
+        @include pv-btn();
+        width: 152px !important;
+        height: 40px;
+        font-size: 18px;
+        line-height: 26px !important;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        margin: unset
+    }
+    a#wt-cli-privacy-save-btn:hover {
+        color: $yellow !important;
+        transition: all 0.5s ease-in-out;
+    }
+    div#cookie-law-info-again {
+        font-size: 14px;
+        margin: 0;
+        padding: 5px 10px;
+        text-align: center;
+        z-index: 9999;
+        cursor: pointer;
+        box-shadow: none;
+        background-color: $yellow !important;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 175px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0;
     }
     a#edgtf-back-to-top {
         width: 40px;
@@ -223,29 +255,414 @@ body.pharvaris {
     }
 }
 @media all and (max-width: 1024px) {
+    @mixin pv-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    width: auto;
+    border: 2px solid $yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &.w-128 {
+            width: 128px;
+            color: $white;
+            background-color: $red;
+            border-color: $red;
+        }
+        &.w-152 {
+            max-width: 152px;
+        }
+        &.w-176 {
+            max-width: 176px;
+        }
+        &.w-264 {
+            max-width: 264px;
+        }
+        &.w-292 {
+            width: 292px;
+        }
+    }
+
     body.pharvaris {
+        button,
+        .pv-btn,
+        .btn {
+            @include pv-btn();
+        }
+        a#wt-cli-accept-btn {
+            @include pv-btn();
+            background-color: $white;
+            border-color: $white;
+            color: $black !important;
+        }
+        a#wt-cli-accept-btn:hover {
+            background-color: $yellow !important;
+            border-color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-accept-btn {
+            width: 120px !important;
+            margin: unset;
+            height: 40px;
+        }
+        a#wt-cli-settings-btn {
+            @include bold($poppins);
+            text-decoration: underline !important;
+            border: none !important;
+            width: 192px !important;
+            color: $white !important;
+            font-size: 18px;
+            line-height: 26px !important;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-settings-btn:hover {
+            color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
         a#edgtf-back-to-top {
+            width: 40px;
+            right: 5.5%;
+            bottom: 77px;
             & > span {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+                text-align: center;
+                color: $white;
+                background-color: $yellow;
+                border: 3px solid $white;
+                border-radius: 40px;
+                transition: all 0.75s ease-in-out;
             }
             span.edgtf-icon-stack {
+                width: 40px;
             }
         }
         div.pv-cta-row {
+            z-index: 200;
             div#stay-informed-cta {
+                position: relative;
                 div.cta-container {
+                    width:100%;
+                    height:30vw;
+                    margin:0 auto;
+                    border:none;
+                    position: absolute;
                     a.cta-hero-button {
+                        top: 105%;
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+            &.alt {
+                div#stay-informed-cta {
+                    div.cta-container {
+                        a.cta-hero-button {
+                            top:75%;
+                            &:hover {
+                            }
+                        }
                     }
                 }
             }
         }
-
     }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+        @mixin pv-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    width: auto;
+    border: 2px solid $yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &.w-128 {
+            width: 128px;
+            color: $white;
+            background-color: $red;
+            border-color: $red;
+        }
+        &.w-152 {
+            max-width: 152px;
+        }
+        &.w-176 {
+            max-width: 176px;
+        }
+        &.w-264 {
+            max-width: 264px;
+        }
+        &.w-292 {
+            width: 292px;
+        }
+    }
+
+    body.pharvaris {
+        button,
+        .pv-btn,
+        .btn {
+            @include pv-btn();
+        }
+        a#wt-cli-accept-btn {
+            @include pv-btn();
+            background-color: $white;
+            border-color: $white;
+            color: $black !important;
+        }
+        a#wt-cli-accept-btn:hover {
+            background-color: $yellow !important;
+            border-color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-accept-btn {
+            width: 120px !important;
+            margin: unset;
+            height: 40px;
+        }
+        a#wt-cli-settings-btn {
+            @include bold($poppins);
+            text-decoration: underline !important;
+            border: none !important;
+            width: 192px !important;
+            color: $white !important;
+            font-size: 18px;
+            line-height: 26px !important;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-settings-btn:hover {
+            color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#edgtf-back-to-top {
+            width: 40px;
+            right: 5.5%;
+            bottom: 77px;
+            & > span {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+                text-align: center;
+                color: $white;
+                background-color: $yellow;
+                border: 3px solid $white;
+                border-radius: 40px;
+                transition: all 0.75s ease-in-out;
+            }
+            span.edgtf-icon-stack {
+                width: 40px;
+            }
+        }
+        div.pv-cta-row {
+            z-index: 200;
+            div#stay-informed-cta {
+                position: relative;
+                div.cta-container {
+                    width:100%;
+                    height:30vw;
+                    margin:0 auto;
+                    border:none;
+                    position: absolute;
+                    a.cta-hero-button {
+                        top: 165%;
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+            &.alt {
+                div#stay-informed-cta {
+                    div.cta-container {
+                        a.cta-hero-button {
+                            top:75%;
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+        @mixin pv-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    width: auto;
+    border: 2px solid $yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &.w-128 {
+            width: 128px;
+            color: $white;
+            background-color: $red;
+            border-color: $red;
+        }
+        &.w-152 {
+            max-width: 152px;
+        }
+        &.w-176 {
+            max-width: 176px;
+        }
+        &.w-264 {
+            max-width: 264px;
+        }
+        &.w-292 {
+            width: 292px;
+        }
+    }
+
+    body.pharvaris {
+        button,
+        .pv-btn,
+        .btn {
+            @include pv-btn();
+        }
+        a#wt-cli-accept-btn {
+            @include pv-btn();
+            background-color: $white;
+            border-color: $white;
+            color: $black !important;
+        }
+        a#wt-cli-accept-btn:hover {
+            background-color: $yellow !important;
+            border-color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-accept-btn {
+            width: 120px !important;
+            margin: unset;
+            height: 40px;
+        }
+        a#wt-cli-settings-btn {
+            @include bold($poppins);
+            text-decoration: underline !important;
+            border: none !important;
+            width: 192px !important;
+            color: $white !important;
+            font-size: 18px;
+            line-height: 26px !important;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-settings-btn:hover {
+            color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#edgtf-back-to-top {
+            width: 40px;
+            right: 5.5%;
+            bottom: 77px;
+            & > span {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+                text-align: center;
+                color: $white;
+                background-color: $yellow;
+                border: 3px solid $white;
+                border-radius: 40px;
+                transition: all 0.75s ease-in-out;
+            }
+            span.edgtf-icon-stack {
+                width: 40px;
+            }
+        }
+        div.pv-cta-row {
+            z-index: 200;
+            div#stay-informed-cta {
+                position: relative;
+                div.cta-container {
+                    width:100%;
+                    height:30vw;
+                    margin:0 auto;
+                    border:none;
+                    position: absolute;
+                    a.cta-hero-button {
+                        top: 175%;
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+            &.alt {
+                div#stay-informed-cta {
+                    div.cta-container {
+                        a.cta-hero-button {
+                            top: 75%;
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }

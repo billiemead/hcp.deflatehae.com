@@ -3,6 +3,24 @@
 
 /* ******* PHARVARIS HCP 2024 FORMS START ******* */
 
+input[type=text] {
+  box-sizing: border-box;
+  border: 3px solid $white;
+  transition: 0.25s;
+    -webkit-transition: 0.25s;
+  outline: none;
+}
+
+select:focus,
+input[type=text]:focus {
+  border: 3px solid $red !important;
+  box-shadow: 0 0 3px $red !important;
+    -moz-box-shadow: 0 0 3px $red !important;
+        -webkit-box-shadow: 0 0 3px $red !important;
+  transition: 0.25s;
+    -webkit-transition: 0.25s;
+}
+
 body {
     div.templatera_shortcode {
         div#hae-hcp-form-section {
@@ -82,7 +100,7 @@ body {
                                             font-size: 20px;
                                             color: $black;
                                             background-color: $white;
-                                            border: none;
+                                            border: 3px solid $white;
                                             outline: none;
                                             height: 88px;
                                         }
@@ -116,6 +134,15 @@ body {
                                     justify-content: center;
                                     align-items: center;
                                     width: 50%;
+                                }
+                            }
+                            div#form-col2c {
+                                div.required-fields-container {
+                                    width: 100%;
+                                    margin-top: 16px;
+                                    p.pv-p.center.italic {
+
+                                    }
                                 }
                             }
                             div#form-col3 {
@@ -208,11 +235,16 @@ body {
     }
 }
 
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+
 @media all and (max-width: 1024px) {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 790px;
+                /* max-height: 790px; */
                 padding-top: 6%;
                 padding-bottom: 12%;
                 div.clearfix.edgtf-full-section-inner {
@@ -346,6 +378,15 @@ body {
                                 div#form-col1 {
                                 }
                                 div#form-col2 {
+                                }
+                                div#form-col2b {
+                                    div.sf-form-field {
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 100%;
+                                    }
+                                }
+                                div#form-col2c {
                                 }
                                 div#form-col3 {
                                     div.legal-consent-container {

@@ -7,6 +7,24 @@ div#swap-box {
     animation: fadeIn 2s;
 }
 
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translate3d(0,-100%,0) }
+
+    100% { opacity: 1; transform: none }
+}
+
 @keyframes fadein {
     0% { opacity: 0; }
     100%   { opacity: 1; }

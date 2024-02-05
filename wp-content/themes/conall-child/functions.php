@@ -397,6 +397,11 @@ function overview_section() {
             // insert the elements into the newly created div
             divs.forEach(div => wrapper.append(div));
         </script>
+
+        <script>
+            var html = '<div id="hotspot-grid"></div>';
+            document.body.insertAdjacentHTML('beforeend', html);
+        </script>
         <?php
     }
 }

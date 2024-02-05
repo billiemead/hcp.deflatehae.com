@@ -2,6 +2,11 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 HOTSPOTS START ******* */
+body.pharvaris {
+    div#hotspot-grid {
+
+    }
+}
 
 div.pv-woman-hotspot {
     display: flex;
@@ -16,8 +21,8 @@ div.pv-hotspot-wrapper {
 
 }
 div.ult-tooltipster-base {
-    width: 100% !important;
-    max-width: 1440px !important;
+    width: 430px !important;
+    max-width: 100% !important;
     margin: 0 auto;
 }
 .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
@@ -28,11 +33,7 @@ div.ult-tooltipster-base {
     background-color: #e9b73f;
 }
 div#hotspot-tooltip-hs-one {
-    /* width: 551px !important; */
-    height: 186px;
-    left: calc(100vw - 80.5%) !important;
-    margin-top: 3%;
-    /* margin-left: -24px; */
+    height: 214px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
             div.pv-hotspot-box-wrapper {
@@ -50,10 +51,7 @@ div#hotspot-tooltip-hs-one {
     }
 }
 div#hotspot-tooltip-hs-two {
-    /* width: 551px !important; */
-    height: 186px;
-    left: calc(100vw - 80.5%) !important;
-    margin-top: -3%;
+    height: 277px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-2 {
             div.pv-hotspot-box-wrapper {
@@ -70,10 +68,7 @@ div#hotspot-tooltip-hs-two {
     }
 }
 div#hotspot-tooltip-hs-three {
-    /* width: 551px !important; */
-    height: 186px;
-    left: calc(100vw - 80.5%) !important;
-    margin-top: -3%;
+    height: 214px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-3 {
             div.pv-hotspot-box-wrapper {
@@ -90,13 +85,9 @@ div#hotspot-tooltip-hs-three {
     }
 }
 div#hotspot-tooltip-hs-four {
-    width: 551px !important;
-    height: 186px;
-    left: calc(100vw - 41.5%) !important;
-    margin-top: 3%;
+    height: 256px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-4 {
-            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
@@ -113,14 +104,9 @@ div#hotspot-tooltip-hs-four {
     }
 }
 div#hotspot-tooltip-hs-five {
-    /* width: 551px !important; */
-    height: 186px;
-    left: calc(100vw - 36.5%) !important;
-    left: calc(100vw - 41.5%) !important;
-    margin-top: 3%;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-5 {
-            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
@@ -137,14 +123,9 @@ div#hotspot-tooltip-hs-five {
     }
 }
 div#hotspot-tooltip-hs-six {
-    /* width: 551px !important; */
-    height: 300px;
-    left: calc(100vw - 36.5%) !important;
-    left: calc(100vw - 41.5%) !important;
-    margin-top: 14%;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-6 {
-            transform: translateX(100px);
             div.pv-hotspot-box-wrapper {
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
@@ -179,12 +160,214 @@ div.ult-tooltipster-content {
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
             position: relative;
+            h3.pv-h3.tip-title {
+                @include bold($poppins);
+                color: $red;
+                text-transform: uppercase;
+                text-align: left;
+            }
         }
     }
 }
 
 
 @media all and (max-width: 1024px) {
+
+    body.pharvaris {
+    div#hotspot-grid {
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+div.pv-woman-hotspot {
+    display: flex;
+    justify-content: center;
+
+    img.ult_hotspot_image {
+    }
+}
+.aio-icon-img {
+    font-size: 80px !important;
+}
+div.pv-hotspot-wrapper {
+
+}
+div.ult-tooltipster-base {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 0 !important;
+}
+.ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e9b73f;
+}
+div#hotspot-tooltip-hs-one {
+    height: 214px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-1 {
+            width: 502px;
+            height: 312px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 14% 0 8% 7%;
+            div.pv-hotspot-box-wrapper {
+
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+div#hotspot-tooltip-hs-two {
+    height: 277px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-2 {
+            div.pv-hotspot-box-wrapper {
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-three {
+    height: 214px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-3 {
+            div.pv-hotspot-box-wrapper {
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-four {
+    height: 256px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-4 {
+            width: 502px;
+            height: 312px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 14% 0 8% 7%;
+            div.pv-hotspot-box-wrapper {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-five {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-5 {
+            width: 502px;
+            height: 383px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x384.png");
+            padding: 14% 3% 8% 7%;
+            div.pv-hotspot-box-wrapper {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-six {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-6 {
+            div.pv-hotspot-box-wrapper {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                            li {
+
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+div.ult-tooltipster-content {
+    padding: 0 !important;
+    p {
+        margin: 0;
+    }
+    div.pv-hotspot-box {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 0;
+        background: transparent;
+        border: none;
+        padding: 8%;
+        div.pv-hotspot-box-wrapper {
+            padding-top: 3px;
+            position: relative;
+            h3.pv-h3tip-title {
+                sup.pv-sup {
+
+                }
+            }
+            ul.pv-list.hotspot {
+                li.pv-list-item.hotspot {
+                    br.line-break {
+                        display: none ;
+                    }
+                }
+            }
+        }
+    }
+}
 }
 @media all and (max-width: 980px) {
 }

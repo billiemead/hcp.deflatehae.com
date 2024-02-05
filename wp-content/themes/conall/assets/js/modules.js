@@ -1301,20 +1301,20 @@
                 var docYScroll2 = $(document).scrollTop();
 
                 if(docYScroll2 > stickyAppearAmount) {
-                    mobileHeader.addClass('edgtf-animate-mobile-header');
+                    mobileHeader.addClass('pv-edgtf-animate-mobile-header');
                 } else {
-                    mobileHeader.removeClass('edgtf-animate-mobile-header');
+                    mobileHeader.removeClass('pv-edgtf-animate-mobile-header');
                 }
 
                 if((docYScroll2 > docYScroll1 && docYScroll2 > stickyAppearAmount) || (docYScroll2 < stickyAppearAmount)) {
-                    mobileHeader.removeClass('mobile-header-appear');
+                    mobileHeader.removeClass('pv-mobile-header-appear');
                     mobileHeader.css('margin-bottom', 0);
 
                     if(adminBar.length) {
                         mobileHeader.find('.edgtf-mobile-header-inner').css('top', 0);
                     }
                 } else {
-                    mobileHeader.addClass('mobile-header-appear');
+                    mobileHeader.addClass('pv-mobile-header-appear');
                     mobileHeader.css('margin-bottom', stickyAppearAmount);
                 }
 

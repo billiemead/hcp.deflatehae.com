@@ -149,7 +149,7 @@ body.pharvaris {
                                                 div.edgtf-logo-wrapper.hcp-logo {
                                                     a {
                                                         img.edgtf-normal-logo {
-                                                            height: 57px;
+                                                            height: 58px;
                                                             opacity: 1;
                                                         }
                                                     }
@@ -195,43 +195,7 @@ body.pharvaris {
     }
 }
 @media all and (max-width: 1500px) {
-    body.pharvaris {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
-                div#header-container {
-                    header.edgtf-page-header.hcp-header {
-                        div.edgtf-fixed-wrapper {
-                            &.fixed {
-                            }
-                            div.edgtf-menu-area {
-                                div.edgtf-container.pv-container {
-                                    div.edgtf-container-inner {
-                                        div.edgtf-vertical-align-containers {
-                                            div.edgtf-position-left {
-                                                div.edgtf-position-left-inner {
-                                                    div.edgtf-logo-wrapper.hcp-logo {
-                                                        a {
-                                                            img.edgtf-normal-logo {
-                                                                height: 42px;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            div.edgtf-position-right {
-                                                div.edgtf-position-right-inner {
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+
 }
 @media all and (max-width: 1024px) {
     body.pharvaris {
@@ -242,53 +206,25 @@ body.pharvaris {
                     div.pv-top-bar {
                         height: 40px;
                         div.pv-container {
-                            height: 100%;
                             div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
-                                padding: 0;
                                 div.edgtf-position-right {
-                                    float: unset;
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    align-items: flex-end;
                                     div.edgtf-position-right-inner {
-                                        height: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: flex-end;
                                         ul.menu-site-selector-list {
-                                            display: flex;
-                                            list-style: none;
-                                            width: 100%;
-                                            height: 20.5px;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            margin: 0;
                                             div.menu-selector-box-wrapper {
                                                 div.menu-selector-box {
                                                     li.menu-selector-list-item {
+                                                        span.menu-selector-link,
                                                         a.menu-selector-link {
                                                             font-size: 12px;
                                                             line-height: 26px;
-                                                            font-weight: 400;
-                                                            transition: all 0.5s ease-in-out;
                                                             &.yellow {
-                                                                color: $yellow;
-                                                                -webkit-text-stroke: 1px $yellow;
+
                                                             }
                                                             &.white {
-                                                                color: $white;
+
                                                             }
                                                         }
-                                                        a.menu-selector-link.yellow:hover {
-                                                            font-weight: normal;
-                                                            color: $white;
-                                                            transition: all 0.5s ease-in-out;
-                                                            -webkit-text-stroke: 0px;
-                                                        }
                                                         a.menu-selector-link.white:hover {
-                                                            -webkit-text-stroke: 1px $white;
-                                                            color: $yellow;
-                                                            transition: all 0.5s ease-in-out;
                                                         }
                                                     }
                                                     img.menu-selector-line {
@@ -317,14 +253,14 @@ body.pharvaris {
                             &.fixed {
                             }
                             div.edgtf-menu-area {
-                                height: 86px;
+                                height: 85px;
                                 align-items: flex-start;
                                 div.edgtf-container.pv-container {
                                     top: 12px;
                                     div.edgtf-container-inner {
                                         div.edgtf-vertical-align-containers {
                                             div.edgtf-position-left {
-                                                width: 25%;
+                                                width: 22%;
                                                 div.edgtf-position-left-inner {
                                                     div.edgtf-logo-wrapper.hcp-logo {
                                                         a {
@@ -338,7 +274,7 @@ body.pharvaris {
                                             div.edgtf-position-right {
                                                 float: unset;
                                                 display: flex;
-                                                width: 75%;
+                                                width: 78%;
                                                 justify-content: flex-end;
                                                 align-items: center;
                                                 div.edgtf-position-right-inner {
@@ -488,10 +424,10 @@ body.pharvaris {
                                                     }
                                                 }
                                             div.menu-selector-box.left {
-                                                width: 47%;
+                                                width: 45%;
                                             }
                                             div.menu-selector-box.right {
-                                                width: 53%;
+                                                width: 55%;
                                             }
                                             }
                                         }

@@ -4,50 +4,57 @@
 /* ******* PHARVARIS HCP 2024 FOOTER START ******* */
 
 body.pharvaris {
-    footer {
-        div.edgtf-footer-inner {
-            div.edgtf-footer-top-holder {
-                background-color: $dk-grey;
-                height: 60px;
-                top: 0;
-                div.edgtf-footer-top.edgtf-footer-top-alignment-left {
-                    div.edgtf-container.pv-container {
-                        div.edgtf-container-inner {
-                            padding: 0;
-                            width: 100% !important;
-                            div.clearfix {
-                                div.edgt_column.edgtf-column1 {
-                                    margin: 0;
-                                    display: flex;
-                                    align-items: flex-start;
-                                    div.edgtf-column-inner {
-                                        width: 100%;
-                                        div.widget_nav_menu {
-                                            ul.menu {
-                                                display: flex;
-                                                justify-content: flex-start;
-                                                li.menu-item {
-                                                    @include bold($poppins);
-                                                    font-size: 18px;
-                                                    line-height: 26px;
-                                                    padding: 20px 0;
-                                                    a {
-                                                        color: $white;
-                                                        transition: all 0.25s ease-in-out;
-                                                        text-decoration:none;
-                                                        text-align:center;
+    div.edgtf-wrapper {
+        div.edgtf-wrapper-inner {
+            div.edgtf-content {
+                margin-bottom: 0 !important;
+            }
+            footer {
+                div.edgtf-footer-inner {
+                    div.edgtf-footer-top-holder {
+                        background-color: $dk-grey;
+                        height: 60px;
+                        top: 0;
+                        div.edgtf-footer-top.edgtf-footer-top-alignment-left {
+                            div.edgtf-container.pv-container {
+                                div.edgtf-container-inner {
+                                    padding: 0;
+                                    width: 100% !important;
+                                    div.clearfix {
+                                        div.edgt_column.edgtf-column1 {
+                                            margin: 0;
+                                            display: flex;
+                                            align-items: flex-start;
+                                            div.edgtf-column-inner {
+                                                width: 100%;
+                                                div.widget_nav_menu {
+                                                    ul.menu {
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        li.menu-item {
+                                                            @include bold($poppins);
+                                                            font-size: 18px;
+                                                            line-height: 26px;
+                                                            padding: 20px 0;
+                                                            a {
+                                                                color: $white;
+                                                                transition: all 0.25s ease-in-out;
+                                                                text-decoration:none;
+                                                                text-align:center;
+                                                            }
+                                                            a:hover {
+                                                                color: $yellow;
+                                                                transition: all 0.25s ease-in-out;
+                                                            }
+                                                        }
+                                                        li:first-child {
+                                                            padding-left: 0px;
+                                                            padding-right: 5%;
+                                                        }
+                                                        li:last-child {
+                                                            padding-right: 0;
+                                                        }
                                                     }
-                                                    a:hover {
-                                                        color: $yellow;
-                                                        transition: all 0.25s ease-in-out;
-                                                    }
-                                                }
-                                                li:first-child {
-                                                    padding-left: 0px;
-                                                    padding-right: 5%;
-                                                }
-                                                li:last-child {
-                                                    padding-right: 0;
                                                 }
                                             }
                                         }
@@ -56,67 +63,67 @@ body.pharvaris {
                             }
                         }
                     }
-                }
-            }
-            div.edgtf-footer-bottom-holder {
-                height: 155px;
-                padding: 0;
-                background-color: $dk-grey;
-                div.edgtf-footer-bottom-holder-inner {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    div.edgtf-container.pv-container {
-                        border-top: 1px solid $white;
-                        div.edgtf-container-inner {
-                            width: 100% !important;
-                            div.edgtf-two-columns-50-50 {
-                                div.edgtf-two-columns-50-50-inner {
-                                    margin: 0;
-                                    display: flex;
-                                    height: 70px;
-                                    align-items: flex-end;
-                                    div.edgtf-column.left {
-                                        width: 25%;
-                                        float: unset;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: flex-end;
-                                        height: 100%;
-                                        padding-bottom: 3px;
-                                        div.edgtf-column-inner.left {
-                                            padding: 0;
-                                            div.pv-footer-logo {
+                    div.edgtf-footer-bottom-holder {
+                        height: 155px;
+                        padding: 0;
+                        background-color: $dk-grey;
+                        div.edgtf-footer-bottom-holder-inner {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            div.edgtf-container.pv-container {
+                                border-top: 1px solid $white;
+                                div.edgtf-container-inner {
+                                    width: 100% !important;
+                                    div.edgtf-two-columns-50-50 {
+                                        div.edgtf-two-columns-50-50-inner {
+                                            margin: 0;
+                                            display: flex;
+                                            height: 70px;
+                                            align-items: flex-end;
+                                            div.edgtf-column.left {
+                                                width: 25%;
+                                                float: unset;
                                                 display: flex;
-                                                img.pv-footer-logo-svg {
-
+                                                flex-direction: column;
+                                                justify-content: flex-end;
+                                                height: 100%;
+                                                padding-bottom: 3px;
+                                                div.edgtf-column-inner.left {
+                                                    padding: 0;
+                                                    div.pv-footer-logo {
+                                                        display: flex;
+                                                        img.pv-footer-logo-svg {
+                                                            width: 234px;
+                                                        }
+                                                    }
                                                 }
                                             }
-                                        }
-                                    }
-                                    div.edgtf-column.right {
-                                        width: 75%;
-                                        float: unset;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: flex-end;
-                                        align-items: flex-end;
-                                        height: 100%;
-                                        div.edgtf-column-inner.right {
-                                            padding: 0;
-                                            display: flex;
-                                            justify-content: flex-end;
-                                            align-items: flex-end;
-                                            div.pv-copyright {
-                                                @include medium($poppins);
-                                                font-size: 16px;
-                                                line-height: 26px;
-                                                color: $white;
+                                            div.edgtf-column.right {
+                                                width: 75%;
+                                                float: unset;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: flex-end;
+                                                align-items: flex-end;
+                                                height: 100%;
+                                                div.edgtf-column-inner.right {
+                                                    padding: 0;
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    align-items: flex-end;
+                                                    div.pv-copyright {
+                                                        @include medium($poppins);
+                                                        font-size: 16px;
+                                                        line-height: 26px;
+                                                        color: $white;
+                                                    }
+                                                }
+                                            }
+                                            div.edgtf-column:not(:first-child) {
+                                                margin-top: 0 !important;
                                             }
                                         }
-                                    }
-                                    div.edgtf-column:not(:first-child) {
-                                        margin-top: 0 !important;
                                     }
                                 }
                             }
@@ -128,82 +135,48 @@ body.pharvaris {
     }
 }
 
+
 @media all and (max-width: 1300px) {
-    body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
-                div.edgtf-footer-top-holder {
-                    div.edgtf-footer-top.edgtf-footer-top-alignment-left {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.clearfix {
-                                    div.edgt_column.edgtf-column1 {
-                                        div.edgtf-column-inner {
-                                            div.widget_nav_menu {
-                                                ul.menu {
-                                                    li.menu-item {
-                                                        padding: 20px 0;
-                                                    }
-                                                    li:first-child {
-                                                        padding-left: 0px;
-                                                        padding-right: 5%;
-                                                    }
-                                                    li:last-child {
-                                                        padding-right: 0;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
-                                        height: 60px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media all and (max-width: 1024px) {
     body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
-                div.edgtf-footer-top-holder {
-                    div.edgtf-footer-top.edgtf-footer-top-alignment-left {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.clearfix {
-                                    div.edgt_column.edgtf-column1 {
-                                        width: 100%;
-                                        div.edgtf-column-inner {
-                                            width: 100%;
-                                            div.widget_nav_menu {
-                                                width: 100%;
-                                                ul.menu {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                }
+                footer {
+                    div.edgtf-footer-inner {
+                        div.edgtf-footer-top-holder {
+                            height: 65px;
+                            div.edgtf-footer-top.edgtf-footer-top-alignment-left {
+                                div.edgtf-container.pv-container {
+                                    div.edgtf-container-inner {
 
-                                                    li.menu-item {
-                                                        padding: 20px 0;
-                                                    }
-                                                    li:first-child {
-                                                        padding-left: 0px;
-                                                        padding-right: 5%;
-                                                    }
-                                                    li:last-child {
-                                                        padding-right: 0;
+                                        div.clearfix {
+                                            div.edgt_column.edgtf-column1 {
+
+                                                div.edgtf-column-inner {
+
+                                                    div.widget_nav_menu {
+                                                        ul.menu {
+
+                                                            li.menu-item {
+
+                                                                a {
+
+                                                                }
+                                                                a:hover {
+
+                                                                }
+                                                            }
+                                                            li:first-child {
+
+                                                            }
+                                                            li:last-child {
+
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -212,14 +185,43 @@ body.pharvaris {
                                 }
                             }
                         }
-                    }
-                }
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
+                        div.edgtf-footer-bottom-holder {
+                            height: 143px;
+                            div.edgtf-footer-bottom-holder-inner {
+
+                                div.edgtf-container.pv-container {
+
+                                    div.edgtf-container-inner {
+
+                                        div.edgtf-two-columns-50-50 {
+                                            div.edgtf-two-columns-50-50-inner {
+
+                                                div.edgtf-column.left {
+
+                                                    div.edgtf-column-inner.left {
+
+                                                        div.pv-footer-logo {
+
+                                                            img.pv-footer-logo-svg {
+                                                                width: 205px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.edgtf-column.right {
+
+                                                    div.edgtf-column-inner.right {
+
+                                                        div.pv-copyright {
+
+                                                        }
+                                                    }
+                                                }
+                                                div.edgtf-column:not(:first-child) {
+
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -234,30 +236,52 @@ body.pharvaris {
 }
 @media all and (max-width: 768px) {
     body.pharvaris {
-        footer {
-            div.edgtf-footer-inner {
-                div.edgtf-footer-top-holder {
-                    div.edgtf-footer-top.edgtf-footer-top-alignment-left {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.clearfix {
-                                    div.edgt_column.edgtf-column1 {
-                                        width: 100%;
-                                        div.edgtf-column-inner {
-                                            width: 100%;
-                                            div.widget_nav_menu {
-                                                width: 100%;
-                                                ul.menu {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    margin-bottom: 250px !important;
+                }
+                footer {
+                    div.edgtf-footer-inner {
+                        div.edgtf-footer-top-holder {
+                            height: 250px;
+                            div.edgtf-footer-top.edgtf-footer-top-alignment-left {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                div.edgtf-container.pv-container {
+                                    div.edgtf-container-inner {
 
-                                                    li.menu-item {
-                                                        padding: 20px 0;
-                                                    }
-                                                    li:first-child {
-                                                        padding-left: 0px;
-                                                        padding-right: 5%;
-                                                    }
-                                                    li:last-child {
-                                                        padding-right: 0;
+                                        div.clearfix {
+                                            div.edgt_column.edgtf-column1 {
+                                                align-items: center;
+                                                height: 100%;
+                                                div.edgtf-column-inner {
+
+                                                    div.widget_nav_menu {
+                                                        ul.menu {
+                                                            justify-content: center;
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                            li.menu-item {
+                                                                padding: 0;
+                                                                padding-top: 4%;
+                                                                padding-bottom: 4%;
+                                                                a {
+
+                                                                }
+                                                                a:hover {
+
+                                                                }
+                                                            }
+                                                            li:first-child {
+
+                                                            }
+                                                            li:last-child {
+
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -266,14 +290,53 @@ body.pharvaris {
                                 }
                             }
                         }
-                    }
-                }
-                div.edgtf-footer-bottom-holder {
-                    div.edgtf-footer-bottom-holder-inner {
-                        div.edgtf-container.pv-container {
-                            div.edgtf-container-inner {
-                                div.edgtf-two-columns-50-50 {
-                                    div.edgtf-two-columns-50-50-inner {
+                        div.edgtf-footer-bottom-holder {
+                            height: 250px;
+                            div.edgtf-footer-bottom-holder-inner {
+                                align-items: center;
+                                div.edgtf-container.pv-container {
+                                    height: 100%;
+                                    div.edgtf-container-inner {
+                                        height: 100%;
+                                        div.edgtf-two-columns-50-50 {
+                                            height: 100%;
+                                            div.edgtf-two-columns-50-50-inner {
+                                                height: 100%;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                div.edgtf-column.left {
+                                                    width: 100%;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 0;
+                                                    div.edgtf-column-inner.left {
+
+                                                        div.pv-footer-logo {
+
+                                                            img.pv-footer-logo-svg {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.edgtf-column.right {
+                                                    width: 100%;
+                                                    justify-content: flex-start;
+                                                    align-items: center;
+                                                    padding: 0;
+                                                    div.edgtf-column-inner.right {
+
+                                                        div.pv-copyright {
+
+                                                        }
+                                                    }
+                                                }
+                                                div.edgtf-column:not(:first-child) {
+
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
