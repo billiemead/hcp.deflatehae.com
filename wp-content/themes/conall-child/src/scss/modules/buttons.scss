@@ -153,9 +153,9 @@ body.pharvaris {
                 a.cta-hero-button {
                     transform-origin:top right;
                     right:0;
-                    top:80%;
+                    top:45%;
                     transform: rotate(90deg) translateX(50%);
-                    position: absolute;
+                    position: fixed;
                     width: 185px;
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -175,7 +175,6 @@ body.pharvaris {
                     font-size: 18px;
                     line-height: 18px;
                     border: 3px solid $blue;
-                    /* transition: all 0.5s ease-in-out; */
                     -webkit-transition: 0.45s cubic-bezier(0.54, 0.13, 0, 1.43);
                     -moz-transition: 0.45s cubic-bezier(0.54, 0.13, 0, 1.43);
                     transition: 0.45s cubic-bezier(0.54, 0.13, 0, 1.43);
@@ -195,7 +194,6 @@ body.pharvaris {
                 div.cta-container {
                     height:30vw;
                     a.cta-hero-button {
-                        top:55%;
                         &:hover {
                         }
                     }
@@ -372,7 +370,6 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
-                        top: 105%;
                         &:hover {
 
                         }
@@ -383,7 +380,6 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            top:75%;
                             &:hover {
                             }
                         }
@@ -510,7 +506,7 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
-                        top: 165%;
+
                         &:hover {
 
                         }
@@ -521,7 +517,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            top:75%;
+
                             &:hover {
                             }
                         }
@@ -646,7 +642,7 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
-                        top: 175%;
+
                         &:hover {
 
                         }
@@ -657,7 +653,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            top: 75%;
+
                             &:hover {
                             }
                         }

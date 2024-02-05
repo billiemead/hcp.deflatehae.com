@@ -1,0 +1,16 @@
+.parent {
+display: grid;
+grid-template-columns: 368px 430px auto 430px 274px;
+grid-template-rows: 168px 42px 214px 34px 136px 82px 57px 88px 275px 214px 103px;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 6; }
+.div2 { grid-area: 3 / 2 / 4 / 3; }
+.div3 { grid-area: 2 / 4 / 4 / 5; }
+.div4 { grid-area: 6 / 2 / 9 / 3; }
+.div5 { grid-area: 5 / 4 / 8 / 5; }
+.div6 { grid-area: 10 / 2 / 11 / 3; }
+.div7 { grid-area: 9 / 4 / 10 / 5; }
+.div8 { grid-area: 11 / 1 / 12 / 6; }
