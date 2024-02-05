@@ -211,15 +211,20 @@ div.ult-tooltipster-base {
     background-color: #e9b73f;
 }
 div#hotspot-tooltip-hs-one {
-    height: 214px;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
             width: 502px;
-            height: 312px;
+            height: 314px;
             background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
-            padding: 14% 0 8% 7%;
+            padding: 12% 0 8% 7%;
+            margin-top: 236px;
             div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
 
+                    }
+                }
                 ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
@@ -234,10 +239,20 @@ div#hotspot-tooltip-hs-one {
     }
 }
 div#hotspot-tooltip-hs-two {
-    height: 277px;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-2 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 14% 0 8% 7%;
+            margin-top: 160px;
             div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
                 ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
@@ -251,10 +266,20 @@ div#hotspot-tooltip-hs-two {
     }
 }
 div#hotspot-tooltip-hs-three {
-    height: 214px;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-3 {
+            width: 502px;
+            height: 230px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x230.png");
+            padding: 12% 0 8% 7%;
+            margin-top: 140px;
             div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
                 ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
@@ -268,22 +293,26 @@ div#hotspot-tooltip-hs-three {
     }
 }
 div#hotspot-tooltip-hs-four {
-    height: 256px;
+    height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-4 {
             width: 502px;
-            height: 312px;
+            height: 314px;
             background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
             padding: 14% 0 8% 7%;
+            margin-top: 236px;
             div.pv-hotspot-box-wrapper {
-                div.pv-hotspot-box-wrapper {
-                    ul.pv-hotspot-list {
-                    max-width: 100%;
-                    margin-bottom: 0;
-                    height: 100%;
-                        li {
+                a.tooltip-close {
+                    img.tooltip-close-x {
 
-                        }
+                    }
+                }
+                ul.pv-hotspot-list {
+                max-width: 100%;
+                margin-bottom: 0;
+                height: 100%;
+                    li {
+
                     }
                 }
             }
@@ -295,18 +324,22 @@ div#hotspot-tooltip-hs-five {
     div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-5 {
             width: 502px;
-            height: 383px;
+            height: 385px;
             background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x384.png");
             padding: 14% 3% 8% 7%;
+            margin-top: 300px;
             div.pv-hotspot-box-wrapper {
-                div.pv-hotspot-box-wrapper {
-                    ul.pv-hotspot-list {
-                    max-width: 100%;
-                    margin-bottom: 0;
-                    height: 100%;
-                        li {
+                a.tooltip-close {
+                    img.tooltip-close-x {
 
-                        }
+                    }
+                }
+                ul.pv-hotspot-list {
+                max-width: 100%;
+                margin-bottom: 0;
+                height: 100%;
+                    li {
+
                     }
                 }
             }
@@ -317,16 +350,24 @@ div#hotspot-tooltip-hs-six {
     height: 275px;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-6 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 9.5% 0 8% 7%;
+            margin-top: 216px;
             div.pv-hotspot-box-wrapper {
-                div.pv-hotspot-box-wrapper {
-                    ul.pv-hotspot-list {
-                        max-width: 100%;
-                        margin-bottom: 0;
-                        height: 100%;
-                            li {
+                a.tooltip-close {
+                    img.tooltip-close-x {
 
-                            }
                     }
+                }
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
                 }
             }
         }
@@ -353,6 +394,15 @@ div.ult-tooltipster-content {
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
             position: relative;
+            width: 92%;
+            a.tooltip-close {
+                position: absolute;
+                right: 0;
+                img.tooltip-close-x {
+                    height: 19px;
+                    width: 19px;
+                }
+            }
             h3.pv-h3tip-title {
                 sup.pv-sup {
 
