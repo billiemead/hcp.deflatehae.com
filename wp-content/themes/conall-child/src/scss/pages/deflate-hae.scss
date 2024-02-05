@@ -759,8 +759,8 @@ body.home {
                                                                                 align-items: center;
                                                                                 flex-grow: 1;
                                                                                 p.pv-p {
-                                                                                    padding-top: 6.5%;
-                                                                                    padding-bottom: 6.5%;
+                                                                                    padding-top: 5%;
+                                                                                    padding-bottom: 5%;
                                                                                     text-align: center;
                                                                                 }
                                                                                 div.overview-btn-wrapper {
@@ -1195,16 +1195,24 @@ body.home {
                                                                             align-items: center;
                                                                             div.overview-container-wrapper {
                                                                                 max-height: 190px;
-                                                                                max-width: 350px;
+                                                                                max-width: 100%;
                                                                                 display: flex;
                                                                                 flex-direction: column;
                                                                                 justify-content: space-between;
                                                                                 align-items: center;
                                                                                 flex-grow: 1;
+                                                                                h5 {
+                                                                                    br.line-break {
+                                                                                        display: none;
+                                                                                    }
+                                                                                }
                                                                                 p.pv-p {
-                                                                                    padding-top: 6.5%;
-                                                                                    padding-bottom: 6.5%;
+                                                                                    padding-top: 4%;
+                                                                                    padding-bottom: 4%;
                                                                                     text-align: center;
+                                                                                    br.line-break {
+                                                                                        display: none;
+                                                                                    }
                                                                                 }
                                                                                 div.overview-btn-wrapper {
                                                                                     width: 100%;
