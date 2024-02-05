@@ -358,7 +358,7 @@ body.haeoverview-page {
                         }
                         div.section-background {
                             position: relative;
-                            height: 900px;
+                            height: 945px;
                             background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
                             background-repeat: no-repeat;
                             background-size: 100%;
@@ -367,7 +367,7 @@ body.haeoverview-page {
                             bottom: -2px;
                             div#overview-banner-section {
                                 z-index: 103;
-                                transform: translateY(-60px);
+                                transform: translateY(50px);
                                 margin-bottom: -60px !important;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.banner-col {
