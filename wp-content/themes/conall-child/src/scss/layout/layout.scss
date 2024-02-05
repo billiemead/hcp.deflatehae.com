@@ -48,6 +48,15 @@ input, button, textarea, select {
 sup {
     bottom: 1ex;
 }
+sup.rev-sup-top {
+    font-weight: bold;
+    bottom: 1.9ex;
+}
+sup.rev-sup {
+    bottom: .8ex;
+    font-size: 50% !important;
+    font-weight: bold !important;
+}
 
 /* Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
