@@ -16,6 +16,7 @@ body.livinghae-page {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
                             min-height: 580px;
+                            margin-bottom: 75px !important;
                             & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
@@ -23,63 +24,39 @@ body.livinghae-page {
                                 height: 100%;
                                 width: 60%;
                                 div#home-hero-col {
-                                    padding-top: 6%;
+                                    padding-top: 15%;
                                     div.vc_column-inner {
                                         padding: 0;
-                                        div.pv-row.inner {
-                                            display: flex;
-                                            top: 0;
-                                            left: 0;
-                                            width: 100%;
-                                            height: 100%;
-                                            margin: 0;
-                                            div.edgtf-full-section-inner {
-                                                display: flex;
-                                                width: 100%;
-                                                margin: 0 auto;
-                                                justify-content: center;
-                                                align-items: center;
-                                                flex-direction: column;
-                                                div.pv-col1.center {
-                                                    width: 100%;
-                                                    float: unset;
-                                                    &.top {
-                                                        max-width: 910px;
-                                                    }
-                                                    &.btm {
-
-                                                    }
-                                                    div#hero-logo-alt-desktop {
-                                                        text-align: center;
-                                                        margin-bottom: 5% !important;
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-
-                                                                }
-                                                            }
+                                        div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    max-width: 1265px;
+                                                    margin: 0 auto;
+                                                    padding-bottom: 2%;
+                                                    h2.pv-h2 {
+                                                        font-size: 1.55vw;
+                                                        line-height: 2.1vw;
+                                                        text-transform: uppercase;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
                                                         }
                                                     }
-                                                    div#hero-logo-alt-tablet,
-                                                    div#hero-logo-alt-mobile {
-                                                        display: none;
-                                                    }
-                                                    div.hero-subheading {
-                                                        max-width: 1265px;
-                                                        margin: 0 auto;
-                                                        padding-bottom: 4%;
-                                                        h2.pv-h2 {
-                                                            font-size: 1.55vw;
-                                                            line-height: 2.1vw;
-                                                            text-transform: uppercase;
-                                                            sup.pv-sup {
-                                                                font-size: 65%;
-                                                                bottom: .8ex;
+                                                }
+                                                div#hero-logo-alt-desktop {
+                                                    text-align: center;
+                                                    margin-bottom: 5% !important;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
                                                             }
                                                         }
                                                     }
                                                 }
-                                            }
+                                                div#hero-logo-alt-tablet,
+                                                div#hero-logo-alt-mobile {
+                                                    display: none;
+                                                }
                                         }
                                     }
                                 }
@@ -105,6 +82,7 @@ body.livinghae-page {
                                         div.wpb_wrapper {
                                             div#burdens-top-heading {
                                                 h1.pv-h1.center {
+                                                    font-size: 1.9vw;
                                                     span.hide-copy {
                                                         display: none;
                                                     }
@@ -130,6 +108,7 @@ body.livinghae-page {
                                                         div.option {
                                                             h1.pv-h1 {
                                                                 padding-top: 12px;
+                                                                font-size: 1.9vw;
                                                                 sup.pv-sup {
                                                                     font-size: 50%;
                                                                     bottom: 1.3ex;
@@ -145,6 +124,7 @@ body.livinghae-page {
                                                             select#redselect {
                                                                 margin-bottom: 15px;
                                                                 height: 60px;
+                                                                font-size: 2.1vw;
                                                                 option.pv-option {
 
                                                                 }
@@ -207,7 +187,7 @@ body.livinghae-page {
                                                     /* width: 400px;
                                                     height: 188px; */
                                                     div {
-                                                        h5.pv-h5.center.red {
+                                                        h5.pv-h5.red {
                                                             padding-bottom: 1.5%;
                                                         }
                                                         ul.pv-list {
@@ -248,7 +228,7 @@ body.livinghae-page {
                                 div.pv-col1.four {
                                     position: absolute;
                                     bottom: 0;
-                                    padding-bottom: 120px;
+                                    padding-bottom: 0;
                                     margin-left: 20px;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
@@ -459,70 +439,48 @@ body.livinghae-page {
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                    min-height: 523px;
+                                min-height: 523px;
+                                margin-bottom: 5px !important;
                                 & > div.edgtf-full-section-inner {
                                         max-width: 100%;
                                         width: 80%;
                                     div#home-hero-col {
-                                        padding-top: 11%;
+                                        padding-top: 15%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.pv-row.inner {
-                                                display: flex;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                margin: 0;
-                                                div.edgtf-full-section-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    width: 100%;
-                                                    max-width: 100%;
+                                            div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    padding-bottom: 4%;
+                                                    max-width: 90%;
                                                     margin: 0 auto;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    padding-bottom: 0;
-                                                    padding-top: 0;
-                                                    div.pv-col1.center {
-                                                        float: unset;
-                                                        &.top {
-                                                            max-width: 910px;
+                                                    h2.pv-h2 {
+                                                        /* font-size: 30px;
+                                                        line-height: 40px; */
+                                                        font-size: 2.9vw;
+                                                        line-height: 4vw;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
                                                         }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: block;
-                                                            text-align: center;
-                                                            margin-bottom: 4.5% !important;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
+                                                    }
+                                                }
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: block;
+                                                    text-align: center;
+                                                    margin-bottom: 4.5% !important;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
 
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div.hero-subheading {
-                                                            padding-bottom: 4%;
-                                                            max-width: 90%;
-                                                            margin: 0 auto;
-                                                            h2.pv-h2 {
-                                                                /* font-size: 30px;
-                                                                line-height: 40px; */
-                                                                font-size: 2.9vw;
-                                                                line-height: 4vw;
-                                                                sup.pv-sup {
-                                                                    font-size: 65%;
-                                                                    bottom: .8ex;
-                                                                }
                                                             }
                                                         }
                                                     }
@@ -530,11 +488,10 @@ body.livinghae-page {
                                             }
                                         }
                                     }
-
                                 }
                             }
                             div#living-hae-impacts-row {
-                                height: 1447px;
+                                height: auto;
                                 animation: fadeIn 5s;
                                 background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1024x1475.jpg");
                                 background-repeat: no-repeat;
@@ -564,7 +521,7 @@ body.livinghae-page {
                                     }
                                     div.pv-col1.two {
                                         padding-top: 4%;
-                                        padding-bottom: 18%;
+                                        padding-bottom: 20%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#burden-option-container {
@@ -582,6 +539,7 @@ body.livinghae-page {
                                                             div.option {
                                                                 h1.pv-h1 {
                                                                     padding-top: 12px;
+                                                                    font-size: 1.6vw;
                                                                     sup.pv-sup {
                                                                         font-size: 50%;
                                                                         bottom: 1.3ex;
@@ -597,6 +555,8 @@ body.livinghae-page {
                                                                 select#redselect {
                                                                     margin-bottom: 15px;
                                                                     height: 60px;
+                                                                    font-size: 2.1vw;
+                                                                    line-height: 2.1vw;
                                                                     option.pv-option {
 
                                                                     }
@@ -644,13 +604,15 @@ body.livinghae-page {
                                         padding-right: 10%;
                                         float: unset;
                                         margin: 0 auto;
+                                        height: 320px;
+                                        width: 716px;
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
                                                     div#swap-box {
                                                         /* width: 400px;
                                                         height: 188px; */
                                                         div {
-                                                            h5.pv-h5.center.red {
+                                                            h5.pv-h5.red {
                                                                 padding-bottom: 1.5%;
                                                             }
                                                             ul.pv-list {
@@ -691,9 +653,8 @@ body.livinghae-page {
                                     div.pv-col1.four {
                                         position: relative;
                                         bottom: 0;
-                                        padding-bottom: 120px;
-                                        padding-bottom: 14%;
-                                        margin-left: 20px;
+                                        padding-bottom: 0;
+                                        margin-left: 0;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#living-balloon-hand {
@@ -903,7 +864,7 @@ body.livinghae-page {
                             }
                         }
                     }
-            }
+                }
             }
         }
     }
@@ -922,6 +883,7 @@ body.livinghae-page {
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                margin-bottom: -95px !important;
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
@@ -930,94 +892,69 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.pv-row.inner {
-                                                display: flex;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                margin: 0;
-                                                div.edgtf-full-section-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    width: 80%;
-                                                    max-width: 100%;
-                                                    margin: 0 auto;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    padding-bottom: 0;
-                                                    padding-top: 0;
-                                                    div.pv-col1.center {
-                                                        float: unset;
-                                                        &.top {
-                                                            max-width: 910px;
-                                                        }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: block;
-                                                            text-align: center;
-                                                            margin-bottom: 4.5% !important;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
+                                            div.hero-subheading {
+                                                /* padding-bottom: 35px ; */
+                                                padding-bottom: 4%;
+                                                max-width: 686px;
+                                                margin: 0 auto;
+                                                h2.pv-h2 {
+                                                    /* font-size: 30px;
+                                                    line-height: 40px; */
+                                                    font-size: 4.8vw;
+                                                    line-height: 6.25vw;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-tablet {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: block;
+                                                text-align: center;
+                                                margin-bottom: 4.5% !important;
+                                                max-width: 685px;
+                                                margin: 0 auto;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
 
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div.hero-subheading {
-                                                            /* padding-bottom: 35px ; */
-                                                            padding-bottom: 4%;
-                                                            max-width: 686px;
-                                                            margin: 0 auto;
-                                                            h2.pv-h2 {
-                                                                /* font-size: 30px;
-                                                                line-height: 40px; */
-                                                                font-size: 4.8vw;
-                                                                line-height: 6.25vw;
-                                                                sup.pv-sup {
-                                                                    font-size: 65%;
-                                                                    bottom: .8ex;
-                                                                }
-                                                            }
                                                         }
                                                     }
                                                 }
                                             }
                                         }
                                     }
-
                                 }
                             }
                             div#living-hae-impacts-row {
-                                height: 1147px;
+                                height: auto;
                                 animation: fadeIn 5s;
-                                /* height: 1200px; */
-                                /* transform: translateY(-85px); */
+                                transform: translateY(0);
                                 background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: center center;
                                 width: 102%;
-                                margin-bottom: -103px !important;
+                                margin-bottom: 0 !important;
+                                top: 7px;
                                 div.clearfix.edgtf-full-section-inner {
                                     max-width: 1194px;
                                     height: 100%;
                                     div.pv-col1.one {
-                                        padding-top: 8%;
+                                        padding-top: 20%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#burdens-top-heading {
                                                     max-width: 615px;
                                                     margin: 0 auto;
                                                     h1.pv-h1.center {
+                                                        font-size: 1.6vw;
                                                         span.hide-copy {
                                                             display: inline-block;
                                                         }
@@ -1027,8 +964,8 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-top: 35px;
-                                        padding-bottom: 18%;
+                                        padding-bottom: 20%;
+                                        padding-top: 7%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#burden-option-container {
@@ -1059,8 +996,8 @@ body.livinghae-page {
                                                             div.option-center {
                                                                 text-align: center;
                                                                 select#redselect {
-                                                                    margin-bottom: 15px;
                                                                     height: 60px;
+                                                                    margin-bottom: 5%;
                                                                     option.pv-option {
 
                                                                     }
@@ -1103,19 +1040,22 @@ body.livinghae-page {
                                     }
                                     div.pv-col1.three.whitebox {
                                         max-height: 320px;
-                                        height: 30%;
-                                        padding-left: 10%;
-                                        padding-right: 10%;
+                                        height: 40%;
+                                        padding-left: 15%;
+                                        padding-right: 15%;
                                         float: unset;
                                         margin: 0 auto;
+                                        background-size: 100% 101%;
+                                        padding-bottom: 10%;
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
                                                     div#swap-box {
                                                         /* width: 400px;
                                                         height: 188px; */
                                                         div {
-                                                            h5.pv-h5.center.red {
+                                                            h5.pv-h5.red {
                                                                 padding-bottom: 1.5%;
+                                                                text-align: center;
                                                             }
                                                             ul.pv-list {
                                                                 li.pv-list-item {
@@ -1155,14 +1095,12 @@ body.livinghae-page {
                                     div.pv-col1.four {
                                         position: relative;
                                         bottom: 0;
-                                        padding-bottom: 120px;
-                                        padding-bottom: 14%;
-                                        margin-left: 20px;
+                                        padding: 0;
+                                        margin-left: 0;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#living-balloon-hand {
                                                     img {
-
                                                     }
                                                 }
                                                 div#not-patient-row {
@@ -1189,7 +1127,7 @@ body.livinghae-page {
                                 visibility: visible;
                                 z-index: -1;
                                 div#hae-section-wrapper {
-                                    transform: translateY(-165px);
+                                    transform: translateY(0);
                                     div#jennifers-banner-section {
                                         z-index: 103;
                                         div.edgtf-full-section-inner {
@@ -1206,7 +1144,8 @@ body.livinghae-page {
                                         }
                                     }
                                     div#jennifers-story-section {
-                                        transform: translateY(-75px);
+                                        transform: translateY(0);
+                                        filter: none;
                                         div.edgtf-full-section-inner {
                                             div.pv-col1.ripple-image {
                                                 div.vc_column-inner {

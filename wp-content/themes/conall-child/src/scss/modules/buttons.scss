@@ -58,9 +58,10 @@ body.pharvaris {
     }
     a#wt-cli-accept-btn {
         @include pv-btn();
+        font-weight: 800;
         background-color: $white;
         border-color: $white;
-        color: $black !important;
+        color: $dk-grey !important;
     }
     a#wt-cli-accept-btn:hover {
         background-color: $yellow !important;
@@ -71,6 +72,8 @@ body.pharvaris {
         width: 120px !important;
         margin: unset;
         height: 40px;
+        font-size: 18px;
+        line-height: 18px !important;
     }
     a#wt-cli-settings-btn {
         @include bold($poppins);
@@ -79,7 +82,7 @@ body.pharvaris {
         width: 192px !important;
         color: $white !important;
         font-size: 18px;
-        line-height: 26px !important;
+        line-height: 18px !important;
         text-align: center;
         transition: all 0.5s ease-in-out;
     }
@@ -93,7 +96,7 @@ body.pharvaris {
         width: 152px !important;
         height: 40px;
         font-size: 18px;
-        line-height: 26px !important;
+        line-height: 18px !important;
         text-align: center;
         transition: all 0.5s ease-in-out;
         margin: unset
@@ -204,7 +207,7 @@ body.pharvaris {
                     position: relative;
                     div.cta-container {
                         a.cta-hero-button {
-                            top: 16%;
+                            top: 20%;
                             &:hover {
                             }
                         }
@@ -251,7 +254,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                top: 18%;
+                                top: 19%;
                                 &:hover {
                                 }
                             }
@@ -302,7 +305,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                top: 20.5%;
+                                top: 19%;
                                 &:hover {
                                 }
                             }
@@ -369,7 +372,7 @@ body.pharvaris {
             @include pv-btn();
             background-color: $white;
             border-color: $white;
-            color: $black !important;
+            color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
             background-color: $yellow !important;
@@ -380,6 +383,8 @@ body.pharvaris {
             width: 120px !important;
             margin: unset;
             height: 40px;
+            font-size: 17px;
+            line-height: 17px !important;
         }
         a#wt-cli-settings-btn {
             @include bold($poppins);
@@ -387,8 +392,8 @@ body.pharvaris {
             border: none !important;
             width: 192px !important;
             color: $white !important;
-            font-size: 18px;
-            line-height: 26px !important;
+            font-size: 17px;
+            line-height: 17px !important;
             text-align: center;
             transition: all 0.5s ease-in-out;
         }
@@ -518,7 +523,7 @@ body.pharvaris {
             @include pv-btn();
             background-color: $white;
             border-color: $white;
-            color: $black !important;
+            color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
             background-color: $yellow !important;
@@ -529,6 +534,8 @@ body.pharvaris {
             width: 120px !important;
             margin: unset;
             height: 40px;
+            font-size: 17px;
+            line-height: 17px !important;
         }
         a#wt-cli-settings-btn {
             @include bold($poppins);
@@ -536,8 +543,8 @@ body.pharvaris {
             border: none !important;
             width: 192px !important;
             color: $white !important;
-            font-size: 18px;
-            line-height: 26px !important;
+            font-size: 17px;
+            line-height: 17px !important;
             text-align: center;
             transition: all 0.5s ease-in-out;
         }
@@ -600,7 +607,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                top: 35%;
+                                top: 23%;
                                 &:hover {
                                 }
                             }
@@ -666,7 +673,7 @@ body.pharvaris {
             @include pv-btn();
             background-color: $white;
             border-color: $white;
-            color: $black !important;
+            color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
             background-color: $yellow !important;
@@ -677,6 +684,8 @@ body.pharvaris {
             width: 120px !important;
             margin: unset;
             height: 40px;
+            font-size: 16px;
+            line-height: 16px !important;
         }
         a#wt-cli-settings-btn {
             @include bold($poppins);
@@ -684,8 +693,8 @@ body.pharvaris {
             border: none !important;
             width: 192px !important;
             color: $white !important;
-            font-size: 18px;
-            line-height: 26px !important;
+            font-size: 16px;
+            line-height: 16px !important;
             text-align: center;
             transition: all 0.5s ease-in-out;
         }
@@ -748,7 +757,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                top: 10%;
+                                top: 19.5%;
                                 &:hover {
                                 }
                             }

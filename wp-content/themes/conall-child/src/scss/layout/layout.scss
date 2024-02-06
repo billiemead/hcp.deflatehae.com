@@ -639,9 +639,10 @@ body.pharvaris {
                             }
                         }
                         div#hae-white-box-top-mob {
-
+                            display: none;
                         }
                         div#hae-white-box-bottom-mob {
+                            display: none;
                         }
                     }
                 }
@@ -1488,7 +1489,7 @@ body.pharvaris {
 
                         div.wpb_wrapper {
                             div.hae-white-box-image {
-                                d/* isplay: none; */
+                                display: none;
                                 figure.wpb_wrapper {
 
                                     div.vc_single_image-wrapper {
@@ -1503,10 +1504,10 @@ body.pharvaris {
                                 }
                             }
                             div#hae-white-box-top-mob {
-
+                                display: block;
                             }
                             div#hae-white-box-bottom-mob {
-
+                                display: block;
                             }
                         }
                     }
