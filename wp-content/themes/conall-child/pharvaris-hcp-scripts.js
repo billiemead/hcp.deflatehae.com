@@ -24,29 +24,33 @@ selectEl.onclick = function () {
     }
 }
 
-function showDiv(select){
-    if (select.value =="emotional") {
-       document.getElementById('listswap-container-1').style.display = "block";
+function showDiv(select) {
+    var pic1 = document.getElementById('listswap-container-1');
+    if ( ! pic1.ariaSelected.value || pic1.select.value =="emotional" ) {
+       pic1.style.display = "block";
     }
     else {
-        document.getElementById('listswap-container-1').style.display = "none";
+        pic1.style.display = "none";
     }
-    if (select.value == "occupational") {
-        document.getElementById('listswap-container-2').style.display = "block";
-    }
-    else {
-        document.getElementById('listswap-container-2').style.display = "none";
-    }
-    if (select.value == "social") {
-        document.getElementById('listswap-container-3').style.display = "block";
+    var pic2 = document.getElementById('listswap-container-2');
+    if (!pic2.ariaSelected.value || pic2.select.value == "occupational") {
+        pic2.style.display = "block";
     }
     else {
-        document.getElementById('listswap-container-3').style.display = "none";
+        pic2.style.display = "none";
     }
-    if (select.value == "familial") {
-        document.getElementById('listswap-container-4').style.display = "block";
+    var pic3 = document.getElementById('listswap-container-3');
+    if (!pic3.ariaSelected.value || pic3.select.value == "social") {
+        pic3.style.display = "block";
     }
     else {
-        document.getElementById('listswap-container-4').style.display = "none";
+        pic3.style.display = "none";
+    }
+    var pic4 = document.getElementById('listswap-container-4');
+    if (!pic4.ariaSelected.value || pic4.select.value == "familial") {
+        pic4.style.display = "block";
+    }
+    else {
+        pic4.style.display = "none";
     }
 }

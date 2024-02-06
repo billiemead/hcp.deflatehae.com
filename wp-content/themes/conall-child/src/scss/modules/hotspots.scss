@@ -34,6 +34,7 @@ div.ult-tooltipster-base {
 }
 div#hotspot-tooltip-hs-one {
     height: 214px;
+    transform: translateX(-4.1%);
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
             div.pv-hotspot-box-wrapper {
@@ -170,6 +171,9 @@ div.ult-tooltipster-content {
     }
 }
 
+div.tooltip-close {
+    cursor: pointer;
+}
 
 @media all and (max-width: 1024px) {
 

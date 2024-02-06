@@ -206,28 +206,27 @@ body.pharvaris {
             padding-top: calc(120px - 4%);
             aspect-ratio: 192 / 73;
         }
+        &.utility {
+            top: 0;
+            aspect-ratio: 24 / 5;
+        }
         &.desktop {
             display: block;
-            /* opacity: 1;
-            visibility: visible; */
             top: 50px;
+            &.alt {
+                top: 73px;
+                aspect-ratio: 480 / 151;
+                &.two {
+                    top: -44px;
+                    aspect-ratio: 480 / 151;
+                }
+            }
         }
         &.tablet {
             display: none;
-            visibility: hidden;
-            opacity: 0;
         }
         &.mobile {
             display: none;
-            visibility: hidden;
-            opacity: 0;
-        }
-        &.alt {
-            aspect-ratio: 480 / 140;
-            top: calc(235px - 10vw);
-            &.two {
-
-            }
         }
     }
     div#not-patient-row {
@@ -241,7 +240,7 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.018);
+                    bottom: min(100vw * 0.095);
                     padding-left: 83vw;
                 }
             }
@@ -807,15 +806,23 @@ body.pharvaris {
             &.home {
 
             }
+            &.utility {
+                top: 0;
+                aspect-ratio: 128 / 45;
+            }
             &.desktop {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
+                &.alt {
+                    top: 120px;
+                    aspect-ratio: 1024 / 587;
+                    &.two {
+                        top: -44px;
+                        aspect-ratio: 1024 / 587;
+                    }
+                }
             }
             &.tablet {
                 display: block;
-                opacity: 1;
-                visibility: visible;
                 background-color: $ultra-grey;
                 top: 0;
                 aspect-ratio: 512 / 215;
@@ -824,21 +831,12 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.08);
-                    padding-left: 74vw;
+                    bottom: min(100vw * 0.095);
+                    padding-left: 72vw;
                 }
             }
             &.mobile {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
-            }
-            &.alt {
-                top: calc(235px - 15vw);
-                aspect-ratio: 1024 / 587;
-                &.two {
-
-                }
             }
         }
         div#not-patient-row {
@@ -944,7 +942,8 @@ body.pharvaris {
             }
         }
         h6, h6.pv-h6 {
-
+            font-size: 18px;
+            line-height: 24px;
             &.center {
 
             }
@@ -1217,15 +1216,23 @@ body.pharvaris {
             &.home {
 
             }
+            &.utility {
+                top: 0;
+                aspect-ratio: 576 / 439;
+            }
             &.desktop {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
+                    &.alt {
+                        top: 120px;
+                        aspect-ratio: 96 / 127;
+                        &.two {
+                            top: -44px;
+                            aspect-ratio: 576 / 439;
+                        }
+                    }
             }
             &.tablet {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
             }
             &.mobile {
                 background-repeat: no-repeat;
@@ -1240,9 +1247,6 @@ body.pharvaris {
                 position: relative;
                 right: 50%;
                 width: 100vw;
-                display: block;
-                opacity: 1;
-                visibility: visible;
                 background-color: $ultra-grey;
                 margin-top: 0;
                 aspect-ratio: 288 / 185;
@@ -1251,17 +1255,11 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.08);
-                    padding-left: 74vw;
+                    bottom: min(100vw * 0.095);
+                    padding-left: 72vw;
                     p.pv-p {
                         color: $white;
                     }
-                }
-            }
-            &.alt {
-
-                &.two {
-
                 }
             }
         }
@@ -1490,7 +1488,7 @@ body.pharvaris {
 
                         div.wpb_wrapper {
                             div.hae-white-box-image {
-                                display: none;
+                                d/* isplay: none; */
                                 figure.wpb_wrapper {
 
                                     div.vc_single_image-wrapper {
@@ -1540,15 +1538,15 @@ body.pharvaris {
                                 div#hae-facts-icon-row {
 
                                     div.iconrow {
-
+                                        flex-direction: column;
                                         div.hae-image-wrapper {
-
+                                            margin-right: 0;
                                             img {
 
                                             }
                                         }
                                         div.hae-copy-wrapper {
-
+                                            text-align: center;
                                             p.pv-p {
 
                                             }
@@ -1645,15 +1643,21 @@ body.pharvaris {
             &.home {
 
             }
+            &.utility {
+                top: 0;
+                aspect-ratio: 576 / 439;
+            }
             &.desktop {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
+                    &.alt {
+
+                    &.two {
+
+                    }
+                }
             }
             &.tablet {
                 display: none;
-                visibility: hidden;
-                opacity: 0;
             }
             &.mobile {
                 background-repeat: no-repeat;
@@ -1668,9 +1672,7 @@ body.pharvaris {
                 position: relative;
                 right: 50%;
                 width: 100vw;
-                display: block;
-                opacity: 1;
-                visibility: visible;
+
                 background-color: $ultra-grey;
                 margin-top: 0;
                 aspect-ratio: 288 / 185;
@@ -1679,17 +1681,11 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.08);
-                    padding-left: 74vw;
+                    bottom: min(100vw * 0.095);
+                    padding-left: 72vw;
                     p.pv-p {
                         color: $white;
                     }
-                }
-            }
-            &.alt {
-
-                &.two {
-
                 }
             }
         }

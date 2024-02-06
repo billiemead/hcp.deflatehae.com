@@ -4,51 +4,62 @@
 /* ******* PHARVARIS HCP 2024 404 ERROR START ******* */
 
 body.error404 {
-    div.edgtf-content {
-        div.edgtf-content-inner {
-            background-color: $darker-grey;
-            div.edgtf-container.edgtf-404-page {
-                height: calc(100vh - 456px);
-                background-color: transparent;
-                display: flex;
-                div.edgtf-container-inner.clearfix {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    div.edgtf-page-not-found {
+    div.edgtf-wrapper {
+        div.edgtf-wrapper-inner {
+            div.edgtf-content {
+                bottom: -1px !important;
+                margin-bottom: 0 !important;
+                div.edgtf-content-inner {
+                    background-color: $darker-grey;
+                    div.edgtf-container.edgtf-404-page {
+                        height: calc(100vh - 260px);
+                        background-color: transparent;
                         display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        h1 {
-                            font-size: 40px;
-                            line-height: 60px !important;
-                            text-transform: uppercase;
-                            color: $white;
-                            letter-spacing: 0;
-                            font-weight: 700;
-                            margin-top: 1.5% !important;
-                            margin-bottom: 0 !important;
-                            span {
-                            }
-                        }
-                        h4 {
-                            max-width: 100%;
-                            font-size: 40px;
-                            line-height: 60px !important;
-                            color: $white;
-                            letter-spacing: 0;
-                            text-transform: uppercase;
-                            font-weight: 400 !important;
-                            margin: 0 !important;
-                            span {
+                        div.edgtf-container-inner.clearfix {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 10%;
+                            div.edgtf-page-not-found {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                h1 {
+                                    font-size: 40px;
+                                    line-height: 60px !important;
+                                    text-transform: uppercase;
+                                    color: $white;
+                                    letter-spacing: 0;
+                                    font-weight: 700;
+                                    margin-top: 1.5% !important;
+                                    margin-bottom: 0 !important;
+                                    text-align: center;
+                                    span {
+                                        font-size: unset;
+                                    }
+                                }
+                                h4 {
+                                    text-align: center;
+                                    max-width: 100%;
+                                    font-size: 40px;
+                                    line-height: 60px !important;
+                                    color: $white;
+                                    letter-spacing: 0;
+                                    text-transform: uppercase;
+                                    font-weight: 400 !important;
+                                    margin: 0 !important;
+                                    span {
 
+                                    }
+                                }
+                                a.edgtf-btn {
+                                    margin-top: 8%;
+                                    width: 184px;
+                                    font-size: 20px;
+                                    line-height: 32px
+                                }
                             }
-                        }
-                        a.edgtf-btn {
-                            width: 184px;
-                            font-size: 20px;
-                            line-height: 32px
                         }
                     }
                 }
@@ -59,13 +70,25 @@ body.error404 {
 
 @media only screen and (max-width: 1024px) {
     body.error404 {
-        div.edgtf-content {
-            div.edgtf-content-inner {
-                background-size: contain;
-                div.edgtf-container.edgtf-404-page {
-                    div.edgtf-container-inner.clearfix {
-                        div.edgtf-page-not-found {
-                            margin-top: 10%;
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    bottom: 0 !important;
+                    margin-bottom: 0 !important;
+                    div.edgtf-content-inner {
+                        background-size: contain;
+                        div.edgtf-container.edgtf-404-page {
+                            height: calc(100vh - 208px);
+                            margin: 0 auto;
+                            width: 80%;
+                            text-align: center;
+                            div.edgtf-container-inner.clearfix {
+                                div.edgtf-page-not-found {
+                                    margin-top: 15%;
+                                    max-width: 715px;
+                                    margin-bottom: -10%;
+                                }
+                            }
                         }
                     }
                 }
@@ -75,22 +98,32 @@ body.error404 {
 }
 @media only screen and (max-width: 768px) {
     body.error404 {
-        div.edgtf-content {
-            div.edgtf-content-inner {
-                background-size: cover;
-                background-position: 0px 0px;
-                div.edgtf-container.edgtf-404-page {
-                    height: calc(100vh - 416px);
-                    div.edgtf-container-inner.clearfix {
-                        div.edgtf-page-not-found {
-                            h1 {
-                                font-size: 30px;
-                                text-align: center;
-                                max-width: 60%;
-                            }
-                            h4 {
-                                font-size: 24px;
-                                line-height: 28px;
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    bottom: 0 !important;
+                    margin-bottom: 0 !important;
+                    div.edgtf-content-inner {
+                        background-size: cover;
+                        background-position: 0px 0px;
+                        div.edgtf-container.edgtf-404-page {
+                            height: calc(100vh - 500px);
+                            div.edgtf-container-inner.clearfix {
+                                div.edgtf-page-not-found {
+                                    max-width: 485px;
+                                    margin-top: 17%;
+                                    padding: 0;
+                                    h1 {
+                                        font-size: 40px;
+                                        text-align: center;
+                                        max-width: 80%;
+                                    }
+                                    h4 {
+                                        font-size: 40px;
+                                        line-height: 60px;
+                                        max-width: 80%;
+                                    }
+                                }
                             }
                         }
                     }
@@ -101,63 +134,75 @@ body.error404 {
 }
 @media only screen and (max-width: 576px) {
     body.error404 {
-        div.edgtf-content {
-            div.edgtf-content-inner {
-                background-size: cover;
-                background-position: -50px 0px;
-                div.edgtf-container.edgtf-404-page {
-                    height: calc(100vh - 416px);
-                    div.edgtf-container-inner.clearfix {
-                        div.edgtf-page-not-found {
-                            margin-top: 20%;
-                            h1 {
-                                font-size: 30px;
-                                text-align: center;
-                                max-width: 70%;
-                            }
-                            h4 {
-                                font-size: 24px;
-                                line-height: 28px;
-                                text-align: center;
-                                letter-spacing: 1.5px;
-                                margin-top: 6% !important;
-                                margin-bottom: 6% !important;
+            div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    margin-bottom: 0 !important;
+                    div.edgtf-content-inner {
+                        background-size: cover;
+                        background-position: -50px 0px;
+                        div.edgtf-container.edgtf-404-page {
+                            div.edgtf-container-inner.clearfix {
+                                div.edgtf-page-not-found {
+                                    margin-top: 30%;
+                                    h1 {
+                                        font-size: 40px;
+                                        text-align: center;
+                                        max-width: 100%;
+                                    }
+                                    h4 {
+                                        font-size: 40px;
+                                        line-height: 60px;
+                                        text-align: center;
+                                        letter-spacing: 1.5px;
+                                        margin-top: 0 !important;
+                                        margin-bottom: 6% !important;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
+    }
+    body.error404 div.edgtf-content div.edgtf-content-inner div.edgtf-container.edgtf-404-page {
+        height: calc(100vh - 500px);
     }
 }
 @media only screen and (max-width: 480px) {
-    body.error404 {
-        div.edgtf-content {
-            div.edgtf-content-inner {
-                background-size: cover;
-                background-position: -125px 0px;
-                div.edgtf-container.edgtf-404-page {
-                    height: calc(100vh - 416px);
-                    div.edgtf-container-inner.clearfix {
-                        width: 350px;
-                        div.edgtf-page-not-found {
-                            h1 {
-                                max-width: 100%;
-                            }
-                            h4 {
-                                font-size: 24px;
-                                line-height: 28px;
-                                text-align: center;
-                                letter-spacing: 1.5px;
-                                margin-top: 6% !important;
-                                margin-bottom: 6% !important;
+   /*  body.error404 {
+            div.edgtf-wrapper {
+                div.edgtf-wrapper-inner {
+                    div.edgtf-content {
+                        margin-bottom: 0 !important;
+                        div.edgtf-content-inner {
+                            background-size: cover;
+                            background-position: -125px 0px;
+                            div.edgtf-container.edgtf-404-page {
+                                height: calc(100vh - 416px);
+                                div.edgtf-container-inner.clearfix {
+                                    width: 350px;
+                                    div.edgtf-page-not-found {
+                                        h1 {
+                                            max-width: 100%;
+                                        }
+                                        h4 {
+                                            font-size: 24px;
+                                            line-height: 28px;
+                                            text-align: center;
+                                            letter-spacing: 1.5px;
+                                            margin-top: 6% !important;
+                                            margin-bottom: 6% !important;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-    }
+        } */
 }
 @media only screen and (max-width: 320px) {
 }

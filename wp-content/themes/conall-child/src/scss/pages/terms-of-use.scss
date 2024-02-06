@@ -10,66 +10,23 @@ body.terms-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#terms-hero-row {
-                            top: -150px;
-                            div.edgtf-full-section-inner {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
+                            min-height: 400px;
+                            & > div.edgtf-full-section-inner {
                                 max-width: 100%;
                                 width: 100%;
                                 div#terms-hero-image-col {
-                                    div.vc_column-inner {
-                                        padding: 0;
-                                        div.wpb_wrapper {
-                                            div#hero-background-image {
-                                                figure.wpb_wrapper {
-                                                    width: 100%;
-                                                    div.vc_single_image-wrapper {
-                                                        width: 100%;
-                                                        img {
-                                                            width: 100%;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div.pv-row.inner {
                                     display: flex;
-                                    position: absolute;
                                     top: 0;
                                     left: 0;
                                     width: 100%;
-                                    height: 100%;
+                                    height: 88%;
                                     margin: 0;
-                                    div.edgtf-full-section-inner {
-                                        display: flex;
-                                        flex-direction: column;
-                                        width: 80%;
-                                        max-width: 1230px;
-                                        margin: 0 auto;
-                                        justify-content: center;
-                                        align-items: center;
-                                        padding-bottom: 0;
-                                        padding-top: 6%;
-                                        div.pv-col1.center {
-                                            float: unset;
-                                            &.top {
-                                                max-width: 910px;
-                                            }
-                                            div.hero-subheading {
-                                                padding-top: 35px ;
-                                                h2.pv-h2 {
-                                                    font-size: 1.55vw;
-                                                    line-height: 2.1vw;
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                        bottom: .8ex;
-                                                    }
-                                                }
-                                            }
-
-                                            div#hero-logo {
-                                                text-align: center;
-                                                margin-bottom: 5.5% !important;
+                                    justify-content: center;
+                                    align-items: center;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#terms-hero-logo-desk {
                                                 figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
@@ -78,14 +35,21 @@ body.terms-page {
                                                     }
                                                 }
                                             }
+                                            div#terms-hero-logo-tab {
+                                                display: none;
+                                            }
+                                            div#terms-hero-logo-mob {
+                                                display: none;
+                                            }
                                         }
                                     }
+
                                 }
                             }
                         }
                         div#terms-content {
                             margin-bottom: 0 !important;
-                            top: -85px;
+                            padding: 3% 0 3% 0;
                             h1.pv-h1.policies {
                                 padding-bottom: 20px;
                             }
@@ -101,12 +65,218 @@ body.terms-page {
 }
 
 @media all and (max-width: 1024px) {
+    body.terms-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#terms-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
+                                min-height: 360px;
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#terms-hero-image-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#terms-hero-logo-desk {
+                                                    display: none;
+                                                }
+                                                div#terms-hero-logo-tab {
+                                                    display: block;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#terms-hero-logo-mob {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#terms-content {
+                                margin-bottom: 0 !important;
+                                padding: 5% 0 5% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    body.terms-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#terms-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                min-height: 580px;
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 100%;
+                                    div#terms-hero-image-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#terms-hero-logo-desk {
+                                                    display: none;
+                                                }
+                                                div#terms-hero-logo-tab {
+                                                    display: none;
+                                                }
+                                                div#terms-hero-logo-mob {
+                                                    display: block;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#terms-content {
+                                margin-bottom: 0 !important;
+                                padding: 7% 0 7% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+    body.terms-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#terms-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                min-height: 297px;
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 100%;
+                                    div#terms-hero-image-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#terms-hero-logo-desk {
+
+                                                }
+                                                div#terms-hero-logo-tab {
+                                                    display: none;
+                                                }
+                                                div#terms-hero-logo-mob {
+                                                    display: block;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#terms-content {
+                                margin-bottom: 0 !important;
+                                padding: 9% 0 9% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                                p.pv-p.policies.italic {
+
+                                }
+                                ul.pv-list {
+                                    list-style-position: outside;
+                                    margin: 0;
+                                    li.pv-list-item {
+                                        @include regular($poppins);
+                                        color: $black;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        text-align: left;
+                                        padding-left: 0;
+                                        margin-left: 22px;
+                                        padding-bottom: 20px;
+                                        sup.pv-sup {
+
+                                        }
+                                    }
+                                    li::marker {
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }
