@@ -21,61 +21,27 @@ body.haeoverview-page {
                                 align-items: center;
                                 height: 100%;
                                 width: 70%;
-                                div#home-hero-col {
+                                div#overview-hero-col {
                                     padding-top: 6%;
                                     div.vc_column-inner {
                                         padding: 0;
-                                        div.pv-row.inner {
-                                            display: flex;
-                                            top: 0;
-                                            left: 0;
-                                            width: 100%;
-                                            height: 100%;
-                                            margin: 0;
-                                            div.edgtf-full-section-inner {
-                                                display: flex;
-                                                width: 100%;
-                                                margin: 0 auto;
-                                                justify-content: center;
-                                                align-items: center;
-                                                flex-direction: column;
-                                                div.pv-col1.center {
-                                                    width: 100%;
-                                                    float: unset;
-                                                    &.top {
-                                                        max-width: 910px;
-                                                    }
-                                                    &.btm {
+                                        div.wpb_wrapper {
+                                            div#hero-logo-alt-desktop {
+                                                text-align: center;
+                                                margin-bottom: 5% !important;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
 
-                                                    }
-                                                    div#hero-logo-alt-desktop {
-                                                        text-align: center;
-                                                        margin-bottom: 5% !important;
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                    div#hero-logo-alt-tablet,
-                                                    div#hero-logo-alt-mobile {
-                                                        display: none;
-                                                    }
-                                                    div.hero-subheading {
-                                                        max-width: 1265px;
-                                                        margin: 0 auto;
-                                                        h2.pv-h2 {
-                                                            font-size: 1.55vw;
-                                                            line-height: 2.1vw;
-                                                            sup.pv-sup {
-                                                                font-size: 65%;
-                                                                bottom: .8ex;
-                                                            }
                                                         }
                                                     }
                                                 }
+                                            }
+                                            div#hero-logo-alt-tablet {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: none;
                                             }
                                         }
                                     }
@@ -242,7 +208,6 @@ body.haeoverview-page {
                             }
                         }
                         div#hae-attacks-row {
-                            /* height: 1356px; */
                             background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
                             background-repeat: no-repeat;
                             background-size: 100%;
@@ -273,6 +238,9 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                 }
+                                                &.mobile {
+                                                    display: none;
+                                                }
                                             }
                                         }
                                     }
@@ -281,9 +249,14 @@ body.haeoverview-page {
                                     padding-top: 0;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
-
+                                            rs-fullwidth-wrap#hand-animation-desktop_forcefullwidth {
+                                                display: block;
+                                            }
                                         }
                                     }
+                                }
+                                div.pv-col1.mobile {
+                                    display: none;
                                 }
                             }
                         }
@@ -520,7 +493,7 @@ body.haeoverview-page {
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
-                                    div#home-hero-col {
+                                    div#div#overview-hero-col {
                                     padding-top: 0;
                                         div.vc_column-inner {
                                             padding: 0;
@@ -595,6 +568,7 @@ body.haeoverview-page {
                                 background-size: cover;
                                 background-position: center center;
                                 top: 80px;
+                                margin-bottom: 3% !important;
                                 div.edgtf-full-section-inner {
                                     max-width: 1430px;
                                     div.pv-col1 {
@@ -747,13 +721,12 @@ body.haeoverview-page {
                                 }
                             }
                             div#hae-attacks-row {
-                                /* height: 1356px; */
                                 background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
                                 background-repeat: no-repeat;
                                 background-size: 100%;
                                 background-position: top;
                                 transform: translateY(-40px);
-                                padding-top: 80px;
+                                padding-top: 12%;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
@@ -1024,7 +997,7 @@ body.haeoverview-page {
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
-                                    div#home-hero-col {
+                                    div#overview-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.pv-row.inner {
@@ -1251,13 +1224,11 @@ body.haeoverview-page {
                                 }
                             }
                             div#hae-attacks-row {
-                                /* height: 1356px; */
-                                background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position: top;
+                                background-image: none;
+                                background-color: $backgnd-grey;
                                 transform: translateY(-40px);
-                                padding-top: 80px;
+                                padding-top: 12%;
+                                padding-bottom: 12%;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
@@ -1275,12 +1246,16 @@ body.haeoverview-page {
                                                 }
                                                 div.hae-heading-logo {
                                                     text-align: center;
+                                                    display: none;
                                                     figure.wpb_wrapper.vc_figure {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
 
                                                             }
                                                         }
+                                                    }
+                                                    &.mobile {
+                                                        display: block;
                                                     }
                                                 }
                                             }
@@ -1290,7 +1265,36 @@ body.haeoverview-page {
                                         padding-top: 0;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
+                                                rs-fullwidth-wrap#hand-animation-desktop_forcefullwidth {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.mobile {
+                                        display: flex;
+                                        div#mob-handanimation-image {
+                                            display: block;
+                                        }
+                                        div#mob-handanimation-copy {
+                                            display: block;
 
+                                            div.mob-hand-ani-copy {
+                                                h1.pv-h1.blue.hand.center {
+                                                    margin-bottom: 1% !important;
+                                                    br.line-break {
+
+                                                    }
+                                                    sup.pv-sup {
+                                                        font-size: 50%;
+                                                        bottom: 1.3ex;
+                                                    }
+                                                }
+                                                h4.pv-h4.center.hand {
+                                                    br.line-break {
+
+                                                    }
+                                                }
                                             }
                                         }
                                     }

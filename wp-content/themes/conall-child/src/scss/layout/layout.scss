@@ -294,6 +294,10 @@ body.pharvaris {
         }
         &.blue {
             color: $blue;
+            &.hand {
+                font-size: 40px;
+                text-transform: uppercase;
+            }
         }
         &.center {
             text-align: center;
@@ -367,6 +371,10 @@ body.pharvaris {
         color:  $white;
         &.center {
             text-align: center;
+        }
+        &.hand {
+            color: $black;
+            line-height: 30px;
         }
     }
     h4.h4-refs.left {

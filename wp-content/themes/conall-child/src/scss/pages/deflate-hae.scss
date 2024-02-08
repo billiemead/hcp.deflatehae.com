@@ -457,11 +457,11 @@ body.home {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#home-hero-row-tablet {
-                                top: 45px;
+                                top: 25px;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
-                                    div#home-hero-image-col {
+                                    div#home-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -882,7 +882,7 @@ body.home {
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
-                                    div#home-hero-image-col {
+                                    div#home-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -922,7 +922,7 @@ body.home {
                                                                     flex-direction: column;
                                                                     justify-content: space-between;
                                                                     align-items: center;
-                                                                    max-width: 570px;
+                                                                    max-width: 100%;
                                                                     p.pv-p {
 
                                                                     }
@@ -941,7 +941,7 @@ body.home {
                                                                             }
                                                                     }
                                                                     img.hero-logo {
-                                                                        max-width: 500px;
+                                                                        max-width: 100%;
                                                                     }
                                                                     h2.pv-h2.hero {
                                                                         @include bold($poppins);
@@ -1334,7 +1334,7 @@ body.home {
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
-                                    div#home-hero-image-col {
+                                    div#home-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -1358,7 +1358,9 @@ body.home {
                                                     top: 0;
                                                     left: 0;
                                                     width: 100%;
-                                                    height: 100%;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    height: 600px;
                                                     div.edgtf-full-section-inner {
                                                         padding-bottom: 5%;
                                                         div.pv-col1.left {
@@ -1374,26 +1376,26 @@ body.home {
                                                                     flex-direction: column;
                                                                     justify-content: space-between;
                                                                     align-items: center;
-                                                                    max-width: 570px;
+                                                                    max-width: 100%;
                                                                     p.pv-p {
 
                                                                     }
                                                                     h1.pv-h1.hero.center {
                                                                         @include bold($poppins);
                                                                         font-size: 30px;
-                                                                        line-height: 46px;
+                                                                        line-height: 40px;
                                                                         color: $dk-grey;
                                                                             &.top {
-                                                                                padding-top:6.5%;
-                                                                                padding-bottom:1%;
+                                                                                padding-top: 11%;
+                                                                                padding-bottom:8%;
                                                                             }
                                                                             &.bottom {
-                                                                                padding-top:1%;
-                                                                                padding-bottom:6.5%;
+                                                                                padding-top:8%;
+                                                                                padding-bottom:8%;
                                                                             }
                                                                     }
                                                                     img.hero-logo {
-                                                                        max-width: 500px;
+                                                                        max-width: 100%;
                                                                     }
                                                                     h2.pv-h2.hero {
                                                                         @include bold($poppins);
@@ -1440,7 +1442,7 @@ body.home {
                                             div.wpb_wrapper {
                                                 div#home-intro-heading {
                                                     max-width: 660px;
-                                                    padding-bottom: 50px;
+                                                    padding-bottom: 15%;
                                                     div.wpb_wrapper {
                                                         h1.pv-h1.grey {
                                                             sup.pv-sup {

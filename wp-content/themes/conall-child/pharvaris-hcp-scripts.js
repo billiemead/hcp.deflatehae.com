@@ -17,7 +17,7 @@ selectEl.onclick = function () {
         document.getElementById("living-hae-impacts-row").style.backgroundImage = "url(/wp-content/themes/conall-child/images/living-backg-3-1920x1200.jpg)";
     }
     else if (this.value == "familial") {
-        document.getElementById("living-hae-impacts-row").style.backgroundImage ="url(/wp-content/themes/conall-child/images/living-backg-4-1920x1200.jpg)";
+        document.getElementById("living-hae-impacts-row").style.backgroundImage = "url(/wp-content/themes/conall-child/images/living-backg-4-1920x1200.jpg)";
     }
     else {
         document.getElementById("living-hae-impacts-row").style.backgroundImage = "url(/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg)";
@@ -26,8 +26,8 @@ selectEl.onclick = function () {
 
 function showDiv(select) {
     var pic1 = document.getElementById('listswap-container-1');
-    if ( ! pic1.ariaSelected.value || pic1.select.value =="emotional" ) {
-       pic1.style.display = "block";
+    if (!pic1.ariaSelected.value || pic1.select.value == "emotional") {
+        pic1.style.display = "block";
     }
     else {
         pic1.style.display = "none";

@@ -70,3 +70,12 @@ wp-content/themes/**/node_modules/
 
 # DEV Plugins #
 wp-content/plugins/addon_creator/
+
+#gitpod integration
+!.gitpod.yml
+!.gitpod.dockerfile
+!gitpod_config/
+!gitpod_config/mysql/data/*
+!.gitkeep
+!.htaccess.example
+!index.php
