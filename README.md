@@ -1,5 +1,21 @@
 ![TheAgencyNetwork_logo-long-215x36](https://thewhyse.github.io/tutorial-images/TheAgencyNetwork_logo-long-215x36.png)
 
+## Tech Stack
+thewhyse/pharvaris-deflate-hcp is built on the following main stack:
+
+- [gulp](http://gulpjs.com/) – JS Build Tools / JS Task Runners
+- [Ruby](https://www.ruby-lang.org) – Languages
+- [PHP](http://www.php.net/) – Languages
+- [Sass](http://sass-lang.com/) – CSS Pre-processors / Extensions
+- [Hack](http://hacklang.org/) – Languages
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [PHPUnit](https://phpunit.de/) – Testing Frameworks
+- [Autoprefixer](https://github.com/postcss/autoprefixer) – CSS Pre-processors / Extensions
+- [Babel](http://babeljs.io/) – JavaScript Compilers
+- [ESLint](http://eslint.org/) – Code Review
+
+Full tech stack [here](/techstack.md)
+
 # Local Development Environment Set-up
 
 Following is the local environment setup to prepare for development for client sites hosted with [Pantheon](https://pantheon.io/). If you are not familiar with the **Patheon DevOps workflow**, every website comes with three environments: **Dev, Test, and Live**. Each environment runs a version of the site on its own container. We will only ever be working with the **DEV** environment and while **Patheon** offers developers the option to use either a **Git** or **SFTP** workflow, we will only use **Git**. Please do not ever switch the **Development Mode** to **SFTP** from the **Patheon** dashboard, as it cannot be switched back and commits as well as WIP could be lost.
