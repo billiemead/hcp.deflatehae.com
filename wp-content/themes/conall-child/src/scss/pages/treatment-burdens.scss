@@ -10,6 +10,7 @@ body.treatmentburdens-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#treatment-cta-row {
+                            display: none;
                         }
                         div#treatment-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
@@ -137,10 +138,16 @@ body.treatmentburdens-page {
                                                     }
                                                     div.pv-col2.right {
                                                         width: 71%;
-                                                        padding-left: 7%;
-                                                        padding-right: 10%;
+                                                        padding-left: calc(100vw - 155%);
+                                                        padding-right: calc(100vw - 155%);
+                                                        padding-top: 6%;
+                                                        padding-bottom: 6%;
+                                                        max-height: 350px;
                                                         div.list-wrapper {
+                                                            max-height: 350px;
+                                                            min-width: 596px;
                                                             ul.pv-list {
+                                                                margin: 0;
                                                                 li.pv-list-item {
                                                                     padding: 5px 0;
                                                                     font-weight: 700 !important;
@@ -228,8 +235,21 @@ body.treatmentburdens-page {
 
                                                     }
                                                     div.pv-col2.left {
-                                                        img {
-
+                                                        div.vc_column-inner {
+                                                            div.wpb_wrapper {
+                                                                div#balloon-placeholder-desktop {
+                                                                    display: block;
+                                                                    text-align: center;
+                                                                    figure.wpb_wrapper {
+                                                                        img {
+                                                                            max-width: 80%;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div#balloon-placeholder-mobile {
+                                                                    display: none;
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                     div.pv-col2.right {
@@ -515,69 +535,45 @@ body.treatmentburdens-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.pv-row.inner {
-                                                display: flex;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                margin: 0;
-                                                div.edgtf-full-section-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    width: 100%;
-                                                    max-width: 100%;
-                                                    margin: 0 auto;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    padding-bottom: 0;
-                                                    padding-top: 0;
-                                                    div.pv-col1.center {
-                                                        float: unset;
-                                                        &.top {
-                                                            max-width: 910px;
-                                                        }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: block;
-                                                            text-align: center;
-                                                            margin-bottom: 4.5% !important;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
+                                            div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                padding-bottom: 4%;
+                                                max-width: 60%;
+                                                margin: 0 auto;
+                                                h2.pv-h2 {
+                                                    font-size: 30px;
+                                                    line-height: 40px;
+                                                    /* font-size: 2.9vw;
+                                                    line-height: 4vw; */
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-tablet {
+                                                display: block;
+                                                text-align: center;
+                                                margin-bottom: 4.5% !important;
+                                                max-width: 685px;
+                                                margin: 0 auto;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
 
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div.hero-subheading {
-                                                            padding-bottom: 4%;
-                                                            max-width: 60%;
-                                                            margin: 0 auto;
-                                                            h2.pv-h2 {
-                                                                /* font-size: 30px;
-                                                                line-height: 40px; */
-                                                                font-size: 2.9vw;
-                                                                line-height: 4vw;
-                                                                sup.pv-sup {
-                                                                    font-size: 65%;
-                                                                    bottom: .8ex;
-                                                                }
-                                                            }
                                                         }
                                                     }
                                                 }
                                             }
+                                            }
                                         }
                                     }
-
                                 }
                             }
                             div#treatment-triple-icon-row {
@@ -667,7 +663,10 @@ body.treatmentburdens-page {
                                                             padding-left: 4%;
                                                             padding-right: 4%;
                                                             align-items: flex-start;
+                                                            max-height: 100%;
                                                             div.list-wrapper {
+                                                                max-height: 100%;
+                                                                min-width: 100%;
                                                                 ul.pv-list {
                                                                     li.pv-list-item {
                                                                         padding: 5px 0;
@@ -716,12 +715,12 @@ body.treatmentburdens-page {
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: top;
-                                padding-top: 3%;
+                                padding-top: 1%;
                                 div.edgtf-full-section-inner {
                                     max-width: 885px;
                                     div.pv-col1.top {
-                                        margin-top: 60px;
-                                        margin-bottom: 90px;
+                                        margin-top: 6%;
+                                        margin-bottom: 4%;
                                         div.best-selves-subheading {
                                             h3.pv-h3.center.form {
                                                 sup.pv-sup {
@@ -747,7 +746,7 @@ body.treatmentburdens-page {
                                             display: block;
                                             max-width: 545px;
                                             margin: 0 auto;
-                                            padding-top: 40px;
+                                            padding-top: 3%;
                                         }
                                     }
                                     div.pv-col1.mid {
@@ -1258,6 +1257,8 @@ body.treatmentburdens-page {
                                 padding-top: 3%;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
+                                    width: 100%;
+                                    margin: 0 auto;
                                     div.pv-col1.top {
                                         margin-top: 60px;
                                         margin-bottom: 90px;
@@ -1304,8 +1305,22 @@ body.treatmentburdens-page {
                                                             width: 100%;
                                                         }
                                                         div.pv-col2.left {
-                                                            img {
-
+                                                            div.vc_column-inner {
+                                                                div.wpb_wrapper {
+                                                                    div#balloon-placeholder-desktop {
+                                                                        display: none;
+                                                                    }
+                                                                    div#balloon-placeholder-mobile {
+                                                                        display: block;
+                                                                        text-align: center;
+                                                                        margin-left: 9%;
+                                                                        figure.wpb_wrapper {
+                                                                            img {
+                                                                                max-width: 80%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                         div.pv-col2.right {
@@ -1340,7 +1355,7 @@ body.treatmentburdens-page {
                                                                                     }
                                                                                 }
                                                                                 a#balloon-trigger-1 {
-
+                                                                                    border-right: 4px solid $white;
                                                                                 }
                                                                                 a#balloon-trigger-1:hover,
                                                                                 a#balloon-trigger-2:hover,
@@ -1351,7 +1366,7 @@ body.treatmentburdens-page {
 
                                                                                 }
                                                                                 a#balloon-trigger-3 {
-
+                                                                                    border-left: 4px solid $white;
                                                                                 }
                                                                             }
                                                                         }
@@ -1360,14 +1375,14 @@ body.treatmentburdens-page {
                                                                         background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
                                                                         background-repeat: no-repeat;
                                                                         background-size: 100% 101%;
-                                                                        height: 240px;
+                                                                        height: 235px;
                                                                         display: flex;
                                                                         flex-direction: column;
                                                                         justify-content: center;
                                                                         align-items: center;
-                                                                        padding: 0 15%;
+                                                                        padding: 0 3%;
                                                                         margin: 0 auto;
-                                                                        width: 100%;
+                                                                        width: 460px;
                                                                         filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
                                                                         div#balloon-topbox-wrapper {
                                                                             h4.pv-h4.center {
@@ -1383,16 +1398,16 @@ body.treatmentburdens-page {
                                                                         background-repeat: no-repeat;
                                                                         background-position: center bottom;
                                                                         background-size: 100% 101%;
-                                                                        height: 238px;
-                                                                        width: 292px;
+                                                                        height: 235px;
+                                                                        width: 395px;
                                                                         margin: 0 auto;
                                                                         display: flex;
                                                                         flex-direction: column;
                                                                         justify-content: center;
                                                                         align-items: center;
-                                                                        padding: 6% 5% 0 5%;
+                                                                        padding: 1% 5% 0 5%;
                                                                         position: relative;
-                                                                        top: -42px;
+                                                                        top: -25px;
                                                                         z-index: -1;
                                                                         div#balloon-btmbox-wrapper {
                                                                             h6.pv-h6.center {
@@ -1432,7 +1447,7 @@ body.treatmentburdens-page {
                             }
                             div.section-background {
                                 position: relative;
-                                height: 936px;
+                                height: auto;
                                 background-color: $yellow;
                                 visibility: visible;
                                 display: flex;

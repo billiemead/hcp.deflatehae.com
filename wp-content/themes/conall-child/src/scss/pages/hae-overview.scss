@@ -22,7 +22,7 @@ body.haeoverview-page {
                                 height: 100%;
                                 width: 70%;
                                 div#overview-hero-col {
-                                    padding-top: 6%;
+                                    padding-top: 4%;
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
@@ -42,6 +42,21 @@ body.haeoverview-page {
                                             }
                                             div#hero-logo-alt-mobile {
                                                 display: none;
+                                            }
+                                            div#hero-subheading {
+                                                max-width: 90%;
+                                                margin: 0 auto;
+                                                h2.pv-h2.center.yellow.hero-subheading {
+                                                    /* font-size: 30px;
+                                                    line-height: 40px; */
+                                                    font-size: 1.55vw;
+                                                    line-height: 2.1vw;
+                                                    text-transform: inherit;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -212,7 +227,7 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: 100%;
                             background-position: top;
-                            transform: translateY(-55px);
+                            /* transform: translateY(-55px); */
                             padding-top: 120px;
                             div.edgtf-full-section-inner {
                                 div.pv-col1.top {
@@ -539,7 +554,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                         }
-                                                        div.hero-subheading {
+                                                        div#hero-subheading {
                                                             max-width: 90%;
                                                             margin: 0 auto;
                                                             h2.pv-h2 {
@@ -1045,7 +1060,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                         }
-                                                        div.hero-subheading {
+                                                        div#hero-subheading {
                                                             max-width: 686px;
                                                             margin: 0 auto;
                                                             h2.pv-h2 {

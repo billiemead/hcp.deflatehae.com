@@ -1372,7 +1372,8 @@ body.pharvaris {
             }
         }
         h6, h6.pv-h6 {
-
+            font-size: 20px;
+            line-height: 30px;
             &.center {
 
             }
@@ -1513,9 +1514,15 @@ body.pharvaris {
                             }
                             div#hae-white-box-top-mob {
                                 display: block;
+                                img.vc_single_image-img {
+                                    width: 100%;
+                                }
                             }
                             div#hae-white-box-bottom-mob {
                                 display: block;
+                                img.vc_single_image-img {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
