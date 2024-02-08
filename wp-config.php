@@ -1,9 +1,4 @@
 <?php
-//Begin Really Simple SSL session cookie settings
-@ini_set('session.cookie_httponly', true);
-@ini_set('session.cookie_secure', true);
-@ini_set('session.use_only_cookies', true);
-//END Really Simple SSL cookie settings
 
 /**
  * This config file is yours to hack on. It will work out of the box on Pantheon
@@ -13,7 +8,8 @@
  *
  * https://pantheon.io/docs
  */
-
+$_SERVER['HTTPS'] = 'on';
+$_SERVER['SERVER_PORT'] = 443;
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
