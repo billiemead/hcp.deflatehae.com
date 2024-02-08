@@ -67,7 +67,7 @@ Thumbs.db
 
 # node_modules #
 wp-content/themes/**/node_modules/
-
+wp-content/themes/**/package-lock.json
 # DEV Plugins #
 wp-content/plugins/addon_creator/
 
