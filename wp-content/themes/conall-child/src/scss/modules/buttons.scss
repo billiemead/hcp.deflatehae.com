@@ -156,7 +156,7 @@ body.pharvaris {
                 a.cta-hero-button {
                     transform-origin:top right;
                     right:0;
-                    top: calc(100vh / 2);
+                    top: 350px;
                     /* transform: rotate(90deg) translateX(50%); */
                     position: fixed;
                     width: 185px;
@@ -210,7 +210,7 @@ body.pharvaris {
                     position: relative;
                     div.cta-container {
                         a.cta-hero-button {
-                            /* top: calc(100vh / 2); */
+                            top: 350px;
                             &:hover {
                             }
                         }
@@ -246,7 +246,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            /* top: 14%; */
+                            top: 350px;
                             &:hover {
                             }
                         }
@@ -257,7 +257,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                /* top: 19%; */
+                                top: 350px;
                                 &:hover {
                                 }
                             }
@@ -297,7 +297,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            /* top: 23%; */
+
                             &:hover {
                             }
                         }
@@ -308,7 +308,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                /* top: 19%; */
+
                                 &:hover {
                                 }
                             }
@@ -437,6 +437,7 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
+                        top: 260px;
                         &:hover {
 
                         }
@@ -447,7 +448,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                           /*  top: 23%; */
+                           top: 260px;
                             &:hover {
                             }
                         }
@@ -458,7 +459,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                /* top: 21%; */
+                                top: 260px;
                                 &:hover {
                                 }
                             }
@@ -588,7 +589,7 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
-                        /* top: 28%; */
+                        top: 250px;
                         &:hover {
 
                         }
@@ -599,7 +600,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            /* top: 37.5%; */
+                            top: 250px;
                             &:hover {
                             }
                         }
@@ -610,7 +611,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                /* top: 23%; */
+                                top: 250px;
                                 &:hover {
                                 }
                             }
@@ -738,7 +739,7 @@ body.pharvaris {
                     border:none;
                     position: absolute;
                     a.cta-hero-button {
-                    /* top: 33.5%; */
+
                         &:hover {
 
                         }
@@ -749,7 +750,7 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-                            /* top: 41%; */
+
                             &:hover {
                             }
                         }
@@ -760,7 +761,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                /* top: 19.5%; */
+                                
                                 &:hover {
                                 }
                             }

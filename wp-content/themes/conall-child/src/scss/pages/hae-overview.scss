@@ -337,6 +337,9 @@ body.haeoverview-page {
                                 }
                             }
                         }
+                        div#mob-triwhite-box-row {
+                            display: none;
+                        }
                         div.section-background {
                             position: relative;
                             height: 945px;
@@ -988,12 +991,13 @@ body.haeoverview-page {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#overview-cta-row {
+
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
-                                    width: 100%;
+                                    width: 80%;
                                     div#overview-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
@@ -1302,7 +1306,7 @@ body.haeoverview-page {
                                 /* padding-bottom: 20%; */
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
-                                    width: 80%;
+                                    width: 90%;
                                     margin: 0 auto;
                                     div.pv-col1.top {
                                         padding-bottom: 5%;
@@ -1360,6 +1364,125 @@ body.haeoverview-page {
                                     }
                                 }
                             }
+                            div#mob-triwhite-box-row {
+                                display: flex;
+                                margin-top: 5%;
+                                margin-bottom: 16% !important;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 88%;
+                                    margin: 0 auto;
+                                    div.pv-col1.tribox-col {
+                                        div.triwhite-boxrow {
+                                            background-image: url("/wp-content/themes/conall-child/images/mob-brandyk-white-box-502x240.png");
+                                            background-size: 100% 101%;
+                                            background-repeat: no-repeat;
+                                            min-height: 240px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-position: center center;
+                                            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                            /* box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.45); */
+                                            div.brandyk-icon {
+
+                                            }
+                                            div.brandyk-copy {
+                                                h4.h4-brandy-red {
+                                                    padding-top: 2%;
+                                                    sup.pv-sup {
+                                                        font-size: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-1 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            top: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-2 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            bottom: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--1 {
+                                            /* padding-top: 20%;
+                                            padding-bottom: 16%; */
+                                            margin-bottom: 2.5% !important;
+                                            /* padding-bottom: 8%; */
+                                            div.brandyk-copy.one {
+
+                                            }
+                                            div.brandyk-icon.one {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                        /* div#triwhite-box-row--1:after {
+                                            content: url("/wp-content/themes/conall-child/images/yellow-arrow-button-58x58.svg");
+                                            position: absolute;
+                                            bottom: 0px;
+                                            margin: 0 auto;
+                                        } */
+                                        div#triwhite-box-row--2 {
+                                            /* padding-top: 16%;
+                                            padding-bottom: 16%; */
+                                            margin-bottom: 2.5% !important;
+                                            div.brandyk-copy.two {
+
+                                            }
+                                            div.brandyk-icon.two {
+                                                img {
+                                                    transform: rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--3 {
+                                            /* padding-top: 16%;
+                                            padding-bottom: 20%; */
+                                            /* padding-top: 8%; */
+                                            div.brandyk-copy.three {
+
+                                            }
+                                            div.brandyk-icon.three {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             div.section-background {
                                 position: relative;
                                 height: auto;
@@ -1393,6 +1516,7 @@ body.haeoverview-page {
                                 }
                                 div#overview-facts-section {
                                     div.edgtf-full-section-inner {
+                                        width: 88%;
                                         div.pv-col1.ripple-image {
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
@@ -1423,8 +1547,9 @@ body.haeoverview-page {
                                             }
                                         }
                                         div.pv-col1.facts-icon-col {
-                                            div.wpb_wrapper {
-                                                div.wpb_text_column.wpb_content_element {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div.wpb_text_column.wpb_content_element {
                                                     padding-top: 9%;
                                                     padding-bottom: 7%;
                                                     div.wpb_wrapper {
@@ -1432,8 +1557,10 @@ body.haeoverview-page {
                                                             max-width: 980px;
                                                             width: 85%;
                                                             div.iconrow {
+                                                                width: 100%;
+                                                                padding-top: 5%;
                                                                 div.hae-image-wrapper {
-                                                                    height: 150px;
+                                                                    height: 140px;
                                                                     margin-right: 0;
                                                                     width: 100%;
                                                                     img {
@@ -1442,10 +1569,11 @@ body.haeoverview-page {
                                                                 }
                                                                 div.hae-copy-wrapper {
                                                                     flex-direction: column;
+                                                                    width: 100%;
                                                                     p.pv-p {
                                                                     }
                                                                     ul {
-                                                                        margin: 6px 0 0 0;
+                                                                        margin: 10px 0 0 0;
                                                                         li {
                                                                             padding-bottom: 2%;
                                                                             sup.pv-sup {
@@ -1480,6 +1608,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div#icon-row4 {
+                                                                padding-top: 7%;
                                                                 img.hae-icon.four {
 
                                                                 }
@@ -1493,6 +1622,8 @@ body.haeoverview-page {
                                                 a.pv-btn {
                                                     margin-bottom: 50px;
                                                 }
+                                                }
+
                                             }
                                         }
                                     }
