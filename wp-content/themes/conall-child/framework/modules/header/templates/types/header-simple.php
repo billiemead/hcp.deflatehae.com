@@ -13,17 +13,19 @@
                     <div class="edgtf-position-right-inner">
                         <ul class="menu-site-selector-list">
                             <div class="menu-selector-box-wrapper">
-                                <div class="menu-selector-box left">
-                                    <li class="menu-selector-list-item">
-                                        <span class="menu-selector-link yellow" href="#">For healthcare professionals</span>
-                                    </li>
-                                    <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
-                                </div>
-                                <div class="menu-selector-box right">
-                                    <li class="menu-selector-list-item">
-                                        <a class="menu-selector-link white" href="#">For people with HAE and caregivers</a>
-                                    </li>
-                                    <img class="menu-selector-caret" src="/wp-content/themes/conall-child/images/selector-caret.svg" />
+                                <div class="edgtf-grid">
+                                    <div class="menu-selector-box left">
+                                        <li class="menu-selector-list-item">
+                                            <span class="menu-selector-link yellow" href="#">For healthcare professionals</span>
+                                        </li>
+                                        <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
+                                    </div>
+                                    <div class="menu-selector-box right">
+                                        <li class="menu-selector-list-item">
+                                            <a class="menu-selector-link white" href="#">For people with HAE and caregivers</a>
+                                        </li>
+                                        <img class="menu-selector-caret" src="/wp-content/themes/conall-child/images/selector-caret.svg" />
+                                    </div>
                                 </div>
                             </div>
                         </ul>

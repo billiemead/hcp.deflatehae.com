@@ -54,49 +54,53 @@ body.pharvaris {
                                             height: 100%;
                                             align-items: center;
                                             justify-content: flex-end;
-                                            div.menu-selector-box {
+                                            div.edgtf-grid {
                                                 display: flex;
-                                                justify-content: space-around;
-                                                align-items: center;
-                                                li.menu-selector-list-item {
-                                                    span.menu-selector-link,
-                                                    a.menu-selector-link {
-                                                        font-family: $poppins;
-                                                        font-size: 14px;
-                                                        line-height: 26px;
-                                                        font-weight: 400;
-                                                        transition: all 0.25s ease-in-out;
-                                                        &.yellow {
+                                                justify-content: flex-end;
+                                                div.menu-selector-box {
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    li.menu-selector-list-item {
+                                                        span.menu-selector-link,
+                                                        a.menu-selector-link {
+                                                            font-family: $poppins;
+                                                            font-size: 14px;
+                                                            line-height: 26px;
+                                                            font-weight: 400;
+                                                            transition: all 0.25s ease-in-out;
+                                                            &.yellow {
+                                                                color: $yellow;
+                                                                font-weight: 700;
+                                                            }
+                                                            &.white {
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        a.menu-selector-link.white:hover {
                                                             color: $yellow;
-                                                            font-weight: 700;
-                                                        }
-                                                        &.white {
-                                                            color: $white;
+                                                            transition: all 0.25s ease-in-out;
                                                         }
                                                     }
-                                                    a.menu-selector-link.white:hover {
-                                                        color: $yellow;
-                                                        transition: all 0.25s ease-in-out;
+                                                    img.menu-selector-line {
+                                                        padding-left: 20px;
+                                                        padding-right: 20px;
+                                                    }
+                                                    img.menu-selector-caret {
+                                                        margin-left: 8px;
+                                                        height: 8px;
+                                                        width: 8px;
+                                                        top: 1px;
+                                                        position: relative;
                                                     }
                                                 }
-                                                img.menu-selector-line {
-                                                    padding-left: 20px;
-                                                    padding-right: 20px;
+                                                div.menu-selector-box.left {
+                                                    width: auto;
+                                                    border-right: none;
                                                 }
-                                                img.menu-selector-caret {
-                                                    margin-left: 8px;
-                                                    height: 8px;
-                                                    width: 8px;
-                                                    top: 1px;
-                                                    position: relative;
+                                                div.menu-selector-box.right {
+                                                    width: auto;
                                                 }
-                                            }
-                                            div.menu-selector-box.left {
-                                                width: auto;
-                                                border-right: none;
-                                            }
-                                            div.menu-selector-box.right {
-                                                width: auto;
                                             }
                                         }
                                     }
@@ -381,52 +385,62 @@ body.pharvaris {
                                             list-style: none;
                                             width: 100%;
                                             height: 100%;
-                                            justify-content: center;
-                                            align-items: center;
                                             margin: 0;
+                                            border: 2px solid #767676;
                                             div.menu-selector-box-wrapper {
-                                                div.menu-selector-box {
-                                                    border: 1px solid #767676;
-                                                    height: 100%;
+                                                div.edgtf-grid {
+                                                    width: 100%;
+                                                    padding-left: 35px;
+                                                    padding-right: 35px;
                                                     display: flex;
-                                                    justify-content: center;
-                                                    li.menu-selector-list-item {
-                                                        a.menu-selector-link {
-                                                            font-size: 12px;
-                                                            line-height: 26px;
-                                                            font-weight: 400;
-                                                            transition: all 0.5s ease-in-out;
-                                                            &.yellow {
-                                                                color: $yellow;
+                                                    justify-content: space-between;
+                                                    height: 40px;
+                                                    div.menu-selector-box {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        li.menu-selector-list-item {
+                                                            a.menu-selector-link {
+                                                                font-size: 12px;
+                                                                line-height: 12px;
+                                                                font-weight: 400;
+                                                                transition: all 0.5s ease-in-out;
+                                                                &.yellow {
+                                                                    color: $yellow;
 
+                                                                }
+                                                                &.white {
+                                                                    color: $white;
+                                                                }
                                                             }
-                                                            &.white {
+                                                            a.menu-selector-link.yellow:hover {
+                                                                font-weight: normal;
                                                                 color: $white;
+                                                                transition: all 0.5s ease-in-out;
+                                                            }
+                                                            a.menu-selector-link.white:hover {
+                                                                color: $yellow;
+                                                                transition: all 0.5s ease-in-out;
                                                             }
                                                         }
-                                                        a.menu-selector-link.yellow:hover {
-                                                            font-weight: normal;
-                                                            color: $white;
-                                                            transition: all 0.5s ease-in-out;
+                                                        img.menu-selector-line {
+                                                            display: none;
                                                         }
-                                                        a.menu-selector-link.white:hover {
-                                                            color: $yellow;
-                                                            transition: all 0.5s ease-in-out;
+                                                        img.menu-selector-caret {
+                                                            margin-left: 8px;
                                                         }
                                                     }
-                                                    img.menu-selector-line {
-                                                        display: none;
+                                                    div.menu-selector-box.left {
+                                                        width: 45%;
+                                                        justify-content: flex-start;
+                                                        border-right: 1px solid #767676;
                                                     }
-                                                    img.menu-selector-caret {
-                                                        margin-left: 8px;
+                                                    div.menu-selector-box.right {
+                                                        width: 55%;
+                                                        justify-content: flex-end;
+                                                        border-left: 1px solid #767676;
                                                     }
                                                 }
-                                            div.menu-selector-box.left {
-                                                width: 45%;
-                                            }
-                                            div.menu-selector-box.right {
-                                                width: 55%;
-                                            }
                                             }
                                         }
                                     }
@@ -460,6 +474,7 @@ body.pharvaris {
                                             float: right;
                                             a {
                                                 color: $blue;
+                                                padding-right: 0;
                                                 span.edgtf-mobile-opener-icon-holder {
                                                     i.edgtf-icon-font-awesome.fa.fa-bars {
 
@@ -475,6 +490,8 @@ body.pharvaris {
                                                     a {
                                                         img.edgtf-normal-mobile-logo {
                                                             width: 140px;
+                                                            left: -3px;
+                                                            position: relative;
                                                         }
                                                     }
                                                 }
@@ -532,52 +549,53 @@ body.pharvaris {
                                             list-style: none;
                                             width: 100%;
                                             height: 100%;
-                                            justify-content: center;
-                                            align-items: center;
                                             margin: 0;
                                             div.menu-selector-box-wrapper {
-                                                div.menu-selector-box {
-                                                    border: 1px solid #767676;
-                                                    height: 100%;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    li.menu-selector-list-item {
-                                                        span.menu-selector-link,
-                                                        a.menu-selector-link {
-                                                            font-size: 10px;
-                                                            line-height: 12px;
-                                                            font-weight: 400;
-                                                            transition: all 0.5s ease-in-out;
-                                                            &.yellow {
-                                                                color: $yellow;
-                                                            }
-                                                            &.white {
-                                                                color: $white;
-                                                            }
+                                                div.edgtf-grid {
+                                                    div.menu-selector-box {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        li.menu-selector-list-item {
+                                                            span.menu-selector-link,
+                                                                a.menu-selector-link {
+                                                                    font-size: 12px;
+                                                                    line-height: 12px;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                    &.yellow {
+                                                                        color: $yellow;
+                                                                        display: block;
+                                                                        text-align: left;
+                                                                    }
+                                                                    &.white {
+                                                                        color: $white;
+                                                                        display: block;
+                                                                    }
+                                                                }
+                                                                a.menu-selector-link.yellow:hover {
+                                                                    font-weight: normal;
+                                                                    color: $white;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                }
+                                                                a.menu-selector-link.white:hover {
+                                                                    color: $yellow;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                }
                                                         }
-                                                        a.menu-selector-link.yellow:hover {
-                                                            font-weight: normal;
-                                                            color: $white;
-                                                            transition: all 0.5s ease-in-out;
+                                                        img.menu-selector-line {
+                                                            display: none;
                                                         }
-                                                        a.menu-selector-link.white:hover {
-                                                            color: $yellow;
-                                                            transition: all 0.5s ease-in-out;
+                                                        img.menu-selector-caret {
+                                                            margin-left: 8px;
                                                         }
                                                     }
-                                                    img.menu-selector-line {
-                                                        display: none;
+                                                    div.menu-selector-box.left {
+                                                        width: 45%;
                                                     }
-                                                    img.menu-selector-caret {
-                                                        margin-left: 8px;
+                                                    div.menu-selector-box.right {
+                                                        width: 55%;
                                                     }
                                                 }
-                                            div.menu-selector-box.left {
-                                                width: 45%;
-                                            }
-                                            div.menu-selector-box.right {
-                                                width: 55%;
-                                            }
                                             }
                                         }
                                     }
