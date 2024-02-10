@@ -229,6 +229,7 @@ body.treatmentburdens-page {
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
                                             div#balloon-animation-row-inner {
+                                                display: none;
                                                 div.edgtf-full-section-inner {
                                                     width: 100%;
                                                     display: flex;
@@ -1084,6 +1085,7 @@ body.treatmentburdens-page {
                             }
                             div#treatment-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                min-height: 700px;
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -1208,7 +1210,7 @@ body.treatmentburdens-page {
                                                                 }
                                                             }
                                                             div.title-wrapper {
-                                                                padding-top: 30px;
+                                                                padding-top: 15px;
                                                                 h5.pv-h5.center.white {
                                                                     sup.pv-sup {
                                                                         font-size: 60%;
@@ -1219,29 +1221,29 @@ body.treatmentburdens-page {
                                                         div.pv-col2.left {
                                                             width: 72%;
                                                             height: 77%;
-                                                            padding-top: 19%;
+                                                            padding-top: 23%;
                                                             div#icon-injection {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 95%;
+                                                                        max-width: 70%;
                                                                     }
                                                             }
                                                             div#icon-infusion {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 95%;
+                                                                        max-width: 70%;
                                                                     }
                                                             }
                                                             div#icon-oral {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 95%;
+                                                                        max-width: 70%;
                                                                     }
                                                             }
                                                         }
                                                         div.pv-col2.right {
                                                             width: 72%;
-                                                            padding-top: 5%;
+                                                            padding-top: 7%;
                                                             padding-left: 4%;
                                                             padding-right: 4%;
                                                             align-items: flex-start;
@@ -1299,11 +1301,11 @@ body.treatmentburdens-page {
                                 padding-top: 3%;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
-                                    width: 100%;
+                                    width: 80%;
                                     margin: 0 auto;
                                     div.pv-col1.top {
-                                        margin-top: 60px;
-                                        margin-bottom: 90px;
+                                        margin-bottom: 2%;
+                                        margin-top: 8%;
                                         div.best-selves-subheading {
                                             h3.pv-h3.center.form {
                                                 sup.pv-sup {
@@ -1321,7 +1323,7 @@ body.treatmentburdens-page {
                                                 div.vc_single_image-wrapper {
                                                     text-align: center;
                                                     img.vc_single_image-img {
-                                                        max-width: 418px;
+                                                        max-width: 100%;
                                                         text-align: center;
                                                     }
                                                 }
@@ -1468,10 +1470,10 @@ body.treatmentburdens-page {
                                         }
                                     }
                                     div.pv-col1.btm {
+                                        display: none;
                                         position: relative;
                                         bottom: 0;
                                         width: 100%;
-                                        display: flex;
                                         height: 60px;
                                         div#balloon-animation-footnote2 {
                                             margin-top: 0;

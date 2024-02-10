@@ -567,10 +567,12 @@ body.pharvaris {
                                                                         color: $yellow;
                                                                         display: block;
                                                                         text-align: left;
+                                                                        line-height: 12px;
                                                                     }
                                                                     &.white {
                                                                         color: $white;
                                                                         display: block;
+                                                                        line-height: 12px;
                                                                     }
                                                                 }
                                                                 /* a.menu-selector-link.yellow:hover {
@@ -591,10 +593,10 @@ body.pharvaris {
                                                         }
                                                     }
                                                     div.menu-selector-box.left {
-                                                        width: 45%;
+                                                        width: 50%;
                                                     }
                                                     div.menu-selector-box.right {
-                                                        width: 55%;
+                                                        width: 50%;
                                                     }
                                                 }
                                             }

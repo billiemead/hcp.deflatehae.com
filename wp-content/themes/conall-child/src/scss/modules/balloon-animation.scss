@@ -1,0 +1,767 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 BALLOON ANIMATION SECTION START ******* */
+
+body.treatmentburdens-page {
+    div.edgtf-wrapper {
+        div.edgtf-wrapper-inner {
+            div.edgtf-content {
+                div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#treatment-balloon-animation-row {
+                            div.edgtf-full-section-inner {
+                                div.pv-col1.mid {
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+                                            div#balloon-animation-row-grid {
+                                                div.edgtf-full-section-inner {
+                                                    width: 100%;
+                                                    max-width: 100%;
+                                                    div.pv-col1.grid {
+                                                        div.vc_column-inner {
+                                                            div.wpb_wrapper {
+                                                                div.wpb_raw_code {
+                                                                    div.wpb_wrapper {
+
+                                                                        div.ba-grid {
+                                                                                display: grid;
+                                                                                grid-template-columns: 1% 8% 40% 40% 8% 1%;
+                                                                                grid-template-rows: 5% 12% 10% auto 20% 20% 20% auto;
+                                                                                grid-column-gap: 5px;
+                                                                                grid-row-gap: 0px;
+                                                                            div.ba-grid1 {
+                                                                                grid-area: 1 / 2 / 9 / 3;
+
+                                                                            }
+                                                                            div.ba-grid2 {
+                                                                                grid-area: 1 / 3 / 9 / 4;
+                                                                                display: flex;
+                                                                                justify-content: flex-end;
+                                                                                align-items: flex-end;
+                                                                                img.vc_single_image-img.mobile {
+                                                                                    display: none;
+                                                                                }
+                                                                            }
+                                                                            div.ba-grid3 {
+                                                                                 grid-area: 2 / 4 / 3 / 5;
+                                                                                div#balloon-animation-heading {
+                                                                                    p.pv-p.center.bold.italic {
+                                                                                        text-align: center !important;
+                                                                                        max-width: 100%;
+                                                                                        margin: 0 auto;
+                                                                                        font-size: 1vw;
+                                                                                        line-height: 1.3vw;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div.ba-grid4 {
+                                                                                grid-area: 3 / 4 / 4 / 5;
+                                                                                display: flex;
+                                                                                justify-content: stretch;
+                                                                                align-items: center;
+                                                                                flex-wrap: nowrap;
+                                                                                width: 100%;
+                                                                                 div#button-animation-triggers {
+                                                                                    width: 100%;
+                                                                                    div.grid_wrapper {
+                                                                                        div#balloon-animation-button-wrapper {
+                                                                                            display: flex;
+                                                                                            justify-content: center;
+                                                                                            align-items: center;
+                                                                                            width: 100%;
+                                                                                            margin: 0 auto;
+                                                                                            max-width: 100%;
+                                                                                            margin-top: 1%;
+                                                                                            margin-bottom: 1%;
+                                                                                            div.button-wrapper {
+                                                                                                width: 33%;
+                                                                                                padding-left: 2%;
+                                                                                                padding-right: 2%;
+                                                                                                a.pv-btn.w-128 {
+                                                                                                    width: auto;
+                                                                                                    height: auto;
+                                                                                                    padding-top: 7%;
+                                                                                                    padding-bottom: 7%;
+                                                                                                }
+                                                                                                br {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                            }
+                                                                                            a#balloon-trigger-1 {
+
+                                                                                            }
+                                                                                            a#balloon-trigger-1:hover,
+                                                                                            a#balloon-trigger-2:hover,
+                                                                                            a#balloon-trigger-3:hover {
+                                                                                                border-color: $red !important;
+                                                                                            }
+                                                                                            a#balloon-trigger-2 {
+
+                                                                                            }
+                                                                                            a#balloon-trigger-3 {
+
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+
+                                                                            }
+                                                                            div.ba-grid5 {
+                                                                                grid-area: 5 / 4 / 7 / 5;
+                                                                                div#balloon-animation-topbox {
+                                                                                /*  background-color: $red; */
+                                                                                        background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-size: cover;
+                                                                                        display: flex;
+                                                                                        flex-direction: column;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        padding: 4% 8%;
+                                                                                        margin: 0 auto;
+                                                                                        width: 100%;
+                                                                                        filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
+                                                                                        aspect-ratio: 293 / 100;
+                                                                                        background-position: center top;
+                                                                                    div#balloon-topbox-wrapper {
+                                                                                        h4.pv-h4.center {
+                                                                                            font-size: 1.3vw;
+                                                                                            line-height: 1.8vw;
+                                                                                            sup.pv-sup {
+                                                                                                font-size: 60%;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+
+                                                                            }
+                                                                            div.ba-grid6 {
+                                                                                grid-area: 6 / 4 / 8 / 5;
+                                                                                div#balloon-animation-btmbox {
+                                                                                    /* background-color: $yellow; */
+                                                                                    background-image: url("/wp-content/themes/conall-child/images/balloon-animation-btmbox-496x299.png");
+                                                                                    background-repeat: no-repeat;
+                                                                                    background-position: center bottom;
+                                                                                    background-size: 100%;
+                                                                                    /* height: 300px; */
+                                                                                    width: 80%;
+                                                                                    margin: 0 auto;
+                                                                                    display: flex;
+                                                                                    flex-direction: column;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    padding: 11% 3% 5% 3%;
+                                                                                    aspect-ratio: 496 / 299;
+                                                                                    margin-top: -14%;
+                                                                                    margin-bottom: 11% !important;
+                                                                                    div#balloon-btmbox-wrapper {
+                                                                                        h6.pv-h6.center {
+                                                                                            padding-top: 18%;
+                                                                                            font-size: 1.1vw;
+                                                                                            line-height: 1.5vw;
+                                                                                            sup.pv-sup {
+                                                                                                font-size: 60%;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+
+                                                                            }
+                                                                            div.ba-grid7 {
+                                                                                grid-area: 1 / 5 / 9 / 6;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body.treatmentburdens-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#treatment-balloon-animation-row {
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.mid {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#balloon-animation-row-grid {
+                                                    div.edgtf-full-section-inner {
+                                                        width: 100%;
+                                                        max-width: 100%;
+                                                        div.pv-col1.grid {
+                                                            div.vc_column-inner {
+                                                                div.wpb_wrapper {
+                                                                    div.wpb_raw_code {
+                                                                        div.wpb_wrapper {
+
+                                                                            div.ba-grid {
+                                                                                    display: grid;
+                                                                                    grid-template-columns: 0% 0% 50% 50% 0% 0%;
+                                                                                    grid-template-rows: 5% 12% 10% auto 20% 20% 20% auto;
+                                                                                    grid-column-gap: 0     ;
+                                                                                    grid-row-gap: 0px;
+                                                                                div.ba-grid1 {
+                                                                                    grid-area: 1 / 2 / 9 / 3;
+
+                                                                                }
+                                                                                div.ba-grid2 {
+                                                                                    grid-area: 1 / 3 / 9 / 4;
+                                                                                    display: flex;
+                                                                                    justify-content: flex-end;
+                                                                                    align-items: flex-end;
+
+                                                                                }
+                                                                                div.ba-grid3 {
+                                                                                    grid-area: 2 / 4 / 3 / 5;
+                                                                                    display: none;
+                                                                                    div#balloon-animation-heading {
+                                                                                        p.pv-p.center.bold.italic {
+                                                                                            text-align: center !important;
+                                                                                            max-width: 100%;
+                                                                                            margin: 0 auto;
+                                                                                            font-size: 1vw;
+                                                                                            line-height: 1.3vw;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div.ba-grid4 {
+                                                                                    grid-area: 3 / 4 / 4 / 5;
+                                                                                    display: flex;
+                                                                                    justify-content: stretch;
+                                                                                    align-items: center;
+                                                                                    flex-wrap: nowrap;
+                                                                                    width: 100%;
+                                                                                    div#button-animation-triggers {
+                                                                                        width: 100%;
+                                                                                        div.grid_wrapper {
+                                                                                            div#balloon-animation-button-wrapper {
+                                                                                                display: flex;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                                width: 100%;
+                                                                                                margin: 0 auto;
+                                                                                                max-width: 100%;
+                                                                                                margin-top: 1%;
+                                                                                                margin-bottom: 1%;
+                                                                                                div.button-wrapper {
+                                                                                                    width: 33%;
+                                                                                                    padding-left: 2%;
+                                                                                                    padding-right: 2%;
+                                                                                                    a.pv-btn.w-128 {
+                                                                                                        width: auto;
+                                                                                                        height: auto;
+                                                                                                        padding-top: 7%;
+                                                                                                        padding-bottom: 7%;
+                                                                                                    }
+                                                                                                    br {
+                                                                                                        display: none;
+                                                                                                    }
+                                                                                                }
+                                                                                                a#balloon-trigger-1 {
+
+                                                                                                }
+                                                                                                a#balloon-trigger-1:hover,
+                                                                                                a#balloon-trigger-2:hover,
+                                                                                                a#balloon-trigger-3:hover {
+                                                                                                    border-color: $red !important;
+                                                                                                }
+                                                                                                a#balloon-trigger-2 {
+
+                                                                                                }
+                                                                                                a#balloon-trigger-3 {
+
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid5 {
+                                                                                    grid-area: 5 / 4 / 7 / 5;
+                                                                                    div#balloon-animation-topbox {
+                                                                                    /*  background-color: $red; */
+                                                                                            background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                                            background-repeat: no-repeat;
+                                                                                            background-size: cover;
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: center;
+                                                                                            align-items: center;
+                                                                                            padding: 4% 8%;
+                                                                                            margin: 0 auto;
+                                                                                            width: 90%;
+                                                                                            filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
+                                                                                            aspect-ratio: 414 / 225;
+                                                                                            background-position: center top;
+                                                                                        div#balloon-topbox-wrapper {
+                                                                                            h4.pv-h4.center {
+                                                                                                font-size: 2.2vw;
+                                                                                                line-height: 3vw;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid6 {
+                                                                                    grid-area: 6 / 4 / 8 / 5;
+                                                                                    div#balloon-animation-btmbox {
+                                                                                        /* background-color: $yellow; */
+                                                                                        background-image: url("/wp-content/themes/conall-child/images/balloon-animation-btmbox-496x299.png");
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: center bottom;
+                                                                                        background-size: 100%;
+                                                                                        /* height: 300px; */
+                                                                                        width: 75%;
+                                                                                        margin: 0 auto;
+                                                                                        display: flex;
+                                                                                        flex-direction: column;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        padding: 11% 3% 5% 3%;
+                                                                                        aspect-ratio: 496 / 299;
+                                                                                        margin-top: 0;
+                                                                                        margin-bottom: 0 !important;
+                                                                                        div#balloon-btmbox-wrapper {
+                                                                                            h6.pv-h6.center {
+                                                                                                padding-top: 18%;
+                                                                                                font-size: 1.8vw;
+                                                                                                line-height: 2.5vw;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid7 {
+                                                                                    grid-area: 1 / 5 / 9 / 6;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 980px) {
+}
+@media all and (max-width: 768px) {
+    body.treatmentburdens-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#treatment-balloon-animation-row {
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.mid {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#balloon-animation-row-grid {
+                                                    div.edgtf-full-section-inner {
+                                                        width: 100%;
+                                                        max-width: 100%;
+                                                        div.pv-col1.grid {
+                                                            div.vc_column-inner {
+                                                                div.wpb_wrapper {
+                                                                    div.wpb_raw_code {
+                                                                        div.wpb_wrapper {
+
+                                                                            div.ba-grid {
+                                                                                display: grid;
+                                                                                grid-template-columns: auto;
+                                                                                grid-template-rows: 45% 53px 20% 20%;
+                                                                                grid-column-gap: 0px;
+                                                                                grid-row-gap: 0px;
+                                                                                div.ba-grid1 {
+                                                                                    display: none;
+                                                                                }
+                                                                                div.ba-grid2 {
+                                                                                    grid-area: 1 / 1 / 2 / 2;
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: flex-end;
+                                                                                    img.vc_single_image-img {
+                                                                                        display: none;
+                                                                                    }
+                                                                                    img.vc_single_image-img.mobile {
+                                                                                        display: block;
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid3 {
+                                                                                    display: none;
+                                                                                }
+                                                                                div.ba-grid4 {
+                                                                                    grid-area: 2 / 1 / 3 / 2;
+                                                                                    display: flex;
+                                                                                    justify-content: stretch;
+                                                                                    align-items: center;
+                                                                                    flex-wrap: nowrap;
+                                                                                    width: 100%;
+                                                                                    div#button-animation-triggers {
+                                                                                        width: 100%;
+                                                                                        div.grid_wrapper {
+                                                                                            div#balloon-animation-button-wrapper {
+                                                                                                display: flex;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                                width: 100%;
+                                                                                                margin: 0 auto;
+                                                                                                max-width: 100%;
+                                                                                                margin-top: 1%;
+                                                                                                margin-bottom: 1%;
+                                                                                                div.button-wrapper {
+                                                                                                    width: 33.33%;
+                                                                                                    padding: 0;
+
+                                                                                                    a.pv-btn.w-128 {
+                                                                                                        width: auto;
+                                                                                                        height: auto;
+                                                                                                        padding-top: 7%;
+                                                                                                        padding-bottom: 7%;
+                                                                                                        border-radius: 0;
+                                                                                                    }
+                                                                                                    br {
+                                                                                                        display: none;
+                                                                                                    }
+                                                                                                }
+                                                                                                a#balloon-trigger-1 {
+                                                                                                    border-right: 4px solid $white;
+                                                                                                }
+                                                                                                a#balloon-trigger-1:hover,
+                                                                                                a#balloon-trigger-2:hover,
+                                                                                                a#balloon-trigger-3:hover {
+                                                                                                    border-color: $red !important;
+                                                                                                }
+                                                                                                a#balloon-trigger-2 {
+
+                                                                                                }
+                                                                                                a#balloon-trigger-3 {
+                                                                                                    border-left: 4px solid $white;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid5 {
+                                                                                    grid-area: 3 / 1 / 4 / 2;
+                                                                                    margin-top: 6%;
+                                                                                    div#balloon-animation-topbox {
+                                                                                    /*  background-color: $red; */
+                                                                                            background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                                            background-repeat: no-repeat;
+                                                                                            background-size: 100% 101%;
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: center;
+                                                                                            align-items: center;
+                                                                                            padding: 4% 8%;
+                                                                                            margin: 0 auto;
+                                                                                            width: 75%;
+                                                                                            filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
+                                                                                            aspect-ratio: 414 / 225;
+                                                                                            background-position: center top;
+                                                                                        div#balloon-topbox-wrapper {
+                                                                                            h4.pv-h4.center {
+                                                                                                font-size: 24px;
+                                                                                                line-height: 34px;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid6 {
+                                                                                   grid-area: 4 / 1 / 5 / 2;
+                                                                                    div#balloon-animation-btmbox {
+                                                                                        /* background-color: $yellow; */
+                                                                                        background-image: url("/wp-content/themes/conall-child/images/balloon-animation-btmbox-496x299.png");
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: center bottom;
+                                                                                        background-size: 100%;
+                                                                                        /* height: 300px; */
+                                                                                        width: 65%;
+                                                                                        margin: 0 auto;
+                                                                                        display: flex;
+                                                                                        flex-direction: column;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        padding: 11% 10% 7% 10%;
+                                                                                        aspect-ratio: 394 / 206;
+                                                                                        margin-top: 0;
+                                                                                        margin-bottom: 0 !important;
+                                                                                        div#balloon-btmbox-wrapper {
+                                                                                            h6.pv-h6.center {
+                                                                                                padding-top: 20%;
+                                                                                                font-size: 20px;
+                                                                                                line-height: 30px;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid7 {
+                                                                                    display: none;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    body.treatmentburdens-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#treatment-balloon-animation-row {
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.mid {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#balloon-animation-row-grid {
+                                                    div.edgtf-full-section-inner {
+                                                        width: 100%;
+                                                        max-width: 100%;
+                                                        div.pv-col1.grid {
+                                                            div.vc_column-inner {
+                                                                div.wpb_wrapper {
+                                                                    div.wpb_raw_code {
+                                                                        div.wpb_wrapper {
+
+                                                                            div.ba-grid {
+                                                                                display: grid;
+                                                                                grid-template-columns: auto;
+                                                                                grid-template-rows: 42% 43px 13% 27%;
+                                                                                grid-column-gap: 0px;
+                                                                                grid-row-gap: 0px;
+                                                                                div.ba-grid1 {
+                                                                                    display: none;
+                                                                                }
+                                                                                div.ba-grid2 {
+                                                                                    grid-area: 1 / 1 / 2 / 2;
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: flex-end;
+                                                                                    img.vc_single_image-img {
+                                                                                        display: none;
+                                                                                    }
+                                                                                    img.vc_single_image-img.mobile {
+                                                                                        display: block;
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid3 {
+                                                                                    display: none;
+                                                                                }
+                                                                                div.ba-grid4 {
+                                                                                    grid-area: 2 / 1 / 3 / 2;
+                                                                                    display: flex;
+                                                                                    justify-content: stretch;
+                                                                                    align-items: center;
+                                                                                    flex-wrap: nowrap;
+                                                                                    width: 100%;
+                                                                                    div#button-animation-triggers {
+                                                                                        width: 100%;
+                                                                                        div.grid_wrapper {
+                                                                                            div#balloon-animation-button-wrapper {
+                                                                                                display: flex;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                                width: 100%;
+                                                                                                margin: 0 auto;
+                                                                                                max-width: 100%;
+                                                                                                margin-top: 1%;
+                                                                                                margin-bottom: 1%;
+                                                                                                div.button-wrapper {
+                                                                                                    width: 33.33%;
+                                                                                                    padding: 0;
+
+                                                                                                    a.pv-btn.w-128 {
+                                                                                                        width: auto;
+                                                                                                        height: auto;
+                                                                                                        padding-top: 7%;
+                                                                                                        padding-bottom: 7%;
+                                                                                                        border-radius: 0;
+                                                                                                    }
+                                                                                                    br {
+                                                                                                        display: none;
+                                                                                                    }
+                                                                                                }
+                                                                                                a#balloon-trigger-1 {
+                                                                                                    border-right: 4px solid $white;
+                                                                                                }
+                                                                                                a#balloon-trigger-1:hover,
+                                                                                                a#balloon-trigger-2:hover,
+                                                                                                a#balloon-trigger-3:hover {
+                                                                                                    border-color: $red !important;
+                                                                                                }
+                                                                                                a#balloon-trigger-2 {
+
+                                                                                                }
+                                                                                                a#balloon-trigger-3 {
+                                                                                                    border-left: 4px solid $white;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid5 {
+                                                                                    grid-area: 3 / 1 / 4 / 2;
+                                                                                    margin-top: 6%;
+                                                                                    div#balloon-animation-topbox {
+                                                                                    /*  background-color: $red; */
+                                                                                            background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                                            background-repeat: no-repeat;
+                                                                                            background-size: 100% 101%;
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: center;
+                                                                                            align-items: center;
+                                                                                            padding: 4% 7%;
+                                                                                            margin: 0 auto;
+                                                                                            width: 75%;
+                                                                                            filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
+                                                                                            aspect-ratio: 414 / 225;
+                                                                                            background-position: center top;
+                                                                                        div#balloon-topbox-wrapper {
+                                                                                            h4.pv-h4.center {
+                                                                                                font-size: 24px;
+                                                                                                line-height: 34px;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid6 {
+                                                                                   grid-area: 4 / 1 / 5 / 2;
+                                                                                    div#balloon-animation-btmbox {
+                                                                                        /* background-color: $yellow; */
+                                                                                        background-image: url("/wp-content/themes/conall-child/images/balloon-animation-btmbox-496x299.png");
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: center bottom;
+                                                                                        background-size: 100% 101%;
+                                                                                        /* height: 300px; */
+                                                                                        width: 70%;
+                                                                                        margin: 0 auto;
+                                                                                        display: flex;
+                                                                                        flex-direction: column;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        padding: 20% 7% 7% 7%;
+                                                                                        aspect-ratio: 394 / 206;
+                                                                                        margin-top: 0;
+                                                                                        margin-bottom: 0 !important;
+                                                                                        div#balloon-btmbox-wrapper {
+                                                                                            h6.pv-h6.center {
+                                                                                                padding-top: 25%;
+                                                                                                font-size: 20px;
+                                                                                                line-height: 30px;
+                                                                                                sup.pv-sup {
+                                                                                                    font-size: 60%;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                                div.ba-grid7 {
+                                                                                    display: none;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 BALLOON ANIMATION SECTIONS END ******* */
