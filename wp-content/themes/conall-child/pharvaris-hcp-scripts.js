@@ -3,7 +3,7 @@
 var changeBgImage = function () {
 
     var idBackgnd = document.getElementById("redselect");
-    var contain1 = document.getElementById('listswap-container-1');
+    /* var contain1 = document.getElementById('listswap-container-1'); */
 
     idBackgnd.style.backgroundImage = "url('/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg')";
 
@@ -16,11 +16,11 @@ var changeBgImage = function () {
     } else {
         idBackgnd.style.backgroundImage = "url('/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg')";
     }
-    idBackgnd.style.backgroundColor = document.getElementById("living-hae-impacts-row").value;
+    /* idBackgnd.style.backgroundColor = document.getElementById("living-hae-impacts-row").value; */
 
 };
 
-function showDiv(select) {
+/* function showDiv(select) {
     if (select.value == "emotional") {
         document.getElementById('listswap-container-1').style.display = "block";
     }
@@ -45,4 +45,4 @@ function showDiv(select) {
     else {
         document.getElementById('listswap-container-4').style.display = "none";
     }
-}
+} */

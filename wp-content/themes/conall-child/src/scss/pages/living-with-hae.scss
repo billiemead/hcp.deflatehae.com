@@ -62,16 +62,38 @@ body.livinghae-page {
                                 }
                             }
                         }
-                        div#living-select-row {
-                            position: absolute;
-                            display: flex;
-                            width: 100%;
-                            justify-content: center;
-                            margin-top: 6%;
+                        div#living-hae-impacts-row {
+                            animation: fadeIn 5s;
+                            height: 100%;
+                            /* transform: translateY(-85px); */
+                            background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            width: 102%;
+                            /* top: -80px; */
+                            /* margin-bottom: -103px !important; */
                             div.clearfix.edgtf-full-section-inner {
-                                max-width: 100%;
+                                max-width: 1194px;
                                 height: 100%;
-                                div.pv-col1 {
+                                div.pv-col1.one {
+                                    padding-top: 7%;
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            div#burdens-top-heading {
+                                                h1.pv-h1.center {
+                                                    font-size: 30px;
+                                                    line-height: 40px;
+                                                    span.hide-copy {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.two {
                                     padding-top: 3%;
                                     padding-bottom: 5%;
                                     div.vc_column-inner {
@@ -82,7 +104,7 @@ body.livinghae-page {
                                                 margin: 0 auto;
                                                 div.burden-option-wrapper {
                                                     display: flex;
-                                                    justify-content: space-between;
+                                                    justify-content: center;
                                                     flex-wrap: nowrap;
                                                     height: 75px;
                                                     align-items: flex-start;
@@ -148,44 +170,10 @@ body.livinghae-page {
                                         }
                                     }
                                 }
-                            }
-                        }
-                        div#living-hae-impacts-row {
-                            animation: fadeIn 5s;
-                            height: 100%;
-                            /* transform: translateY(-85px); */
-                            background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center center;
-                            width: 102%;
-                            /* top: -80px; */
-                            /* margin-bottom: -103px !important; */
-                            div.clearfix.edgtf-full-section-inner {
-                                max-width: 1194px;
-                                height: 100%;
-                                div.pv-col1.one {
-                                    padding-top: 7%;
-                                    padding-bottom: 12%;
-                                    div.vc_column-inner {
-                                        padding: 0;
-                                        div.wpb_wrapper {
-                                            div#burdens-top-heading {
-                                                h1.pv-h1.center {
-                                                    font-size: 30px;
-                                                    line-height: 40px;
-                                                    span.hide-copy {
-                                                        display: none;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                                 div.pv-col1.three.whitebox {
                                         background-image: url("/wp-content/themes/conall-child/images/small-white-box-346x697.svg");
                                         background-repeat: no-repeat;
-                                        background-size: cover;
+                                        background-size: 100% 101%;
                                         background-position: center center;
                                         width: auto;
                                         display: flex;
@@ -468,7 +456,171 @@ body.livinghae-page {
         }
     }
 }
+@media all and (max-width: 1300px) {
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#living-hae-impacts-row {
+                                div.clearfix.edgtf-full-section-inner {
+                                    div.pv-col1.one {
+                                        padding-top: 7%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#burdens-top-heading {
+                                                    h1.pv-h1.center {
+                                                        font-size: 22px;
+                                                        line-height: 22px;
+                                                        span.hide-copy {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.two {
+                                        padding-top: 3%;
+                                        padding-bottom: 5%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    max-width: 1150px;
+                                                    margin: 0 auto;
+                                                    div.burden-option-wrapper {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        flex-wrap: nowrap;
+                                                        height: 75px;
+                                                        align-items: flex-start;
+                                                            div.option {
+                                                                h1.pv-h1 {
+                                                                    padding-top: 12px;
+                                                                    font-size: 22px;
+                                                                    line-height: 22px;
+                                                                    sup.pv-sup {
+                                                                        font-size: 50%;
+                                                                        bottom: 1.3ex;
+                                                                    }
 
+                                                                }
+                                                            }
+                                                            div.option-left {
+
+                                                            }
+                                                            div.option-center {
+                                                                text-align: center;
+                                                                select#redselect {
+                                                                    margin-bottom: 15px;
+                                                                    height: 50px;
+                                                                    font-size: 30px;
+                                                                    line-height: 30px;
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                label.pv-label {
+                                                                    margin-top: 15px;
+                                                                }
+                                                            }
+                                                            div.option-right {
+
+                                                            }
+                                                            div.option.option-center {
+                                                                position:relative;
+                                                                display:inline-block;
+                                                            }
+                                                            div.option.option-center::before {
+                                                                content: "";
+                                                                display: block;
+                                                                width: 50px;
+                                                                height: 24px;
+                                                                top: 21px;
+                                                                border: none;
+                                                                background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                                background-position: calc(100% - 0.75rem) center !important;
+                                                                transform: rotate(0deg);
+                                                                margin-top: -2.5px;
+                                                                position: absolute;
+                                                                right: 5px;
+                                                                z-index: 2;
+                                                            }
+                                                            div.option.option-center.focused::before{
+                                                                transform: rotate(180deg);
+                                                                right: 8px;
+                                                                top: 20px;
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.three.whitebox {
+                                        height: 35%;
+                                        max-width: 700px;
+                                        padding-left: 18%;
+                                        padding-right: 4%;
+                                        position: absolute;
+                                        bottom: 18%;
+                                        margin-left: 40%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#swap-box {
+                                                    /* width: 400px;
+                                                    height: 188px; */
+                                                    div {
+                                                        h5.pv-h5.red {
+                                                            padding-bottom: 1.5%;
+                                                        }
+                                                        ul.pv-list {
+                                                            li.pv-list-item {
+                                                                line-height: 26px;
+                                                                font-weight: bold !important;
+                                                                padding-bottom: 2%;
+                                                                sup.pv-sup {
+                                                                    font-size: 60%;
+                                                                }
+                                                            }
+                                                            li.pv-list-item:last-child {
+                                                                padding-bottom: 0;
+                                                            }
+
+                                                        }
+                                                    }
+                                                    div#listswap-container-1 {
+                                                        display: block;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-2 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-3 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                    div#listswap-container-4 {
+                                                        display: none;
+                                                        animation: fadeIn 2s;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                }
+                                }
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
 @media all and (max-width: 1024px) {
     body.livinghae-page {
         div.edgtf-wrapper {
@@ -532,85 +684,6 @@ body.livinghae-page {
                                     }
                                 }
                             }
-                            div#living-select-row {
-                            div.clearfix.edgtf-full-section-inner {
-                                max-width: 1194px;
-                                height: 100%;
-                                div.pv-col1 {
-                                    div#burden-option-container {
-                                        max-width: 1150px;
-                                        margin: 0 auto;
-                                        div.burden-option-wrapper {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            flex-wrap: nowrap;
-                                            height: 75px;
-                                            align-items: center;
-                                            flex-direction: column;
-                                            max-width: 615px;
-                                            margin: 0 auto;
-                                                div.option {
-                                                    h1.pv-h1 {
-                                                        padding-top: 12px;
-                                                        font-size: 30px;
-                                                        line-height: 40px;
-                                                        sup.pv-sup {
-                                                            font-size: 50%;
-                                                            bottom: 1.3ex;
-                                                        }
-
-                                                    }
-                                                }
-                                                div.option-left {
-                                                    display: none;
-                                                }
-                                                div.option-center {
-                                                    text-align: center;
-                                                    select#redselect {
-                                                        margin-bottom: 15px;
-                                                        height: 60px;
-                                                        font-size: 40px;
-                                                        line-height: 40px;
-                                                        option.pv-option {
-
-                                                        }
-                                                    }
-                                                    label.pv-label {
-                                                        margin-top: 15px;
-                                                    }
-                                                }
-                                                div.option-right {
-
-                                                }
-                                                div.option.option-center {
-                                                    position:relative;
-                                                    display:inline-block;
-                                                }
-                                                div.option.option-center::before {
-                                                    content: "";
-                                                    display: block;
-                                                    width: 50px;
-                                                    height: 24px;
-                                                    top: 21px;
-                                                    border: none;
-                                                    background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                    background-position: calc(100% - 0.75rem) center !important;
-                                                    transform: rotate(0deg);
-                                                    margin-top: -2.5px;
-                                                    position: absolute;
-                                                    right: 5px;
-                                                    z-index: 2;
-                                                }
-                                                div.option.option-center.focused::before{
-                                                    transform: rotate(180deg);
-                                                    right: 8px;
-                                                    top: 20px;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
                             div#living-hae-impacts-row {
                                 height: auto;
                                 animation: fadeIn 5s;
@@ -648,6 +721,77 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
 
+                                                div#burden-option-container {
+                                                    max-width: 1150px;
+                                                    margin: 0 auto;
+                                                    div.burden-option-wrapper {
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        flex-wrap: nowrap;
+                                                        height: 75px;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                        max-width: 615px;
+                                                        margin: 0 auto;
+                                                            div.option {
+                                                                h1.pv-h1 {
+                                                                    padding-top: 12px;
+                                                                    font-size: 30px;
+                                                                    line-height: 40px;
+                                                                    sup.pv-sup {
+                                                                        font-size: 50%;
+                                                                        bottom: 1.3ex;
+                                                                    }
+
+                                                                }
+                                                            }
+                                                            div.option-left {
+                                                                display: none;
+                                                            }
+                                                            div.option-center {
+                                                                text-align: center;
+                                                                select#redselect {
+                                                                    margin-bottom: 15px;
+                                                                    height: 60px;
+                                                                    font-size: 40px;
+                                                                    line-height: 40px;
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                label.pv-label {
+                                                                    margin-top: 15px;
+                                                                }
+                                                            }
+                                                            div.option-right {
+
+                                                            }
+                                                            div.option.option-center {
+                                                                position:relative;
+                                                                display:inline-block;
+                                                            }
+                                                            div.option.option-center::before {
+                                                                content: "";
+                                                                display: block;
+                                                                width: 50px;
+                                                                height: 24px;
+                                                                top: 21px;
+                                                                border: none;
+                                                                background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                                background-position: calc(100% - 0.75rem) center !important;
+                                                                transform: rotate(0deg);
+                                                                margin-top: -2.5px;
+                                                                position: absolute;
+                                                                right: 5px;
+                                                                z-index: 2;
+                                                            }
+                                                            div.option.option-center.focused::before{
+                                                                transform: rotate(180deg);
+                                                                right: 8px;
+                                                                top: 20px;
+                                                            }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -1004,81 +1148,6 @@ body.livinghae-page {
                                     }
                                 }
                             }
-                            div#living-select-row {
-                                div.clearfix.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    height: 100%;
-                                    div.pv-col1 {
-                                        div#burden-option-container {
-                                            max-width: 1150px;
-                                            margin: 0 auto;
-                                            div.burden-option-wrapper {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            flex-wrap: nowrap;
-                                            height: 75px;
-                                            align-items: center;
-                                            flex-direction: column;
-                                            max-width: 615px;
-                                            margin: 0 auto;
-                                                div.option {
-                                                    h1.pv-h1 {
-                                                        padding-top: 12px;
-                                                        sup.pv-sup {
-                                                            font-size: 50%;
-                                                            bottom: 1.3ex;
-                                                        }
-
-                                                    }
-                                                }
-                                                div.option-left {
-                                                    display: none;
-                                                }
-                                                div.option-center {
-                                                    text-align: center;
-                                                    select#redselect {
-                                                        height: 60px;
-                                                        margin-bottom: 5%;
-                                                        option.pv-option {
-
-                                                        }
-                                                    }
-                                                    label.pv-label {
-                                                        margin-top: 15px;
-                                                    }
-                                                }
-                                                div.option-right {
-
-                                                }
-                                                div.option.option-center {
-                                                    position:relative;
-                                                    display:inline-block;
-                                                }
-                                                div.option.option-center::before {
-                                                    content: "";
-                                                    display: block;
-                                                    width: 50px;
-                                                    height: 24px;
-                                                    top: 21px;
-                                                    border: none;
-                                                    background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                    background-position: calc(100% - 0.75rem) center !important;
-                                                    transform: rotate(0deg);
-                                                    margin-top: -2.5px;
-                                                    position: absolute;
-                                                    right: 5px;
-                                                    z-index: 2;
-                                                }
-                                                div.option.option-center.focused::before{
-                                                    transform: rotate(180deg);
-                                                    right: 8px;
-                                                    top: 20px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                             div#living-hae-impacts-row {
                                 height: auto;
                                 animation: fadeIn 5s;
@@ -1089,7 +1158,7 @@ body.livinghae-page {
                                 background-position: center center;
                                 width: 102%;
                                 margin-bottom: 0 !important;
-                                top: 7px;
+                                top: 15px;
                                 div.clearfix.edgtf-full-section-inner {
                                     max-width: 1194px;
                                     height: 100%;
@@ -1101,7 +1170,8 @@ body.livinghae-page {
                                                     max-width: 615px;
                                                     margin: 0 auto;
                                                     h1.pv-h1.center {
-                                                        font-size: 30px;
+                                                        font-size: 25px;
+                                                        line-height: 30px;
                                                         span.hide-copy {
                                                             display: inline-block;
                                                         }
@@ -1111,23 +1181,94 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-bottom: 20%;
-                                        padding-top: 7%;
+                                        padding-bottom: 25%;
+                                        padding-top: 5%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    max-width: 1150px;
+                                                    margin: 0 auto;
+                                                    div.burden-option-wrapper {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    flex-wrap: nowrap;
+                                                    height: 75px;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                    max-width: 615px;
+                                                    margin: 0 auto;
+                                                        div.option {
+                                                            h1.pv-h1 {
+                                                                font-size: 25px;
+                                                                line-height: 30px;
+                                                                padding-top: 12px;
+                                                                text-align: center;
+                                                                sup.pv-sup {
+                                                                    font-size: 50%;
+                                                                    bottom: 1.3ex;
+                                                                }
 
+                                                            }
+                                                        }
+                                                        div.option-left {
+                                                            display: none;
+                                                        }
+                                                        div.option-center {
+                                                            text-align: center;
+                                                            select#redselect {
+                                                                height: 60px;
+                                                                margin-bottom: 5%;
+                                                                font-size: 25px;
+                                                                option.pv-option {
+
+                                                                }
+                                                            }
+                                                            label.pv-label {
+                                                                margin-top: 15px;
+                                                            }
+                                                        }
+                                                        div.option-right {
+                                                            font-size: 25px;
+                                                        }
+                                                        div.option.option-center {
+                                                            position:relative;
+                                                            display:inline-block;
+                                                        }
+                                                        div.option.option-center::before {
+                                                            content: "";
+                                                            display: block;
+                                                            width: 50px;
+                                                            height: 24px;
+                                                            top: 21px;
+                                                            border: none;
+                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                            background-position: calc(100% - 0.75rem) center !important;
+                                                            transform: rotate(0deg);
+                                                            margin-top: -2.5px;
+                                                            position: absolute;
+                                                            right: 5px;
+                                                            z-index: 2;
+                                                        }
+                                                        div.option.option-center.focused::before{
+                                                            transform: rotate(180deg);
+                                                            right: 8px;
+                                                            top: 20px;
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
                                     div.pv-col1.three.whitebox {
-                                        max-height: 320px;
-                                        height: 40%;
-                                        padding-left: 15%;
-                                        padding-right: 15%;
-                                        float: unset;
-                                        margin: 0 auto;
-                                        background-size: 100% 101%;
-                                        padding-bottom: 10%;
+                                            padding-left: 5%;
+                                            padding-right: 5%;
+                                            float: unset;
+                                            margin: 0 auto;
+                                            background-size: 100%;
+                                            padding-bottom: 10%;
+                                            width: 100%;
+                                            padding-top: 5%;
+                                            height: 100%;
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
                                                     div#swap-box {
@@ -1139,8 +1280,10 @@ body.livinghae-page {
                                                                 text-align: center;
                                                             }
                                                             ul.pv-list {
+                                                                margin-top: 0;
                                                                 li.pv-list-item {
-                                                                    line-height: 26px;
+                                                                    font-size: 15px;
+                                                                    line-height: 20px;
                                                                     font-weight: bold !important;
                                                                     padding-bottom: 2%;
                                                                     sup.pv-sup {
@@ -1185,11 +1328,11 @@ body.livinghae-page {
                                                     }
                                                 }
                                                 div#not-patient-row {
-                                                    transform: translateY(-76px);
+                                                    transform: translateY(-37px);
                                                     div#not-patient-section {
                                                         margin-left: 13%;
                                                         p.pv-p.center.ex-small {
-
+                                                            text-align: right !important;
                                                         }
                                                     }
                                                 }
@@ -1200,23 +1343,26 @@ body.livinghae-page {
                             }
                             div.section-background {
                                 position: relative;
-                                height: 1140px;
+                                height: 100%;
                                 background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
                                 background-repeat: no-repeat;
                                 background-size: 85%;
                                 background-position: center center;
                                 visibility: visible;
-                                z-index: -1;
+                                z-index: 0;
                                 div#hae-section-wrapper {
                                     transform: translateY(0);
                                     div#jennifers-banner-section {
                                         z-index: 103;
                                         div.edgtf-full-section-inner {
+                                            width: 100%;
                                             div.pv-col1.banner-col {
                                                 div.banner-wrapper-jennifer {
                                                     display: block;
                                                     div.wpb_wrapper {
                                                         div.banner-img-container.jennifer {
+                                                            background-size: 100%;
+                                                            width: 100%;
                                                             h2.pv-h2.center.white {
                                                             }
                                                         }
@@ -1229,6 +1375,7 @@ body.livinghae-page {
                                         transform: translateY(0);
                                         filter: none;
                                         div.edgtf-full-section-inner {
+                                            width: 86%;
                                             div.pv-col1.ripple-image {
                                                 div.vc_column-inner {
                                                     div.wpb_wrapper {
@@ -1259,7 +1406,7 @@ body.livinghae-page {
                                                 }
                                             }
                                             div.pv-col1.facts-icon-col {
-                                                padding: 12% 0 7% 0;
+                                                padding: 5% 0 8% 0;
                                                 div.vc_column-inner {
                                                     div.wpb_wrapper {
                                                         div#jennifers--inner-row-1 {
@@ -1344,20 +1491,20 @@ body.livinghae-page {
                                                                                 p.pv-p {
                                                                                     text-align: center;
                                                                                     &.top {
-                                                                                        margin-bottom: 3%;
+                                                                                        margin-bottom: 4%;
                                                                                     }
                                                                                     &.mid {
-                                                                                        margin-bottom: 3%;
+                                                                                        margin-bottom: 4%;
                                                                                     }
                                                                                     &.btm {
-                                                                                        margin-bottom: 3%;
+                                                                                        margin-bottom: 7%;
                                                                                     }
                                                                                 }
                                                                             }
                                                                         }
                                                                         div#jstory-lower-heading {
                                                                             h3.pv-h3.center.red {
-
+                                                                                max-width: 70%;
                                                                             }
                                                                         }
                                                                     }
@@ -1365,7 +1512,7 @@ body.livinghae-page {
                                                             }
                                                         }
                                                         a.pv-btn.w-292 {
-                                                            margin-top: 5%;
+                                                            margin-top: 8%;
                                                         }
                                                     }
                                                 }
