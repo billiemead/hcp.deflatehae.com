@@ -92,6 +92,7 @@ body.home {
                             div.edgtf-full-section-inner {
                                 div.pv-col1 {
                                     div.not-patient {
+                                            display: none;
                                             p.pv-p.ex-small {
                                                 br.line-break {
 
@@ -537,7 +538,7 @@ body.home {
                                 background-position-y: top;
                             }
                             div.section-background {
-                                margin-top: 40px;
+                                margin-top: -25px;
                                 margin-bottom: -85px;
                                 padding-bottom: 0px;
                                 background-size: auto;

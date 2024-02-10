@@ -242,7 +242,7 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.095);
+                    bottom: 35px;
                     padding-left: 83vw;
                 }
             }
@@ -853,8 +853,8 @@ body.pharvaris {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
-                    bottom: min(100vw * 0.095);
-                    padding-left: 72vw;
+                    bottom: 70px;
+                    padding-left: 74vw;
                 }
             }
             &.mobile {
@@ -1620,7 +1620,7 @@ body.pharvaris {
                                         div.hae-image-wrapper {
                                             margin-right: 0;
                                             img {
-                                                
+
                                             }
                                         }
                                         div.hae-copy-wrapper {
