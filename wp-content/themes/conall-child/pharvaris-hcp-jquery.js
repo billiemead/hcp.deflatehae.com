@@ -26,9 +26,21 @@ jQuery(document).ready(function ($) {
 }); */
 //Function to the css rule
 jQuery(document).ready(function ($) {
+    var bgArray = [
+        '/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg',
+        '/wp-content/themes/conall-child/images/living-backg-2-1920x1200.jpg',
+        '/wp-content/themes/conall-child/images/living-backg-3-1920x1200.jpg',
+        '/wp-content/themes/conall-child/images/living-backg-4-1920x1200.jpg'
+    ]
+    $('#redselect').on('change', function () {
+        value = $(this).val() - 1;
+        $('#living-hae-impacts-row').css({
+            'background-image': 'url(' + bgArray[value] + ')'
+        });
+    });
     $(window).resize(function () {
         $('#living-hero-row').html($(window).width());
-        if ($(window).width() > 1024) {
+        if ($(window).width() > 1025) {
             var bgArray = [
                 '/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg',
                 '/wp-content/themes/conall-child/images/living-backg-2-1920x1200.jpg',
