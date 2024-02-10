@@ -9,8 +9,8 @@ body.livinghae-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
-                        div.breakpoint {
-                            width: 1920px;
+                        div#breakpoint-row {
+                            width: 100vw;
                         }
                         div#living-cta-row {
 
@@ -124,7 +124,7 @@ body.livinghae-page {
                                                             }
                                                         }
                                                         div.option-left {
-
+                                                            padding-right: 2%;
                                                         }
                                                         div.option-center {
                                                             text-align: center;
@@ -137,12 +137,22 @@ body.livinghae-page {
 
                                                                 }
                                                             }
+                                                            select#redselect:focus {
+                                                                border: none;
+                                                                border-bottom: 3px solid $red !important;
+                                                                box-shadow: none;
+                                                                -moz-box-shadow: none;
+                                                                -webkit-box-shadow: none;
+                                                                option.pv-option {
+
+                                                                }
+                                                            }
                                                             label.pv-label {
                                                                 margin-top: 15px;
                                                             }
                                                         }
                                                         div.option-right {
-
+                                                            padding-left: 2%;
                                                         }
                                                         div.option.option-center {
                                                             position:relative;
@@ -363,6 +373,12 @@ body.livinghae-page {
                                                             }
                                                             &.right {
                                                                 padding-right: 2%;
+
+                                                            }
+                                                            &.treatment {
+                                                                div.jstory-stats.center {
+                                                                    display: none;
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -459,6 +475,12 @@ body.livinghae-page {
         }
     }
 }
+@media all and (max-width: 1400px) {
+    body.livinghae-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#living-hae-impacts-row div.clearfix.edgtf-full-section-inner div.pv-col1.two div.vc_column-inner div.wpb_wrapper div#burden-option-container div.burden-option-wrapper div.option-left,
+    body.livinghae-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#living-hae-impacts-row div.clearfix.edgtf-full-section-inner div.pv-col1.two div.vc_column-inner div.wpb_wrapper div#burden-option-container div.burden-option-wrapper div.option-right {
+        padding: 0;
+    }
+}
 @media all and (max-width: 1300px) {
     body.livinghae-page {
         div.edgtf-wrapper {
@@ -514,7 +536,7 @@ body.livinghae-page {
                                                                 }
                                                             }
                                                             div.option-left {
-
+                                                                padding: 0;
                                                             }
                                                             div.option-center {
                                                                 text-align: center;
@@ -532,7 +554,7 @@ body.livinghae-page {
                                                                 }
                                                             }
                                                             div.option-right {
-
+                                                                padding: 0;
                                                             }
                                                             div.option.option-center {
                                                                 position:relative;
@@ -880,11 +902,13 @@ body.livinghae-page {
                                                 }
                                             }
                                             div#not-patient-row {
-                                                transform: translateY(-76px);
+                                                transform: translateY(-59px);
                                                 div#not-patient-section {
-                                                    margin-left: 13%;
+                                                    position: relative;
+                                                    margin: 0;
+                                                    width: 100%;
                                                     p.pv-p.center.ex-small {
-
+                                                        text-align: right !important;
                                                     }
                                                 }
                                             }
@@ -914,6 +938,7 @@ body.livinghae-page {
                                                     div.wpb_wrapper {
                                                         div.banner-img-container.jennifer {
                                                             h2.pv-h2.center.white {
+
                                                             }
                                                         }
                                                     }
@@ -963,6 +988,7 @@ body.livinghae-page {
                                                             div.edgtf-full-section-inner {
                                                                 display: flex;
                                                                 flex-direction: column;
+                                                                /* width: 100%; */
                                                                 div.pv-col2 {
                                                                     width: 100%;
                                                                     div.vc_column-inner {
@@ -977,16 +1003,17 @@ body.livinghae-page {
                                                                     &.left {
                                                                         div.wpb_wrapper {
                                                                             justify-content: flex-start;
-                                                                        }
-                                                                        div.jstory-stats {
+                                                                            div.jstory-stats {
 
-                                                                            &.left {
+                                                                                &.left {
 
+                                                                                }
+                                                                                &.right {
+
+                                                                                }
                                                                             }
-                                                                            &.right {
-
-                                                                            }
                                                                         }
+
                                                                     }
                                                                     &.right {
                                                                         padding-right: 2%;
@@ -1331,11 +1358,14 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#living-balloon-hand {
+                                                    bottom: -16px;
+                                                    position: relative;
                                                     img {
                                                     }
                                                 }
                                                 div#not-patient-row {
-                                                    transform: translateY(-37px);
+                                                    transform: unset;
+                                                    bottom: 22px;
                                                     div#not-patient-section {
                                                         margin-left: 13%;
                                                         p.pv-p.center.ex-small {
@@ -1368,8 +1398,19 @@ body.livinghae-page {
                                                     display: block;
                                                     div.wpb_wrapper {
                                                         div.banner-img-container.jennifer {
-                                                            background-size: 100%;
-                                                            width: 100%;
+                                                            background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-576x120.svg");
+                                                            background-position: center center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: 100% 108%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            margin: 0 auto;
+                                                            padding: 0;
+                                                            width: 100vw;
+                                                            max-height: 100%;
+                                                            height: 100%;
                                                             h2.pv-h2.center.white {
                                                             }
                                                         }
@@ -1420,8 +1461,12 @@ body.livinghae-page {
                                                             padding-bottom: 30px;
                                                             display: flex;
                                                             div.edgtf-full-section-inner {
-                                                                display: flex;
-                                                                flex-direction: column;
+                                                                display: grid;
+                                                                grid-template-columns: repeat(2, 1fr);
+                                                                grid-template-rows: repeat(2, auto);
+                                                                grid-column-gap: 0px;
+                                                                grid-row-gap: 0px;
+                                                                width: 100%;
                                                                 div.pv-col2 {
                                                                     width: 100%;
                                                                     div.vc_column-inner {
@@ -1431,12 +1476,23 @@ body.livinghae-page {
                                                                         }
                                                                     }
                                                                     p.pv-p.stats {
-                                                                        padding: 8px 0 8px 0;
+                                                                        padding: 8px 0 12px 0;
+                                                                        &.mobile-hide {
+                                                                            display: none;
+                                                                        }
                                                                     }
                                                                     &.left {
+                                                                        padding-right: 5%;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 1 / 2 / 2;
                                                                         div.wpb_wrapper {
                                                                             justify-content: flex-start;
                                                                         }
+                                                                    }
+                                                                    &.right {
+                                                                        padding-right: 0;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 2 / 2 / 3;
                                                                         div.jstory-stats {
 
                                                                             &.left {
@@ -1446,72 +1502,85 @@ body.livinghae-page {
 
                                                                             }
                                                                         }
+
                                                                     }
-                                                                    &.right {
-                                                                        padding-right: 2%;
+                                                                    &.treatment {
+                                                                        grid-area: 2 / 1 / 3 / 3;
+                                                                        div.jstory-stats.center {
+                                                                            display: block;
+                                                                            p.pv-p.stats.mobile-show {
+                                                                                width: 82%;
+                                                                            }
+                                                                        }
                                                                     }
                                                                 }
                                                             }
 
                                                         }
                                                         div#jennifers--inner-row-2 {
-                                                            div.pv-col1.fullwidth {
-                                                                div.vc_column-inner {
-                                                                    padding: 0;
-                                                                    div.wpb_wrapper {
-                                                                        div#jstory-icon-separator {
-                                                                            div.quote-container {
-                                                                                span.quote-lines {
-                                                                                    display: flex;
-                                                                                    justify-content: center;
-                                                                                    align-items: center;
-                                                                                    height: 50px;
-                                                                                    img.quote-icon {
+                                                            div.edgtf-full-section-inner {
+                                                                width: 100%;
+                                                                div.pv-col1.fullwidth {
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
+                                                                        div.wpb_wrapper {
+                                                                            div#jstory-icon-separator {
+                                                                                div.quote-container {
+                                                                                    span.quote-lines {
+                                                                                        display: flex;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        height: 50px;
+                                                                                        img.quote-icon {
 
+                                                                                        }
+                                                                                    }                                                            span.quote-lines::before,
+                                                                                    span.quote-lines::after {
+                                                                                        content: "";
+                                                                                        position: absolute;
+                                                                                        height: 24px;
+                                                                                        border-bottom: 2px solid $red;
+                                                                                        top: 0;
+                                                                                        width: 40%;
+                                                                                        display: flex;
                                                                                     }
-                                                                                }                                                            span.quote-lines::before,
-                                                                                span.quote-lines::after {
-                                                                                    content: "";
-                                                                                    position: absolute;
-                                                                                    height: 24px;
-                                                                                    border-bottom: 2px solid $red;
-                                                                                    top: 0;
-                                                                                    width: 40%;
-                                                                                    display: flex;
-                                                                                }
-                                                                                span.quote-lines::before {
-                                                                                    right: 0;
-                                                                                    margin-right: 0px;
-                                                                                }
-                                                                                span.quote-lines::after {
-                                                                                    left: 0;
-                                                                                    margin-left: 0px;
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                        div#jstory-paragraphs {
-                                                                            max-width: 650px;
-                                                                            padding-top: 30px;
-                                                                            margin: 0 auto;
-                                                                            div.wpb_wrapper {
-                                                                                flex-direction: column;
-                                                                                p.pv-p {
-                                                                                    text-align: center;
-                                                                                    &.top {
-                                                                                        margin-bottom: 4%;
+                                                                                    span.quote-lines::before {
+                                                                                        right: 0;
+                                                                                        margin-right: 0px;
                                                                                     }
-                                                                                    &.mid {
-                                                                                        margin-bottom: 4%;
-                                                                                    }
-                                                                                    &.btm {
-                                                                                        margin-bottom: 7%;
+                                                                                    span.quote-lines::after {
+                                                                                        left: 0;
+                                                                                        margin-left: 0px;
                                                                                     }
                                                                                 }
                                                                             }
-                                                                        }
-                                                                        div#jstory-lower-heading {
-                                                                            h3.pv-h3.center.red {
-                                                                                max-width: 70%;
+                                                                            div#jstory-paragraphs {
+                                                                                max-width: 650px;
+                                                                                padding-top: 30px;
+                                                                                margin: 0 auto;
+                                                                                div.wpb_wrapper {
+                                                                                    flex-direction: column;
+                                                                                    width: 80%;
+                                                                                    margin: 0 auto;
+                                                                                    p.pv-p {
+                                                                                        text-align: center;
+                                                                                        &.top {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.mid {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.btm {
+                                                                                            margin-bottom: 7%;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div#jstory-lower-heading {
+                                                                                h3.pv-h3.center.red {
+                                                                                    max-width: 70%;
+                                                                                    line-height: 35px;
+                                                                                }
                                                                             }
                                                                         }
                                                                     }
@@ -1565,6 +1634,10 @@ body.livinghae-page {
                 }
             }
         }
+    }
+    body.livinghae-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#living-hae-impacts-row div.clearfix.edgtf-full-section-inner div.pv-col1.four div.vc_column-inner div.wpb_wrapper div#not-patient-row div#not-patient-section {
+        margin-left: 0%;
+        padding-right: 7%;
     }
 }
 @media all and (max-width: 480px) {

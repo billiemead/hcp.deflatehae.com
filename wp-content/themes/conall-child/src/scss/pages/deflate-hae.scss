@@ -245,7 +245,7 @@ body.home {
                                                         }
                                                         div#icon-row5 {
                                                             img.hae-icon.five {
-
+                                                                padding-top: 7%;
                                                             }
                                                             p.pv-p {
 
@@ -669,6 +669,14 @@ body.home {
 
                                                                 }
                                                             }
+                                                            div#icon-row5 {
+                                                                img.hae-icon.five {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -972,6 +980,9 @@ body.home {
                                 background-position-x: center;
                                 background-position-y: top;
                             }
+                            div#not-patient-row {
+                                display: none;
+                            }
                             div.section-background {
                                 margin-top: 0;
                                 margin-bottom: -20px;
@@ -1106,6 +1117,14 @@ body.home {
                                                             }
                                                             div#icon-row4 {
                                                                 img.hae-icon.four {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row5 {
+                                                                img.hae-icon.five {
 
                                                                 }
                                                                 p.pv-p {
@@ -1509,7 +1528,7 @@ body.home {
                                         div.pv-col1.facts-icon-col {
                                             div.wpb_wrapper {
                                                 div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 15%;
+                                                    padding-top: 10%;
                                                     padding-bottom: 10%;
                                                     div.wpb_wrapper {
                                                         div#hae-facts-icon-row {
@@ -1560,6 +1579,14 @@ body.home {
                                                             }
                                                             div#icon-row4 {
                                                                 img.hae-icon.four {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row5 {
+                                                                img.hae-icon.five {
 
                                                                 }
                                                                 p.pv-p {
@@ -1656,6 +1683,7 @@ body.home {
                                                                                 justify-content: space-between;
                                                                                 align-items: center;
                                                                                 flex-grow: 1;
+                                                                                max-width: 350px;
                                                                                 h5 {
                                                                                     br.line-break {
                                                                                         display: none;

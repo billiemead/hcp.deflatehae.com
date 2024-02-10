@@ -276,15 +276,14 @@ body.haeoverview-page {
                             }
                         }
                         div#overview-bradykinin-row {
-                            padding-top: 50px;
-                            /* padding-bottom: 20%; */
+                            padding-top: 1%;
                             div.edgtf-full-section-inner {
                                 max-width: 1436px;
                                 width: 80%;
                                 margin: 0 auto;
                                 div.pv-col1.top {
-                                    padding-bottom: 5%;
-                                    padding-top: 1%;
+                                    padding-bottom: 3%;
+                                    padding-top: 0;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
                                             div.hae-subheading {
@@ -325,7 +324,7 @@ body.haeoverview-page {
                                                 font-size: 20px;
                                                 line-height: 30px;
                                                 padding-top: 1%;
-                                                padding-bottom: 5%;
+                                                padding-bottom: 2.5%;
                                                 max-width: 980px;
                                                 margin: 0 auto;
                                                 sup.pv-sup {
@@ -342,7 +341,7 @@ body.haeoverview-page {
                         }
                         div.section-background {
                             position: relative;
-                            height: 945px;
+                            height: 100%;
                             background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
                             background-repeat: no-repeat;
                             background-size: 100%;
@@ -480,6 +479,11 @@ body.haeoverview-page {
                                 }
                             }
 
+                        }
+                        div.templatera_shortcode {
+                            div#hae-hcp-form-section {
+                                padding-top: 7%;
+                            }
                         }
                         div#references-section {
                             div.refs-title {
@@ -1367,7 +1371,7 @@ body.haeoverview-page {
                             div#mob-triwhite-box-row {
                                 display: flex;
                                 margin-top: 5%;
-                                margin-bottom: 16% !important;
+                                margin-bottom: 10% !important;
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 88%;
@@ -1494,7 +1498,7 @@ body.haeoverview-page {
                                 bottom: -2px;
                                 div#overview-banner-section {
                                     z-index: 103;
-                                    transform: translateY(30px);
+                                    transform: translateY(55px);
                                     margin-bottom: 0 !important;
                                     div.edgtf-full-section-inner {
                                         div.pv-col1.banner-col {

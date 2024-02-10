@@ -32,6 +32,7 @@ body {
             align-items: center;
             padding-top: 4%;
             padding-bottom: 4.5%;
+            margin-bottom: -1px !important;
             div.clearfix.edgtf-full-section-inner {
                 div.pv-col1 {
                     div.form-heading {
@@ -247,6 +248,7 @@ outline: none !important;
                 /* max-height: 790px; */
                 padding-top: 6%;
                 padding-bottom: 12%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -333,6 +335,7 @@ outline: none !important;
                 max-height: 100%;
                 padding-top: 8%;
                 padding-bottom: 12%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -342,6 +345,8 @@ outline: none !important;
                         }
                         p.pv-p.form-p.center {
                             line-height: 26px;
+                            max-width: 400px;
+                            margin: 0 auto;
                         }
                         div#salesforce-form-container {
                             form.salesforce-form {
@@ -432,6 +437,7 @@ outline: none !important;
             div#hae-hcp-form-section {
                 padding-top: 12%;
                 padding-bottom: 15%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -452,8 +458,8 @@ outline: none !important;
                                     & > div.sf-form-field:nth-child(-n+1) {
                                     }
                                     div.sf-form-field {
-                                        margin-top: 7%;
-                                        margin-bottom: 7%;
+                                        margin-top: 4.5%;
+                                        margin-bottom: 4.5%;
                                         span.form-title {
 
                                         }

@@ -67,7 +67,7 @@ body.treatmentburdens-page {
                         div#treatment-triple-icon-row {
                             background-image: url("/wp-content/themes/conall-child/images/triple-icon-background-1920x1600.png");
                             background-repeat: no-repeat;
-                            padding: 5% 0 0 0;
+                            padding: 3% 0 0 0;
                             background-color: $white;
                             div.edgtf-full-section-inner {
                                 div.pv-col1 {
@@ -231,18 +231,28 @@ body.treatmentburdens-page {
                                             div#balloon-animation-row-inner {
                                                 div.edgtf-full-section-inner {
                                                     width: 100%;
+                                                    display: flex;
+                                                    justify-content: center;
                                                     div.pv-col2 {
 
                                                     }
                                                     div.pv-col2.left {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: flex-end;
                                                         div.vc_column-inner {
                                                             div.wpb_wrapper {
                                                                 div#balloon-placeholder-desktop {
                                                                     display: block;
                                                                     text-align: center;
                                                                     figure.wpb_wrapper {
-                                                                        img {
-                                                                            max-width: 80%;
+                                                                        div.vc_single_image-wrapper {
+                                                                            display: flex;
+                                                                            justify-content: flex-end;
+                                                                            align-items: flex-end;
+                                                                            img {
+                                                                                max-width: 80%;
+                                                                            }
                                                                         }
                                                                     }
                                                                 }
@@ -253,12 +263,17 @@ body.treatmentburdens-page {
                                                         }
                                                     }
                                                     div.pv-col2.right {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: flex-start;
                                                         margin-top: 100px;
                                                         div.vc_column-inner {
                                                             div.wpb_wrapper {
                                                                 div#balloon-animation-heading {
                                                                     p.pv-p.center.bold.italic {
-
+                                                                        text-align: center !important;
+                                                                        max-width: 550px;
+                                                                        margin: 0 auto;
                                                                     }
                                                                 }
                                                                 div#button-animation-triggers {
@@ -300,18 +315,19 @@ body.treatmentburdens-page {
                                                                 }
                                                                 div#balloon-animation-topbox {
                                                                    /*  background-color: $red; */
-                                                                    background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
-                                                                    background-repeat: no-repeat;
-                                                                    background-size: 100%;
-                                                                    height: 200px;
-                                                                    display: flex;
-                                                                    flex-direction: column;
-                                                                    justify-content: center;
-                                                                    align-items: center;
-                                                                    padding: 0 7%;
-                                                                    margin: 0 auto;
-                                                                    max-width: 589px;
-                                                                    filter: drop-shadow(0 0 36px rgba(0,0,0,0.5));
+                                                                        background-image: url("/wp-content/themes/conall-child/images/balloon-redbox-586x200.png");
+                                                                        background-repeat: no-repeat;
+                                                                        background-size: cover;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        padding: 7% 11%;
+                                                                        margin: 0 auto;
+                                                                        width: 100%;
+                                                                        filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.5));
+                                                                        aspect-ratio: 293 / 100;
+                                                                        background-position: center top;
                                                                     div#balloon-topbox-wrapper {
                                                                         h4.pv-h4.center {
                                                                             sup.pv-sup {
@@ -327,16 +343,20 @@ body.treatmentburdens-page {
                                                                     background-repeat: no-repeat;
                                                                     background-position: center bottom;
                                                                     background-size: 100%;
-                                                                    height: 200px;
-                                                                    width: 500px;
+                                                                    height: 300px;
+                                                                    width: 80%;
                                                                     margin: 0 auto;
                                                                     display: flex;
                                                                     flex-direction: column;
                                                                     justify-content: center;
                                                                     align-items: center;
-                                                                    padding: 0 5%;
+                                                                    padding: 10% 8%;
+                                                                    aspect-ratio: 496 / 299;
+                                                                    margin-top: -14%;
+                                                                    margin-bottom: 14% !important;
                                                                     div#balloon-btmbox-wrapper {
                                                                         h6.pv-h6.center {
+                                                                            padding-top: 16%;
                                                                             sup.pv-sup {
                                                                                 font-size: 60%;
                                                                             }
@@ -759,11 +779,33 @@ body.treatmentburdens-page {
 
                                                         }
                                                         div.pv-col2.left {
-                                                            img {
-
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: flex-end;
+                                                            div.vc_column-inner {
+                                                                div.wpb_wrapper {
+                                                                    div#balloon-placeholder-desktop {
+                                                                        display: block;
+                                                                        text-align: center;
+                                                                        figure.wpb_wrapper {
+                                                                            div.vc_single_image-wrapper {
+                                                                                display: flex;
+                                                                                justify-content: flex-end;
+                                                                                align-items: flex-end;
+                                                                                img {
+                                                                                    max-width: 100%;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    div#balloon-placeholder-mobile {
+                                                                        display: none;
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                         div.pv-col2.right {
+
                                                             margin-top: 0;
                                                             div.vc_column-inner {
                                                                 div.wpb_wrapper {
@@ -838,13 +880,13 @@ body.treatmentburdens-page {
                                                                         background-position: center bottom;
                                                                         background-size: 100% 101%;
                                                                         height: 238px;
-                                                                        width: 292px;
+                                                                        width: 320px;
                                                                         margin: 0 auto;
                                                                         display: flex;
                                                                         flex-direction: column;
                                                                         justify-content: center;
                                                                         align-items: center;
-                                                                        padding: 6% 5% 0 5%;
+                                                                        padding: 6% 10% 0 10%;
                                                                         position: relative;
                                                                         top: -42px;
                                                                         z-index: -1;
@@ -871,9 +913,9 @@ body.treatmentburdens-page {
                                         display: flex;
                                         height: 60px;
                                         div#balloon-animation-footnote2 {
-                                            margin-top: 17px;
+                                            margin-top: 25px;
                                             p.pv-p.center.footnote-2 {
-                                                padding-left: 31.5%;
+                                                padding-left: 16.5%;
                                             }
                                         }
                                     }
@@ -886,7 +928,7 @@ body.treatmentburdens-page {
                             }
                             div.section-background {
                                 position: relative;
-                                height: 936px;
+                                height: 100%;
                                 background-color: $yellow;
                                 visibility: visible;
                                 display: flex;
@@ -1008,7 +1050,7 @@ body.treatmentburdens-page {
                                 }
                             }
                             div#hae-hcp-form-section {
-
+                                padding-top: 10%;
                             }
                             div#references-section {
                                 div.refs-title {

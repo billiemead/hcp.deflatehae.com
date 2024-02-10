@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
         });
     });
     $(window).resize(function () {
-        $('#living-hero-row').html($(window).width());
+        $('#breakpoint-row').html($(window).width());
         if ($(window).width() > 1025) {
             var bgArray = [
                 '/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg',

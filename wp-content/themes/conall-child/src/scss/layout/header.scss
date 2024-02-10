@@ -400,9 +400,10 @@ body.pharvaris {
                                                         display: flex;
                                                         justify-content: center;
                                                         li.menu-selector-list-item {
+                                                            span.menu-selector-link,
                                                             a.menu-selector-link {
                                                                 font-size: 12px;
-                                                                line-height: 12px;
+                                                                line-height: 40px;
                                                                 font-weight: 400;
                                                                 transition: all 0.5s ease-in-out;
                                                                 &.yellow {
@@ -413,11 +414,11 @@ body.pharvaris {
                                                                     color: $white;
                                                                 }
                                                             }
-                                                            a.menu-selector-link.yellow:hover {
+                                                           /*  a.menu-selector-link.yellow:hover {
                                                                 font-weight: normal;
                                                                 color: $white;
                                                                 transition: all 0.5s ease-in-out;
-                                                            }
+                                                            } */
                                                             a.menu-selector-link.white:hover {
                                                                 color: $yellow;
                                                                 transition: all 0.5s ease-in-out;
@@ -557,10 +558,10 @@ body.pharvaris {
                                                         display: flex;
                                                         justify-content: center;
                                                         li.menu-selector-list-item {
-                                                            span.menu-selector-link,
+                                                                span.menu-selector-link,
                                                                 a.menu-selector-link {
                                                                     font-size: 12px;
-                                                                    line-height: 12px;
+                                                                    line-height: 40px;
                                                                     transition: all 0.5s ease-in-out;
                                                                     &.yellow {
                                                                         color: $yellow;
@@ -572,11 +573,11 @@ body.pharvaris {
                                                                         display: block;
                                                                     }
                                                                 }
-                                                                a.menu-selector-link.yellow:hover {
+                                                                /* a.menu-selector-link.yellow:hover {
                                                                     font-weight: normal;
                                                                     color: $white;
                                                                     transition: all 0.5s ease-in-out;
-                                                                }
+                                                                } */
                                                                 a.menu-selector-link.white:hover {
                                                                     color: $yellow;
                                                                     transition: all 0.5s ease-in-out;

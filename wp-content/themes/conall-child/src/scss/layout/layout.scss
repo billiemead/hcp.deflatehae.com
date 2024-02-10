@@ -28,6 +28,7 @@ body {
     color: $black;
     padding-bottom: 215px !important;
     background-color: $dk-grey;
+    letter-spacing: -0.5px;
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
@@ -280,12 +281,14 @@ body.pharvaris {
         font-size: 21px;
         line-height: 26px;
         color: $black;
+        letter-spacing: -0.5px;
     }
     h1, h1.pv-h1 {
         @include bold($poppins);
         font-size: 30px;
         line-height: 40px;
         color: $black;
+        letter-spacing: -0.5px;
         &.policies {
             font-size: 21px;
             line-height: 26px;
@@ -308,6 +311,7 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 18px;
         line-height: 26px;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
@@ -335,6 +339,7 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 30px;
         line-height: 50px;
+        letter-spacing: -0.5px;
         &.form {
             color: $dk-grey;
             margin-top: 10px;
@@ -370,6 +375,7 @@ body.pharvaris {
         line-height: 34px;
         text-align: left;
         color:  $white;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
@@ -384,6 +390,7 @@ body.pharvaris {
         line-height: 30px;
         text-align: center;
         color:  $red;
+        letter-spacing: -0.5px;
     }
     h4.h4-refs.left {
         @include bold($poppins);
@@ -393,6 +400,7 @@ body.pharvaris {
         text-align: left;
         color:  $white;
         margin-bottom: 20px;
+        letter-spacing: -0.5px;
     }
     h5, h5.pv-h5 {
         @include bold($poppins);
@@ -400,6 +408,7 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         text-transform: uppercase;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
@@ -416,6 +425,7 @@ body.pharvaris {
         font-size: 20px;
         line-height: 30px;
         color: $dk-grey;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
@@ -426,6 +436,7 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         margin: 0;
+        letter-spacing: -0.5px;
         &.footnote-2 {
             font-size: 12px;
             line-height: 16px;
@@ -474,6 +485,7 @@ body.pharvaris {
         color: $white;
         font-size: 16px;
         line-height: 26px;
+        letter-spacing: -0.5px;
     }
     ul.pv-list {
         list-style-position: outside;
@@ -489,6 +501,7 @@ body.pharvaris {
             padding-left: 0;
             margin-left: 22px;
             padding-bottom: 10px;
+            letter-spacing: -0.5px;
                 sup.pv-sup {
 
                 }
@@ -550,6 +563,7 @@ body.pharvaris {
         padding-right: 4rem !important;
         resize: none;
         outline: none;
+        letter-spacing: -0.5px;
         cursor: pointer;
         option.pv-option  {
             text-align: center;
@@ -557,6 +571,7 @@ body.pharvaris {
             line-height: 28px;
             @include bold($poppins);
             color: $red;
+            letter-spacing: -0.5px;
         }
     }
     div.pv-row.banner-section {
@@ -847,7 +862,7 @@ body.pharvaris {
             }
         }
         div#not-patient-row {
-            
+
         }
         div.pv-col1 {
 
@@ -1476,7 +1491,7 @@ body.pharvaris {
 
                     }
                     div.banner-wrapper {
-                        display: none;
+                        /* display: none; */
                         &.mobile {
                             display: block;
                             width: 100%;
@@ -1507,10 +1522,7 @@ body.pharvaris {
                                             text-transform: uppercase;
                                         }
                                     &.jennifer {
-                                        background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-517x108.svg");
-                                        width: min(517px, 80%);
-                                        max-height: 108px;
-                                        height: 80%;
+
                                         h2.pv-h2.center.white {
                                             text-transform: uppercase;
                                             padding-top: 7.8%;
@@ -1608,7 +1620,7 @@ body.pharvaris {
                                         div.hae-image-wrapper {
                                             margin-right: 0;
                                             img {
-
+                                                
                                             }
                                         }
                                         div.hae-copy-wrapper {
@@ -1690,6 +1702,7 @@ body.pharvaris {
         div.pv-row {
             div.edgtf-full-section-inner {
                 max-width: 500px;
+                width: 90%;
             }
             &.references {
                 padding-top: 12%;
