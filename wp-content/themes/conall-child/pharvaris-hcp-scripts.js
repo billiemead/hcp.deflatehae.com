@@ -16,7 +16,7 @@ var changeBgImage = function () {
     } else {
         idBackgnd.style.backgroundImage = "url('/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg')";
     }
-    /* idBackgnd.style.backgroundColor = document.getElementById("living-hae-impacts-row").value; */
+    idBackgnd.style.backgroundColor = document.getElementById("living-hae-impacts-row").value;
 
 };
 

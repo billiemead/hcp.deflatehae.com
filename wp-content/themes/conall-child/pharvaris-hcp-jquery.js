@@ -17,6 +17,20 @@ jQuery(document).ready(function ($) {
     })
 }); */
 
+var bgArray = [
+    '/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg',
+    '/wp-content/themes/conall-child/images/living-backg-2-1920x1200.jpg',
+    '/wp-content/themes/conall-child/images/living-backg-3-1920x1200.jpg',
+    '/wp-content/themes/conall-child/images/living-backg-4-1920x1200.jpg'
+]
+jQuery(document).ready(function ($) {
+    $('#redselect').on('change', function () {
+        value = $(this).val() - 1;
+        $('#living-hae-impacts-row').css({
+            'background-image': 'url(' + bgArray[value] + ')'
+        });
+    });
+});
 jQuery(document).ready(function ($) {
     $(document).on('click', '.pv-red-select', function () {
         $(this).parent().toggleClass('focused');
