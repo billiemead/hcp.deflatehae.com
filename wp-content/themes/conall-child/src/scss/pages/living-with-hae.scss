@@ -79,6 +79,7 @@ body.livinghae-page {
                                 div.pv-col1.one {
                                     padding-top: 8%;
                                     div.vc_column-inner {
+                                        padding: 0;
                                         div.wpb_wrapper {
                                             div#burdens-top-heading {
                                                 h1.pv-h1.center {
@@ -95,6 +96,7 @@ body.livinghae-page {
                                     padding-top: 4%;
                                     padding-bottom: 235px;
                                     div.vc_column-inner {
+                                        padding: 0;
                                         div.wpb_wrapper {
                                             div#burden-option-container {
                                                 max-width: 1150px;
@@ -182,6 +184,7 @@ body.livinghae-page {
                                     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
                                     float: right;
                                         div.vc_column-inner {
+                                            padding: 0;
                                             div.wpb_wrapper {
                                                 div#swap-box {
                                                     /* width: 400px;
@@ -231,6 +234,7 @@ body.livinghae-page {
                                     padding-bottom: 0;
                                     margin-left: 20px;
                                     div.vc_column-inner {
+                                        padding: 0;
                                         div.wpb_wrapper {
                                             div#living-balloon-hand {
                                                 img {
@@ -267,7 +271,7 @@ body.livinghae-page {
                                     z-index: 103;
                                     div.edgtf-full-section-inner {
                                         div.pv-col1.banner-col {
-                                            div.banner-wrapper {
+                                            div.banner-wrapper-jennifer {
                                                 div.wpb_wrapper {
                                                     div.banner-img-container.jennifer {
                                                         h2.pv-h2.center.white {
@@ -283,6 +287,7 @@ body.livinghae-page {
                                     div.edgtf-full-section-inner {
                                         div.pv-col1.ripple-image {
                                             div.vc_column-inner {
+                                                padding: 0;
                                                 div.wpb_wrapper {
                                                     div.hae-white-box-image {
                                                         figure.wpb_wrapper {
@@ -312,97 +317,107 @@ body.livinghae-page {
                                         }
                                         div.pv-col1.facts-icon-col {
                                             padding: 10% 0 8% 0;
-                                            div.wpb_wrapper {
-                                                div#jennifers--inner-row-1 {
-                                                    padding-bottom: 60px;
-                                                    div.pv-col2 {
-                                                        p.pv-p.stats {
-                                                            padding: 8px 0 8px 0;
-                                                        }
-                                                        &.left {
-                                                            div.jstory-stats {
-
-                                                                &.left {
-
-                                                                }
-                                                                &.right {
+                                            div.vc_column-inner {
+                                                padding: 0;
+                                                div.wpb_wrapper {
+                                                    div#jennifers--inner-row-1 {
+                                                        padding-bottom: 7%;
+                                                        div.pv-col2 {
+                                                            div.vc_column-inner {
+                                                                padding: 0;
+                                                                div.wpb_wrapper {
 
                                                                 }
                                                             }
-                                                        }
-                                                        &.right {
-                                                            padding-right: 2%;
-                                                        }
-                                                    }
-                                                }
-                                                div#jennifers--inner-row-2 {
-                                                    div.pv-col1.fullwidth {
-                                                        div.vc_column-inner {
-                                                            padding: 0;
-                                                            div.wpb_wrapper {
-                                                                div#jstory-icon-separator {
-                                                                    div.quote-container {
-                                                                        span.quote-lines {
-                                                                            display: flex;
-                                                                            justify-content: center;
-                                                                            align-items: center;
-                                                                            height: 50px;
-                                                                            img.quote-icon {
+                                                            p.pv-p.stats {
+                                                                padding: 8px 0 8px 0;
+                                                            }
+                                                            &.left {
+                                                                div.jstory-stats {
 
-                                                                            }
-                                                                        }                                                                          span.quote-lines::before,
-                                                                        span.quote-lines::after {
-                                                                            content: "";
-                                                                            position: absolute;
-                                                                            height: 24px;
-                                                                            border-bottom: 2px solid $red;
-                                                                            top: 0;
-                                                                            width: 40%;
-                                                                            display: flex;
-                                                                        }
-                                                                        span.quote-lines::before {
-                                                                            right: 0;
-                                                                            margin-right: 0px;
-                                                                        }
-                                                                        span.quote-lines::after {
-                                                                            left: 0;
-                                                                            margin-left: 0px;
-                                                                        }
+                                                                    &.left {
+
                                                                     }
-                                                                }
-                                                                div#jstory-paragraphs {
-                                                                    max-width: 865px;
-                                                                    padding-top: 60px;
-                                                                    margin: 0 auto;
-                                                                    div.wpb_wrapper {
-                                                                        flex-direction: column;
-                                                                        p.pv-p {
-                                                                            text-align: center;
-                                                                            &.top {
-                                                                                margin-bottom: 3%;
-                                                                            }
-                                                                            &.mid {
-                                                                                margin-bottom: 3%;
-                                                                            }
-                                                                            &.btm {
-                                                                                margin-bottom: 7%;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                                div#jstory-lower-heading {
-                                                                    h3.pv-h3.center.red {
+                                                                    &.right {
 
                                                                     }
                                                                 }
                                                             }
+                                                            &.right {
+                                                                padding-right: 2%;
+                                                            }
                                                         }
                                                     }
-                                                }
-                                                a.pv-btn.w-292 {
-                                                    margin-top: 60px;
+                                                    div#jennifers--inner-row-2 {
+                                                        div.pv-col1.fullwidth {
+                                                            div.vc_column-inner {
+                                                                padding: 0;
+                                                                div.wpb_wrapper {
+                                                                    div#jstory-icon-separator {
+                                                                        div.quote-container {
+                                                                            span.quote-lines {
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                height: 50px;
+                                                                                img.quote-icon {
+
+                                                                                }
+                                                                            }                                                                          span.quote-lines::before,
+                                                                            span.quote-lines::after {
+                                                                                content: "";
+                                                                                position: absolute;
+                                                                                height: 24px;
+                                                                                border-bottom: 2px solid $red;
+                                                                                top: 0;
+                                                                                width: 40%;
+                                                                                display: flex;
+                                                                            }
+                                                                            span.quote-lines::before {
+                                                                                right: 0;
+                                                                                margin-right: 0px;
+                                                                            }
+                                                                            span.quote-lines::after {
+                                                                                left: 0;
+                                                                                margin-left: 0px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    div#jstory-paragraphs {
+                                                                        max-width: 865px;
+                                                                        padding-top: 8%;
+                                                                        margin: 0 auto;
+                                                                        div.wpb_wrapper {
+                                                                            flex-direction: column;
+                                                                            p.pv-p {
+                                                                                text-align: center;
+                                                                                &.top {
+                                                                                    margin-bottom: 3%;
+                                                                                }
+                                                                                &.mid {
+                                                                                    margin-bottom: 3%;
+                                                                                }
+                                                                                &.btm {
+                                                                                    margin-bottom: 7%;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    div#jstory-lower-heading {
+                                                                        h3.pv-h3.center.red {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    a.pv-btn.w-292 {
+                                                        margin-top: 10%;
+                                                    }
                                                 }
                                             }
+
                                         }
                                     }
                                 }
@@ -455,10 +470,10 @@ body.livinghae-page {
                                                     max-width: 90%;
                                                     margin: 0 auto;
                                                     h2.pv-h2 {
-                                                        /* font-size: 30px;
-                                                        line-height: 40px; */
-                                                        font-size: 2.9vw;
-                                                        line-height: 4vw;
+                                                        font-size: 30px;
+                                                        line-height: 40px;
+                                                        /* font-size: 2.9vw;
+                                                        line-height: 4vw; */
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -511,6 +526,8 @@ body.livinghae-page {
                                                     max-width: 615px;
                                                     margin: 0 auto;
                                                     h1.pv-h1.center {
+                                                        font-size: 30px;
+                                                        line-height: 40px;
                                                         span.hide-copy {
                                                             display: inline-block;
                                                         }
@@ -539,7 +556,8 @@ body.livinghae-page {
                                                             div.option {
                                                                 h1.pv-h1 {
                                                                     padding-top: 12px;
-                                                                    font-size: 1.6vw;
+                                                                    font-size: 30px;
+                                                                    line-height: 40px;
                                                                     sup.pv-sup {
                                                                         font-size: 50%;
                                                                         bottom: 1.3ex;
@@ -555,8 +573,8 @@ body.livinghae-page {
                                                                 select#redselect {
                                                                     margin-bottom: 15px;
                                                                     height: 60px;
-                                                                    font-size: 2.1vw;
-                                                                    line-height: 2.1vw;
+                                                                    font-size: 40px;
+                                                                    line-height: 40px;
                                                                     option.pv-option {
 
                                                                     }
@@ -678,20 +696,23 @@ body.livinghae-page {
                             }
                             div.section-background {
                                 position: relative;
-                                height: 1140px;
+                                height: 100%;
                                 background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
                                 background-repeat: no-repeat;
-                                background-size: 85%;
+                                background-size: 125%;
                                 background-position: center center;
                                 visibility: visible;
-                                z-index: -1;
+                                z-index: 21;
+                                margin-bottom: -80px !important;
+                                background-size: 125%;
+                                    background-position-y: 350px;
                                 div#hae-section-wrapper {
-                                    transform: translateY(-165px);
+                                    /* transform: translateY(-80px); */
                                     div#jennifers-banner-section {
                                         z-index: 103;
                                         div.edgtf-full-section-inner {
                                             div.pv-col1.banner-col {
-                                                div.banner-wrapper {
+                                                div.banner-wrapper-jennifer {
                                                     div.wpb_wrapper {
                                                         div.banner-img-container.jennifer {
                                                             h2.pv-h2.center.white {
@@ -736,112 +757,116 @@ body.livinghae-page {
                                             }
                                             div.pv-col1.facts-icon-col {
                                                 padding: 12% 0 7% 0;
-                                                div.wpb_wrapper {
-                                                    div#jennifers--inner-row-1 {
-                                                        padding-bottom: 30px;
-                                                            display: flex;
-                                                        div.edgtf-full-section-inner {
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            div.pv-col2 {
-                                                                width: 100%;
-                                                                div.vc_column-inner {
-                                                                    div.wpb_wrapper {
-
-                                                                    }
-                                                                }
-                                                                p.pv-p.stats {
-                                                                    padding: 8px 0 8px 0;
-                                                                }
-                                                                &.left {
-                                                                    div.wpb_wrapper {
-                                                                        justify-content: flex-start;
-                                                                    }
-                                                                    div.jstory-stats {
-
-                                                                        &.left {
-
-                                                                        }
-                                                                        &.right {
-
-                                                                        }
-                                                                    }
-                                                                }
-                                                                &.right {
-                                                                    padding-right: 2%;
-                                                                }
-                                                            }
-                                                        }
-
-                                                    }
-                                                    div#jennifers--inner-row-2 {
-                                                        div.pv-col1.fullwidth {
-                                                            div.vc_column-inner {
-                                                                padding: 0;
-                                                                div.wpb_wrapper {
-                                                                    div#jstory-icon-separator {
-                                                                        div.quote-container {
-                                                                            span.quote-lines {
-                                                                                display: flex;
-                                                                                justify-content: center;
-                                                                                align-items: center;
-                                                                                height: 50px;
-                                                                                img.quote-icon {
-
-                                                                                }
-                                                                            }                                                            span.quote-lines::before,
-                                                                            span.quote-lines::after {
-                                                                                content: "";
-                                                                                position: absolute;
-                                                                                height: 24px;
-                                                                                border-bottom: 2px solid $red;
-                                                                                top: 0;
-                                                                                width: 40%;
-                                                                                display: flex;
-                                                                            }
-                                                                            span.quote-lines::before {
-                                                                                right: 0;
-                                                                                margin-right: 0px;
-                                                                            }
-                                                                            span.quote-lines::after {
-                                                                                left: 0;
-                                                                                margin-left: 0px;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                    div#jstory-paragraphs {
-                                                                        max-width: 650px;
-                                                                        padding-top: 30px;
-                                                                        margin: 0 auto;
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#jennifers--inner-row-1 {
+                                                            padding-bottom: 30px;
+                                                                display: flex;
+                                                            div.edgtf-full-section-inner {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                div.pv-col2 {
+                                                                    width: 100%;
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
                                                                         div.wpb_wrapper {
-                                                                            flex-direction: column;
-                                                                            p.pv-p {
-                                                                                text-align: center;
-                                                                                &.top {
-                                                                                    margin-bottom: 3%;
-                                                                                }
-                                                                                &.mid {
-                                                                                    margin-bottom: 3%;
-                                                                                }
-                                                                                &.btm {
-                                                                                    margin-bottom: 3%;
-                                                                                }
+
+                                                                        }
+                                                                    }
+                                                                    p.pv-p.stats {
+                                                                        padding: 8px 0 8px 0;
+                                                                    }
+                                                                    &.left {
+                                                                        div.wpb_wrapper {
+                                                                            justify-content: flex-start;
+                                                                        }
+                                                                        div.jstory-stats {
+
+                                                                            &.left {
+
+                                                                            }
+                                                                            &.right {
+
                                                                             }
                                                                         }
                                                                     }
-                                                                    div#jstory-lower-heading {
-                                                                        h3.pv-h3.center.red {
+                                                                    &.right {
+                                                                        padding-right: 2%;
+                                                                    }
+                                                                }
+                                                            }
 
+                                                        }
+                                                        div#jennifers--inner-row-2 {
+                                                            div.pv-col1.fullwidth {
+                                                                div.vc_column-inner {
+                                                                    padding: 0;
+                                                                    div.wpb_wrapper {
+                                                                        div#jstory-icon-separator {
+                                                                            div.quote-container {
+                                                                                span.quote-lines {
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    height: 50px;
+                                                                                    img.quote-icon {
+
+                                                                                    }
+                                                                                }                                                            span.quote-lines::before,
+                                                                                span.quote-lines::after {
+                                                                                    content: "";
+                                                                                    position: absolute;
+                                                                                    height: 24px;
+                                                                                    border-bottom: 2px solid $red;
+                                                                                    top: 0;
+                                                                                    width: 40%;
+                                                                                    display: flex;
+                                                                                }
+                                                                                span.quote-lines::before {
+                                                                                    right: 0;
+                                                                                    margin-right: 0px;
+                                                                                }
+                                                                                span.quote-lines::after {
+                                                                                    left: 0;
+                                                                                    margin-left: 0px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        div#jstory-paragraphs {
+                                                                            max-width: 680px;
+                                                                            padding-top: 4%;
+                                                                            margin: 0 auto;
+                                                                            div.wpb_wrapper {
+                                                                                flex-direction: column;
+                                                                                p.pv-p {
+                                                                                    text-align: center;
+                                                                                    &.top {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                    &.mid {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                    &.btm {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        div#jstory-lower-heading {
+                                                                            h3.pv-h3.center.red {
+
+                                                                            }
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                    }
-                                                    a.pv-btn.w-292 {
-                                                        margin-top: 30px;
+                                                        a.pv-btn.w-292 {
+                                                            margin-top: 5%;
+                                                        }
                                                     }
                                                 }
+
                                             }
                                         }
                                     }
@@ -1132,7 +1157,8 @@ body.livinghae-page {
                                         z-index: 103;
                                         div.edgtf-full-section-inner {
                                             div.pv-col1.banner-col {
-                                                div.banner-wrapper {
+                                                div.banner-wrapper-jennifer {
+                                                    display: block;
                                                     div.wpb_wrapper {
                                                         div.banner-img-container.jennifer {
                                                             h2.pv-h2.center.white {
@@ -1178,110 +1204,113 @@ body.livinghae-page {
                                             }
                                             div.pv-col1.facts-icon-col {
                                                 padding: 12% 0 7% 0;
-                                                div.wpb_wrapper {
-                                                    div#jennifers--inner-row-1 {
-                                                        padding-bottom: 30px;
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#jennifers--inner-row-1 {
+                                                            padding-bottom: 30px;
                                                             display: flex;
-                                                        div.edgtf-full-section-inner {
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            div.pv-col2 {
-                                                                width: 100%;
-                                                                div.vc_column-inner {
-                                                                    div.wpb_wrapper {
-
-                                                                    }
-                                                                }
-                                                                p.pv-p.stats {
-                                                                    padding: 8px 0 8px 0;
-                                                                }
-                                                                &.left {
-                                                                    div.wpb_wrapper {
-                                                                        justify-content: flex-start;
-                                                                    }
-                                                                    div.jstory-stats {
-
-                                                                        &.left {
-
-                                                                        }
-                                                                        &.right {
-
-                                                                        }
-                                                                    }
-                                                                }
-                                                                &.right {
-                                                                    padding-right: 2%;
-                                                                }
-                                                            }
-                                                        }
-
-                                                    }
-                                                    div#jennifers--inner-row-2 {
-                                                        div.pv-col1.fullwidth {
-                                                            div.vc_column-inner {
-                                                                padding: 0;
-                                                                div.wpb_wrapper {
-                                                                    div#jstory-icon-separator {
-                                                                        div.quote-container {
-                                                                            span.quote-lines {
-                                                                                display: flex;
-                                                                                justify-content: center;
-                                                                                align-items: center;
-                                                                                height: 50px;
-                                                                                img.quote-icon {
-
-                                                                                }
-                                                                            }                                                            span.quote-lines::before,
-                                                                            span.quote-lines::after {
-                                                                                content: "";
-                                                                                position: absolute;
-                                                                                height: 24px;
-                                                                                border-bottom: 2px solid $red;
-                                                                                top: 0;
-                                                                                width: 40%;
-                                                                                display: flex;
-                                                                            }
-                                                                            span.quote-lines::before {
-                                                                                right: 0;
-                                                                                margin-right: 0px;
-                                                                            }
-                                                                            span.quote-lines::after {
-                                                                                left: 0;
-                                                                                margin-left: 0px;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                    div#jstory-paragraphs {
-                                                                        max-width: 650px;
-                                                                        padding-top: 30px;
-                                                                        margin: 0 auto;
+                                                            div.edgtf-full-section-inner {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                div.pv-col2 {
+                                                                    width: 100%;
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
                                                                         div.wpb_wrapper {
-                                                                            flex-direction: column;
-                                                                            p.pv-p {
-                                                                                text-align: center;
-                                                                                &.top {
-                                                                                    margin-bottom: 3%;
-                                                                                }
-                                                                                &.mid {
-                                                                                    margin-bottom: 3%;
-                                                                                }
-                                                                                &.btm {
-                                                                                    margin-bottom: 3%;
-                                                                                }
+
+                                                                        }
+                                                                    }
+                                                                    p.pv-p.stats {
+                                                                        padding: 8px 0 8px 0;
+                                                                    }
+                                                                    &.left {
+                                                                        div.wpb_wrapper {
+                                                                            justify-content: flex-start;
+                                                                        }
+                                                                        div.jstory-stats {
+
+                                                                            &.left {
+
+                                                                            }
+                                                                            &.right {
+
                                                                             }
                                                                         }
                                                                     }
-                                                                    div#jstory-lower-heading {
-                                                                        h3.pv-h3.center.red {
+                                                                    &.right {
+                                                                        padding-right: 2%;
+                                                                    }
+                                                                }
+                                                            }
 
+                                                        }
+                                                        div#jennifers--inner-row-2 {
+                                                            div.pv-col1.fullwidth {
+                                                                div.vc_column-inner {
+                                                                    padding: 0;
+                                                                    div.wpb_wrapper {
+                                                                        div#jstory-icon-separator {
+                                                                            div.quote-container {
+                                                                                span.quote-lines {
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    height: 50px;
+                                                                                    img.quote-icon {
+
+                                                                                    }
+                                                                                }                                                            span.quote-lines::before,
+                                                                                span.quote-lines::after {
+                                                                                    content: "";
+                                                                                    position: absolute;
+                                                                                    height: 24px;
+                                                                                    border-bottom: 2px solid $red;
+                                                                                    top: 0;
+                                                                                    width: 40%;
+                                                                                    display: flex;
+                                                                                }
+                                                                                span.quote-lines::before {
+                                                                                    right: 0;
+                                                                                    margin-right: 0px;
+                                                                                }
+                                                                                span.quote-lines::after {
+                                                                                    left: 0;
+                                                                                    margin-left: 0px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        div#jstory-paragraphs {
+                                                                            max-width: 650px;
+                                                                            padding-top: 30px;
+                                                                            margin: 0 auto;
+                                                                            div.wpb_wrapper {
+                                                                                flex-direction: column;
+                                                                                p.pv-p {
+                                                                                    text-align: center;
+                                                                                    &.top {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                    &.mid {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                    &.btm {
+                                                                                        margin-bottom: 3%;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        div#jstory-lower-heading {
+                                                                            h3.pv-h3.center.red {
+
+                                                                            }
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                    }
-                                                    a.pv-btn.w-292 {
-                                                        margin-top: 30px;
+                                                        a.pv-btn.w-292 {
+                                                            margin-top: 5%;
+                                                        }
                                                     }
                                                 }
                                             }
