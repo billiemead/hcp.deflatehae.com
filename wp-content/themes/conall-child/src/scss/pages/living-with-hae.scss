@@ -9,6 +9,9 @@ body.livinghae-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
+                        div.breakpoint {
+                            width: 1920px;
+                        }
                         div#living-cta-row {
 
                         }
@@ -213,19 +216,19 @@ body.livinghae-page {
                                                         }
                                                     }
                                                     div#listswap-container-1 {
-                                                        display: block;
+                                                        /* display: block; */
                                                         animation: fadeIn 2s;
                                                     }
                                                     div#listswap-container-2 {
-                                                        display: none;
+                                                        /* display: none; */
                                                         animation: fadeIn 2s;
                                                     }
                                                     div#listswap-container-3 {
-                                                        display: none;
+                                                        /* display: none; */
                                                         animation: fadeIn 2s;
                                                     }
                                                     div#listswap-container-4 {
-                                                        display: none;
+                                                        /* display: none; */
                                                         animation: fadeIn 2s;
                                                     }
                                                 }
@@ -463,6 +466,7 @@ body.livinghae-page {
                 div.edgtf-content {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
+
                             div#living-hae-impacts-row {
                                 div.clearfix.edgtf-full-section-inner {
                                     div.pv-col1.one {
@@ -628,6 +632,9 @@ body.livinghae-page {
                 div.edgtf-content {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
+                            div.breakpoint {
+                                width: 1024px;
+                            }
                             div#living-cta-row {
 
                             }
@@ -1544,6 +1551,21 @@ body.livinghae-page {
     }
 }
 @media all and (max-width: 576px) {
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div.breakpoint {
+                                width: 576px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }
