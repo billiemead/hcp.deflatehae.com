@@ -1,0 +1,58 @@
+.osteo-tooltip-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.osteo-hotspot-content {
+    display: none;
+}
+
+.osteo-hotspots {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    z-index: 100;
+}
+
+.osteo-single-hotspot-item {
+    position: absolute;
+}
+
+.osteo-tooltip {
+    position: absolute;
+    top: auto;
+    left: auto;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: all 0.2s ease-out 0;
+}
+
+.osteo-tooltip i {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.osteo-tooltip:focus {
+    outline: none;
+}
+
+.pulse-effect {
+    animation: pulse-effect 1s infinite;
+}
+
+@keyframes pulse-effect {
+    0% {
+        box-shadow: 0 0 0 0px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}

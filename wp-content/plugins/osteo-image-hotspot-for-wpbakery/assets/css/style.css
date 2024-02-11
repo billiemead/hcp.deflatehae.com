@@ -1,0 +1,206 @@
+body {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tooltipster-content iframe {
+    width: 100%;
+}
+
+.hotspot-content-icon i {
+    font-size: 26px;
+    display: block;
+}
+
+.tooltipster-content iframe,
+.tooltipster-content img {
+    margin-bottom: 30px;
+}
+
+.pointer-white,
+.pointer-black,
+.pointer-red,
+.pointer-pink,
+.pointer-purple,
+.pointer-deep-purple,
+.pointer-indigo,
+.pointer-blue,
+.pointer-light-blue,
+.pointer-cyan,
+.pointer-teal,
+.pointer-green,
+.pointer-light-green,
+.pointer-lime,
+.pointer-yellow,
+.pointer-amber,
+.pointer-orange,
+.pointer-deep-orange,
+.pointer-brown,
+.pointer-grey,
+.pointer-blue-grey {
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+
+.tooltipster-white,
+.pointer-white {
+    background: #fff;
+    color: #222;
+}
+
+.tooltipster-black,
+.pointer-black {
+    background: #000;
+    color: #fff;
+}
+
+.tooltipster-red,
+.pointer-red {
+    background: #F44336;
+    color: #fff;
+}
+
+.tooltipster-pink,
+.pointer-pink {
+    background: #E91E63;
+    color: #fff;
+}
+
+.tooltipster-purple,
+.pointer-purple {
+    background: #9C27B0;
+    color: #fff;
+}
+
+.tooltipster-deep-purple,
+.pointer-deep-purple {
+    background: #673AB7;
+    color: #fff;
+}
+
+.tooltipster-indigo,
+.pointer-indigo {
+    background: #3F51B5;
+    color: #fff;
+}
+
+.tooltipster-blue,
+.pointer-blue {
+    background: #2196F3;
+    color: #fff;
+}
+
+.tooltipster-light-blue,
+.pointer-light-blue {
+    background: #03A9F4;
+    color: #fff;
+}
+
+.tooltipster-cyan,
+.pointer-cyan {
+    background: #00BCD4;
+    color: #fff;
+}
+
+.tooltipster-teal,
+.pointer-teal {
+    background: #009688;
+    color: #fff;
+}
+
+.tooltipster-green,
+.pointer-green {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.tooltipster-light-green,
+.pointer-light-green {
+    background: #8BC34A;
+    color: #fff;
+}
+
+.tooltipster-lime,
+.pointer-lime {
+    background: #CDDC39;
+    color: #fff;
+}
+
+.tooltipster-yellow,
+.pointer-yellow {
+    background: #FFEB3B;
+    color: #222;
+}
+
+.tooltipster-amber,
+.pointer-amber {
+    background: #FFC107;
+    color: #fff;
+}
+
+.tooltipster-orange,
+.pointer-orange {
+    background: #FF9800;
+    color: #fff;
+}
+
+.tooltipster-deep-orange,
+.pointer-deep-orange {
+    background: #FF5722;
+    color: #fff;
+}
+
+.tooltipster-brown,
+.pointer-brown {
+    background: #795548;
+    color: #fff;
+}
+
+.tooltipster-grey,
+.pointer-grey {
+    background: #9E9E9E;
+    color: #fff;
+}
+
+.tooltipster-blue-grey,
+.pointer-blue-grey {
+    background: #607D8B;
+    color: #fff;
+}
+
+.tooltipster-white,
+.tooltipster-black,
+.tooltipster-red,
+.tooltipster-pink,
+.tooltipster-purple,
+.tooltipster-deep-purple,
+.tooltipster-indigo,
+.tooltipster-blue,
+.tooltipster-light-blue,
+.tooltipster-cyan,
+.tooltipster-teal,
+.tooltipster-green,
+.tooltipster-light-green,
+.tooltipster-lime,
+.tooltipster-yellow,
+.tooltipster-amber,
+.tooltipster-orange,
+.tooltipster-deep-orange,
+.tooltipster-brown,
+.tooltipster-grey,
+.tooltipster-blue-grey {
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tooltipster-content {
+    padding: 30px;
+}
