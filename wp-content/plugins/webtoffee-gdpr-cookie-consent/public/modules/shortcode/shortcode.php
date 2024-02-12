@@ -594,7 +594,7 @@ class Cookie_Law_Info_Shortcode {
 
 		// adding custom style
 		$styles    = $this->generateStyle( $settings, 'button_1_style' );
-		$link_tag  = '<a class="pv-btn" id="wt-cli-accept-btn" tabindex="0" ' . $url . ' data-cli_action="accept" ';
+		$link_tag  = '<a id="wt-cli-accept-btn" tabindex="0" ' . $url . ' data-cli_action="accept" ';
 		$link_tag .= ( $settings['button_1_new_win'] ) ? ' target="_blank" ' : '';
 		$link_tag .= $class . ' >' . esc_html( stripslashes( $settings['button_1_text'] ) ) . '</a>';
 		return $link_tag;

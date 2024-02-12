@@ -59,8 +59,8 @@ body.pharvaris {
     a#wt-cli-accept-btn {
         @include pv-btn();
         font-weight: 800;
-        background-color: $white;
-        border-color: $white;
+        background-color: $white !important;
+        border-color: $white !important;
         color: $dk-grey !important;
     }
     a#wt-cli-accept-btn:hover {
@@ -373,8 +373,8 @@ body.pharvaris {
         }
         a#wt-cli-accept-btn {
             @include pv-btn();
-            background-color: $white;
-            border-color: $white;
+            background-color: $white !important;
+            border-color: $white !important;
             color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
@@ -525,8 +525,8 @@ body.pharvaris {
         }
         a#wt-cli-accept-btn {
             @include pv-btn();
-            background-color: $white;
-            border-color: $white;
+            background-color: $white !important;
+            border-color: $white !important;
             color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
@@ -673,10 +673,11 @@ body.pharvaris {
         .btn {
             @include pv-btn();
         }
+        
         a#wt-cli-accept-btn {
             @include pv-btn();
-            background-color: $white;
-            border-color: $white;
+            background-color: $white !important;
+            border-color: $white !important;
             color: $dk-grey !important
         }
         a#wt-cli-accept-btn:hover {
@@ -761,7 +762,7 @@ body.pharvaris {
                         position: relative;
                         div.cta-container {
                             a.cta-hero-button {
-                                
+
                                 &:hover {
                                 }
                             }
