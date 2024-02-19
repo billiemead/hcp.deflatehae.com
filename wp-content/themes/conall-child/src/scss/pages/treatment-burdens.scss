@@ -202,6 +202,7 @@ body.treatmentburdens-page {
                                 div.pv-col1.top {
                                     margin-top: 1%;
                                     margin-bottom: 3%;
+
                                     div.best-selves-subheading {
                                         h3.pv-h3.center.form {
                                             sup.pv-sup {
@@ -1305,8 +1306,12 @@ body.treatmentburdens-page {
                                     width: 100%;
                                     margin: 0 auto;
                                     div.pv-col1.top {
-                                        margin-bottom: 2%;
-                                        margin-top: 8%;
+                                        margin-bottom: 5%;
+                                        margin-top: 12%;
+                                        div.vc_column-inner {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                        }
                                         div.best-selves-subheading {
                                             h3.pv-h3.center.form {
                                                 sup.pv-sup {
@@ -1324,8 +1329,9 @@ body.treatmentburdens-page {
                                                 div.vc_single_image-wrapper {
                                                     text-align: center;
                                                     img.vc_single_image-img {
-                                                        max-width: 100%;
+                                                        max-width: 90%;
                                                         text-align: center;
+                                                        margin: 0 auto;
                                                     }
                                                 }
                                             }
@@ -1334,7 +1340,7 @@ body.treatmentburdens-page {
                                             display: block;
                                             max-width: 545px;
                                             margin: 0 auto;
-                                            padding-top: 40px;
+                                            padding-top: 25px;
                                         }
                                     }
 

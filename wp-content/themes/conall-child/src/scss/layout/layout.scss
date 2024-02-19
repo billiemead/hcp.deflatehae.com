@@ -1620,7 +1620,7 @@ body.pharvaris {
                                         div.hae-image-wrapper {
                                             margin-right: 0;
                                             img {
-
+                                                max-width: 130%;
                                             }
                                         }
                                         div.hae-copy-wrapper {
@@ -1829,7 +1829,8 @@ body.pharvaris {
         h3, h3.pv-h3 {
 
             &.form {
-
+                font-size: 24px;
+                line-height: 36px;
             }
             &.red {
 
