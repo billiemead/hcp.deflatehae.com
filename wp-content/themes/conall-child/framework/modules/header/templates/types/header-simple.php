@@ -15,13 +15,13 @@
                             <div class="menu-selector-box-wrapper">
                                 <div class="menu-selector-box left">
                                     <li class="menu-selector-list-item">
-                                        <a class="menu-selector-link yellow" href="#">For healthcare professionals</a>
+                                        <a class="menu-selector-link yellow" href="#" target="_blank">For healthcare professionals</a>
                                     </li>
                                     <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
                                 </div>
                                 <div class="menu-selector-box right">
                                     <li class="menu-selector-list-item">
-                                        <a class="menu-selector-link white" href="#">For people with HAE and caregivers</a>
+                                        <span class="menu-selector-link white">For people with HAE and caregivers</span>
                                     </li>
                                     <img class="menu-selector-caret" src="/wp-content/themes/conall-child/images/selector-caret.svg" />
                                 </div>
