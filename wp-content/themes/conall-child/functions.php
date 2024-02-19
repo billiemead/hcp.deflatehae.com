@@ -33,9 +33,9 @@ function pharvaris_hcp_assets()
     wp_register_style('pharvaris-hcp-stylesheet', get_theme_file_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all');
     wp_enqueue_style('pharvaris-hcp-stylesheet');
     wp_enqueue_script('custom_js', get_theme_file_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('pharvaris_hcp_jquery', get_theme_file_uri() . '/pharvaris-hcp-jquery.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('pharvaris_hcp_jquery', get_theme_file_uri() . '/js/pharvaris-hcp-jquery.js', array('jquery'), '1.0.0', true);
     if (is_page('living-with-hae')) {
-        wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
+        wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/js/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
     }
 }
 add_action('wp_enqueue_scripts', 'pharvaris_hcp_assets', 99);
@@ -442,6 +442,22 @@ add_action( 'wp_footer', 'living_hae_section' );
 function treatment_section() {
     if (is_page('treatment-burdens')) {
         ?>
+        <?php
+            if ($_COOKIE["breakpoint"]=="desktop")
+                {
+                    $breakpoint="desktop";
+                }
+            elseif ($_COOKIE["breakpoint"]=="tablet")
+                {
+                    $breakpoint="tablet";
+                }
+            elseif ($_COOKIE["breakpoint"]=="mobile")
+                {
+                    $breakpoint="mobile";
+                }
+        ?>
+            <script type="module" src="/wp-content/themes/conall-child/js/balloon_<?php echo $breakpoint;?>.js"></script>
+            <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
         <script>
             //Select the elements you want inside
             const divs = document.querySelectorAll("#treatment-banner-section, #treatment-facts-section");

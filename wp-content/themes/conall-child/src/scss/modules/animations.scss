@@ -2,7 +2,9 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 ANIMATIONS START ******* */
-
+.gambit-css-animation  {
+    animation-fill-mode: forwards;
+}
 div#swap-box {
     animation: fadeIn 2s;
 }
