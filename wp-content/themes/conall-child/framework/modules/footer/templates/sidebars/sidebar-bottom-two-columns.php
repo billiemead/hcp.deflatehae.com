@@ -3,9 +3,9 @@
 		<div class="edgtf-column left">
 			<div class="edgtf-column-inner left">
                 <div class="pv-footer-logo">
-                    <a href="https://pharvaris.com" title="Link to Pharvaris website">
-                        <img class="pv-footer-logo-svg" src="/wp-content/themes/conall-child/images/footer-logo-205x30.svg" alt="Pharvaris Logo" width="205" height="30">
-                    </a>
+                  <a href="https://pharvaris.com" target="_blank" title="Link to Pharvaris website">
+                    <img class="pv-footer-logo-svg" src="/wp-content/themes/conall-child/images/footer-logo-205x30.svg" alt="Pharvaris Logo" width="205" height="30">
+                  </a>
                 </div>
 				<!-- <?php // if(is_active_sidebar('footer_bottom_left')) {
 					// dynamic_sidebar( 'footer_bottom_left' );
