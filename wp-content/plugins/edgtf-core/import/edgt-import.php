@@ -4,6 +4,7 @@ if (!function_exists ('add_action')) {
     header('HTTP/1.1 403 Forbidden');
     exit();
 }
+#[AllowDynamicProperties]
 class ConallEdgeClassImport {
 
     public $message = "";
@@ -129,55 +130,55 @@ class ConallEdgeClassImport {
             add_action('admin_print_styles-'.$this->pagehook, 'conall_edge_enqueue_admin_styles');
         }
     }
-	
+
 	function update_meta_fields_after_import( $folder ) {
 		global $wpdb;
-		
+
 		$url       = esc_url( home_url( '/' ) );
 		$demo_urls = $this->import_get_demo_urls( $folder );
-		
+
 		foreach ( $demo_urls as $demo_url ) {
 			$sql_query   = "SELECT meta_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key LIKE 'edgtf%' AND meta_value LIKE '" . esc_url( $demo_url ) . "%';";
 			$meta_values = $wpdb->get_results( $sql_query );
-			
+
 			if ( ! empty( $meta_values ) ) {
 				foreach ( $meta_values as $meta_value ) {
 					$new_value = $this->recalc_serialized_lengths( str_replace( $demo_url, $url, $meta_value->meta_value ) );
-					
+
 					$wpdb->update( $wpdb->postmeta,	array( 'meta_value' => $new_value ), array( 'meta_id' => $meta_value->meta_id )	);
 				}
 			}
 		}
 	}
-	
+
 	function update_options_after_import( $folder ) {
 		$url       = esc_url( home_url( '/' ) );
 		$demo_urls = $this->import_get_demo_urls( $folder );
-		
+
 		foreach ( $demo_urls as $demo_url ) {
 			$global_options    = get_option( 'edgt_options_conall' );
 			$new_global_values = str_replace( $demo_url, $url, $global_options );
-			
+
 			update_option( 'edgt_options_conall', $new_global_values );
 		}
 	}
-	
+
 	function import_get_demo_urls( $folder ) {
 		$demo_urls  = array();
 		$domain_url = str_replace( '/', '', $folder ) . '.' . '.qodeinteractive.com/';
-		
+
 		$demo_urls[] = ! empty( $domain_url ) ? 'http://' . $domain_url : '';
 		$demo_urls[] = ! empty( $domain_url ) ? 'https://' . $domain_url : '';
-		
+
 		return $demo_urls;
 	}
-	
+
 	function recalc_serialized_lengths( $sObject ) {
 		$ret = preg_replace_callback( '!s:(\d+):"(.*?)";!', array( $this, 'recalc_serialized_lengths_callback' ), $sObject );
-		
+
 		return $ret;
 	}
-	
+
 	function recalc_serialized_lengths_callback( $matches ) {
 		return "s:" . strlen( $matches[2] ) . ":\"$matches[2]\";";
 	}
@@ -255,10 +256,10 @@ if(!function_exists('conall_edge_otherImport')){
         $conall_edge_import_object->import_widgets($folder.'widgets.txt',$folder.'custom_sidebars.txt');
         $conall_edge_import_object->import_menus($folder.'menus.txt');
         $conall_edge_import_object->import_settings_pages($folder.'settingpages.txt');
-	
+
 	    $conall_edge_import_object->update_meta_fields_after_import( $folder );
 	    $conall_edge_import_object->update_options_after_import( $folder );
-	    
+
         die();
     }
 

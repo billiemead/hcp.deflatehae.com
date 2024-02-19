@@ -1,6 +1,7 @@
 # WordPress #
 ############
 wp-config-local.php
+wp-config.php
 wp-cli.local.yml
 wp-content/uploads
 wp-content/blogs.dir/
@@ -16,6 +17,7 @@ wp-content/debug.log
 sitemap.xml
 sitemap.xml.gz
 .vscode
+.theia
 
 # Ignore screenshots
 screenshots/*
@@ -67,3 +69,15 @@ Thumbs.db
 
 # node_modules #
 wp-content/themes/**/node_modules/
+wp-content/themes/**/package-lock.json
+# DEV Plugins #
+wp-content/plugins/addon_creator/
+
+#gitpod integration
+!.gitpod.yml
+!.gitpod.dockerfile
+!gitpod_config/
+!gitpod_config/mysql/data/*
+!.gitkeep
+!.htaccess.example
+!index.php

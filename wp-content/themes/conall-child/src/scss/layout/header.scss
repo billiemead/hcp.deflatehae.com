@@ -5,6 +5,7 @@
 .edgtf-preload-background {
     background-image: none !important;
 }
+
 body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
@@ -42,7 +43,7 @@ body.pharvaris {
                                     ul.menu-site-selector-list {
                                         display: flex;
                                         list-style: none;
-                                        width: 508px;
+                                        width: 100%;
                                         height: 20.5px;
                                         justify-content: space-between;
                                         align-items: center;
@@ -52,55 +53,54 @@ body.pharvaris {
                                             width: 100%;
                                             height: 100%;
                                             align-items: center;
-                                            justify-content: center;
-                                            div.menu-selector-box {
+                                            justify-content: flex-end;
+                                            div.edgtf-grid {
                                                 display: flex;
-                                                justify-content: space-around;
-                                                align-items: center;
-                                                li.menu-selector-list-item {
-
-                                                    a.menu-selector-link {
-                                                        font-family: $poppins;
-                                                        font-size: 14px;
-                                                        line-height: 26px;
-                                                        font-weight: 400;
-                                                        transition: all 0.5s ease-in-out;
-                                                        &.yellow {
+                                                justify-content: flex-end;
+                                                div.menu-selector-box {
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    li.menu-selector-list-item {
+                                                        span.menu-selector-link,
+                                                        a.menu-selector-link {
+                                                            font-family: $poppins;
+                                                            font-size: 14px;
+                                                            line-height: 26px;
+                                                            font-weight: 400;
+                                                            transition: all 0.25s ease-in-out;
+                                                            &.yellow {
+                                                                color: $yellow;
+                                                                font-weight: 700;
+                                                            }
+                                                            &.white {
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                        a.menu-selector-link.white:hover {
                                                             color: $yellow;
-                                                            -webkit-text-stroke: 1px $yellow;
-                                                        }
-                                                        &.white {
-                                                            color: $white;
+                                                            transition: all 0.25s ease-in-out;
                                                         }
                                                     }
-                                                    a.menu-selector-link.yellow:hover {
-                                                        font-weight: normal;
-                                                        color: $white;
-                                                        transition: all 0.5s ease-in-out;
-                                                        -webkit-text-stroke: 0px;
+                                                    img.menu-selector-line {
+                                                        padding-left: 20px;
+                                                        padding-right: 20px;
                                                     }
-                                                    a.menu-selector-link.white:hover {
-                                                        -webkit-text-stroke: 1px $white;
-                                                        color: $yellow;
-                                                        transition: all 0.5s ease-in-out;
+                                                    img.menu-selector-caret {
+                                                        margin-left: 8px;
+                                                        height: 8px;
+                                                        width: 8px;
+                                                        top: 1px;
+                                                        position: relative;
                                                     }
                                                 }
-                                                img.menu-selector-line {
-
+                                                div.menu-selector-box.left {
+                                                    width: auto;
+                                                    border-right: none;
                                                 }
-                                                img.menu-selector-caret {
-                                                    height: 8px;
-                                                    width: 8px;
-                                                    top: 1px;
-                                                    position: relative;
+                                                div.menu-selector-box.right {
+                                                    width: auto;
                                                 }
-                                            }
-                                            div.menu-selector-box.left {
-                                                width: 45%;
-                                                border-right: none;
-                                            }
-                                            div.menu-selector-box.right {
-                                                width: 55%;
                                             }
                                         }
                                     }
@@ -153,7 +153,7 @@ body.pharvaris {
                                                 div.edgtf-logo-wrapper.hcp-logo {
                                                     a {
                                                         img.edgtf-normal-logo {
-                                                            height: 57px;
+                                                            height: 58px;
                                                             opacity: 1;
                                                         }
                                                     }
@@ -175,18 +175,6 @@ body.pharvaris {
                                 }
                             }
                         }
-                        div.edgtf-menu-area::after {
-                            background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
-                            bottom: -24px;
-                            content: "";
-                            height: 24px;
-                            position: absolute;
-                            width: 100vw;
-                            background-repeat: no-repeat;
-                            background-size: 100vw;
-                            background-position-x: center;
-                            background-position-y: top;
-                        }
                     }
                 }
                 header.edgtf-mobile-header.hcp-mobile-header {
@@ -195,104 +183,52 @@ body.pharvaris {
                     visibility: hidden;
                 }
             }
+            div#header-container::after {
+                background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
+                bottom: 0px;
+                content: "";
+                height: 24px;
+                position: absolute;
+                width: 100vw;
+                background-repeat: no-repeat;
+                background-size: 100vw;
+                background-position-x: center;
+                background-position-y: top;
+            }
         }
     }
 }
 @media all and (max-width: 1500px) {
-    body.pharvaris {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
-                div#header-container {
-                    header.edgtf-page-header.hcp-header {
-                        div.edgtf-fixed-wrapper {
-                            &.fixed {
-                            }
-                            div.edgtf-menu-area {
-                                div.edgtf-container.pv-container {
-                                    div.edgtf-container-inner {
-                                        div.edgtf-vertical-align-containers {
-                                            div.edgtf-position-left {
-                                                div.edgtf-position-left-inner {
-                                                    div.edgtf-logo-wrapper.hcp-logo {
-                                                        a {
-                                                            img.edgtf-normal-logo {
-                                                                height: 42px;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            div.edgtf-position-right {
-                                                div.edgtf-position-right-inner {
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+
 }
 @media all and (max-width: 1024px) {
     body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div#header-container {
-                    height: 126px;
+                    height: 125px;
                     div.pv-top-bar {
                         height: 40px;
                         div.pv-container {
-                            height: 100%;
                             div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
-                                padding: 0;
                                 div.edgtf-position-right {
-                                    float: unset;
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    align-items: flex-end;
                                     div.edgtf-position-right-inner {
-                                        height: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: flex-end;
                                         ul.menu-site-selector-list {
-                                            display: flex;
-                                            list-style: none;
-                                            width: 445px;
-                                            height: 20.5px;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            margin: 0;
                                             div.menu-selector-box-wrapper {
                                                 div.menu-selector-box {
                                                     li.menu-selector-list-item {
+                                                        span.menu-selector-link,
                                                         a.menu-selector-link {
                                                             font-size: 12px;
                                                             line-height: 26px;
-                                                            font-weight: 400;
-                                                            transition: all 0.5s ease-in-out;
                                                             &.yellow {
-                                                                color: $yellow;
-                                                                -webkit-text-stroke: 1px $yellow;
+
                                                             }
                                                             &.white {
-                                                                color: $white;
+
                                                             }
                                                         }
-                                                        a.menu-selector-link.yellow:hover {
-                                                            font-weight: normal;
-                                                            color: $white;
-                                                            transition: all 0.5s ease-in-out;
-                                                            -webkit-text-stroke: 0px;
-                                                        }
                                                         a.menu-selector-link.white:hover {
-                                                            -webkit-text-stroke: 1px $white;
-                                                            color: $yellow;
-                                                            transition: all 0.5s ease-in-out;
                                                         }
                                                     }
                                                     img.menu-selector-line {
@@ -321,14 +257,14 @@ body.pharvaris {
                             &.fixed {
                             }
                             div.edgtf-menu-area {
-                                height: 86px;
+                                height: 85px;
                                 align-items: flex-start;
                                 div.edgtf-container.pv-container {
                                     top: 12px;
                                     div.edgtf-container-inner {
                                         div.edgtf-vertical-align-containers {
                                             div.edgtf-position-left {
-                                                width: 25%;
+                                                width: 22%;
                                                 div.edgtf-position-left-inner {
                                                     div.edgtf-logo-wrapper.hcp-logo {
                                                         a {
@@ -342,7 +278,7 @@ body.pharvaris {
                                             div.edgtf-position-right {
                                                 float: unset;
                                                 display: flex;
-                                                width: 75%;
+                                                width: 78%;
                                                 justify-content: flex-end;
                                                 align-items: center;
                                                 div.edgtf-position-right-inner {
@@ -354,7 +290,7 @@ body.pharvaris {
                                     }
                                 }
                             }
-                            div.edgtf-menu-area::after {
+                            /* div.edgtf-menu-area::after {
                                 background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
                                 bottom: -7.5px;
                                 content: "";
@@ -365,9 +301,21 @@ body.pharvaris {
                                 background-size: 100vw;
                                 background-position-x: center;
                                 background-position-y: top;
-                            }
+                            } */
                         }
                     }
+                }
+                div#header-container::after {
+                    background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
+                    bottom: -7.5px;
+                    content: "";
+                    height: 7.5px;
+                    position: absolute;
+                    width: 100vw;
+                    background-repeat: no-repeat;
+                    background-size: 100vw;
+                    background-position-x: center;
+                    background-position-y: top;
                 }
             }
         }
@@ -437,54 +385,63 @@ body.pharvaris {
                                             list-style: none;
                                             width: 100%;
                                             height: 100%;
-                                            justify-content: center;
-                                            align-items: center;
                                             margin: 0;
+                                            border: 2px solid #767676;
                                             div.menu-selector-box-wrapper {
-                                                div.menu-selector-box {
-                                                    border: 1px solid #767676;
-                                                    height: 100%;
+                                                div.edgtf-grid {
+                                                    width: 100%;
+                                                    padding-left: 35px;
+                                                    padding-right: 35px;
                                                     display: flex;
-                                                    justify-content: center;
-                                                    li.menu-selector-list-item {
-                                                        a.menu-selector-link {
-                                                            font-size: 12px;
-                                                            line-height: 26px;
-                                                            font-weight: 400;
-                                                            transition: all 0.5s ease-in-out;
-                                                            &.yellow {
-                                                                color: $yellow;
-                                                                -webkit-text-stroke: 1px $yellow;
+                                                    justify-content: space-between;
+                                                    height: 40px;
+                                                    div.menu-selector-box {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        li.menu-selector-list-item {
+                                                            span.menu-selector-link,
+                                                            a.menu-selector-link {
+                                                                font-size: 12px;
+                                                                line-height: 40px;
+                                                                font-weight: 400;
+                                                                transition: all 0.5s ease-in-out;
+                                                                &.yellow {
+                                                                    color: $yellow;
+
+                                                                }
+                                                                &.white {
+                                                                    color: $white;
+                                                                }
                                                             }
-                                                            &.white {
+                                                           /*  a.menu-selector-link.yellow:hover {
+                                                                font-weight: normal;
                                                                 color: $white;
+                                                                transition: all 0.5s ease-in-out;
+                                                            } */
+                                                            a.menu-selector-link.white:hover {
+                                                                color: $yellow;
+                                                                transition: all 0.5s ease-in-out;
                                                             }
                                                         }
-                                                        a.menu-selector-link.yellow:hover {
-                                                            font-weight: normal;
-                                                            color: $white;
-                                                            transition: all 0.5s ease-in-out;
-                                                            -webkit-text-stroke: 0px;
+                                                        img.menu-selector-line {
+                                                            display: none;
                                                         }
-                                                        a.menu-selector-link.white:hover {
-                                                            -webkit-text-stroke: 1px $white;
-                                                            color: $yellow;
-                                                            transition: all 0.5s ease-in-out;
+                                                        img.menu-selector-caret {
+                                                            margin-left: 8px;
                                                         }
                                                     }
-                                                    img.menu-selector-line {
-                                                        display: none;
+                                                    div.menu-selector-box.left {
+                                                        width: 45%;
+                                                        justify-content: flex-start;
+                                                        border-right: 1px solid #767676;
                                                     }
-                                                    img.menu-selector-caret {
-                                                        margin-left: 8px;
+                                                    div.menu-selector-box.right {
+                                                        width: 55%;
+                                                        justify-content: flex-end;
+                                                        border-left: 1px solid #767676;
                                                     }
                                                 }
-                                            div.menu-selector-box.left {
-
-                                            }
-                                            div.menu-selector-box.right {
-
-                                            }
                                             }
                                         }
                                     }
@@ -507,8 +464,169 @@ body.pharvaris {
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
                             border: none;
+                            height: 85px;
                             div.edgtf-mobile-header-holder {
                                 div.edgtf-grid {
+                                    width: 100%;
+                                    padding-left: 35px;
+                                    padding-right: 35px;
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-mobile-menu-opener {
+                                            float: right;
+                                            a {
+                                                color: $blue;
+                                                padding-right: 0;
+                                                span.edgtf-mobile-opener-icon-holder {
+                                                    i.edgtf-icon-font-awesome.fa.fa-bars {
+
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                        div.edgtf-position-center {
+                                            text-align: left;
+                                            div.edgtf-position-center-inner {
+                                                div.edgtf-mobile-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-mobile-logo {
+                                                            width: 140px;
+                                                            left: -3px;
+                                                            position: relative;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div#header-container::after {
+                    background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
+                    bottom: -15px;
+                    content: "";
+                    height: 16px;
+                    position: absolute;
+                    width: 100vw;
+                    background-repeat: no-repeat;
+                    background-size: 100vw;
+                    background-position-x: center;
+                    background-position-y: top;
+                    z-index: 999;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div#header-container {
+                    div.pv-top-bar {
+                        height: 40px;
+                        div.pv-container {
+                            height: 100%;
+                            width: 100%;
+                            div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                                padding: 0;
+                                div.edgtf-position-right {
+                                    float: unset;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    div.edgtf-position-right-inner {
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        ul.menu-site-selector-list {
+                                            display: flex;
+                                            list-style: none;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin: 0;
+                                            div.menu-selector-box-wrapper {
+                                                div.edgtf-grid {
+                                                    div.menu-selector-box {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        li.menu-selector-list-item {
+                                                                span.menu-selector-link,
+                                                                a.menu-selector-link {
+                                                                    font-size: 12px;
+                                                                    line-height: 40px;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                    &.yellow {
+                                                                        color: $yellow;
+                                                                        display: block;
+                                                                        text-align: left;
+                                                                        line-height: 12px;
+                                                                    }
+                                                                    &.white {
+                                                                        color: $white;
+                                                                        display: block;
+                                                                        line-height: 12px;
+                                                                    }
+                                                                }
+                                                                /* a.menu-selector-link.yellow:hover {
+                                                                    font-weight: normal;
+                                                                    color: $white;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                } */
+                                                                a.menu-selector-link.white:hover {
+                                                                    color: $yellow;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                }
+                                                        }
+                                                        img.menu-selector-line {
+                                                            display: none;
+                                                        }
+                                                        img.menu-selector-caret {
+                                                            margin-left: 8px;
+                                                        }
+                                                    }
+                                                    div.menu-selector-box.left {
+                                                        width: 50%;
+                                                    }
+                                                    div.menu-selector-box.right {
+                                                        width: 50%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    header.edgtf-page-header.hcp-header {
+                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    header.edgtf-mobile-header.hcp-mobile-header {
+                        display: block;
+                        visibility: visible;
+                        opacity: 1;
+                        width: 100%;
+                        position: fixed;
+                        top: 40px;
+                        div.edgtf-mobile-header-inner {
+                            background-color: $dk-grey;
+                            border: none;
+                            height: 85px;
+                            div.edgtf-mobile-header-holder {
+                                div.edgtf-grid {
+                                    width: 100%;
+                                    padding-left: 35px;
+                                    padding-right: 35px;
                                     div.edgtf-vertical-align-containers {
                                         div.edgtf-mobile-menu-opener {
                                             float: right;
@@ -523,11 +641,12 @@ body.pharvaris {
 
                                         }
                                         div.edgtf-position-center {
+                                            text-align: left;
                                             div.edgtf-position-center-inner {
                                                 div.edgtf-mobile-logo-wrapper.hcp-logo {
                                                     a {
                                                         img.edgtf-normal-mobile-logo {
-
+                                                            width: 140px;
                                                         }
                                                     }
                                                 }
@@ -536,26 +655,25 @@ body.pharvaris {
                                     }
                                 }
                             }
-                            div.edgtf-mobile-header-holder::after {
-                                background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
-                                bottom: -16px;
-                                content: "";
-                                height: 16px;
-                                position: absolute;
-                                width: 100vw;
-                                background-repeat: no-repeat;
-                                background-size: 100vw;
-                                background-position-x: center;
-                                background-position-y: top;
-                            }
                         }
                     }
+                }
+                div#header-container::after {
+                    background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
+                    bottom: -15px;
+                    content: "";
+                    height: 16px;
+                    position: absolute;
+                    width: 100vw;
+                    background-repeat: no-repeat;
+                    background-size: 100vw;
+                    background-position-x: center;
+                    background-position-y: top;
+                    z-index: 999;
                 }
             }
         }
     }
-}
-@media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
 }

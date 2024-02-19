@@ -28,7 +28,7 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'name'               => esc_html__( 'Edge Instagram Feed', 'conall' ),
 				'slug'               => 'edgtf-instagram-feed',
 				'source'             => get_template_directory() . '/includes/plugins/edgtf-instagram-feed.zip',
-				'required'           => true,
+				'required'           => false,
 				'version'            => '2.1',
 				'force_activation'   => false,
 				'force_deactivation' => false

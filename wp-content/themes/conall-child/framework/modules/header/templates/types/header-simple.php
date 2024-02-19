@@ -15,7 +15,7 @@
                             <div class="menu-selector-box-wrapper">
                                 <div class="menu-selector-box left">
                                     <li class="menu-selector-list-item">
-                                        <a class="menu-selector-link yellow" href="#" target="_blank">For healthcare professionals</a>
+                                        <a class="menu-selector-link yellow" href="https://hcp.deflatehae.com" target="_blank">For healthcare professionals</a>
                                     </li>
                                     <img class="menu-selector-line" src="/wp-content/themes/conall-child/images/selector-line.svg" />
                                 </div>

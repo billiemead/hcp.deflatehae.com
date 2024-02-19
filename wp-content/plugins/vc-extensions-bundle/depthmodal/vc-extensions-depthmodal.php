@@ -429,7 +429,7 @@ if (!class_exists( 'VC_Extensions_DepthModal' ) ) {
 
           $content = wpb_js_remove_wpautop($content); // fix unclosed/unwanted paragraph tags in $content
           $output = '';
-          $output .= "<div class='avgrund-container' data-width='${width}' data-textcolor='${textcolor}' data-background='${background}' data-loadedvisible='${loadedvisible}' data-margintop='${margintop}' data-popupposition='${popupposition}'><div class='avgrund-popup'>
+          $output .= "<div class='avgrund-container' data-width='{$width}' data-textcolor='{$textcolor}' data-background='{$background}' data-loadedvisible='{$loadedvisible}' data-margintop='{$margintop}' data-popupposition='{$popupposition}'><div class='avgrund-popup'>
               <div class='avgrund-content'>".
                 $content
               ."</div>
@@ -473,9 +473,9 @@ if (!class_exists( 'VC_Extensions_DepthModal' ) ) {
           $output = '';
             if(is_single()||is_page()){
               if($displaywhen=="scrollhidden"){
-                return "<div id='cq-scroll-notification' data-width='${width}' data-height='${height}' data-textcolor='${textcolor}' data-background='${background}' data-easein='${easein}' data-easeout='${easeout}' data-positiontop='${top}' data-positionright='${right}' data-positionbottom='${bottom}' data-positionleft='${left}' data-cookie='${cookie}' data-days='${days}' data-autohidedelay='${autohidedelay}' data-displaywhen='loaded' data-opacity='${opacity}' data-from='0' data-to='all' data-closebutton='true' data-displaybydefault='on' data-closeposition='${closeposition}' class='cq-scroll-notification'> {$content} </div>";
+                return "<div id='cq-scroll-notification' data-width='{$width}' data-height='{$height}' data-textcolor='{$textcolor}' data-background='{$background}' data-easein='{$easein}' data-easeout='{$easeout}' data-positiontop='{$top}' data-positionright='{$right}' data-positionbottom='{$bottom}' data-positionleft='{$left}' data-cookie='{$cookie}' data-days='{$days}' data-autohidedelay='{$autohidedelay}' data-displaywhen='loaded' data-opacity='{$opacity}' data-from='0' data-to='all' data-closebutton='true' data-displaybydefault='on' data-closeposition='{$closeposition}' class='cq-scroll-notification'> {$content} </div>";
               }else{
-                return "<div id='cq-scroll-notification' data-width='${width}' data-height='${height}' data-textcolor='${textcolor}' data-background='${background}' data-easein='${easein}' data-easeout='${easeout}' data-positiontop='${top}' data-positionright='${right}' data-positionbottom='${bottom}' data-positionleft='${left}' data-cookie='${cookie}' data-days='${days}' data-autohidedelay='${autohidedelay}' data-displaywhen='${displaywhen}' data-opacity='${opacity}' data-from='0' data-to='all' data-closebutton='true' data-closeposition='${closeposition}' class='cq-scroll-notification' style='display:none'> {$content} </div>";
+                return "<div id='cq-scroll-notification' data-width='{$width}' data-height='{$height}' data-textcolor='{$textcolor}' data-background='{$background}' data-easein='{$easein}' data-easeout='{$easeout}' data-positiontop='{$top}' data-positionright='{$right}' data-positionbottom='{$bottom}' data-positionleft='{$left}' data-cookie='{$cookie}' data-days='{$days}' data-autohidedelay='{$autohidedelay}' data-displaywhen='{$displaywhen}' data-opacity='{$opacity}' data-from='0' data-to='all' data-closebutton='true' data-closeposition='{$closeposition}' class='cq-scroll-notification' style='display:none'> {$content} </div>";
 
               }
             }

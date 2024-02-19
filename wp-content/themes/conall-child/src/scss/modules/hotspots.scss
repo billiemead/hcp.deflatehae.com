@@ -2,6 +2,11 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 HOTSPOTS START ******* */
+body.pharvaris {
+    div#hotspot-grid {
+
+    }
+}
 
 div.pv-woman-hotspot {
     display: flex;
@@ -16,12 +21,9 @@ div.pv-hotspot-wrapper {
 
 }
 div.ult-tooltipster-base {
-    width: 80% !important;
-    max-width: 1411px;
+    width: 430px !important;
+    max-width: 100% !important;
     margin: 0 auto;
-    right: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, 0);
 }
 .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
     height: 100%;
@@ -31,17 +33,15 @@ div.ult-tooltipster-base {
     background-color: #e9b73f;
 }
 div#hotspot-tooltip-hs-one {
-    height: 205px;
+    height: 214px;
+    left: 293px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
-            margin-top: 4%;
-            padding-left: 1%;
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                max-width: 260px;
-                margin-top: 22px;
-                margin-bottom: 0;
-                height: 100%;
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
                     li {
 
                     }
@@ -52,16 +52,17 @@ div#hotspot-tooltip-hs-one {
     }
 }
 div#hotspot-tooltip-hs-two {
-    height: 283px;
+    height: 277px;
+    left: 293px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-2 {
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                    max-width: 340px;
+                    max-width: 100%;
                     margin-bottom: 0;
                     height: 100%;
                     li {
-                        padding: 3px 0;
+
                     }
                 }
             }
@@ -69,17 +70,13 @@ div#hotspot-tooltip-hs-two {
     }
 }
 div#hotspot-tooltip-hs-three {
-    width: 551px;
-    height: 283px;
-    top: 0px;
-    left: 0px;
+    height: 214px;
+    left: 293px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-3 {
-            margin-top: 0;
-            padding-left: 1%;
             div.pv-hotspot-box-wrapper {
                 ul.pv-hotspot-list {
-                    max-width: 280px;
+                    max-width: 100%;
                     margin-bottom: 0;
                     height: 100%;
                     li {
@@ -91,15 +88,12 @@ div#hotspot-tooltip-hs-three {
     }
 }
 div#hotspot-tooltip-hs-four {
-    width: 551px;
-    height: 186px;
-    top: 0px;
-    left: 0px;
+    height: 256px;
+    left: 1143px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-4 {
             div.pv-hotspot-box-wrapper {
                 div.pv-hotspot-box-wrapper {
-                    margin-left: 164px;
                     ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
@@ -114,14 +108,11 @@ div#hotspot-tooltip-hs-four {
     }
 }
 div#hotspot-tooltip-hs-five {
-    width: 551px;
-    height: 233px;
-    top: 0px;
-    left: 0px;
+    height: 275px;
+    left: 1143px !important;
     div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-5 {
             div.pv-hotspot-box-wrapper {
-                margin-left: 205px;
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
                     max-width: 100%;
@@ -137,15 +128,11 @@ div#hotspot-tooltip-hs-five {
     }
 }
 div#hotspot-tooltip-hs-six {
-    width: 551px;
-    height: 423px;
-    top: 0px;
-    left: 0px;
+    height: 275px;
+    left: 1143px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-6 {
             div.pv-hotspot-box-wrapper {
-                margin-left: 163px;
-                top: 140px;
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
                         max-width: 100%;
@@ -161,7 +148,7 @@ div#hotspot-tooltip-hs-six {
     }
 }
 div.ult-tooltipster-content {
-    padding-top: 0 !important;
+    padding: 0 !important;
     p {
         margin: 0;
     }
@@ -175,31 +162,271 @@ div.ult-tooltipster-content {
         background-repeat: no-repeat;
         width: auto;
         position: relative;
-        transform: translateX(100px);
+        margin-top: 10px;
         div.pv-hotspot-box-wrapper {
             padding-top: 3px;
             position: relative;
-            ul.pv-hotspot-list {
-                list-style-position: outside;
-                li.pv-hotspot-list-item {
-                    @include regular($poppins);
-                    color: $black;
-                    font-size: 18px;
-                    line-height: 34px;
-                    text-align: left;
-                    padding-left: 0;
-                    margin-left: 22px;
-                }
-                li::marker {
-                    color: $red;
-                }
+            h3.pv-h3.tip-title {
+                @include bold($poppins);
+                color: $red;
+                text-transform: uppercase;
+                text-align: left;
             }
         }
     }
 }
 
+div.tooltip-close {
+    cursor: pointer;
+}
 
 @media all and (max-width: 1024px) {
+
+    body.pharvaris {
+    div#hotspot-grid {
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+div.pv-woman-hotspot {
+    display: flex;
+    justify-content: center;
+
+    img.ult_hotspot_image {
+    }
+}
+.aio-icon-img {
+    font-size: 80px !important;
+}
+div.pv-hotspot-wrapper {
+
+}
+div.ult-tooltipster-base {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 0 !important;
+}
+.ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e9b73f;
+}
+div#hotspot-tooltip-hs-one {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-1 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 12% 0 8% 7%;
+            margin-top: 236px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+div#hotspot-tooltip-hs-two {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-2 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 14% 0 8% 7%;
+            margin-top: 160px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-three {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-3 {
+            width: 502px;
+            height: 230px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x230.png");
+            padding: 12% 0 8% 7%;
+            margin-top: 140px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-four {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-4 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 14% 0 8% 7%;
+            margin-top: 236px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                max-width: 100%;
+                margin-bottom: 0;
+                height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-five {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-5 {
+            width: 502px;
+            height: 385px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x384.png");
+            padding: 14% 3% 8% 7%;
+            margin-top: 300px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                max-width: 100%;
+                margin-bottom: 0;
+                height: 100%;
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+div#hotspot-tooltip-hs-six {
+    height: 275px;
+    div.ult-tooltipster-content.ult-responsive {
+        div#pv-hotspot-6 {
+            width: 502px;
+            height: 314px;
+            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
+            padding: 9.5% 0 8% 7%;
+            margin-top: 216px;
+            div.pv-hotspot-box-wrapper {
+                a.tooltip-close {
+                    img.tooltip-close-x {
+
+                    }
+                }
+                ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                }
+            }
+        }
+    }
+}
+div.ult-tooltipster-content {
+    padding: 0 !important;
+    p {
+        margin: 0;
+    }
+    div.pv-hotspot-box {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 0;
+        background: transparent;
+        border: none;
+        padding: 8%;
+        div.pv-hotspot-box-wrapper {
+            padding-top: 3px;
+            position: relative;
+            width: 92%;
+            a.tooltip-close {
+                position: absolute;
+                right: 0;
+                img.tooltip-close-x {
+                    height: 19px;
+                    width: 19px;
+                }
+            }
+            h3.pv-h3tip-title {
+                sup.pv-sup {
+
+                }
+            }
+            ul.pv-list.hotspot {
+                li.pv-list-item.hotspot {
+                    br.line-break {
+                        display: none ;
+                    }
+                }
+            }
+        }
+    }
+}
 }
 @media all and (max-width: 980px) {
 }
