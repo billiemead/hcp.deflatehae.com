@@ -45,6 +45,7 @@ div.wt-cli-cookie-bar-container {
 
 div.cli-modal-content {
     background-color: $mid-grey;
+    border-radius: 1.25rem;
     div.cli-privacy-content-text {
         color: $white;
     }
@@ -54,7 +55,10 @@ div.cli-modal-content {
     }
     div.cli-tab-header {
     background-color: $dk-grey;
-
+        border-radius: 15px;
+    }
+    div.cli-tab-content {
+        border-radius: 15px;
     }
     .cli-switch .cli-slider:after {
         color: $white !important;

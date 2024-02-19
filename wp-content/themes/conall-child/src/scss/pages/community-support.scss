@@ -151,6 +151,7 @@ body.communitysupport-page {
                                         }
                                     }
                                     div#community-triple-inner-row-1 {
+                                        height: 252px;
                                             div.pv-col2.left {
                                                 div.partner-logo {
 
@@ -167,7 +168,9 @@ body.communitysupport-page {
                                         div#community-triple-inner-row-3 {
                                             div.pv-col2.left {
                                                 div.partner-logo {
-
+                                                    img {
+                                                        padding-bottom: 30px;
+                                                    }
                                                 }
                                             }
                                         }
