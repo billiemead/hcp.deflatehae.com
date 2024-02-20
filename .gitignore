@@ -1,6 +1,7 @@
 # WordPress #
 ############
 wp-config-local.php
+wp-config.php
 wp-cli.local.yml
 wp-content/uploads
 wp-content/blogs.dir/
@@ -16,6 +17,7 @@ wp-content/debug.log
 sitemap.xml
 sitemap.xml.gz
 .vscode
+.theia
 
 # Ignore screenshots
 screenshots/*
