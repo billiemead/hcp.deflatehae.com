@@ -102,8 +102,11 @@ body.haeoverview-page {
                                         }
                                     }
                                     &.top {
-                                        transform: translateY(100px);
+                                        padding-top: 10%;
+                                        margin-bottom: -5% !important;
+                                        z-index: 99999;
                                     }
+
                                     &.bottom {
                                         div.pv-woman-hotspot {
                                             &.desktop {
@@ -135,16 +138,14 @@ body.haeoverview-page {
                                             div#show-all-tips {
                                                 display: none;
                                                 position: absolute;
-                                                width: 1297px;
-                                                height: 931px;
-                                                /* background-image: url("/wp-content/themes/conall-child/images/show-all.png"); */
-                                                background-repeat: no-repeat;
-                                                background-size: contain;
-                                                transform: translate(130px, 340px);
+                                                width: 100%;
+                                                height: 80%;
+                                                padding: 10% 5%;
                                                 div.all-tooltips {
                                                     div.tips-row {
                                                         display: flex;
                                                         width: 100%;
+                                                        padding-bottom: 8% !important;
                                                         div.tipsbox {
                                                             ul.pv-list.hotspot {
                                                                 li.pv-list-item.hotspot {
@@ -159,13 +160,13 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                     div#all-tips-row-1 {
-                                                        transform: translateY(28px);
+
                                                         div#tips-box-1 {
-                                                            width: 65.5%;
+                                                            width: 65%;
                                                         }
                                                         div#tips-box-4 {
-                                                            width: 34.5%;
-                                                            transform: translateY(-42px);
+                                                            width: 35%;
+
                                                             ul {
                                                                 li {
                                                                     margin-left: 14px;
@@ -174,19 +175,19 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                     div#all-tips-row-2 {
-                                                        transform: translateY(132px);
+
                                                         div#tips-box-2 {
-                                                            transform: translateY(135px);
-                                                            width: 65.5%;
+
+                                                            width: 65%;
                                                             ul {
                                                                 li {
                                                                     padding-bottom: 13px;
-                                                                    margin-left: 15px;
+                                                                    margin-left: 14px;
                                                                 }
                                                             }
                                                         }
                                                         div#tips-box-5 {
-                                                            width: 34.5%;
+                                                            width: 35%;
                                                             ul {
                                                                 li {
                                                                     margin-left: 14px;
@@ -195,10 +196,10 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                     div#all-tips-row-3 {
-                                                        transform: translateY(277px);
+
                                                         div#tips-box-3 {
-                                                            width: 65.5%;
-                                                            transform: translateY(219px);
+                                                            width: 65%;
+
                                                             ul {
                                                                 li {
                                                                     margin-left: 18px;
@@ -206,7 +207,7 @@ body.haeoverview-page {
                                                             }
                                                         }
                                                         div#tips-box-6 {
-                                                            width: 34.5%;
+                                                            width: 35%;
                                                             ul {
                                                                 li {
                                                                     margin-left: 14px;
@@ -690,10 +691,10 @@ body.haeoverview-page {
                                                         div#all-tips-row-1 {
                                                             transform: translateY(28px);
                                                             div#tips-box-1 {
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                             }
                                                             div#tips-box-4 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 transform: translateY(-42px);
                                                                 ul {
                                                                     li {
@@ -706,7 +707,7 @@ body.haeoverview-page {
                                                             transform: translateY(132px);
                                                             div#tips-box-2 {
                                                                 transform: translateY(135px);
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                                 ul {
                                                                     li {
                                                                         padding-bottom: 13px;
@@ -715,7 +716,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div#tips-box-5 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 ul {
                                                                     li {
                                                                         margin-left: 14px;
@@ -726,7 +727,7 @@ body.haeoverview-page {
                                                         div#all-tips-row-3 {
                                                             transform: translateY(277px);
                                                             div#tips-box-3 {
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                                 transform: translateY(219px);
                                                                 ul {
                                                                     li {
@@ -735,7 +736,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div#tips-box-6 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 ul {
                                                                     li {
                                                                         margin-left: 14px;
@@ -1197,10 +1198,10 @@ body.haeoverview-page {
                                                         div#all-tips-row-1 {
                                                             transform: translateY(28px);
                                                             div#tips-box-1 {
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                             }
                                                             div#tips-box-4 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 transform: translateY(-42px);
                                                                 ul {
                                                                     li {
@@ -1213,7 +1214,7 @@ body.haeoverview-page {
                                                             transform: translateY(132px);
                                                             div#tips-box-2 {
                                                                 transform: translateY(135px);
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                                 ul {
                                                                     li {
                                                                         padding-bottom: 13px;
@@ -1222,7 +1223,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div#tips-box-5 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 ul {
                                                                     li {
                                                                         margin-left: 14px;
@@ -1233,7 +1234,7 @@ body.haeoverview-page {
                                                         div#all-tips-row-3 {
                                                             transform: translateY(277px);
                                                             div#tips-box-3 {
-                                                                width: 65.5%;
+                                                                width: 65%;
                                                                 transform: translateY(219px);
                                                                 ul {
                                                                     li {
@@ -1242,7 +1243,7 @@ body.haeoverview-page {
                                                                 }
                                                             }
                                                             div#tips-box-6 {
-                                                                width: 34.5%;
+                                                                width: 35%;
                                                                 ul {
                                                                     li {
                                                                         margin-left: 14px;
@@ -1340,7 +1341,6 @@ body.haeoverview-page {
                             }
                             div#overview-bradykinin-row {
                                 padding-top: 12%;
-                                /* padding-bottom: 20%; */
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 90%;

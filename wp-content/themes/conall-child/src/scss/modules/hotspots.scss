@@ -245,6 +245,59 @@ div.tooltip-close {
     cursor: pointer;
 }
 
+div#show-all-tips {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    transform: unset !important;
+    height: 100%;
+    div.wpb_wrapper {
+        div.all-tooltips {
+            div.tips-row {
+                div.tipsbox {
+                    div.pv-hotspot-box-wrapper {
+                        h3.pv-h3.ult-glow {
+                            sup.pv-sup {
+
+                            }
+                        }
+                        ul.pv-list.hotspot {
+                            li.pv-list-item.hotspot {
+
+                            }
+                        }
+                    }
+                }
+            }
+            div#all-tips-row-1 {
+                div#tips-box-1 {
+
+                }
+                div#tips-box-4 {
+
+                }
+            }
+            div#all-tips-row-2 {
+                div#tips-box-2 {
+
+                }
+                div#tips-box-5 {
+
+                }
+            }
+            div#all-tips-row-3 {
+                div#tips-box-3 {
+
+                }
+                div#tips-box-4 {
+
+                }
+            }
+        }
+    }
+}
+
+
 @media all and (max-width: 1024px) {
 
     body.pharvaris {

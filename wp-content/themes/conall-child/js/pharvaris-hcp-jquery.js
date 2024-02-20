@@ -65,3 +65,14 @@ jQuery(document).ready(function ($) {
         $('#tipclose1').parent().hide();
     })
 }); */
+jQuery(document).ready(function ($) {
+    $('#toggler').on('click', function () {
+        if ($(this).text() === "show all") {
+            $(this).text("close all");
+        }
+        else {
+            $(this).text("show all");
+        }
+        $("div#show-all-tips").toggle(300);
+    })
+});
