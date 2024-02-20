@@ -49,6 +49,7 @@ body.home {
                                                             font-size: 0.93vw;
                                                             line-height: 1.3vw;
                                                         }
+
                                                         h1.pv-h1.hero.center {
                                                             @include bold($poppins);
                                                             font-size: 1.55vw;
@@ -70,8 +71,8 @@ body.home {
                                                 }
                                                 h2.pv-h2.hero {
                                                     @include bold($poppins);
-                                                    font-size: 1.05vw;
-                                                    line-height: 1.55vw;
+                                                    font-size: 26px;
+                                                    line-height: 34x;
                                                     color: $red;
                                                     sup.pv-sup {
                                                         font-size: 65%;
@@ -509,8 +510,8 @@ body.home {
                                                                     }
                                                                     h2.pv-h2.hero {
                                                                         @include bold($poppins);
-                                                                        font-size: 20px;
-                                                                        line-height: 30px;
+                                                                        font-size: 26px;
+                                                                        line-height: 34px;
                                                                         color: $red;
                                                                     }
                                                                 }
@@ -957,8 +958,8 @@ body.home {
                                                                     }
                                                                     h2.pv-h2.hero {
                                                                         @include bold($poppins);
-                                                                        font-size: 20px;
-                                                                        line-height: 30px;
+                                                                        font-size: 26px;
+                                                                        line-height: 34px;
                                                                         color: $red;
                                                                     }
                                                                 }
@@ -1422,8 +1423,8 @@ body.home {
                                                                     }
                                                                     h2.pv-h2.hero {
                                                                         @include bold($poppins);
-                                                                        font-size: 20px;
-                                                                        line-height: 30px;
+                                                                        font-size: 26px;
+                                                                        line-height: 34px;
                                                                         color: $red;
                                                                     }
                                                                 }

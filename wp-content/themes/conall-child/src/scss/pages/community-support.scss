@@ -494,11 +494,14 @@ body.communitysupport-page {
                                     div.pv-col1 {
                                         float: unset;
                                         text-align: center;
-                                        div#community-resources-heading {
-                                            margin-top: 100px;
-                                            margin-bottom: 50px !important;
-                                            h2.pv-h2.center.blue {
+                                        div.vc_column-inner {
+                                        padding: 0;
+                                            div#community-resources-heading {
+                                                margin-top: 100px;
+                                                margin-bottom: 50px !important;
+                                                h2.pv-h2.center.blue {
 
+                                                }
                                             }
                                         }
                                     }
@@ -573,6 +576,7 @@ body.communitysupport-page {
                                             }
                                         }
                                         div#community-triple-inner-row-1 {
+                                            height: 100%;
                                             div.pv-col2.left {
                                                 div.partner-logo {
                                                     padding-top: 67%;
@@ -708,6 +712,7 @@ body.communitysupport-page {
                                                                 }
                                                             }
                                                             p.pv-p {
+                                                                padding-right: 13%;
                                                                 transform: translateY(-60px);
                                                             }
                                                         }
@@ -908,11 +913,14 @@ body.communitysupport-page {
                                     div.pv-col1 {
                                         float: unset;
                                         text-align: center;
-                                        div#community-resources-heading {
-                                            margin-top: 8%;
-                                            margin-bottom: 0 !important;
-                                            h2.pv-h2.center.blue {
+                                        div.vc_column-inner {
+                                        padding: 0;
+                                            div#community-resources-heading {
+                                                margin-top: 8%;
+                                                margin-bottom: 10% !important;
+                                                h2.pv-h2.center.blue {
 
+                                                }
                                             }
                                         }
                                     }
@@ -946,7 +954,7 @@ body.communitysupport-page {
                                                             div.partner-logo {
                                                                 padding: 0;
                                                                 text-align: center;
-                                                                margin-bottom: 6% !important;
+                                                                margin-bottom: 8% !important;
                                                                 img {
                                                                 }
                                                             }
@@ -971,6 +979,8 @@ body.communitysupport-page {
                                                     justify-content: center;
                                                     div.tricon-box-heading {
                                                         text-align: center;
+                                                        max-width: 80%;
+                                                        margin: 0 auto;
                                                     }
                                                     div.tricon-box-subheading {
                                                         text-align: center;
@@ -978,7 +988,7 @@ body.communitysupport-page {
                                                     div.tricon-box-paragraph {
                                                         text-align: center;
                                                         p.pv-p {
-                                                            margin: 5% 0 6% 0 !important;
+                                                            margin: 7% 0 7% 0 !important;
                                                         }
                                                     }
                                                     h3.pv-h3 {
@@ -1165,6 +1175,7 @@ body.communitysupport-page {
                                                                 }
                                                             }
                                                             p.pv-p {
+                                                                padding-right: 0;
                                                                 transform: translateY(-60px);
                                                             }
                                                         }

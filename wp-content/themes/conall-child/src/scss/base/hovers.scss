@@ -21,6 +21,9 @@ a.pv-btn:hover {
     color: $black !important;
     transition: all 0.25s ease-in-out;
 }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: $yellow;
+}
 
 @media all and (max-width: 1024px) {
 }

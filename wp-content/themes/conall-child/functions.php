@@ -94,7 +94,7 @@ function custom_class($classes)
     if (is_page('living-with-hae')) {
         $classes[] = 'livinghae-page';
     }
-    if (is_page('treatment-burdens')) {
+    if (is_page('treatment-burden')) {
         $classes[] = 'treatmentburdens-page';
     }
     if (is_page('community-support')) {
@@ -440,7 +440,7 @@ function living_hae_section() {
 add_action( 'wp_footer', 'living_hae_section' );
 
 function treatment_section() {
-    if (is_page('treatment-burdens')) {
+    if (is_page('treatment-burden')) {
         ?>
         <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
         <script>
