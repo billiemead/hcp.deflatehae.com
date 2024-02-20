@@ -69,10 +69,20 @@ body.treatmentburdens-page {
                             background-repeat: no-repeat;
                             padding: 3% 0 0 0;
                             background-color: $white;
+                             background-size: auto;
+                            background-position: bottom;
                             div.edgtf-full-section-inner {
                                 div.pv-col1 {
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
+                                            div#tb-page-heading {
+                                                padding-bottom: 5%;
+                                                max-width: 1436px;
+                                                margin: 0 auto;
+                                                        h1.pv-h1.blue.center {
+
+                                                }
+                                            }
                                             div.pv-row.inner {
                                                 display: flex;
                                                 justify-content: center;
@@ -179,7 +189,7 @@ body.treatmentburdens-page {
                                     }
                                 }
                                 div.pv-col1.footnote-col {
-                                    height: 120px;
+                                    height: 100%;
                                     display: flex;
                                     width: 100%;
                                     justify-content: center;
@@ -187,6 +197,15 @@ body.treatmentburdens-page {
                                     p.pv-p.footnote.center {
 
                                     }
+                                     div#tb-page-subheading {
+                                        max-width: 1195px;
+                                        margin: 0 auto;
+                                        padding: 4% 0 4% 0;
+                                        h1.pv-h1.red.center {
+
+                                        }
+                                    }
+
                                 }
                             }
                         }
@@ -274,7 +293,7 @@ body.treatmentburdens-page {
                             visibility: visible;
                             display: flex;
                             flex-direction: column;
-                            /* justify-content: flex-end; */
+                            z-index: 28;
                             div#treatment-section-wrapper {
                                 div#treatment-banner-section {
                                     z-index: 103;
@@ -990,19 +1009,19 @@ body.treatmentburdens-page {
                                                             div#icon-injection {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 70%;
+                                                                        max-width: 100%;
                                                                     }
                                                             }
                                                             div#icon-infusion {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 70%;
+                                                                        max-width: 100%;
                                                                     }
                                                             }
                                                             div#icon-oral {
                                                                 text-align: center;
                                                                     img {
-                                                                        max-width: 70%;
+                                                                         max-width: 100%;
                                                                     }
                                                             }
                                                         }

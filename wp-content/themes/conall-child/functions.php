@@ -1,7 +1,7 @@
 <?php
 
-setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
-if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
+/* setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN); */
 
 // add custom Meta Tag to header
 function salesforce_header_metadata() {
@@ -442,22 +442,7 @@ add_action( 'wp_footer', 'living_hae_section' );
 function treatment_section() {
     if (is_page('treatment-burdens')) {
         ?>
-        <?php
-            if ($_COOKIE["breakpoint"]=="desktop")
-                {
-                    $breakpoint="desktop";
-                }
-            elseif ($_COOKIE["breakpoint"]=="tablet")
-                {
-                    $breakpoint="tablet";
-                }
-            elseif ($_COOKIE["breakpoint"]=="mobile")
-                {
-                    $breakpoint="mobile";
-                }
-        ?>
-            <script type="module" src="/wp-content/themes/conall-child/js/balloon_<?php echo $breakpoint;?>.js"></script>
-            <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
+        <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
         <script>
             //Select the elements you want inside
             const divs = document.querySelectorAll("#treatment-banner-section, #treatment-facts-section");
@@ -486,6 +471,40 @@ function treatment_section() {
     }
 }
 add_action( 'wp_footer', 'treatment_section' );
+
+function balloon_animation() {
+    if (is_page('treatment-burdens') ) {
+        ?>
+            <script type="text/javascript">
+                    // if (window.innerWidth < 1075) {
+                    if (screen.width >= 1025) {
+                        var head    = document.getElementsByTagName('head')[0];
+                        var script  = document.createElement('script');
+                        script.type = 'module';
+                        script.src  = '/wp-content/themes/conall-child/js/balloon_desktop.js';
+                        head.appendChild(script);
+                    }
+                    if ((screen.width >= 769) && (screen.width <= 1024)) {
+                        var head    = document.getElementsByTagName('head')[0];
+                        var script  = document.createElement('script');
+                        script.type = 'module';
+                        script.src  = '/wp-content/themes/conall-child/js/balloon_tablet.js';
+                        head.appendChild(script);
+                    }
+                    if (screen.width <= 768) {
+                        var head    = document.getElementsByTagName('head')[0];
+                        var script  = document.createElement('script');
+                        script.type = 'module';
+                        script.src  = '/wp-content/themes/conall-child/js/balloon_mobile.js';
+                        head.appendChild(script);
+                    }
+                    /* location.reload(); */
+            </script>
+        <?php
+    }
+}
+add_action('wp_head', 'balloon_animation');
+
 
 function glossary_section() {
     if (is_page('community-support')) {
