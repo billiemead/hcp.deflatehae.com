@@ -473,7 +473,7 @@ function treatment_section() {
 add_action( 'wp_footer', 'treatment_section' );
 
 function balloon_animation() {
-    if (is_page('treatment-burdens') ) {
+    if (is_page('treatment-burden') ) {
         ?>
             <script type="text/javascript">
                     // if (window.innerWidth < 1075) {
