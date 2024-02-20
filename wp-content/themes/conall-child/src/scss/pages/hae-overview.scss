@@ -252,9 +252,6 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                 }
-                                                &.tablet {
-                                                    display: none;
-                                                }
                                                 &.mobile {
                                                     display: none;
                                                 }
@@ -1492,6 +1489,7 @@ body.haeoverview-page {
                                                 }
                                             }
                                         }
+
                                         div#triwhite-box-row--2 {
 
                                             margin-bottom: 2.5% !important;
@@ -1505,7 +1503,9 @@ body.haeoverview-page {
                                             }
                                         }
                                         div#triwhite-box-row--3 {
-
+                                            /* padding-top: 16%;
+                                            padding-bottom: 20%; */
+                                            /* padding-top: 8%; */
                                             div.brandyk-copy.three {
 
                                             }
