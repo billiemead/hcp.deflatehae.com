@@ -322,6 +322,10 @@ body.pharvaris {
         }
         &.yellow {
             color: $yellow;
+
+        }
+        &.yellow.hero-subheading {
+            text-transform: inherit;
         }
         &.hero-subheading {
             font-size: 30px;

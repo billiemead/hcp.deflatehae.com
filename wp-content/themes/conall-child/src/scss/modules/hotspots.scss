@@ -32,9 +32,13 @@ div.ult-tooltipster-base {
     left: 0;
     background-color: #e9b73f;
 }
+
 div#hotspot-tooltip-hs-one {
-    height: 214px;
+    height: 190px;
     left: 293px !important;
+    margin-top: 22px;
+    width: calc(68vw - 557px) !important;
+    max-width: 560px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-1 {
             div.pv-hotspot-box-wrapper {
@@ -51,9 +55,21 @@ div#hotspot-tooltip-hs-one {
         }
     }
 }
+div#hotspot-tooltip-hs-one:after {
+    content: "";
+    border: 1px solid $dk-grey;
+    width: calc(50vw - 494px);
+    position: absolute;
+    top: 25px;
+    left: 228px;
+    max-width: 450px;
+}
 div#hotspot-tooltip-hs-two {
-    height: 277px;
+    height: 185px;
     left: 293px !important;
+    margin-top: 21px;
+    width: calc(68vw - 540px) !important;
+    max-width: 600px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-2 {
             div.pv-hotspot-box-wrapper {
@@ -69,9 +85,21 @@ div#hotspot-tooltip-hs-two {
         }
     }
 }
+div#hotspot-tooltip-hs-two:after {
+    content: "";
+    border: 1px solid $dk-grey;
+    position: absolute;
+    top: 25px;
+    width: calc(50vw - 420px);
+    left: 103px;
+    max-width: 500px;
+}
 div#hotspot-tooltip-hs-three {
-    height: 214px;
+    height: 140px;
     left: 293px !important;
+    margin-top: -2px;
+    width: calc(68vw - 540px) !important;
+    max-width: 523px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-3 {
             div.pv-hotspot-box-wrapper {
@@ -87,12 +115,33 @@ div#hotspot-tooltip-hs-three {
         }
     }
 }
+div#hotspot-tooltip-hs-three:after {
+    content: "";
+    border: 1px solid $dk-grey;
+    position: absolute;
+    top: 25px;
+    width: calc(50vw - 440px);
+    left: 68px;
+    max-width: 456px;
+}
 div#hotspot-tooltip-hs-four {
-    height: 256px;
-    left: 1143px !important;
+    left: unset !important;
+    right: 293px !important;
+    height: 170px;
+    margin-top: 14px;
+    width: calc(50vw - 402px) !important;
+    max-width: 554px !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-4 {
+            flex-direction: row;
+            div.pv-hotspot-box-wrapper.left {
+                width: 25%;
+            }
+            div.pv-hotspot-box-wrapper.right {
+                width: 75%;
+            }
             div.pv-hotspot-box-wrapper {
+
                 div.pv-hotspot-box-wrapper {
                     ul.pv-hotspot-list {
                     max-width: 100%;
@@ -106,6 +155,15 @@ div#hotspot-tooltip-hs-four {
             }
         }
     }
+}
+div#hotspot-tooltip-hs-four:after {
+    content: "";
+    border: 1px solid $dk-grey;
+    position: absolute;
+    top: 25px;
+    width: calc(50vw - 440px);
+    left: 68px;
+    max-width: 456px;
 }
 div#hotspot-tooltip-hs-five {
     height: 275px;
@@ -169,6 +227,8 @@ div.ult-tooltipster-content {
             h3.pv-h3.tip-title {
                 @include bold($poppins);
                 color: $red;
+                font-size: 26px;
+                line-height: 26px;
                 text-transform: uppercase;
                 text-align: left;
             }
