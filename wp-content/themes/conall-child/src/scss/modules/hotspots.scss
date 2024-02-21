@@ -301,267 +301,288 @@ div#show-all-tips {
 @media all and (max-width: 1024px) {
 
     body.pharvaris {
-    div#hotspot-grid {
-        display: block;
-        margin-left: 15%;
-        margin-right: 15%;
+        div#hotspot-grid {
+            display: block;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
     }
-}
+    div.pv-woman-hotspot {
+        display: none;
 
-div.pv-woman-hotspot {
-    display: none;
-
-    &.tablet {
+        &.tablet {
+            display: flex;
+            justify-content: center;
+        }
+        img.ult_hotspot_image {
+        }
+    }
+    .aio-icon-img {
+        font-size: 80px !important;
+    }
+    div.pv-hotspot-wrapper {
+    }
+    div.ult-tooltipster-base {
+        width: 100% !important;
+        max-width: 100% !important;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        left: 0 !important;
     }
-    img.ult_hotspot_image {
+    .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #e9b73f;
     }
-}
-.aio-icon-img {
-    font-size: 80px !important;
-}
-div.pv-hotspot-wrapper {
+    div#hotspot-tooltip-hs-one {
+        height: 275px;
+        width: 100% !important;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(28px, -122px);
+        top: 1102px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-1 {
+                width: 502px;
+                height: 314px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 5% 0 8% 7%;
+                /* margin-top: 236px; */
+                background-repeat: no-repeat;
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
 
-}
-div.ult-tooltipster-base {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    left: 0 !important;
-}
-.ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #e9b73f;
-}
+                        }
+                    }
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
 
-
-div#hotspot-tooltip-hs-one {
-    height: 275px;
-    width: 100% !important;
-    left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-        div#pv-hotspot-1 {
-            width: 502px;
-            height: 314px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
-            padding: 12% 0 8% 7%;
-            margin-top: 236px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
-
+                        }
                     }
                 }
-                ul.pv-hotspot-list {
-                    max-width: 100%;
-                    margin-bottom: 0;
-                    height: 100%;
-                    li {
 
-                    }
-                }
             }
-
         }
     }
-}
-div#hotspot-tooltip-hs-two {
-    height: 275px;
-    width: 100% !important;
-    left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-        div#pv-hotspot-2 {
-            width: 502px;
-            height: 314px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
-            padding: 14% 0 8% 7%;
-            margin-top: 160px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
+    div#hotspot-tooltip-hs-two {
+        height: 275px;
+        width: 100% !important;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(51px, -122px);
+        top: 1402px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-2 {
+                width: 502px;
+                height: 314px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 5% 0 8% 7%;
+                /* margin-top: 160px; */
+                background-repeat: no-repeat;
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
 
+                        }
                     }
-                }
-                ul.pv-hotspot-list {
-                    max-width: 100%;
-                    margin-bottom: 0;
-                    height: 100%;
-                    li {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
 
+                        }
                     }
                 }
             }
         }
     }
-}
-div#hotspot-tooltip-hs-three {
-    width: 100% !important;
-    height: 275px;
-left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-        div#pv-hotspot-3 {
-            width: 502px;
-            height: 230px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x230.png");
-            padding: 12% 0 8% 7%;
-            margin-top: 140px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
+    div#hotspot-tooltip-hs-three {
+        width: 100% !important;
+        height: 275px;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(71px, -143px);
+        top: 1709px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-3 {
+                width: 502px;
+                height: 264px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 5% 0 8% 7%;
+                /* margin-top: 140px; */
+                background-repeat: no-repeat;
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
 
+                        }
                     }
-                }
-                ul.pv-hotspot-list {
-                    max-width: 100%;
-                    margin-bottom: 0;
-                    height: 100%;
-                    li {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
 
-                    }
-                }
-            }
-        }
-    }
-}
-div#hotspot-tooltip-hs-four {
-    width: 100% !important;
-    height: 275px;
-    left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-        div#pv-hotspot-4 {
-            width: 502px;
-            height: 314px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
-            padding: 14% 0 8% 7%;
-            margin-top: 236px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
-
-                    }
-                }
-                ul.pv-hotspot-list {
-                max-width: 100%;
-                margin-bottom: 0;
-                height: 100%;
-                    li {
-
+                        }
                     }
                 }
             }
         }
     }
-}
-div#hotspot-tooltip-hs-five {
-    width: 100% !important;
-    height: 275px;
-    left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-            div#pv-hotspot-5 {
-            width: 502px;
-            height: 385px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x384.png");
-            padding: 14% 3% 8% 7%;
-            margin-top: 300px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
+    div#hotspot-tooltip-hs-four {
+        width: 100% !important;
+        height: 275px;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(30px, -122px);
+        top: 1102px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-4 {
+                width: 502px;
+                height: 314px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 4% 0 8% 7%;
+                /* margin-top: 236px; */
+                background-repeat: no-repeat;
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
 
+                        }
                     }
-                }
-                ul.pv-hotspot-list {
-                max-width: 100%;
-                margin-bottom: 0;
-                height: 100%;
-                    li {
-
-                    }
-                }
-            }
-        }
-    }
-}
-div#hotspot-tooltip-hs-six {
-    width: 100% !important;
-    height: 275px;
-    left: 0 !important;
-    div.ult-tooltipster-content.ult-responsive {
-        div#pv-hotspot-6 {
-            width: 502px;
-            height: 314px;
-            background-image: url("/wp-content/themes/conall-child/images/tip-bubble-502x313.png");
-            padding: 9.5% 0 8% 7%;
-            margin-top: 216px;
-            div.pv-hotspot-box-wrapper {
-                a.tooltip-close {
-                    img.tooltip-close-x {
-
-                    }
-                }
-                ul.pv-hotspot-list {
+                    ul.pv-hotspot-list {
                     max-width: 100%;
                     margin-bottom: 0;
                     height: 100%;
                         li {
 
                         }
-                }
-            }
-        }
-    }
-}
-div.ult-tooltipster-content {
-    padding: 0 !important;
-    p {
-        margin: 0;
-    }
-    div.pv-hotspot-box {
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        margin-top: 0;
-        background: transparent;
-        border: none;
-        padding: 8%;
-        div.pv-hotspot-box-wrapper {
-            padding-top: 3px;
-            position: relative;
-            width: 92%;
-            a.tooltip-close {
-                position: absolute;
-                right: 0;
-                img.tooltip-close-x {
-                    height: 19px;
-                    width: 19px;
-                }
-            }
-            h3.pv-h3tip-title {
-                sup.pv-sup {
-
-                }
-            }
-            ul.pv-list.hotspot {
-                li.pv-list-item.hotspot {
-                    br.line-break {
-                        display: none ;
                     }
                 }
             }
         }
     }
-}
+    div#hotspot-tooltip-hs-five {
+        width: 100% !important;
+        height: 275px;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(34px, -61px);
+        top: 1258px !important;
+        div.ult-tooltipster-content.ult-responsive {
+                div#pv-hotspot-5 {
+                width: 502px;
+                height: 385px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 4% 3% 8% 7%;
+                /* margin-top: 300px; */
+                background-repeat: no-repeat;
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
+
+                        }
+                    }
+                    ul.pv-hotspot-list {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-six {
+        width: 100% !important;
+        height: 275px;
+        left: 0 !important;
+        max-width: 100% !important;
+        transform: translate(43px, -105px);
+        top: 1402px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-6 {
+                width: 502px;
+                height: 314px;
+                background-image: url("/wp-content/themes/conall-child/images/chat-box.png");
+                padding: 5% 0 8% 7%;
+                background-repeat: no-repeat;
+               /*  margin-top: 216px; */
+                div.pv-hotspot-box-wrapper {
+                    a.tooltip-close {
+                        img.tooltip-close-x {
+
+                        }
+                    }
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                            li {
+
+                            }
+                    }
+                }
+            }
+        }
+    }
+    div.ult-tooltipster-content {
+        padding: 0 !important;
+        p {
+            margin: 0;
+        }
+        div.pv-hotspot-box {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            margin-top: 0;
+            background: transparent;
+            border: none;
+            padding: 8%;
+            div.pv-hotspot-box-wrapper {
+                padding-top: 3px;
+                position: relative;
+                width: 92%;
+                a.tooltip-close {
+                    position: absolute;
+                    right: 0;
+                    display: none;
+                    img.tooltip-close-x {
+                        height: 19px;
+                        width: 19px;
+                    }
+                }
+                h3.pv-h3tip-title {
+                    sup.pv-sup {
+
+                    }
+                }
+                ul.pv-list.hotspot {
+                    li.pv-list-item.hotspot {
+                        br.line-break {
+                            display: none ;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
