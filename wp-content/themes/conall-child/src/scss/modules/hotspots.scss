@@ -38,7 +38,7 @@ div.ult-tooltipster-base {
 
 div#hotspot-tooltip-hs-one {
     height: 190px;
-    left: 293px !important;
+    left: 200px !important;
     margin-top: 22px;
     width: calc(68vw - 557px) !important;
     max-width: 560px !important;
@@ -69,7 +69,7 @@ div#hotspot-tooltip-hs-one {
 } */
 div#hotspot-tooltip-hs-two {
     height: 185px;
-    left: 293px !important;
+    left: 200px !important;
     margin-top: 21px;
     width: calc(68vw - 540px) !important;
     max-width: 600px !important;
@@ -99,7 +99,7 @@ div#hotspot-tooltip-hs-two {
 } */
 div#hotspot-tooltip-hs-three {
     height: 140px;
-    left: 293px !important;
+    left: 200px !important;
     margin-top: -2px;
     width: calc(68vw - 540px) !important;
     max-width: 523px !important;
@@ -129,7 +129,7 @@ div#hotspot-tooltip-hs-three {
 } */
 div#hotspot-tooltip-hs-four {
      left: unset !important;
-    right: 8% !important;
+    right: 5% !important;
     height: 170px;
     margin-top: 14px;
     width: calc(50vw - 402px) !important;
@@ -171,7 +171,7 @@ div#hotspot-tooltip-hs-four {
 div#hotspot-tooltip-hs-five {
     height: 275px;
     left: unset !important;
-    right: 8% !important;
+    right: 5% !important;
     div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-5 {
             div.pv-hotspot-box-wrapper {
@@ -192,7 +192,7 @@ div#hotspot-tooltip-hs-five {
 div#hotspot-tooltip-hs-six {
     height: 275px;
      left: unset !important;
-    right: 8% !important;
+    right: 5% !important;
     div.ult-tooltipster-content.ult-responsive {
         div#pv-hotspot-6 {
             div.pv-hotspot-box-wrapper {
@@ -256,6 +256,7 @@ div#show-all-tips {
             div.tips-row {
                 div.tipsbox {
                     div.pv-hotspot-box-wrapper {
+                        max-width: 400px;
                         h3.pv-h3.ult-glow {
                             sup.pv-sup {
 
@@ -343,7 +344,7 @@ div#show-all-tips {
         width: 100% !important;
         left: 0 !important;
         max-width: 100% !important;
-        transform: translate(28px, -122px);
+        transform: translate(0, -122px);
         top: 1102px !important;
         div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-1 {
@@ -377,7 +378,7 @@ div#show-all-tips {
         width: 100% !important;
         left: 0 !important;
         max-width: 100% !important;
-        transform: translate(51px, -122px);
+        transform: translate(0, -122px);
         top: 1402px !important;
         div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-2 {
@@ -410,7 +411,7 @@ div#show-all-tips {
         height: 275px;
         left: 0 !important;
         max-width: 100% !important;
-        transform: translate(71px, -143px);
+        transform: translate(0, -143px);
         top: 1709px !important;
         div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-3 {
@@ -443,7 +444,7 @@ div#show-all-tips {
         height: 275px;
         left: 0 !important;
         max-width: 100% !important;
-        transform: translate(30px, -122px);
+        transform: translate(0, -122px);
         top: 1102px !important;
         div.ult-tooltipster-content.ult-responsive {
             div#pv-hotspot-4 {
@@ -476,7 +477,7 @@ div#show-all-tips {
         height: 275px;
         left: 0 !important;
         max-width: 100% !important;
-        transform: translate(34px, -61px);
+        transform: translate(0, -61px);
         top: 1258px !important;
         div.ult-tooltipster-content.ult-responsive {
                 div#pv-hotspot-5 {
