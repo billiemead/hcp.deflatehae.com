@@ -953,6 +953,7 @@ body.treatmentburdens-page {
                                 background-color: $white;
                                 background-position-x: 55%;
                                 background-size: cover;
+                                top: 0;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
@@ -1322,7 +1323,11 @@ body.treatmentburdens-page {
     }
 }
 @media all and (max-width: 576px) {
+body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-hero-row {
+    min-height: 500px;
 }
+}
+
 @media all and (max-width: 480px) {
 }
 @media all and (max-width: 320px) {
