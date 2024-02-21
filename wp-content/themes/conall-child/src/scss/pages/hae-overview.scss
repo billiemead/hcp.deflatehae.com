@@ -229,6 +229,7 @@ body.haeoverview-page {
                             background-size: 100%;
                             background-position: top;
                             padding-top: 120px;
+                            top: -20px;
                             div.edgtf-full-section-inner {
                                 div.pv-col1.top {
                                     margin-bottom: 0;
@@ -775,7 +776,8 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-                                                    display: none;
+                                                    /* display: none; */
+
                                                     &.tablet {
                                                         text-align: center;
                                                         display: block;
@@ -853,7 +855,6 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-
                                                     &.mobile {
                                                         display: none;
                                                     }
@@ -1281,7 +1282,8 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-                                                    display: none;
+                                                    display: block;
+                                                        text-align: center;
                                                     &.tablet {
                                                         display: none;
                                                     }
@@ -1361,7 +1363,8 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-                                                    display: none;
+
+                                                    display: block;
                                                     &.mobile {
                                                         display: block;
                                                         text-align: center;
