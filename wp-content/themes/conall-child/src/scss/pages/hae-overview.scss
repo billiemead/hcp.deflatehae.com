@@ -1282,8 +1282,7 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-                                                    display: block;
-                                                        text-align: center;
+                                                    display: none;
                                                     &.tablet {
                                                         display: none;
                                                     }
@@ -1364,7 +1363,7 @@ body.haeoverview-page {
                                                 }
                                                 div.hae-heading-logo {
 
-                                                    display: block;
+                                                    display: none;
                                                     &.mobile {
                                                         display: block;
                                                         text-align: center;
