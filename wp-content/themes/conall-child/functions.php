@@ -40,6 +40,14 @@ function pharvaris_hcp_assets()
 }
 add_action('wp_enqueue_scripts', 'pharvaris_hcp_assets', 99);
 
+function pharvaris_add_rivescript()
+{
+    ?>
+    <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
+    <?php
+}
+add_action('wp_head', 'pharvaris_add_rivescript');
+
 function pharvaris_add_favicon()
 { ?>
     <!-- Custom Favicons -->
@@ -442,7 +450,6 @@ add_action( 'wp_footer', 'living_hae_section' );
 function treatment_section() {
     if (is_page('treatment-burden')) {
         ?>
-        <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
         <script>
             //Select the elements you want inside
             const divs = document.querySelectorAll("#treatment-banner-section, #treatment-facts-section");

@@ -178,6 +178,9 @@ body.livinghae-page {
                                                             right: 8px;
                                                             top: 20px;
                                                         }
+                                                        span.hide-desktop {
+                                                            display: none;
+                                                        }
                                                 }
                                             }
                                         }
@@ -818,6 +821,9 @@ body.livinghae-page {
                                                                 transform: rotate(180deg);
                                                                 right: 8px;
                                                                 top: 20px;
+                                                            }
+                                                            span.hide-desktop {
+                                                                display: inline-block;
                                                             }
                                                     }
                                                 }

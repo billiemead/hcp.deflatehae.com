@@ -7,7 +7,7 @@
      * @see edgt_user_scalable - hooked with 10
      */
     do_action('conall_edge_header_meta');
-    
+
     wp_head(); ?>
 </head>
 <body <?php body_class();?> itemscope itemtype="http://schema.org/WebPage">
