@@ -72,11 +72,11 @@ body.home {
                                                 h2.pv-h2.hero {
                                                     @include bold($poppins);
                                                     font-size: 26px;
-                                                    line-height: 34x;
+                                                    line-height: 34px;
                                                     color: $red;
                                                     sup.pv-sup {
-                                                        font-size: 65%;
-                                                        bottom: 0.8ex;
+                                                        font-size: 50%;
+                                                        bottom: 1ex;
                                                     }
                                                 }
                                             }
