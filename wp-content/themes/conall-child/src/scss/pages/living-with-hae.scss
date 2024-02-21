@@ -88,7 +88,7 @@ body.livinghae-page {
                                                 h1.pv-h1.center {
                                                     font-size: 30px;
                                                     line-height: 40px;
-                                                    span.hide-copy {
+                                                    span.hide-desktop {
                                                         display: none;
                                                     }
                                                 }
@@ -177,9 +177,6 @@ body.livinghae-page {
                                                             transform: rotate(180deg);
                                                             right: 8px;
                                                             top: 20px;
-                                                        }
-                                                        span.hide-desktop {
-                                                            display: none;
                                                         }
                                                 }
                                             }
@@ -503,8 +500,7 @@ body.livinghae-page {
                                                     h1.pv-h1.center {
                                                         font-size: 22px;
                                                         line-height: 22px;
-                                                        span.hide-copy {
-                                                            display: none;
+                                                        span.hide-desktop {
                                                         }
                                                     }
                                                 }
@@ -739,7 +735,7 @@ body.livinghae-page {
                                                     h1.pv-h1.center {
                                                         font-size: 30px;
                                                         line-height: 40px;
-                                                        span.hide-copy {
+                                                        span.hide-desktop {
                                                             display: inline-block;
                                                         }
                                                     }
@@ -821,9 +817,6 @@ body.livinghae-page {
                                                                 transform: rotate(180deg);
                                                                 right: 8px;
                                                                 top: 20px;
-                                                            }
-                                                            span.hide-desktop {
-                                                                display: inline-block;
                                                             }
                                                     }
                                                 }
@@ -1212,8 +1205,8 @@ body.livinghae-page {
                                                     h1.pv-h1.center {
                                                         font-size: 25px;
                                                         line-height: 30px;
-                                                        span.hide-copy {
-                                                            display: inline-block;
+                                                        span.hide-desktop {
+
                                                         }
                                                     }
                                                 }
