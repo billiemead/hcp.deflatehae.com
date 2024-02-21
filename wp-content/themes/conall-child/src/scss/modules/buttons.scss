@@ -107,7 +107,6 @@ body.pharvaris {
     }
     div#cookie-law-info-again {
         font-size: 14px;
-        margin: 0;
         padding: 5px 10px;
         text-align: center;
         z-index: 9999;
@@ -120,6 +119,9 @@ body.pharvaris {
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0 !important;
     }
     a#edgtf-back-to-top {
         width: 40px;
@@ -673,7 +675,7 @@ body.pharvaris {
         .btn {
             @include pv-btn();
         }
-        
+
         a#wt-cli-accept-btn {
             @include pv-btn();
             background-color: $white !important;
