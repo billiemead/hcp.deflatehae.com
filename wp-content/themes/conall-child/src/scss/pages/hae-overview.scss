@@ -223,6 +223,10 @@ body.haeoverview-page {
                                 }
                             }
                         }
+                        div#hae-girl-tablet,
+                        div#hae-girl-mobile {
+                            display: none;
+                        }
                         div#hae-attacks-row {
                             background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
                             background-repeat: no-repeat;
@@ -595,16 +599,20 @@ body.haeoverview-page {
                                 }
                             }
                             div#overview-hotspot-row {
-                                height: 100%;
-                                background-image: url("/wp-content/themes/conall-child/images/hotspot-background-1920x1772.jpg");
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-tablet-1024x1725.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
-                                background-position: center center;
-                                top: 80px;
-                                margin-bottom: 3% !important;
+                                display: block;
+                                height: 100%;
+                                top: 85px;
+                                background-position: right;
                                 div.edgtf-full-section-inner {
-                                    max-width: 1430px;
-                                    div.pv-col1 {
+                                    height: 100%;
+                                    div.pv-col1.top {
+                                        padding-top: 15%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -619,147 +627,71 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                 }
-                                                div.pv-paragraph {
-                                                    display: none;
-                                                }
-                                                div.pv-paragraph.tablet {
-                                                    display: block;
-                                                    div.wpb_wrapper {
-                                                        p.pv-p.center.italic {
-                                                            a {
-                                                                color: $black;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        &.top {
-                                            transform: translateY(80px);
-                                            margin-top: 3%;
-                                            padding-top: 2%;
-                                        }
-                                        &.bottom {
-                                            div.pv-woman-hotspot {
-                                                &.desktop {
-                                                    display: none;
-                                                }
-                                                &.tablet {
-                                                    display: block;
-                                                    transform: translateX(54px);
-                                                }
-                                                &.mobile {
-                                                    display: none;
-                                                }
-                                            }
-                                            div.not-patient {
-                                                position: absolute;
-                                                bottom: 80px;
-                                                text-align: right;
-                                                width: 100%;
                                             }
                                         }
                                     }
-                                    div.pv-col1.bottom {
+                                    div.pv-col1.right {
+                                        width: 55%;
+                                        padding-top: 25%;
                                         div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
                                             div.wpb_wrapper {
-
-                                                div#show-all-tips {
-                                                    display: none;
-                                                    position: absolute;
-                                                    width: 1297px;
-                                                    height: 931px;
-                                                    /* background-image: url("/wp-content/themes/conall-child/images/show-all.png"); */
-                                                    background-repeat: no-repeat;
-                                                    background-size: contain;
-                                                    transform: translate(130px, 340px);
-                                                    div.all-tooltips {
-                                                        div.tips-row {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
                                                             display: flex;
-                                                            width: 100%;
-                                                            div.tipsbox {
-                                                                ul.pv-list.hotspot {
-                                                                    li.pv-list-item.hotspot {
-                                                                        margin-top: 0;
-                                                                        margin-left: 17px;
-                                                                        padding-bottom: 9px;
-                                                                        br.line-break {
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
 
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                        div#all-tips-row-1 {
-                                                            transform: translateY(28px);
-                                                            div#tips-box-1 {
-                                                                width: 65%;
-                                                            }
-                                                            div#tips-box-4 {
-                                                                width: 35%;
-                                                                transform: translateY(-42px);
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div#all-tips-row-2 {
-                                                            transform: translateY(132px);
-                                                            div#tips-box-2 {
-                                                                transform: translateY(135px);
-                                                                width: 65%;
-                                                                ul {
-                                                                    li {
-                                                                        padding-bottom: 13px;
-                                                                        margin-left: 15px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#tips-box-5 {
-                                                                width: 35%;
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div#all-tips-row-3 {
-                                                            transform: translateY(277px);
-                                                            div#tips-box-3 {
-                                                                width: 65%;
-                                                                transform: translateY(219px);
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 18px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#tips-box-6 {
-                                                                width: 35%;
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
                                                     }
                                                 }
                                             }
                                         }
+                                    }
+                                    div.pv-col1.left {
+                                        width: 45%;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding-top: 9%;
+                                        padding-left: 12%;
+                                        padding-bottom: 5%;
+                                        div.not-patient {
 
+                                        }
                                     }
                                 }
+                            }
+                            div#hae-girl-mobile {
+                                display: none;
                             }
                             div#hae-attacks-row {
                                 background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
                                 background-repeat: no-repeat;
                                 background-size: 100%;
                                 background-position: top;
-                                /* transform: translateY(-40px); */
+                                margin-top: 8%;
                                 padding-top: 12%;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
@@ -1105,15 +1037,21 @@ body.haeoverview-page {
                                 }
                             }
                             div#overview-hotspot-row {
-                                height: 100%;
-                                background-image: url("/wp-content/themes/conall-child/images/hotspot-background-1920x1772.jpg");
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                display: none;
+                            }
+                            div#hae-girl-mobile {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-mobile-768x2351.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
-                                background-position: center center;
-                                top: 90px;
-                                div.edgtf-full-section-inner {
-                                    max-width: 1430px;
-                                    div.pv-col1 {
+                                display: block;
+                                 height: 100%;
+                                 min-height: 2000px;
+                                 background-position-y: -16px;
+                                    div.pv-col1.top {
+                                        padding-top: 35%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -1128,139 +1066,60 @@ body.haeoverview-page {
                                                         }
                                                     }
                                                 }
-                                                div.pv-paragraph {
-                                                    display: none;
-                                                }
-                                                div.pv-paragraph.tablet {
-                                                    display: block;
-                                                    div.wpb_wrapper {
-                                                        p.pv-p.center.italic {
-                                                            a {
-                                                                color: $black;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        &.top {
-                                            transform: translateY(92px);
-                                            margin-top: 3%;
-                                        }
-                                        &.bottom {
-                                            div.pv-woman-hotspot {
-                                                &.desktop {
-                                                    display: none;
-                                                }
-                                                &.tablet {
-                                                    display: block;
-                                                    margin-top: 14%;
-                                                }
-                                                &.mobile {
-                                                    display: none;
-                                                }
-                                            }
-                                            div.not-patient {
-                                                position: absolute;
-                                                bottom: 80px;
-                                                text-align: right;
-                                                width: 100%;
                                             }
                                         }
                                     }
-                                    div.pv-col1.bottom {
+                                    div.pv-col1.right {
+                                        width: 60%;
+                                        padding-top: 35%;
                                         div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
                                             div.wpb_wrapper {
-
-                                                div#show-all-tips {
-                                                    display: none;
-                                                    position: absolute;
-                                                    width: 1297px;
-                                                    height: 931px;
-                                                    /* background-image: url("/wp-content/themes/conall-child/images/show-all.png"); */
-                                                    background-repeat: no-repeat;
-                                                    background-size: contain;
-                                                    transform: translate(130px, 340px);
-                                                    div.all-tooltips {
-                                                        div.tips-row {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
                                                             display: flex;
-                                                            width: 100%;
-                                                            div.tipsbox {
-                                                                ul.pv-list.hotspot {
-                                                                    li.pv-list-item.hotspot {
-                                                                        margin-top: 0;
-                                                                        margin-left: 17px;
-                                                                        padding-bottom: 9px;
-                                                                        br.line-break {
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
 
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                        div#all-tips-row-1 {
-                                                            transform: translateY(28px);
-                                                            div#tips-box-1 {
-                                                                width: 65%;
-                                                            }
-                                                            div#tips-box-4 {
-                                                                width: 35%;
-                                                                transform: translateY(-42px);
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div#all-tips-row-2 {
-                                                            transform: translateY(132px);
-                                                            div#tips-box-2 {
-                                                                transform: translateY(135px);
-                                                                width: 65%;
-                                                                ul {
-                                                                    li {
-                                                                        padding-bottom: 13px;
-                                                                        margin-left: 15px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#tips-box-5 {
-                                                                width: 35%;
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div#all-tips-row-3 {
-                                                            transform: translateY(277px);
-                                                            div#tips-box-3 {
-                                                                width: 65%;
-                                                                transform: translateY(219px);
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 18px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#tips-box-6 {
-                                                                width: 35%;
-                                                                ul {
-                                                                    li {
-                                                                        margin-left: 14px;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
                                                     }
                                                 }
                                             }
                                         }
-
                                     }
-                                }
+                                    div.pv-col1.left {
+                                        width: 40%;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding-top: 9%;
+                                        padding-left: 12%;
+                                        padding-bottom: 20%;
+                                        div.not-patient {
+
+                                        }
+                                    }
                             }
                             div#hae-attacks-row {
                                 background-image: none;
@@ -1268,6 +1127,7 @@ body.haeoverview-page {
                                 /* transform: translateY(-40px); */
                                 padding-top: 12%;
                                 padding-bottom: 12%;
+                                margin-top: 0;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
