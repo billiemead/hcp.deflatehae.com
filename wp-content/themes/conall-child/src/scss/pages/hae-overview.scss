@@ -1124,9 +1124,8 @@ body.haeoverview-page {
                             div#hae-attacks-row {
                                 background-image: none;
                                 background-color: $backgnd-grey;
-                                /* transform: translateY(-40px); */
                                 padding-top: 12%;
-                                padding-bottom: 12%;
+                                padding-bottom: 0;
                                 margin-top: 0;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
