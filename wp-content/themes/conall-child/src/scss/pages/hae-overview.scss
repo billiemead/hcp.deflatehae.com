@@ -294,15 +294,10 @@ body.haeoverview-page {
                                     padding-top: 0;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
-                                            rs-fullwidth-wrap#hand-animation-desktop_forcefullwidth {
-                                                display: block;
-                                            }
+
                                         }
                                     }
                                 }
-                                /* div.pv-col1.mobile {
-                                    display: none;
-                                } */
                             }
                         }
                         div#overview-bradykinin-row {
@@ -1165,40 +1160,9 @@ body.haeoverview-page {
                                     div.pv-col1.slider {
                                         padding-top: 0;
                                         div.vc_column-inner {
-                                            div.wpb_wrapper {
-                                                rs-fullwidth-wrap#hand-animation-desktop_forcefullwidth {
 
-                                                }
-                                            }
                                         }
                                     }
-                                    /* div.pv-col1.mobile {
-                                        display: flex;
-                                        div#mob-handanimation-image {
-                                            display: block;
-                                        }
-                                        div#mob-handanimation-copy {
-                                            display: block;
-
-                                            div.mob-hand-ani-copy {
-                                                h1.pv-h1.blue.hand.center {
-                                                    margin-bottom: 1% !important;
-                                                    br.line-break {
-
-                                                    }
-                                                    sup.pv-sup {
-                                                        font-size: 50%;
-                                                        bottom: 1.3ex;
-                                                    }
-                                                }
-                                                h4.pv-h4.center.hand {
-                                                    br.line-break {
-
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    } */
                                 }
                             }
                             div#overview-bradykinin-row {
@@ -1550,6 +1514,547 @@ body.haeoverview-page {
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
+    body.haeoverview-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#overview-cta-row {
+
+                            }
+                            div#overview-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
+                                height: 700px;
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#overview-hero-col {
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: block;
+                                                    text-align: center;
+                                                    margin-bottom: 11% !important;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-subheading {
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
+                                                        font-size: 4.8vw;
+                                                        line-height: 6.25vw;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-hotspot-row {
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                display: none;
+                            }
+                            div#hae-girl-mobile {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-mobile-375x1925.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: block;
+                                 height: 100%;
+                                 min-height: 100%;
+                                 background-position-y: -16px;
+                                 background-position: center top;
+                                 padding-bottom: 0;
+                                    div.pv-col1.top {
+                                        padding-top: 35%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hotspot-heading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.red {
+                                                            margin-bottom: 1%;
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .8ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.right {
+                                        padding-top: 35%;
+                                        width: 350px;
+                                        margin: 0 auto;
+                                        div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.left {
+                                        width: 40%;
+                                        display: none;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding: 0;
+                                        padding-bottom: 20%;
+                                        div.not-patient {
+                                            p {
+                                                text-align: center;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                    }
+                            }
+                            div#hae-attacks-row {
+                                background-image: none;
+                                background-color: $backgnd-grey;
+                                padding-top: 12%;
+                                padding-bottom: 0;
+                                margin-top: 0;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.top {
+                                        margin-bottom: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+                                                    display: none;
+                                                    &.tablet {
+                                                        display: none;
+                                                    }
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-bradykinin-row {
+                                padding-top: 12%;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    div.pv-col1.top {
+                                        padding-bottom: 5%;
+                                        padding-top: 4%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+
+                                                    display: none;
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                h3.pv-h3.center {
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    max-width: 684px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                                p.pv-p.center {
+                                                    font-size: 20px;
+                                                    line-height: 30px;
+                                                    padding-top: 3%;
+                                                    padding-bottom: 4%;
+                                                    max-width: 716px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#mob-triwhite-box-row {
+                                display: flex;
+                                margin-top: 5%;
+                                margin-bottom: 10% !important;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 88%;
+                                    margin: 0 auto;
+                                    div.pv-col1.tribox-col {
+                                        div.triwhite-boxrow {
+                                            background-image: url("/wp-content/themes/conall-child/images/mob-brandyk-white-box-502x240.png");
+                                            background-size: 100% 101%;
+                                            background-repeat: no-repeat;
+                                            min-height: 240px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-position: center center;
+                                            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                            /* box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.45); */
+                                            div.brandyk-icon {
+
+                                            }
+                                            div.brandyk-copy {
+                                                h4.h4-brandy-red {
+                                                    padding-top: 2%;
+                                                    sup.pv-sup {
+                                                        font-size: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-1 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            top: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-2 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            bottom: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--1 {
+                                            /* padding-top: 20%;
+                                            padding-bottom: 16%; */
+                                            margin-bottom: 2.5% !important;
+                                            /* padding-bottom: 8%; */
+                                            div.brandyk-copy.one {
+
+                                            }
+                                            div.brandyk-icon.one {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+
+                                        div#triwhite-box-row--2 {
+
+                                            margin-bottom: 2.5% !important;
+                                            div.brandyk-copy.two {
+
+                                            }
+                                            div.brandyk-icon.two {
+                                                img {
+                                                    transform: rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--3 {
+                                            /* padding-top: 16%;
+                                            padding-bottom: 20%; */
+                                            /* padding-top: 8%; */
+                                            div.brandyk-copy.three {
+
+                                            }
+                                            div.brandyk-icon.three {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.section-background {
+                                position: relative;
+                                height: auto;
+                                background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                background-position: center bottom;
+                                visibility: visible;
+                                bottom: -2px;
+                                div#overview-banner-section {
+                                    z-index: 103;
+                                    transform: translateY(55px);
+                                    margin-bottom: 0 !important;
+                                    div.edgtf-full-section-inner {
+                                        div.pv-col1.banner-col {
+                                            div.banner-wrapper {
+                                                display: none;
+                                                &.mobile {
+                                                    display: block;
+                                                }
+                                                div.wpb_wrapper {
+                                                    div.banner-img-container {
+                                                        h2.pv-h2.center.white {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#overview-facts-section {
+                                    div.edgtf-full-section-inner {
+                                        width: 88%;
+                                        div.pv-col1.ripple-image {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div.hae-white-box-image {
+                                                        figure.wpb_wrapper {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.ripple-image.top {
+                                            div#hae-white-box-top {
+                                                img.vc_single_image-img {
+
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.ripple-image.bottom {
+                                            div#hae-white-box-bottom {
+                                                img.vc_single_image-img {
+
+                                                }
+                                            }
+                                        }
+                                        div.pv-col1.facts-icon-col {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div.wpb_text_column.wpb_content_element {
+                                                    padding-top: 9%;
+                                                    padding-bottom: 7%;
+                                                    div.wpb_wrapper {
+                                                        div#hae-facts-icon-row {
+                                                            max-width: 980px;
+                                                            width: 85%;
+                                                            div.iconrow {
+                                                                width: 100%;
+                                                                padding-top: 5%;
+                                                                div.hae-image-wrapper {
+                                                                    height: 140px;
+                                                                    margin-right: 0;
+                                                                    width: 100%;
+                                                                    img {
+
+                                                                    }
+                                                                }
+                                                                div.hae-copy-wrapper {
+                                                                    flex-direction: column;
+                                                                    width: 100%;
+                                                                    p.pv-p {
+                                                                    }
+                                                                    ul {
+                                                                        margin: 10px 0 0 0;
+                                                                        li {
+                                                                            padding-bottom: 2%;
+                                                                            sup.pv-sup {
+
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            div#icon-row1 {
+                                                                img.hae-icon.one {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row2 {
+                                                                img.hae-icon.two {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row3 {
+                                                                img.hae-icon.three {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row4 {
+                                                                padding-top: 7%;
+                                                                img.hae-icon.four {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                a.pv-btn {
+                                                    margin-bottom: 50px;
+                                                }
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 320px) {
 }

@@ -56,6 +56,7 @@ body.pharvaris {
     .btn {
         @include pv-btn();
     }
+    a#wt-cli-reject-btn,
     a#wt-cli-accept-btn {
         @include pv-btn();
         font-weight: 800;
@@ -85,6 +86,7 @@ body.pharvaris {
         line-height: 18px !important;
         text-align: center;
         transition: all 0.5s ease-in-out;
+        background: none !important;
     }
 
     a#wt-cli-settings-btn:hover {
