@@ -1116,7 +1116,8 @@ body.treatmentburdens-page {
                             }
                             div#balloon-carousel {
                                 display: block;
-                                padding-bottom: 10%;
+                                padding-bottom: 6%;
+                                top: -2px;
                                 div.balloon-mob-wrapper {
                                     div.balloon-image-container {
                                         margin: 0 auto;
@@ -1124,14 +1125,16 @@ body.treatmentburdens-page {
                                         justify-content: center;
                                         align-items: center;
                                         background-color: #E5E5E5;
+                                        flex-direction: column;
+                                        margin-bottom: -4%;
                                         img {
-                                            max-width: 75%;
+                                            width: 65%;
                                             position: relative;
                                             bottom: -35px;
                                         }
                                         div.not-patient {
                                             p.pv-p.center.ex-small {
-
+                                                color: $white;
                                             }
                                         }
                                     }
@@ -1139,7 +1142,7 @@ body.treatmentburdens-page {
                                         background-image: url("/wp-content/themes/conall-child/images/mob-ani-grey-box-395x238.png");
                                         background-repeat: no-repeat;
                                         background-size: cover;
-                                        height: 150px;
+                                        height: 110px;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
@@ -1164,18 +1167,19 @@ body.treatmentburdens-page {
                                     }
                                     div.row-red {
                                         background-color: $red;
-                                        height: 275px;
+                                        height: 205px;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
                                         flex-direction: column;
                                         z-index: 14;
                                         position: relative;
+                                        bottom: 2px;
                                         h2 {
                                             max-width: 400px;
                                             @include bold($poppins);
-                                            font-size: 24px;
-                                            line-height: 34px;
+                                            font-size: 20px;
+                                            line-height: 30px;
                                             color: $white;
                                             text-align: center;
                                             margin: 0 auto;
@@ -1198,16 +1202,17 @@ body.treatmentburdens-page {
                                         margin: 0 auto;
                                         flex-direction: column;
                                         width: 80%;
-                                        height: 300px;
+                                        height: 174px;
                                         justify-content: flex-end;
-                                        padding-bottom: 6.5%;
+                                        padding: 5%;
                                         margin-top: -40px;
                                         position: relative;
                                         z-index: 13;
+                                        margin-top: -13px;
                                         h2 {
                                             @include bold($poppins);
-                                            font-size: 24px;
-                                            line-height: 34px;
+                                            font-size: 16px;
+                                            line-height: 24px;
                                             color: $dk-grey;
                                             text-align: center;
                                             max-width: 400px;
