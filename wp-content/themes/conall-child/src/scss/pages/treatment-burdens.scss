@@ -884,66 +884,47 @@ body.treatmentburdens-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.pv-row.inner {
-                                                display: flex;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                margin: 0;
-                                                div.edgtf-full-section-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    width: 80%;
-                                                    max-width: 100%;
-                                                    margin: 0 auto;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    padding-bottom: 0;
-                                                    padding-top: 0;
-                                                    div.pv-col1.center {
-                                                        float: unset;
-                                                        &.top {
-                                                            max-width: 910px;
-                                                        }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: block;
-                                                            text-align: center;
-                                                            margin-bottom: 4.5% !important;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
+                                                div.wpb_wrapper {
+                                                    div.hero-subheading {
 
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div.hero-subheading {
-                                                            padding-bottom: 4%;
-                                                            max-width: 686px;
-                                                            margin: 0 auto;
-                                                            h2.pv-h2 {
-                                                                /* font-size: 30px;
-                                                                line-height: 40px; */
-                                                                font-size: 4.8vw;
-                                                                line-height: 6.25vw;
-                                                                sup.pv-sup {
-                                                                    font-size: 65%;
-                                                                    bottom: .8ex;
+                                                    }
+                                                    div#hero-logo-alt-desktop {
+                                                        display: none;
+                                                    }
+                                                    div#hero-logo-alt-tablet {
+                                                        display: none;
+                                                    }
+                                                    div#hero-logo-alt-mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        margin-bottom: 4.5% !important;
+                                                        max-width: 685px;
+                                                        margin: 0 auto;
+                                                        figure.wpb_wrapper {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
                                                                 }
                                                             }
                                                         }
                                                     }
+                                                    div.hero-subheading {
+                                                        padding-bottom: 4%;
+                                                        max-width: 100%;
+                                                        margin: 0 auto;
+                                                        h2.pv-h2 {
+                                                            /* font-size: 30px;
+                                                            line-height: 40px; */
+                                                            font-size: 4.8vw;
+                                                            line-height: 6.25vw;
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .8ex;
+                                                            }
+                                                        }
+                                                    }
                                                 }
-                                            }
+
                                         }
                                     }
 
@@ -1388,8 +1369,8 @@ body.treatmentburdens-page {
                                                         }
                                                         div.hero-subheading {
                                                             padding-bottom: 4%;
-                                                            max-width: 686px;
                                                             margin: 0 auto;
+                                                            max-width: 100%;
                                                             h2.pv-h2 {
                                                                 /* font-size: 30px;
                                                                 line-height: 40px; */
@@ -1834,7 +1815,7 @@ body.treatmentburdens-page {
                                                         }
                                                         div.hero-subheading {
                                                             padding-bottom: 4%;
-                                                            max-width: 686px;
+                                                            max-width: 100%;
                                                             margin: 0 auto;
                                                             h2.pv-h2 {
                                                                 /* font-size: 30px;

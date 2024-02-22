@@ -861,7 +861,10 @@ body.communitysupport-page {
                                     max-width: 100%;
                                     width: 80%;
                                     div#community-hero-col {
+                                        
                                         padding-top: 0;
+                                        position: absolute;
+                                        top: 50%;
                                         div.vc_column-inner {
                                         padding: 0;
                                         height: 100%;
