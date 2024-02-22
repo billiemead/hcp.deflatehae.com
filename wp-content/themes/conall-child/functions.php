@@ -498,13 +498,13 @@ function balloon_animation() {
                         script.src  = '/wp-content/themes/conall-child/js/balloon_tablet.js';
                         head.appendChild(script);
                     }
-                    if (screen.width <= 768) {
+                    /* if (screen.width <= 768) {
                         var head    = document.getElementsByTagName('head')[0];
                         var script  = document.createElement('script');
                         script.type = 'module';
                         script.src  = '/wp-content/themes/conall-child/js/balloon_mobile.js';
                         head.appendChild(script);
-                    }
+                    } */
                     /* location.reload(); */
             </script>
         <?php

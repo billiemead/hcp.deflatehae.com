@@ -21,7 +21,7 @@ layout = new rive.Layout({
 });
 
 const balloon = new rive.Rive({
-    src: "/wp-content/themes/conall-child/animations/pharvaris_balloon_animation_v9.riv",
+    src: "/wp-content/themes/conall-child/animations/pharvaris_balloon_animation_v11.riv",
     canvas: riveCanvas,
     stateMachines: "balloon_sm",
     autoplay: true,
