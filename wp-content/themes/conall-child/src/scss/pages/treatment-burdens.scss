@@ -1542,95 +1542,78 @@ body.treatmentburdens-page {
                                 }
                             }
                             div#treatment-balloon-animation-row {
-                                background-image: url("/wp-content/themes/conall-child/images/balloon-ani-section-top-1920x1400.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: top;
-                                padding-top: 3%;
                                 div.edgtf-full-section-inner {
-                                    max-width: 100%;
-                                    width: 100%;
+                                    div.pv-col1.mid {
+                                        min-height: unset;
+                                    }
+                                }
+                            }
+                            div#balloon-animation-canvas-row {
+                                display: none;
+                            }
+                            div#balloon-carousel {
+
+                                div.balloon-mob-wrapper {
+                                div.balloon-image-container {
                                     margin: 0 auto;
-                                    div.pv-col1.top {
-                                        margin-bottom: 5%;
-                                        margin-top: 12%;
-                                        div.vc_column-inner {
-                                            width: 90%;
-                                            margin: 0 auto;
-                                        }
-                                        div.best-selves-subheading {
-                                            h3.pv-h3.center.form {
-                                                sup.pv-sup {
-                                                    font-size: 60%;
-                                                }
-                                            }
-                                        }
-                                        div.best-selves-heading-logo {
-                                            display: none;
-                                        }
-                                        div.best-selves-heading-logo-tablet {
-                                            text-align: center;
-                                            display: block;
-                                            figure.wpb_wrapper {
-                                                div.vc_single_image-wrapper {
-                                                    text-align: center;
-                                                    img.vc_single_image-img {
-                                                        max-width: 90%;
-                                                        text-align: center;
-                                                        margin: 0 auto;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div#balloon-animation-heading-tablet {
-                                            display: block;
-                                            max-width: 545px;
-                                            margin: 0 auto;
-                                            padding-top: 25px;
-                                        }
-                                    }
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #E5E5E5;
+                                    img {
 
-                                    div.pv-col1.mid  {
-                                    width: 100%;
-                                    min-height: 696px;
-                                    div.vc_column-inner {
-                                        width: 100%;
-                                        padding: 0;
-                                        div.wpb_wrapper {
-                                            width: 100%;
-                                            div#balloon-animation-canvas-row {
-                                                div.edgtf-full-section-inner {
-                                                    div.pv-col1.grid {
-                                                        width: 100%;
-                                                        div.vc_column-inner {
-
-                                                            width: 100%;
-                                                            padding: 0;
-                                                            div.wpb_wrapper {
-                                                                width: 100%;
-                                                                div.wpb_raw_code {
-                                                                    width: 100%;
-                                                                    div.wpb_wrapper {
-                                                                        width: 100%;
-                                                                        div.rive-container {
-                                                                            width: 100vw;
-                                                                            height: 100%;
-                                                                            canvas#rive-canvas {
-                                                                                width: 100vw;
-                                                                                min-height: 1200px;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
                                     }
                                 }
+                                div.row-grey {
+                                    background-color: $dk-grey;
+                                    height: 105px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    h2 {
+                                        @include bold($poppins);
+                                        font-size: 24px;
+                                        line-height: 34px;
+                                        color: $yellow;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                    }
                                 }
+                                div.row-red {
+                                    background-color: $red;
+                                    height: 215px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    h2 {
+                                        max-width: 400px;
+                                        @include bold($poppins);
+                                        font-size: 24px;
+                                        line-height: 34px;
+                                        color: $white;
+                                        text-align: center;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                div.row-yellow {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 215px;
+                                    background-color: $yellow;
+                                    margin: 0 auto;
+                                    h2 {
+                                        @include bold($poppins);
+                                        font-size: 24px;
+                                        line-height: 34px;
+                                        color: $dk-grey;
+                                        text-align: center;
+                                        max-width: 400px;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
                             }
                             div.section-background {
                                 position: relative;
@@ -2003,95 +1986,6 @@ body.treatmentburdens-page {
                                 }
                             }
                             div#treatment-balloon-animation-row {
-                                background-image: url("/wp-content/themes/conall-child/images/balloon-ani-section-top-1920x1400.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: top;
-                                padding-top: 3%;
-                                div.edgtf-full-section-inner {
-                                    max-width: 100%;
-                                    width: 100%;
-                                    margin: 0 auto;
-                                    div.pv-col1.top {
-                                        margin-bottom: 5%;
-                                        margin-top: 12%;
-                                        div.vc_column-inner {
-                                            width: 90%;
-                                            margin: 0 auto;
-                                        }
-                                        div.best-selves-subheading {
-                                            h3.pv-h3.center.form {
-                                                sup.pv-sup {
-                                                    font-size: 60%;
-                                                }
-                                            }
-                                        }
-                                        div.best-selves-heading-logo {
-                                            display: none;
-                                        }
-                                        div.best-selves-heading-logo-tablet {
-                                            text-align: center;
-                                            display: block;
-                                            figure.wpb_wrapper {
-                                                div.vc_single_image-wrapper {
-                                                    text-align: center;
-                                                    img.vc_single_image-img {
-                                                        max-width: 90%;
-                                                        text-align: center;
-                                                        margin: 0 auto;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div#balloon-animation-heading-tablet {
-                                            display: block;
-                                            max-width: 545px;
-                                            margin: 0 auto;
-                                            padding-top: 25px;
-                                        }
-                                    }
-
-                                    div.pv-col1.mid  {
-                                    width: 100%;
-                                    min-height: 696px;
-                                    div.vc_column-inner {
-                                        width: 100%;
-                                        padding: 0;
-                                        div.wpb_wrapper {
-                                            width: 100%;
-                                            div#balloon-animation-canvas-row {
-                                                div.edgtf-full-section-inner {
-                                                    div.pv-col1.grid {
-                                                        width: 100%;
-                                                        div.vc_column-inner {
-
-                                                            width: 100%;
-                                                            padding: 0;
-                                                            div.wpb_wrapper {
-                                                                width: 100%;
-                                                                div.wpb_raw_code {
-                                                                    width: 100%;
-                                                                    div.wpb_wrapper {
-                                                                        width: 100%;
-                                                                        div.rive-container {
-                                                                            width: 100vw;
-                                                                            height: 100%;
-                                                                            canvas#rive-canvas {
-                                                                                width: 100vw;
-                                                                                min-height: 1200px;
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                }
                             }
                             div.section-background {
                                 position: relative;
