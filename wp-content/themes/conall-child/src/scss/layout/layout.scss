@@ -32,7 +32,7 @@ body {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
-
+                top: 155px;
             }
         }
     }
@@ -69,6 +69,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 html {
     scroll-behavior: smooth;
+ }
+ .owl-prev::before {
+    position: absolute;
+    left: 150px !important;
+    color: #fff;
+    top: 0;
+ }
+  .owl-next::before {
+    position: absolute;
+    right: 150px!important;
+    color: #fff;
+    top: 0;
  }
 /* ************ CSS RESET END ************ */
 /* ************ PLACEHOLDERS ************ */
@@ -139,13 +151,6 @@ body {
     color: $black;
     padding-bottom: 215px !important;
     background-color: $dk-grey;
-    div.edgtf-wrapper {
-        div.edgtf-wrapper-inner {
-            div.edgtf-content {
-
-            }
-        }
-    }
 }
 body.pharvaris {
     .edgtf-grid {
@@ -206,21 +211,22 @@ body.pharvaris {
         right: 50%;
         &.home {
             padding-top: calc(120px - 4%);
-            aspect-ratio: 192 / 73;
+            aspect-ratio: 192/73;
         }
         &.utility {
             top: 0;
-            aspect-ratio: 24 / 5;
+            min-height: calc(100vw / 3.5);
         }
         &.desktop {
             display: block;
-            top: 50px;
+            top: 0;
             &.alt {
-                top: 73px;
-                aspect-ratio: 480 / 151;
+                top: 0;
+                /* height: 25vh; */
+                min-height: calc(100vw / 3.5);
+                /* padding-top: 23.8%; */
                 &.two {
-                    top: -44px;
-                    aspect-ratio: 480 / 151;
+                    top: 0;
                 }
             }
         }
@@ -229,6 +235,13 @@ body.pharvaris {
         }
         &.mobile {
             display: none;
+        }
+        div.edgtf-full-section-inner {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     }
     div#not-patient-row {
@@ -325,7 +338,7 @@ body.pharvaris {
 
         }
         &.yellow.hero-subheading {
-            text-transform: inherit;
+
         }
         &.hero-subheading {
             font-size: 30px;
@@ -538,9 +551,6 @@ body.pharvaris {
     }
     span.strong {
         font-weight: bold;
-    }
-    div.edgtf-content {
-
     }
     sup.pv-sup {
 
@@ -795,7 +805,7 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
-
+                top: 80px;
                 }
             }
         }
@@ -834,16 +844,16 @@ body.pharvaris {
             }
             &.utility {
                 top: 0;
-                aspect-ratio: 128 / 45;
+                min-height: calc(100vw / 2.75);
             }
             &.desktop {
                 display: none;
                 &.alt {
-                    top: 120px;
-                    aspect-ratio: 1024 / 587;
+                    top: 0;
+                    min-height: calc(100vw / 2.75);
                     &.two {
-                        top: -44px;
-                        aspect-ratio: 1024 / 587;
+                        top: 0;
+
                     }
                 }
             }
@@ -851,7 +861,7 @@ body.pharvaris {
                 display: block;
                 background-color: $ultra-grey;
                 top: 0;
-                aspect-ratio: 512 / 215;
+                /* aspect-ratio: 512 / 215; */
                 & div.not-patient {
                     position: relative;
                     width: 100%;
@@ -1043,10 +1053,6 @@ body.pharvaris {
             }
         }
         div.pv-paragraph {
-
-        }
-
-        div.edgtf-content {
 
         }
         sup.pv-sup {
@@ -1250,16 +1256,15 @@ body.pharvaris {
             }
             &.utility {
                 top: 0;
-                aspect-ratio: 576 / 439;
+                min-height: calc(100vw / 2);
             }
             &.desktop {
                 display: none;
                     &.alt {
-                        top: 120px;
-                        aspect-ratio: 96 / 127;
+                        top: 0;
+                        min-height: calc(100vw / 2);
                         &.two {
-                            top: -44px;
-                            aspect-ratio: 576 / 439;
+                            top: 0;
                         }
                     }
             }
@@ -1281,7 +1286,7 @@ body.pharvaris {
                 width: 100vw;
                 background-color: $ultra-grey;
                 margin-top: 0;
-                aspect-ratio: 288 / 185;
+                /* aspect-ratio: 288 / 185; */
                 & div.not-patient {
                     position: relative;
                     width: 100%;
@@ -1469,10 +1474,6 @@ body.pharvaris {
             }
         }
         div.pv-paragraph {
-
-        }
-
-        div.edgtf-content {
 
         }
         sup.pv-sup {
@@ -1729,12 +1730,13 @@ body.pharvaris {
             }
             &.utility {
                 top: 0;
-                aspect-ratio: 576 / 439;
+                min-height: calc(100vw / 1.75);
             }
             &.desktop {
                 display: none;
                     &.alt {
-
+                        /* height: 20vh; */
+                         min-height: calc(100vw / 1.75);
                     &.two {
 
                     }
@@ -1759,7 +1761,7 @@ body.pharvaris {
 
                 background-color: $ultra-grey;
                 margin-top: 0;
-                aspect-ratio: 288 / 185;
+               /*  aspect-ratio: 288 / 185; */
                 & div.not-patient {
                     position: relative;
                     width: 100%;
@@ -1824,7 +1826,8 @@ body.pharvaris {
 
             }
             &.hero-subheading {
-
+                font-size: 22px;
+                line-height: 28px;
             }
             &.blue {
 
@@ -1947,10 +1950,6 @@ body.pharvaris {
             }
         }
         div.pv-paragraph {
-
-        }
-
-        div.edgtf-content {
 
         }
         sup.pv-sup {

@@ -10,19 +10,18 @@ body.communitysupport-page {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#community-cta-row {
+                            
                         }
                         div#community-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                            min-height: 580px;
                                 & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 height: 100%;
-                                width: 60%;
+                                width: 80%;
                                 div#community-hero-col {
-                                    padding-top: 14%;
                                     div.vc_column-inner {
                                         padding: 0;
                                         height: 100%;
@@ -43,7 +42,7 @@ body.communitysupport-page {
                                             }
                                             div#hero-logo-alt-desktop {
                                                 text-align: center;
-                                                margin-bottom: 5% !important;
+                                               /*  margin-bottom: 5% !important; */
                                                 figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
@@ -437,12 +436,10 @@ body.communitysupport-page {
                             }
                             div#community-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 523px;
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#community-hero-col {
-                                        padding-top: 5%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -456,7 +453,7 @@ body.communitysupport-page {
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 4.5% !important;
+                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -861,10 +858,6 @@ body.communitysupport-page {
                                     max-width: 100%;
                                     width: 80%;
                                     div#community-hero-col {
-                                        
-                                        padding-top: 0;
-                                        position: absolute;
-                                        top: 50%;
                                         div.vc_column-inner {
                                         padding: 0;
                                         height: 100%;
@@ -878,7 +871,7 @@ body.communitysupport-page {
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 4.5% !important;
+                                                   /*  margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -890,8 +883,7 @@ body.communitysupport-page {
                                                     }
                                                 }
                                                 div.hero-subheading {
-                                                    /* padding-top: 35px; */
-                                                    padding-top: 0;
+                                                    padding-top: 5%;
                                                     max-width: 686px;
                                                     margin: 0 auto;
                                                     h2.pv-h2.center.yellow.hero-subheading{
@@ -911,7 +903,7 @@ body.communitysupport-page {
                                 }
                             }
                             div#community-triple-partners-row {
-                                margin-top: -50px;
+                                margin-top: 0px;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1 {
                                         float: unset;
@@ -922,7 +914,8 @@ body.communitysupport-page {
                                                 margin-top: 8%;
                                                 margin-bottom: 10% !important;
                                                 h2.pv-h2.center.blue {
-
+                                                    font-size: 35px;
+                                                    line-height: 40px;
                                                 }
                                             }
                                         }
@@ -1067,10 +1060,11 @@ body.communitysupport-page {
                                         }
                                         div.pv-col1.top {
                                             div#community-glossary-heading {
-                                                margin-top: 100px;
+                                                margin-top: 50px;
                                                 margin-bottom: 50px !important;
                                                 h2.pv-h2.center.blue {
-
+                                                    font-size: 35px;
+                                                    line-height: 40px;
                                                 }
                                             }
                                             p.pv-p {
@@ -1079,7 +1073,7 @@ body.communitysupport-page {
                                             }
                                         }
                                         div.pv-col1.btm {
-                                            margin-top: 85px;
+                                            margin-top: 25px;
                                             div.glossary-innerrow {
                                                 border-bottom: 1px solid $blue;
                                                 margin: 0;

@@ -14,21 +14,21 @@ body.haeoverview-page {
                         div#overview-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                            min-height: 460px;
+                            /* min-height: 460px; */
                             & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 height: 100%;
-                                width: 70%;
+                                width: 80%;
                                 div#overview-hero-col {
-                                    padding-top: 4%;
+                                    /* padding-top: 4%; */
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
                                             div#hero-logo-alt-desktop {
                                                 text-align: center;
-                                                margin-bottom: 5% !important;
+                                                /* margin-bottom: 5% !important; */
                                                 figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
@@ -69,7 +69,7 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center center;
-                            top: 34px;
+                            top: -40px;
                             div.edgtf-full-section-inner {
                                 max-width: 1430px;
                                 div.pv-col1 {
@@ -233,7 +233,7 @@ body.haeoverview-page {
                             background-size: 100%;
                             background-position: top;
                             padding-top: 120px;
-                            top: -20px;
+                            top: -100px;
                             div.edgtf-full-section-inner {
                                 div.pv-col1.top {
                                     margin-bottom: 0;
@@ -544,7 +544,7 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 523px;
+                                min-height: 50vw;
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -562,7 +562,7 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 4.5% !important;
+                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -986,7 +986,8 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
-                                height: 700px;
+                                /* height: 700px; */
+                                min-height: 100vw;
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -1003,7 +1004,7 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 11% !important;
+                                                    padding-bottom: 3%;
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -1017,9 +1018,11 @@ body.haeoverview-page {
                                                 div#hero-subheading {
                                                     max-width: 686px;
                                                     margin: 0 auto;
-                                                    h2.pv-h2 {
-                                                        font-size: 4.8vw;
-                                                        line-height: 6.25vw;
+                                                    padding-top: 3%;
+                                                    h2.pv-h2.center.yellow.hero-subheading {
+                                                    font-size: 4.8vw;
+                                                    line-height: 6.25vw;
+
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -1045,6 +1048,8 @@ body.haeoverview-page {
                                  height: 100%;
                                  min-height: 2000px;
                                  background-position-y: -16px;
+                                 top: 0px;
+                                 margin-top: -10%;
                                     div.pv-col1.top {
                                         padding-top: 35%;
                                         div.vc_column-inner {
@@ -1122,6 +1127,7 @@ body.haeoverview-page {
                                 padding-top: 12%;
                                 padding-bottom: 0;
                                 margin-top: 0;
+                                top: -200px;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
@@ -1166,7 +1172,8 @@ body.haeoverview-page {
                                 }
                             }
                             div#overview-bradykinin-row {
-                                padding-top: 12%;
+                                padding-top: 0;
+                                top: -200px;
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 90%;
@@ -1525,7 +1532,7 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
-                                height: 700px;
+                                /* height: 700px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -1542,13 +1549,14 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 11% !important;
+                                                    /* margin-bottom: 11% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
-
+                                                                max-width: 80%;
+                                                                margin: 0 auto;
                                                             }
                                                         }
                                                     }

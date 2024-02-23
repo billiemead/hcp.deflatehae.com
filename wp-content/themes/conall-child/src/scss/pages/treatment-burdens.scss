@@ -15,7 +15,7 @@ body.treatmentburdens-page {
                         div#treatment-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                            min-height: 580px;
+                            /* min-height: 580px; */
                                 & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
@@ -23,7 +23,7 @@ body.treatmentburdens-page {
                                 height: 100%;
                                 width: 60%;
                                 div#treatment-hero-col {
-                                    padding-top: 15%;
+                                    /* padding-top: 15%; */
                                     div.vc_column-inner {
                                         padding: 0;
                                         height: 100%;
@@ -32,7 +32,7 @@ body.treatmentburdens-page {
                                                 max-width: 1265px;
                                                 margin: 0 auto;
                                                 /* padding-bottom: 25px ; */
-                                                padding-bottom: 4%;
+                                                /* padding-bottom: 4%; */
                                                 h2.pv-h2 {
                                                     font-size: 1.55vw;
                                                     line-height: 2.1vw;
@@ -45,7 +45,7 @@ body.treatmentburdens-page {
                                             }
                                             div#hero-logo-alt-desktop {
                                                 text-align: center;
-                                                margin-bottom: 5% !important;
+                                               /*  margin-bottom: 5% !important; */
                                                 figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
@@ -452,18 +452,18 @@ body.treatmentburdens-page {
                             }
                             div#treatment-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 523px;
+                                /* min-height: 523px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#treatment-hero-col {
-                                        padding-top: 16%;
+                                       /*  padding-top: 16%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
                                             div.wpb_wrapper {
                                                 div.hero-subheading {
-                                                padding-bottom: 4%;
+                                               /*  padding-bottom: 4%; */
                                                 max-width: 60%;
                                                 margin: 0 auto;
                                                 h2.pv-h2 {
@@ -486,7 +486,7 @@ body.treatmentburdens-page {
                                             div#hero-logo-alt-tablet {
                                                 display: block;
                                                 text-align: center;
-                                                margin-bottom: 4.5% !important;
+                                                /* margin-bottom: 4.5% !important; */
                                                 max-width: 685px;
                                                 margin: 0 auto;
                                                 figure.wpb_wrapper {
@@ -509,6 +509,7 @@ body.treatmentburdens-page {
                                 background-color: $white;
                                 background-position-x: 55%;
                                 background-size: cover;
+                                top: 0;
                                 div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 100%;
@@ -875,12 +876,12 @@ body.treatmentburdens-page {
                             }
                             div#treatment-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
-                                min-height: 700px;
+                                /* min-height: 700px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#treatment-hero-col {
-                                        padding-top: 20%;
+                                        /* padding-top: 20%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -897,7 +898,7 @@ body.treatmentburdens-page {
                                                     div#hero-logo-alt-mobile {
                                                         display: block;
                                                         text-align: center;
-                                                        margin-bottom: 4.5% !important;
+                                                       /*  margin-bottom: 4.5% !important; */
                                                         max-width: 685px;
                                                         margin: 0 auto;
                                                         figure.wpb_wrapper {
@@ -909,7 +910,7 @@ body.treatmentburdens-page {
                                                         }
                                                     }
                                                     div.hero-subheading {
-                                                        padding-bottom: 4%;
+                                                       /*  padding-bottom: 4%; */
                                                         max-width: 100%;
                                                         margin: 0 auto;
                                                         h2.pv-h2 {
@@ -1118,6 +1119,10 @@ body.treatmentburdens-page {
                                 display: block;
                                 padding-bottom: 6%;
                                 top: -2px;
+                                div.wdo-carosuel-container {
+                                    .owl-prev:before {
+
+                                }
                                 div.balloon-mob-wrapper {
                                     div.balloon-image-container {
                                         margin: 0 auto;
@@ -1224,6 +1229,8 @@ body.treatmentburdens-page {
                                         }
                                     }
                                 }
+                                }
+
                             }
                             div.section-background {
                                 position: relative;
@@ -1385,12 +1392,12 @@ body.treatmentburdens-page {
                             }
                             div#treatment-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
-                                min-height: 700px;
+                               /*  min-height: 700px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#treatment-hero-col {
-                                        padding-top: 20%;
+                                        /* padding-top: 20%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -1425,7 +1432,7 @@ body.treatmentburdens-page {
                                                         div#hero-logo-alt-mobile {
                                                             display: block;
                                                             text-align: center;
-                                                            margin-bottom: 4.5% !important;
+                                                           /*  margin-bottom: 4.5% !important; */
                                                             max-width: 685px;
                                                             margin: 0 auto;
                                                             figure.wpb_wrapper {
@@ -1437,7 +1444,7 @@ body.treatmentburdens-page {
                                                             }
                                                         }
                                                         div.hero-subheading {
-                                                            padding-bottom: 4%;
+                                                            /* padding-bottom: 4%; */
                                                             margin: 0 auto;
                                                             max-width: 100%;
                                                             h2.pv-h2 {
@@ -1766,12 +1773,12 @@ body.treatmentburdens-page {
                             }
                             div#treatment-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
-                                min-height: 700px;
+                                /* min-height: 700px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#treatment-hero-col {
-                                        padding-top: 20%;
+                                        /* padding-top: 20%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -1806,7 +1813,7 @@ body.treatmentburdens-page {
                                                         div#hero-logo-alt-mobile {
                                                             display: block;
                                                             text-align: center;
-                                                            margin-bottom: 4.5% !important;
+                                                           /*  margin-bottom: 4.5% !important; */
                                                             max-width: 685px;
                                                             margin: 0 auto;
                                                             figure.wpb_wrapper {
@@ -1818,7 +1825,7 @@ body.treatmentburdens-page {
                                                             }
                                                         }
                                                         div.hero-subheading {
-                                                            padding-bottom: 4%;
+                                                            /* padding-bottom: 4%; */
                                                             max-width: 100%;
                                                             margin: 0 auto;
                                                             h2.pv-h2 {
@@ -1866,7 +1873,7 @@ body.treatmentburdens-page {
                                                     width: auto;
                                                     aspect-ratio: 500 / 678;
                                                     background-position: center;
-                                                    margin-top: -125px;
+                                                    margin-top: 0;
                                                     margin-bottom: -110px !important;
                                                     div.edgtf-full-section-inner {
                                                         max-width: 1194px;

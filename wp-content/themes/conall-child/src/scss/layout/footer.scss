@@ -7,7 +7,7 @@ body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
-                margin-bottom: 0 !important;
+                margin-bottom: 155px !important;
             }
             footer {
                 div.edgtf-footer-inner {
@@ -35,7 +35,7 @@ body.pharvaris {
                                                             @include bold($poppins);
                                                             font-size: 18px;
                                                             line-height: 26px;
-                                                            padding: 20px 0;
+                                                            padding: 20px 5% 0 0 ;
                                                             a {
                                                                 color: $white;
                                                                 transition: all 0.25s ease-in-out;
@@ -47,7 +47,7 @@ body.pharvaris {
                                                                 transition: all 0.25s ease-in-out;
                                                             }
                                                         }
-                                                        li:first-child {
+                                                        li {
                                                             padding-left: 0px;
                                                             padding-right: 5%;
                                                         }
@@ -117,6 +117,7 @@ body.pharvaris {
                                                         font-size: 16px;
                                                         line-height: 26px;
                                                         color: $white;
+                                                        text-align: center;
                                                     }
                                                 }
                                             }
@@ -144,6 +145,7 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
+                    margin-bottom: 80px !important;
                 }
                 footer {
                     div.edgtf-footer-inner {
@@ -239,12 +241,13 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
-                    margin-bottom: 249px !important;
+                        margin-bottom: 412px !important;
+                        border-bottom: 2px solid #414143;
                 }
                 footer {
                     div.edgtf-footer-inner {
                         div.edgtf-footer-top-holder {
-                            height: 250px;
+                            height: 275px;
                             div.edgtf-footer-top.edgtf-footer-top-alignment-left {
                                 display: flex;
                                 justify-content: center;
@@ -266,8 +269,8 @@ body.pharvaris {
                                                             align-items: center;
                                                             li.menu-item {
                                                                 padding: 0;
-                                                                padding-top: 6%;
-                                                                padding-bottom: 6%;
+                                                                padding-top: 8%;
+                                                                padding-bottom: 8%;
                                                                 a {
 
                                                                 }
@@ -291,7 +294,7 @@ body.pharvaris {
                             }
                         }
                         div.edgtf-footer-bottom-holder {
-                            height: 250px;
+                            height: 275px;
                             div.edgtf-footer-bottom-holder-inner {
                                 align-items: center;
                                 div.edgtf-container.pv-container {

@@ -18,8 +18,8 @@ body.livinghae-page {
                         div#living-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                            min-height: 580px;
-                            margin-bottom: -90px !important;
+                           /*  min-height: 580px; */
+                            margin-bottom: -30px !important;
                             & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
@@ -27,7 +27,7 @@ body.livinghae-page {
                                 height: 100%;
                                 width: 60%;
                                 div#living-hero-col {
-                                    padding-top: 15%;
+                                    /* padding-top: 15%; */
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
@@ -36,9 +36,7 @@ body.livinghae-page {
                                                     margin: 0 auto;
                                                     padding-bottom: 2%;
                                                     h2.pv-h2 {
-                                                        font-size: 1.55vw;
-                                                        line-height: 2.1vw;
-                                                        text-transform: uppercase;
+
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -47,7 +45,7 @@ body.livinghae-page {
                                                 }
                                                 div#hero-logo-alt-desktop {
                                                     text-align: center;
-                                                    margin-bottom: 5% !important;
+                                                    /* margin-bottom: 5% !important; */
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
@@ -67,7 +65,7 @@ body.livinghae-page {
                         }
                         div#living-hae-impacts-row {
                             animation: fadeIn 5s;
-                            height: 100%;
+                            height: calc(100vh / .995);
                             /* transform: translateY(-85px); */
                             background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
                             background-repeat: no-repeat;
@@ -79,6 +77,9 @@ body.livinghae-page {
                             div.clearfix.edgtf-full-section-inner {
                                 max-width: 1194px;
                                 height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
                                 div.pv-col1.one {
                                     padding-top: 7%;
                                     div.vc_column-inner {
@@ -184,64 +185,76 @@ body.livinghae-page {
                                     }
                                 }
                                 div.pv-col1.three.whitebox {
-                                        background-image: url("/wp-content/themes/conall-child/images/small-white-box-346x697.svg");
-                                        background-repeat: no-repeat;
-                                        background-size: 100% 101%;
-                                        background-position: center center;
                                         width: auto;
                                         display: flex;
                                         justify-content: center;
-                                        align-items: center;
+                                        align-items: flex-start;
                                         height: 30%;
                                         max-width: 700px;
-                                        padding-left: 18%;
-                                        padding-right: 8%;
-                                        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                        /* padding-top: 50%; */
+                                        margin-left: 40%;
+                                        /* padding-left: 18%; */
+                                        /* padding-right: 8%; */
                                         position: absolute;
                                         bottom: 20%;
-                                        margin-left: 40%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
+                                                div#swap-box-hold {
+                                                    display: none;
+                                                }
                                                 div#swap-box {
-                                                    /* width: 400px;
-                                                    height: 188px; */
-                                                    div {
-                                                        h5.pv-h5.red {
-                                                            padding-bottom: 1.5%;
-                                                        }
-                                                        ul.pv-list {
-                                                            li.pv-list-item {
-                                                                line-height: 26px;
-                                                                font-weight: bold !important;
-                                                                padding-bottom: 2%;
-                                                                sup.pv-sup {
-                                                                    font-size: 60%;
+                                                    div.white-box-wrap {
+                                                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                                    div.white-box {
+                                                        background-color: $white;
+                                                        height: auto;
+                                                        width: auto;
+                                                        clip-path: polygon( 99.806% 0%,0% 0%,0% 0%,0.369% 2.405%,0.713% 5.558%,1.03% 9.402%,1.316% 13.877%,1.567% 18.924%,1.78% 24.485%,1.952% 30.502%,2.079% 36.914%,2.158% 43.665%,2.185% 50.694%,2.185% 50.694%,2.161% 57.302%,2.092% 63.666%,1.979% 69.739%,1.826% 75.471%,1.636% 80.815%,1.412% 85.721%,1.156% 90.141%,0.871% 94.026%,0.56% 97.329%,0.227% 100%,100.001% 100%,100.001% 100%,99.635% 97.573%,99.293% 94.406%,98.979% 90.558%,98.695% 86.087%,98.446% 81.049%,98.235% 75.505%,98.064% 69.51%,97.938% 63.124%,97.86% 56.404%,97.834% 49.408%,97.834% 49.408%,97.858% 42.772%,97.928% 36.382%,98.041% 30.286%,98.195% 24.535%,98.387% 19.176%,98.613% 14.26%,98.871% 9.835%,99.158% 5.951%,99.471% 2.656%,99.808% 0% );
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        padding: 7% 8% 5% 35%;
+                                                        div.listswap-cont {
+                                                            h5.pv-h5.red {
+                                                                padding-bottom: 1.5%;
+                                                                text-align: left;
+                                                            }
+                                                            ul.pv-list {
+                                                                li.pv-list-item {
+                                                                    line-height: 26px;
+                                                                    font-weight: bold !important;
+                                                                    padding-bottom: 2%;
+                                                                    sup.pv-sup {
+                                                                        font-size: 60%;
+                                                                    }
                                                                 }
-                                                            }
-                                                            li.pv-list-item:last-child {
-                                                                padding-bottom: 0;
-                                                            }
+                                                                li.pv-list-item:last-child {
+                                                                    padding-bottom: 0;
+                                                                }
 
+                                                            }
                                                         }
-                                                    }
-                                                    div#listswap-container-1 {
-                                                        /* display: block; */
-                                                        animation: fadeIn 2s;
-                                                    }
-                                                    div#listswap-container-2 {
-                                                        /* display: none; */
-                                                        animation: fadeIn 2s;
-                                                    }
-                                                    div#listswap-container-3 {
-                                                        /* display: none; */
-                                                        animation: fadeIn 2s;
-                                                    }
-                                                    div#listswap-container-4 {
-                                                        /* display: none; */
-                                                        animation: fadeIn 2s;
+                                                        div#listswap-container-1 {
+                                                            /* display: block; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-2 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-3 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-4 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
                                                     }
                                                 }
+                                                }
+
                                             }
                                         }
                                 }
@@ -584,7 +597,7 @@ body.livinghae-page {
                                             }
                                         }
                                     }
-                                    div.pv-col1.three.whitebox {
+                                    /* div.pv-col1.three.whitebox {
                                         height: 35%;
                                         max-width: 700px;
                                         padding-left: 18%;
@@ -596,8 +609,6 @@ body.livinghae-page {
                                             padding: 0;
                                             div.wpb_wrapper {
                                                 div#swap-box {
-                                                    /* width: 400px;
-                                                    height: 188px; */
                                                     div {
                                                         h5.pv-h5.red {
                                                             padding-bottom: 1.5%;
@@ -636,7 +647,7 @@ body.livinghae-page {
                                                 }
                                             }
                                         }
-                                }
+                                    } */
                                 }
                             }
                         }
@@ -661,13 +672,13 @@ body.livinghae-page {
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 523px;
+                                /* min-height: 523px; */
                                 margin-bottom: -70px !important;
                                 & > div.edgtf-full-section-inner {
                                         max-width: 100%;
                                         width: 80%;
                                     div#living-hero-col {
-                                        padding-top: 15%;
+                                       /*  padding-top: 15%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -677,10 +688,7 @@ body.livinghae-page {
                                                     max-width: 90%;
                                                     margin: 0 auto;
                                                     h2.pv-h2 {
-                                                        font-size: 30px;
-                                                        line-height: 40px;
-                                                        /* font-size: 2.9vw;
-                                                        line-height: 4vw; */
+
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -696,7 +704,7 @@ body.livinghae-page {
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
                                                     text-align: center;
-                                                    margin-bottom: 4.5% !important;
+                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -725,6 +733,7 @@ body.livinghae-page {
                                 div.clearfix.edgtf-full-section-inner {
                                     max-width: 1194px;
                                     height: 100%;
+                                    width: 80%;
                                     div.pv-col1.one {
                                         padding-top: 10%;
                                         div.vc_column-inner {
@@ -744,8 +753,8 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-top: 1%;
-                                        padding-bottom: 17%;
+                                        padding-top: 2%;
+                                        padding-bottom: 15%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
 
@@ -825,22 +834,82 @@ body.livinghae-page {
                                     }
                                     div.pv-col1.three.whitebox {
                                         max-height: 320px;
-                                        padding-left: 10%;
-                                        padding-right: 10%;
+                                        padding-left: 0;
+                                        padding-right: 0;
                                         float: unset;
                                         margin: 0 auto;
                                         height: 320px;
-                                        width: 716px;
                                         position: relative;
-                                        margin-bottom: -6%;
-                                            div.vc_column-inner {
+                                        margin-bottom: -14%;
+                                        max-width: 700px;
+                                        width: 100%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#swap-box-hold {
+                                                    display: none;
+                                                }
+                                                div#swap-box {
+                                                    div.white-box-wrap {
+                                                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                                    div.white-box {
+                                                        background-color: $white;
+                                                        height: auto;
+                                                        width: auto;
+                                                        clip-path: polygon( 99.806% 0%,0% 0%,0% 0%,0.369% 2.405%,0.713% 5.558%,1.03% 9.402%,1.316% 13.877%,1.567% 18.924%,1.78% 24.485%,1.952% 30.502%,2.079% 36.914%,2.158% 43.665%,2.185% 50.694%,2.185% 50.694%,2.161% 57.302%,2.092% 63.666%,1.979% 69.739%,1.826% 75.471%,1.636% 80.815%,1.412% 85.721%,1.156% 90.141%,0.871% 94.026%,0.56% 97.329%,0.227% 100%,100.001% 100%,100.001% 100%,99.635% 97.573%,99.293% 94.406%,98.979% 90.558%,98.695% 86.087%,98.446% 81.049%,98.235% 75.505%,98.064% 69.51%,97.938% 63.124%,97.86% 56.404%,97.834% 49.408%,97.834% 49.408%,97.858% 42.772%,97.928% 36.382%,98.041% 30.286%,98.195% 24.535%,98.387% 19.176%,98.613% 14.26%,98.871% 9.835%,99.158% 5.951%,99.471% 2.656%,99.808% 0% );
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        padding: 6% 8%;
+                                                        div.listswap-cont {
+                                                            h5.pv-h5.red {
+                                                                padding-bottom: 1.5%;
+                                                                text-align: left;
+                                                            }
+                                                            ul.pv-list {
+                                                                li.pv-list-item {
+                                                                    line-height: 26px;
+                                                                    font-weight: bold !important;
+                                                                    padding-bottom: 2%;
+                                                                    sup.pv-sup {
+                                                                        font-size: 60%;
+                                                                    }
+                                                                }
+                                                                li.pv-list-item:last-child {
+                                                                    padding-bottom: 0;
+                                                                }
+
+                                                            }
+                                                        }
+                                                        div#listswap-container-1 {
+                                                            /* display: block; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-2 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-3 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-4 {
+                                                            /* display: none; */
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                    }
+                                                }
+                                                }
+
+                                            }
+                                        }
+                                            /* div.vc_column-inner {
                                                 div.wpb_wrapper {
                                                     div#swap-box {
-                                                        /* width: 400px;
-                                                        height: 188px; */
                                                         div {
                                                             h5.pv-h5.red {
                                                                 padding-bottom: 1.5%;
+                                                                text-align: center;
                                                             }
                                                             ul.pv-list {
                                                                 li.pv-list-item {
@@ -875,7 +944,7 @@ body.livinghae-page {
                                                         }
                                                     }
                                                 }
-                                            }
+                                            } */
                                     }
                                     div.pv-col1.four {
                                     bottom: 0;
@@ -1133,14 +1202,12 @@ body.livinghae-page {
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
                                 margin-bottom: -95px !important;
-                                height: 600px;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#living-hero-col {
-                                            padding-top: 0;
-                                        position: absolute;
-                                        top: 50%;
+                                        padding-top: 0;
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -1150,10 +1217,7 @@ body.livinghae-page {
                                                 max-width: 686px;
                                                 margin: 0 auto;
                                                 h2.pv-h2 {
-                                                    /* font-size: 30px;
-                                                    line-height: 40px; */
-                                                    font-size: 4.8vw;
-                                                    line-height: 6.25vw;
+
                                                     sup.pv-sup {
                                                         font-size: 65%;
                                                         bottom: .8ex;
@@ -1169,7 +1233,7 @@ body.livinghae-page {
                                             div#hero-logo-alt-mobile {
                                                 display: block;
                                                 text-align: center;
-                                                margin-bottom: 4.5% !important;
+                                                /* margin-bottom: 4.5% !important; */
                                                 max-width: 685px;
                                                 margin: 0 auto;
                                                 figure.wpb_wrapper {
@@ -1217,7 +1281,7 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-bottom: 30%;
+                                        padding-bottom: calc(100vh / 8);
                                         padding-top: 5%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
@@ -1295,7 +1359,7 @@ body.livinghae-page {
                                             }
                                         }
                                     }
-                                    div.pv-col1.three.whitebox {
+                                    /* div.pv-col1.three.whitebox {
                                             padding-left: 5%;
                                             padding-right: 5%;
                                             float: unset;
@@ -1308,8 +1372,6 @@ body.livinghae-page {
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
                                                     div#swap-box {
-                                                        /* width: 400px;
-                                                        height: 188px; */
                                                         div {
                                                             h5.pv-h5.red {
                                                                 padding-bottom: 1.5%;
@@ -1351,7 +1413,7 @@ body.livinghae-page {
                                                     }
                                                 }
                                             }
-                                    }
+                                    } */
                                     div.pv-col1.four {
                                         position: relative;
                                         bottom: 0;
@@ -1371,7 +1433,7 @@ body.livinghae-page {
                                                     div#not-patient-section {
                                                         margin-left: 0;
                                                         p.pv-p.center.ex-small {
-                                                            text-align: right !important;
+                                                            text-align: center !important;
                                                         }
                                                     }
                                                 }
@@ -1641,8 +1703,989 @@ body.livinghae-page {
         margin-left: 0%;
         padding-right: 7%;
     }
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#living-cta-row {
+
+                            }
+                            div#living-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                margin-bottom: -95px !important;
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#living-hero-col {
+                                            padding-top: 0;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            height: 100%;
+                                            div.hero-subheading {
+                                                /* padding-bottom: 35px ; */
+                                                padding-bottom: 4%;
+                                                max-width: 686px;
+                                                margin: 0 auto;
+                                                h2.pv-h2 {
+
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-tablet {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: block;
+                                                text-align: center;
+                                               /*  margin-bottom: 4.5% !important; */
+                                                max-width: 685px;
+                                                margin: 0 auto;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-hae-impacts-row {
+                                height: auto;
+                                animation: fadeIn 5s;
+                                transform: translateY(0);
+                                background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                                width: 102%;
+                                margin-bottom: 0 !important;
+                                top: 30px;
+                                div.clearfix.edgtf-full-section-inner {
+                                    max-width: 1194px;
+                                    height: 100%;
+                                    div.pv-col1.one {
+                                        padding-top: 25%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burdens-top-heading {
+                                                    max-width: 450px;
+                                                    margin: 0 auto;
+                                                    h1.pv-h1.center {
+                                                        font-size: 25px;
+                                                        line-height: 30px;
+                                                        span.hide-desktop {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.two {
+                                        padding-bottom: calc(100vh / 8);
+                                        padding-top: 5%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    max-width: 1150px;
+                                                    margin: 0 auto;
+                                                    div.burden-option-wrapper {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    flex-wrap: nowrap;
+                                                    height: 75px;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                    max-width: 615px;
+                                                    margin: 0 auto;
+                                                        div.option {
+                                                            h1.pv-h1 {
+                                                                font-size: 25px;
+                                                                line-height: 30px;
+                                                                padding-top: 12px;
+                                                                text-align: center;
+                                                                sup.pv-sup {
+                                                                    font-size: 50%;
+                                                                    bottom: 1.3ex;
+                                                                }
+
+                                                            }
+                                                        }
+                                                        div.option-left {
+                                                            display: none;
+                                                        }
+                                                        div.option-center {
+                                                            text-align: center;
+                                                            select#redselect {
+                                                                height: 60px;
+                                                                margin-bottom: 5%;
+                                                                font-size: 25px;
+                                                                option.pv-option {
+
+                                                                }
+                                                            }
+                                                            label.pv-label {
+                                                                margin-top: 15px;
+                                                            }
+                                                        }
+                                                        div.option-right {
+                                                            font-size: 25px;
+                                                        }
+                                                        div.option.option-center {
+                                                            position:relative;
+                                                            display:inline-block;
+                                                        }
+                                                        div.option.option-center::before {
+                                                            content: "";
+                                                            display: block;
+                                                            width: 50px;
+                                                            height: 24px;
+                                                            top: 21px;
+                                                            border: none;
+                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                            background-position: calc(100% - 0.75rem) center !important;
+                                                            transform: rotate(0deg);
+                                                            margin-top: -2.5px;
+                                                            position: absolute;
+                                                            right: 5px;
+                                                            z-index: 2;
+                                                        }
+                                                        div.option.option-center.focused::before{
+                                                            transform: rotate(180deg);
+                                                            right: 8px;
+                                                            top: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    /* div.pv-col1.three.whitebox {
+                                            padding-left: 5%;
+                                            padding-right: 5%;
+                                            float: unset;
+                                            margin: 0 auto;
+                                            background-size: 100%;
+                                            padding-bottom: 10%;
+                                            width: 100%;
+                                            padding-top: 5%;
+                                            height: 100%;
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div#swap-box {
+                                                        div {
+                                                            h5.pv-h5.red {
+                                                                padding-bottom: 1.5%;
+                                                                text-align: center;
+                                                            }
+                                                            ul.pv-list {
+                                                                margin-top: 0;
+                                                                li.pv-list-item {
+                                                                    font-size: 15px;
+                                                                    line-height: 20px;
+                                                                    font-weight: bold !important;
+                                                                    padding-bottom: 2%;
+                                                                    sup.pv-sup {
+                                                                        font-size: 60%;
+                                                                    }
+                                                                }
+                                                                li.pv-list-item:last-child {
+                                                                    padding-bottom: 0;
+                                                                }
+
+                                                            }
+                                                        }
+                                                        div#listswap-container-1 {
+                                                            display: block;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-2 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-3 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-4 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                    } */
+                                    div.pv-col1.four {
+                                        position: relative;
+                                        bottom: 0;
+                                        padding: 0;
+                                        margin-left: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#living-balloon-hand {
+                                                    bottom: -16px;
+                                                    position: relative;
+                                                    img {
+                                                    }
+                                                }
+                                                div#not-patient-row {
+                                                    transform: unset;
+                                                    bottom: 22px;
+                                                    div#not-patient-section {
+                                                        margin-left: 0;
+                                                        p.pv-p.center.ex-small {
+                                                            text-align: center !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.section-background {
+                                position: relative;
+                                height: 100%;
+                                background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
+                                background-repeat: no-repeat;
+                                background-size: 85%;
+                                background-position: center center;
+                                visibility: visible;
+                                z-index: 0;
+                                div#hae-section-wrapper {
+                                    transform: translateY(0);
+                                    div#jennifers-banner-section {
+                                        z-index: 103;
+                                        div.edgtf-full-section-inner {
+                                            width: 100%;
+                                            div.pv-col1.banner-col {
+                                                div.banner-wrapper-jennifer {
+                                                    display: block;
+                                                    div.wpb_wrapper {
+                                                        div.banner-img-container.jennifer {
+                                                            background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-576x120.svg");
+                                                            background-position: center center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: 100% 108%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            margin: 0 auto;
+                                                            padding: 0;
+                                                            width: 100vw;
+                                                            max-height: 100%;
+                                                            height: 100%;
+                                                            h2.pv-h2.center.white {
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div#jennifers-story-section {
+                                        transform: translateY(0);
+                                        filter: none;
+                                        div.edgtf-full-section-inner {
+                                            width: 86%;
+                                            div.pv-col1.ripple-image {
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div.hae-white-box-image {
+                                                            figure.wpb_wrapper {
+                                                                div.vc_single_image-wrapper {
+                                                                    img.vc_single_image-img {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.top {
+                                                div#hae-white-box-top {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.bottom {
+                                                div#hae-white-box-bottom {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.facts-icon-col {
+                                                padding: 5% 0 8% 0;
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#jennifers--inner-row-1 {
+                                                            padding-bottom: 30px;
+                                                            display: flex;
+                                                            div.edgtf-full-section-inner {
+                                                                display: grid;
+                                                                grid-template-columns: repeat(2, 1fr);
+                                                                grid-template-rows: repeat(2, auto);
+                                                                grid-column-gap: 0px;
+                                                                grid-row-gap: 0px;
+                                                                width: 100%;
+                                                                div.pv-col2 {
+                                                                    width: 100%;
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
+                                                                        div.wpb_wrapper {
+
+                                                                        }
+                                                                    }
+                                                                    p.pv-p.stats {
+                                                                        padding: 8px 0 12px 0;
+                                                                        &.mobile-hide {
+                                                                            display: none;
+                                                                        }
+                                                                    }
+                                                                    &.left {
+                                                                        padding-right: 5%;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 1 / 2 / 2;
+                                                                        div.wpb_wrapper {
+                                                                            justify-content: flex-start;
+                                                                        }
+                                                                    }
+                                                                    &.right {
+                                                                        padding-right: 0;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 2 / 2 / 3;
+                                                                        div.jstory-stats {
+
+                                                                            &.left {
+
+                                                                            }
+                                                                            &.right {
+
+                                                                            }
+                                                                        }
+
+                                                                    }
+                                                                    &.treatment {
+                                                                        grid-area: 2 / 1 / 3 / 3;
+                                                                        div.jstory-stats.center {
+                                                                            display: block;
+                                                                            p.pv-p.stats.mobile-show {
+                                                                                width: 100%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                        div#jennifers--inner-row-2 {
+                                                            div.edgtf-full-section-inner {
+                                                                width: 100%;
+                                                                div.pv-col1.fullwidth {
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
+                                                                        div.wpb_wrapper {
+                                                                            div#jstory-icon-separator {
+                                                                                div.quote-container {
+                                                                                    span.quote-lines {
+                                                                                        display: flex;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        height: 50px;
+                                                                                        img.quote-icon {
+
+                                                                                        }
+                                                                                    }                                                            span.quote-lines::before,
+                                                                                    span.quote-lines::after {
+                                                                                        content: "";
+                                                                                        position: absolute;
+                                                                                        height: 24px;
+                                                                                        border-bottom: 2px solid $red;
+                                                                                        top: 0;
+                                                                                        width: 40%;
+                                                                                        display: flex;
+                                                                                    }
+                                                                                    span.quote-lines::before {
+                                                                                        right: 0;
+                                                                                        margin-right: 0px;
+                                                                                    }
+                                                                                    span.quote-lines::after {
+                                                                                        left: 0;
+                                                                                        margin-left: 0px;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div#jstory-paragraphs {
+                                                                                max-width: 650px;
+                                                                                padding-top: 30px;
+                                                                                margin: 0 auto;
+                                                                                div.wpb_wrapper {
+                                                                                    flex-direction: column;
+                                                                                    width: 80%;
+                                                                                    margin: 0 auto;
+                                                                                    p.pv-p {
+                                                                                        text-align: center;
+                                                                                        &.top {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.mid {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.btm {
+                                                                                            margin-bottom: 7%;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div#jstory-lower-heading {
+                                                                                h3.pv-h3.center.red {
+                                                                                    max-width: 70%;
+                                                                                    line-height: 35px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        a.pv-btn.w-292 {
+                                                            margin-top: 8%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-page-form {
+                                z-index: 101;
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#living-cta-row {
+
+                            }
+                            div#living-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                margin-bottom: -95px !important;
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#living-hero-col {
+                                            padding-top: 0;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            height: 100%;
+                                            div.hero-subheading {
+                                                /* padding-bottom: 35px ; */
+                                                padding-bottom: 4%;
+                                                max-width: 686px;
+                                                margin: 0 auto;
+                                                h2.pv-h2 {
+
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-tablet {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: block;
+                                                text-align: center;
+                                               /*  margin-bottom: 4.5% !important; */
+                                                max-width: 685px;
+                                                margin: 0 auto;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-hae-impacts-row {
+                                height: auto;
+                                animation: fadeIn 5s;
+                                transform: translateY(0);
+                                background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                                width: 102%;
+                                margin-bottom: 0 !important;
+                                top: 15px;
+                                div.clearfix.edgtf-full-section-inner {
+                                    max-width: 1194px;
+                                    height: 100%;
+                                    div.pv-col1.one {
+                                        padding-top: 20%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burdens-top-heading {
+                                                    max-width: 615px;
+                                                    margin: 0 auto;
+                                                    h1.pv-h1.center {
+                                                        font-size: 25px;
+                                                        line-height: 30px;
+                                                        span.hide-desktop {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.two {
+                                        padding-bottom: calc(100vh / 6);
+                                        padding-top: 5%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    max-width: 1150px;
+                                                    margin: 0 auto;
+                                                    div.burden-option-wrapper {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    flex-wrap: nowrap;
+                                                    height: 75px;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                    max-width: 615px;
+                                                    margin: 0 auto;
+                                                        div.option {
+                                                            h1.pv-h1 {
+                                                                font-size: 25px;
+                                                                line-height: 30px;
+                                                                padding-top: 12px;
+                                                                text-align: center;
+                                                                sup.pv-sup {
+                                                                    font-size: 50%;
+                                                                    bottom: 1.3ex;
+                                                                }
+
+                                                            }
+                                                        }
+                                                        div.option-left {
+                                                            display: none;
+                                                        }
+                                                        div.option-center {
+                                                            text-align: center;
+                                                            select#redselect {
+                                                                height: 60px;
+                                                                margin-bottom: 5%;
+                                                                font-size: 25px;
+                                                                option.pv-option {
+
+                                                                }
+                                                            }
+                                                            label.pv-label {
+                                                                margin-top: 15px;
+                                                            }
+                                                        }
+                                                        div.option-right {
+                                                            font-size: 25px;
+                                                        }
+                                                        div.option.option-center {
+                                                            position:relative;
+                                                            display:inline-block;
+                                                        }
+                                                        div.option.option-center::before {
+                                                            content: "";
+                                                            display: block;
+                                                            width: 50px;
+                                                            height: 24px;
+                                                            top: 21px;
+                                                            border: none;
+                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
+                                                            background-position: calc(100% - 0.75rem) center !important;
+                                                            transform: rotate(0deg);
+                                                            margin-top: -2.5px;
+                                                            position: absolute;
+                                                            right: 5px;
+                                                            z-index: 2;
+                                                        }
+                                                        div.option.option-center.focused::before{
+                                                            transform: rotate(180deg);
+                                                            right: 8px;
+                                                            top: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.three.whitebox {
+                                            max-height: 320px;
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                            float: unset;
+                                            margin: 0 auto;
+                                            height: 320px;
+                                            position: relative;
+                                            margin-bottom: -25%;
+                                            max-width: 700px;
+                                            width: 100%;
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div#swap-box {
+                                                        div {
+                                                            h5.pv-h5.red {
+                                                                padding-bottom: 1.5%;
+                                                                text-align: center;
+                                                            }
+                                                            ul.pv-list {
+                                                                margin-top: 0;
+                                                                li.pv-list-item {
+                                                                    font-size: 15px;
+                                                                    line-height: 20px;
+                                                                    font-weight: bold !important;
+                                                                    padding-bottom: 2%;
+                                                                    sup.pv-sup {
+                                                                        font-size: 60%;
+                                                                    }
+                                                                }
+                                                                li.pv-list-item:last-child {
+                                                                    padding-bottom: 0;
+                                                                }
+
+                                                            }
+                                                        }
+                                                        div#listswap-container-1 {
+                                                            display: block;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-2 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-3 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                        div#listswap-container-4 {
+                                                            display: none;
+                                                            animation: fadeIn 2s;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                    }
+                                    div.pv-col1.four {
+                                        position: relative;
+                                        bottom: 0;
+                                        padding: 0;
+                                        margin-left: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#living-balloon-hand {
+                                                    bottom: -16px;
+                                                    position: relative;
+                                                    img {
+                                                    }
+                                                }
+                                                div#not-patient-row {
+                                                    transform: unset;
+                                                    bottom: 22px;
+                                                    div#not-patient-section {
+                                                        margin-left: 0;
+                                                        p.pv-p.center.ex-small {
+                                                            text-align: center !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.section-background {
+                                position: relative;
+                                height: 100%;
+                                background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
+                                background-repeat: no-repeat;
+                                background-size: 85%;
+                                background-position: center center;
+                                visibility: visible;
+                                z-index: 0;
+                                div#hae-section-wrapper {
+                                    transform: translateY(0);
+                                    div#jennifers-banner-section {
+                                        z-index: 103;
+                                        div.edgtf-full-section-inner {
+                                            width: 100%;
+                                            div.pv-col1.banner-col {
+                                                div.banner-wrapper-jennifer {
+                                                    display: block;
+                                                    div.wpb_wrapper {
+                                                        div.banner-img-container.jennifer {
+                                                            background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-576x120.svg");
+                                                            background-position: center center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: 100% 108%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            margin: 0 auto;
+                                                            padding: 0;
+                                                            width: 100vw;
+                                                            max-height: 100%;
+                                                            height: 100%;
+                                                            h2.pv-h2.center.white {
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div#jennifers-story-section {
+                                        transform: translateY(0);
+                                        filter: none;
+                                        div.edgtf-full-section-inner {
+                                            width: 86%;
+                                            div.pv-col1.ripple-image {
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div.hae-white-box-image {
+                                                            figure.wpb_wrapper {
+                                                                div.vc_single_image-wrapper {
+                                                                    img.vc_single_image-img {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.top {
+                                                div#hae-white-box-top {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.ripple-image.bottom {
+                                                div#hae-white-box-bottom {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                            div.pv-col1.facts-icon-col {
+                                                padding: 5% 0 8% 0;
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#jennifers--inner-row-1 {
+                                                            padding-bottom: 30px;
+                                                            display: flex;
+                                                            div.edgtf-full-section-inner {
+                                                                display: flex;
+                                                                width: 90%;
+                                                                div.pv-col2 {
+                                                                    width: 100%;
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
+                                                                        div.wpb_wrapper {
+
+                                                                        }
+                                                                    }
+                                                                    p.pv-p.stats {
+                                                                        padding: 8px 0 12px 0;
+                                                                        &.mobile-hide {
+                                                                            display: none;
+                                                                        }
+                                                                    }
+                                                                    &.left {
+                                                                        padding-right: 10%;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 1 / 2 / 2;
+                                                                        div.wpb_wrapper {
+                                                                            justify-content: flex-start;
+                                                                        }
+                                                                    }
+                                                                    &.right {
+                                                                        padding-right: 0;
+                                                                        display: flex;
+                                                                        grid-area: 1 / 2 / 2 / 3;
+                                                                        div.jstory-stats {
+
+                                                                            &.left {
+
+                                                                            }
+                                                                            &.right {
+
+                                                                            }
+                                                                        }
+
+                                                                    }
+                                                                    &.treatment {
+                                                                        grid-area: 2 / 1 / 3 / 3;
+                                                                        div.jstory-stats.center {
+                                                                            display: block;
+                                                                            p.pv-p.stats.mobile-show {
+                                                                                width: 100%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                        div#jennifers--inner-row-2 {
+                                                            div.edgtf-full-section-inner {
+                                                                width: 90%;
+                                                                div.pv-col1.fullwidth {
+                                                                    div.vc_column-inner {
+                                                                        padding: 0;
+                                                                        div.wpb_wrapper {
+                                                                            div#jstory-icon-separator {
+                                                                                div.quote-container {
+                                                                                    span.quote-lines {
+                                                                                        display: flex;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        height: 50px;
+                                                                                        img.quote-icon {
+                                                                                            max-width: 80%;
+                                                                                        }
+                                                                                    }                                                span.quote-lines::before,
+                                                                                    span.quote-lines::after {
+                                                                                        content: "";
+                                                                                        position: absolute;
+                                                                                        height: 24px;
+                                                                                        border-bottom: 2px solid $red;
+                                                                                        top: 0;
+                                                                                        width: 35%;
+                                                                                        display: flex;
+                                                                                    }
+                                                                                    span.quote-lines::before {
+                                                                                        right: 0;
+                                                                                        margin-right: 0px;
+                                                                                    }
+                                                                                    span.quote-lines::after {
+                                                                                        left: 0;
+                                                                                        margin-left: 0px;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div#jstory-paragraphs {
+                                                                                max-width: 650px;
+                                                                                padding-top: 30px;
+                                                                                margin: 0 auto;
+                                                                                div.wpb_wrapper {
+                                                                                    flex-direction: column;
+                                                                                    width: 100%;
+                                                                                    margin: 0 auto;
+                                                                                    p.pv-p {
+                                                                                        text-align: center;
+                                                                                        &.top {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.mid {
+                                                                                            margin-bottom: 6%;
+                                                                                        }
+                                                                                        &.btm {
+                                                                                            margin-bottom: 7%;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            div#jstory-lower-heading {
+                                                                                h3.pv-h3.center.red {
+                                                                                    max-width: 70%;
+                                                                                    line-height: 35px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        a.pv-btn.w-292 {
+                                                            margin-top: 8%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-page-form {
+                                z-index: 101;
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
 }
 @media all and (max-width: 320px) {
 }

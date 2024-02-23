@@ -15,19 +15,15 @@
                     <?php endif; ?>
                     <?php if($show_navigation_opener) : ?>
                         <div class="edgtf-mobile-menu-opener">
-                            <a href="javascript:void(0)">
-                                <span class="edgtf-mobile-opener-icon-holder">
-                                    <!-- <?php // echo conall_edge_get_module_part($menu_opener_icon); ?> -->
-                                    <img src="/wp-content/themes/conall-child/images/mob-nav-hamburger-42x24.svg" class="pv-hamburger" />
-                                </span>
+                            <a class="mobile-hamburger" href="javascript:void(0)">
                             </a>
                         </div>
                     <?php endif; ?>
-                </div> <!-- close .edgtf-vertical-align-containers -->
+                </div>
             </div>
         </div>
         <?php conall_edge_get_mobile_nav(); ?>
     </div>
-</header> <!-- close .edgtf-mobile-header -->
+</header>
 </div>
 <?php do_action('conall_edge_after_mobile_header'); ?>

@@ -7,14 +7,15 @@ body.privacypolicy-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
+                top: 0;
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#privacy-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
-                            min-height: 400px;
+
                             & > div.edgtf-full-section-inner {
                                 max-width: 100%;
-                                width: 100%;
+                                width: 80%;
                                 div#privacy-hero-col {
                                     display: flex;
                                     top: 0;
@@ -94,7 +95,7 @@ body.privacypolicy-page {
                         div.wpb-content-wrapper {
                             div#privacy-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 360px;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -112,7 +113,7 @@ body.privacypolicy-page {
                                                 display: none;
 
                                             }
-                                            
+
                                             div#privacy-hero-logo-tab {
                                                 display: block;
                                                 figure.wpb_wrapper {
@@ -182,10 +183,10 @@ body.privacypolicy-page {
                         div.wpb-content-wrapper {
                             div#privacy-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
-                                min-height: 100%;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
-                                    width: 100%;
+                                    width: 80%;
                                     div#privacy-hero-col {
                                         display: flex;
                                         top: 0;
@@ -268,10 +269,10 @@ body.privacypolicy-page {
                         div.wpb-content-wrapper {
                             div#privacy-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
-                                min-height: 297px;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
-                                    width: 100%;
+                                    width: 80%;
                                     div#privacy-hero-col {
                                         display: flex;
                                         top: 0;

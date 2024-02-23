@@ -126,6 +126,7 @@ body.pharvaris {
         right: 0 !important;
         border: 2px solid #fff;
         border-bottom: none;
+        bottom: -1px !important;
     }
     a#edgtf-back-to-top {
         width: 40px;
@@ -607,6 +608,10 @@ body.pharvaris {
                     div.cta-container {
                         a.cta-hero-button {
                             top: 250px;
+                            height: 40px;
+                            font-size: 16px;
+                            width: 145px;
+                            line-height: 16px;
                             &:hover {
                             }
                         }
@@ -757,7 +762,11 @@ body.pharvaris {
                 div#stay-informed-cta {
                     div.cta-container {
                         a.cta-hero-button {
-
+                            top: 200px;
+                            height: 32px;
+                            font-size: 15px;
+                            width: 134px;
+                            line-height: 15px;
                             &:hover {
                             }
                         }

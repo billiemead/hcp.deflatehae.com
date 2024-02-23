@@ -19,6 +19,7 @@ body.pharvaris {
                 z-index: 101;
                 background-color: transparent !important;
                 div.pv-top-bar {
+                    display: none !important;
                     background-color: $dk-grey !important;
                     height: 60px;
                     z-index: 102;
@@ -136,12 +137,12 @@ body.pharvaris {
                             align-items: center;
                             div.edgtf-container.pv-container {
                                 padding-top: 0;
-                                top: 10px;
+                                top: 0;
                                 div.edgtf-container-inner {
                                     width: 100% !important;
                                     div.edgtf-vertical-align-containers {
                                         display: flex;
-                                        align-items: flex-end;
+                                        align-items: center;
                                         justify-content: flex-end;
                                         div.edgtf-position-left {
                                             float: unset;
@@ -206,8 +207,9 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div#header-container {
-                    height: 125px;
+                    height: 92.5px;
                     div.pv-top-bar {
+                        display: none !important;
                         height: 40px;
                         div.pv-container {
                             div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
@@ -252,15 +254,14 @@ body.pharvaris {
                         }
                     }
                     header.edgtf-page-header.hcp-header {
-                        top: 40px;
+                        top: 0;
                         div.pv-fixed-wrapper {
                             &.fixed {
                             }
                             div.edgtf-menu-area {
                                 height: 85px;
-                                align-items: flex-start;
                                 div.edgtf-container.pv-container {
-                                    top: 12px;
+                                    top: 0;
                                     div.edgtf-container-inner {
                                         div.edgtf-vertical-align-containers {
                                             div.edgtf-position-left {
@@ -307,7 +308,7 @@ body.pharvaris {
                 }
                 div#header-container::after {
                     background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
-                    bottom: -7.5px;
+                    bottom: 0;
                     content: "";
                     height: 7.5px;
                     position: absolute;
@@ -362,6 +363,7 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 div#header-container {
                     div.pv-top-bar {
+                        display: none !important;
                         height: 40px;
                         div.pv-container {
                             height: 100%;
@@ -462,7 +464,8 @@ body.pharvaris {
                         opacity: 1;
                         width: 100%;
                         position: fixed;
-                        top: 40px;
+                        top: 0;
+                        margin: 0 !important;
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
                             border: none;
@@ -475,25 +478,62 @@ body.pharvaris {
                                     div.edgtf-vertical-align-containers {
                                         div.edgtf-mobile-menu-opener {
                                             float: right;
-                                            a {
+                                            a.mobile-hamburger {
                                                 color: $blue;
                                                 padding-right: 0;
-                                                span.edgtf-mobile-opener-icon-holder {
-                                                    i.edgtf-icon-font-awesome.fa.fa-bars {
+                                                margin-top: 3px;
+                                            }
+                                            a.mobile-hamburger::before {
+                                                content: url("/wp-content/themes/conall-child/images/mob-nav-hamburger-42x24.svg");
+                                                transition: all 0.3s ease;
+                                                height: 100%;
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                                width: 100%;
+                                                &:hover{
+                                                    opacity: 0.5;
+                                                }
+                                            }
+                                            a.mobile-hamburger{
+                                                &:after{
+                                                    transition: all 0.3s ease;
+                                                }
+                                            }
+                                            a.mobile-hamburger.active{
+                                                transition: all 0.3s ease;
+                                                &:after{
+                                                    transition: all 0.3s ease;
+                                                    background: #0a0a0a;
+                                                    box-shadow: none;
+                                                    transform: rotate(45deg);
+                                                    top: 12px;
 
+                                                }
+                                                &:before{
+                                                    transition: all 0.3s ease;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    align-items: center;
+                                                    width: 100%;
+                                                    transform: rotate(90deg);
+                                                    content: url("/wp-content/themes/conall-child/images/mob-nav-hamburger-close-42x42.svg");
+                                                    &:hover{
+                                                        opacity: 0.9;
                                                     }
                                                 }
                                             }
-
                                         }
                                         div.edgtf-position-center {
                                             text-align: left;
                                             div.edgtf-position-center-inner {
                                                 div.edgtf-mobile-logo-wrapper.hcp-logo {
                                                     a {
+
                                                         img.edgtf-normal-mobile-logo {
                                                             width: 140px;
-                                                            left: -3px;
+                                                            left: 0;
                                                             position: relative;
                                                         }
                                                     }
@@ -506,9 +546,10 @@ body.pharvaris {
                         }
                     }
                 }
+
                 div#header-container::after {
                     background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
-                    bottom: -15px;
+                    bottom: -8px;
                     content: "";
                     height: 16px;
                     position: absolute;
@@ -529,7 +570,8 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 div#header-container {
                     div.pv-top-bar {
-                        height: 40px;
+                        display: none !important;
+                        height: 65px;
                         div.pv-container {
                             height: 100%;
                             width: 100%;
@@ -619,7 +661,7 @@ body.pharvaris {
                         opacity: 1;
                         width: 100%;
                         position: fixed;
-                        top: 40px;
+                        top: 0;
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
                             border: none;
@@ -661,23 +703,157 @@ body.pharvaris {
                     }
                 }
                 div#header-container::after {
-                    background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
-                    bottom: -15px;
-                    content: "";
-                    height: 16px;
-                    position: absolute;
-                    width: 100vw;
-                    background-repeat: no-repeat;
-                    background-size: 100vw;
-                    background-position-x: center;
-                    background-position-y: top;
-                    z-index: 999;
+
                 }
             }
         }
     }
 }
 @media all and (max-width: 480px) {
+    body.pharvaris {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div#header-container {
+                    div.pv-top-bar {
+                        display: none !important;
+                        height: 65px;
+                        div.pv-container {
+                            height: 100%;
+                            width: 100%;
+                            div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
+                                padding: 0;
+                                div.edgtf-position-right {
+                                    float: unset;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    div.edgtf-position-right-inner {
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        ul.menu-site-selector-list {
+                                            display: flex;
+                                            list-style: none;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin: 0;
+                                            div.menu-selector-box-wrapper {
+                                                div.edgtf-grid {
+                                                    height: 65px;
+                                                    div.menu-selector-box {
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        li.menu-selector-list-item {
+                                                                span.menu-selector-link,
+                                                                a.menu-selector-link {
+                                                                    font-size: 12px;
+                                                                    line-height: 40px;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                    &.yellow {
+                                                                        color: $yellow;
+                                                                        display: block;
+                                                                        text-align: left;
+                                                                        line-height: 12px;
+                                                                    }
+                                                                    &.white {
+                                                                        color: $white;
+                                                                        display: block;
+                                                                        line-height: 12px;
+                                                                    }
+                                                                }
+                                                                /* a.menu-selector-link.yellow:hover {
+                                                                    font-weight: normal;
+                                                                    color: $white;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                } */
+                                                                a.menu-selector-link.white:hover {
+                                                                    color: $yellow;
+                                                                    transition: all 0.5s ease-in-out;
+                                                                }
+                                                        }
+                                                        img.menu-selector-line {
+                                                            display: none;
+                                                        }
+                                                        img.menu-selector-caret {
+                                                            margin-left: 8px;
+                                                        }
+                                                    }
+                                                    div.menu-selector-box.left {
+                                                        width: 50%;
+                                                    }
+                                                    div.menu-selector-box.right {
+                                                        width: 50%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    header.edgtf-page-header.hcp-header {
+                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    header.edgtf-mobile-header.hcp-mobile-header {
+                        display: block;
+                        visibility: visible;
+                        opacity: 1;
+                        width: 100%;
+                        position: fixed;
+
+                        div.edgtf-mobile-header-inner {
+                            background-color: $dk-grey;
+                            border: none;
+                            height: 85px;
+                            div.edgtf-mobile-header-holder {
+                                div.edgtf-grid {
+                                    width: 100%;
+                                    padding-left: 35px;
+                                    padding-right: 35px;
+                                    div.edgtf-vertical-align-containers {
+                                        div.edgtf-mobile-menu-opener {
+                                            float: right;
+                                            a {
+                                                color: $blue;
+                                                span.edgtf-mobile-opener-icon-holder {
+                                                    i.edgtf-icon-font-awesome.fa.fa-bars {
+
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                        div.edgtf-position-center {
+                                            text-align: left;
+                                            div.edgtf-position-center-inner {
+                                                div.edgtf-mobile-logo-wrapper.hcp-logo {
+                                                    a {
+                                                        img.edgtf-normal-mobile-logo {
+                                                            width: 140px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div#header-container::after {
+
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 320px) {
 }

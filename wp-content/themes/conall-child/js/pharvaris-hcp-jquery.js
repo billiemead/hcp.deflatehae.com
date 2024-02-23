@@ -68,11 +68,19 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
     $('#toggler').on('click', function () {
         if ($(this).text() === "show all") {
-            $(this).text("close all");
+            $(this).text("close all").css('font-weight', 'bold').css('text-decoration', 'underline');
         }
         else {
-            $(this).text("show all");
+            $(this).text("show all").css('font-weight', 'bold').css('text-decoration', 'underline');
         }
         $("div#show-all-tips").toggle(300);
     })
+});
+
+jQuery(document).ready(function ($) {
+    $('.mobile-hamburger').on('click', function () {
+
+        $(this).toggleClass("active");
+
+    });
 });
