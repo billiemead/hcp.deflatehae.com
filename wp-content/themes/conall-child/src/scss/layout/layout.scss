@@ -571,23 +571,19 @@ body.pharvaris {
         text-align: center;
     }
     select.pv-red-select {
-        @include bold($poppins);
-        width: auto;
-        text-align: center;
-        font-size: 40px;
-        line-height: 40px;
-        color: $red;
-        background: none;
-        border: none;
-        border-bottom: 3px solid $red !important;
-        -moz-appearance:none !important;
-        -webkit-appearance: none !important;
-        appearance: none !important;
-        padding-right: 4rem !important;
-        resize: none;
-        outline: none;
-        letter-spacing: -0.5px;
-        cursor: pointer;
+    @include bold($poppins);
+    width: auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    color: $red;
+    background: none;
+    border: none;
+    border-bottom: 3px solid $red !important;
+    resize: none;
+    outline: none;
+    letter-spacing: -0.5px;
+    cursor: pointer;
         option.pv-option  {
             text-align: center;
             font-size: 20px;
@@ -623,6 +619,9 @@ body.pharvaris {
                             width: 80%;
                             margin-left: 10%;
                             margin-right: 10%;
+                            &.home {
+                                max-width: 330px;
+                            }
                             &.jennifer {
                                 max-width: 517px;
                             }
@@ -638,6 +637,10 @@ body.pharvaris {
                                 align-items: center;
                                 h2.pv-h2.center.white {
                                     text-transform: uppercase;
+                                }
+                                &.home {
+                                    max-width:330px;
+                                    height: 90px;
                                 }
                                 &.jennifer {
                                     max-width:517px;
@@ -680,7 +683,7 @@ body.pharvaris {
                                             align-items: center;
                                             height: 120px;
                                             margin-right: 40px;
-                                            width: 15%;
+                                            width: 10%;
                                             img {
 
                                             }
@@ -688,7 +691,7 @@ body.pharvaris {
                                         div.hae-copy-wrapper {
                                             display: flex;
                                             flex-direction: column;
-                                            width: 85%;
+                                            width: 80%;
                                             p.pv-p {
                                             display: block;
                                             width: 100%;
@@ -1418,13 +1421,17 @@ body.pharvaris {
                             div.facts-box-wrapper {
                                 div.white-facts-box {
                                     height: 100%;
-                                    padding: 4% 0;
+                                    padding: 8% 0;
                                     div#hae-facts-icon-row {
+                                        padding: 8% 0 4% 0;
                                         div.iconrow {
                                             flex-direction: column;
+                                            margin-bottom: 8%;
                                             div.hae-image-wrapper {
                                                 margin-right: 0;
                                                 width: 100%;
+                                                height: 80px;
+                                                margin-bottom: 5%;
                                                 img {
 
                                                 }
@@ -1477,7 +1484,7 @@ body.pharvaris {
                                         }
                                     }
                                     a.pv-btn {
-                                        margin-top: 10%;
+                                        margin-top: 5%;
                                     }
                                 }
                             }
@@ -1563,14 +1570,8 @@ body.pharvaris {
                 background-color: $ultra-grey;
                 margin-top: 0;
                 & div.not-patient {
-                    position: relative;
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    bottom: 75px;
-                    padding-left: 72vw;
+                    padding-left: 65vw;
                     p.pv-p {
-                        color: $white;
                     }
                 }
             }

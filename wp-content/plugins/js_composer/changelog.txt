@@ -1,5 +1,16 @@
 *** WPBakery Page Builder changelog ***
 
+2024-02-21 - version 7.5
+  - New: Editor scrolls to elements as they are added to the page
+  - Update: Links from the editor to resources are updated
+  - Fix: Masonry media grid works properly
+  - Fix: Editor controls are displayed properly for containers
+  - Fix: Nested shortcode element containers work properly
+  - Fix: Column controls work properly
+  - Fix: Prettyphoto works properly with modified grid templates
+  - Fix: Call to Action button positions text properly
+  - Fix: Hoverbox element works properly in Safari
+
 2024-01-17 - version 7.4
   - New: An in-built SEO toolkit to analyze keywords
   - New: An in-built SEO toolkit to control Google snippet display

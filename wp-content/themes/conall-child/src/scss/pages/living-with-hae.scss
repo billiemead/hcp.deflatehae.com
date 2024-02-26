@@ -18,7 +18,6 @@ body.livinghae-page {
                         div#living-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                           /*  min-height: 580px; */
                             margin-bottom: -30px !important;
                             & > div.edgtf-full-section-inner {
                                 display: flex;
@@ -27,7 +26,6 @@ body.livinghae-page {
                                 height: 100%;
                                 width: 60%;
                                 div#living-hero-col {
-                                    /* padding-top: 15%; */
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
@@ -45,7 +43,6 @@ body.livinghae-page {
                                                 }
                                                 div#hero-logo-alt-desktop {
                                                     text-align: center;
-                                                    /* margin-bottom: 5% !important; */
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
@@ -64,14 +61,15 @@ body.livinghae-page {
                             }
                         }
                         div#living-hae-impacts-row {
-                            animation: fadeIn 5s;
-                            height: calc(100vh / .995);
                             background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
                             background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center center;
+                            background-size: 106% 104%;
+                            background-position: center top;
                             width: 102%;
                             z-index: 2;
+                            margin-bottom: -10% !important;
+                            margin-top: -3%;
+                            max-height: 1050px;
                             div.clearfix.edgtf-full-section-inner {
                                 max-width: 1194px;
                                 height: 100%;
@@ -157,26 +155,6 @@ body.livinghae-page {
                                                             position:relative;
                                                             display:inline-block;
                                                         }
-                                                        div.option.option-center::before {
-                                                            content: "";
-                                                            display: block;
-                                                            width: 50px;
-                                                            height: 24px;
-                                                            top: 21px;
-                                                            border: none;
-                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                            background-position: calc(100% - 0.75rem) center !important;
-                                                            transform: rotate(0deg);
-                                                            margin-top: -2.5px;
-                                                            position: absolute;
-                                                            right: 5px;
-                                                            z-index: 2;
-                                                        }
-                                                        div.option.option-center.focused::before{
-                                                            transform: rotate(180deg);
-                                                            right: 8px;
-                                                            top: 20px;
-                                                        }
                                                 }
                                             }
                                         }
@@ -187,14 +165,11 @@ body.livinghae-page {
                                         display: flex;
                                         justify-content: center;
                                         align-items: flex-start;
-                                        height: 30%;
+                                        height: auto;
                                         max-width: 700px;
-                                        /* padding-top: 50%; */
                                         margin-left: 40%;
-                                        /* padding-left: 18%; */
-                                        /* padding-right: 8%; */
                                         position: absolute;
-                                        bottom: 20%;
+                                        bottom: 25%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -234,19 +209,15 @@ body.livinghae-page {
                                                             }
                                                         }
                                                         div#listswap-container-1 {
-                                                            /* display: block; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-2 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-3 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-4 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                     }
@@ -292,12 +263,13 @@ body.livinghae-page {
                             background-repeat: no-repeat;
                             background-size: 100%;
                             background-position: center center;
+                            background-position: center -116px;
                             visibility: visible;
                             margin-bottom: 0;
-                            padding: 0 0 8% 0;
+                            padding: 0 0 6% 0;
                                 div#jennifer-banner-section-new {
                                     z-index: 103;
-                                    margin-top: -8%;
+                                    margin-top: -9%;
                                     div.edgtf-full-section-inner {
                                          div.pv-col1.banner-col {
                                             div.vc_column-inner {
@@ -320,7 +292,7 @@ body.livinghae-page {
                                                                             max-width: 940px;
                                                                             div#jennifers--inner-row-1 {
                                                                                 display: flex;
-                                                                                padding-bottom: 5%;
+                                                                                padding-bottom: 2.5%;
                                                                                 div.jennifers-grid {
                                                                                     display: grid;
                                                                                     grid-template-columns: repeat(2,1fr);
@@ -409,7 +381,7 @@ body.livinghae-page {
                                                                                 div.pv-col1.fullwidth {
                                                                                     div#jstory-paragraphs {
                                                                                         max-width: 866px;
-                                                                                        padding-top: 5%;
+                                                                                        padding-top: 2.5%;
                                                                                         margin: 0 auto;
                                                                                         flex-direction: column;
                                                                                         p.pv-p {
@@ -422,7 +394,7 @@ body.livinghae-page {
                                                                                                 margin-bottom: 3%;
                                                                                             }
                                                                                             &.btm {
-                                                                                                margin-bottom: 7%;
+                                                                                                margin-bottom: 5%;
                                                                                             }
                                                                                         }
                                                                                     }
@@ -468,9 +440,272 @@ body.livinghae-page {
     }
 }
 @media all and (max-width: 1400px) {
-    body.livinghae-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#living-hae-impacts-row div.clearfix.edgtf-full-section-inner div.pv-col1.two div.vc_column-inner div.wpb_wrapper div#burden-option-container div.burden-option-wrapper div.option-left,
-    body.livinghae-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#living-hae-impacts-row div.clearfix.edgtf-full-section-inner div.pv-col1.two div.vc_column-inner div.wpb_wrapper div#burden-option-container div.burden-option-wrapper div.option-right {
-        padding: 0;
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#breakpoint-row {
+                            }
+                            div#living-cta-row {
+
+                            }
+                            div#living-hero-row {
+                                & > div.edgtf-full-section-inner {
+                                    div#living-hero-col {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                    div.hero-subheading {
+                                                        h2.pv-h2 {
+
+                                                            sup.pv-sup {
+                                                            }
+                                                        }
+                                                    }
+                                                    div#hero-logo-alt-desktop {
+                                                        figure.wpb_wrapper {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#hero-logo-alt-tablet,
+                                                    div#hero-logo-alt-mobile {
+                                                    }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-hae-impacts-row {
+                                div.clearfix.edgtf-full-section-inner {
+                                    div.pv-col1.one {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burdens-top-heading {
+                                                    h1.pv-h1.center {
+                                                        span.hide-desktop {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.two {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    div.burden-option-wrapper {
+                                                            div.option {
+                                                                h1.pv-h1 {
+                                                                    sup.pv-sup {
+                                                                    }
+
+                                                                }
+                                                            }
+                                                            div.option-left {
+                                                            }
+                                                            div.option-center {
+                                                                select#redselect {
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                select#redselect:focus {
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                label.pv-label {
+
+                                                                }
+                                                            }
+                                                            div.option-right {
+                                                                padding: 0;
+                                                            }
+                                                            div.option.option-center {
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.three.whitebox {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div#swap-box-hold {
+                                                    }
+                                                    div#swap-box {
+                                                        div.white-box-wrap {
+                                                            div.white-box {
+                                                                div.listswap-cont {
+                                                                    h5.pv-h5.red {
+                                                                    }
+                                                                    ul.pv-list {
+                                                                        li.pv-list-item {
+                                                                            sup.pv-sup {
+                                                                            }
+                                                                        }
+                                                                        li.pv-list-item:last-child {
+                                                                        }
+
+                                                                    }
+                                                                }
+                                                                div#listswap-container-1 {
+                                                                }
+                                                                div#listswap-container-2 {
+
+                                                                }
+                                                                div#listswap-container-3 {
+                                                                }
+                                                                div#listswap-container-4 {
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                }
+                                            }
+                                    }
+                                    div.pv-col1.four {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#living-balloon-hand {
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+                                                                }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.section-background {
+                                div#hae-section-wrapper {
+                                    div#jennifer-banner-section-new {
+                                        margin-top: -15%;
+                                        div.edgtf-full-section-inner {
+                                            div.pv-col1.banner-col {
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#not-patient-section {
+                                                        }
+                                                        div.wpb_raw_html {
+
+                                                            div.wpb_wrapper {
+                                                                section.facts-box-section {
+                                                                    div.red-bow-wrapper {
+
+                                                                    }
+                                                                    div.facts-box-wrapper {
+                                                                        div.white-facts-box {
+                                                                            div#hae-facts-icon-row {
+                                                                                div#jennifers--inner-row-1 {
+                                                                                    div.jennifers-grid {
+                                                                                        div.pv-col2 {
+                                                                                            p.pv-p.stats {
+                                                                                                &.mobile-hide {
+
+                                                                                                }
+                                                                                            }
+                                                                                            &.left {
+                                                                                                div.jstory-stats {
+
+                                                                                                    &.left {
+
+                                                                                                    }
+                                                                                                    &.right {
+
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            &.right {
+                                                                                            }
+                                                                                            &.treatment {
+                                                                                                div.jstory-stats.center {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div#jennifers--inner-row-2 {
+                                                                                    div.pv-col1.fullwidth {
+                                                                                        div#jstory-icon-separator {
+                                                                                            div.quote-container {
+                                                                                                span.quote-lines {
+                                                                                                    img.quote-icon {
+
+                                                                                                    }
+                                                                                                }                                            span.quote-lines::before,
+                                                                                                span.quote-lines::after {
+
+                                                                                                }
+                                                                                                span.quote-lines::before {
+                                                                                                }
+                                                                                                span.quote-lines::after {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div#jennifers--inner-row-3 {
+                                                                                    div.pv-col1.fullwidth {
+                                                                                        div#jstory-paragraphs {
+                                                                                            p.pv-p {
+                                                                                                &.top {
+                                                                                                }
+                                                                                                &.mid {
+                                                                                                }
+                                                                                                &.btm {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        div#jstory-lower-heading {
+                                                                                            h3.pv-h3.center.red {
+
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                a.pv-btn.w-292 {
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            }
+        }
     }
 }
 @media all and (max-width: 1300px) {
@@ -551,82 +786,279 @@ body.livinghae-page {
                                                                 position:relative;
                                                                 display:inline-block;
                                                             }
-                                                            div.option.option-center::before {
-                                                                content: "";
-                                                                display: block;
-                                                                width: 50px;
-                                                                height: 24px;
-                                                                top: 21px;
-                                                                border: none;
-                                                                background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                                background-position: calc(100% - 0.75rem) center !important;
-                                                                transform: rotate(0deg);
-                                                                margin-top: -2.5px;
-                                                                position: absolute;
-                                                                right: 5px;
-                                                                z-index: 2;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+@media all and (max-width: 1200px) {
+    body.livinghae-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#breakpoint-row {
+                            }
+                            div#living-cta-row {
+
+                            }
+                            div#living-hero-row {
+                                & > div.edgtf-full-section-inner {
+                                    div#living-hero-col {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                    div.hero-subheading {
+                                                        h2.pv-h2 {
+
+                                                            sup.pv-sup {
                                                             }
-                                                            div.option.option-center.focused::before{
-                                                                transform: rotate(180deg);
-                                                                right: 8px;
-                                                                top: 20px;
+                                                        }
+                                                    }
+                                                    div#hero-logo-alt-desktop {
+                                                        figure.wpb_wrapper {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#hero-logo-alt-tablet,
+                                                    div#hero-logo-alt-mobile {
+                                                    }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#living-hae-impacts-row {
+                                div.clearfix.edgtf-full-section-inner {
+                                    div.pv-col1.one {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burdens-top-heading {
+                                                    h1.pv-h1.center {
+                                                        span.hide-desktop {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.two {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#burden-option-container {
+                                                    div.burden-option-wrapper {
+                                                            div.option {
+                                                                h1.pv-h1 {
+                                                                    sup.pv-sup {
+                                                                    }
+
+                                                                }
+                                                            }
+                                                            div.option-left {
+                                                            }
+                                                            div.option-center {
+                                                                select#redselect {
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                select#redselect:focus {
+                                                                    option.pv-option {
+
+                                                                    }
+                                                                }
+                                                                label.pv-label {
+
+                                                                }
+                                                            }
+                                                            div.option-right {
+                                                            }
+                                                            div.option.option-center {
                                                             }
                                                     }
                                                 }
                                             }
                                         }
                                     }
-                                    /* div.pv-col1.three.whitebox {
-                                        height: 35%;
-                                        max-width: 700px;
-                                        padding-left: 18%;
-                                        padding-right: 4%;
-                                        position: absolute;
-                                        bottom: 18%;
-                                        margin-left: 40%;
-                                        div.vc_column-inner {
-                                            padding: 0;
-                                            div.wpb_wrapper {
-                                                div#swap-box {
-                                                    div {
-                                                        h5.pv-h5.red {
-                                                            padding-bottom: 1.5%;
-                                                        }
-                                                        ul.pv-list {
-                                                            li.pv-list-item {
-                                                                line-height: 26px;
-                                                                font-weight: bold !important;
-                                                                padding-bottom: 2%;
-                                                                sup.pv-sup {
-                                                                    font-size: 60%;
+                                    div.pv-col1.three.whitebox {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div#swap-box-hold {
+                                                    }
+                                                    div#swap-box {
+                                                        div.white-box-wrap {
+                                                            div.white-box {
+                                                                div.listswap-cont {
+                                                                    h5.pv-h5.red {
+                                                                    }
+                                                                    ul.pv-list {
+                                                                        li.pv-list-item {
+                                                                            sup.pv-sup {
+                                                                            }
+                                                                        }
+                                                                        li.pv-list-item:last-child {
+                                                                        }
+
+                                                                    }
+                                                                }
+                                                                div#listswap-container-1 {
+                                                                }
+                                                                div#listswap-container-2 {
+
+                                                                }
+                                                                div#listswap-container-3 {
+                                                                }
+                                                                div#listswap-container-4 {
                                                                 }
                                                             }
-                                                            li.pv-list-item:last-child {
-                                                                padding-bottom: 0;
-                                                            }
-
                                                         }
                                                     }
-                                                    div#listswap-container-1 {
-                                                        display: block;
-                                                        animation: fadeIn 2s;
+
+                                                }
+                                            }
+                                    }
+                                    div.pv-col1.four {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#living-balloon-hand {
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+                                                                }
+                                                        }
                                                     }
-                                                    div#listswap-container-2 {
-                                                        display: none;
-                                                        animation: fadeIn 2s;
-                                                    }
-                                                    div#listswap-container-3 {
-                                                        display: none;
-                                                        animation: fadeIn 2s;
-                                                    }
-                                                    div#listswap-container-4 {
-                                                        display: none;
-                                                        animation: fadeIn 2s;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div.section-background {
+                                div#hae-section-wrapper {
+                                    div#jennifer-banner-section-new {
+                                        margin-top: -17%;
+                                        div.edgtf-full-section-inner {
+                                            div.pv-col1.banner-col {
+                                                div.vc_column-inner {
+                                                    div.wpb_wrapper {
+                                                        div#not-patient-section {
+                                                        }
+                                                        div.wpb_raw_html {
+
+                                                            div.wpb_wrapper {
+                                                                section.facts-box-section {
+                                                                    div.red-bow-wrapper {
+
+                                                                    }
+                                                                    div.facts-box-wrapper {
+                                                                        div.white-facts-box {
+                                                                            div#hae-facts-icon-row {
+                                                                                div#jennifers--inner-row-1 {
+                                                                                    div.jennifers-grid {
+                                                                                        div.pv-col2 {
+                                                                                            p.pv-p.stats {
+                                                                                                &.mobile-hide {
+
+                                                                                                }
+                                                                                            }
+                                                                                            &.left {
+                                                                                                div.jstory-stats {
+
+                                                                                                    &.left {
+
+                                                                                                    }
+                                                                                                    &.right {
+
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            &.right {
+                                                                                            }
+                                                                                            &.treatment {
+                                                                                                div.jstory-stats.center {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div#jennifers--inner-row-2 {
+                                                                                    div.pv-col1.fullwidth {
+                                                                                        div#jstory-icon-separator {
+                                                                                            div.quote-container {
+                                                                                                span.quote-lines {
+                                                                                                    img.quote-icon {
+
+                                                                                                    }
+                                                                                                }                                            span.quote-lines::before,
+                                                                                                span.quote-lines::after {
+
+                                                                                                }
+                                                                                                span.quote-lines::before {
+                                                                                                }
+                                                                                                span.quote-lines::after {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div#jennifers--inner-row-3 {
+                                                                                    div.pv-col1.fullwidth {
+                                                                                        div#jstory-paragraphs {
+                                                                                            p.pv-p {
+                                                                                                &.top {
+                                                                                                }
+                                                                                                &.mid {
+                                                                                                }
+                                                                                                &.btm {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        div#jstory-lower-heading {
+                                                                                            h3.pv-h3.center.red {
+
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                a.pv-btn.w-292 {
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
-                                    } */
+                                    }
+                                }
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
                                 }
                             }
                         }
@@ -651,13 +1083,11 @@ body.livinghae-page {
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                /* min-height: 523px; */
                                 margin-bottom: -70px !important;
                                 & > div.edgtf-full-section-inner {
                                         max-width: 100%;
                                         width: 80%;
                                     div#living-hero-col {
-                                       /*  padding-top: 15%; */
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
@@ -683,7 +1113,6 @@ body.livinghae-page {
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
                                                     text-align: center;
-                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -701,18 +1130,13 @@ body.livinghae-page {
                             }
                             div#living-hae-impacts-row {
                                 height: auto;
-                                animation: fadeIn 5s;
                                 background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1024x1475.jpg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center center;
                                 width: 102%;
                                 margin-bottom: -103px !important;
-                                top: -8px;
+                                max-height: 100%;
+                                margin-top: 3%;
                                 div.clearfix.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    height: 100%;
-                                    width: 80%;
+
                                     div.pv-col1.one {
                                         padding-top: 10%;
                                         div.vc_column-inner {
@@ -733,7 +1157,7 @@ body.livinghae-page {
                                     }
                                     div.pv-col1.two {
                                         padding-top: 2%;
-                                        padding-bottom: 15%;
+                                        padding-bottom: 18%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
 
@@ -786,26 +1210,6 @@ body.livinghae-page {
                                                                 position:relative;
                                                                 display:inline-block;
                                                             }
-                                                            div.option.option-center::before {
-                                                                content: "";
-                                                                display: block;
-                                                                width: 50px;
-                                                                height: 24px;
-                                                                top: 21px;
-                                                                border: none;
-                                                                background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                                background-position: calc(100% - 0.75rem) center !important;
-                                                                transform: rotate(0deg);
-                                                                margin-top: -2.5px;
-                                                                position: absolute;
-                                                                right: 5px;
-                                                                z-index: 2;
-                                                            }
-                                                            div.option.option-center.focused::before{
-                                                                transform: rotate(180deg);
-                                                                right: 8px;
-                                                                top: 20px;
-                                                            }
                                                     }
                                                 }
                                             }
@@ -817,9 +1221,9 @@ body.livinghae-page {
                                         padding-right: 0;
                                         float: unset;
                                         margin: 0 auto;
-                                        height: 320px;
+                                        height: auto;
                                         position: relative;
-                                        margin-bottom: -14%;
+                                        margin-bottom: -8%;
                                         max-width: 700px;
                                         width: 100%;
                                         div.vc_column-inner {
@@ -861,19 +1265,15 @@ body.livinghae-page {
                                                             }
                                                         }
                                                         div#listswap-container-1 {
-                                                            /* display: block; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-2 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-3 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                         div#listswap-container-4 {
-                                                            /* display: none; */
                                                             animation: fadeIn 2s;
                                                         }
                                                     }
@@ -882,48 +1282,6 @@ body.livinghae-page {
 
                                             }
                                         }
-                                            /* div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div#swap-box {
-                                                        div {
-                                                            h5.pv-h5.red {
-                                                                padding-bottom: 1.5%;
-                                                                text-align: center;
-                                                            }
-                                                            ul.pv-list {
-                                                                li.pv-list-item {
-                                                                    line-height: 26px;
-                                                                    font-weight: bold !important;
-                                                                    padding-bottom: 2%;
-                                                                    sup.pv-sup {
-                                                                        font-size: 60%;
-                                                                    }
-                                                                }
-                                                                li.pv-list-item:last-child {
-                                                                    padding-bottom: 0;
-                                                                }
-
-                                                            }
-                                                        }
-                                                        div#listswap-container-1 {
-                                                            display: block;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-2 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-3 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-4 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                    }
-                                                }
-                                            } */
                                     }
                                     div.pv-col1.four {
                                     bottom: 0;
@@ -964,7 +1322,7 @@ body.livinghae-page {
                                         margin-bottom: 0;
                                         padding: 0 0 12% 0;
                                     div#jennifer-banner-section-new {
-                                        margin-top: -20%;
+                                        margin-top: -18%;
                                         div.edgtf-full-section-inner {
                                             div.pv-col1.banner-col {
                                                 div.vc_column-inner {
@@ -1133,12 +1491,10 @@ body.livinghae-page {
                                             padding: 0;
                                             height: 100%;
                                             div.hero-subheading {
-                                                /* padding-bottom: 35px ; */
                                                 padding-bottom: 4%;
                                                 max-width: 686px;
                                                 margin: 0 auto;
                                                 h2.pv-h2 {
-
                                                     sup.pv-sup {
                                                         font-size: 65%;
                                                         bottom: .8ex;
@@ -1154,7 +1510,6 @@ body.livinghae-page {
                                             div#hero-logo-alt-mobile {
                                                 display: block;
                                                 text-align: center;
-                                                /* margin-bottom: 4.5% !important; */
                                                 max-width: 685px;
                                                 margin: 0 auto;
                                                 figure.wpb_wrapper {
@@ -1171,18 +1526,13 @@ body.livinghae-page {
                             }
                             div#living-hae-impacts-row {
                                 height: auto;
-                                animation: fadeIn 5s;
                                 transform: translateY(0);
                                 background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center center;
                                 width: 102%;
                                 margin-bottom: 0 !important;
                                 top: 15px;
                                 div.clearfix.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    height: 100%;
+
                                     div.pv-col1.one {
                                         padding-top: 20%;
                                         div.vc_column-inner {
@@ -1255,86 +1605,11 @@ body.livinghae-page {
                                                             position:relative;
                                                             display:inline-block;
                                                         }
-                                                        div.option.option-center::before {
-                                                            content: "";
-                                                            display: block;
-                                                            width: 50px;
-                                                            height: 24px;
-                                                            top: 21px;
-                                                            border: none;
-                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                            background-position: calc(100% - 0.75rem) center !important;
-                                                            transform: rotate(0deg);
-                                                            margin-top: -2.5px;
-                                                            position: absolute;
-                                                            right: 5px;
-                                                            z-index: 2;
-                                                        }
-                                                        div.option.option-center.focused::before{
-                                                            transform: rotate(180deg);
-                                                            right: 8px;
-                                                            top: 20px;
-                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
-                                    /* div.pv-col1.three.whitebox {
-                                            padding-left: 5%;
-                                            padding-right: 5%;
-                                            float: unset;
-                                            margin: 0 auto;
-                                            background-size: 100%;
-                                            padding-bottom: 10%;
-                                            width: 100%;
-                                            padding-top: 5%;
-                                            height: 100%;
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div#swap-box {
-                                                        div {
-                                                            h5.pv-h5.red {
-                                                                padding-bottom: 1.5%;
-                                                                text-align: center;
-                                                            }
-                                                            ul.pv-list {
-                                                                margin-top: 0;
-                                                                li.pv-list-item {
-                                                                    font-size: 15px;
-                                                                    line-height: 20px;
-                                                                    font-weight: bold !important;
-                                                                    padding-bottom: 2%;
-                                                                    sup.pv-sup {
-                                                                        font-size: 60%;
-                                                                    }
-                                                                }
-                                                                li.pv-list-item:last-child {
-                                                                    padding-bottom: 0;
-                                                                }
-
-                                                            }
-                                                        }
-                                                        div#listswap-container-1 {
-                                                            display: block;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-2 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-3 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-4 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                    } */
                                     div.pv-col1.four {
                                         position: relative;
                                         bottom: 0;
@@ -1359,7 +1634,7 @@ body.livinghae-page {
                                     background-image: none;
                                     padding: 0;
                                     div#jennifer-banner-section-new {
-                                        margin-top: -20%;
+                                        margin-top: -12%;
                                         div.edgtf-full-section-inner {
                                             width: 100%;
                                             max-width: 100%;
@@ -1559,7 +1834,6 @@ body.livinghae-page {
                                             padding: 0;
                                             height: 100%;
                                             div.hero-subheading {
-                                                /* padding-bottom: 35px ; */
                                                 padding-bottom: 4%;
                                                 max-width: 686px;
                                                 margin: 0 auto;
@@ -1580,7 +1854,6 @@ body.livinghae-page {
                                             div#hero-logo-alt-mobile {
                                                 display: block;
                                                 text-align: center;
-                                               /*  margin-bottom: 4.5% !important; */
                                                 max-width: 685px;
                                                 margin: 0 auto;
                                                 figure.wpb_wrapper {
@@ -1596,21 +1869,9 @@ body.livinghae-page {
                                 }
                             }
                             div#living-hae-impacts-row {
-                                height: auto;
-                                animation: fadeIn 5s;
-                                transform: translateY(0);
-                                background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center center;
-                                width: 102%;
-                                margin-bottom: 0 !important;
-                                top: 30px;
                                 div.clearfix.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    height: 100%;
                                     div.pv-col1.one {
-                                        padding-top: 5%;
+                                        padding-top: 10%;
                                         margin-top: 25%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
@@ -1682,86 +1943,11 @@ body.livinghae-page {
                                                             position:relative;
                                                             display:inline-block;
                                                         }
-                                                        div.option.option-center::before {
-                                                            content: "";
-                                                            display: block;
-                                                            width: 50px;
-                                                            height: 24px;
-                                                            top: 21px;
-                                                            border: none;
-                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                            background-position: calc(100% - 0.75rem) center !important;
-                                                            transform: rotate(0deg);
-                                                            margin-top: -2.5px;
-                                                            position: absolute;
-                                                            right: 5px;
-                                                            z-index: 2;
-                                                        }
-                                                        div.option.option-center.focused::before{
-                                                            transform: rotate(180deg);
-                                                            right: 8px;
-                                                            top: 20px;
-                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
-                                    /* div.pv-col1.three.whitebox {
-                                            padding-left: 5%;
-                                            padding-right: 5%;
-                                            float: unset;
-                                            margin: 0 auto;
-                                            background-size: 100%;
-                                            padding-bottom: 10%;
-                                            width: 100%;
-                                            padding-top: 5%;
-                                            height: 100%;
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div#swap-box {
-                                                        div {
-                                                            h5.pv-h5.red {
-                                                                padding-bottom: 1.5%;
-                                                                text-align: center;
-                                                            }
-                                                            ul.pv-list {
-                                                                margin-top: 0;
-                                                                li.pv-list-item {
-                                                                    font-size: 15px;
-                                                                    line-height: 20px;
-                                                                    font-weight: bold !important;
-                                                                    padding-bottom: 2%;
-                                                                    sup.pv-sup {
-                                                                        font-size: 60%;
-                                                                    }
-                                                                }
-                                                                li.pv-list-item:last-child {
-                                                                    padding-bottom: 0;
-                                                                }
-
-                                                            }
-                                                        }
-                                                        div#listswap-container-1 {
-                                                            display: block;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-2 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-3 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                        div#listswap-container-4 {
-                                                            display: none;
-                                                            animation: fadeIn 2s;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                    } */
                                     div.pv-col1.four {
                                         position: relative;
                                         bottom: 0;
@@ -1785,7 +1971,7 @@ body.livinghae-page {
                                 div#hae-section-wrapper {
 
                                     div#jennifer-banner-section-new {
-                                        margin-top: -20%;
+                                        margin-top: -14%;
                                         div.edgtf-full-section-inner {
                                             div.pv-col1.banner-col {
                                                 div.vc_column-inner {
@@ -1951,7 +2137,6 @@ body.livinghae-page {
                                             padding: 0;
                                             height: 100%;
                                             div.hero-subheading {
-                                                /* padding-bottom: 35px ; */
                                                 padding-bottom: 4%;
                                                 max-width: 686px;
                                                 margin: 0 auto;
@@ -1972,7 +2157,6 @@ body.livinghae-page {
                                             div#hero-logo-alt-mobile {
                                                 display: block;
                                                 text-align: center;
-                                               /*  margin-bottom: 4.5% !important; */
                                                 max-width: 685px;
                                                 margin: 0 auto;
                                                 figure.wpb_wrapper {
@@ -1988,21 +2172,11 @@ body.livinghae-page {
                                 }
                             }
                             div#living-hae-impacts-row {
-                                height: auto;
-                                animation: fadeIn 5s;
-                                transform: translateY(0);
-                                background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center center;
-                                width: 102%;
-                                margin-bottom: 0 !important;
-                                top: 15px;
+
                                 div.clearfix.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    height: 100%;
+
                                     div.pv-col1.one {
-                                        padding-top: 5%;
+                                        padding-top: 15%;
                                         margin-top: 20%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
@@ -2021,7 +2195,7 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-bottom: calc(100vh / 6);
+                                        padding-bottom: calc(100vh / 7);
                                         padding-top: 5%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
@@ -2041,7 +2215,7 @@ body.livinghae-page {
                                                             h1.pv-h1 {
                                                                 font-size: 25px;
                                                                 line-height: 30px;
-                                                                padding-top: 12px;
+                                                                padding-top: 5%;
                                                                 text-align: center;
                                                                 sup.pv-sup {
                                                                     font-size: 50%;
@@ -2074,26 +2248,6 @@ body.livinghae-page {
                                                             position:relative;
                                                             display:inline-block;
                                                         }
-                                                        div.option.option-center::before {
-                                                            content: "";
-                                                            display: block;
-                                                            width: 50px;
-                                                            height: 24px;
-                                                            top: 21px;
-                                                            border: none;
-                                                            background: url("/wp-content/themes/conall-child/images/select-caret.svg") no-repeat;
-                                                            background-position: calc(100% - 0.75rem) center !important;
-                                                            transform: rotate(0deg);
-                                                            margin-top: -2.5px;
-                                                            position: absolute;
-                                                            right: 5px;
-                                                            z-index: 2;
-                                                        }
-                                                        div.option.option-center.focused::before{
-                                                            transform: rotate(180deg);
-                                                            right: 8px;
-                                                            top: 20px;
-                                                        }
                                                     }
                                                 }
                                             }
@@ -2105,9 +2259,9 @@ body.livinghae-page {
                                             padding-right: 0;
                                             float: unset;
                                             margin: 0 auto;
-                                            height: 320px;
+                                            height: auto;
                                             position: relative;
-                                            margin-bottom: -25%;
+                                            margin-bottom: -5%;
                                             max-width: 700px;
                                             width: 100%;
                                             div.vc_column-inner {
@@ -2163,7 +2317,7 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
                                                 div#living-balloon-hand {
-                                                    bottom: -16px;
+                                                    bottom: 10px;
                                                     position: relative;
                                                     img {
                                                     }
@@ -2209,7 +2363,7 @@ body.livinghae-page {
                                                                                                 }
                                                                                             }
                                                                                             &.left {
-
+                                                                                                padding-right: 10%;
                                                                                                 div.jstory-stats {
 
                                                                                                     &.left {
@@ -2221,7 +2375,7 @@ body.livinghae-page {
                                                                                                 }
                                                                                             }
                                                                                             &.right {
-
+                                                                                                padding-right: 10%;
                                                                                             }
                                                                                             &.treatment {
 

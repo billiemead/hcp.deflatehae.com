@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </p>
 <a
 	class="vc_general vc_ui-button vc_ui-button-shape-rounded vc_ui-button-info vc_ui-button-info"
-	href="https://wpbakery.com/?utm_campaign=wpb-upgrade&utm_source=wpb-plugin&utm_medium=ai-window"
+	href="https://wpbakery.com/features/ai?utm_campaign=wpb-upgrade&utm_source=wpb-plugin&utm_medium=ai-window"
 	target="_blank"
 	rel="noreferrer noopener"
 >

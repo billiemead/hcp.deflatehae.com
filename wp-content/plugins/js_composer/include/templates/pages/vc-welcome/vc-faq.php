@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				'WPBakery has complete documentation available at our knowledge base: %s which covers everything related to WPBakery Page Builder starting from Installation and up to more advanced features based on our Inner API.',
 				'js_composer'
 			),
-			'<a target="_blank" href="https://kb.wpbakery.com/?utm_source=wpb-welcome-page&utm_medium=wpb-faq-tab">kb.wpbakery.com</a>'
+			'<a target="_blank" href="https://kb.wpbakery.com?utm_source=wpdashboard&utm_medium=wpb-settings-about-faq&utm_campaign=info&utm_content=text">kb.wpbakery.com</a>'
 		); ?></p>
 	<div class="feature-section vc_row">
 		<div class="vc_col-xs-4">
@@ -287,7 +287,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 </div>
 <div class="return-to-dashboard">
-	<a target="_blank" href="https://kb.wpbakery.com/?utm_source=wpb-welcome-page&utm_medium=wpb-faq-tab"><?php esc_html_e(
+	<a target="_blank" href="https://kb.wpbakery.com?utm_source=wpdashboard&utm_medium=wpb-settings-about-faq&utm_campaign=info&utm_content=text"><?php esc_html_e(
 			'Visit Knowledge Base for more information',
 			'js_composer'
 		); ?></a>

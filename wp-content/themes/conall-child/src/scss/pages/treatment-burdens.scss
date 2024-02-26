@@ -3,6 +3,8 @@
 
 /* ******* PHARVARIS HCP 2024 TREATMENT BURDENS PAGE START ******* */
 
+
+
 body.treatmentburdens-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
@@ -280,7 +282,63 @@ body.treatmentburdens-page {
         }
     }
 }
-
+@media (min-width: 1921px) {
+    body.treatmentburdens-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#treatment-balloon-animation-row {
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.mid  {
+                                    width: 100%;
+                                    div.vc_column-inner {
+                                        width: 100%;
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                            width: 100%;
+                                            div#balloon-animation-canvas-row {
+                                                div.edgtf-full-section-inner {
+                                                    div.pv-col1.grid {
+                                                        width: 100%;
+                                                        div.vc_column-inner {
+                                                            width: 100%;
+                                                            padding: 0;
+                                                            div.wpb_wrapper {
+                                                                width: 100%;
+                                                                div.wpb_raw_code {
+                                                                    width: 100%;
+                                                                    div.wpb_wrapper {
+                                                                        width: 100%;
+                                                                        div.rive-container {
+                                                                            width: 60vw;
+                                                                            height: 100%;
+                                                                            margin: 0 auto;
+                                                                            canvas#rive-canvas {
+                                                                                width: 60vw;
+                                                                                min-height: 696px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media all and (max-width: 1024px) {
     body.treatmentburdens-page {
         div.edgtf-wrapper {

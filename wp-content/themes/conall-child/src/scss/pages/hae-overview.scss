@@ -563,7 +563,7 @@ body.haeoverview-page {
                                         width: 45%;
                                     }
                                     div.pv-col1.bottom {
-                                        padding: 5% 0;
+                                        padding: 10% 0;
                                         div.not-patient {
                                             p.pv-p.ex-small {
                                                 text-align: center;
@@ -805,10 +805,11 @@ body.haeoverview-page {
                                 visibility: visible;
                                 opacity: 1;
                                 height: 100%;
-                                min-height: 2000px;
+                                min-height: 100%;
                                 background-position-y: -16px;
                                 top: 0px;
                                 margin-top: -10%;
+                                padding-bottom: 10%;
                                     div.pv-col1.top {
                                         padding-top: 25%;
                                         div.vc_column-inner {
@@ -831,7 +832,7 @@ body.haeoverview-page {
                                     }
                                     div.pv-col1.right {
                                         width: 60%;
-                                        padding-top: 25%;
+                                        padding-top: 34%;
                                         div.vc_column-inner {
                                             height: 100%;
                                             padding: 0;
@@ -873,7 +874,8 @@ body.haeoverview-page {
                                         width: 40%;
                                     }
                                     div.pv-col1.bottom {
-                                        padding: 5% 0;
+                                        padding: 5% 0 5% 0;
+                                        display: flex;
                                         div.not-patient {
                                             p.pv-p.ex-small {
                                                 text-align: center;
@@ -886,7 +888,7 @@ body.haeoverview-page {
                                 background-color: $backgnd-grey;
                                 padding-top: 12%;
                                 padding-bottom: 0;
-                                margin-top: 0;
+                                margin-top: -4%;
                                 top: 0;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
@@ -1002,8 +1004,8 @@ body.haeoverview-page {
                                 display: flex;
                                 visibility: visible;
                                 opacity: 1;
-                                margin-top: 8%;
-                                margin-bottom: 8% !important;
+                                margin-top: 5%;
+                                margin-bottom: 5% !important;
                                 div.edgtf-full-section-inner {
                                     width: 80%;
                                     margin: 0 auto;
@@ -1105,7 +1107,36 @@ body.haeoverview-page {
                                     }
                                 }
                             }
-
+                            div.section-background {
+                                div#overview-banner-section-new {
+                                    div.edgtf-full-section-inner {
+                                        div.col1.banner-col {
+                                            div.vc_column-inner {
+                                                div.wpb_wrapper {
+                                                    div.wpb_raw_html {
+                                                        div.wpb_wrapper {
+                                                            section.facts-box-section {
+                                                                div.facts-box-wrapper {
+                                                                    div.white-facts-box {
+                                                                        div#hae-facts-icon-row {
+                                                                            div.iconrow {
+                                                                                margin-bottom: 3%;
+                                                                                div.hae-image-wrapper {
+                                                                                    height: 150px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {

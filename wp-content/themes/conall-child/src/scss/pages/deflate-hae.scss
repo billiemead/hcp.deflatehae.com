@@ -27,7 +27,6 @@ body.home {
                                 justify-content: center;
                                 align-items: center;
                                 width: 80%;
-                                /* height: 100%; */
                                 div#home-hero-col {
                                     padding-top: 6%;
                                     div.vc_column-inner {
@@ -152,135 +151,108 @@ body.home {
                                     }
                                 }
                             }
-                            div#hae-banner-section {
-                                z-index: 103;
-                                transform: translateY(70px);
+                            div#hae-banner-section-new {
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.banner-col {
-                                        div.banner-wrapper {
-                                            width: 100%;
-                                            div.wpb_wrapper {
-                                                width: 100%;
-                                                div.banner-img-container {
-                                                    h2.pv-h2.center.white {
-
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#hae-facts-section {
-                                 transform: translateY(13px);
-                                div.edgtf-full-section-inner {
-                                    div.pv-col1.ripple-image {
                                         div.vc_column-inner {
-                                            div.wpb_wrapper {
-                                                div.hae-white-box-image {
-                                                    figure.wpb_wrapper {
-                                                        div.vc_single_image-wrapper {
-                                                            img.vc_single_image-img {
 
-                                                            }
+                                            section.facts-box-section {
+
+                                                div.red-bow-wrapper {
+                                                    &.home {
+                                                        top: 70px;
+                                                    }
+                                                    div.red-bow {
+
+                                                        h2.pv-h2.center.white {
+
+                                                        }
+                                                        &.home {
+
                                                         }
                                                     }
                                                 }
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.top {
-                                        div#hae-white-box-top {
-                                            img.vc_single_image-img {
+                                                div.facts-box-wrapper {
 
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.bottom {
-                                        div#hae-white-box-bottom {
-                                            img.vc_single_image-img {
+                                                    div.white-facts-box {
 
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.facts-icon-col {
-                                        div.wpb_wrapper {
-                                            div.wpb_text_column.wpb_content_element {
-                                                padding-top: 5%;
-                                                padding-bottom: 2%;
-                                                div.wpb_wrapper {
-                                                    div#hae-facts-icon-row {
-                                                        max-width: 900px;
-                                                        div.iconrow {
-                                                            div.hae-image-wrapper {
-                                                                img {
+                                                        div#hae-facts-icon-row {
+                                                            div.iconrow {
 
+                                                                div.hae-image-wrapper {
+
+                                                                    img {
+
+                                                                    }
+                                                                }
+                                                                div.hae-copy-wrapper {
+
+                                                                    p.pv-p {
+
+                                                                    }
+                                                                    ul {
+
+                                                                        li {
+
+                                                                            sup.pv-sup {
+
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
-                                                            div.hae-copy-wrapper {
+                                                            div#icon-row1 {
+                                                                img.hae-icon.one {
+
+                                                                }
                                                                 p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row2 {
+                                                                img.hae-icon.two {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row3 {
+                                                                img.hae-icon.three {
+
+                                                                }
+                                                                p.pv-p {
+
+                                                                }
+                                                            }
+                                                            div#icon-row4 {
+                                                                img.hae-icon.four {
+
+                                                                }
+                                                                p.pv-p {
+
                                                                 }
                                                             }
                                                         }
-                                                        div#icon-row1 {
-                                                            img.hae-icon.one {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row2 {
-                                                            img.hae-icon.two {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row3 {
-                                                            img.hae-icon.three {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row4 {
-                                                            img.hae-icon.four {
-                                                                max-width: 68px;
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row5 {
-                                                            img.hae-icon.five {
-                                                                padding-top: 7%;
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
+                                                        a.pv-btn {
+                                                            margin-top: 3%;
                                                         }
                                                     }
                                                 }
-                                            }
-                                            a.pv-btn {
-                                                margin-bottom: 4%;
                                             }
                                         }
                                     }
                                 }
                             }
+
                         }
                         div#home-overview-row {
-                            background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
-                            background-repeat: no-repeat;
-                            background-size: cover;
+                            clip-path: polygon( 100% 99.999%,0% 99.999%,0% 0%,0% 0%,0.552% 0.293%,1.362% 0.581%,2.423% 0.862%,3.728% 1.135%,5.272% 1.399%,7.049% 1.654%,9.05% 1.899%,11.271% 2.131%,13.705% 2.351%,16.345% 2.557%,16.345% 2.557%,17.719% 2.654%,19.13% 2.745%,20.578% 2.833%,22.061% 2.916%,23.58% 2.994%,25.132% 3.068%,26.716% 3.137%,28.334% 3.202%,29.982% 3.262%,31.661% 3.318%,31.661% 3.318%,33.425% 3.37%,35.21% 3.417%,37.013% 3.459%,38.834% 3.495%,40.672% 3.526%,42.525% 3.551%,44.393% 3.57%,46.275% 3.584%,48.169% 3.592%,50.075% 3.595%,50.075% 3.595%,51.982% 3.592%,53.88% 3.585%,55.767% 3.572%,57.641% 3.555%,59.499% 3.532%,61.341% 3.505%,63.162% 3.472%,64.963% 3.435%,66.74% 3.393%,68.492% 3.345%,68.492% 3.345%,70.178% 3.294%,71.831% 3.239%,73.45% 3.18%,75.035% 3.116%,76.584% 3.048%,78.097% 2.975%,79.572% 2.899%,81.01% 2.818%,82.409% 2.733%,83.768% 2.644%,83.768% 2.644%,85.089% 2.551%,86.361% 2.454%,87.583% 2.354%,88.754% 2.251%,89.874% 2.144%,90.941% 2.034%,91.956% 1.92%,92.918% 1.804%,93.825% 1.684%,94.678% 1.562%,94.678% 1.562%,95.499% 1.432%,96.256% 1.301%,96.949% 1.167%,97.579% 1.031%,98.144% 0.892%,98.645% 0.752%,99.082% 0.609%,99.453% 0.465%,99.759% 0.318%,100% 0.17%,100% 100%,100% 100% );
+                            background-color: $backgnd-grey;
                             padding-top: 9%;
                             padding-bottom: 6%;
-                            z-index: 101;
                             max-height: 688px;
+                            margin-top: -10%;
                             div.clearfix.edgtf-full-section-inner {
                                 display: flex;
                                 height: 100%;
@@ -322,7 +294,7 @@ body.home {
                                                                     transform: translateY(-75px);
                                                                     p.pv-p.ex-small {
                                                                         max-width: 90px;
-                                                                        margin-left: 5%;
+                                                                        margin:0 ;
                                                                         br.line-break {
 
                                                                         }
@@ -583,135 +555,12 @@ body.home {
                                         }
                                     }
                                 }
-                                div#hae-banner-section {
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
 
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#hae-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.ripple-image {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
 
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.wpb_wrapper {
-                                                div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 10%;
-                                                    padding-bottom: 5%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 950px;
-                                                            width: 90%;
-                                                            div.iconrow {
-                                                                div.hae-image-wrapper {
-                                                                    width: 15%;
-                                                                    height: 140px;
-                                                                    margin-right: 30px;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    width: 85%;
-                                                                    p.pv-p {
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row5 {
-                                                                img.hae-icon.five {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                a.pv-btn {
-                                                    margin-bottom: 7%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                             div#home-overview-row {
-
-                                background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-1920x689.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
                                 padding-top: 15%;
                                 padding-bottom: 2%;
-                                z-index: 101;
                                 max-height: 100%;
                                 div.clearfix.edgtf-full-section-inner {
                                     display: flex;
@@ -868,8 +717,6 @@ body.home {
                                 }
                             }
                             div#home-refs-section {
-
-                                /* height: 200px; */
                                 background-color: $dk-grey;
                                 display: flex;
                                 align-items: center;
@@ -908,6 +755,7 @@ body.home {
                                 height: 100%;
                                 padding-top: 0;
                                 aspect-ratio: unset;
+                                clip-path: polygon( 100% 0%,99.868% 100%,99.868% 100%,99.868% 100%,97.768% 99.856%,95.619% 99.719%,93.422% 99.588%,91.179% 99.464%,88.891% 99.347%,86.56% 99.236%,84.186% 99.132%,81.771% 99.036%,79.316% 98.946%,76.823% 98.863%,76.823% 98.863%,74.211% 98.786%,71.574% 98.716%,68.913% 98.654%,66.23% 98.601%,63.526% 98.556%,60.802% 98.518%,58.061% 98.489%,55.304% 98.469%,52.532% 98.456%,49.747% 98.452%,49.747% 98.452%,46.966% 98.456%,44.206% 98.468%,41.468% 98.489%,38.752% 98.517%,36.057% 98.554%,33.383% 98.598%,30.731% 98.651%,28.1% 98.711%,25.49% 98.78%,22.901% 98.856%,22.901% 98.856%,20.428% 98.938%,17.992% 99.028%,15.595% 99.126%,13.238% 99.232%,10.921% 99.344%,8.647% 99.464%,6.417% 99.589%,4.231% 99.721%,2.092% 99.858%,-0% 100%,-0% 0%,100% 0% );
                                 div.edgtf-full-section-inner {
                                     position: relative;
                                     left: unset;
@@ -920,7 +768,7 @@ body.home {
                                             padding: 0;
                                             div.wpb_wrapper {
                                                 div#mob-hero-background {
-                                                    top: -12px;
+                                                    /* top: -12px; */
                                                     position: relative;
 
                                                     figure.vc_figure {
@@ -941,7 +789,7 @@ body.home {
                                                     width: 100%;
                                                     height: 100%;
                                                     div.edgtf-full-section-inner {
-                                                        padding-bottom: 5%;
+                                                        padding-bottom: 8%;
                                                         div.pv-col1.left {
                                                             width: 100%;
                                                             div.hero-content-container {
@@ -999,18 +847,6 @@ body.home {
                                     }
                                 }
                             }
-                            div#home-hero-row-mobile:after {
-                                background-image: url("/wp-content/themes/conall-child/images/mob-deflate-bottom-edge-576x27.svg");
-                                bottom: -27px;
-                                content: "";
-                                height: 27px;
-                                position: absolute;
-                                width: 100vw;
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position-x: center;
-                                background-position-y: top;
-                            }
                             div#not-patient-row {
                                 display: none;
                             }
@@ -1020,7 +856,7 @@ body.home {
                                 padding-bottom: 0;
                                 background-size: auto;
                                 background-position: -300px 20px;
-                                top: 25px;
+
                                 div#home-tradeoff-row {
                                     padding-top: 16%;
                                     padding-bottom: 5%;
@@ -1047,136 +883,12 @@ body.home {
                                         }
                                     }
                                 }
-                                div#hae-banner-section {
-                                    transform: translateY(55px);
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
 
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#hae-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.ripple-image {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-                                                                    width: 100%;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.wpb_wrapper {
-                                                div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 6%;
-                                                    padding-bottom: 6%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 950px;
-                                                            width: 85%;
-                                                            div.iconrow {
-                                                                flex-direction: column;
-                                                                div.hae-image-wrapper {
-                                                                    width: 100%;
-                                                                    height: 100px;
-                                                                    margin-right: 0;
-                                                                    margin-top: 5%;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    width: 100%;
-                                                                    margin-bottom: 5%;
-                                                                    p.pv-p {
-                                                                        text-align: center;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row5 {
-                                                                img.hae-icon.five {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                a.pv-btn {
-                                                    margin-bottom: 15%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                             div#home-overview-row {
-                                background-image: none;
+                                clip-path: unset;
                                 background-color: $white;
-                                padding-top: 20%;
+                                padding-top: 18%;
                                 div.clearfix.edgtf-full-section-inner {
                                     display: flex;
                                     height: 100%;
@@ -1347,7 +1059,6 @@ body.home {
                                 }
                             }
                             div#home-refs-section {
-                                /* height: 200px; */
                                 background-color: $dk-grey;
                                 display: flex;
                                 align-items: center;
@@ -1373,466 +1084,7 @@ body.home {
     }
 }
 @media all and (max-width: 576px) {
-    /* body.home {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
-                div.edgtf-content {
-                    div.edgtf-content-inner {
-                        div.wpb-content-wrapper {
-                            div#home-hero-row-mobile {
-                                top: 35px;
-                                height: 1100px;
-                                div.edgtf-full-section-inner {
-                                    max-width: 100%;
-                                    width: 100%;
-                                    div#home-hero-col {
-                                        div.vc_column-inner {
-                                            padding: 0;
-                                            div.wpb_wrapper {
-                                                div#mob-hero-background {
-                                                    top: -12px;
-                                                    position: relative;
-                                                    min-height: 300px;
-                                                    figure.vc_figure {
-                                                        width: 100%;
-                                                        div.vc_single_image-wrapper {
-                                                            width: 100%;
-                                                            img.vc_single_image-img {
-                                                                width: 100%;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                div.pv-row.inner {
-                                                    display: flex;
-                                                    position: relative;
-                                                    top: 0;
-                                                    left: 0;
-                                                    width: 100%;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    height: 100%;
-                                                    div.edgtf-full-section-inner {
-                                                        padding-bottom: 5%;
-                                                        div.pv-col1.left {
-                                                            width: 100%;
-                                                            div.hero-content-container {
-                                                                div.wpb_wrapper {
-                                                                    display: flex;
-                                                                    justify-content: center;
-                                                                    max-width: 80%;
-                                                                    margin: 0 auto;
-                                                                    div.hero-wrapper {
-                                                                    display: flex;
-                                                                    flex-direction: column;
-                                                                    justify-content: space-between;
-                                                                    align-items: center;
-                                                                    max-width: 100%;
-                                                                    p.pv-p {
 
-                                                                    }
-                                                                    h1.pv-h1.hero.center {
-                                                                        @include bold($poppins);
-                                                                        font-size: 30px;
-                                                                        line-height: 40px;
-                                                                        color: $dk-grey;
-                                                                            &.top {
-                                                                                padding-top: 11%;
-                                                                                padding-bottom:8%;
-                                                                            }
-                                                                            &.bottom {
-                                                                                padding-top:8%;
-                                                                                padding-bottom:8%;
-                                                                            }
-                                                                    }
-                                                                    img.hero-logo {
-                                                                        max-width: 100%;
-                                                                    }
-                                                                    h2.pv-h2.hero {
-                                                                        @include bold($poppins);
-                                                                        font-size: 26px;
-                                                                        line-height: 34px;
-                                                                        color: $red;
-                                                                    }
-                                                                }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#home-hero-row-mobile:after {
-                                background-image: url("/wp-content/themes/conall-child/images/mob-deflate-bottom-edge-576x27.svg");
-                                bottom: -27px;
-                                content: "";
-                                height: 27px;
-                                position: absolute;
-                                width: 100vw;
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position-x: center;
-                                background-position-y: top;
-                            }
-                            div.section-background {
-                                margin-top: 0;
-                                margin-bottom: -20px;
-                                padding-bottom: 0;
-                                background-size: auto;
-                                background-position: -300px 20px;
-                                top: 25px;
-                                div#home-tradeoff-row {
-                                    padding-top: 22%;
-                                    padding-bottom: 8%;
-                                    div.pv-col1 {
-                                        div.vc_column-inner {
-                                            padding: 0;
-                                            div.wpb_wrapper {
-                                                div#home-intro-heading {
-                                                    max-width: 660px;
-                                                    padding-bottom: 15%;
-                                                    div.wpb_wrapper {
-                                                        h1.pv-h1.grey {
-                                                            sup.pv-sup {
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.vc_column-inner:first-child > div.wpb_wrapper {
-                                        }
-                                        a.pv-btn {
-
-                                        }
-                                    }
-                                }
-                                div#hae-banner-section {
-                                    transform: translateY(55px);
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
-
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#hae-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.ripple-image {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-                                                                    width: 100%;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.wpb_wrapper {
-                                                div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 10%;
-                                                    padding-bottom: 10%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 950px;
-                                                            width: 85%;
-                                                            div.iconrow {
-                                                                flex-direction: column;
-                                                                div.hae-image-wrapper {
-                                                                    width: 100%;
-                                                                    height: 100px;
-                                                                    margin-right: 0;
-                                                                    margin-top: 5%;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    width: 100%;
-                                                                    margin-bottom: 5%;
-                                                                    p.pv-p {
-                                                                        text-align: center;
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row5 {
-                                                                img.hae-icon.five {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                a.pv-btn {
-                                                    margin-bottom: 15%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#home-overview-row {
-                                background-image: none;
-                                background-color: $white;
-                                div.clearfix.edgtf-full-section-inner {
-                                    display: flex;
-                                    height: 100%;
-                                    align-items: center;
-                                    justify-content: center;
-                                    max-width: 100%;
-                                    flex-direction: column;
-                                    div.pv-col2 {
-                                        display: flex;
-                                        padding: 0;
-                                        justify-content: center;
-                                        align-items: center;
-                                        float: unset;
-                                        width: 100%;
-                                        padding-bottom: 5%;
-                                        div.vc_column-inner {
-                                            div.wpb_wrapper {
-                                                div.overview-inner-row {
-                                                    div.edgtf-full-section-inner {
-                                                        display: flex;
-                                                        width: 100%;
-                                                        justify-content: center;
-                                                        flex-direction: column;
-                                                        align-items: center;
-                                                        div.pv-col2.inner.left-col {
-                                                               width: 100%;
-                                                                align-items: center;
-                                                                text-align: center;
-                                                            div.vc_column-inner {
-                                                                height: 100%;
-                                                                div.wpb_wrapper {
-                                                                    height: 100%;
-                                                                    div.overview-round-image {
-                                                                        text-align: center;
-                                                                        figure.wpb_wrapper {
-                                                                            div.vc_single_image-wrapper {
-                                                                                img {
-
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                    div.under-image-caption {
-                                                                        transform: translateY(-75px);
-                                                                        p.pv-p.ex-small {
-                                                                            max-width: 90px;
-                                                                            margin-left: 20%;
-                                                                            br.line-break {
-
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        div.pv-col2.inner.right-col {
-                                                            width: 100%;
-                                                            div.vc_column-inner {
-                                                                height: 100%;
-                                                                div.wpb_wrapper {
-                                                                    height: 100%;
-                                                                    div.overview-container {
-                                                                        height: 100%;
-                                                                        div.wpb_wrapper {
-                                                                            height: 100%;
-                                                                            display: flex;
-                                                                            justify-content: center;
-                                                                            align-items: center;
-                                                                            div.overview-container-wrapper {
-                                                                                max-height: 190px;
-                                                                                max-width: 100%;
-                                                                                display: flex;
-                                                                                flex-direction: column;
-                                                                                justify-content: space-between;
-                                                                                align-items: center;
-                                                                                flex-grow: 1;
-                                                                                max-width: 350px;
-                                                                                h5 {
-                                                                                    br.line-break {
-                                                                                        display: none;
-                                                                                    }
-                                                                                }
-                                                                                p.pv-p {
-                                                                                    padding-top: 5%;
-                                                                                    padding-bottom: 5%;
-                                                                                    text-align: center;
-                                                                                    br.line-break {
-                                                                                        display: none;
-                                                                                    }
-                                                                                }
-                                                                                div.overview-btn-wrapper {
-                                                                                    width: 100%;
-                                                                                    a.pv-btn.w-264 {
-
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                div.wpb_text_column {
-                                                    div.wpb_wrapper {
-                                                        div.overview-container {
-                                                            display: flex;
-                                                            align-items: center;
-                                                            width: 100%;
-                                                            justify-content: flex-start;
-                                                            div.overview-col.left {
-                                                                width: 40%;
-                                                                img.overview-rnd-image {
-
-                                                                }
-                                                            }
-                                                            div.overview-col.right {
-                                                                height: 190px;
-                                                                width: 55%;
-                                                                display: flex;
-                                                                flex-direction: column;
-                                                                justify-content: space-between;
-                                                                h5.pv-h5 {
-                                                                    text-transform: uppercase;
-                                                                    text-align: center;
-                                                                }
-                                                                p.pv-p {
-                                                                    text-align: center;
-                                                                    width: auto;
-                                                                    margin: 0 auto;
-                                                                }
-                                                                a.pv-btn {
-
-                                                                }
-                                                            }
-                                                        }
-                                                        &.left {
-
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    div.pv-col2.left::after {
-                                        content: "";
-                                        border: none;
-                                        border-bottom: 1px solid $dk-grey;
-                                        height: auto;
-                                        padding: 0;
-                                        position: absolute;
-                                        bottom: 0;
-                                        right: 0;
-                                        width: 100%;
-                                    }
-                                    div.pv-col2.right {
-                                        div.vc_column-inner {
-                                            div.wpb_wrapper {
-                                                div#overview-innerrow-right  {
-                                                    div.edgtf-full-section-inner {
-                                                        justify-content: flex-end;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#home-refs-section {
-
-                                background-color: $dk-grey;
-                                display: flex;
-                                align-items: center;
-                                padding-top: 5%;
-                                padding-bottom: 3%;
-                                bottom: -1px;
-                                div.refs-title {
-                                    h4.h4-refs.left {
-
-                                    }
-                                }
-                                div.refs-paragraph {
-                                    p.pv-refs {
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } */
 }
 @media all and (max-width: 480px) {
 }
