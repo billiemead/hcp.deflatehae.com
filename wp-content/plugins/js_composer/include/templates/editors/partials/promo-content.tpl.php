@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<a href="<?php echo esc_attr( is_network_admin() ? network_admin_url( $url ) : admin_url( $url ) ); ?>" class="vc-feature-btn" id="vc_settings-updater-button" data-vc-action="activation"><?php esc_html_e( 'Activate License', 'js_composer' ); ?></a>
 			<p class="vc-feature-info-text">
 				<?php esc_html_e( 'Direct plugin activation only.', 'js_composer' ); ?>
-				<a href="https://wpbakery.com/wpbakery-page-builder-license/?utm_source=wpb-welcome-page&utm_medium=wpb-whats-new-tab" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Don\'t have a license?', 'js_composer' ); ?></a>
+				<a href="https://wpbakery.com/wpbakery-page-builder-license/?utm_source=wpdashboard&utm_medium=wpb-settings-about-whats-new&utm_content=text" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Don\'t have a license?', 'js_composer' ); ?></a>
 			</p>
 		</div>
 	<?php endif; ?>

@@ -10,11 +10,11 @@ body.haeoverview-page {
                  div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#overview-cta-row {
+
                         }
                         div#overview-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
                             display: flex;
-                            /* min-height: 460px; */
                             & > div.edgtf-full-section-inner {
                                 display: flex;
                                 justify-content: center;
@@ -22,14 +22,14 @@ body.haeoverview-page {
                                 height: 100%;
                                 width: 80%;
                                 div#overview-hero-col {
-                                    /* padding-top: 4%; */
+
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
-                                            div#hero-logo-alt-desktop {
+                                            div#hero-background-image {
                                                 text-align: center;
-                                                /* margin-bottom: 5% !important; */
                                                 figure.wpb_wrapper {
+                                                    width: 100%;
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
 
@@ -46,10 +46,7 @@ body.haeoverview-page {
                                             div#hero-subheading {
                                                 max-width: 90%;
                                                 margin: 0 auto;
-                                                margin-top: 3%;
                                                 h2.pv-h2.center.yellow.hero-subheading {
-                                                    /* font-size: 30px;
-                                                    line-height: 40px; */
                                                     font-size: 1.55vw;
                                                     line-height: 2.1vw;
                                                     text-transform: inherit;
@@ -70,7 +67,7 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center center;
-                            top: -40px;
+                            margin-top: -4%;
                             div.edgtf-full-section-inner {
                                 max-width: 1430px;
                                 div.pv-col1 {
@@ -91,9 +88,7 @@ body.haeoverview-page {
                                             div.pv-paragraph {
                                                 div.wpb_wrapper {
                                                     p.pv-p.center.italic {
-                                                        a {
-                                                            color: $black;
-                                                        }
+
                                                     }
                                                 }
                                             }
@@ -227,6 +222,8 @@ body.haeoverview-page {
                         div#hae-girl-tablet,
                         div#hae-girl-mobile {
                             display: none;
+                            visibility: hidden;
+                            opacity: 0;
                         }
                         div#hae-attacks-row {
                             background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
@@ -234,7 +231,7 @@ body.haeoverview-page {
                             background-size: 100%;
                             background-position: top;
                             padding-top: 120px;
-                            top: -100px;
+                            margin-top: -4%;
                             div.edgtf-full-section-inner {
                                 div.pv-col1.top {
                                     margin-bottom: 0;
@@ -302,7 +299,7 @@ body.haeoverview-page {
                             }
                         }
                         div#overview-bradykinin-row {
-                            padding-top: 1%;
+                            padding-top: 4%;
                             div.edgtf-full-section-inner {
                                 max-width: 1436px;
                                 width: 80%;
@@ -368,6 +365,8 @@ body.haeoverview-page {
                         }
                         div#mob-triwhite-box-row {
                             display: none;
+                            visibility: hidden;
+                            opacity: 0;
                         }
                         div.section-background {
                             position: relative;
@@ -376,139 +375,34 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: 100%;
                             background-position: center bottom;
-                            visibility: visible;
-                            bottom: -2px;
-                            div#overview-banner-section {
-                                z-index: 103;
-                                transform: translateY(50px);
-                                margin-bottom: -60px !important;
+                            padding: 0 0 5% 0;
+                            div#overview-banner-section-new {
                                 div.edgtf-full-section-inner {
-                                    div.pv-col1.banner-col {
-                                        div.banner-wrapper {
-                                            &.mobile {
-                                                display: none;
-                                            }
-                                            div.wpb_wrapper {
-                                                div.banner-img-container {
-                                                    h2.pv-h2.center.white {
-
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#overview-facts-section {
-                                div.edgtf-full-section-inner {
-                                    div.pv-col1.ripple-image {
+                                    div.col1.banner-col {
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
-                                                div.hae-white-box-image {
-                                                    figure.wpb_wrapper {
-                                                        div.vc_single_image-wrapper {
-                                                            img.vc_single_image-img {
-
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.top {
-                                        div#hae-white-box-top {
-                                            img.vc_single_image-img {
-
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.bottom {
-                                        div#hae-white-box-bottom {
-                                            img.vc_single_image-img {
-
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.facts-icon-col {
-                                        div.vc_column-inner {
-                                            padding: 0;
-                                            div.wpb_wrapper {
-                                            div.wpb_text_column.wpb_content_element {
-                                                padding-top: 7%;
-                                                padding-bottom: 4%;
-                                                div.wpb_wrapper {
-                                                    div#hae-facts-icon-row {
-                                                        max-width: 980px;
-                                                        width: 85%;
-                                                        div.iconrow {
-                                                            div.hae-image-wrapper {
-                                                                height: 150px;
-                                                                img {
-
-                                                                }
-                                                            }
-                                                            div.hae-copy-wrapper {
-                                                                flex-direction: column;
-                                                                p.pv-p {
-                                                                }
-                                                                ul {
-                                                                    margin: 6px 0 0 0;
-                                                                    li {
-                                                                        padding-bottom: 2%;
-                                                                        sup.pv-sup {
-
+                                                div.wpb_raw_html {
+                                                    div.wpb_wrapper {
+                                                        section.facts-box-section {
+                                                            div.facts-box-wrapper {
+                                                                div.white-facts-box {
+                                                                    div#hae-facts-icon-row {
+                                                                        div.iconrow {
+                                                                            div.hae-image-wrapper {
+                                                                                height: 150px;
+                                                                            }
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                        div#icon-row1 {
-                                                            img.hae-icon.one {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row2 {
-                                                            img.hae-icon.two {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row3 {
-                                                            img.hae-icon.three {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row4 {
-                                                            padding-top: 5%;
-                                                            img.hae-icon.four {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
                                                     }
                                                 }
                                             }
-                                            a.pv-btn {
-                                                margin-bottom: 50px;
-                                            }
                                         }
-                                        }
-
                                     }
                                 }
                             }
-
                         }
                         div.templatera_shortcode {
                             div#hae-hcp-form-section {
@@ -545,7 +439,7 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
-                                min-height: 50vw;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -563,7 +457,6 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
                                                     text-align: center;
-                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -577,13 +470,10 @@ body.haeoverview-page {
                                                 div#hero-subheading {
                                                     max-width: 90%;
                                                     margin: 0 auto;
-                                                    margin-top: 3%;
                                                     h2.pv-h2.center.yellow.hero-subheading {
                                                         font-size: 30px;
                                                         line-height: 40px;
                                                         max-width: 688px;
-                                                        /* font-size: 2.9vw;
-                                                        line-height: 4vw; */
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -603,13 +493,15 @@ body.haeoverview-page {
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 display: block;
+                                visibility: visible;
+                                opacity: 1;
                                 height: 100%;
-                                top: -35px;
+                                margin-top: -4%;
                                 background-position: right;
                                 div.edgtf-full-section-inner {
                                     height: 100%;
                                     div.pv-col1.top {
-                                        padding-top: 15%;
+                                        padding-top: 10%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -671,25 +563,27 @@ body.haeoverview-page {
                                         width: 45%;
                                     }
                                     div.pv-col1.bottom {
-                                        padding-top: 9%;
-                                        padding-left: 12%;
-                                        padding-bottom: 5%;
+                                        padding: 10% 0;
                                         div.not-patient {
-
+                                            p.pv-p.ex-small {
+                                                text-align: center;
+                                            }
                                         }
                                     }
                                 }
                             }
                             div#hae-girl-mobile {
                                 display: none;
+                                visibility: hidden;
+                                opacity: 0;
                             }
                             div#hae-attacks-row {
                                 background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
                                 background-repeat: no-repeat;
                                 background-size: 100%;
                                 background-position: top;
-                                margin-top: 8%;
-                                padding-top: 12%;
+                                margin-top: -3%;
+                                padding-top: 8%;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
@@ -706,8 +600,6 @@ body.haeoverview-page {
                                                     }
                                                 }
                                                 div.hae-heading-logo {
-                                                    /* display: none; */
-
                                                     &.tablet {
                                                         text-align: center;
                                                         display: block;
@@ -763,8 +655,7 @@ body.haeoverview-page {
                                 }
                             }
                             div#overview-bradykinin-row {
-                                padding-top: 0;
-                                /* padding-bottom: 20%; */
+                                padding-top: 4%;
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 80%;
@@ -820,141 +711,7 @@ body.haeoverview-page {
                                     }
                                 }
                             }
-                            div.section-background {
-                                position: relative;
-                                height: auto;
-                                background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position: center bottom;
-                                visibility: visible;
-                                bottom: -2px;
-                                div#overview-banner-section {
-                                    z-index: 103;
-                                    transform: translateY(55px);
-                                    margin-bottom: 0 !important;
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
 
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#overview-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.ripple-image {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.wpb_wrapper {
-                                                div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 9%;
-                                                    padding-bottom: 7%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 980px;
-                                                            width: 100%;
-                                                            div.iconrow {
-                                                                width: 97%;
-                                                                div.hae-image-wrapper {
-                                                                    height: 150px;
-                                                                    margin-right: 25px;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    flex-direction: column;
-                                                                    p.pv-p {
-                                                                    }
-                                                                    ul {
-                                                                        margin: 6px 0 0 0;
-                                                                        li {
-                                                                            padding-bottom: 2%;
-                                                                            sup.pv-sup {
-
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                a.pv-btn {
-                                                    margin-bottom: 50px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                            }
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {
@@ -988,14 +745,12 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
-                                /* height: 700px; */
-                                min-height: 100vw;
+
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
                                     div#overview-hero-col {
                                         div.vc_column-inner {
-                                            padding: 0;
                                             div.wpb_wrapper {
                                                 div#hero-logo-alt-desktop {
                                                     display: none;
@@ -1006,7 +761,6 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
                                                     text-align: center;
-                                                    padding-bottom: 3%;
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -1020,7 +774,6 @@ body.haeoverview-page {
                                                 div#hero-subheading {
                                                     max-width: 686px;
                                                     margin: 0 auto;
-                                                    padding-top: 3%;
                                                     h2.pv-h2.center.yellow.hero-subheading {
                                                     font-size: 4.8vw;
                                                     line-height: 6.25vw;
@@ -1041,19 +794,24 @@ body.haeoverview-page {
                             }
                             div#hae-girl-tablet {
                                 display: none;
+                                visibility: hidden;
+                                opacity: 0;
                             }
                             div#hae-girl-mobile {
                                 background-image: url("/wp-content/themes/conall-child/images/girl-mobile-768x2351.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 display: block;
-                                 height: 100%;
-                                 min-height: 2000px;
-                                 background-position-y: -16px;
-                                 top: 0px;
-                                 margin-top: -10%;
+                                visibility: visible;
+                                opacity: 1;
+                                height: 100%;
+                                min-height: 100%;
+                                background-position-y: -16px;
+                                top: 0px;
+                                margin-top: -10%;
+                                padding-bottom: 10%;
                                     div.pv-col1.top {
-                                        padding-top: 35%;
+                                        padding-top: 25%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -1061,6 +819,7 @@ body.haeoverview-page {
                                                     div.wpb_wrapper {
                                                         h3.pv-h3.center.red {
                                                             margin-bottom: 1%;
+                                                            line-height: 40px;
                                                             sup.pv-sup {
                                                                 font-size: 65%;
                                                                 bottom: .8ex;
@@ -1073,7 +832,7 @@ body.haeoverview-page {
                                     }
                                     div.pv-col1.right {
                                         width: 60%;
-                                        padding-top: 25%;
+                                        padding-top: 34%;
                                         div.vc_column-inner {
                                             height: 100%;
                                             padding: 0;
@@ -1115,11 +874,12 @@ body.haeoverview-page {
                                         width: 40%;
                                     }
                                     div.pv-col1.bottom {
-                                        padding-top: 9%;
-                                        padding-left: 12%;
-                                        padding-bottom: 20%;
+                                        padding: 5% 0 5% 0;
+                                        display: flex;
                                         div.not-patient {
-
+                                            p.pv-p.ex-small {
+                                                text-align: center;
+                                            }
                                         }
                                     }
                             }
@@ -1128,8 +888,8 @@ body.haeoverview-page {
                                 background-color: $backgnd-grey;
                                 padding-top: 12%;
                                 padding-bottom: 0;
-                                margin-top: 0;
-                                top: -122px;
+                                margin-top: -4%;
+                                top: 0;
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.top {
                                         margin-bottom: 0;
@@ -1175,7 +935,6 @@ body.haeoverview-page {
                             }
                             div#overview-bradykinin-row {
                                 padding-top: 0;
-                                top: -200px;
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 90%;
@@ -1243,11 +1002,12 @@ body.haeoverview-page {
                             }
                             div#mob-triwhite-box-row {
                                 display: flex;
+                                visibility: visible;
+                                opacity: 1;
                                 margin-top: 5%;
-                                margin-bottom: 10% !important;
+                                margin-bottom: 5% !important;
                                 div.edgtf-full-section-inner {
-                                    max-width: 1436px;
-                                    width: 88%;
+                                    width: 80%;
                                     margin: 0 auto;
                                     div.pv-col1.tribox-col {
                                         div.triwhite-boxrow {
@@ -1260,7 +1020,6 @@ body.haeoverview-page {
                                             align-items: center;
                                             background-position: center center;
                                             filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
-                                            /* box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.45); */
                                             div.brandyk-icon {
 
                                             }
@@ -1312,10 +1071,7 @@ body.haeoverview-page {
                                             }
                                         }
                                         div#triwhite-box-row--1 {
-                                            /* padding-top: 20%;
-                                            padding-bottom: 16%; */
-                                            margin-bottom: 2.5% !important;
-                                            /* padding-bottom: 8%; */
+                                            margin-bottom: 3.5% !important;
                                             div.brandyk-copy.one {
 
                                             }
@@ -1328,7 +1084,7 @@ body.haeoverview-page {
 
                                         div#triwhite-box-row--2 {
 
-                                            margin-bottom: 2.5% !important;
+                                            margin-bottom: 3.5% !important;
                                             div.brandyk-copy.two {
 
                                             }
@@ -1339,9 +1095,6 @@ body.haeoverview-page {
                                             }
                                         }
                                         div#triwhite-box-row--3 {
-                                            /* padding-top: 16%;
-                                            padding-bottom: 20%; */
-                                            /* padding-top: 8%; */
                                             div.brandyk-copy.three {
 
                                             }
@@ -1355,160 +1108,43 @@ body.haeoverview-page {
                                 }
                             }
                             div.section-background {
-                                position: relative;
-                                height: auto;
-                                background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position: center bottom;
-                                visibility: visible;
-                                bottom: -2px;
-                                div#overview-banner-section {
-                                    z-index: 103;
-                                    transform: translateY(55px);
-                                    margin-bottom: 0 !important;
+                                div#overview-banner-section-new {
                                     div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                display: none;
-                                                &.mobile {
-                                                    display: block;
-                                                }
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
-
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#overview-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        width: 88%;
-                                        div.pv-col1.ripple-image {
+                                        div.col1.banner-col {
                                             div.vc_column-inner {
                                                 div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 9%;
-                                                    padding-bottom: 7%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 980px;
-                                                            width: 85%;
-                                                            div.iconrow {
-                                                                width: 100%;
-                                                                padding-top: 5%;
-                                                                div.hae-image-wrapper {
-                                                                    height: 140px;
-                                                                    margin-right: 0;
-                                                                    width: 100%;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    flex-direction: column;
-                                                                    width: 100%;
-                                                                    p.pv-p {
-                                                                    }
-                                                                    ul {
-                                                                        margin: 10px 0 0 0;
-                                                                        li {
-                                                                            padding-bottom: 2%;
-                                                                            sup.pv-sup {
-
+                                                    div.wpb_raw_html {
+                                                        div.wpb_wrapper {
+                                                            section.facts-box-section {
+                                                                div.facts-box-wrapper {
+                                                                    div.white-facts-box {
+                                                                        div#hae-facts-icon-row {
+                                                                            div.iconrow {
+                                                                                margin-bottom: 3%;
+                                                                                div.hae-image-wrapper {
+                                                                                    height: 150px;
+                                                                                }
                                                                             }
                                                                         }
                                                                     }
                                                                 }
                                                             }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                padding-top: 7%;
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
                                                         }
                                                     }
                                                 }
-                                                a.pv-btn {
-                                                    margin-bottom: 50px;
-                                                }
-                                                }
-
                                             }
                                         }
                                     }
                                 }
-
                             }
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {
 
-                                    }
                                 }
-                                div.refs-paragraph {
-                                    p.pv-refs {
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
 
                                     }
                                 }
@@ -1521,6 +1157,14 @@ body.haeoverview-page {
     }
 }
 @media all and (max-width: 576px) {
+    body.haeoverview-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#hae-girl-mobile div.pv-col1.left {
+        float: left;
+        width: 50%;
+    }
+    body.haeoverview-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#hae-girl-mobile div.pv-col1.right {
+        float: left;
+        width: 50%;
+    }
 }
 @media all and (max-width: 480px) {
     body.haeoverview-page {
@@ -1534,7 +1178,6 @@ body.haeoverview-page {
                             }
                             div#overview-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
-                                /* height: 700px; */
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -1551,7 +1194,6 @@ body.haeoverview-page {
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
                                                     text-align: center;
-                                                    /* margin-bottom: 11% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -1597,7 +1239,7 @@ body.haeoverview-page {
                                  background-position: center top;
                                  padding-bottom: 0;
                                     div.pv-col1.top {
-                                        padding-top: 35%;
+                                        padding-top: 30%;
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
@@ -1617,7 +1259,7 @@ body.haeoverview-page {
                                     }
                                     div.pv-col1.right {
                                         padding-top: 35%;
-                                        width: 350px;
+                                        width: 100%;
                                         margin: 0 auto;
                                         div.vc_column-inner {
                                             height: 100%;
@@ -1659,10 +1301,11 @@ body.haeoverview-page {
                                     div.pv-col1.left {
                                         width: 40%;
                                         display: none;
+                                        visibility: hidden;
+                                        opacity: 0;
                                     }
                                     div.pv-col1.bottom {
-                                        padding: 0;
-                                        padding-bottom: 20%;
+                                        padding: 10% 0;
                                         div.not-patient {
                                             p {
                                                 text-align: center;
@@ -1721,7 +1364,7 @@ body.haeoverview-page {
                                 }
                             }
                             div#overview-bradykinin-row {
-                                padding-top: 12%;
+                                padding-top: 0;
                                 div.edgtf-full-section-inner {
                                     max-width: 1436px;
                                     width: 90%;
@@ -1788,12 +1431,8 @@ body.haeoverview-page {
                                 }
                             }
                             div#mob-triwhite-box-row {
-                                display: flex;
-                                margin-top: 5%;
-                                margin-bottom: 10% !important;
                                 div.edgtf-full-section-inner {
-                                    max-width: 1436px;
-                                    width: 88%;
+                                    width: 80%;
                                     margin: 0 auto;
                                     div.pv-col1.tribox-col {
                                         div.triwhite-boxrow {
@@ -1806,7 +1445,6 @@ body.haeoverview-page {
                                             align-items: center;
                                             background-position: center center;
                                             filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
-                                            /* box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.45); */
                                             div.brandyk-icon {
 
                                             }
@@ -1858,10 +1496,7 @@ body.haeoverview-page {
                                             }
                                         }
                                         div#triwhite-box-row--1 {
-                                            /* padding-top: 20%;
-                                            padding-bottom: 16%; */
                                             margin-bottom: 2.5% !important;
-                                            /* padding-bottom: 8%; */
                                             div.brandyk-copy.one {
 
                                             }
@@ -1885,9 +1520,6 @@ body.haeoverview-page {
                                             }
                                         }
                                         div#triwhite-box-row--3 {
-                                            /* padding-top: 16%;
-                                            padding-bottom: 20%; */
-                                            /* padding-top: 8%; */
                                             div.brandyk-copy.three {
 
                                             }
@@ -1900,153 +1532,7 @@ body.haeoverview-page {
                                     }
                                 }
                             }
-                            div.section-background {
-                                position: relative;
-                                height: auto;
-                                background-image: url("/wp-content/themes/conall-child/images/overview-section-bkgnd-yellow-1920x420.svg");
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position: center bottom;
-                                visibility: visible;
-                                bottom: -2px;
-                                div#overview-banner-section {
-                                    z-index: 103;
-                                    transform: translateY(55px);
-                                    margin-bottom: 0 !important;
-                                    div.edgtf-full-section-inner {
-                                        div.pv-col1.banner-col {
-                                            div.banner-wrapper {
-                                                display: none;
-                                                &.mobile {
-                                                    display: block;
-                                                }
-                                                div.wpb_wrapper {
-                                                    div.banner-img-container {
-                                                        h2.pv-h2.center.white {
 
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div#overview-facts-section {
-                                    div.edgtf-full-section-inner {
-                                        width: 88%;
-                                        div.pv-col1.ripple-image {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.hae-white-box-image {
-                                                        figure.wpb_wrapper {
-                                                            div.vc_single_image-wrapper {
-                                                                img.vc_single_image-img {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.top {
-                                            div#hae-white-box-top {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.ripple-image.bottom {
-                                            div#hae-white-box-bottom {
-                                                img.vc_single_image-img {
-
-                                                }
-                                            }
-                                        }
-                                        div.pv-col1.facts-icon-col {
-                                            div.vc_column-inner {
-                                                div.wpb_wrapper {
-                                                    div.wpb_text_column.wpb_content_element {
-                                                    padding-top: 9%;
-                                                    padding-bottom: 7%;
-                                                    div.wpb_wrapper {
-                                                        div#hae-facts-icon-row {
-                                                            max-width: 980px;
-                                                            width: 85%;
-                                                            div.iconrow {
-                                                                width: 100%;
-                                                                padding-top: 5%;
-                                                                div.hae-image-wrapper {
-                                                                    height: 140px;
-                                                                    margin-right: 0;
-                                                                    width: 100%;
-                                                                    img {
-
-                                                                    }
-                                                                }
-                                                                div.hae-copy-wrapper {
-                                                                    flex-direction: column;
-                                                                    width: 100%;
-                                                                    p.pv-p {
-                                                                    }
-                                                                    ul {
-                                                                        margin: 10px 0 0 0;
-                                                                        li {
-                                                                            padding-bottom: 2%;
-                                                                            sup.pv-sup {
-
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                            div#icon-row1 {
-                                                                img.hae-icon.one {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row2 {
-                                                                img.hae-icon.two {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row3 {
-                                                                img.hae-icon.three {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                            div#icon-row4 {
-                                                                padding-top: 7%;
-                                                                img.hae-icon.four {
-
-                                                                }
-                                                                p.pv-p {
-
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                a.pv-btn {
-                                                    margin-bottom: 50px;
-                                                }
-                                                }
-
-                                            }
-                                        }
-                                    }
-                                }
-
-                            }
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {

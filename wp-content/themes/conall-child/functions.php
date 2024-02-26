@@ -341,14 +341,15 @@ add_filter('page_row_actions', 'pharvaris_duplicate_page_link', 10, 2);
 function marker_io()
 {
     ?>
-        <script>
+       <script>
             window.markerConfig = {
-                project: '659cad079ff6d511940ecd54',
-                source: 'snippet'
-            };
+            project: '65dc8e91bd678b326e4a12c4',
+            source: 'snippet'
+        };
 
-            !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+        !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
         </script>
+
     <?php
 }
 add_action('wp_head', 'marker_io');
@@ -374,7 +375,7 @@ function homepage_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#home-tradeoff-row, #hae-banner-section, #hae-facts-section");
+            const divs = document.querySelectorAll("#home-tradeoff-row, #hae-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");
@@ -396,7 +397,7 @@ function overview_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#overview-banner-section, #overview-facts-section");
+            const divs = document.querySelectorAll("#overview-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");
@@ -423,7 +424,7 @@ function living_hae_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#jennifers-banner-section, #jennifers-story-section");
+            const divs = document.querySelectorAll("#jennifer-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");
@@ -455,7 +456,7 @@ function treatment_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#treatment-banner-section, #treatment-facts-section");
+            const divs = document.querySelectorAll("#treatment-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");

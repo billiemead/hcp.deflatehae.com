@@ -81,6 +81,39 @@ div.jAlert.animated.ja_default {
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    div.jAlert.animated.ja_default {
+        width: 90%;
+        div {
+            div.closejAlert.ja_close.ja_close_round {
+
+            }
+            div.ja_title {
+
+                div {
+
+                }
+            }
+            div.ja_body {
+                max-width: 90%;
+                p {
+
+                }
+                div.ja_btn_wrap.optBack {
+
+
+                    a.ja_btn {
+
+                    }
+                    a.ja_btn.confirmBtn.ja_btn_green {
+
+                    }
+                    a.ja_btn.denyBtn.ja_btn_red {
+
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
 }

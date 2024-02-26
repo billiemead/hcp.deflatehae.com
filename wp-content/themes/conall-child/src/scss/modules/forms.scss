@@ -13,10 +13,10 @@ input[type=text] {
 
 select:focus,
 input[type=text]:focus {
-  border: 3px solid $red !important;
-  box-shadow: 0 0 3px $red !important;
-    -moz-box-shadow: 0 0 3px $red !important;
-        -webkit-box-shadow: 0 0 3px $red !important;
+  border: 3px solid $blue !important;
+  box-shadow: 0 0 3px $blue !important;
+    -moz-box-shadow: 0 0 3px $blue !important;
+        -webkit-box-shadow: 0 0 3px $blue !important;
   transition: 0.25s;
     -webkit-transition: 0.25s;
 }
@@ -73,10 +73,6 @@ body {
                                     width: 100%;
                                     span.form-title {
 
-                                    }
-                                    span.form-required {
-                                        color: $red;
-                                        font-weight: 900 !important;
                                     }
                                     div.form-input {
                                         width: 100%;
@@ -310,6 +306,9 @@ outline: none !important;
 
                                                 }
                                             }
+                                        }
+                                        &.required {
+
                                         }
                                     }
                                 }

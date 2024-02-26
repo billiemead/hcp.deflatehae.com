@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+
+.uc-browser-wrapper{
+}
+
+.uc-browser-tabs-wrapper{
+	margin-bottom:10px;
+}
+
+.uc-browser-wrapper .uc-browser-tab{
+	float:left;
+	padding:10px;
+	background-color:#E7F7F9;
+	color:#000000;
+	border-right:1px solid #B5E6ED;
+	border-top:1px solid #B5E6ED;
+	border-bottom:1px solid #B5E6ED;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.uc-browser-wrapper .uc-browser-tab:hover{
+	color:#515151;
+}
+
+.uc-browser-wrapper .uc-browser-tab.uc-tab-selected{
+	background-color:#B2F0B9;
+	color:#515151;
+	cursor:default;
+}
+
+
+.uc-browser-wrapper .uc-browser-tab:first-child{
+	border-left:1px solid #B5E6ED;
+}
+
+.uc-browser-content-wrapper{
+	padding:5px;
+	background-color:#F0F0F0;
+	max-width:900px;
+	margin-bottom:5px;
+}
+
+.uc-browser-wrapper .uc-browser-button-back{
+	margin-bottom:15px;
+}
+
+._________________ADDON___________________{}
+
+
+.uc-browser-wrapper .uc-browser-addon{
+	float:left;
+	margin-left:10px;
+	border:1px solid #E5E5E5;
+	padding:5px;
+	background-color:#ffffff;
+	width:150px;
+	height:50px;
+	overflow:hidden;
+	cursor:pointer;
+	display:block;
+}
+
+.uc-browser-wrapper .uc-browser-addon:hover{
+	border:1px solid #B0B0B0;
+}
+
+.uc-browser-addon .uc-browser-addon-title{
+	font-weight:bold;
+	font-size:14px;
+	color:#5C5C5C;
+	cursor:pointer;
+}
+
+.uc-browser-addon .uc-browser-addon-desc{
+	font-size:12px;
+	padding-top:5px;
+	color:#777777;
+	font-style:italic;
+	cursor:pointer;
+}
+
+.uc-browser-addon .uc-browser-addon-icon{
+	float:left;
+	width:32px;
+	height:32px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.uc-browser-addon .uc-browser-addon-right{
+	float:left;
+	padding-left:5px;
+}
+
+
+._________________ADDON_CONFIG___________________{}
+
+
+.uc-addon-config{
+}
+
+.uc-addon-config .uc-addon-config-table{
+	width:100%;
+}
+
+.uc-addon-config .uc-addon-config-table td{
+	vertical-align:top;
+}
+
+.uc-addon-config .uc-addon-config-cell-left{
+	width:420px;
+}
+
+.uc-addon-config .uc-addon-config-left{
+	min-height:300px;
+	border:1px solid #A1A1A1;
+}
+
+.uc-addon-config .uc-addon-config-loader{
+	margin:10px;
+	margin-top:15px;
+	display:block;
+}
+
+.uc-addon-config .uc-addon-config-title-left{
+	float:left;
+}
+
+.uc-addon-config .uc-addon-config-title-right{
+	float:right;
+}
+
+
+.uc-addon-config .uc-addon-config-title{
+	padding:5px;
+	background-color:#FaFaFa;
+	border-bottom:1px solid #B7B7B7;
+}
+
+.uc-addon-config .uc-addon-config-settings{
+	padding:10px;
+	padding-top:15px;
+	background-color:#fff;
+}
+
+.uc-addon-config .uc-addon-config-items{
+	border: 1px solid #a1a1a1;
+	min-height:300px;
+}
+
+.uc-addon-config .uc-addon-config-preview{
+	min-height:600px;
+	border:1px solid #A1A1A1;
+	position:relative;
+}
+
+.uc-addon-config .uc-addon-config-preview-title{
+	color:#727272;
+	font-size:14px;
+	text-align:center;
+	padding:5px;
+}
+
+.uc-addon-config .uc-preview-content{
+	padding:5px;
+}
+
+.uc-addon-config .uc-preview-iframe{
+	border:none;
+	width:100%;
+	height:550px;
+	overflow:scroll;
+}
+
+
+
+

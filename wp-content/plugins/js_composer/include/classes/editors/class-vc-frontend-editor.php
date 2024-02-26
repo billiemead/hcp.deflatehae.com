@@ -96,7 +96,7 @@ class Vc_Frontend_Editor extends Vc_Editor {
 	/**
 	 * @var string
 	 */
-	protected static $brand_url = 'https://wpbakery.com/?utm_campaign=VCplugin&utm_source=vc_user&utm_medium=frontend_editor';
+	protected static $brand_url = 'https://wpbakery.com/?utm_source=wpb-plugin&utm_medium=frontend-editor&utm_campaign=info&utm_content=logo';
 
 	/**
 	 * @var string

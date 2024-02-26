@@ -139,7 +139,10 @@ border-radius: 12px;
 border: none;
 }
 
-
+ span.form-required {
+    color: $red;
+    font-weight: 900 !important;
+}
 /* ===== START CSS ===== */
 body {
     @include regular($poppins);
@@ -221,12 +224,11 @@ body.pharvaris {
             display: block;
             top: 0;
             &.alt {
-                top: 0;
-                /* height: 25vh; */
                 min-height: calc(100vw / 3.5);
-                /* padding-top: 23.8%; */
+                top: 0;
                 &.two {
                     top: 0;
+                    min-height: calc(100vw / 3.5);
                 }
             }
         }
@@ -338,7 +340,11 @@ body.pharvaris {
 
         }
         &.yellow.hero-subheading {
-
+            margin-top: 3%;
+            &.top {
+                margin-top: 0;
+                margin-bottom: 3%;
+            }
         }
         &.hero-subheading {
             font-size: 30px;
@@ -481,13 +487,13 @@ body.pharvaris {
         &.bold {
             font-weight: 700 !important;
         }
-        &.italic {
-            font-style: italic !important;
-        }
         &.ex-small {
             font-size: 12px;
             line-height: 16px;
             text-align: left;
+        }
+        &.italic {
+            font-style: italic !important;
         }
         &.policies {
             padding-bottom: 20px;
@@ -526,6 +532,9 @@ body.pharvaris {
                 line-height: 26px;
             }
         }
+        li.pv-list-item:last-of-type {
+            padding-bottom: 0;
+        }
         li::marker {
             color: $red;
         }
@@ -562,23 +571,19 @@ body.pharvaris {
         text-align: center;
     }
     select.pv-red-select {
-        @include bold($poppins);
-        width: auto;
-        text-align: center;
-        font-size: 40px;
-        line-height: 40px;
-        color: $red;
-        background: none;
-        border: none;
-        border-bottom: 3px solid $red !important;
-        -moz-appearance:none !important;
-        -webkit-appearance: none !important;
-        appearance: none !important;
-        padding-right: 4rem !important;
-        resize: none;
-        outline: none;
-        letter-spacing: -0.5px;
-        cursor: pointer;
+    @include bold($poppins);
+    width: auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    color: $red;
+    background: none;
+    border: none;
+    border-bottom: 3px solid $red !important;
+    resize: none;
+    outline: none;
+    letter-spacing: -0.5px;
+    cursor: pointer;
         option.pv-option  {
             text-align: center;
             font-size: 20px;
@@ -590,205 +595,157 @@ body.pharvaris {
     }
     div.pv-row.banner-section {
         div.edgtf-full-section-inner {
-            max-width: 1194px;
             div.pv-col1.banner-col {
-                div.banner-wrapper-jennifer,
-                div.banner-wrapper {
-                    &.mobile {
-                        display: none;
-                    }
-                    width: 100%;
-                    div.wpb_wrapper {
-                    width: 100%;
-                    margin: 0 auto;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                        div.banner-img-container {
-                            background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            margin: 0 auto;
-                            padding: 0;
-                            width: min(330px, 80%);
-                            max-height: 90px;
-                            height: 80%;
-                                h2.pv-h2.center.white {
-                                    padding-top: 9.5%;
-                                    padding-bottom: 9.5%;
-                                    text-transform: uppercase;
-                                }
-                            &.jennifer {
-                                background-image: url("/wp-content/themes/conall-child/images/hae-banner-red-517x108.svg");
-                                width: min(517px, 80%);
-                                max-height: 108px;
-                                height: 80%;
-                                h2.pv-h2.center.white {
-                                    text-transform: uppercase;
-                                    padding-top: 7.8%;
-                                    padding-bottom: 7.8%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    div.pv-row.facts-section {
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
-        z-index: 102;
-        position: relative;
-        width: 100%;
-        div.edgtf-full-section-inner {
-            width: 80%;
-            max-width: 1194px;
-            div.pv-col1.ripple-image {
                 div.vc_column-inner {
                     padding: 0;
-                    div.wpb_wrapper {
-                        div.hae-white-box-image {
-                            figure.wpb_wrapper {
+                    section.facts-box-section {
+                        max-width: 100%;
+                        max-height: 100%;
+                        margin: 0 auto;
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        z-index: 105;
+                        position: relative;
+                        div.red-bow-wrapper {
+                            top: 60px;
+                            z-index: 2;
+                            position: relative;
+                            max-width: 392px;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            width: 80%;
+                            margin-left: 10%;
+                            margin-right: 10%;
+                            &.home {
+                                max-width: 330px;
+                            }
+                            &.jennifer {
+                                max-width: 517px;
+                            }
+                            div.red-bow {
+                                background-image: url("/wp-content/themes/conall-child/images/red-bow-328x92.svg");
+                                background-size: 100% 100%;
+                                max-width: 392px;
+                                height: 92px;
                                 width: 100%;
+                                position: relative;
                                 display: flex;
-                                margin: 0;
-                                div.vc_single_image-wrapper {
-                                    width: 100%;
-                                    img.vc_single_image-img {
-
-                                    }
+                                justify-content: center;
+                                align-items: center;
+                                h2.pv-h2.center.white {
+                                    text-transform: uppercase;
+                                }
+                                &.home {
+                                    max-width:330px;
+                                    height: 90px;
+                                }
+                                &.jennifer {
+                                    max-width:517px;
+                                    height: 108px;
                                 }
                             }
-                            &.mobile {
-                                display: none;
-                            }
                         }
-                        div#hae-white-box-top-mob {
-                            display: none;
-                        }
-                        div#hae-white-box-bottom-mob {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            div.pv-col1.ripple-image.top {
-                width: 100%;
-                position: relative;
-                top: 0;
-                div#hae-white-box-top {
-                    img.vc_single_image-img {
-
-                    }
-                }
-            }
-            div.pv-col1.ripple-image.bottom {
-                width: 100%;
-                position: relative;
-                bottom: 0;
-                div#hae-white-box-bottom {
-                    img.vc_single_image-img {
-
-                    }
-                }
-            }
-            div.pv-col1.facts-icon-col {
-                background-color: $white;
-                div.wpb_wrapper {
-                    height: 100%;
-                    div.wpb_text_column.wpb_content_element {
-                        height: 100%;
-                        div.wpb_wrapper {
-                            height: 100%;
+                        div.facts-box-wrapper {
+                            filter: drop-shadow(0 0 20px rgba(0, 0, 0, .45));
+                            z-index: 1;
+                            position: relative;
+                            max-width: 1194px;
                             display: flex;
-                            justify-content: center;
-                            div#hae-facts-icon-row {
-                                display: flex;
-                                flex-direction: column;
+                            flex-wrap: nowrap;
+                            width: 100%;
+                            height: 100%;
+                            div.white-facts-box {
+                                background-image: url("/wp-content/themes/conall-child/images//hae-facts-white-box-1194x834.svg");
+                                width: 100%;
                                 height: 100%;
-                                justify-content: center;
-                                max-width: 870px;
-                                width: 80%;
-                                align-items: center;
-                                div.iconrow {
+                                background-size: 100% 100%;
+                                div#hae-facts-icon-row {
                                     display: flex;
+                                    flex-direction: column;
+                                    height: 100%;
                                     justify-content: center;
+                                    max-width: 870px;
+                                    width: 80%;
                                     align-items: center;
-                                    width: 100%;
-                                    div.hae-image-wrapper {
+                                    margin: 0 auto;
+                                    padding: 10% 0 8% 0;
+                                    div.iconrow {
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
-                                        width: 15%;
-                                        height: 120px;
-                                        margin-right: 40px;
-                                        img {
+                                        width: 100%;
+                                        div.hae-image-wrapper {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: 120px;
+                                            margin-right: 40px;
+                                            width: 10%;
+                                            img {
 
+                                            }
                                         }
-                                    }
-                                    div.hae-copy-wrapper {
-                                        display: flex;
-                                        width: 85%;
-                                        p.pv-p {
+                                        div.hae-copy-wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 80%;
+                                            p.pv-p {
                                             display: block;
                                             width: 100%;
                                             height: auto;
+                                            }
+                                            ul {
+                                                margin: 6px 0 0 0;
+                                                li {
+                                                    padding-bottom: 2%;
+                                                    sup.pv-sup {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div#icon-row1 {
+                                        img.hae-icon.one {
+
+                                        }
+                                        p.pv-p {
+
+                                        }
+                                    }
+                                    div#icon-row2 {
+                                        img.hae-icon.two {
+
+                                        }
+                                        p.pv-p {
+
+                                        }
+                                    }
+                                    div#icon-row3 {
+                                        img.hae-icon.three {
+
+                                        }
+                                        p.pv-p {
+
+                                        }
+                                    }
+                                    div#icon-row4 {
+                                        img.hae-icon.four {
+
+                                        }
+                                        p.pv-p {
+
                                         }
                                     }
                                 }
-                                div#icon-row1 {
-                                    img.hae-icon.one {
-
-                                    }
-                                    p.pv-p {
-
-                                    }
-                                }
-                                div#icon-row2 {
-                                    img.hae-icon.two {
-
-                                    }
-                                    p.pv-p {
-
-                                    }
-                                }
-                                div#icon-row3 {
-                                    img.hae-icon.three {
-
-                                    }
-                                    p.pv-p {
-
-                                    }
-                                }
-                                div#icon-row4 {
-                                    img.hae-icon.four {
-
-                                    }
-                                    p.pv-p {
-
-                                    }
-                                }
-                                div#icon-row5 {
-                                    img.hae-icon.five {
-
-                                    }
-                                    p.pv-p {
-
-                                    }
+                                a.pv-btn {
+                                    margin-top: 6%;
                                 }
                             }
                         }
-                    }
-                    a.pv-btn {
                     }
                 }
             }
@@ -850,10 +807,10 @@ body.pharvaris {
                 display: none;
                 &.alt {
                     top: 0;
-                    min-height: calc(100vw / 2.75);
+                     min-height: 70vw;
                     &.two {
                         top: 0;
-
+                        min-height: calc(100vw / 2.75);
                     }
                 }
             }
@@ -861,7 +818,6 @@ body.pharvaris {
                 display: block;
                 background-color: $ultra-grey;
                 top: 0;
-                /* aspect-ratio: 512 / 215; */
                 & div.not-patient {
                     position: relative;
                     width: 100%;
@@ -1069,141 +1025,86 @@ body.pharvaris {
         }
         div.pv-row.banner-section {
             div.edgtf-full-section-inner {
-
                 div.pv-col1.banner-col {
-                    div.banner-wrapper-jennifer {
-
-                    }
-                    div.banner-wrapper {
-                        &.mobile {
-
-                        }
-                        div.wpb_wrapper {
-
-                            div.banner-img-container {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                &.jennifer {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        div.pv-row.facts-section {
-
-            div.edgtf-full-section-inner {
-
-                div.pv-col1.ripple-image {
                     div.vc_column-inner {
+                        padding: 0;
+                        section.facts-box-section {
+                            div.red-bow-wrapper {
+                                max-width: 225px;
+                                div.red-bow {
+                                    max-width: 225px;
+                                    height: 76px;
+                                    h2.pv-h2.center.white {
 
-                        div.wpb_wrapper {
-                            div.hae-white-box-image {
-                                figure.wpb_wrapper {
-
-                                    div.vc_single_image-wrapper {
-
-                                        img.vc_single_image-img {
-
-                                        }
                                     }
                                 }
                             }
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.top {
+                            div.facts-box-wrapper {
+                                div.white-facts-box {
+                                    height: 100%;
+                                    padding: 4% 0;
+                                    div#hae-facts-icon-row {
+                                        div.iconrow {
+                                            flex-direction: column;
+                                            div.hae-image-wrapper {
+                                                margin-right: 0;
+                                                width: 100%;
+                                                img {
 
-                    div#hae-white-box-top {
-                        img.vc_single_image-img {
+                                                }
+                                            }
+                                            div.hae-copy-wrapper {
+                                                width: 100%;
+                                                p.pv-p {
+                                                    text-align: center;
+                                                }
+                                                ul {
+                                                    li {
+                                                        sup.pv-sup {
 
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.bottom {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#icon-row1 {
+                                            img.hae-icon.one {
 
-                    div#hae-white-box-bottom {
-                        img.vc_single_image-img {
-
-                        }
-                    }
-                }
-                div.pv-col1.facts-icon-col {
-
-                    div.wpb_wrapper {
-
-                        div.wpb_text_column.wpb_content_element {
-
-                            div.wpb_wrapper {
-
-                                div#hae-facts-icon-row {
-
-                                    div.iconrow {
-
-                                        div.hae-image-wrapper {
-
-                                            img {
+                                            }
+                                            p.pv-p {
 
                                             }
                                         }
-                                        div.hae-copy-wrapper {
+                                        div#icon-row2 {
+                                            img.hae-icon.two {
 
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row3 {
+                                            img.hae-icon.three {
+
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row4 {
+                                            img.hae-icon.four {
+
+                                            }
                                             p.pv-p {
 
                                             }
                                         }
                                     }
-                                    div#icon-row1 {
-                                        img.hae-icon.one {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row2 {
-                                        img.hae-icon.two {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row3 {
-                                        img.hae-icon.three {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row4 {
-                                        img.hae-icon.four {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row5 {
-                                        img.hae-icon.five {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
+                                    a.pv-btn {
+                                        margin-top: 10%;
                                     }
                                 }
                             }
-                        }
-                        a.pv-btn {
                         }
                     }
                 }
@@ -1262,9 +1163,10 @@ body.pharvaris {
                 display: none;
                     &.alt {
                         top: 0;
-                        min-height: calc(100vw / 2);
+                        min-height: 110vw;
                         &.two {
                             top: 0;
+                            min-height: calc(100vw / 2);
                         }
                     }
             }
@@ -1286,7 +1188,6 @@ body.pharvaris {
                 width: 100vw;
                 background-color: $ultra-grey;
                 margin-top: 0;
-                /* aspect-ratio: 288 / 185; */
                 & div.not-patient {
                     position: relative;
                     width: 100%;
@@ -1358,7 +1259,7 @@ body.pharvaris {
             }
         }
         h3, h3.pv-h3 {
-
+            line-height: 40px;
             &.form {
 
             }
@@ -1407,7 +1308,12 @@ body.pharvaris {
             }
         }
         p, p.pv-p {
-
+        @include regular($poppins);
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        margin: 0;
+        letter-spacing: -0.5px;
             &.footnote-2 {
 
             }
@@ -1490,195 +1396,98 @@ body.pharvaris {
         }
         div.pv-row.banner-section {
             div.edgtf-full-section-inner {
-
                 div.pv-col1.banner-col {
-                    div.banner-wrapper-jennifer {
-
-                    }
-                    div.banner-wrapper {
-                        /* display: none; */
-                        &.mobile {
-                            display: block;
-                            width: 100%;
-                            div.wpb_wrapper {
-                                width: 100%;
-                                margin: 0 auto;
-                                text-align: center;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                div.banner-img-container {
-                                    background-image: url("/wp-content/themes/conall-child/images/hae-facts-red-tie-banner-225x76.svg");
-                                    background-position: center center;
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                    margin: 0 auto;
-                                    padding: 0;
-                                    width: min(225px, 80%);
-                                    max-height: 75px;
-                                    height: 80%;
-                                        h2.pv-h2.center.white {
-                                            padding-top: 9.5%;
-                                            padding-bottom: 9.5%;
-                                            text-transform: uppercase;
-                                        }
-                                    &.jennifer {
-
-                                        h2.pv-h2.center.white {
-                                            text-transform: uppercase;
-                                            padding-top: 7.8%;
-                                            padding-bottom: 7.8%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        div.wpb_wrapper {
-
-                            div.banner-img-container {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                &.jennifer {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        div.pv-row.facts-section {
-
-            div.edgtf-full-section-inner {
-
-                div.pv-col1.ripple-image {
                     div.vc_column-inner {
+                        padding: 0;
+                        section.facts-box-section {
+                            div.red-bow-wrapper {
+                                max-width: 225px;
+                                &.jennifer {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
+                                div.red-bow {
+                                    max-width: 225px;
+                                    height: 76px;
+                                    h2.pv-h2.center.white {
 
-                        div.wpb_wrapper {
-                            div.hae-white-box-image {
-                                display: none;
-                                figure.wpb_wrapper {
-
-                                    div.vc_single_image-wrapper {
-
-                                        img.vc_single_image-img {
-
-                                        }
+                                    }
+                                    &.jennifer {
+                                        max-width: 100%;
+                                        height: 140px;
                                     }
                                 }
-                                &.mobile {
-                                    display: block;
-                                }
                             }
-                            div#hae-white-box-top-mob {
-                                display: block;
-                                img.vc_single_image-img {
-                                    width: 100%;
-                                }
-                            }
-                            div#hae-white-box-bottom-mob {
-                                display: block;
-                                img.vc_single_image-img {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.top {
+                            div.facts-box-wrapper {
+                                div.white-facts-box {
+                                    height: 100%;
+                                    padding: 8% 0;
+                                    div#hae-facts-icon-row {
+                                        padding: 8% 0 4% 0;
+                                        div.iconrow {
+                                            flex-direction: column;
+                                            margin-bottom: 8%;
+                                            div.hae-image-wrapper {
+                                                margin-right: 0;
+                                                width: 100%;
+                                                height: 80px;
+                                                margin-bottom: 5%;
+                                                img {
 
-                    div#hae-white-box-top {
-                        img.vc_single_image-img {
+                                                }
+                                            }
+                                            div.hae-copy-wrapper {
+                                                width: 100%;
+                                                p.pv-p {
+                                                    text-align: center;
+                                                }
+                                                ul {
+                                                    li {
+                                                        sup.pv-sup {
 
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.bottom {
-
-                    div#hae-white-box-bottom {
-                        img.vc_single_image-img {
-
-                        }
-                    }
-                }
-                div.pv-col1.facts-icon-col {
-
-                    div.wpb_wrapper {
-
-                        div.wpb_text_column.wpb_content_element {
-
-                            div.wpb_wrapper {
-
-                                div#hae-facts-icon-row {
-
-                                    div.iconrow {
-                                        flex-direction: column;
-                                        div.hae-image-wrapper {
-                                            margin-right: 0;
-                                            img {
-                                                max-width: 130%;
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
-                                        div.hae-copy-wrapper {
-                                            text-align: center;
+                                        div#icon-row1 {
+                                            img.hae-icon.one {
+
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row2 {
+                                            img.hae-icon.two {
+
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row3 {
+                                            img.hae-icon.three {
+
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row4 {
+                                            img.hae-icon.four {
+
+                                            }
                                             p.pv-p {
 
                                             }
                                         }
                                     }
-                                    div#icon-row1 {
-                                        img.hae-icon.one {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row2 {
-                                        img.hae-icon.two {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row3 {
-                                        img.hae-icon.three {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row4 {
-                                        img.hae-icon.four {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row5 {
-                                        img.hae-icon.five {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
+                                    a.pv-btn {
+                                        margin-top: 5%;
                                     }
                                 }
                             }
-                        }
-                        a.pv-btn {
                         }
                     }
                 }
@@ -1707,7 +1516,7 @@ body.pharvaris {
         div.pv-row {
             div.edgtf-full-section-inner {
                 max-width: 500px;
-                width: 90%;
+                width: 80%;
             }
             &.references {
                 padding-top: 12%;
@@ -1735,10 +1544,9 @@ body.pharvaris {
             &.desktop {
                 display: none;
                     &.alt {
-                        /* height: 20vh; */
-                         min-height: calc(100vw / 1.75);
+                         min-height: 110vw;
                     &.two {
-
+                        min-height: calc(100vw / 1.75);
                     }
                 }
             }
@@ -1761,16 +1569,9 @@ body.pharvaris {
 
                 background-color: $ultra-grey;
                 margin-top: 0;
-               /*  aspect-ratio: 288 / 185; */
                 & div.not-patient {
-                    position: relative;
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    bottom: 75px;
-                    padding-left: 72vw;
+                    padding-left: 65vw;
                     p.pv-p {
-                        color: $white;
                     }
                 }
             }
@@ -1834,10 +1635,11 @@ body.pharvaris {
             }
         }
         h3, h3.pv-h3 {
-
+            font-size: 28px;
+            line-height: 32px;
             &.form {
                 font-size: 24px;
-                line-height: 36px;
+                line-height: 28px;
             }
             &.red {
 
@@ -1966,151 +1768,87 @@ body.pharvaris {
         }
         div.pv-row.banner-section {
             div.edgtf-full-section-inner {
-
                 div.pv-col1.banner-col {
-                    div.banner-wrapper-jennifer {
-
-                    }
-                    div.banner-wrapper {
-                        &.mobile {
-
-                        }
-                        div.wpb_wrapper {
-
-                            div.banner-img-container {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                &.jennifer {
-
-                                    h2.pv-h2.center.white {
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        div.pv-row.facts-section {
-
-            div.edgtf-full-section-inner {
-
-                div.pv-col1.ripple-image {
                     div.vc_column-inner {
+                        padding: 0;
+                        section.facts-box-section {
+                            div.red-bow-wrapper {
+                                max-width: 225px;
+                                div.red-bow {
+                                    max-width: 225px;
+                                    height: 76px;
+                                    h2.pv-h2.center.white {
 
-                        div.wpb_wrapper {
-                            div.hae-white-box-image {
-                                display: none;
-                                figure.wpb_wrapper {
-
-                                    div.vc_single_image-wrapper {
-
-                                        img.vc_single_image-img {
-
-                                        }
                                     }
                                 }
-                                &.mobile {
-                                    display: block;
-                                }
                             }
-                            div#hae-white-box-top-mob {
+                            div.facts-box-wrapper {
+                                div.white-facts-box {
+                                    height: 100%;
+                                    padding: 8% 0;
+                                    div#hae-facts-icon-row {
+                                        padding: 15% 0 15% 0;
+                                        div.iconrow {
+                                            flex-direction: column;
+                                            div.hae-image-wrapper {
+                                                margin-right: 0;
+                                                width: 100%;
+                                                img {
 
-                            }
-                            div#hae-white-box-bottom-mob {
+                                                }
+                                            }
+                                            div.hae-copy-wrapper {
+                                                width: 100%;
+                                                p.pv-p {
+                                                    text-align: center;
+                                                }
+                                                ul {
+                                                    li {
+                                                        sup.pv-sup {
 
-                            }
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.top {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#icon-row1 {
+                                            img.hae-icon.one {
 
-                    div#hae-white-box-top {
-                        img.vc_single_image-img {
-
-                        }
-                    }
-                }
-                div.pv-col1.ripple-image.bottom {
-
-                    div#hae-white-box-bottom {
-                        img.vc_single_image-img {
-
-                        }
-                    }
-                }
-                div.pv-col1.facts-icon-col {
-
-                    div.wpb_wrapper {
-
-                        div.wpb_text_column.wpb_content_element {
-
-                            div.wpb_wrapper {
-
-                                div#hae-facts-icon-row {
-
-                                    div.iconrow {
-
-                                        div.hae-image-wrapper {
-
-                                            img {
+                                            }
+                                            p.pv-p {
 
                                             }
                                         }
-                                        div.hae-copy-wrapper {
+                                        div#icon-row2 {
+                                            img.hae-icon.two {
 
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row3 {
+                                            img.hae-icon.three {
+
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row4 {
+                                            img.hae-icon.four {
+
+                                            }
                                             p.pv-p {
 
                                             }
                                         }
                                     }
-                                    div#icon-row1 {
-                                        img.hae-icon.one {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row2 {
-                                        img.hae-icon.two {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row3 {
-                                        img.hae-icon.three {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row4 {
-                                        img.hae-icon.four {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
-                                    }
-                                    div#icon-row5 {
-                                        img.hae-icon.five {
-
-                                        }
-                                        p.pv-p {
-
-                                        }
+                                    a.pv-btn {
+                                        margin-top: 10%;
                                     }
                                 }
                             }
-                        }
-                        a.pv-btn {
                         }
                     }
                 }
