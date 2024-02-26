@@ -1,1 +1,0 @@
-!function(){"use strict";jQuery(function(){jQuery(".elegant-button-position-aware").on("mouseenter",function(a){var b=jQuery(this).offset(),c=a.pageX-b.left,d=a.pageY-b.top;jQuery(this).find("span").css({top:d,left:c})}).on("mouseout",function(a){var b=jQuery(this).offset(),c=a.pageX-b.left,d=a.pageY-b.top;jQuery(this).find("span").css({top:d,left:c})})})}(jQuery);
