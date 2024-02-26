@@ -129,17 +129,19 @@ body.pharvaris {
             nav.edgtf-mobile-nav {
                 background-color: $dk-grey;
                 border: none;
-                padding-bottom: 35px;
+                height: calc(100vh - 106px);
+                background-position: bottom;
                 div.edgtf-grid {
                     ul {
                         li.menu-item.menu-item-type-post_type.menu-item-object-page {
                             a {
                                 color: $white;
                                 text-transform: uppercase;
-                                font-size: 15px;
-                                line-height: 21px;
-                                border-bottom: 1px solid $white;
-                                padding: 25px 0;
+                                font-size: 4.3vh;
+                                line-height: 4.3vh;
+                                border-bottom: none;
+                                padding: 0;
+                                text-align: center;
                                 span {
 
                                 }
@@ -152,6 +154,48 @@ body.pharvaris {
     }
 }
 @media all and (max-width: 576px) {
+    body.pharvaris {
+        div.edgtf-mobile-header-inner {
+            nav.edgtf-mobile-nav {
+                background-image: url("/wp-content/themes/conall-child/images/mobile-nav-bkgnd-768x1644.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
+                border: none;
+                height: calc(100vh - 130px);
+                background-position: bottom;
+                div.edgtf-grid {
+                    ul#menu-deflate-primary-navigation-1 {
+                        display: flex;
+                        flex-direction: column;
+                        height: 97%;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 28%;
+                        padding-bottom: 28%;
+                        max-width: 400px;
+                        margin: 0 auto;
+                        li.menu-item.menu-item-type-post_type.menu-item-object-page {
+                            width: 100%;
+                            a {
+                                color: $white;
+                                font-weight: 500 !important;
+                                text-transform: uppercase;
+                                font-size: 3.5vh;
+                                line-height: 3.5vh;
+                                border-bottom: none;
+                                padding: 0;
+                                text-align: center;
+                                span {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }

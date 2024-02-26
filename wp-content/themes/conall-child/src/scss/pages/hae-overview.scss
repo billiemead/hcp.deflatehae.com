@@ -10,23 +10,19 @@ body.haeoverview-page {
                  div.edgtf-content-inner {
                     div.wpb-content-wrapper {
                         div#overview-cta-row {
-                            display: none;
+
                         }
                         div#overview-hero-row {
-                            display: block;
-                            z-index: 101;
-                            left: 50%;
-                            margin-left: -50vw;
-                            margin-right: -50vw;
-                            max-width: 100vw;
-                            position: relative;
-                            right: 50%;
-                            width: 100vw;
-                            top: 30px;
-                            div.edgtf-full-section-inner {
-                                max-width: 100%;
-                                width: 100%;
-                                div#overview-hero-image-col {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
+                            display: flex;
+                            & > div.edgtf-full-section-inner {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 80%;
+                                div#overview-hero-col {
+
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
@@ -35,52 +31,22 @@ body.haeoverview-page {
                                                 figure.wpb_wrapper {
                                                     width: 100%;
                                                     div.vc_single_image-wrapper {
-                                                        width: 100%;
-                                                        img {
-                                                            width: 100%;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div.pv-row.inner {
-                                    display: flex;
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    margin: 0;
-                                    div.edgtf-full-section-inner {
-                                        display: flex;
-                                        flex-direction: column;
-                                        width: 80%;
-                                        max-width: 1230px;
-                                        margin: 0 auto;
-                                        justify-content: center;
-                                        align-items: center;
-                                        padding-bottom: 0;
-                                        padding-top: 6%;
-                                        div.pv-col1.center {
-                                            float: unset;
-                                            &.top {
-                                                max-width: 910px;
-                                            }
-                                            div#hero-logo {
-                                                text-align: center;
-                                                margin-bottom: 5.5% !important;
-                                                figure.wpb_wrapper {
-                                                    div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
 
                                                         }
                                                     }
                                                 }
                                             }
-                                            div.hero-subheading {
-                                                h2.pv-h2 {
+                                            div#hero-logo-alt-tablet {
+                                                display: none;
+                                            }
+                                            div#hero-logo-alt-mobile {
+                                                display: none;
+                                            }
+                                            div#hero-subheading {
+                                                max-width: 90%;
+                                                margin: 0 auto;
+                                                h2.pv-h2.center.yellow.hero-subheading {
                                                     font-size: 1.55vw;
                                                     line-height: 2.1vw;
                                                     sup.pv-sup {
@@ -100,6 +66,7 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center center;
+                            margin-top: -4%;
                             div.edgtf-full-section-inner {
                                 max-width: 1430px;
 
@@ -132,13 +99,125 @@ body.haeoverview-page {
                                     }
                                     &.bottom {
                                         div.pv-woman-hotspot {
-                                            transform: translateX(100px);
+                                            &.desktop {
+                                                display: block;
+                                                transform: translateX(100px);
+                                            }
+                                            &.tablet {
+                                                display: none;
+                                            }
+                                            &.mobile {
+                                                display: none;
+                                            }
+
+                                        }
+                                        div.not-patient {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            position: absolute;
+                                            bottom: 80px;
+                                            text-align: right;
+                                            width: 100%;
                                         }
                                     }
                                 }
+                                div.pv-col1.bottom {
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+
+                                            div#show-all-tips {
+                                                display: none;
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 80%;
+                                                padding: 10% 0% 0 10%;
+                                                div.all-tooltips {
+                                                    div.tips-row {
+                                                        display: flex;
+                                                        width: 100%;
+                                                        padding-bottom: 8% !important;
+                                                        div.tipsbox {
+                                                            ul.pv-list.hotspot {
+                                                                li.pv-list-item.hotspot {
+                                                                    margin-top: 0;
+                                                                    margin-left: 17px;
+                                                                    padding-bottom: 9px;
+                                                                    br.line-break {
+
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#all-tips-row-1 {
+
+                                                        div#tips-box-1 {
+                                                            width: 65%;
+                                                        }
+                                                        div#tips-box-4 {
+                                                            width: 35%;
+
+                                                            ul {
+                                                                li {
+                                                                    margin-left: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#all-tips-row-2 {
+
+                                                        div#tips-box-2 {
+
+                                                            width: 65%;
+                                                            ul {
+                                                                li {
+                                                                    padding-bottom: 13px;
+                                                                    margin-left: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                        div#tips-box-5 {
+                                                            width: 35%;
+                                                            ul {
+                                                                li {
+                                                                    margin-left: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div#all-tips-row-3 {
+
+                                                        div#tips-box-3 {
+                                                            width: 65%;
+
+                                                            ul {
+                                                                li {
+                                                                    margin-left: 18px;
+                                                                }
+                                                            }
+                                                        }
+                                                        div#tips-box-6 {
+                                                            width: 35%;
+                                                            ul {
+                                                                li {
+                                                                    margin-left: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
                             }
-
-
+                        }
+                        div#hae-girl-tablet,
+                        div#hae-girl-mobile {
+                            display: none;
+                            visibility: hidden;
+                            opacity: 0;
                         }
                         div#hae-attacks-row {
                             /* height: 1356px; */
@@ -148,6 +227,7 @@ body.haeoverview-page {
                             background-position: top;
                             transform: translateY(-40px);
                             padding-top: 120px;
+                            margin-top: -4%;
                             div.edgtf-full-section-inner {
                                 div.pv-col1.top {
                                     margin-bottom: 0;
@@ -187,8 +267,7 @@ body.haeoverview-page {
                             }
                         }
                         div#overview-bradykinin-row {
-                            padding-top: 50px;
-                            /* padding-bottom: 20%; */
+                            padding-top: 4%;
                             div.edgtf-full-section-inner {
                                 max-width: 1436px;
                                 width: 80%;
@@ -246,6 +325,11 @@ body.haeoverview-page {
                                 }
                             }
                         }
+                        div#mob-triwhite-box-row {
+                            display: none;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
                         div.section-background {
                             position: relative;
                             height: 900px;
@@ -253,184 +337,41 @@ body.haeoverview-page {
                             background-repeat: no-repeat;
                             background-size: 100%;
                             background-position: center bottom;
-                            visibility: visible;
-                            div#overview-banner-section {
-                                z-index: 103;
-                                transform: translateY(-10px);
-                                margin-bottom: -60px !important;
+                            padding: 0 0 5% 0;
+                            div#overview-banner-section-new {
                                 div.edgtf-full-section-inner {
-                                    max-width: 1194px;
-                                    div.pv-col1.overview-banner-col {
-                                        div#haefacts-banner-wrapper {
-                                            width: 100%;
-                                            div.wpb_wrapper {
-                                                width: 100%;
-                                                div.haefacts-banner-img-container {
-                                                    background-image: url("/wp-content/themes/conall-child/images/hae-facts-banner-330x91.svg");
-                                                    background-repeat: no-repeat;
-                                                    background-size: contain;
-                                                    max-width: 330px;
-                                                    height: 90px;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                    margin: 0 auto;
-                                                    padding: 0;
-                                                    flex-direction: column;
-                                                    h2.pv-h2.center.white {
-                                                        
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            div#overview-facts-section {
-                                display: flex;
-                                margin: 0 auto;
-                                padding: 0;
-                                filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.45));
-                                z-index: 102;
-                                position: absolute;
-                                width: 100%;
-                                /* transform: translateY(13px); */
-                                div.edgtf-full-section-inner {
-                                    width: 80%;
-                                    max-width: 1194px;
-                                    div.pv-col1.ripple-image {
+                                    div.col1.banner-col {
                                         div.vc_column-inner {
-                                            padding: 0;
                                             div.wpb_wrapper {
-                                                div.hae-white-box-image {
-                                                    figure.wpb_wrapper {
-                                                        width: 100%;
-                                                        display: flex;
-                                                        margin: 0;
-                                                        div.vc_single_image-wrapper {
-                                                            width: 100%;
-                                                            img.vc_single_image-img {
-
+                                                div.wpb_raw_html {
+                                                    div.wpb_wrapper {
+                                                        section.facts-box-section {
+                                                            div.facts-box-wrapper {
+                                                                div.white-facts-box {
+                                                                    div#hae-facts-icon-row {
+                                                                        div.iconrow {
+                                                                            div.hae-image-wrapper {
+                                                                                height: 150px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
                                                 }
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.top {
-                                        width: 100%;
-                                        position: relative;
-                                        top: 0;
-                                        div#hae-white-box-top {
-                                            img.vc_single_image-img {
-
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.ripple-image.bottom {
-                                        width: 100%;
-                                        position: relative;
-                                        bottom: 0;
-                                        div#hae-white-box-bottom {
-                                            img.vc_single_image-img {
-
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.overview-icon-col {
-                                        background-color: $white;
-                                        /* max-width: 950px;
-                                        max-height: 355px; */
-                                        div.wpb_wrapper {
-                                            height: 100%;
-                                            div.wpb_text_column.wpb_content_element {
-                                                height: 100%;
-                                                padding-top: 7%;
-                                                padding-bottom: 4%;
-                                                div.wpb_wrapper {
-                                                    height: 100%;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    div#hae-facts-icon-row {
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        height: 100%;
-                                                        justify-content: center;
-                                                        max-width: 870px;
-                                                        width: 80%;
-                                                        align-items: center;
-                                                        div.iconrow {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            align-items: center;
-                                                            width: 100%;
-                                                            div.hae-image-wrapper {
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                                width: 15%;
-                                                                height: 150px;
-                                                                margin-right: 40px;
-                                                                img {
-
-                                                                }
-                                                            }
-                                                            div.hae-copy-wrapper {
-                                                                display: flex;
-                                                                width: 85%;
-                                                                p.pv-p {
-                                                                    display: block;
-                                                                    width: 100%;
-                                                                    height: auto;
-                                                                }
-                                                            }
-                                                        }
-                                                        div#icon-row1 {
-                                                            img.hae-icon.one {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row2 {
-                                                            img.hae-icon.two {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row3 {
-                                                            img.hae-icon.three {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                        div#icon-row4 {
-                                                            img.hae-icon.four {
-
-                                                            }
-                                                            p.pv-p {
-
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            a.pv-btn {
-                                                margin-bottom: 50px;
                                             }
                                         }
                                     }
                                 }
                             }
-
                         }
-                        div#overview-refs-section {
+                        div.templatera_shortcode {
+                            div#hae-hcp-form-section {
+                                padding-top: 7%;
+                            }
+                        }
+                        div#references-section {
                             div.refs-title {
                                 h4.h4-refs.left {
 
@@ -450,14 +391,1098 @@ body.haeoverview-page {
 }
 
 @media all and (max-width: 1024px) {
+    body.haeoverview-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#overview-cta-row {
+                            }
+                            div#overview-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#overview-hero-col {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: block;
+                                                    text-align: center;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-subheading {
+                                                    max-width: 90%;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2.center.yellow.hero-subheading {
+                                                        font-size: 30px;
+                                                        line-height: 40px;
+                                                        max-width: 688px;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-hotspot-row {
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-tablet-1024x1725.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: block;
+                                visibility: visible;
+                                opacity: 1;
+                                height: 100%;
+                                margin-top: -4%;
+                                background-position: right;
+                                div.edgtf-full-section-inner {
+                                    height: 100%;
+                                    div.pv-col1.top {
+                                        padding-top: 10%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hotspot-heading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.red {
+                                                            margin-bottom: 1%;
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .8ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.right {
+                                        width: 55%;
+                                        padding-top: 25%;
+                                        div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.left {
+                                        width: 45%;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding: 5% 0;
+                                        div.not-patient {
+                                            p.pv-p.ex-small {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#hae-girl-mobile {
+                                display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                            div#hae-attacks-row {
+                                background-image: url("/wp-content/themes/conall-child/images/hae-attacks-bkgnd-top-1920x820.svg");
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                background-position: top;
+                                margin-top: -3%;
+                                padding-top: 8%;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.top {
+                                        margin-bottom: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+                                                    &.tablet {
+                                                        text-align: center;
+                                                        display: block;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &.mobile {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.mid {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                h3.pv-h3.center {
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    max-width: 684px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                                p.pv-p.center {
+                                                    font-size: 20px;
+                                                    line-height: 30px;
+                                                    padding-top: 3%;
+                                                    padding-bottom: 4%;
+                                                    max-width: 716px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-bradykinin-row {
+                                padding-top: 4%;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    div.pv-col1.top {
+                                        padding-bottom: 5%;
+                                        padding-top: 1%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+                                                    &.mobile {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                h3.pv-h3.center {
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    max-width: 684px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                                p.pv-p.center {
+                                                    font-size: 20px;
+                                                    line-height: 30px;
+                                                    padding-top: 3%;
+                                                    padding-bottom: 4%;
+                                                    max-width: 716px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    body.haeoverview-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#overview-cta-row {
+
+                            }
+                            div#overview-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#overview-hero-col {
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: block;
+                                                    text-align: center;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-subheading {
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2.center.yellow.hero-subheading {
+                                                    font-size: 4.8vw;
+                                                    line-height: 6.25vw;
+
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-hotspot-row {
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                            div#hae-girl-mobile {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-mobile-768x2351.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: block;
+                                visibility: visible;
+                                opacity: 1;
+                                height: 100%;
+                                min-height: 2000px;
+                                background-position-y: -16px;
+                                top: 0px;
+                                margin-top: -10%;
+                                    div.pv-col1.top {
+                                        padding-top: 25%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hotspot-heading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.red {
+                                                            margin-bottom: 1%;
+                                                            line-height: 40px;
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .8ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.right {
+                                        width: 60%;
+                                        padding-top: 25%;
+                                        div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.left {
+                                        width: 40%;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding: 5% 0;
+                                        div.not-patient {
+                                            p.pv-p.ex-small {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                            }
+                            div#hae-attacks-row {
+                                background-image: none;
+                                background-color: $backgnd-grey;
+                                padding-top: 12%;
+                                padding-bottom: 0;
+                                margin-top: 0;
+                                top: 0;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.top {
+                                        margin-bottom: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+                                                    display: none;
+                                                    &.tablet {
+                                                        display: none;
+                                                    }
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-bradykinin-row {
+                                padding-top: 0;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    div.pv-col1.top {
+                                        padding-bottom: 5%;
+                                        padding-top: 4%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+
+                                                    display: none;
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                h3.pv-h3.center {
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    max-width: 684px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                                p.pv-p.center {
+                                                    font-size: 20px;
+                                                    line-height: 30px;
+                                                    padding-top: 3%;
+                                                    padding-bottom: 4%;
+                                                    max-width: 716px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#mob-triwhite-box-row {
+                                display: flex;
+                                visibility: visible;
+                                opacity: 1;
+                                margin-top: 8%;
+                                margin-bottom: 8% !important;
+                                div.edgtf-full-section-inner {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    div.pv-col1.tribox-col {
+                                        div.triwhite-boxrow {
+                                            background-image: url("/wp-content/themes/conall-child/images/mob-brandyk-white-box-502x240.png");
+                                            background-size: 100% 101%;
+                                            background-repeat: no-repeat;
+                                            min-height: 240px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-position: center center;
+                                            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                            div.brandyk-icon {
+
+                                            }
+                                            div.brandyk-copy {
+                                                h4.h4-brandy-red {
+                                                    padding-top: 2%;
+                                                    sup.pv-sup {
+                                                        font-size: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-1 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            top: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-2 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            bottom: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--1 {
+                                            margin-bottom: 3.5% !important;
+                                            div.brandyk-copy.one {
+
+                                            }
+                                            div.brandyk-icon.one {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+
+                                        div#triwhite-box-row--2 {
+
+                                            margin-bottom: 3.5% !important;
+                                            div.brandyk-copy.two {
+
+                                            }
+                                            div.brandyk-icon.two {
+                                                img {
+                                                    transform: rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--3 {
+                                            div.brandyk-copy.three {
+
+                                            }
+                                            div.brandyk-icon.three {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                }
+                            }
+                            div.refs-paragraph {
+                                p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+    body.haeoverview-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#hae-girl-mobile div.pv-col1.left {
+        float: left;
+        width: 50%;
+    }
+    body.haeoverview-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#hae-girl-mobile div.pv-col1.right {
+        float: left;
+        width: 50%;
+    }
 }
 @media all and (max-width: 480px) {
+    body.haeoverview-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#overview-cta-row {
+
+                            }
+                            div#overview-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-overview-hero-bkgnd-576x762.svg");
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#overview-hero-col {
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: block;
+                                                    text-align: center;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+                                                                max-width: 80%;
+                                                                margin: 0 auto;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-subheading {
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
+                                                        font-size: 4.8vw;
+                                                        line-height: 6.25vw;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-hotspot-row {
+                                display: none;
+                            }
+                            div#hae-girl-tablet {
+                                display: none;
+                            }
+                            div#hae-girl-mobile {
+                                background-image: url("/wp-content/themes/conall-child/images/girl-mobile-375x1925.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: block;
+                                 height: 100%;
+                                 min-height: 100%;
+                                 background-position-y: -16px;
+                                 background-position: center top;
+                                 padding-bottom: 0;
+                                    div.pv-col1.top {
+                                        padding-top: 30%;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#hotspot-heading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.red {
+                                                            margin-bottom: 1%;
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .8ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.right {
+                                        padding-top: 35%;
+                                        width: 100%;
+                                        margin: 0 auto;
+                                        div.vc_column-inner {
+                                            height: 100%;
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                height: 100%;
+                                                div#static-hovers {
+                                                    height: 100%;
+                                                    div.wpb_wrapper {
+                                                        height: 100%;
+                                                        div.static-tooltips {
+                                                            height: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            margin-top: -28%;
+                                                            div.pv-hotspot-box {
+                                                                padding-bottom: 5%;
+                                                                div.pv-hotspot-box-wrapper {
+
+                                                                    h3.pv-h3.tip-title {
+                                                                        sup.pv-sup {
+
+                                                                        }
+                                                                    }
+                                                                    ul.pv-list.hotspot {
+                                                                        li.pv-list-item.hotspot {
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.left {
+                                        width: 40%;
+                                        display: none;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                    }
+                                    div.pv-col1.bottom {
+                                        padding: 10% 0;
+                                        div.not-patient {
+                                            p {
+                                                text-align: center;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                    }
+                            }
+                            div#hae-attacks-row {
+                                background-image: none;
+                                background-color: $backgnd-grey;
+                                padding-top: 12%;
+                                padding-bottom: 0;
+                                margin-top: 0;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1.top {
+                                        margin-bottom: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+                                                    display: none;
+                                                    &.tablet {
+                                                        display: none;
+                                                    }
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+
+                                        }
+                                    }
+                                }
+                            }
+                            div#overview-bradykinin-row {
+                                padding-top: 0;
+                                div.edgtf-full-section-inner {
+                                    max-width: 1436px;
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    div.pv-col1.top {
+                                        padding-bottom: 5%;
+                                        padding-top: 4%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.hae-subheading {
+                                                    div.wpb_wrapper {
+                                                        h3.pv-h3.center.form {
+                                                            sup.pv-sup {
+                                                                font-size: 65%;
+                                                                bottom: .9ex;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hae-heading-logo {
+
+                                                    display: none;
+                                                    &.mobile {
+                                                        display: block;
+                                                        text-align: center;
+                                                        figure.wpb_wrapper.vc_figure {
+                                                            div.vc_single_image-wrapper {
+                                                                img.vc_single_image-img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                h3.pv-h3.center {
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    max-width: 684px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                                p.pv-p.center {
+                                                    font-size: 20px;
+                                                    line-height: 30px;
+                                                    padding-top: 3%;
+                                                    padding-bottom: 4%;
+                                                    max-width: 716px;
+                                                    margin: 0 auto;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#mob-triwhite-box-row {
+                                div.edgtf-full-section-inner {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    div.pv-col1.tribox-col {
+                                        div.triwhite-boxrow {
+                                            background-image: url("/wp-content/themes/conall-child/images/mob-brandyk-white-box-502x240.png");
+                                            background-size: 100% 101%;
+                                            background-repeat: no-repeat;
+                                            min-height: 240px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-position: center center;
+                                            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+                                            div.brandyk-icon {
+
+                                            }
+                                            div.brandyk-copy {
+                                                h4.h4-brandy-red {
+                                                    padding-top: 2%;
+                                                    sup.pv-sup {
+                                                        font-size: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-1 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            top: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#yellow-dot-2 {
+                                            position: absolute;
+                                            z-index: 1;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            left: 0;
+                                            right: 0;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 58px;
+                                            bottom: 219px;
+                                            figure.wpb_wrapper{
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--1 {
+                                            margin-bottom: 2.5% !important;
+                                            div.brandyk-copy.one {
+
+                                            }
+                                            div.brandyk-icon.one {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+
+                                        div#triwhite-box-row--2 {
+
+                                            margin-bottom: 2.5% !important;
+                                            div.brandyk-copy.two {
+
+                                            }
+                                            div.brandyk-icon.two {
+                                                img {
+                                                    transform: rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                        div#triwhite-box-row--3 {
+                                            div.brandyk-copy.three {
+
+                                            }
+                                            div.brandyk-icon.three {
+                                                img {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 320px) {
 }

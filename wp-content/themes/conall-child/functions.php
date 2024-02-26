@@ -309,14 +309,15 @@ add_action('wp_head', 'hubspot_javascript');
 function marker_io()
 {
     ?>
-        <script>
+       <script>
             window.markerConfig = {
-                project: '659cad079ff6d511940ecd54',
-                source: 'snippet'
-            };
+            project: '65dc8e91bd678b326e4a12c4',
+            source: 'snippet'
+        };
 
-            !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+        !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
         </script>
+
     <?php
 }
 add_action('wp_head', 'marker_io');
@@ -327,7 +328,7 @@ function homepage_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#home-tradeoff-row, #hae-banner-section, #hae-facts-section");
+            const divs = document.querySelectorAll("#home-tradeoff-row, #hae-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");
@@ -349,7 +350,7 @@ function overview_section() {
         ?>
         <script>
             //Select the elements you want inside
-            const divs = document.querySelectorAll("#overview-banner-section, #overview-facts-section");
+            const divs = document.querySelectorAll("#overview-banner-section-new");
 
             // create the div to wrap your elements
             const wrapper = document.createElement("div");
@@ -365,3 +366,116 @@ function overview_section() {
     }
 }
 add_action( 'wp_footer', 'overview_section' );
+
+function living_hae_section() {
+    if (is_page('living-with-hae')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#jennifer-banner-section-new");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background-wrapper');
+            wrapper.setAttribute('id','hae-section-wrapper');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+
+        </script>
+
+        <script>
+            const divs2 = document.querySelectorAll("#hae-section-wrapper");
+            const wrapper2 = document.createElement("div");
+            wrapper2.classList.add('section-background');
+            divs2[0].before(wrapper2);
+            divs2.forEach(div => wrapper2.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'living_hae_section' );
+
+function treatment_section() {
+    if (is_page('treatment-burden')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#treatment-banner-section-new");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.classList.add('section-background-wrapper');
+            wrapper.setAttribute('id','treatment-section-wrapper');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+
+        </script>
+
+        <script>
+            const divs2 = document.querySelectorAll("#treatment-section-wrapper");
+            const wrapper2 = document.createElement("div");
+            wrapper2.classList.add('section-background');
+            divs2[0].before(wrapper2);
+            divs2.forEach(div => wrapper2.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'treatment_section' );
+
+function balloon_animation() {
+    if (is_page('treatment-burden') ) {
+        ?>
+            <script type="text/javascript">
+                    // if (window.innerWidth < 1075) {
+                    if (screen.width >= 1025) {
+                        var head    = document.getElementsByTagName('head')[0];
+                        var script  = document.createElement('script');
+                        script.type = 'module';
+                        script.src  = '/wp-content/themes/conall-child/js/balloon_desktop.js';
+                        head.appendChild(script);
+                    }
+                    if ((screen.width >= 769) && (screen.width <= 1024)) {
+                        var head    = document.getElementsByTagName('head')[0];
+                        var script  = document.createElement('script');
+                        script.type = 'module';
+                        script.src  = '/wp-content/themes/conall-child/js/balloon_tablet.js';
+                        head.appendChild(script);
+                    }
+            </script>
+        <?php
+    }
+}
+add_action('wp_head', 'balloon_animation');
+
+
+function glossary_section() {
+    if (is_page('community-support')) {
+        ?>
+        <script>
+            //Select the elements you want inside
+            const divs = document.querySelectorAll("#community-glossary-row");
+
+            // create the div to wrap your elements
+            const wrapper = document.createElement("div");
+            wrapper.setAttribute('id','community-glossary-bkgnd');
+            wrapper.classList.add('section-background');
+
+            // add it to the DOM
+            divs[0].before(wrapper);
+
+            // insert the elements into the newly created div
+            divs.forEach(div => wrapper.append(div));
+        </script>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'glossary_section' );

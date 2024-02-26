@@ -155,6 +155,166 @@ body.pharvaris {
 @media all and (max-width: 768px) {
 }
 @media all and (max-width: 576px) {
+        @mixin pv-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    width: auto;
+    border: 2px solid $yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &.w-128 {
+            width: 100%;
+            max-width: 100%;
+        }
+        &.w-152 {
+            max-width: 100%;
+            width: 100%;
+        }
+        &.w-176 {
+            max-width: 100%;
+            width: 100%;
+        }
+        &.w-232 {
+            max-width: 100%;
+            width: 100%;
+        }
+        &.w-264 {
+            max-width: 100%;
+            width: 100%;
+        }
+        &.w-292 {
+            width: 100%;
+            max-width: 100%;
+        }
+
+    }
+
+    body.pharvaris {
+        button,
+        .pv-btn,
+        .btn {
+            @include pv-btn();
+        }
+
+        a#wt-cli-accept-btn {
+            @include pv-btn();
+            background-color: $white !important;
+            border-color: $white !important;
+            color: $dk-grey !important
+        }
+        a#wt-cli-accept-btn:hover {
+            background-color: $yellow !important;
+            border-color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-accept-btn {
+            width: 120px !important;
+            margin: unset;
+            height: 40px;
+            font-size: 16px;
+            line-height: 16px !important;
+        }
+        a#wt-cli-settings-btn {
+            @include bold($poppins);
+            text-decoration: underline !important;
+            border: none !important;
+            width: 192px !important;
+            color: $white !important;
+            font-size: 16px;
+            line-height: 16px !important;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        a#wt-cli-settings-btn:hover {
+            color: $yellow !important;
+            transition: all 0.5s ease-in-out;
+        }
+        a#edgtf-back-to-top {
+            width: 40px;
+            right: 5.5%;
+            bottom: 77px;
+            & > span {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                font-size: 15px;
+                text-align: center;
+                color: $white;
+                background-color: $yellow;
+                border: 3px solid $white;
+                border-radius: 40px;
+                transition: all 0.75s ease-in-out;
+            }
+            span.edgtf-icon-stack {
+                width: 40px;
+            }
+        }
+        div.pv-cta-row {
+            z-index: 200;
+            div#stay-informed-cta {
+                position: relative;
+                div.cta-container {
+                    width:100%;
+                    height:30vw;
+                    margin:0 auto;
+                    border:none;
+                    position: absolute;
+                    a.cta-hero-button {
+
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+            &.alt {
+                div#stay-informed-cta {
+                    div.cta-container {
+                        a.cta-hero-button {
+                            top: 200px;
+                            height: 32px;
+                            font-size: 15px;
+                            width: 134px;
+                            line-height: 15px;
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                &.two {
+                    div#stay-informed-cta {
+                        position: relative;
+                        div.cta-container {
+                            a.cta-hero-button {
+
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }

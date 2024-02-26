@@ -1,0 +1,125 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 EXIT START ******* */
+
+div.jAlert.animated.ja_default {
+    background-color: $white;
+    width: 781px;
+    height: 316px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    clip-path: polygon( 100% 99.713%,100% 0%,100% 0%,97.595% 0.548%,94.442% 1.059%,90.598% 1.53%,86.124% 1.954%,81.077% 2.327%,75.515% 2.643%,69.499% 2.898%,63.087% 3.087%,56.337% 3.204%,49.308% 3.244%,49.308% 3.244%,42.7% 3.209%,36.335% 3.105%,30.262% 2.938%,24.53% 2.711%,19.186% 2.429%,14.28% 2.096%,9.86% 1.716%,5.974% 1.294%,2.672% 0.833%,0% 0.338%,0% 100.003%,0% 100.003%,2.428% 99.46%,5.595% 98.953%,9.443% 98.486%,13.914% 98.065%,18.951% 97.695%,24.495% 97.381%,30.49% 97.127%,36.876% 96.94%,43.596% 96.824%,50.593% 96.784%,50.593% 96.784%,57.229% 96.82%,63.619% 96.925%,69.714% 97.093%,75.466% 97.322%,80.824% 97.607%,85.74% 97.942%,90.165% 98.325%,94.049% 98.751%,97.344% 99.215%,100% 99.713% );
+    div {
+        div.closejAlert.ja_close.ja_close_round {
+            display: none;
+        }
+        div.ja_title {
+            padding: 0;
+            border-radius: 0% !important;
+            max-width: 550px;
+            margin: 0 auto;
+            margin-bottom: 2%;
+            div {
+                 @include bold($poppins);
+                 color: $black;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 0% !important;
+                padding: 0;
+                margin: 0
+            }
+        }
+        div.ja_body {
+            padding: 0;
+            border-radius: 0% !important;
+            max-width: 550px;
+            margin: 0 auto;
+            p {
+                 @include regular($poppins);
+                 color: $black;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: center
+            }
+            div.ja_btn_wrap.optBack {
+
+                background: #fff;
+                margin: 0;
+                padding: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-top: 3%;
+                a.ja_btn {
+                    background-color: $yellow;
+                    color: $black;
+                    font-size: 18px;
+                    line-height: 26px;
+                    @include bold($poppins);
+                    width: 100px;
+                    height: 53px;
+                    border-radius: 33px;
+                    padding: 13px 10px;
+                    margin: 0 10px;
+                }
+                a.ja_btn.confirmBtn.ja_btn_green {
+
+                }
+                a.ja_btn.denyBtn.ja_btn_red {
+
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 980px) {
+}
+@media all and (max-width: 768px) {
+    div.jAlert.animated.ja_default {
+        width: 90%;
+        div {
+            div.closejAlert.ja_close.ja_close_round {
+
+            }
+            div.ja_title {
+
+                div {
+
+                }
+            }
+            div.ja_body {
+                max-width: 90%;
+                p {
+
+                }
+                div.ja_btn_wrap.optBack {
+
+
+                    a.ja_btn {
+
+                    }
+                    a.ja_btn.confirmBtn.ja_btn_green {
+
+                    }
+                    a.ja_btn.denyBtn.ja_btn_red {
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 EXIT END ******* */

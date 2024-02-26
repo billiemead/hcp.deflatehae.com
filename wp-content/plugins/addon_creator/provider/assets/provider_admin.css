@@ -1,0 +1,35 @@
+
+.______________GENERAL____________{}
+
+.unite-view-wrapper{
+	margin-top:15px;
+}
+
+.uc-update-plugin-wrapper{
+	text-align:right;
+	padding-top:10px;
+}
+
+.______________DIALOG_IMAGE_SELECT____________{}
+
+.uc-dialog-image-select-inner{
+	height:350px;
+	overflow:auto;
+}
+
+.uc-dialog-image-select-bottom{
+	text-align:center;
+	margin-top:10px;
+}
+
+#uc_dialog_image_select_button{
+	margin-top:15px;
+	margin-bottom:10px;
+	font-size:16px;
+	font-weight:bold;
+	height:34px;
+	line-height:35px;
+	padding-left:12px;
+	padding-right:12px;
+}
+
