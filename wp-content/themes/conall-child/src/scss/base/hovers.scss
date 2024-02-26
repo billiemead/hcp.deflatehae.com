@@ -8,7 +8,12 @@ body.pharvaris a#edgtf-back-to-top > span:hover {
     border: 1px solid $blue;
     transition: all 0.65s ease-in-out;
 }
-
+a#toggler,
+a#toggler:hover,
+a#toggler:focus,
+a#toggler:active {
+    color: $black;
+}
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
     background-color: $white !important;
     border-color: $yellow !important;
