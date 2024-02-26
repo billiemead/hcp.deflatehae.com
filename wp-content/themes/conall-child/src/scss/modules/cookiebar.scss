@@ -1,0 +1,171 @@
+@import "../base/colors";
+@import '../base/fonts';
+
+/* ******* PHARVARIS HCP 2024 COOKIE BAR START ******* */
+
+div.wt-cli-cookie-bar-container {
+    div#cookie-law-info-bar {
+        background-color: $dk-grey !important;
+        border: none;
+        height: auto;
+        padding: 1.5% 0 1.7% 0!important;
+        div.cli-wrapper {
+            span#wt-cli-cookie-banner {
+                div.cli-bar-container {
+                    max-width: 1436px;
+                    width: 80%;
+                    padding: 0;
+                    margin-right: auto;
+                    margin-left: auto;
+                    background-color: unset;
+                    div.cli-bar-message {
+                        width: 75% !important;
+                        display: flex;
+                        color: $white;
+                        font-size: 16px;
+                        line-height: 20px !important;
+                    }
+                    div.cli-bar-btn_container {
+                        width: 25% !important;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        a#wt-cli-settings-btn {
+
+                        }
+                        a#wt-cli-accept-btn {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.cli-modal-content {
+    background-color: $mid-grey;
+    border-radius: 1.25rem;
+    div.cli-privacy-content-text {
+        color: $white;
+    }
+    a#wt-cli-privacy-readmore {
+        color: $white !important;
+        font-weight: bold !important;
+    }
+    div.cli-tab-header {
+    background-color: $dk-grey;
+        border-radius: 15px;
+    }
+    div.cli-tab-content {
+        border-radius: 15px;
+    }
+    .cli-switch .cli-slider:after {
+        color: $white !important;
+    }
+    a.cli-nav-link {
+        color: $white !important;
+    }
+    span.cli-necessary-caption {
+        color: $white !important;
+    }
+    .cli-tab-header a:before {
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
+    .cli-switch input:checked + .cli-slider {
+        background-color: $blue;
+    }
+    .cli-modal-close svg {fill: $white}
+}
+table.cookielawinfo-winter thead th {
+    background: $blue !important;
+}
+@media all and (max-width: 1024px) {
+    div.wt-cli-cookie-bar-container {
+        div#cookie-law-info-bar {
+            height: auto;
+            div.cli-wrapper {
+                span#wt-cli-cookie-banner {
+                    div.cli-bar-container {
+                        max-width: 825px;
+                        width: 80%;
+                        padding: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                        background-color: unset;
+                        div.cli-bar-message {
+                            width: 58% !important;
+                            display: flex;
+                            color: $white;
+                            font-size: 14px;
+                            line-height: 20px !important;
+                        }
+                        div.cli-bar-btn_container {
+                            width: 42% !important;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            a#wt-cli-settings-btn {
+
+                            }
+                            a#wt-cli-accept-btn {
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media all and (max-width: 980px) {
+}
+@media all and (max-width: 768px) {
+    div.wt-cli-cookie-bar-container  {
+        div#cookie-law-info-bar {
+            height: auto;
+            padding: 2% 0 !important;
+            div.cli-wrapper {
+                span#wt-cli-cookie-banner {
+                    div.cli-bar-container {
+                        max-width: 600px;
+                        flex-direction: column;
+                        div.cli-bar-message {
+                            width: 100% !important;
+                            padding-bottom: 0;
+                            padding-right: 0;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                        div.cli-bar-btn_container {
+                            width: 100% !important;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding-top: 2%;
+                            max-width: 344px;
+                            a#wt-cli-settings-btn {
+
+                            }
+                            a#wt-cli-accept-btn {
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* PHARVARIS HCP 2024 COOKIE BAR END ******* */

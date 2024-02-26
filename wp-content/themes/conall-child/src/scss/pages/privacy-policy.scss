@@ -7,19 +7,344 @@ body.privacypolicy-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
+                top: 0;
+                div.edgtf-content-inner {
+                    div.wpb-content-wrapper {
+                        div#privacy-hero-row {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
 
+                            & > div.edgtf-full-section-inner {
+                                max-width: 100%;
+                                width: 80%;
+                                div#privacy-hero-col {
+                                    display: flex;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 88%;
+                                    margin: 0;
+                                    justify-content: center;
+                                    align-items: center;
+                                    div.vc_column-inner {
+                                        div#privacy-hero-logo-desk {
+                                            figure.wpb_wrapper {
+                                                div.vc_single_image-wrapper {
+                                                    img.vc_single_image-img {
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#privacy-hero-logo-tab {
+                                            display: none;
+                                        }
+                                        div#privacy-hero-logo-mob {
+                                            display: none;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                        div#privacy-content {
+                            margin-bottom: 0 !important;
+                            padding: 3% 0 3% 0;
+                            h1.pv-h1.policies {
+                                padding-bottom: 20px;
+                            }
+                            p.pv-p.policies {
+
+                            }
+                            p.pv-p.policies.italic {
+
+                            }
+                            ul.pv-list {
+                                list-style-position: outside;
+                                margin: 0;
+                                li.pv-list-item {
+                                    @include regular($poppins);
+                                    color: $black;
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                    text-align: left;
+                                    padding-left: 0;
+                                    margin-left: 22px;
+                                    padding-bottom: 20px;
+                                    sup.pv-sup {
+
+                                    }
+                                }
+                                li::marker {
+                                    color: $red;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 @media all and (max-width: 1024px) {
+    body.privacypolicy-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#privacy-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#privacy-hero-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div#privacy-hero-logo-desk {
+                                                display: none;
+
+                                            }
+
+                                            div#privacy-hero-logo-tab {
+                                                display: block;
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div#privacy-hero-logo-mob {
+                                                display: none;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#privacy-content {
+                                margin-bottom: 0 !important;
+                                padding: 5% 0 5% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                                p.pv-p.policies.italic {
+
+                                }
+                                ul.pv-list {
+                                    list-style-position: outside;
+                                    margin: 0;
+                                    li.pv-list-item {
+                                        @include regular($poppins);
+                                        color: $black;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        text-align: left;
+                                        padding-left: 0;
+                                        margin-left: 22px;
+                                        padding-bottom: 20px;
+                                        sup.pv-sup {
+
+                                        }
+                                    }
+                                    li::marker {
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    body.privacypolicy-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#privacy-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#privacy-hero-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#privacy-hero-logo-desk {
+
+                                                }
+                                                div#privacy-hero-logo-tab {
+                                                    display: none;
+                                                }
+                                                div#privacy-hero-logo-mob {
+                                                    display: block;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#privacy-content {
+                                margin-bottom: 0 !important;
+                                padding: 7% 0 7% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                                p.pv-p.policies.italic {
+
+                                }
+                                ul.pv-list {
+                                    list-style-position: outside;
+                                    margin: 0;
+                                    li.pv-list-item {
+                                        @include regular($poppins);
+                                        color: $black;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        text-align: left;
+                                        padding-left: 0;
+                                        margin-left: 22px;
+                                        padding-bottom: 20px;
+                                        sup.pv-sup {
+
+                                        }
+                                    }
+                                    li::marker {
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+    body.privacypolicy-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#privacy-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#privacy-hero-col {
+                                        display: flex;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 92%;
+                                        margin: 0;
+                                        justify-content: center;
+                                        align-items: center;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#privacy-hero-logo-desk {
+
+                                                }
+                                                div#privacy-hero-logo-tab {
+                                                    display: none;
+                                                }
+                                                div#privacy-hero-logo-mob {
+                                                    display: block;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            div#privacy-content {
+                                margin-bottom: 0 !important;
+                                padding: 9% 0 9% 0;
+                                h1.pv-h1.policies {
+                                    padding-bottom: 20px;
+                                }
+                                p.pv-p.policies {
+
+                                }
+                                p.pv-p.policies.italic {
+
+                                }
+                                ul.pv-list {
+                                    list-style-position: outside;
+                                    margin: 0;
+                                    li.pv-list-item {
+                                        @include regular($poppins);
+                                        color: $black;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        text-align: left;
+                                        padding-left: 0;
+                                        margin-left: 22px;
+                                        padding-bottom: 20px;
+                                        sup.pv-sup {
+
+                                        }
+                                    }
+                                    li::marker {
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
 }

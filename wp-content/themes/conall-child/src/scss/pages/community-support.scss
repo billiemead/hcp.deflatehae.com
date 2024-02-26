@@ -13,7 +13,53 @@ body.communitysupport-page {
 
                         }
                         div#community-hero-row {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
+                            display: flex;
+                                & > div.edgtf-full-section-inner {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 80%;
+                                div#community-hero-col {
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        height: 100%;
+                                        div.wpb_wrapper {
+                                            div.hero-subheading {
+                                                max-width: 1265px;
+                                                margin: 0 auto;
+                                                padding-top: 3%;
+                                                h2.pv-h2 {
+                                                    font-size: 1.55vw;
+                                                    line-height: 2.1vw;
+                                                    text-transform: uppercase;
+                                                    sup.pv-sup {
+                                                        font-size: 65%;
+                                                        bottom: .8ex;
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                text-align: center;
+                                               /*  margin-bottom: 5% !important; */
+                                                figure.wpb_wrapper {
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
 
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-tablet,
+                                            div#hero-logo-alt-mobile {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
                         }
                         div#community-triple-partners-row {
                             margin-top: -50px;
@@ -199,7 +245,11 @@ body.communitysupport-page {
                             }
                         }
                         div#community-dlb-image-card {
-                            div.clearfix.edgtf-full-section-inner {
+                            background-color: $backgnd-grey;
+                            max-height: 576px;
+                            padding-top: 5%;
+                            padding-bottom: 5%;
+                            div.edgtf-full-section-inner {
                                 display: flex;
                                 height: 100%;
                                 align-items: flex-start;
@@ -207,11 +257,12 @@ body.communitysupport-page {
                                 max-width: 1337px;
                                 div.pv-col2 {
                                     display: flex;
-                                    padding-top: 2%;
+                                    padding-top: 0%;
                                     padding-bottom: 2%;
                                     justify-content: center;
                                     align-items: flex-start;
                                     float: unset;
+                                    max-height: 389px;
                                     div.vc_column-inner {
                                         div.wpb_wrapper {
                                             div.community-inner-row {
@@ -236,6 +287,9 @@ body.communitysupport-page {
                                                                 }
                                                             }
                                                         }
+                                                        p.pv-p {
+                                                            transform: translateY(-60px);
+                                                        }
                                                     }
                                                     div.pv-col2.inner.right-col {
                                                         width: 50%;
@@ -246,18 +300,21 @@ body.communitysupport-page {
                                                                 div.community-container {
                                                                     height: 100%;
                                                                     div.wpb_wrapper {
-                                                                        height: 100%;
+                                                                        height: 290px;
                                                                         display: flex;
                                                                         justify-content: center;
-                                                                        align-items: center;
+                                                                        align-items: flex-end;
                                                                         div.community-container-wrapper {
-                                                                            max-height: 190px;
-                                                                            max-width: 350px;
+                                                                            max-height: 200px;
+                                                                            max-width: 300px;
                                                                             display: flex;
                                                                             flex-direction: column;
                                                                             justify-content: space-between;
                                                                             align-items: center;
                                                                             flex-grow: 1;
+                                                                            h5.pv-h5 {
+                                                                                text-align: center;
+                                                                            }
                                                                             p.pv-p {
                                                                                 padding-top: 6.5%;
                                                                                 padding-bottom: 6.5%;
@@ -341,7 +398,7 @@ body.communitysupport-page {
                                 }
                             }
                         }
-                        div#community-refs-section {
+                        div#references-section {
                             div.refs-title {
                                 h4.h4-refs.left {
 
@@ -359,14 +416,878 @@ body.communitysupport-page {
         }
     }
 }
-
+@media all and (min-width: 1921px) {
+    body.communitysupport-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#community-glossary-bkgnd {
+                                background-size: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media all and (max-width: 1024px) {
+    body.communitysupport-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#community-cta-row {
+                            }
+                            div#community-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1024x587.svg");
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#community-hero-col {
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            height: 100%;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: block;
+                                                    text-align: center;
+                                                    /* margin-bottom: 4.5% !important; */
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hero-subheading {
+                                                    /* padding-top: 35px; */
+                                                    padding-top: 3%;
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
+                                                        font-size: 30px;
+                                                        line-height: 40px;
+                                                        /* font-size: 2.9vw;
+                                                        line-height: 4vw; */
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#community-triple-partners-row {
+                                margin-top: -50px;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1 {
+                                        float: unset;
+                                        text-align: center;
+                                        div.vc_column-inner {
+                                        padding: 0;
+                                            div#community-resources-heading {
+                                                margin-top: 100px;
+                                                margin-bottom: 50px !important;
+                                                h2.pv-h2.center.blue {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.triple-inner-row {
+                                            max-width: 100%;
+                                            height: auto;
+                                            margin: 0 auto;
+                                            margin-bottom: 90px !important;
+                                            div.edgtf-full-section-inner {
+                                                display: flex;
+                                                height: 100%;
+                                                align-items: flex-start;
+                                                justify-content: center;
+                                                /* max-width: 1194px; */
+                                                width: 100%;
+                                                div.pv-col2 {
+                                                    display: flex;
+                                                    padding: 0;
+                                                    justify-content: flex-start;
+                                                    align-items: flex-start;
+                                                    float: unset;
+                                                    height: 100%;
+                                                }
+                                                div.pv-col2.left {
+                                                    width: 28%;
+                                                    align-items: center;
+                                                    div.vc_column-inner {
+                                                        padding: 0 15px 0 0;
+                                                        div.wpb_wrapper {
+                                                            div.partner-logo {
+
+                                                                img {
+
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                }
+                                                div.pv-col2.left:after {
+                                                    content: "";
+                                                    border: 1px solid $blue;
+                                                    height: 100%;
+                                                    padding: 0;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    width: 1px;
+                                                }
+                                                div.pv-col2.right {
+                                                    width: 72%;
+                                                    padding-left: 35px;
+                                                    justify-content: flex-start;
+                                                    h3.pv-h3 {
+                                                        max-width: 500px;
+                                                        &.blue {
+
+                                                        }
+                                                        &.black {
+                                                            margin-bottom: 6.5%;
+                                                        }
+                                                    }
+                                                    p.pv-p {
+
+                                                    }
+                                                    a.pv-btn.w-152 {
+                                                        margin: auto 0;
+                                                        margin-top: 30px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div#community-triple-inner-row-1 {
+                                            height: 100%;
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding-top: 67%;
+                                                    padding-bottom: 67%;
+                                                }
+                                            }
+                                        }
+                                        div#community-triple-inner-row-2 {
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding-top: 77%;
+                                                    padding-bottom: 77%;
+                                                }
+                                            }
+                                        }
+                                        div#community-triple-inner-row-3 {
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding-top: 65%;
+                                                    padding-bottom: 65%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#community-glossary-bkgnd {
+                                background-image: url("/wp-content/themes/conall-child/images/community-glossary-bkgnd-top-1920x50.svg");
+                                background-size: auto;
+                                background-position: center top;
+                                background-repeat: no-repeat;
+                                div#community-glossary-row {
+                                    background-color: $backgnd-grey;
+                                    top: 45px;
+                                    padding-bottom: 15%;
+                                    div.edgtf-full-section-inner {
+                                        max-width: 854px;
+                                        div.pv-col1 {
+
+                                        }
+                                        div.pv-col1.top {
+                                            div#community-glossary-heading {
+                                                margin-top: 100px;
+                                                margin-bottom: 50px !important;
+                                                h2.pv-h2.center.blue {
+                                                    text-transform: initial;
+                                                }
+                                            }
+                                            p.pv-p {
+                                                max-width: 770px;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                        div.pv-col1.btm {
+                                            margin-top: 85px;
+                                            div.glossary-innerrow {
+                                                border-bottom: 1px solid $blue;
+                                                margin: 1% 0 1% 0;
+                                                div.edgtf-full-section-inner {
+                                                    width: 100%;
+                                                    div.pv-col2 {
+                                                        padding: 40px 0 40px 0;
+                                                        h3.pv-h3.blue {
+
+                                                        }
+                                                        p.pv-p {
+                                                            max-width: 850px;
+                                                            sup.pv-sup {
+
+                                                            }
+                                                        }
+                                                    }
+                                                    div.pv-col2.left {
+                                                        width: 42%;
+                                                    }
+                                                    div.pv-col2.right {
+                                                        width: 58%;
+                                                    }
+                                                }
+
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                            div#community-dlb-image-card {
+                                background-color: $backgnd-grey;
+                                max-height: 100%;
+                                padding-top: 0;
+                                padding-bottom: 1%;
+                                div.edgtf-full-section-inner {
+                                    display: flex;
+                                    height: 100%;
+                                    align-items: flex-start;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    max-width: 825px;
+                                    div.pv-col2 {
+                                        display: flex;
+                                        padding: 0;
+                                        justify-content: center;
+                                        align-items: flex-start;
+                                        float: unset;
+                                        max-height: 100%;
+                                        width: 100%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.community-inner-row {
+                                                    max-width: 696px;
+                                                    margin: 0 auto;
+                                                    div.edgtf-full-section-inner {
+                                                        display: flex;
+                                                        width: 100%;
+                                                        justify-content: center;
+                                                        flex-direction: row;
+                                                        align-items: center;
+                                                        div.pv-col2.inner.left-col {
+                                                            width: 50%;
+                                                            div.vc_column-inner {
+                                                                height: 100%;
+                                                                div.wpb_wrapper {
+                                                                    height: 100%;
+                                                                    div.community-round-image {
+                                                                        figure.wpb_wrapper {
+                                                                            div.vc_single_image-wrapper {
+                                                                                img {
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            p.pv-p {
+                                                                padding-right: 13%;
+                                                                transform: translateY(-60px);
+                                                            }
+                                                        }
+                                                        div.pv-col2.inner.right-col {
+                                                            width: 50%;
+                                                            div.vc_column-inner {
+                                                                height: 100%;
+                                                                div.wpb_wrapper {
+                                                                    height: 100%;
+                                                                    div.community-container {
+                                                                        height: 100%;
+                                                                        div.wpb_wrapper {
+                                                                            height: 100%;
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            align-items: flex-end;
+                                                                            div.community-container-wrapper {
+                                                                                max-height: 200px;
+                                                                                max-width: 300px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                                flex-grow: 1;
+                                                                                h5.pv-h5 {
+                                                                                    text-align: center;
+                                                                                }
+                                                                                p.pv-p {
+                                                                                    padding-top: 5%;
+                                                                                    padding-bottom: 5%;
+                                                                                    text-align: center;
+                                                                                }
+                                                                                div.community-btn-wrapper {
+                                                                                    width: 100%;
+                                                                                    a.pv-btn.w-264 {
+
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.wpb_text_column {
+                                                    div.wpb_wrapper {
+                                                        div.community-container {
+                                                            display: flex;
+                                                            align-items: center;
+                                                            width: 100%;
+                                                            justify-content: flex-start;
+                                                            div.community-col.left {
+                                                                width: 40%;
+                                                                img.community-rnd-image {
+
+                                                                }
+                                                            }
+                                                            div.community-col.right {
+                                                                height: 190px;
+                                                                width: 55%;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: space-between;
+                                                                h5.pv-h5 {
+                                                                    text-transform: uppercase;
+                                                                    text-align: center;
+                                                                }
+                                                                p.pv-p {
+                                                                    text-align: center;
+                                                                    width: auto;
+                                                                    margin: 0 auto;
+                                                                }
+                                                                a.pv-btn {
+
+                                                                }
+                                                            }
+                                                        }
+                                                        &.left {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col2.left::after {
+                                        content: "";
+                                        border: none;
+                                        border-bottom: 1px solid $dk-grey;
+                                        height: auto;
+                                        padding: 0;
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        width: 100%;
+                                    }
+                                    div.pv-col2.right {
+                                        padding-top: 4%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#community-innerrow-right  {
+                                                    div.edgtf-full-section-inner {
+                                                        justify-content: flex-end;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 980px) {
 }
 @media all and (max-width: 768px) {
+    body.communitysupport-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#community-cta-row {
+                            }
+                            div#community-hero-row {
+                                background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
+                                & > div.edgtf-full-section-inner {
+                                    max-width: 100%;
+                                    width: 80%;
+                                    div#community-hero-col {
+                                        div.vc_column-inner {
+                                        padding: 0;
+                                        height: 100%;
+                                            div.wpb_wrapper {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: none;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: block;
+                                                    text-align: center;
+                                                   /*  margin-bottom: 4.5% !important; */
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div.hero-subheading {
+                                                    padding-top: 3%;
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2.center.yellow.hero-subheading{
+                                                        /* font-size: 30px;
+                                                        line-height: 40px; */
+                                                        font-size: 4.8vw;
+                                                        line-height: 6.25vw;
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#community-triple-partners-row {
+                                margin-top: 0px;
+                                div.edgtf-full-section-inner {
+                                    div.pv-col1 {
+                                        float: unset;
+                                        text-align: center;
+                                        div.vc_column-inner {
+                                        padding: 0;
+                                            div#community-resources-heading {
+                                                margin-top: 8%;
+                                                margin-bottom: 10% !important;
+                                                h2.pv-h2.center.blue {
+                                                    font-size: 35px;
+                                                    line-height: 40px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.pv-col1.bottom {
+                                        div.triple-inner-row {
+                                            max-width: 100%;
+                                            height: 100%;
+                                            margin: 0 auto;
+                                            div.edgtf-full-section-inner {
+                                                display: flex;
+                                                height: 100%;
+                                                align-items: flex-start;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                div.pv-col2 {
+                                                    display: flex;
+                                                    padding: 0;
+                                                    justify-content: flex-start;
+                                                    align-items: flex-start;
+                                                    float: unset;
+                                                    height: 100%;
+                                                }
+                                                div.pv-col2.left {
+                                                    width: 100%;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    div.vc_column-inner {
+                                                        padding: 0 15px 0 0;
+                                                        div.wpb_wrapper {
+                                                            div.partner-logo {
+                                                                padding: 0;
+                                                                text-align: center;
+                                                                margin-bottom: 8% !important;
+                                                                img {
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                }
+                                                div.pv-col2.left:after {
+                                                    content: "";
+                                                    border: none;
+                                                    height: 100%;
+                                                    padding: 0;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    width: 0;
+                                                }
+                                                div.pv-col2.right {
+                                                    width: 100%;
+                                                    padding-left: 0;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    div.tricon-box-heading {
+                                                        text-align: center;
+                                                        max-width: 80%;
+                                                        margin: 0 auto;
+                                                    }
+                                                    div.tricon-box-subheading {
+                                                        text-align: center;
+                                                    }
+                                                    div.tricon-box-paragraph {
+                                                        text-align: center;
+                                                        p.pv-p {
+                                                            margin: 7% 0 7% 0 !important;
+                                                        }
+                                                    }
+                                                    h3.pv-h3 {
+                                                        max-width: 700px;
+                                                        &.blue {
+
+                                                        }
+                                                        &.black {
+                                                            margin-bottom: 2%;
+                                                        }
+                                                    }
+                                                    a.pv-btn.w-152 {
+                                                        margin: 0 auto;
+                                                        margin-top: 30px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.triple-inner-row:not(:last-child) {
+                                            margin-bottom: 15% !important;
+                                            padding-bottom: 15%;
+                                        }
+                                        div.triple-inner-row:not(:last-child):after  {
+                                            content: "";
+                                            border: none;
+                                            border-bottom: 2px solid $blue;
+                                            height: auto;
+                                            padding: 0;
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;
+                                            width: 100%;
+                                        }
+                                        div#community-triple-inner-row-1 {
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                        div#community-triple-inner-row-2 {
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                        div#community-triple-inner-row-3 {
+                                            margin-bottom: 12% !important;
+                                            div.pv-col2.left {
+                                                div.partner-logo {
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                            div#community-glossary-bkgnd {
+                                background-image: url("/wp-content/themes/conall-child/images/community-glossary-bkgnd-top-1920x50.svg");
+                                background-size: auto;
+                                background-position: center top;
+                                background-repeat: no-repeat;
+                                div#community-glossary-row {
+                                    background-color: $backgnd-grey;
+                                    top: 45px;
+                                    padding-bottom: 18%;
+                                    div.edgtf-full-section-inner {
+
+                                        div.pv-col1 {
+
+                                        }
+                                        div.pv-col1.top {
+                                            div#community-glossary-heading {
+                                                margin-top: 50px;
+                                                margin-bottom: 50px !important;
+                                                h2.pv-h2.center.blue {
+                                                    font-size: 35px;
+                                                    line-height: 40px;
+                                                }
+                                            }
+                                            p.pv-p {
+                                                max-width: 825px;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                        div.pv-col1.btm {
+                                            margin-top: 25px;
+                                            div.glossary-innerrow {
+                                                border-bottom: 1px solid $blue;
+                                                margin: 0;
+                                                div.edgtf-full-section-inner {
+                                                    width: 100%;
+                                                    max-width: 1333px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    div.pv-col2 {
+                                                        padding: 0;
+                                                        width: 100%;
+                                                        h3.pv-h3.blue {
+
+                                                        }
+                                                        p.pv-p {
+                                                            max-width: 850px;
+                                                            sup.pv-sup {
+
+                                                            }
+                                                        }
+                                                    }
+                                                    div.pv-col2.left {
+                                                        width: 100%;
+                                                        float: unset;
+                                                        text-align: center;
+                                                        h3.pv-h3.glossary {
+                                                            padding: 35px 0 20px 0;
+                                                        }
+                                                    }
+                                                    div.pv-col2.right {
+                                                        width: 100%;
+                                                        float: unset;
+                                                        text-align: center;
+                                                        p.pv-p {
+                                                            margin-bottom: 40px;
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                            div#community-dlb-image-card {
+                                max-height: 100%;
+                                padding-top: 2%;
+                                padding-bottom: 12%;
+                                div.edgtf-full-section-inner {
+                                    display: flex;
+                                    height: 100%;
+                                    max-width: 100%;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    div.pv-col2 {
+                                        display: flex;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        justify-content: center;
+                                        align-items: flex-start;
+                                        float: unset;
+                                        max-height: 100%;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.community-inner-row {
+                                                    width: 100%;
+                                                    div.edgtf-full-section-inner {
+                                                        display: flex;
+                                                        width: 100%;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                        div.pv-col2.inner.left-col {
+                                                            width: 100%;
+                                                            max-height: 100%;
+                                                            padding: 0;
+                                                            div.vc_column-inner {
+                                                                height: 100%;
+                                                                padding: 0;
+                                                                div.wpb_wrapper {
+                                                                    height: 100%;
+                                                                    div.community-round-image {
+                                                                        text-align: center;
+                                                                        figure.wpb_wrapper {
+                                                                            div.vc_single_image-wrapper {
+                                                                                img {
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            p.pv-p {
+                                                                padding-right: 0;
+                                                                transform: translateY(-60px);
+                                                            }
+                                                        }
+                                                        div.pv-col2.inner.right-col {
+                                                            width: 100%;
+                                                            max-height: 100%;
+                                                            padding: 0;
+                                                            margin-top: -7%;
+                                                            div.vc_column-inner {
+                                                                height: 100%;
+                                                                div.wpb_wrapper {
+                                                                    height: 100%;
+                                                                    div.community-container {
+                                                                        height: 100%;
+                                                                        div.wpb_wrapper {
+                                                                            height: auto;
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            align-items: center;
+                                                                            div.community-container-wrapper {
+                                                                                max-height: 100%;
+                                                                                max-width: 100%;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                                flex-grow: 1;
+                                                                                h5.pv-h5 {
+                                                                                    text-align: center;
+                                                                                    br.line-break {
+                                                                                        display: none;
+                                                                                    }
+                                                                                }
+                                                                                p.pv-p {
+                                                                                    padding-top: 4%;
+                                                                                    padding-bottom: 4%;
+                                                                                    text-align: center;
+                                                                                }
+                                                                                div.community-btn-wrapper {
+                                                                                    width: 100%;
+                                                                                    a.pv-btn.w-264 {
+
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                    div.pv-col2.left::after {
+                                        content: "";
+                                        border-bottom: 1px solid $dk-grey;
+                                        height: auto;
+                                        padding: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 100%;
+                                    }
+                                    div.pv-col2.left {
+                                        margin-bottom: 10% !important;
+                                        padding-bottom: 10%;
+                                    }
+                                    div.pv-col2.right {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div#community-innerrow-right  {
+                                                    div.edgtf-full-section-inner {
+                                                        justify-content: flex-end;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            div#references-section {
+                                div.refs-title {
+                                    h4.h4-refs.left {
+
+                                    }
+                                }
+                                div.refs-paragraph {
+                                    p.pv-refs {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#community-hero-row  {
+        min-height: 500px;
+    }
 }
 @media all and (max-width: 480px) {
 }

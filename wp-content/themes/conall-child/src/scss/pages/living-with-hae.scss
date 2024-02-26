@@ -9,11 +9,59 @@ body.livinghae-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.wpb-content-wrapper {
+                        div#breakpoint-row {
+                            width: 100vw;
+                        }
                         div#living-cta-row {
 
                         }
                         div#living-hero-row {
+                            background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
+                            display: flex;
+                           /*  min-height: 580px; */
+                            margin-bottom: -30px !important;
+                            & > div.edgtf-full-section-inner {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 60%;
+                                div#living-hero-col {
+                                    /* padding-top: 15%; */
+                                    div.vc_column-inner {
+                                        padding: 0;
+                                        div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    max-width: 1265px;
+                                                    margin: 0 auto;
+                                                    padding-bottom: 3%;
+                                                    h2.pv-h2 {
 
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-logo-alt-desktop {
+                                                    text-align: center;
+                                                    /* margin-bottom: 5% !important; */
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                div#hero-logo-alt-tablet,
+                                                div#hero-logo-alt-mobile {
+                                                    display: none;
+                                                }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         div#living-hae-impacts-row {
                             animation: fadeIn 5s;

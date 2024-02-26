@@ -24,6 +24,7 @@ body.pharvaris {
                         text-transform: uppercase;
                         color: $white;
                         letter-spacing: 0;
+                        transition: all 0.5s ease-in-out;
                         span.item_outer {
                             top: 0;
                             display: flex;
@@ -38,12 +39,21 @@ body.pharvaris {
                             }
                         }
                     }
+                    a:hover {
+                        color: $yellow;
+                        transition: all 0.5s ease-in-out;
+                    }
                 }
                 li.menu-item.menu-item-type-post_type.menu-item-object-page:first-child {
                     padding-left: 0;
                 }
                 li.menu-item.menu-item-type-post_type.menu-item-object-page:last-child {
                     padding-right: 0;
+                }
+                li.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item {
+                    a {
+                        font-weight: 700 !important;
+                    }
                 }
             }
         }
@@ -115,7 +125,7 @@ body.pharvaris {
                         padding: 0 10px;
                         a {
                             font-size: 12px;
-                            line-height: 20px;
+                            line-height: 12px;
                         }
                     }
                 }
@@ -127,15 +137,29 @@ body.pharvaris {
     body.pharvaris {
         div.edgtf-mobile-header-inner {
             nav.edgtf-mobile-nav {
-                background-color: $dk-grey;
+                background-image: url("/wp-content/themes/conall-child/images/mobile-nav-bkgnd-768x1644.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
                 border: none;
                 height: calc(100vh - 106px);
                 background-position: bottom;
                 div.edgtf-grid {
-                    ul {
+                    ul#menu-deflate-primary-navigation-1 {
+                        display: flex;
+                        flex-direction: column;
+                        height: 97%;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 22%;
+                        padding-bottom: 35%;
+                        max-width: 500px;
+                        margin: 0 auto;
                         li.menu-item.menu-item-type-post_type.menu-item-object-page {
+                            width: 100%;
                             a {
                                 color: $white;
+                                font-weight: 500 !important;
                                 text-transform: uppercase;
                                 font-size: 4.3vh;
                                 line-height: 4.3vh;

@@ -12,6 +12,11 @@
 * {
   margin: 0;
 }
+::selection
+{
+background: #E9b840;
+color: #424243 ;
+}
 /* Typographic tweaks! Add accessible line-height & improve text rendering */
 body {
     @include regular($poppins);
@@ -21,12 +26,13 @@ body {
     top: 0px;
     position: relative;
     color: $black;
-    padding-bottom: 239px !important;
+    padding-bottom: 215px !important;
     background-color: $dk-grey;
+    letter-spacing: -0.5px;
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
-                margin-bottom: 0 !important;
+                top: 155px;
             }
         }
     }
@@ -43,6 +49,15 @@ input, button, textarea, select {
 sup {
     bottom: 1ex;
 }
+sup.rev-sup-top {
+    font-weight: bold;
+    bottom: 1.9ex;
+}
+sup.rev-sup {
+    bottom: .8ex;
+    font-size: 50% !important;
+    font-weight: bold !important;
+}
 
 /* Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
@@ -52,6 +67,21 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+html {
+    scroll-behavior: smooth;
+ }
+ .owl-prev::before {
+    position: absolute;
+    left: 150px !important;
+    color: #fff;
+    top: 0;
+ }
+  .owl-next::before {
+    position: absolute;
+    right: 150px!important;
+    color: #fff;
+    top: 0;
+ }
 /* ************ CSS RESET END ************ */
 /* ************ PLACEHOLDERS ************ */
 
@@ -149,9 +179,9 @@ body.pharvaris {
             background-color: $dk-grey;
             display: flex;
             align-items: center;
-            padding-top: 5%;
-            padding-bottom: 3%;
-            bottom: -1px;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            transform: translateY(1px);
             div.vc_column-inner {
                 padding: 0;
                 div.refs-paragraph {
@@ -261,15 +291,32 @@ body.pharvaris {
         margin: 0;
         letter-spacing: 0;
     }
+    span.pv-span.policies {
+        @include bold($poppins);
+        font-size: 21px;
+        line-height: 26px;
+        color: $black;
+        letter-spacing: -0.5px;
+    }
     h1, h1.pv-h1 {
         @include bold($poppins);
         font-size: 30px;
         line-height: 40px;
+        color: $black;
+        letter-spacing: -0.5px;
+        &.policies {
+            font-size: 21px;
+            line-height: 26px;
+        }
         &.grey {
             color: $dk-grey;
         }
         &.blue {
             color: $blue;
+            &.hand {
+                font-size: 40px;
+                text-transform: uppercase;
+            }
         }
         &.center {
             text-align: center;
@@ -279,6 +326,7 @@ body.pharvaris {
         @include bold($poppins);
         font-size: 18px;
         line-height: 26px;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
@@ -301,16 +349,25 @@ body.pharvaris {
         &.hero-subheading {
             font-size: 30px;
             line-height: 40px;
+            text-transform: uppercase;
+        }
+        &.blue {
+            font-size: 45px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: $blue;
         }
     }
     h3, h3.pv-h3 {
         @include bold($poppins);
         font-size: 30px;
         line-height: 50px;
+        letter-spacing: -0.5px;
         &.form {
             color: $dk-grey;
+            margin-top: 10px;
+            margin-bottom: 10px;
             text-transform: uppercase;
-            margin-bottom: 15px;
         }
         &.red {
             color: $red;
@@ -318,9 +375,45 @@ body.pharvaris {
         &.center {
             text-align: center;
         }
+        &.blue {
+            color: $blue;
+            text-transform: uppercase;
+            font-size: 26px;
+            line-height: 34px;
+            &.black {
+                color: $black;
+                text-transform: inherit;
+            }
+        }
+        &.glossary {
+            color: $blue;
+            text-transform: inherit;
+            font-size: 26px;
+            line-height: 34px;
+        }
     }
     h4, h4.pv-h4 {
-
+        @include bold($poppins);
+        font-size: 24px;
+        line-height: 34px;
+        text-align: left;
+        color:  $white;
+        letter-spacing: -0.5px;
+        &.center {
+            text-align: center;
+        }
+        &.hand {
+            color: $black;
+            line-height: 30px;
+        }
+    }
+    h4.h4-brandy-red {
+        @include bold($poppins);
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color:  $red;
+        letter-spacing: -0.5px;
     }
     h4.h4-refs.left {
         @include bold($poppins);
@@ -330,6 +423,7 @@ body.pharvaris {
         text-align: left;
         color:  $white;
         margin-bottom: 20px;
+        letter-spacing: -0.5px;
     }
     h5, h5.pv-h5 {
         @include bold($poppins);
@@ -337,12 +431,27 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         text-transform: uppercase;
+        letter-spacing: -0.5px;
         &.center {
             text-align: center;
         }
+        &.red {
+            color: $red;
+        }
+        &.white {
+            color: $white;
+            text-transform: none
+        }
     }
     h6, h6.pv-h6 {
-
+        @include bold($poppins);
+        font-size: 20px;
+        line-height: 30px;
+        color: $dk-grey;
+        letter-spacing: -0.5px;
+        &.center {
+            text-align: center;
+        }
     }
     p, p.pv-p {
         @include regular($poppins);
@@ -350,6 +459,14 @@ body.pharvaris {
         line-height: 26px;
         color: $black;
         margin: 0;
+        letter-spacing: -0.5px;
+        &.footnote-2 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &.footnote {
+            font-size: 16px;
+        }
         &.form-p {
             font-size: 22px;
             line-height: 30px;
@@ -391,6 +508,7 @@ body.pharvaris {
         color: $white;
         font-size: 16px;
         line-height: 26px;
+        letter-spacing: -0.5px;
     }
     ul.pv-list {
         list-style-position: outside;
@@ -436,6 +554,7 @@ body.pharvaris {
     br.line-break {
         display: block;
     }
+    span.nowrap,
     span.no-wrap {
         white-space: nowrap;
     }
@@ -636,6 +755,15 @@ body.pharvaris {
 @media all and (max-width: 1300px) {
 }
 @media all and (max-width: 1024px) {
+    body {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                top: 80px;
+                }
+            }
+        }
+    }
     body.pharvaris {
         .edgtf-grid {
         }
@@ -719,29 +847,95 @@ body.pharvaris {
 
         }
         div.pv-container {
-            max-width: 826px;
-            width: 80%;
+
+        }
+        h1, h2, h3, h4, h5, h6 {
+
+        }
+        span.pv-span.policies {
+
         }
         h1, h1.pv-h1 {
+
+            &.policies {
+
+            }
+            &.grey {
+
+            }
             &.blue {
+
             }
             &.center {
+
             }
         }
         h2, h2.pv-h2 {
 
+            &.center {
+
+            }
+            &.white {
+
+            }
+            &.yellow {
+
+            }
+            &.hero-subheading {
+
+            }
+            &.blue {
+
+            }
         }
         h3, h3.pv-h3 {
 
+            &.form {
+
+            }
+            &.red {
+
+            }
+            &.center {
+
+            }
+            &.blue {
+
+                &.black {
+
+                }
+            }
+            &.glossary {
+
+            }
         }
         h4, h4.pv-h4 {
+
+            &.center {
+
+            }
+        }
+        h4.h4-refs.left {
 
         }
         h5, h5.pv-h5 {
 
+            &.center {
+
+            }
+            &.red {
+
+            }
+            &.white {
+
+            }
         }
         h6, h6.pv-h6 {
+            font-size: 18px;
+            line-height: 24px;
+            &.center {
 
+            }
         }
         p, p.pv-p {
 

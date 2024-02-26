@@ -38,6 +38,8 @@
     "dependencies": {
         "gulp-zip": "^5.1.0",
         "node-sass": "^7.0.3",
-        "sass": "^1.49.9"
+        "postcss": "^8.4.35",
+        "sass": "^1.49.9",
+        "webpack": "^5.90.2"
     }
 }

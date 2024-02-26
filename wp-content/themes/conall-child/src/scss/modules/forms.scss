@@ -24,19 +24,20 @@ input[type=text]:focus {
 body {
     div.templatera_shortcode {
         div#hae-hcp-form-section {
-            max-height: 728px;
+            max-height: 100%;
             background-color: $yellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding-top: 4%;
-            padding-bottom: 4%;
-            bottom: -1px;
+            padding-bottom: 4.5%;
+            margin-bottom: -1px !important;
             div.clearfix.edgtf-full-section-inner {
                 div.pv-col1 {
                     div.form-heading {
                         h3.pv-h3.form.center {
+                            text-transform: uppercase;
 
                         }
                     }
@@ -234,13 +235,19 @@ body {
     }
 }
 
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+
 @media all and (max-width: 1024px) {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 790px;
+                /* max-height: 790px; */
                 padding-top: 6%;
-                padding-bottom: 10%;
+                padding-bottom: 12%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -327,9 +334,10 @@ body {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 1200px;
+                max-height: 100%;
                 padding-top: 8%;
                 padding-bottom: 12%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -339,23 +347,84 @@ body {
                         }
                         p.pv-p.form-p.center {
                             line-height: 26px;
+                            max-width: 400px;
+                            margin: 0 auto;
                         }
-                        div.form-placeholder-tablet {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        div.form-placeholder-mobile {
-                            display: block;
-                            opacity: 1;
-                            visibility: visible;
-                            width: 100%;
-                            figure.wpb_wrapper.vc_figure {
-                                width: 100%;
-                                div.vc_single_image-wrapper.vc_box_border_grey {
-                                    width: 100%;
-                                    img.vc_single_image-img {
+                        div#salesforce-form-container {
+                            form.salesforce-form {
+                                div.form-col {
+                                    flex-direction: column;
+                                    &.col-2 {
+                                    }
+                                    &.col-1 {
+                                    }
+                                    & > div.sf-form-field:nth-child(-n+1) {
+                                        padding: 0;
+                                    }
+                                    div.sf-form-field {
+                                        padding: 0;
+                                        margin-top: 22px;
+                                        margin-bottom: 22px;
+                                        span.form-title {
+
+                                        }
+                                        span.form-required {
+                                        }
+                                        div.form-input {
+                                            select.input-field,
+                                            input.input-field {
+                                            }
+                                            select.input-field.select {
+                                                option.select-option {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col1 {
+                                }
+                                div#form-col2 {
+                                }
+                                div#form-col2b {
+                                    div.sf-form-field {
+                                        justify-content: center;
+                                        align-items: center;
                                         width: 100%;
+                                    }
+                                }
+                                div#form-col2c {
+                                }
+                                div#form-col3 {
+                                    div.legal-consent-container {
+                                        div.sf-form-field {
+                                            label.sf-form-label {
+                                                align-items: flex-start;
+                                                div.form-input {
+                                                    width: 20%;
+                                                    margin-right: 10px !important;
+                                                    input.input-field.checkbox {
+                                                    }
+                                                }
+                                            }
+                                            p.pv-p.form-title {
+                                                a.form-link {
+                                                }
+                                                span.form-required {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col4 {
+                                    div.form-input {
+                                        width: 100%;
+                                        input.pv-btn.sf-button {
+                                            width: 100%;
+                                        }
+                                        input.pv-btn.sf-button:hover {
+                                        }
                                     }
                                 }
                             }
@@ -370,9 +439,9 @@ body {
     body {
         div.templatera_shortcode {
             div#hae-hcp-form-section {
-                max-height: 1072px;
-                padding-top: 3%;
-                padding-bottom: 5%;
+                padding-top: 12%;
+                padding-bottom: 15%;
+                margin-bottom: -1px !important;
                 div.clearfix.edgtf-full-section-inner {
                     div.pv-col1 {
                         div.form-heading {
@@ -381,24 +450,67 @@ body {
                             }
                         }
                         p.pv-p.form-p.center {
-                            line-height: 26px;
+
                         }
-                        div.form-placeholder-tablet {
-                            display: none;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        div.form-placeholder-mobile {
-                            display: block;
-                            opacity: 1;
-                            visibility: visible;
-                            width: 100%;
-                            figure.wpb_wrapper.vc_figure {
-                                width: 100%;
-                                div.vc_single_image-wrapper.vc_box_border_grey {
-                                    width: 100%;
-                                    img.vc_single_image-img {
-                                        width: 100%;
+                        div#salesforce-form-container {
+                            form.salesforce-form {
+                                div.form-col {
+                                    &.col-2 {
+                                    }
+                                    &.col-1 {
+                                    }
+                                    & > div.sf-form-field:nth-child(-n+1) {
+                                    }
+                                    div.sf-form-field {
+                                        margin-top: 4.5%;
+                                        margin-bottom: 4.5%;
+                                        span.form-title {
+
+                                        }
+                                        span.form-required {
+                                        }
+                                        div.form-input {
+                                            select.input-field,
+                                            input.input-field {
+                                            }
+                                            select.input-field.select {
+                                                option.select-option {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col1 {
+                                }
+                                div#form-col2 {
+                                }
+                                div#form-col3 {
+                                    div.legal-consent-container {
+                                        div.sf-form-field {
+                                            label.sf-form-label {
+
+                                                div.form-input {
+                                                    input.input-field.checkbox {
+                                                    }
+                                                }
+                                            }
+                                            p.pv-p.form-title {
+                                                a.form-link {
+                                                }
+                                                span.form-required {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div#form-col4 {
+                                    div.form-input {
+                                        input.pv-btn.sf-button {
+                                        }
+                                        input.pv-btn.sf-button:hover {
+                                        }
                                     }
                                 }
                             }

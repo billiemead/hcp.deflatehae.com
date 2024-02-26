@@ -1,7 +1,13 @@
 <?php
 
-setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
-if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
+/* setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN); */
+
+// add custom Meta Tag to header
+function salesforce_header_metadata() {
+	echo '<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">';
+}
+add_action( 'wp_head', 'salesforce_header_metadata' );
 
 // add title attributes to menu
 function pv_add_title_attribute($atts, $item){
@@ -11,15 +17,13 @@ function pv_add_title_attribute($atts, $item){
 }
 add_filter('nav_menu_link_attributes', 'pv_add_title_attribute', 10, 2);
 
-/*** Child Theme Function  ***/
-
+/*** Child Theme Functions  ***/
 if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
 	function conall_edge_child_theme_enqueue_scripts() {
 		$parent_style = 'conall-edge-default-style';
 
 		wp_enqueue_style( 'conall-edge-child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
 	}
-
 	add_action( 'wp_enqueue_scripts', 'conall_edge_child_theme_enqueue_scripts' );
 }
 
@@ -29,12 +33,50 @@ function pharvaris_hcp_assets()
     wp_register_style('pharvaris-hcp-stylesheet', get_theme_file_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all');
     wp_enqueue_style('pharvaris-hcp-stylesheet');
     wp_enqueue_script('custom_js', get_theme_file_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
+    wp_enqueue_script('pharvaris_hcp_jquery', get_theme_file_uri() . '/js/pharvaris-hcp-jquery.js', array('jquery'), '1.0.0', true);
+    if (is_page('living-with-hae')) {
+        wp_enqueue_script('pharvaris_hcp_js', get_stylesheet_directory_uri() . '/js/pharvaris-hcp-scripts.js', array(), '1.0.0', true);
+    }
 }
 add_action('wp_enqueue_scripts', 'pharvaris_hcp_assets', 99);
 
-// * * * * * * * * * * * * *  - - - S V G  S U P P O R T - - - * * * * * * * * * * * * * //
+function pharvaris_add_rivescript()
+{
+    ?>
+    <script src="https://unpkg.com/@rive-app/canvas@2.10.1"></script>
+    <?php
+}
+add_action('wp_head', 'pharvaris_add_rivescript');
 
+function pharvaris_add_favicon()
+{ ?>
+    <!-- Custom Favicons -->
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="<?php echo get_stylesheet_directory_uri(); ?>/favicons/mstile-310x310.png" />
+<?php }
+add_action('wp_head', 'pharvaris_add_favicon');
+
+// * * * * * * * * * * * * *  - - - S V G  S U P P O R T - - - * * * * * * * * * * * * * //
 function add_file_types_to_uploads($file_types){
 $new_filetypes = array();
 $new_filetypes['svg'] = 'image/svg+xml';
@@ -60,7 +102,7 @@ function custom_class($classes)
     if (is_page('living-with-hae')) {
         $classes[] = 'livinghae-page';
     }
-    if (is_page('treatment-burdens')) {
+    if (is_page('treatment-burden')) {
         $classes[] = 'treatmentburdens-page';
     }
     if (is_page('community-support')) {
@@ -77,6 +119,9 @@ function custom_class($classes)
     }
     if (is_page('cookie-policy')) {
         $classes[] = 'cookiepolicy-page';
+    }
+    if (is_page('site-map')) {
+        $classes[] = 'sitemap-page';
     }
     return $classes;
 }
@@ -290,19 +335,6 @@ function pharvaris_duplicate_page_link($actions, $page)
 }
 add_filter('page_row_actions', 'pharvaris_duplicate_page_link', 10, 2);
 
-// * * * * * * * * * * * * *  - - - H U B S P O T - - - * * * * * * * * * * * * * //
-
-// Add HubSpot script to page head
-function hubspot_javascript()
-{
-    ?>
-        <!-- Start of HubSpot Embed Code -->
-            <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script> -->
-        <!-- End of HubSpot Embed Code -->
-    <?php
-}
-add_action('wp_head', 'hubspot_javascript');
-
 // * * * * * * * * * * * * *  - - - M A R K E R . I O - - - * * * * * * * * * * * * * //
 
 // Add marker.io to page head
@@ -321,6 +353,21 @@ function marker_io()
     <?php
 }
 add_action('wp_head', 'marker_io');
+
+function hide_header() {
+    if (is_page('privacy-policy') || is_page('terms-of-use') ) {
+        ?>
+        <style>
+            div#header-container {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+        </style>
+        <?php
+    }
+}
+add_action( 'wp_footer', 'hide_header' );
 
 function homepage_section() {
     if (is_front_page()) {
@@ -361,6 +408,11 @@ function overview_section() {
 
             // insert the elements into the newly created div
             divs.forEach(div => wrapper.append(div));
+        </script>
+
+        <script>
+            var html = '<div id="hotspot-grid"></div>';
+            document.body.insertAdjacentHTML('beforeend', html);
         </script>
         <?php
     }

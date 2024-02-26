@@ -1,5 +1,21 @@
 ![TheAgencyNetwork_logo-long-215x36](https://thewhyse.github.io/tutorial-images/TheAgencyNetwork_logo-long-215x36.png)
 
+## Tech Stack
+thewhyse/pharvaris-deflate-hcp is built on the following main stack:
+
+- <img width='25' height='25' src='https://img.stackshare.io/service/844/iruTC031.png' alt='gulp'/> [gulp](http://gulpjs.com/) – JS Build Tools / JS Task Runners
+- <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg' alt='PHP'/> [PHP](http://www.php.net/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1171/jCR2zNJV.png' alt='Sass'/> [Sass](http://sass-lang.com/) – CSS Pre-processors / Extensions
+- <img width='25' height='25' src='https://img.stackshare.io/service/1208/download.png' alt='Hack'/> [Hack](http://hacklang.org/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1616/1_WsEnddd5Y4EgEHsT054kUQ.jpeg' alt='PHPUnit'/> [PHPUnit](https://phpunit.de/) – Testing Frameworks
+- <img width='25' height='25' src='https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png' alt='Autoprefixer'/> [Autoprefixer](https://github.com/postcss/autoprefixer) – CSS Pre-processors / Extensions
+- <img width='25' height='25' src='https://img.stackshare.io/service/2739/-1wfGjNw.png' alt='Babel'/> [Babel](http://babeljs.io/) – JavaScript Compilers
+- <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+
+Full tech stack [here](/techstack.md)
+
 # Local Development Environment Set-up
 
 Following is the local environment setup to prepare for development for client sites hosted with [Pantheon](https://pantheon.io/). If you are not familiar with the **Patheon DevOps workflow**, every website comes with three environments: **Dev, Test, and Live**. Each environment runs a version of the site on its own container. We will only ever be working with the **DEV** environment and while **Patheon** offers developers the option to use either a **Git** or **SFTP** workflow, we will only use **Git**. Please do not ever switch the **Development Mode** to **SFTP** from the **Patheon** dashboard, as it cannot be switched back and commits as well as WIP could be lost.
