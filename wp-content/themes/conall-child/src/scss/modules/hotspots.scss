@@ -221,7 +221,7 @@ div#show-all-tips {
             div.tips-row {
                 div.tipsbox {
                     div.pv-hotspot-box-wrapper {
-                        max-width: 400px;
+                        max-width: 300px;
                         h3.pv-h3.ult-glow {
                             sup.pv-sup {
 
@@ -237,7 +237,9 @@ div#show-all-tips {
             }
             div#all-tips-row-1 {
                 div#tips-box-1 {
-
+                    div.pv-hotspot-box-wrapper {
+                        max-width: 300px;
+                    }
                 }
                 div#tips-box-4 {
 
@@ -264,7 +266,261 @@ div#show-all-tips {
 }
 
 @media all and (max-width: 1024px) {
+    body.pharvaris {
+        div#hotspot-grid {
 
+        }
+    }
+    div.pv-woman-hotspot {
+        display: flex;
+        justify-content: center;
+        &.tablet {
+            display: none;
+        }
+        img.ult_hotspot_image {
+        }
+    }
+    .aio-icon-img {
+        font-size: 80px !important;
+    }
+    div.ult-tooltipster-base {
+        width: 430px !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+    }
+    .ult_hotspot_container .utl-hotspot-items .ult-hotspot-item .ult-glow {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #e9b73f;
+    }
+    div#hotspot-tooltip-hs-one {
+        height: 190px;
+        left: 200px !important;
+        margin-top: 22px;
+        width: calc(68vw - 557px) !important;
+        max-width: 560px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-1 {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-two {
+        height: 185px;
+        left: 200px !important;
+        margin-top: 21px;
+        width: calc(68vw - 540px) !important;
+        max-width: 600px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-2 {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-three {
+        height: 140px;
+        left: 200px !important;
+        margin-top: -2px;
+        width: calc(68vw - 540px) !important;
+        max-width: 523px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-3 {
+                div.pv-hotspot-box-wrapper {
+                    ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                        li {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-four {
+        left: unset !important;
+        right: 5% !important;
+        height: 170px;
+        margin-top: 14px;
+        width: calc(50vw - 402px) !important;
+        max-width: 554px !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-4 {
+                flex-direction: row;
+                div.pv-hotspot-box-wrapper.left {
+                    width: 25%;
+                }
+                div.pv-hotspot-box-wrapper.right {
+                    width: 75%;
+                }
+                div.pv-hotspot-box-wrapper {
+
+                    div.pv-hotspot-box-wrapper {
+                        ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                            li {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-five {
+        height: 275px;
+        left: unset !important;
+        right: 5% !important;
+        div.ult-tooltipster-content.ult-responsive {
+                div#pv-hotspot-5 {
+                div.pv-hotspot-box-wrapper {
+                    div.pv-hotspot-box-wrapper {
+                        ul.pv-hotspot-list {
+                        max-width: 100%;
+                        margin-bottom: 0;
+                        height: 100%;
+                            li {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#hotspot-tooltip-hs-six {
+        height: 275px;
+        left: unset !important;
+        right: 5% !important;
+        div.ult-tooltipster-content.ult-responsive {
+            div#pv-hotspot-6 {
+                div.pv-hotspot-box-wrapper {
+                    div.pv-hotspot-box-wrapper {
+                        ul.pv-hotspot-list {
+                            max-width: 100%;
+                            margin-bottom: 0;
+                            height: 100%;
+                                li {
+
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.ult-tooltipster-content {
+        padding: 0 !important;
+        p {
+            margin: 0;
+        }
+        div.pv-hotspot-box {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: auto;
+            position: relative;
+            margin-top: 10px;
+            div.pv-hotspot-box-wrapper {
+                padding-top: 3px;
+                position: relative;
+                h3.pv-h3.tip-title {
+                    @include bold($poppins);
+                    color: $red;
+                    font-size: 26px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    text-align: left;
+                    sup.pv-sup {
+                        font-size: 60%;
+                    }
+                }
+            }
+        }
+    }
+    div.tooltip-close {
+        cursor: pointer;
+    }
+    div#show-all-tips {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        transform: unset !important;
+        height: 100%;
+        div.wpb_wrapper {
+            div.all-tooltips {
+                div.tips-row {
+                    div.tipsbox {
+                        div.pv-hotspot-box-wrapper {
+                            max-width: 400px;
+                            h3.pv-h3.ult-glow {
+                                sup.pv-sup {
+
+                                }
+                            }
+                            ul.pv-list.hotspot {
+                                li.pv-list-item.hotspot {
+
+                                }
+                            }
+                        }
+                    }
+                }
+                div#all-tips-row-1 {
+                    div#tips-box-1 {
+
+                    }
+                    div#tips-box-4 {
+
+                    }
+                }
+                div#all-tips-row-2 {
+                    div#tips-box-2 {
+
+                    }
+                    div#tips-box-5 {
+
+                    }
+                }
+                div#all-tips-row-3 {
+                    div#tips-box-3 {
+
+                    }
+                    div#tips-box-4 {
+
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 768px) {
 

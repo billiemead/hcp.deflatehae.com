@@ -241,8 +241,8 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
-                        margin-bottom: 412px !important;
-                        border-bottom: 2px solid #414143;
+                        margin-bottom: 441px !important;
+                        border: none;
                 }
                 footer {
                     div.edgtf-footer-inner {
@@ -344,6 +344,26 @@ body.pharvaris {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        &.terms-page {
+            div.edgtf-wrapper {
+                div.edgtf-wrapper-inner {
+                    div.edgtf-content {
+                            margin-bottom: 335px !important;
+                            border: none;
+                    }
+                }
+            }
+        }
+        &.privacy-policy {
+            div.edgtf-wrapper {
+                div.edgtf-wrapper-inner {
+                    div.edgtf-content {
+                            margin-bottom: 335px !important;
+                            border: none;
                     }
                 }
             }
