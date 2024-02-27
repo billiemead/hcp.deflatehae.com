@@ -1,4 +1,4 @@
-<?php 
+<?php
 class WDO_Carousel_Class {
 
 	function __construct() {
@@ -13,7 +13,7 @@ class WDO_Carousel_Class {
 		add_action( 'init', array( $this, 'check_if_vc_is_install' ) );
 	}
 
-		
+
 	function wdo_carousel_init() {
 
 		include 'includes/carousel_parent.php';
@@ -21,26 +21,26 @@ class WDO_Carousel_Class {
 		include 'includes/carousel_video.php';
 		include 'includes/carousel_posts.php';
 		include 'includes/carousel_testimonials.php';
-		include 'includes/carousel_image_over_image.php'; 
+		include 'includes/carousel_image_over_image.php';
 	}
 
 	function wdo_carousel_parent_render($atts, $content = null, $tag) {
-		wp_enqueue_style( 'wdo-carousel-css', plugin_dir_url( __FILE__ ).'assets/css/owl.carousel.min.css' );
+		wp_enqueue_style( 'wdo-carousel-css', plugin_dir_url( __FILE__ ).'assets/css/owl.carousel.css' );
 		wp_enqueue_style( 'wdo-owl-theme', plugin_dir_url( __FILE__ ).'assets/css/owl.theme.green.css' );
 		wp_enqueue_style( 'wdo-font-awesome', plugin_dir_url( __FILE__ ).'assets/css/font-awesome.min.css' );
 		wp_enqueue_style( 'wdo-animate-css', plugin_dir_url( __FILE__ ).'assets/css/animate.css' );
-		wp_enqueue_script( 'wdo-carousel-js', plugins_url( 'assets/js/owl.carousel.min.js' , __FILE__ ), array('jquery')); 
+		wp_enqueue_script( 'wdo-carousel-js', plugins_url( 'assets/js/owl.carousel.js' , __FILE__ ), array('jquery'));
 
         $args = array(
         	'wdo_slides_on_desk'		=>		'5',
         	'wdo_slides_on_tabs'		=>		'3',
         	'wdo_slides_on_mob'			=>		'2',
-        	'wdo_slides_scroll'			=>		'1', 
+        	'wdo_slides_scroll'			=>		'1',
         	'wdo_slide_loop'			=>		'true',
         	'wdo_slide_margin'			=>		'10',
         	'wdo_auto_play'				=>		'true',
         	'wdo_nav_dots'				=>		'true',
-        	'wdo_nav_arrows'			=>		'false', 
+        	'wdo_nav_arrows'			=>		'false',
         	'wdo_arrow_bg_color'		=>		'',
         	'wdo_arrow_color'			=>		'',
         	'wdo_dots_color'			=>		'',
@@ -86,7 +86,7 @@ class WDO_Carousel_Class {
         		    videoHeight:300,
         		    loop:<?php echo $wdo_slide_loop; ?>,
         		    slideBy:<?php echo $wdo_slides_scroll; ?>,
-        		    autoplay:<?php echo $wdo_auto_play; ?>, 
+        		    autoplay:<?php echo $wdo_auto_play; ?>,
         		    nav:<?php echo $wdo_nav_arrows; ?>,
         		    dots:<?php echo $wdo_nav_dots; ?>,
         		    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
@@ -112,7 +112,7 @@ class WDO_Carousel_Class {
 		extract( shortcode_atts( array(
 			), $atts ) );
 		?>
-			
+
 		<div class="item">
 			<?php echo do_shortcode( $content ); ?>
 		</div>
@@ -130,10 +130,10 @@ class WDO_Carousel_Class {
 		), $atts ) );
 
 		if (isset($wdo_front_image) &&  $wdo_front_image != '') {
-			$front_image_url = wp_get_attachment_url( $wdo_front_image );		
+			$front_image_url = wp_get_attachment_url( $wdo_front_image );
 		}
 		if (isset($wdo_back_image) &&  $wdo_back_image != '') {
-			$back_image_url = wp_get_attachment_url( $wdo_back_image );		
+			$back_image_url = wp_get_attachment_url( $wdo_back_image );
 		}
 		wp_enqueue_style( 'wdo-styles-css', plugins_url( 'assets/css/ioi.css' , __FILE__ ));
 		?>
@@ -164,7 +164,7 @@ class WDO_Carousel_Class {
 				</div>
 			</div>
 		</div>
-		<?php 
+		<?php
 	}
 
 	function wdo_carousel_video_render($atts, $content = null, $tag) {
@@ -173,7 +173,7 @@ class WDO_Carousel_Class {
 			), $atts ) );
 			?>
 			<div class="item-video">
-			  <a class="owl-video" href="<?php echo $wdo_video_url; ?>"></a> 
+			  <a class="owl-video" href="<?php echo $wdo_video_url; ?>"></a>
 			</div>
 
 		<?php
@@ -205,13 +205,13 @@ class WDO_Carousel_Class {
 		$selected_style = dirname(__FILE__).'/includes/post-templates/'.$wdo_post_style.'.php';
 		$new_query = new WP_Query( $query_args );
 		if ( $new_query->have_posts() ) { ?>
-		
+
 			<?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
 				<div class="item">
 					<?php include $selected_style; ?>
 				</div>
 			<?php endwhile; ?>
-		
+
 		<?php } ?>
 		<?php
 	}
@@ -225,7 +225,7 @@ class WDO_Carousel_Class {
 		), $atts ) );
 
 		if (isset($wdo_author_avatar) &&  $wdo_author_avatar != '') {
-			$avatar_url = wp_get_attachment_url( $wdo_author_avatar );		
+			$avatar_url = wp_get_attachment_url( $wdo_author_avatar );
 		}
 		wp_enqueue_style( 'wdo-testimonial-css', plugins_url( 'assets/css/wdo-testimonial.css' , __FILE__ ));
 		$selected_style =dirname(__FILE__).'/includes/testimonial-templates/'.$wdo_testimonial_style.'.php';
@@ -233,7 +233,7 @@ class WDO_Carousel_Class {
 		<div class="item">
 			<?php include $selected_style; ?>
 		</div>
-		<?php 
+		<?php
 	}
 
 	function custom_param_styles() {
@@ -256,10 +256,10 @@ class WDO_Carousel_Class {
             // Display notice that Visual Compser is required
             add_action('admin_notices', array( $this, 'showVcVersionNotice' ));
             return;
-        }			
+        }
 	}
 
-	function showVcVersionNotice() { 
+	function showVcVersionNotice() {
 	    $plugin_name = 'Carousel Anything';
         echo '
         <div class="updated">

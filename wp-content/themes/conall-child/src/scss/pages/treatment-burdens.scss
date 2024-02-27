@@ -149,7 +149,7 @@ body.treatmentburdens-page {
 
                                                                             }
                                                                         }
-                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -467,40 +467,40 @@ body.treatmentburdens-page {
 
                                                                                                 }
 
-                                                                                            li.pv-list-item:last-of-type{
-                                                                                                margin-bottom: 0;
+                                                                                                li.pv-list-item:last-of-type{
+                                                                                                    margin-bottom: 0;
+                                                                                                }
                                                                                             }
+                                                                                        }
+                                                                                    }
                                                                                 }
+                                                                        }
+                                                                        div#triple-icon-inner-row-1 {
+                                                                            div.pv-col2.left {
+                                                                                height: 300px;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 5% 0;
+                                                                            }
+                                                                        }
+                                                                        div#triple-icon-inner-row-2 {
+                                                                            div.pv-col2.left {
+                                                                                height: 240px;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 6% 0;
+                                                                            }
+                                                                        }
+                                                                        div#triple-icon-inner-row-3 {
+                                                                            div.pv-col2.left {
+                                                                                height: 240px;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 8% 0;
                                                                             }
                                                                         }
                                                                     }
                                                                 }
-                                                                div#triple-icon-inner-row-1 {
-                                                                    div.pv-col2.left {
-                                                                        height: 300px;
-                                                                    }
-                                                                    div.pv-col2.right {
-                                                                        padding: 5% 0;
-                                                                    }
-                                                                }
-                                                                div#triple-icon-inner-row-2 {
-                                                                    div.pv-col2.left {
-                                                                        height: 240px;
-                                                                    }
-                                                                    div.pv-col2.right {
-                                                                        padding: 6% 0;
-                                                                    }
-                                                                }
-                                                                div#triple-icon-inner-row-3 {
-                                                                    div.pv-col2.left {
-                                                                        height: 240px;
-                                                                    }
-                                                                    div.pv-col2.right {
-                                                                        padding: 8% 0;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
                                                             }
                                                         }
                                                     }
@@ -915,12 +915,13 @@ body.treatmentburdens-page {
                                         background-color: $red;
                                         height: 205px;
                                         display: flex;
-                                        justify-content: center;
+                                        justify-content: space-evenly;
                                         align-items: center;
                                         flex-direction: column;
                                         z-index: 14;
                                         position: relative;
                                         bottom: 2px;
+                                        padding: 6% 0;
                                         h2 {
                                             max-width: 400px;
                                             @include bold($poppins);
@@ -1201,13 +1202,120 @@ body.treatmentburdens-page {
                                 }
                             }
                             div#treatment-triple-icon-row {
-
+                                padding: 5% 0 0 0;
+                                background-position-x: 55%;
+                                background-size: cover;
                                 div.edgtf-full-section-inner {
+                                        div.pv-col1 {
+                                            div.vc_column-inner {
+                                                padding: 0;
+                                                div.wpb_wrapper {
+                                                    div#triple-icon-html {
+                                                        div.wpb_wrapper {
+                                                            section.redwhite-box-section {
+                                                                max-width: 980px;
+                                                                margin: 0 auto;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                align-items: center;
+                                                                margin-top: 5%;
+                                                                div.redwhite-box-wrapper {
+                                                                    filter: drop-shadow(0 0 20px rgba(0, 0, 0, .45));
+                                                                    z-index: 1;
+                                                                    position: relative;
+                                                                    max-width: 1194px;
+                                                                    display: flex;
+                                                                    flex-wrap: nowrap;
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    margin-bottom: 15%;
+                                                                    div.redwhite-box {
+                                                                        background-image: url("/wp-content/themes/conall-child/images/red-white-vertical-500x708.svg");
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        background-size: 100% 100%;
+                                                                        div.triple-icon--row {
+                                                                            display: flex;
+                                                                            height: 100%;
+                                                                            align-items: center;
+                                                                            flex-direction: column;
+                                                                                div.pv-col2.left {
+                                                                                    width: 80%;
+                                                                                    display: flex;
+                                                                                    flex-direction: column;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    padding: 5% 0 4% 0;
+                                                                                    height: 287px;
+                                                                                    div.inner-box-wrapper {
+                                                                                        height: 100%;
+                                                                                        div.icon-wrapper {
+                                                                                            img.icon-image {
 
-                                    div.pv-col1 {
+                                                                                            }
+                                                                                        }
+                                                                                        div.title-wrapper {
+                                                                                            h5.pv-h5.center.white {
 
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                div.pv-col2.right {
+                                                                                    width: 80%;
+                                                                                    display: flex;
+                                                                                    padding: 3% 0;
+                                                                                    margin: 0;
+                                                                                    div.list-wrapper {
+                                                                                        ul.pv-list {
+                                                                                            li.pv-list-item{
+                                                                                                margin-bottom: 3%;
+                                                                                                sup.pv-sup {
+
+                                                                                                }
+
+                                                                                                li.pv-list-item:last-of-type{
+                                                                                                    margin-bottom: 0;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                        }
+                                                                        div#triple-icon-inner-row-1 {
+                                                                            div.pv-col2.left {
+                                                                                height: 345px;
+                                                                                padding: 12% 0 5% 0;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 15% 0 15% 0;
+                                                                            }
+                                                                        }
+                                                                        div#triple-icon-inner-row-2 {
+                                                                            div.pv-col2.left {
+                                                                                height: 240px;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 15% 0 15% 0;
+                                                                            }
+                                                                        }
+                                                                        div#triple-icon-inner-row-3 {
+                                                                            div.pv-col2.left {
+                                                                                height: 240px;
+                                                                            }
+                                                                            div.pv-col2.right {
+                                                                                padding: 15% 0 15% 0;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
-                                }
                             }
                             div#treatment-balloon-animation-row {
                                 div.edgtf-full-section-inner {

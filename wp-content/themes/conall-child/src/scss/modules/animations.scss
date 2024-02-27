@@ -8,6 +8,9 @@
 div#swap-box {
     animation: fadeIn 2s;
 }
+div.owl-carousel .owl-item {
+    animation: fadeIn 0.5s;
+}
 
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
