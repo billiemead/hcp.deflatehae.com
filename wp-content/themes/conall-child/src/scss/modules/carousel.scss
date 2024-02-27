@@ -35,14 +35,14 @@ div.owl-nav {
     .owl-prev::before {
         color: #fff;
         padding: 0;
-        top: -14px;
+        top: 5px;
         position: relative;
         left: calc(100vw / 35 * -4);
     }
     .owl-next::before {
         color: #fff;
         padding: 0;
-        top: -14px;
+        top: 5px;
         position: relative;
         right: calc(100vw / 35 * -4);
     }

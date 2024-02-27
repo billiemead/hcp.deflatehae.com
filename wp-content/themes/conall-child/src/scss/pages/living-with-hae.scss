@@ -54,6 +54,8 @@ body.livinghae-page {
                                                 div#hero-logo-alt-tablet,
                                                 div#hero-logo-alt-mobile {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                         }
                                     }
@@ -837,6 +839,9 @@ body.livinghae-page {
                                                     }
                                                     div#hero-logo-alt-tablet,
                                                     div#hero-logo-alt-mobile {
+                                                        visibility: hidden;
+                                                        opacity: 0;
+                                                        display: none;
                                                     }
                                             }
                                         }
@@ -1108,12 +1113,18 @@ body.livinghae-page {
                                                 }
                                                 div#hero-logo-alt-desktop {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#hero-logo-alt-mobile {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     text-align: center;
                                                     max-width: 685px;
                                                     margin: 0 auto;
@@ -1492,32 +1503,40 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.hero-subheading {
-                                                padding-bottom: 4%;
-                                                max-width: 686px;
-                                                margin: 0 auto;
-                                                h2.pv-h2 {
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                        bottom: .8ex;
+                                            div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    padding-bottom: 4%;
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
+                                                        }
                                                     }
                                                 }
-                                            }
-                                            div#hero-logo-alt-desktop {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-tablet {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-mobile {
-                                                display: block;
-                                                text-align: center;
-                                                max-width: 685px;
-                                                margin: 0 auto;
-                                                figure.wpb_wrapper {
-                                                    div.vc_single_image-wrapper {
-                                                        img.vc_single_image-img {
+                                                div#hero-logo-alt-desktop {
+                                                    display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
+                                                }
+                                                div#hero-logo-alt-tablet {
+                                                    display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
+                                                }
+                                                div#hero-logo-alt-mobile {
+                                                    display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
+                                                    text-align: center;
+                                                    max-width: 685px;
+                                                    margin: 0 auto;
+                                                    figure.wpb_wrapper {
+                                                        div.vc_single_image-wrapper {
+                                                            img.vc_single_image-img {
 
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1835,35 +1854,27 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.hero-subheading {
-                                                padding-bottom: 4%;
-                                                max-width: 686px;
-                                                margin: 0 auto;
-                                                h2.pv-h2 {
+                                            div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    padding-bottom: 4%;
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
 
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                        bottom: .8ex;
-                                                    }
-                                                }
-                                            }
-                                            div#hero-logo-alt-desktop {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-tablet {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-mobile {
-                                                display: block;
-                                                text-align: center;
-                                                max-width: 685px;
-                                                margin: 0 auto;
-                                                figure.wpb_wrapper {
-                                                    div.vc_single_image-wrapper {
-                                                        img.vc_single_image-img {
-
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
                                                         }
                                                     }
+                                                }
+                                                div#hero-logo-alt-desktop {
+
+                                                }
+                                                div#hero-logo-alt-tablet {
+
+                                                }
+                                                div#hero-logo-alt-mobile {
+
                                                 }
                                             }
                                         }
@@ -2138,35 +2149,27 @@ body.livinghae-page {
                                         div.vc_column-inner {
                                             padding: 0;
                                             height: 100%;
-                                            div.hero-subheading {
-                                                padding-bottom: 4%;
-                                                max-width: 686px;
-                                                margin: 0 auto;
-                                                h2.pv-h2 {
+                                            div.wpb_wrapper {
+                                                div.hero-subheading {
+                                                    padding-bottom: 4%;
+                                                    max-width: 686px;
+                                                    margin: 0 auto;
+                                                    h2.pv-h2 {
 
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                        bottom: .8ex;
-                                                    }
-                                                }
-                                            }
-                                            div#hero-logo-alt-desktop {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-tablet {
-                                                display: none;
-                                            }
-                                            div#hero-logo-alt-mobile {
-                                                display: block;
-                                                text-align: center;
-                                                max-width: 685px;
-                                                margin: 0 auto;
-                                                figure.wpb_wrapper {
-                                                    div.vc_single_image-wrapper {
-                                                        img.vc_single_image-img {
-
+                                                        sup.pv-sup {
+                                                            font-size: 65%;
+                                                            bottom: .8ex;
                                                         }
                                                     }
+                                                }
+                                                div#hero-logo-alt-desktop {
+
+                                                }
+                                                div#hero-logo-alt-tablet {
+
+                                                }
+                                                div#hero-logo-alt-mobile {
+
                                                 }
                                             }
                                         }

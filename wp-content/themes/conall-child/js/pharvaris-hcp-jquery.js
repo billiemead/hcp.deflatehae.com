@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
                     'background-image': 'url(' + bgArray[value] + ')'
                 });
             });
-            if ($(window).width() > 1024) { // use `===` and no quote around 783
+            if ($(window).width() > 1024) {
                 $('#living-hae-impacts-row').css({
                     'background-image': 'url(/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg)'
                 });
@@ -76,6 +76,7 @@ jQuery(document).ready(function ($) {
     })
 }); // no `.resize()` needed here
 
+// toggle Show All/Close All tips
 jQuery(document).ready(function ($) {
     $('#toggler').on('click', function () {
         if ($(this).text() === "show all") {
@@ -88,6 +89,18 @@ jQuery(document).ready(function ($) {
     })
 });
 
+// if any individual hotspot is clicked, hide SHOW ALL TIPS
+jQuery(document).ready(function ($) {
+    $('.ult-hotspot-tooltip').on('click', function () {
+
+        $('#show-all-tips').css({
+            'display': 'none'
+        });
+
+    })
+});
+
+// Toogle between Mobile hamburger and close X
 jQuery(document).ready(function ($) {
     $('.mobile-hamburger').on('click', function () {
 
