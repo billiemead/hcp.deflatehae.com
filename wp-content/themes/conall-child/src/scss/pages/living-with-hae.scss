@@ -11,9 +11,9 @@ body.livinghae-page {
                     div.wpb-content-wrapper {
                         div#breakpoint-row {
                             width: 100vw;
+                            height: 0;
                         }
                         div#living-cta-row {
-
                         }
                         div#living-hero-row {
                             background-image: url("/wp-content/themes/conall-child/images/overview-hero-background-1920x604.svg");
@@ -70,6 +70,7 @@ body.livinghae-page {
                             margin-bottom: -10% !important;
                             margin-top: -3%;
                             max-height: 1050px;
+                            animation: fadein;
                             div.clearfix.edgtf-full-section-inner {
                                 max-width: 1194px;
                                 height: 100%;
