@@ -3,7 +3,19 @@
 jQuery(document).ready(function ($) {
     $(window).load(function () {
         function check() {
-            if ($(window).width() > 1024) {
+            var bgArray = [
+                '/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg',
+                '/wp-content/themes/conall-child/images/living-backg-2-1920x1200.jpg',
+                '/wp-content/themes/conall-child/images/living-backg-3-1920x1200.jpg',
+                '/wp-content/themes/conall-child/images/living-backg-4-1920x1200.jpg'
+            ]
+            $('#redselect').on('change', function () {
+                value = $(this).val() - 1;
+                $('#living-hae-impacts-row').css({
+                    'background-image': 'url(' + bgArray[value] + ')'
+                });
+            });
+            if ($(window).width() > 1024) { // use `===` and no quote around 783
                 $('#living-hae-impacts-row').css({
                     'background-image': 'url(/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg)'
                 });
@@ -57,12 +69,12 @@ jQuery(document).ready(function ($) {
         $('#breakpoint-row').html($(window).width());
         check(); // first-time check
 
-        $(window).resize(function () {
+        $(window).resize(function () {  // no `on` here
             $('#breakpoint-row').html($(window).width());
             check();
-        });
+        }); // no `.resize()` needed here
     })
-});
+}); // no `.resize()` needed here
 
 jQuery(document).ready(function ($) {
     $('#toggler').on('click', function () {
