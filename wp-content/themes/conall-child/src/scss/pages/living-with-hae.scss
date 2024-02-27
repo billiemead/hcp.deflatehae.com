@@ -63,8 +63,8 @@ body.livinghae-page {
                         div#living-hae-impacts-row {
                             background-image: url("/wp-content/themes/conall-child/images/living-backg-1-1920x1200.jpg");
                             background-repeat: no-repeat;
-                            background-size: 106% 104%;
-                            background-position: center top;
+                            background-size: 100%;
+                            background-position: center bottom;
                             width: 102%;
                             z-index: 2;
                             margin-bottom: -10% !important;
@@ -1527,7 +1527,6 @@ body.livinghae-page {
                             }
                             div#living-hae-impacts-row {
                                 height: auto;
-                                transform: translateY(0);
                                 background-image: url("/wp-content/themes/conall-child/images/living-backg-1-576x1280.jpg");
                                 width: 102%;
                                 margin-bottom: 0 !important;
@@ -2197,7 +2196,7 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.two {
-                                        padding-bottom: calc(100vh / 7);
+                                        padding-bottom: calc(100vh / 8 + 5%);
                                         padding-top: 5%;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
