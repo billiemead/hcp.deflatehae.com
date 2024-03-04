@@ -19,9 +19,8 @@ body.pharvaris {
                 z-index: 101;
                 background-color: transparent !important;
                 div.pv-top-bar {
-                    display: none !important;
                     background-color: $dk-grey !important;
-                    height: 60px;
+                    height: 65px;
                     z-index: 102;
                     position: fixed;
                     width: 100%;
@@ -45,7 +44,6 @@ body.pharvaris {
                                         display: flex;
                                         list-style: none;
                                         width: 100%;
-                                        height: 20.5px;
                                         justify-content: space-between;
                                         align-items: center;
                                         margin: 0;
@@ -116,9 +114,9 @@ body.pharvaris {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    top: 0;
+                    top: 60px;
                     position: fixed;
-                    z-index: 101;
+                    z-index: 102;
                     div.pv-fixed-wrapper {
                         display: flex;
                         width: 100%;
@@ -130,11 +128,11 @@ body.pharvaris {
                         div.edgtf-menu-area {
                             display: flex;
                             padding: 0;
-                            height: 156px;
+                            height: 105px;
                             width: 100%;
                             background-color: $dk-grey !important;
                             justify-content: center;
-                            align-items: center;
+                            align-items: flex-start;
                             div.edgtf-container.pv-container {
                                 padding-top: 0;
                                 top: 0;
@@ -142,7 +140,7 @@ body.pharvaris {
                                     width: 100% !important;
                                     div.edgtf-vertical-align-containers {
                                         display: flex;
-                                        align-items: center;
+                                        align-items: flex-end;
                                         justify-content: flex-end;
                                         div.edgtf-position-left {
                                             float: unset;
@@ -186,7 +184,7 @@ body.pharvaris {
             }
             div#header-container::after {
                 background: url("/wp-content/themes/conall-child/images/header-background-1920x24.svg");
-                bottom: 0px;
+                bottom: -9px;
                 content: "";
                 height: 24px;
                 position: absolute;
@@ -209,7 +207,6 @@ body.pharvaris {
                 div#header-container {
                     height: 92.5px;
                     div.pv-top-bar {
-                        display: none !important;
                         height: 40px;
                         div.pv-container {
                             div.edgtf-vertical-align-containers.pv-header-top-fullwidth {
@@ -254,7 +251,7 @@ body.pharvaris {
                         }
                     }
                     header.edgtf-page-header.hcp-header {
-                        top: 0;
+                        top: 40px;
                         div.pv-fixed-wrapper {
                             &.fixed {
                             }
@@ -291,24 +288,12 @@ body.pharvaris {
                                     }
                                 }
                             }
-                            /* div.edgtf-menu-area::after {
-                                background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
-                                bottom: -7.5px;
-                                content: "";
-                                height: 7.5px;
-                                position: absolute;
-                                width: 100vw;
-                                background-repeat: no-repeat;
-                                background-size: 100vw;
-                                background-position-x: center;
-                                background-position-y: top;
-                            } */
                         }
                     }
                 }
                 div#header-container::after {
                     background: url("/wp-content/themes/conall-child/images/header-background-1024x7.svg") center bottom no-repeat;
-                    bottom: 0;
+                    bottom: -40px;
                     content: "";
                     height: 7.5px;
                     position: absolute;
@@ -363,7 +348,6 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 div#header-container {
                     div.pv-top-bar {
-                        display: none !important;
                         height: 40px;
                         div.pv-container {
                             height: 100%;
@@ -406,8 +390,8 @@ body.pharvaris {
                                                         li.menu-selector-list-item {
                                                             span.menu-selector-link,
                                                             a.menu-selector-link {
-                                                                font-size: 12px;
-                                                                line-height: 12px;
+                                                                font-size: 14px;
+                                                                line-height: 14px;
                                                                 font-weight: 400;
                                                                 transition: all 0.5s ease-in-out;
                                                                 &.yellow {
@@ -418,11 +402,11 @@ body.pharvaris {
                                                                     color: $white;
                                                                 }
                                                             }
-                                                           /*  a.menu-selector-link.yellow:hover {
+                                                           a.menu-selector-link.yellow:hover {
                                                                 font-weight: normal;
                                                                 color: $white;
                                                                 transition: all 0.5s ease-in-out;
-                                                            } */
+                                                            }
                                                             a.menu-selector-link.white:hover {
                                                                 color: $yellow;
                                                                 transition: all 0.5s ease-in-out;
@@ -464,7 +448,7 @@ body.pharvaris {
                         opacity: 1;
                         width: 100%;
                         position: fixed;
-                        top: 0;
+                        top: 40px;
                         margin: 0 !important;
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
@@ -546,10 +530,9 @@ body.pharvaris {
                         }
                     }
                 }
-
                 div#header-container::after {
                     background: url("/wp-content/themes/conall-child/images/header-background-576x16.svg") center bottom no-repeat;
-                    bottom: -8px;
+                    bottom: -46px;
                     content: "";
                     height: 16px;
                     position: absolute;
@@ -570,8 +553,7 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 div#header-container {
                     div.pv-top-bar {
-                        display: none !important;
-                        height: 65px;
+                        height: 40px;
                         div.pv-container {
                             height: 100%;
                             width: 100%;
@@ -619,11 +601,11 @@ body.pharvaris {
                                                                         line-height: 12px;
                                                                     }
                                                                 }
-                                                                /* a.menu-selector-link.yellow:hover {
+                                                                a.menu-selector-link.yellow:hover {
                                                                     font-weight: normal;
                                                                     color: $white;
                                                                     transition: all 0.5s ease-in-out;
-                                                                } */
+                                                                }
                                                                 a.menu-selector-link.white:hover {
                                                                     color: $yellow;
                                                                     transition: all 0.5s ease-in-out;
@@ -661,7 +643,7 @@ body.pharvaris {
                         opacity: 1;
                         width: 100%;
                         position: fixed;
-                        top: 0;
+                        top: 40px;
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
                             border: none;
@@ -703,7 +685,7 @@ body.pharvaris {
                     }
                 }
                 div#header-container::after {
-
+                    bottom: -46px;
                 }
             }
         }
@@ -715,7 +697,6 @@ body.pharvaris {
             div.edgtf-wrapper-inner {
                 div#header-container {
                     div.pv-top-bar {
-                        display: none !important;
                         height: 65px;
                         div.pv-container {
                             height: 100%;
@@ -765,11 +746,11 @@ body.pharvaris {
                                                                         line-height: 12px;
                                                                     }
                                                                 }
-                                                                /* a.menu-selector-link.yellow:hover {
+                                                                a.menu-selector-link.yellow:hover {
                                                                     font-weight: normal;
                                                                     color: $white;
                                                                     transition: all 0.5s ease-in-out;
-                                                                } */
+                                                                }
                                                                 a.menu-selector-link.white:hover {
                                                                     color: $yellow;
                                                                     transition: all 0.5s ease-in-out;
@@ -807,7 +788,7 @@ body.pharvaris {
                         opacity: 1;
                         width: 100%;
                         position: fixed;
-
+                        top: 65px;
                         div.edgtf-mobile-header-inner {
                             background-color: $dk-grey;
                             border: none;
@@ -849,7 +830,7 @@ body.pharvaris {
                     }
                 }
                 div#header-container::after {
-
+                    bottom: -72px;
                 }
             }
         }

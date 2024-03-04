@@ -22,7 +22,6 @@ body.haeoverview-page {
                                 height: 100%;
                                 width: 80%;
                                 div#overview-hero-col {
-
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.wpb_wrapper {
@@ -30,6 +29,16 @@ body.haeoverview-page {
                                                 text-align: center;
                                                 figure.wpb_wrapper {
                                                     width: 100%;
+                                                    div.vc_single_image-wrapper {
+                                                        img.vc_single_image-img {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            div#hero-logo-alt-desktop {
+                                                text-align: center;
+                                                figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
 
@@ -263,39 +272,6 @@ body.haeoverview-page {
                                         }
                                     }
                                 }
-                                div.pv-col1.mid {
-                                    div.vc_column-inner {
-                                        div.wpb_wrapper {
-                                            h3.pv-h3.center {
-                                                text-transform: uppercase;
-                                                font-size: 26px;
-                                                line-height: 34px;
-                                                sup.pv-sup {
-                                                    font-size: 65%;
-                                                }
-                                            }
-                                            p.pv-p.center {
-                                                font-size: 20px;
-                                                line-height: 30px;
-                                                padding-top: 1%;
-                                                padding-bottom: 2.5%;
-                                                max-width: 980px;
-                                                margin: 0 auto;
-                                                sup.pv-sup {
-                                                    font-size: 65%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                div.pv-col1.slider {
-                                    padding-top: 0;
-                                    div.vc_column-inner {
-                                        div.wpb_wrapper {
-
-                                        }
-                                    }
-                                }
                             }
                         }
                         div#overview-bradykinin-row {
@@ -358,6 +334,14 @@ body.haeoverview-page {
                                                     font-size: 65%;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+                                div.pv-col1.slider {
+                                    padding-top: 0;
+                                    div.vc_column-inner {
+                                        div.wpb_wrapper {
+
                                         }
                                     }
                                 }
@@ -717,40 +701,6 @@ body.haeoverview-page {
                                             }
                                         }
                                     }
-                                    div.pv-col1.mid {
-                                        div.vc_column-inner {
-                                            div.wpb_wrapper {
-                                                h3.pv-h3.center {
-                                                    text-transform: uppercase;
-                                                    font-size: 26px;
-                                                    max-width: 684px;
-                                                    margin: 0 auto;
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                    }
-                                                }
-                                                p.pv-p.center {
-                                                    font-size: 20px;
-                                                    line-height: 30px;
-                                                    padding-top: 3%;
-                                                    padding-bottom: 4%;
-                                                    max-width: 716px;
-                                                    margin: 0 auto;
-                                                    sup.pv-sup {
-                                                        font-size: 65%;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    div.pv-col1.slider {
-                                        padding-top: 0;
-                                        div.vc_column-inner {
-                                            div.wpb_wrapper {
-
-                                            }
-                                        }
-                                    }
                                 }
                             }
                             div#overview-bradykinin-row {
@@ -808,9 +758,16 @@ body.haeoverview-page {
                                             }
                                         }
                                     }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+
+                                            }
+                                        }
+                                    }
                                 }
                             }
-
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {
@@ -1024,12 +981,6 @@ body.haeoverview-page {
                                             }
                                         }
                                     }
-                                    div.pv-col1.slider {
-                                        padding-top: 0;
-                                        div.vc_column-inner {
-
-                                        }
-                                    }
                                 }
                             }
                             div#overview-bradykinin-row {
@@ -1095,6 +1046,12 @@ body.haeoverview-page {
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+
                                         }
                                     }
                                 }
@@ -1454,12 +1411,6 @@ body.haeoverview-page {
                                             }
                                         }
                                     }
-                                    div.pv-col1.slider {
-                                        padding-top: 0;
-                                        div.vc_column-inner {
-
-                                        }
-                                    }
                                 }
                             }
                             div#overview-bradykinin-row {
@@ -1525,6 +1476,12 @@ body.haeoverview-page {
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+                                    div.pv-col1.slider {
+                                        padding-top: 0;
+                                        div.vc_column-inner {
+
                                         }
                                     }
                                 }

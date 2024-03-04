@@ -266,7 +266,6 @@ body.livinghae-page {
                             background-image: url("/wp-content/themes/conall-child/images/jennifers-hae-story-background-1564x1564.png");
                             background-repeat: no-repeat;
                             background-size: 100%;
-                            background-position: center center;
                             background-position: center -116px;
                             visibility: visible;
                             margin-bottom: 0;
@@ -1111,11 +1110,7 @@ body.livinghae-page {
                                                         }
                                                     }
                                                 }
-                                                div#hero-logo-alt-desktop {
-                                                    display: none;
-                                                    visibility: hidden;
-                                                    opacity: 0;
-                                                }
+                                                div#hero-logo-alt-desktop,
                                                 div#hero-logo-alt-mobile {
                                                     display: none;
                                                     visibility: hidden;
@@ -1149,7 +1144,6 @@ body.livinghae-page {
                                 max-height: 100%;
                                 margin-top: 3%;
                                 div.clearfix.edgtf-full-section-inner {
-
                                     div.pv-col1.one {
                                         padding-top: 10%;
                                         div.vc_column-inner {
@@ -1297,32 +1291,32 @@ body.livinghae-page {
                                         }
                                     }
                                     div.pv-col1.four {
-                                    bottom: 0;
-                                    padding-bottom: 0;
-                                    div.vc_column-inner {
-                                        padding: 0;
-                                        div.wpb_wrapper {
-                                            div#living-balloon-hand {
-                                                figure.wpb_wrapper {
-                                                    width: 100%;
-                                                    div.vc_single_image-wrapper {
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        padding-right: 0;
-                                                            img.vc_single_image-img {
-                                                                height: auto;
-                                                                max-width: 100%;
-                                                                vertical-align: top;
-                                                                right: 0;
-                                                                position: relative;
-                                                            }
+                                        bottom: 0;
+                                        padding-bottom: 0;
+                                        div.vc_column-inner {
+                                            padding: 0;
+                                            div.wpb_wrapper {
+                                                div#living-balloon-hand {
+                                                    figure.wpb_wrapper {
+                                                        width: 100%;
+                                                        div.vc_single_image-wrapper {
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-right: 0;
+                                                                img.vc_single_image-img {
+                                                                    height: auto;
+                                                                    max-width: 100%;
+                                                                    vertical-align: top;
+                                                                    right: 0;
+                                                                    position: relative;
+                                                                }
+                                                        }
                                                     }
                                                 }
-                                            }
 
+                                            }
                                         }
                                     }
-                                }
                                 }
                             }
                             div.section-background {
@@ -1489,12 +1483,10 @@ body.livinghae-page {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#living-cta-row {
-
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
                                 margin-bottom: -95px !important;
-
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -1553,7 +1545,6 @@ body.livinghae-page {
                                 margin-bottom: 0 !important;
                                 top: 15px;
                                 div.clearfix.edgtf-full-section-inner {
-
                                     div.pv-col1.one {
                                         padding-top: 20%;
                                         div.vc_column-inner {
@@ -2136,12 +2127,10 @@ body.livinghae-page {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#living-cta-row {
-
                             }
                             div#living-hero-row {
                                 background-image: url("/wp-content/themes/conall-child/images/mob-hero-bkgnd-alt-576x439.svg");
                                 margin-bottom: -95px !important;
-
                                 & > div.edgtf-full-section-inner {
                                     max-width: 100%;
                                     width: 80%;
@@ -2178,9 +2167,7 @@ body.livinghae-page {
                                 }
                             }
                             div#living-hae-impacts-row {
-
                                 div.clearfix.edgtf-full-section-inner {
-
                                     div.pv-col1.one {
                                         padding-top: 15%;
                                         margin-top: 20%;
@@ -2336,7 +2323,6 @@ body.livinghae-page {
                             }
                             div.section-background {
                                 div#hae-section-wrapper {
-
                                     div#jennifer-banner-section-new {
                                         margin-top: -20%;
                                         div.edgtf-full-section-inner {
@@ -2464,7 +2450,6 @@ body.livinghae-page {
                             div#references-section {
                                 div.refs-title {
                                     h4.h4-refs.left {
-
                                     }
                                 }
                                 div.refs-paragraph {
@@ -2475,7 +2460,7 @@ body.livinghae-page {
                             }
                         }
                     }
-            }
+                }
             }
         }
     }

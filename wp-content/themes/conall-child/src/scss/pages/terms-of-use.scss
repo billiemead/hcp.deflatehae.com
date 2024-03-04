@@ -35,11 +35,11 @@ body.terms-page {
                                                     }
                                                 }
                                             }
-                                            div#terms-hero-logo-tab {
-                                                display: none;
-                                            }
+                                            div#terms-hero-logo-tab,
                                             div#terms-hero-logo-mob {
                                                 display: none;
+                                                visibility: hidden;
+                                                opacity: 0;
                                             }
                                         }
                                     }
@@ -87,11 +87,16 @@ body.terms-page {
                                         align-items: center;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
-                                                div#terms-hero-logo-desk {
+                                                div#terms-hero-logo-desk,
+                                                div#terms-hero-logo-mob {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#terms-hero-logo-tab {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
@@ -99,9 +104,6 @@ body.terms-page {
                                                             }
                                                         }
                                                     }
-                                                }
-                                                div#terms-hero-logo-mob {
-                                                    display: none;
                                                 }
                                             }
                                         }
@@ -151,14 +153,16 @@ body.terms-page {
                                         align-items: center;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
-                                                div#terms-hero-logo-desk {
-                                                    display: none;
-                                                }
+                                                div#terms-hero-logo-desk,
                                                 div#terms-hero-logo-tab {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#terms-hero-logo-mob {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {
@@ -213,14 +217,16 @@ body.terms-page {
                                         align-items: center;
                                         div.vc_column-inner {
                                             div.wpb_wrapper {
-                                                div#terms-hero-logo-desk {
-
-                                                }
+                                                div#terms-hero-logo-desk,
                                                 div#terms-hero-logo-tab {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#terms-hero-logo-mob {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     figure.wpb_wrapper {
                                                         div.vc_single_image-wrapper {
                                                             img.vc_single_image-img {

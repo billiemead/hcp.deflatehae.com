@@ -29,7 +29,6 @@ body.communitysupport-page {
                                             div.hero-subheading {
                                                 max-width: 1265px;
                                                 margin: 0 auto;
-                                                padding-top: 3%;
                                                 h2.pv-h2 {
                                                     font-size: 1.55vw;
                                                     line-height: 2.1vw;
@@ -42,7 +41,6 @@ body.communitysupport-page {
                                             }
                                             div#hero-logo-alt-desktop {
                                                 text-align: center;
-                                               /*  margin-bottom: 5% !important; */
                                                 figure.wpb_wrapper {
                                                     div.vc_single_image-wrapper {
                                                         img.vc_single_image-img {
@@ -54,6 +52,8 @@ body.communitysupport-page {
                                             div#hero-logo-alt-tablet,
                                             div#hero-logo-alt-mobile {
                                                 display: none;
+                                                visibility: hidden;
+                                                opacity: 0;
                                             }
                                         }
                                     }
@@ -89,7 +89,6 @@ body.communitysupport-page {
                                             height: 100%;
                                             align-items: flex-start;
                                             justify-content: center;
-                                            /* max-width: 1194px; */
                                             width: 100%;
                                             div.pv-col2 {
                                                 display: flex;
@@ -184,11 +183,17 @@ body.communitysupport-page {
                                 }
                             }
                         }
+                        div#community-glossary-bkgnd:before {
+                            content: "";
+                            display: block;
+                            height: 50px;
+                            top: 50px;
+                            position: relative;
+                            width: 100vw;
+                            background-color: $backgnd-grey;
+                            clip-path: polygon( 0% 100%,0% 0%,0% 0%,0.553% 3.308%,1.366% 6.551%,2.431% 9.719%,3.741% 12.8%,5.291% 15.783%,7.073% 18.655%,9.08% 21.407%,11.306% 24.026%,13.745% 26.501%,16.388% 28.82%,16.388% 28.82%,17.764% 29.905%,19.176% 30.941%,20.626% 31.927%,22.111% 32.863%,23.63% 33.748%,25.184% 34.581%,26.77% 35.364%,28.389% 36.095%,30.039% 36.774%,31.72% 37.4%,31.72% 37.4%,33.482% 37.988%,35.257% 38.516%,37.045% 38.982%,38.847% 39.388%,40.664% 39.733%,42.496% 40.015%,44.345% 40.235%,46.212% 40.393%,48.096% 40.488%,49.999% 40.52%,49.999% 40.52%,51.903% 40.489%,53.787% 40.395%,55.654% 40.239%,57.503% 40.021%,59.335% 39.74%,61.152% 39.397%,62.954% 38.991%,64.742% 38.523%,66.517% 37.993%,68.279% 37.4%,68.279% 37.4%,69.96% 36.773%,71.61% 36.093%,73.229% 35.36%,74.815% 34.576%,76.369% 33.74%,77.888% 32.854%,79.373% 31.918%,80.823% 30.933%,82.235% 29.9%,83.611% 28.82%,83.611% 28.82%,86.255% 26.501%,88.693% 24.026%,90.919% 21.407%,92.927% 18.655%,94.709% 15.783%,96.258% 12.8%,97.569% 9.719%,98.634% 6.551%,99.447% 3.308%,100% 0%,100% 100%,0% 100% );
+                        }
                         div#community-glossary-bkgnd {
-                            background-image: url("/wp-content/themes/conall-child/images/community-glossary-bkgnd-top-1920x50.svg");
-                            background-size: auto;
-                            background-position: center top;
-                            background-repeat: no-repeat;
                             div#community-glossary-row {
                                 background-color: $backgnd-grey;
                                 top: 45px;
@@ -416,23 +421,7 @@ body.communitysupport-page {
         }
     }
 }
-@media all and (min-width: 1921px) {
-    body.communitysupport-page {
-        div.edgtf-wrapper {
-            div.edgtf-wrapper-inner {
-                div.edgtf-content {
-                    div.edgtf-content-inner {
-                        div.wpb-content-wrapper {
-                            div#community-glossary-bkgnd {
-                                background-size: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media all and (max-width: 1024px) {
     body.communitysupport-page {
         div.edgtf-wrapper {
@@ -452,16 +441,17 @@ body.communitysupport-page {
                                             padding: 0;
                                             height: 100%;
                                             div.wpb_wrapper {
-                                                div#hero-logo-alt-desktop {
-                                                    display: none;
-                                                }
+                                                div#hero-logo-alt-desktop,
                                                 div#hero-logo-alt-mobile {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#hero-logo-alt-tablet {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     text-align: center;
-                                                    /* margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -473,15 +463,11 @@ body.communitysupport-page {
                                                     }
                                                 }
                                                 div.hero-subheading {
-                                                    /* padding-top: 35px; */
-                                                    padding-top: 3%;
                                                     max-width: 686px;
                                                     margin: 0 auto;
                                                     h2.pv-h2 {
                                                         font-size: 30px;
                                                         line-height: 40px;
-                                                        /* font-size: 2.9vw;
-                                                        line-height: 4vw; */
                                                         sup.pv-sup {
                                                             font-size: 65%;
                                                             bottom: .8ex;
@@ -521,7 +507,6 @@ body.communitysupport-page {
                                                 height: 100%;
                                                 align-items: flex-start;
                                                 justify-content: center;
-                                                /* max-width: 1194px; */
                                                 width: 100%;
                                                 div.pv-col2 {
                                                     display: flex;
@@ -608,19 +593,15 @@ body.communitysupport-page {
                                     }
                                 }
                             }
+                            div#community-glossary-bkgnd:before {
+                                clip-path: polygon( 100% 100%,100% 0%,100% 0%,99.447% 2.451%,98.636% 4.856%,97.573% 7.205%,96.264% 9.49%,94.717% 11.703%,92.937% 13.834%,90.932% 15.876%,88.707% 17.82%,86.268% 19.658%,83.623% 21.38%,83.623% 21.38%,82.246% 22.184%,80.832% 22.952%,79.381% 23.682%,77.895% 24.376%,76.374% 25.033%,74.819% 25.651%,73.231% 26.231%,71.611% 26.773%,69.959% 27.276%,68.277% 27.74%,68.277% 27.74%,66.342% 28.178%,64.127% 28.566%,61.745% 28.907%,59.312% 29.201%,56.941% 29.448%,54.746% 29.648%,52.84% 29.803%,51.338% 29.913%,50.354% 29.978%,50% 30%,50% 30%,49.646% 29.978%,48.662% 29.911%,47.16% 29.799%,45.254% 29.642%,43.059% 29.44%,40.688% 29.192%,38.255% 28.898%,35.874% 28.559%,33.658% 28.173%,31.723% 27.74%,31.723% 27.74%,30.04% 27.276%,28.389% 26.773%,26.768% 26.231%,25.18% 25.651%,23.625% 25.033%,22.104% 24.376%,20.618% 23.682%,19.168% 22.952%,17.754% 22.184%,16.377% 21.38%,16.377% 21.38%,13.732% 19.658%,11.294% 17.82%,9.068% 15.876%,7.063% 13.834%,5.283% 11.703%,3.736% 9.49%,2.427% 7.205%,1.364% 4.856%,0.553% 2.451%,0% 0%,0% 100%,100% 100% );
+                            }
                             div#community-glossary-bkgnd {
-                                background-image: url("/wp-content/themes/conall-child/images/community-glossary-bkgnd-top-1920x50.svg");
-                                background-size: auto;
-                                background-position: center top;
-                                background-repeat: no-repeat;
                                 div#community-glossary-row {
-                                    background-color: $backgnd-grey;
-                                    top: 45px;
                                     padding-bottom: 15%;
                                     div.edgtf-full-section-inner {
                                         max-width: 854px;
                                         div.pv-col1 {
-
                                         }
                                         div.pv-col1.top {
                                             div#community-glossary-heading {
@@ -669,7 +650,6 @@ body.communitysupport-page {
                                 }
                             }
                             div#community-dlb-image-card {
-                                background-color: $backgnd-grey;
                                 max-height: 100%;
                                 padding-top: 0;
                                 padding-bottom: 1%;
@@ -870,16 +850,17 @@ body.communitysupport-page {
                                         padding: 0;
                                         height: 100%;
                                             div.wpb_wrapper {
-                                                div#hero-logo-alt-desktop {
-                                                    display: none;
-                                                }
+                                                div#hero-logo-alt-desktop,
                                                 div#hero-logo-alt-tablet {
                                                     display: none;
+                                                    visibility: hidden;
+                                                    opacity: 0;
                                                 }
                                                 div#hero-logo-alt-mobile {
                                                     display: block;
+                                                    visibility: visible;
+                                                    opacity: 1;
                                                     text-align: center;
-                                                   /*  margin-bottom: 4.5% !important; */
                                                     max-width: 685px;
                                                     margin: 0 auto;
                                                     figure.wpb_wrapper {
@@ -891,12 +872,9 @@ body.communitysupport-page {
                                                     }
                                                 }
                                                 div.hero-subheading {
-                                                    padding-top: 3%;
                                                     max-width: 686px;
                                                     margin: 0 auto;
                                                     h2.pv-h2.center.yellow.hero-subheading{
-                                                        /* font-size: 30px;
-                                                        line-height: 40px; */
                                                         font-size: 4.8vw;
                                                         line-height: 6.25vw;
                                                         sup.pv-sup {
@@ -1052,19 +1030,14 @@ body.communitysupport-page {
 
                                 }
                             }
+                            div#community-glossary-bkgnd:before {
+                                clip-path: polygon( 50% 25%,50% 25%,52.777% 24.938%,55.526% 24.751%,58.248% 24.44%,60.948% 24.005%,63.625% 23.448%,66.284% 22.767%,68.925% 21.963%,71.551% 21.037%,74.164% 19.989%,76.767% 18.82%,76.767% 18.82%,79.266% 17.529%,81.735% 16.049%,84.171% 14.4%,86.571% 12.604%,88.93% 10.685%,91.246% 8.664%,93.514% 6.562%,95.732% 4.403%,97.895% 2.209%,100% 0%,100% 100%,0% 100%,0% 0%,0% 0%,2.105% 2.209%,4.268% 4.403%,6.486% 6.562%,8.754% 8.664%,11.07% 10.685%,13.43% 12.604%,15.829% 14.4%,18.265% 16.049%,20.734% 17.529%,23.233% 18.82%,23.233% 18.82%,25.836% 19.989%,28.449% 21.037%,31.075% 21.963%,33.717% 22.767%,36.375% 23.448%,39.052% 24.005%,41.752% 24.44%,44.474% 24.751%,47.223% 24.938%,50% 25% );
+                            }
                             div#community-glossary-bkgnd {
-                                background-image: url("/wp-content/themes/conall-child/images/community-glossary-bkgnd-top-1920x50.svg");
-                                background-size: auto;
-                                background-position: center top;
-                                background-repeat: no-repeat;
                                 div#community-glossary-row {
-                                    background-color: $backgnd-grey;
-                                    top: 45px;
                                     padding-bottom: 18%;
                                     div.edgtf-full-section-inner {
-
                                         div.pv-col1 {
-
                                         }
                                         div.pv-col1.top {
                                             div#community-glossary-heading {
@@ -1285,7 +1258,7 @@ body.communitysupport-page {
     }
 }
 @media all and (max-width: 576px) {
-    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#community-hero-row  {
+    body.communitysupport-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#community-hero-row  {
         min-height: 500px;
     }
 }

@@ -202,7 +202,7 @@ body.pharvaris {
         left: 50%;
         right: 50%;
         &.home {
-            padding-top: calc(120px - 4%);
+            padding-top: 0;
             aspect-ratio: 192/73;
         }
         &.utility {
@@ -233,6 +233,15 @@ body.pharvaris {
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            div#hero-logo-alt-desktop {
+                text-align: center;
+            }
+            div#hero-logo-alt-tablet {
+                text-align: center;
+            }
+            div#hero-logo-alt-mobile {
+                text-align: center;
+            }
         }
     }
     div#not-patient-row {
@@ -619,8 +628,8 @@ body.pharvaris {
                             div.red-bow {
                                 background-image: url("/wp-content/themes/conall-child/images/red-bow-328x92.svg");
                                 background-size: 100% 100%;
-                                max-width: 392px;
-                                height: 92px;
+                                max-width: 400px;
+                                height: 90px;
                                 width: 100%;
                                 position: relative;
                                 display: flex;
@@ -634,8 +643,8 @@ body.pharvaris {
                                     height: 90px;
                                 }
                                 &.jennifer {
-                                    max-width:517px;
-                                    height: 108px;
+                                    max-width:520px;
+                                    height: 110px;
                                 }
                             }
                         }
