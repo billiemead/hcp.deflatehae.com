@@ -3,8 +3,6 @@
 
 /* ******* PHARVARIS HCP 2024 TREATMENT BURDENS PAGE START ******* */
 
-
-
 body.treatmentburdens-page {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
@@ -54,6 +52,8 @@ body.treatmentburdens-page {
                                             div#hero-logo-alt-tablet,
                                             div#hero-logo-alt-mobile {
                                                 display: none;
+                                                visibility: hidden;
+                                                opacity: 0;
                                             }
                                         }
                                     }
@@ -141,12 +141,11 @@ body.treatmentburdens-page {
                                                                                 ul.pv-list {
                                                                                     margin: 0;
                                                                                     li.pv-list-item {
+                                                                                        font-weight: bold !important;
                                                                                         sup.pv-sup {
-
                                                                                         }
                                                                                     }
                                                                                 }
-
                                                                             }
                                                                         }
                                                                 }
@@ -370,14 +369,16 @@ body.treatmentburdens-page {
                                                     }
                                                 }
                                             }
-                                            div#hero-logo-alt-desktop {
-                                                display: none;
-                                            }
+                                            div#hero-logo-alt-desktop,
                                             div#hero-logo-alt-mobile {
                                                 display: none;
+                                                visibility: hidden;
+                                                opacity: 0;
                                             }
                                             div#hero-logo-alt-tablet {
                                                 display: block;
+                                                visibility: visible;
+                                                opacity: 1;
                                                 text-align: center;
                                                 max-width: 685px;
                                                 margin: 0 auto;
@@ -467,9 +468,9 @@ body.treatmentburdens-page {
 
                                                                                                 }
 
-                                                                                                li.pv-list-item:last-of-type{
-                                                                                                    margin-bottom: 0;
-                                                                                                }
+                                                                                            }
+                                                                                            li.pv-list-item:last-of-type{
+                                                                                                margin-bottom: 5%;
                                                                                             }
                                                                                         }
                                                                                     }
@@ -758,16 +759,18 @@ body.treatmentburdens-page {
                                                     div.hero-subheading {
 
                                                     }
-                                                    div#hero-logo-alt-desktop {
-                                                        display: none;
-                                                    }
+                                                    div#hero-logo-alt-desktop,
                                                     div#hero-logo-alt-tablet {
                                                         display: none;
+                                                        visibility: hidden;
+                                                        opacity: 0;
                                                     }
                                                     div#hero-logo-alt-mobile {
                                                         display: block;
+                                                        visibility: visible;
+                                                        opacity: 1;
                                                         text-align: center;
-                                                        max-width: 685px;
+                                                        max-width: 90%;
                                                         margin: 0 auto;
                                                         figure.wpb_wrapper {
                                                             div.vc_single_image-wrapper {
@@ -1162,25 +1165,6 @@ body.treatmentburdens-page {
                                                         &.top {
                                                             max-width: 910px;
                                                         }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: block;
-                                                            text-align: center;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
-
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
                                                         div.hero-subheading {
                                                             margin: 0 auto;
                                                             max-width: 100%;
@@ -1271,12 +1255,10 @@ body.treatmentburdens-page {
                                                                                             li.pv-list-item{
                                                                                                 margin-bottom: 3%;
                                                                                                 sup.pv-sup {
-
                                                                                                 }
-
-                                                                                                li.pv-list-item:last-of-type{
-                                                                                                    margin-bottom: 0;
-                                                                                                }
+                                                                                            }
+                                                                                            li.pv-list-item:last-of-type{
+                                                                                                margin-bottom: 5%;
                                                                                             }
                                                                                         }
                                                                                     }
@@ -1476,7 +1458,6 @@ body.treatmentburdens-page {
         }
     }
 }
-
 @media all and (max-width: 480px) {
     body.treatmentburdens-page {
         div.edgtf-wrapper {
@@ -1516,25 +1497,6 @@ body.treatmentburdens-page {
                                                         float: unset;
                                                         &.top {
                                                             max-width: 910px;
-                                                        }
-                                                        div#hero-logo-alt-desktop {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-tablet {
-                                                            display: none;
-                                                        }
-                                                        div#hero-logo-alt-mobile {
-                                                            display: block;
-                                                            text-align: center;
-                                                            max-width: 685px;
-                                                            margin: 0 auto;
-                                                            figure.wpb_wrapper {
-                                                                div.vc_single_image-wrapper {
-                                                                    img.vc_single_image-img {
-
-                                                                    }
-                                                                }
-                                                            }
                                                         }
                                                         div.hero-subheading {
                                                             max-width: 100%;
@@ -1716,6 +1678,20 @@ body.treatmentburdens-page {
     }
 }
 @media all and (max-width: 320px) {
+    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-triple-icon-row div.edgtf-full-section-inner div.pv-col1 div.vc_column-inner div.wpb_wrapper div#triple-icon-html div.wpb_wrapper section.redwhite-box-section div.redwhite-box-wrapper div.redwhite-box div#triple-icon-inner-row-1 div.pv-col2.left {
+        height: 470px;
+        padding: 12% 0 5% 0;
+    }
+    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-triple-icon-row div.edgtf-full-section-inner div.pv-col1 div.vc_column-inner div.wpb_wrapper div#triple-icon-html div.wpb_wrapper section.redwhite-box-section div.redwhite-box-wrapper div.redwhite-box div#triple-icon-inner-row-2 div.pv-col2.left {
+        height: 320px;
+    }
+    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-triple-icon-row div.edgtf-full-section-inner div.pv-col1 div.vc_column-inner div.wpb_wrapper div#triple-icon-html div.wpb_wrapper section.redwhite-box-section div.redwhite-box-wrapper div.redwhite-box div#triple-icon-inner-row-3 div.pv-col2.left {
+        height: 320px;
+    }
+    body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-triple-icon-row div.edgtf-full-section-inner div.pv-col1 div.vc_column-inner div.wpb_wrapper div#triple-icon-html div.wpb_wrapper section.redwhite-box-section div.redwhite-box-wrapper div.redwhite-box div.triple-icon--row div.pv-col2.right {
+        width: 90%;
+        padding: 10% 0 25% 0 !important;
+    }
 }
 
 /* ******* PHARVARIS HCP 2024 TREATMENT BURDENS PAGE END ******* */

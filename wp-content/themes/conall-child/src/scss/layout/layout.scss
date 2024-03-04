@@ -233,12 +233,8 @@ body.pharvaris {
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            div#hero-logo-alt-desktop {
-                text-align: center;
-            }
-            div#hero-logo-alt-tablet {
-                text-align: center;
-            }
+            div#hero-logo-alt-desktop,
+            div#hero-logo-alt-tablet,
             div#hero-logo-alt-mobile {
                 text-align: center;
             }
@@ -1496,7 +1492,7 @@ body.pharvaris {
     }
 }
 @media all and (max-width: 576px) {
-        body {
+    body {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
@@ -1857,8 +1853,62 @@ body.pharvaris {
     }
 }
 @media all and (max-width: 480px) {
+    body.pharvaris {
+        div.pv-row.hero {
+            &.home {
+
+            }
+            &.utility {
+                min-height: calc(100vw / 1.25);
+            }
+            &.desktop {
+                display: none;
+                    &.alt {
+                         min-height: 110vw;
+                    &.two {
+                        min-height: calc(100vw / 1);
+                    }
+                }
+            }
+            &.tablet {
+            }
+            &.mobile {
+                & div.not-patient {
+                    p.pv-p {
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 320px) {
+    body.pharvaris {
+        div.pv-row.hero {
+            &.home {
+
+            }
+            &.utility {
+                min-height: calc(100vw / 1.25);
+            }
+            &.desktop {
+                display: none;
+                    &.alt {
+                         min-height: 110vw;
+                    &.two {
+                        min-height: calc(100vw / 0.90);
+                    }
+                }
+            }
+            &.tablet {
+            }
+            &.mobile {
+                & div.not-patient {
+                    p.pv-p {
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* ******* PHARVARIS HCP 2024 LAYOUT END ******* */
