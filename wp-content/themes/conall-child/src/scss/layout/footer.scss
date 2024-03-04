@@ -7,7 +7,7 @@ body.pharvaris {
     div.edgtf-wrapper {
         div.edgtf-wrapper-inner {
             div.edgtf-content {
-                margin-bottom: 155px !important;
+                margin-bottom: 170px !important;
             }
             footer {
                 div.edgtf-footer-inner {
@@ -145,7 +145,7 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
-                    margin-bottom: 80px !important;
+                    margin-bottom: 122px !important;
                 }
                 footer {
                     div.edgtf-footer-inner {
@@ -241,7 +241,7 @@ body.pharvaris {
         div.edgtf-wrapper {
             div.edgtf-wrapper-inner {
                 div.edgtf-content {
-                        margin-bottom: 415px !important;
+                        margin-bottom: 458px !important;
                         border: none;
                 }
                 footer {
@@ -373,6 +373,9 @@ body.pharvaris {
 @media all and (max-width: 576px) {
 }
 @media all and (max-width: 480px) {
+    body.pharvaris div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content {
+        margin-bottom: 480px !important;
+    }
 }
 @media all and (max-width: 320px) {
 }
