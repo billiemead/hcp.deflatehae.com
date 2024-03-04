@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="menu-selector-box right">
                                         <li class="menu-selector-list-item">
-                                            <a class="menu-selector-link white" href="/" target="_blank">For people with HAE and caregivers</a>
+                                            <a class="menu-selector-link white" href="https://deflatehae.com/" target="_blank">For people with HAE and caregivers</a>
                                         </li>
                                         <img class="menu-selector-caret" src="/wp-content/themes/conall-child/images/selector-caret.svg" />
                                     </div>
