@@ -14,6 +14,16 @@ a#toggler:focus,
 a#toggler:active {
     color: $black;
 }
+a, p a {
+    color: $blue;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.15s ease-out;
+    -moz-transition: color 0.15s ease-out;
+    -o-transition: color 0.15s ease-out;
+    -ms-transition: color 0.15s ease-out;
+    transition: color 0.15s ease-out;
+}
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-border-hover):hover {
     background-color: $white !important;
     border-color: $yellow !important;
