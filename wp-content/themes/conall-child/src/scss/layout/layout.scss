@@ -158,6 +158,9 @@ body.pharvaris {
     span.underline {
         text-decoration: underline;
     }
+    span.lowercase {
+        text-transform: lowercase;
+    }
     div.pv-row {
         div.edgtf-full-section-inner {
             max-width: 1436px;
@@ -217,6 +220,9 @@ body.pharvaris {
                 &.two {
                     top: 0;
                     min-height: calc(100vw / 3.5);
+                }
+                &.two > div.clearfix.edgtf-full-section-inner > div.pv-col1 {
+                    margin-top: -5%;
                 }
             }
         }
@@ -311,8 +317,17 @@ body.pharvaris {
                 text-transform: uppercase;
             }
         }
+        &.red {
+            color: $red;
+        }
         &.center {
             text-align: center;
+        }
+        &.left {
+            text-align: right;
+        }
+        &.right {
+            text-align: left;
         }
     }
     h2, h2.pv-h2 {
@@ -378,11 +393,17 @@ body.pharvaris {
                 text-transform: inherit;
             }
         }
+        &.white {
+            color: $white;
+        }
         &.glossary {
             color: $blue;
             text-transform: inherit;
             font-size: 26px;
             line-height: 34px;
+        }
+        &.upper {
+            text-transform: uppercase;
         }
     }
     h4, h4.pv-h4 {
@@ -398,6 +419,10 @@ body.pharvaris {
         &.hand {
             color: $black;
             line-height: 30px;
+        }
+        &.white {
+            font-weight: 400 !important;
+            line-height: 26px;
         }
     }
     h4.h4-brandy-red {
@@ -488,6 +513,10 @@ body.pharvaris {
         &.italic {
             font-style: italic !important;
         }
+        &.bold-italic {
+            font-weight: 700 !important;
+            font-style: italic !important;
+        }
         &.policies {
             padding-bottom: 20px;
             &.italic {
@@ -508,6 +537,7 @@ body.pharvaris {
         &.hotspot {
 
         }
+
         li.pv-list-item {
             @include regular($poppins);
             color: $black;
@@ -667,7 +697,7 @@ body.pharvaris {
                                     width: 80%;
                                     align-items: center;
                                     margin: 0 auto;
-                                    padding: 10% 0 8% 0;
+                                    padding: 8% 0 8% 0;
                                     div.iconrow {
                                         display: flex;
                                         justify-content: center;
@@ -677,9 +707,9 @@ body.pharvaris {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            height: 120px;
-                                            margin-right: 40px;
-                                            width: 10%;
+                                            height: 150px;
+                                            margin-right: 20px;
+                                            width: 15%;
                                             img {
 
                                             }
@@ -687,19 +717,22 @@ body.pharvaris {
                                         div.hae-copy-wrapper {
                                             display: flex;
                                             flex-direction: column;
-                                            width: 80%;
+                                            width: 85%;
                                             p.pv-p {
                                             display: block;
                                             width: 100%;
                                             height: auto;
                                             }
                                             ul {
-                                                margin: 6px 0 0 0;
+                                                margin: 2% 0 0 0;
                                                 li {
                                                     padding-bottom: 2%;
                                                     sup.pv-sup {
 
                                                     }
+                                                }
+                                                li:last-child {
+                                                    padding-bottom: 0;
                                                 }
                                             }
                                         }
@@ -1045,19 +1078,19 @@ body.pharvaris {
                                     height: 100%;
                                     padding: 4% 0;
                                     div#hae-facts-icon-row {
+                                        width: 90%;
                                         div.iconrow {
-                                            flex-direction: column;
                                             div.hae-image-wrapper {
                                                 margin-right: 0;
-                                                width: 100%;
+                                                width: 20%;
+                                                height: 130px;
                                                 img {
 
                                                 }
                                             }
                                             div.hae-copy-wrapper {
-                                                width: 100%;
+                                                width: 80%;
                                                 p.pv-p {
-                                                    text-align: center;
                                                 }
                                                 ul {
                                                     li {
@@ -1434,7 +1467,7 @@ body.pharvaris {
                                                 height: 80px;
                                                 margin-bottom: 5%;
                                                 img {
-
+                                                    height: 102%;
                                                 }
                                             }
                                             div.hae-copy-wrapper {
@@ -1469,7 +1502,7 @@ body.pharvaris {
                                         }
                                         div#icon-row3 {
                                             img.hae-icon.three {
-
+                                                height: 95%;
                                             }
                                             p.pv-p {
 
@@ -1478,6 +1511,14 @@ body.pharvaris {
                                         div#icon-row4 {
                                             img.hae-icon.four {
 
+                                            }
+                                            p.pv-p {
+
+                                            }
+                                        }
+                                        div#icon-row5 {
+                                            img.hae-icon.five {
+                                                height: 75%;
                                             }
                                             p.pv-p {
 
@@ -1520,7 +1561,7 @@ body.pharvaris {
                 width: 80%;
             }
             &.references {
-                padding-top: 12%;
+                padding-top: 15%;
                 padding-bottom: 12%;
                 div.vc_column-inner {
                     div.refs-paragraph {
@@ -1788,9 +1829,11 @@ body.pharvaris {
                                     height: 100%;
                                     padding: 8% 0;
                                     div#hae-facts-icon-row {
+                                        max-width: 353px;
                                         padding: 15% 0 15% 0;
                                         div.iconrow {
                                             flex-direction: column;
+                                            margin-bottom: 12%;
                                             div.hae-image-wrapper {
                                                 margin-right: 0;
                                                 width: 100%;
@@ -1847,6 +1890,7 @@ body.pharvaris {
                                     }
                                     a.pv-btn {
                                         margin-top: 10%;
+                                        padding: 0;
                                     }
                                 }
                             }
@@ -1873,14 +1917,10 @@ body.pharvaris {
 
             }
             &.utility {
-                min-height: calc(100vw / 1.25);
             }
             &.desktop {
-                display: none;
                     &.alt {
-                         min-height: 110vw;
                     &.two {
-                        min-height: calc(100vw / 1);
                     }
                 }
             }
@@ -1902,14 +1942,10 @@ body.pharvaris {
 
             }
             &.utility {
-                min-height: calc(100vw / 1.25);
             }
             &.desktop {
-                display: none;
                     &.alt {
-                         min-height: 110vw;
                     &.two {
-                        min-height: calc(100vw / 0.90);
                     }
                 }
             }

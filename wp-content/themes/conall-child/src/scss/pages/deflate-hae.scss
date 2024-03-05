@@ -28,7 +28,7 @@ body.home {
                                 align-items: center;
                                 width: 80%;
                                 div#home-hero-col {
-                                    padding-top: 6%;
+                                    padding-top: 0;
                                     div.vc_column-inner {
                                         padding: 0;
                                         div.pv-row.inner {
@@ -82,6 +82,8 @@ body.home {
                                                     font-size: 26px;
                                                     line-height: 34px;
                                                     color: $red;
+                                                    max-width: 400px;
+                                                    margin: 0 auto;
                                                     sup.pv-sup {
                                                         font-size: 50%;
                                                         bottom: 1ex;
@@ -128,7 +130,7 @@ body.home {
                                         div.wpb_wrapper {
                                             div#home-intro-heading {
                                                 max-width: 1006px;
-                                                padding-bottom: 6%;
+                                                padding-bottom: 4%;
                                                 div.wpb_wrapper {
                                                     h1.pv-h1.grey {
                                                         sup.pv-sup {
@@ -280,29 +282,29 @@ body.home {
                                                             height: 100%;
                                                             padding: 0;
                                                             div.wpb_wrapper {
-                                                                height: 100%;
-                                                                div.overview-round-image {
-                                                                    figure.wpb_wrapper {
-                                                                        div.vc_single_image-wrapper {
+                                                                    height: 100%;
+                                                                    div.circle-margin {
+                                                                        display: flex;
+                                                                        flex-direction: row-reverse;
+                                                                        justify-content: center;
+                                                                        align-items: flex-end;
+                                                                        div.overview-round-image {
                                                                             img {
-
+                                                                                margin: 0 auto;
                                                                             }
                                                                         }
-                                                                    }
-                                                                }
-                                                                div.under-image-caption {
-                                                                    transform: translateY(-75px);
-                                                                    p.pv-p.ex-small {
-                                                                        max-width: 90px;
-                                                                        margin:0 ;
-                                                                        br.line-break {
-
+                                                                        p.pv-p.ex-small {
+                                                                            margin: 0;
+                                                                            text-align: left;
+                                                                            position: absolute;
+                                                                            left: calc(100vw * 0.05 - 100px);
+                                                                            bottom: calc(100vw / 48);
+                                                                            max-width: 90px;
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                         }
-                                                    }
                                                     div.pv-col2.inner.right-col {
                                                         width: 50%;
                                                         div.vc_column-inner {
@@ -327,6 +329,7 @@ body.home {
                                                                             p.pv-p {
                                                                                 padding-top: 6.5%;
                                                                                 padding-bottom: 6.5%;
+                                                                                max-width: 200px;
                                                                                 sup.pv-sup {
                                                                                     font-size: 65%;
                                                                                 }
@@ -432,6 +435,24 @@ body.home {
         max-width: 100%;
     }
 }
+@media all and (max-width: 1200px) {
+    body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-overview-row div.clearfix.edgtf-full-section-inner div.pv-col2 div.vc_column-inner div.wpb_wrapper div.overview-inner-row div.edgtf-full-section-inner div.pv-col2.inner.left-col div.vc_column-inner div.wpb_wrapper div.circle-margin p.pv-p.ex-small {
+        margin: 0;
+        text-align: left;
+        position: absolute;
+        bottom: calc(100vw / 30);
+        max-width: 90px;
+    }
+    body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-overview-row div.clearfix.edgtf-full-section-inner div.pv-col2 div.vc_column-inner div.wpb_wrapper div.overview-inner-row div.edgtf-full-section-inner div.pv-col2.inner.left-col {
+        width: 46%;
+    }
+    body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-overview-row div.clearfix.edgtf-full-section-inner div.pv-col2 div.vc_column-inner div.wpb_wrapper div.overview-inner-row div.edgtf-full-section-inner div.pv-col2.inner.right-col div.vc_column-inner div.wpb_wrapper div.overview-container div.wpb_wrapper {
+        height: 240px;
+    }
+    body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-hero-row div.edgtf-full-section-inner div#home-hero-col div.vc_column-inner div.pv-row.inner div.edgtf-full-section-inner div.pv-col1.left h2.pv-h2.hero br.line-break {
+        display: none;
+    }
+}
 @media all and (max-width: 1024px) {
     body.pharvaris div#not-patient-row div.edgtf-full-section-inner div.pv-col1 div.not-patient {
     display: none;
@@ -443,21 +464,43 @@ body.home {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#home-hero-row-tablet {
-                                top: 42px;
-                                min-height: 87vw;
-                                padding: 0;
+                                top: 0;
+                                height: 100%;
+                                padding-top: 0;
+                                aspect-ratio: unset;
+                                clip-path: polygon( 50% 97.343%,50% 97.343%,52.77% 97.349%,55.538% 97.369%,58.298% 97.401%,61.048% 97.447%,63.783% 97.506%,66.499% 97.577%,69.192% 97.662%,71.858% 97.759%,74.493% 97.869%,77.092% 97.991%,77.092% 97.991%,79.566% 98.128%,82.004% 98.286%,84.402% 98.463%,86.76% 98.656%,89.078% 98.862%,91.352% 99.079%,93.583% 99.303%,95.769% 99.534%,97.908% 99.767%,100% 100%,100% 0%,100% 0%,98.875% -24.112%,92.246% -38.103%,81.439% -43.758%,67.777% -42.865%,52.584% -37.21%,37.185% -28.577%,22.903% -18.754%,11.062% -9.526%,2.986% -2.679%,0% -0%,0% 100%,0% 100%,2.092% 99.767%,4.231% 99.534%,6.417% 99.303%,8.648% 99.078%,10.922% 98.861%,13.24% 98.655%,15.598% 98.462%,17.996% 98.285%,20.434% 98.128%,22.908% 97.991%,22.908% 97.991%,25.507% 97.869%,28.142% 97.759%,30.808% 97.662%,33.501% 97.577%,36.217% 97.506%,38.952% 97.447%,41.702% 97.401%,44.462% 97.369%,47.23% 97.349%,50% 97.343% );
                                 div.edgtf-full-section-inner {
+                                    position: relative;
+                                    left: unset;
+                                    right: unset;
                                     max-width: 100%;
                                     width: 100%;
-                                    height: 100%;
+                                    transform: unset;
                                     div#home-hero-col {
                                         div.vc_column-inner {
                                             padding: 0;
                                             div.wpb_wrapper {
+                                                div#tab-hero-background {
+                                                    position: relative;
+                                                    figure.vc_figure {
+                                                        width: 100%;
+                                                        div.vc_single_image-wrapper {
+                                                            width: 100%;
+                                                            img.vc_single_image-img {
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                                 div.pv-row.inner {
-
+                                                    display: flex;
+                                                    position: relative;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
                                                     div.edgtf-full-section-inner {
-
+                                                        padding-bottom: 6%;
                                                         div.pv-col1.left {
                                                             width: 100%;
                                                             div.hero-content-container {
@@ -469,7 +512,7 @@ body.home {
                                                                     flex-direction: column;
                                                                     justify-content: space-between;
                                                                     align-items: center;
-                                                                    max-width: 80%;
+                                                                    max-width: 100%;
                                                                     p.pv-p {
 
                                                                     }
@@ -479,12 +522,12 @@ body.home {
                                                                         line-height: 46px;
                                                                         color: $dk-grey;
                                                                             &.top {
-                                                                                padding-top:4%;
-                                                                                padding-bottom:1%;
+                                                                                padding-top:5%;
+                                                                                padding-bottom:2%;
                                                                             }
                                                                             &.bottom {
-                                                                                padding-top:1%;
-                                                                                padding-bottom:4%;
+                                                                                padding-top:2%;
+                                                                                padding-bottom:5%;
                                                                             }
                                                                     }
                                                                     img.hero-logo {
@@ -495,6 +538,7 @@ body.home {
                                                                         font-size: 26px;
                                                                         line-height: 34px;
                                                                         color: $red;
+                                                                        max-width: 400px;
                                                                     }
                                                                 }
                                                                 }
@@ -508,23 +552,11 @@ body.home {
 
                                 }
                             }
-                            div#home-hero-row-tablet:after {
-                                background-image: url("/wp-content/themes/conall-child/images/delfatehae-bottom-edge-1024x10.svg");
-                                bottom: -17px;
-                                content: "";
-                                height: 17px;
-                                position: absolute;
-                                width: 100vw;
-                                background-repeat: no-repeat;
-                                background-size: 100%;
-                                background-position-x: center;
-                                background-position-y: top;
-                            }
                             div#not-patient-row {
 
                             }
                             div.section-background {
-                                margin-top: -30px;
+                                margin-top: -50px;
                                 top: 0;
                                 margin-bottom: -85px;
                                 padding-bottom: 0px;
@@ -560,7 +592,7 @@ body.home {
                             }
                             div#home-overview-row {
                                 padding-top: 15%;
-                                padding-bottom: 2%;
+                                padding-bottom: 0;
                                 max-height: 100%;
                                 div.clearfix.edgtf-full-section-inner {
                                     display: flex;
@@ -589,23 +621,23 @@ body.home {
                                                                 height: 100%;
                                                                 div.wpb_wrapper {
                                                                     height: 100%;
-                                                                    div.overview-round-image {
-                                                                        figure.wpb_wrapper {
-                                                                            div.vc_single_image-wrapper {
-                                                                                img {
-
-                                                                                }
+                                                                    div.circle-margin {
+                                                                        display: flex;
+                                                                        flex-direction: row-reverse;
+                                                                        justify-content: center;
+                                                                        align-items: flex-end;
+                                                                        div.overview-round-image {
+                                                                            img {
+                                                                                margin: 0 auto;
                                                                             }
                                                                         }
-                                                                    }
-                                                                    div.under-image-caption {
-                                                                        transform: translateY(-75px);
                                                                         p.pv-p.ex-small {
+                                                                            margin: 0;
+                                                                            text-align: left;
+                                                                            position: absolute;
+                                                                            left: 0;
+                                                                            bottom: calc(100vw / 20);
                                                                             max-width: 90px;
-                                                                            margin-left: 5%;
-                                                                            br.line-break {
-
-                                                                            }
                                                                         }
                                                                     }
                                                                 }
@@ -633,8 +665,8 @@ body.home {
                                                                                 align-items: center;
                                                                                 flex-grow: 1;
                                                                                 p.pv-p {
-                                                                                    padding-top: 5%;
-                                                                                    padding-bottom: 5%;
+                                                                                    padding-top: 8%;
+                                                                                    padding-bottom: 8%;
                                                                                     text-align: center;
                                                                                 }
                                                                                 div.overview-btn-wrapper {
@@ -714,6 +746,9 @@ body.home {
                                             }
                                         }
                                     }
+                                    div.pv-col2.left {
+                                        padding-bottom: 5%;
+                                    }
                                 }
                             }
                             div#home-refs-section {
@@ -751,7 +786,7 @@ body.home {
                     div.edgtf-content-inner {
                         div.wpb-content-wrapper {
                             div#home-hero-row-mobile {
-                                top: 42px;
+                                top: 0;
                                 height: 100%;
                                 padding-top: 0;
                                 aspect-ratio: unset;
@@ -811,12 +846,12 @@ body.home {
                                                                         line-height: 46px;
                                                                         color: $dk-grey;
                                                                             &.top {
-                                                                                padding-top:6.5%;
+                                                                                padding-top:5%;
                                                                                 padding-bottom:1%;
                                                                             }
                                                                             &.bottom {
                                                                                 padding-top:1%;
-                                                                                padding-bottom:6.5%;
+                                                                                padding-bottom:5%;
                                                                             }
 
                                                                     }
@@ -833,6 +868,7 @@ body.home {
                                                                         font-size: 26px;
                                                                         line-height: 34px;
                                                                         color: $red;
+                                                                        max-width: 400px;
                                                                     }
                                                                 }
                                                                 }
@@ -920,24 +956,24 @@ body.home {
                                                                 height: 100%;
                                                                 div.wpb_wrapper {
                                                                     height: 100%;
-                                                                    div.overview-round-image {
-                                                                        text-align: center;
-                                                                        figure.wpb_wrapper {
-                                                                            div.vc_single_image-wrapper {
-                                                                                img {
-
-                                                                                }
+                                                                    div.circle-margin {
+                                                                        display: flex;
+                                                                        flex-direction: row-reverse;
+                                                                        justify-content: center;
+                                                                        align-items: flex-end;
+                                                                        div.overview-round-image {
+                                                                            img {
+                                                                                margin: 0 auto;
                                                                             }
                                                                         }
-                                                                    }
-                                                                    div.under-image-caption {
-                                                                        transform: translateY(-75px);
                                                                         p.pv-p.ex-small {
+                                                                            margin: 0;
+                                                                            text-align: left;
+                                                                            position: absolute;
+                                                                            left: unset;
                                                                             max-width: 90px;
-                                                                            margin-left: 10%;
-                                                                            br.line-break {
-
-                                                                            }
+                                                                            width: 50%;
+                                                                            right: 58%;
                                                                         }
                                                                     }
                                                                 }
@@ -1083,12 +1119,12 @@ body.home {
 }
 @media all and (max-width: 576px) {
     body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-hero-row-mobile {
-        top: 40px;
+        top: 0;
     }
 }
 @media all and (max-width: 480px) {
     body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-hero-row-mobile {
-        top: 65px;
+        top: 0;
     }
 }
 @media all and (max-width: 320px) {

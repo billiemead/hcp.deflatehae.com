@@ -23,6 +23,7 @@
     padding: 0;
     margin: 0 auto;
     text-align: center;
+    text-decoration: none;
     &:active,
     &:focus {
         outline: none;
@@ -156,7 +157,6 @@ body.pharvaris {
             position: relative;
             div.cta-container {
                 width:100%;
-                height:20vw;
                 margin:0 auto;
                 border:none;
                 position: absolute;
@@ -410,7 +410,7 @@ body.pharvaris {
         }
         a#edgtf-back-to-top {
             width: 40px;
-            right: 3.5%;
+            right: 5.5%;
             bottom: 77px;
             & > span {
                 position: relative;
@@ -436,7 +436,6 @@ body.pharvaris {
                 position: relative;
                 div.cta-container {
                     width:100%;
-                    height:30vw;
                     margin:0 auto;
                     border:none;
                     position: absolute;
@@ -588,7 +587,6 @@ body.pharvaris {
                 position: relative;
                 div.cta-container {
                     width:100%;
-                    height:30vw;
                     margin:0 auto;
                     border:none;
                     position: absolute;
@@ -659,31 +657,16 @@ body.pharvaris {
         &:focus {
             outline: none;
         }
-        &.w-128 {
-            width: 100%;
-            max-width: 100%;
-        }
-        &.w-152 {
-            max-width: 100%;
-            width: 100%;
-        }
-        &.w-176 {
-            max-width: 100%;
-            width: 100%;
-        }
-        &.w-232 {
-            max-width: 100%;
-            width: 100%;
-        }
-        &.w-264 {
-            max-width: 100%;
-            width: 100%;
-        }
+        &.w-128,
+        &.w-152,
+        &.w-176,
+        &.w-232,
+        &.w-264,
         &.w-292 {
             width: 100%;
             max-width: 100%;
+            padding: 0 10%;
         }
-
     }
 
     body.pharvaris {
@@ -754,7 +737,6 @@ body.pharvaris {
                 position: relative;
                 div.cta-container {
                     width:100%;
-                    height:30vw;
                     margin:0 auto;
                     border:none;
                     position: absolute;
