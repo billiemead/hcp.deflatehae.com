@@ -856,9 +856,6 @@ body.home {
 
                                                                     }
                                                                     h2.pv-h2.hero.center {
-                                                                        br.line-break {
-                                                                            display: none;
-                                                                        }
                                                                     }
                                                                     img.hero-logo {
                                                                         max-width: 100%;
@@ -1125,6 +1122,45 @@ body.home {
 @media all and (max-width: 480px) {
     body.home div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#home-hero-row-mobile {
         top: 0;
+    }
+    body.home {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#home-hero-row-mobile {
+                                div.edgtf-full-section-inner {
+                                    div#home-hero-col {
+                                        div.vc_column-inner {
+                                            div.wpb_wrapper {
+                                                div.pv-row.inner {
+                                                    div.edgtf-full-section-inner {
+                                                        div.pv-col1.left {
+                                                            div.hero-content-container {
+                                                                div.wpb_wrapper {
+                                                                    div.hero-wrapper {
+                                                                        h2.pv-h2.hero.center {
+                                                                            br.line-break {
+                                                                                display: none;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media all and (max-width: 320px) {
