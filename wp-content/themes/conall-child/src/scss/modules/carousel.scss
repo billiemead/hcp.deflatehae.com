@@ -2,50 +2,43 @@
 @import '../base/fonts';
 
 /* ******* PHARVARIS HCP 2024 CAROUSEL START ******* */
-
-.owl-theme .owl-nav [class*='owl-']:hover {
-    background: transparent !important;
-    color: #FFF;
-    text-decoration: none;
+div.row-grey > h2 {
+    width: 100%;
+}
+div.owl-item {
+    div.row-grey > h2:before {
+        content: url('/wp-content/themes/conall-child/images/triangle-left.svg');
+        position: relative;
+        display: inline-block;
+        width: 4px;
+        height: 8px;
+        padding-right: 5%;
+    }
+    div.row-grey > h2:after {
+        content: url('/wp-content/themes/conall-child/images/triangle-right.svg');
+        position: relative;
+        display: inline-block;
+        width: 4px;
+        height: 8px;
+        padding-left: 5%;
+    }
+}
+div.owl-item:nth-of-type(1) {
+     div.row-grey > h2:before {
+        content: "";
+     }
+}
+div.owl-item:nth-of-type(7) {
+     div.row-grey > h2:after {
+        content: "";
+     }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #29AAE1 !important;
 }
 
 div.owl-nav {
-    display: flex;
-    position: absolute;
-    border: none;
-    width: 100vw;
-    height: 100%;
-    top: 0;
-    button.owl-next,
-    button.owl-prev {
-        height: 105px;
-        width: 50vw;
-        padding: 0 !important;
-        margin: 0 !important;
-        display: flex !important;
-        border: none  !important;
-        position: absolute;
-        top: calc(100vw / 1.695);
-        left: 0;
-    }
-    button.owl-next {
-        right: 0;
-        left: unset;
-    }
-    .owl-prev::before {
-        color: #fff;
-        padding: 0;
-        top: 5px;
-        position: relative;
-        left: calc(100vw / 35 * -4);
-    }
-    .owl-next::before {
-        color: #fff;
-        padding: 0;
-        top: 5px;
-        position: relative;
-        right: calc(100vw / 35 * -4);
-    }
+    margin-top: 0;
 }
 
 

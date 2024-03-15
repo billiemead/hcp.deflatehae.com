@@ -759,7 +759,7 @@ body.treatmentburdens-page {
                             }
                             div#balloon-carousel {
                                 display: block;
-                                padding-bottom: 6%;
+                                padding-bottom: 0;
                                 top: -2px;
                                 div.wdo-carosuel-container {
                                     .owl-prev:before {
@@ -777,7 +777,7 @@ body.treatmentburdens-page {
                                         img {
                                             width: 65%;
                                             position: relative;
-                                            bottom: -35px;
+                                            bottom: -4px;
                                         }
                                         div.not-patient {
                                                 top: -22px;
@@ -852,13 +852,12 @@ body.treatmentburdens-page {
                                         margin: 0 auto;
                                         flex-direction: column;
                                         width: 80%;
-                                        height: 174px;
+                                        height: 190px;
                                         justify-content: flex-end;
                                         padding: 5%;
-                                        margin-top: -40px;
+                                        margin-top: -30px;
                                         position: relative;
                                         z-index: 13;
-                                        margin-top: -13px;
                                         h2 {
                                             @include bold($poppins);
                                             font-size: 16px;
@@ -891,7 +890,17 @@ body.treatmentburdens-page {
                                             div.col1.banner-col {
                                                 div.vc_column-inner {
                                                     div.wpb_wrapper {
-
+                                                        div.white-facts-box {
+                                                            div#hae-facts-icon-row {
+                                                                div.iconrow {
+                                                                    div.hae-image-wrapper {
+                                                                        img.hae-icon {
+                                                                            height: 75%;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -982,7 +991,7 @@ body.treatmentburdens-page {
                                 }
                             }
                             div#treatment-triple-icon-row {
-                                padding: 5% 0 0 0;
+                                padding: 15% 0 0 0;
                                 background-position-x: 55%;
                                 background-size: cover;
                                 div.edgtf-full-section-inner {
@@ -1099,6 +1108,111 @@ body.treatmentburdens-page {
                                 div.edgtf-full-section-inner {
                                     div.pv-col1.mid {
                                         min-height: unset;
+                                    }
+                                }
+                            }
+                            div#balloon-carousel {
+                                    display: block;
+                                    padding-bottom: 0;
+                                    top: -2px;
+                                    div.wdo-carosuel-container {
+                                        .owl-prev:before {
+
+                                    }
+                                    div.balloon-mob-wrapper {
+                                        div.balloon-image-container {
+                                            margin: 0 auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-color: #E5E5E5;
+                                            flex-direction: column;
+                                            margin-bottom: -4%;
+                                            img {
+                                                width: 80%;
+                                                position: relative;
+                                                bottom: -5px;
+                                            }
+                                            div.not-patient {
+                                                    top: -22px;
+                                                    position: relative;
+                                                p.pv-p.center.ex-small {
+                                                    color: $white;
+                                                }
+                                            }
+                                        }
+                                        div.row-grey {
+                                            background-image: url("/wp-content/themes/conall-child/images/mob-ani-grey-box-395x238.png");
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                            height: 110px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-direction: column;
+                                            z-index: 15;
+                                            position: relative;
+                                            h2 {
+                                                @include bold($poppins);
+                                                font-size: 22px;
+                                                line-height: 30px;
+                                                color: $yellow;
+                                                text-align: center;
+                                                text-transform: uppercase;
+                                            }
+                                            h3 {
+                                                @include bold($poppins);
+                                                font-size: 12px;
+                                                line-height: 32px;
+                                                text-align: center;
+                                                color: rgba(255,255,255,0.6);
+                                            }
+                                        }
+                                        div.row-red {
+                                            background-color: $red;
+                                            height: 205px;
+                                            display: flex;
+                                            justify-content: space-evenly;
+                                            align-items: center;
+                                            flex-direction: column;
+                                            z-index: 14;
+                                            position: relative;
+                                            bottom: 2px;
+                                            padding: 6% 0;
+                                            h2 {
+                                                max-width: 400px;
+                                                @include bold($poppins);
+                                                font-size: 18px;
+                                                line-height: 28px;
+                                                color: $white;
+                                                text-align: center;
+                                                margin: 0 auto;
+                                                width: 80%;
+                                            }
+                                            h3 {
+                                                @include bold($poppins);
+                                                font-size: 12px;
+                                                line-height: 32px;
+                                                text-align: center;
+                                                color: rgba(255,255,255,0.6);
+                                            }
+                                        }
+                                        div.row-yellow {
+                                            height: 175px;
+                                            h2 {
+                                                @include bold($poppins);
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                                color: $dk-grey;
+                                                text-align: center;
+                                                max-width: 400px;
+                                                margin: 0 auto;
+                                                width: 80%;
+                                            }
+                                            h3 {
+
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -1279,6 +1393,30 @@ body.treatmentburdens-page {
     body.treatmentburdens-page div.edgtf-wrapper div.edgtf-wrapper-inner div.edgtf-content div.edgtf-content-inner div.wpb-content-wrapper div#treatment-triple-icon-row div.edgtf-full-section-inner div.pv-col1 div.vc_column-inner div.wpb_wrapper div#triple-icon-html div.wpb_wrapper section.redwhite-box-section div.redwhite-box-wrapper div.redwhite-box div.triple-icon--row div.pv-col2.right {
         width: 90%;
         padding: 10% 0 25% 0 !important;
+    }
+    body.understandingtreatment-page {
+        div.edgtf-wrapper {
+            div.edgtf-wrapper-inner {
+                div.edgtf-content {
+                    div.edgtf-content-inner {
+                        div.wpb-content-wrapper {
+                            div#balloon-carousel {
+                                div.wdo-carosuel-container {
+                                    div.balloon-mob-wrapper {
+                                        div.row-red {
+                                            height: 190px;
+                                        }
+                                        div.row-yellow {
+                                            margin-top: -12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
