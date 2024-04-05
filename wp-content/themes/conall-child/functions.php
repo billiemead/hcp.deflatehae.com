@@ -3,11 +3,50 @@
 setcookie(TEST_COOKIE, 'WordPress Pharvaris HCP', 0, COOKIEPATH, COOKIE_DOMAIN);
 if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WordPress Pharvaris HCP', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
 
-// add custom Meta Tag to header
+// Remove p tags from category description
+remove_filter('term_description','wpautop');
+
+// add Saleforce custom Meta Tag & Script to header
 function salesforce_header_metadata() {
-	echo '<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">';
+    ?>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <script src="https://url.us.m.mimecastprotect.com/s/P73MCM8626U9Vgw9CGZx9N?domain=google.com"></script>
+        <script>
+        function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+        </script>
+    <?php
 }
 add_action( 'wp_head', 'salesforce_header_metadata' );
+
+// add Saleforce script to footer
+function salesforce__footerscript() {
+    ?>
+        <script>
+            // Add event listener to the checkbox
+            document.getElementById("consentCheckbox").addEventListener("change", function() {
+                // Check if checkbox is checked
+                if (this.checked) {
+                    // If checked, log a message
+                    console.log("Consent checkbox is checked.");
+                }
+            });
+        </script>
+        <script>
+        // Add event listener to the checkbox
+            document.getElementById("hcpCheckbox").addEventListener("change", function() {
+                // Check if checkbox is checked
+                if (this.checked) {
+                    // Declare the name variable and assign the ID value to it
+                    var HCP = this.id;
+
+                    // Log the value to the console to verify
+                    console.log("HCP: " + HCP);
+                }
+            });
+        </script>
+    <?php
+}
+add_action( 'wp_footer', 'salesforce__footerscript' );
 
 // add title attributes to menu
 function pv_add_title_attribute($atts, $item){
@@ -222,6 +261,7 @@ function pharvaris_duplicate_post_as_draft()
     }
 }
 add_action('admin_action_pharvaris_duplicate_post_as_draft', 'pharvaris_duplicate_post_as_draft');
+
 function pharvaris_duplicate_post_link($actions, $post)
 {
     if (current_user_can('edit_posts')) {
@@ -507,7 +547,6 @@ function balloon_animation() {
     }
 }
 add_action('wp_head', 'balloon_animation');
-
 
 function glossary_section() {
     if (is_page('community-support')) {
